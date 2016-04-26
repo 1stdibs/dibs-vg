@@ -1,0 +1,26 @@
+{
+  "name": "dibs-vg",
+  "version": "1.0.0",
+  "description": "1stdibs's in-house vector graphics.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1stdibs/dibs-vg.git"
+  },
+  "keywords": [
+    "SVG",
+    "vector",
+    "graphics",
+    "1stdibs",
+    "1stdibs.com",
+  ],
+  "author": "1stdibs FE eng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1stdibs/dibs-vg/issues"
+  },
+  "homepage": "https://github.com/1stdibs/dibs-vg#readme"
+}
