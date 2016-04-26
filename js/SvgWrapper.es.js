@@ -17,27 +17,24 @@ const tmpString = "<div class='icon <%= className %> <%= className %>-icon <%= s
  *
  * @type {void|*|Object}
  */
-const SvgIcon = Backbone.BaseView.extend({
+const SvgWrapper = Backbone.BaseView.extend({
 
     template : _.template(tmpString),
 
     render : function () {
         this.$el.html(this.template(this.templateVars()));
-        this.$el.addClass('icon');
         return this;
     },
 
     initialize : function (options) {
-        console.assert(options.icon, "Icon name is required to use SvgIcon BB component.");
+        console.assert(options.icon, "Icon is required to use SvgWrapper BB component.");
         this.options = options;
         return this;
     },
 
     templateVars : function () {
         return Object.assign({
-            className : 'icon-25'
-        }, {
-            className : this.options.className,
+            className : 'icon ' + this.options.className,
             icon : this.options.icon,
             title : this.options.title,
             size : this.options.size
@@ -45,4 +42,4 @@ const SvgIcon = Backbone.BaseView.extend({
     }
 });
 
-module.exports = SvgIcon;
+module.exports = SvgWrapper;
