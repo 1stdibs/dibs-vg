@@ -7,9 +7,9 @@ const SvgComponent = props => {
     let className = 'icon ' + props.className + '-icon ' + props.className; 
     className += props.size ? ' icon-' + props.size : '';
     return (
-        <div className={className} title={props.title}>
+        <span className={className} title={props.title}>
             {props.children}
-        </div>
+        </span>
     );
 }
 

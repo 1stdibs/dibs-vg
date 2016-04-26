@@ -2,7 +2,7 @@
 
 const _ = require('underscore');
 const Backbone = require('dibs-backbone');
-const tmpString = "<div class='icon <%= className %> <%= className %>-icon <%= size ? 'icon-'+size : '' %>' title='<%= title %>'><%= icon %></div>";
+const tmpString = "<span class='icon <%= className %> <%= className %>-icon <%= size ? 'icon-'+size : '' %>' title='<%= title %>'><%= icon %></span>";
 
 /**
  * A very simple wrapper for an SVG icon required from the static repository.
