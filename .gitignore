@@ -1,0 +1,13 @@
+.project
+npm-debug.log
+.settings
+.idea
+.idea/*
+.build
+/nbproject/private/
+.DS_Store
+*.pyc
+busters.json
+node_modules/
+npmtmp
+newrelic_agent.log
