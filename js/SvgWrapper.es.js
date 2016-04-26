@@ -2,7 +2,7 @@
 
 const _ = require('underscore');
 const Backbone = require('dibs-backbone');
-const assert = require('bunsen/helpers/assert');
+const tmpString = "<div class='icon <%= className %> <%= className %>-icon <%= size ? 'icon-'+size : '' %>' title='<%= title %>'><%= icon %></div>";
 
 /**
  * A very simple wrapper for an SVG icon required from the static repository.
@@ -19,7 +19,7 @@ const assert = require('bunsen/helpers/assert');
  */
 const SvgIcon = Backbone.BaseView.extend({
 
-    template : _.template('<%= icon %>'),
+    template : _.template(tmpString),
 
     render : function () {
         this.$el.html(this.template(this.templateVars()));
@@ -28,7 +28,7 @@ const SvgIcon = Backbone.BaseView.extend({
     },
 
     initialize : function (options) {
-        assert(options.icon, "Icon name is required to use SvgIcon BB component.");
+        console.assert(options.icon, "Icon name is required to use SvgIcon BB component.");
         this.options = options;
         return this;
     },
@@ -38,7 +38,9 @@ const SvgIcon = Backbone.BaseView.extend({
             className : 'icon-25'
         }, {
             className : this.options.className,
-            icon : this.options.icon
+            icon : this.options.icon,
+            title : this.options.title,
+            size : this.options.size
         });
     }
 });

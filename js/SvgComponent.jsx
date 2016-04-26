@@ -2,17 +2,21 @@
 
 const React = require('react');
 const { PropTypes } = React;
-const IconComponent = require('react-svg-icon-component');
-const staticIconsPath = require('../../configs/assetsConfig').SVG_ICONS_PATH;
 
-const SvgComponent = props => (
-    <IconComponent {...props} extRef={ staticIconsPath } />
-);
+const SvgComponent = props => {
+    let className = 'icon ' + props.className + '-icon ' + props.className; 
+    className += props.size ? ' icon-' + props.size : '';
+    return (
+        <div className={className} title={props.title}>
+            {props.children}
+        </div>
+    );
+}
 
 SvgComponent.propTypes = {
     className: PropTypes.string,
-    title: PropTypes.string,
-    icon: PropTypes.string.isRequired
+    size: PropTypes.number,
+    title: PropTypes.string
 };
 
 module.exports = SvgComponent;
