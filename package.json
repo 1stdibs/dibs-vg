@@ -4,7 +4,7 @@
   "description": "1stdibs's in-house vector graphics.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node ./build"
   },
   "repository": {
     "type": "git",
