@@ -2,25 +2,24 @@
 
 var path = require('path');
 
-const config = {
+module.exports = {
     entry: path.resolve(__dirname, './sample/js/sample.js'),
     output : {
         path: path.resolve(__dirname, './sample/compiled'),
         filename: 'sample.js',
         sourceMapFilename: './sample/compiled/[file].map'
     },
-    loaders: [
-        { test: /\.(js|jsx|svg)$/, loader: 'babel' },
-        { test: /\.jsx$/, loader: 'jsx-loader' },
-        { test: /\.svg$/, loader: 'svg-react' }
-        //{ test: /\.svg$/, loader: 'babel!svg-react' }
-    ],
-    resolve: {
-        extensions: ['', '.js', '.jsx'],
-        alias: {
-            "react-dom" : __dirname + '/node_modules/react'
-        }
+    module : {
+        loaders: [
+            {
+                test: /\.js/,
+                exclude: /(node_modules)/,
+                loader: 'babel',
+                query: {
+                    presets: ['es2015', 'stage-2', 'react']
+                }
+            },
+            { test: /\.svg$/, loader: 'svg-react' }
+        ]
     }
 };
-
-module.exports = config;
