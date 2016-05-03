@@ -10,10 +10,12 @@ module.exports = {
         filename: 'sample.js',
         sourceMapFilename: __dirname + './sample/compiled/[file].map'
     },
+    devtool : 'source-map',
     module : {
         loaders: [
             { test: /\.(js|jsx|svg)$/, loader: 'babel', query: { presets: ['es2015', 'stage-2', 'react']}},
-            { test: /\.svg$/, loader: 'svg-react' }
+            { test: /\.svg$/, loader: 'svg-react' },
+            { test: /\.json/, loader: 'json' }
         ],
         resolve: {
             alias: {
