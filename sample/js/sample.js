@@ -3,4 +3,6 @@
 require('babel-register');
 const reactSample = require('./reactSample.jsx');
 
-reactSample.render();
+window.onload = function () {
+    reactSample.render();
+};

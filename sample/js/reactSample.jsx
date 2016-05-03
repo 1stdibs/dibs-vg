@@ -3,12 +3,13 @@
 
 const SvgComponent = require('./SvgComponent.jsx');
 const ClockIcon = require('../../src/email.svg');
-const ReactDOM = require('react');
+const React = require('react');
+const ReactDOM = require('react-dom');
 
 
 const render = () => {
     ReactDOM.render(
-        <IconWrapper className="icon-spin" size={25} title={"Weeee! Weeeeeeeee!"}> <ClockIcon /> </IconWrapper>,
+        <SvgComponent className="icon-spin" size={25} title={"Weeee! Weeeeeeeee!"}><ClockIcon /></SvgComponent>,
         document.getElementById('IconContainer'));
 };
 

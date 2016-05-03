@@ -4,7 +4,7 @@
   "description": "1stdibs's in-house vector graphics.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -d --progress --colors",
+    "watch": "webpack -d --progress --watch",
     "prepublish": "node ./generateList"
   },
   "repository": {
