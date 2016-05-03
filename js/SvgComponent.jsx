@@ -11,7 +11,7 @@ const SvgComponent = props => {
             {props.children}
         </span>
     );
-}
+};
 
 SvgComponent.propTypes = {
     className: PropTypes.string,

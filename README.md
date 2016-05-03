@@ -14,57 +14,64 @@ If you are using Webpack, and want to render your SVG with React we recomment [s
 
 Configuration for svg-react-loader looks like this (see gotcha below, [via their documentation](https://github.com/jhamlet/svg-react-loader)) : 
 
-	module.exports = {
-    	loaders: [
-        	{ test: /\.svg$/, loader: 'babel!svg-react' }
-    	],
-    	resolve: {
-        	alias: {
-            	react-dom: __dirname + '/node_modules/react'
-	        }
-    	}
-	}
+```javascript
+module.exports = {
+    loaders: [
+        { test: /\.svg$/, loader: 'babel!svg-react' }
+    ],
+    resolve: {
+        alias: {
+            react-dom: __dirname + '/node_modules/react'
+        }
+    }
+}
+```
 
 One gotcha I ran into while implementing is that svg-react-loader requires that you also use babel loader, so this line : 
 
-	{ test: /\.svg$/, loader: 'babel!svg-react' }
+```javascript
+{ test: /\.svg$/, loader: 'babel!svg-react' }
+```
 
-will not work if you already have babel configured as a loader in your config. To solve, add ".svg" to the list of extensions to match against, and remove it from that line to end up with something like : 
+will not work if you already have babel configured as a loader in your config. To solve, add ".svg" to the list of extensions to match against, and remove it from that line to end up with something like :
 
-	module.exports = {
-    	loaders: [
-        	{ test: /\.(js|jsx|svg)$/, loader: 'babel' },
-        	{ test: /\.svg$/, loader: 'svg-react' }
-    	],
-    	resolve: {
-        	alias: {
-            	react-dom: __dirname + '/node_modules/react'
-	        }
-    	}
-	}
+```javascript
+module.exports = {
+    loaders: [
+        { test: /\.(js|jsx|svg)$/, loader: 'babel' },
+        { test: /\.svg$/, loader: 'svg-react' }
+    ],
+    resolve: {
+        alias: {
+            react-dom: __dirname + '/node_modules/react'
+        }
+    }
+}
+```
 
 Now that that's out of the way, require your icon and the icon wrapper then let it rip : 
 
-	const IconWrapper = require('dibs-vg/js/SvgComponent');
-	const Icon = require('dibs-vg/src/bell');
-	// ...
-	<IconWrapper className="icon-spin" size={25} title={"Weeee! Weeeeeeeee!"}>
-        <Icon />
-    </IconWrapper>
-
-
+```javascript
+const IconWrapper = require('dibs-vg/js/SvgComponent');
+const Icon = require('dibs-vg/src/bell');
+// ...
+<IconWrapper className="icon-spin" size={25} title={"Weeee! Weeeeeeeee!"}>
+    <Icon />
+</IconWrapper>
+```
 
 ## In Backbone : 
 
 If you are using Webpack and want to render your SVG with Backbone we recomment using the [html loader](https://www.npmjs.com/package/html-loader) which returns the SVG file as a string, or the [webpack compile templates loader](https://www.npmjs.com/package/webpack-compile-templates) which will transform the SVG file to an underscore template.
 
-	var SvgWrapper = require('dibs-vg/js/SvgWrapper.es.js');
-	const icon = require('!html!dibs-vg/src/bell.svg');
+```javascript
+var SvgWrapper = require('dibs-vg/js/SvgWrapper.es.js');
+const icon = require('!html!dibs-vg/src/bell.svg');
 
-    $('.place').append(new SvgWrapper({
-        icon : icon,
-        className : 'some-thing',
-        size : '25',
-        title : 'Flerg! I did it!'
-    }).render().el);
-
+$('.place').append(new SvgWrapper({
+    icon : icon,
+    className : 'some-thing',
+    size : '25',
+    title : 'Flerg! I did it!'
+}).render().el);
+```
