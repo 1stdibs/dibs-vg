@@ -4,8 +4,8 @@ const React = require('react');
 const { PropTypes } = React;
 
 const SvgComponent = props => {
-    let className = 'icon ' + props.className + '-icon ' + props.className; 
-    className += props.size ? ' icon-' + props.size : '';
+    let className = 'dibsvg-icon ' + props.className;
+    className += props.size ? ' dibsvg-icon-' + props.size : '';
     return (
         <span className={className} title={props.title}>
             {props.children}
