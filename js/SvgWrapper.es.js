@@ -1,7 +1,7 @@
 'use strict';
 
-const _ = require('underscore');
-const Backbone = require('dibs-backbone');
+const template = require('lodash.template');
+const Backbone = require('backbone');
 const tmpString = "<span class='icon <%= className %> <%= className %>-icon <%= size ? 'icon-'+size : '' %>' title='<%= title %>'><%= icon %></span>";
 
 /**
@@ -19,7 +19,7 @@ const tmpString = "<span class='icon <%= className %> <%= className %>-icon <%= 
  */
 const SvgWrapper = Backbone.BaseView.extend({
 
-    template : _.template(tmpString),
+    template : template(tmpString),
 
     render : function () {
         this.$el.html(this.template(this.templateVars()));
