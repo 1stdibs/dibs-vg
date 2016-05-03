@@ -1,6 +1,6 @@
 "use strict";
 
 require('babel-register');
-const reactSample = require('./reactSample.js');
+const reactSample = require('./reactSample.jsx');
 
 reactSample.render();
