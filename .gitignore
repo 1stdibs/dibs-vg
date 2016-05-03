@@ -7,4 +7,3 @@ npm-debug.log
 .DS_Store
 node_modules/
 npmtmp
-sample/compiled/*

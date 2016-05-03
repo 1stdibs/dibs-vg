@@ -1,9 +1,9 @@
 "use strict";
 
 
-require('react');
 const SvgComponent = require('./SvgComponent.jsx');
 const ClockIcon = require('../../src/email.svg');
+const ReactDOM = require('react');
 
 
 const render = () => {
