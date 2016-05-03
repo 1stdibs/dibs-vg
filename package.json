@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "watch": "webpack -d --progress --watch",
+    "webpack": "webpack -d --progress",
     "sass": "sass ./scss/icons.scss:sample/compiled/css/icons.css",
-    "prepublish": "node ./generateList"
+    "build": "node ./generateList && npm run sass && npm run webpack",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
