@@ -1,10 +1,13 @@
 "use strict";
 
 
-const SvgComponent = require('./SvgComponent.jsx');
+const SvgComponent = require('../../js/SvgComponent.jsx');
 const iconList = require('../../list.json');
 const React = require('react');
 
+/**
+ * IconsContainer renders each of the icons using the SvgComponent for the react demo sample page.
+ */
 class IconContainer extends React.Component {
     allIcons() {
         return iconList.map((icon, idx) => {
