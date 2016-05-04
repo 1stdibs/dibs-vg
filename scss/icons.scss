@@ -1,11 +1,11 @@
 // Styling for icons including basic colors and common sizing.
 
-$grey : #21242b;
-$gold : #b19b57;
+$icon-color-dark : #21242b;
+$icon-color-light : #b19b57;
 
 .dibsvg-icon {
     display: inline-block;
-    fill: $grey;
+    fill: $icon-color-dark;
     height: 30px; /* default height, gets over-ridden by style rule in component */
 
     .dibsvg-svg {
@@ -16,6 +16,6 @@ $gold : #b19b57;
     }
 
     &.gold {
-        fill: $gold;
+        fill: $icon-color-light;
     }
 }
