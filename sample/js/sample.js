@@ -2,9 +2,14 @@
 
 const React = require('react');
 const ReactDOM = require('react-dom');
-const IconContainer = require('./IconContainer.jsx');
+const ReactIcons = require('./ReactIcons.jsx');
+const BackboneIcons = require('./BackboneIcons.js');
 require('../../scss/sample.scss');
 
 window.onload = function () {
-    ReactDOM.render(<IconContainer />, document.getElementsByClassName('sample-container')[0]);
+    // React :
+    ReactDOM.render(<ReactIcons />, document.getElementsByClassName('sample-container')[0]);
+
+    // Backbone :
+    document.getElementsByClassName('sample-container')[0].appendChild(new BackboneIcons().render().el);
 };
