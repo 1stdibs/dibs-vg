@@ -13,10 +13,10 @@ module.exports = {
     devtool : 'source-map',
     module : {
         loaders: [
-            { test: /\.(js|jsx|svg)$/, loader: 'babel', query: { presets: ['es2015', 'stage-2', 'react']}},
+            { test: /\.(js|jsx|svg)$/, loader: 'babel'}, //, query: { presets: ['babel-preset-es2015', 'babel-preset-stage-2', 'babel-preset-react']}
             { test: /\.svg$/, loader: 'svg-react' },
-            { test: /\.json/, loader: 'json' }
-            //{ test: /\.scss/, loaders: ["style", "css", "sass"] }
+            { test: /\.json/, loader: 'json' },
+            { test: /\.scss/, loaders: ["style", "css", "sass"] }
         ],
         resolve: {
             alias: {
