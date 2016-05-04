@@ -8,6 +8,10 @@ Dibs VG are broken up into individual SVG files so you can require them to be in
 We also provide some basic styling and wrapper modules for React and Backbone. 
 
 
+## Versioning : 
+
+New icons added to the set will be considered a minor version bump. Changes to existing icons will be a major version.  
+
 ## With React / JSX : 
 
 If you are using Webpack, and want to render your SVG with React we recomment [svg-react-loader](https://github.com/jhamlet/svg-react-loader) which will allow you to require your SVG files direclty in your JS as React components. 
