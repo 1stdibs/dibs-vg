@@ -20726,6 +20726,7 @@
 	        key: 'allIcons',
 	        value: function allIcons() {
 	            return iconList.map(function (icon, idx) {
+	                // Note* here we require the SVG file itself. See dibs-vg webpack config for info on how this works.
 	                var Icon = __webpack_require__(/*! ../../src */ 171)("./" + icon);
 	                return React.createElement(
 	                    'span',

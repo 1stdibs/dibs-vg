@@ -11,6 +11,7 @@ const React = require('react');
 class IconContainer extends React.Component {
     allIcons() {
         return iconList.map((icon, idx) => {
+            // Note* here we require the SVG file itself. See dibs-vg webpack config for info on how this works.
             const Icon = require('../../src/' + icon);
             return (
                 <span key={idx} className="icon-container">
