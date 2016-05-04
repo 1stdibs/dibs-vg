@@ -24934,7 +24934,12 @@
 	        var size = _options.size;
 	
 	        var style = size ? 'width: ' + size + 'px; height: ' + size + 'px' : '';
-	        return { className: className, icon: icon, title: title, style: style };
+	        return {
+	            className: className,
+	            icon: icon,
+	            title: title,
+	            style: style
+	        };
 	    }
 	});
 	
