@@ -2,9 +2,8 @@
 npm-debug.log
 .settings
 .idea
-.idea/*
-/nbproject/private/
+/nbproject/private
 .DS_Store
 node_modules/
 npmtmp
-.sass-cache*
+.sass-cache
