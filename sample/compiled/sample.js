@@ -21000,7 +21000,7 @@
 	    displayName: "AccountFilled",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "account-filled", "viewBox": "0 0 500 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-account-filled", "viewBox": "0 0 500 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22174,7 +22174,7 @@
 	    displayName: "ArrowDown",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "arrow-down", "viewBox": "0 0 32 15", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-arrow-down", "viewBox": "0 0 32 15", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22211,7 +22211,7 @@
 	    displayName: "ArrowLeft",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "arrow-left", "viewBox": "0 0 15 32", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-arrow-left", "viewBox": "0 0 15 32", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22248,7 +22248,7 @@
 	    displayName: "ArrowRight",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "arrow-right", "viewBox": "0 0 15 32", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-arrow-right", "viewBox": "0 0 15 32", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22285,7 +22285,7 @@
 	    displayName: "ArrowUp",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "arrow-up", "viewBox": "0 0 32 15", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-arrow-up", "viewBox": "0 0 32 15", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22359,7 +22359,7 @@
 	    displayName: "Bell",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "bell", "viewBox": "0 0 45 30", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-bell", "viewBox": "0 0 45 30", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22396,7 +22396,7 @@
 	    displayName: "BenefitsEgg",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "benefits-egg", "viewBox": "0 0 420 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-benefits-egg", "viewBox": "0 0 420 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22438,7 +22438,7 @@
 	    displayName: "BulletPoint",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "bullet-point", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-bullet-point", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22480,7 +22480,7 @@
 	    displayName: "BuyerAssurance",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "buyer-assurance", "viewBox": "0 0 518 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-buyer-assurance", "viewBox": "0 0 518 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22569,7 +22569,7 @@
 	    displayName: "Cart",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "cart", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-cart", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22615,7 +22615,7 @@
 	    displayName: "Checkmark",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "checkmark", "viewBox": "0 0 420 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-checkmark", "viewBox": "0 0 420 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22694,7 +22694,7 @@
 	    displayName: "CircleArrowRight",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "circle-arrow-right", "viewBox": "0 0 518 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-circle-arrow-right", "viewBox": "0 0 518 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22740,7 +22740,7 @@
 	    displayName: "Clock",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "clock", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-clock", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22782,7 +22782,7 @@
 	    displayName: "Close",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "close", "viewBox": "0 0 500 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-close", "viewBox": "0 0 500 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22819,7 +22819,7 @@
 	    displayName: "CommuterTrain",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "commuter-train", "viewBox": "0 0 420 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-commuter-train", "viewBox": "0 0 420 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22859,7 +22859,7 @@
 	    displayName: "CustomerSupport",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "customer-support", "viewBox": "0 0 518 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-customer-support", "viewBox": "0 0 518 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22896,7 +22896,7 @@
 	    displayName: "DoNotEdit",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "do-not-edit", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"],[null,\"style\",\"enable-background:new 0 0 250 250;\"],[\"http://www.w3.org/2000/svg\",\"space\",\"preserve\"]]", "x": "0px", "y": "0px", "viewBox": "0 0 250 250" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-do-not-edit", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"],[null,\"style\",\"enable-background:new 0 0 250 250;\"],[\"http://www.w3.org/2000/svg\",\"space\",\"preserve\"]]", "x": "0px", "y": "0px", "viewBox": "0 0 250 250" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -22980,7 +22980,7 @@
 	    displayName: "Email",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "email", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-email", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23054,7 +23054,7 @@
 	    displayName: "Facebook",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "facebook", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-facebook", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23133,7 +23133,7 @@
 	    displayName: "Gear",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "gear", "viewBox": "0 0 500 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-gear", "viewBox": "0 0 500 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23171,7 +23171,7 @@
 	    displayName: "Globe",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "globe", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-globe", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23249,7 +23249,7 @@
 	    displayName: "HeartFilled",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "heart-filled", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-heart-filled", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23290,7 +23290,7 @@
 	    displayName: "HeartOutlined",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "heart-outlined", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-heart-outlined", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23331,7 +23331,7 @@
 	    displayName: "Home",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "home", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-home", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23368,7 +23368,7 @@
 	    displayName: "InfoCircle",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "info-circle", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-info-circle", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23411,7 +23411,7 @@
 	    displayName: "Instagram",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "instagram", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-instagram", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23448,7 +23448,7 @@
 	    displayName: "Iphone",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "iphone", "viewBox": "0 0 241.7 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-iphone", "viewBox": "0 0 241.7 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23485,7 +23485,7 @@
 	    displayName: "Linkedin",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "linkedin", "viewBox": "0 0 500 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-linkedin", "viewBox": "0 0 500 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23566,7 +23566,7 @@
 	    displayName: "LockWithCheckmark",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "lock-with-checkmark", "viewBox": "0 0 518 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-lock-with-checkmark", "viewBox": "0 0 518 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23649,7 +23649,7 @@
 	            displayName: "LogoNoReg",
 	
 	            getDefaultProps: function getDefaultProps() {
-	                        return { "version": "1.1", "className": "dibsvg-svg", "id": "logo-no-reg", "viewBox": "0 0 100 25", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	                        return { "version": "1.1", "className": "dibsvg-svg dibsvg-logo-no-reg", "viewBox": "0 0 100 25", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	            },
 	            componentDidMount: function componentDidMount() {
 	                        helpers.applyXmlAttributes(this);
@@ -23696,7 +23696,7 @@
 	    displayName: "Logo",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "logo", "title": "1stdibs.com", "viewBox": "543 138 2021.4 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-logo", "title": "1stdibs.com", "viewBox": "543 138 2021.4 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23748,7 +23748,7 @@
 	    displayName: "Luggage",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "luggage", "viewBox": "0 0 420 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-luggage", "viewBox": "0 0 420 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23822,7 +23822,7 @@
 	    displayName: "Mask",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "mask", "viewBox": "0 0 1060 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-mask", "viewBox": "0 0 1060 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23904,7 +23904,7 @@
 	    displayName: "Minus",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "minus", "viewBox": "0 0 250 20", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-minus", "viewBox": "0 0 250 20", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23941,7 +23941,7 @@
 	    displayName: "NetPrice",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "net-price", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-net-price", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -23985,7 +23985,7 @@
 	    displayName: "Orange",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "orange", "viewBox": "0 0 420 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-orange", "viewBox": "0 0 420 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -24022,7 +24022,7 @@
 	    displayName: "Pen",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "pen", "viewBox": "0 0 420 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-pen", "viewBox": "0 0 420 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -24064,7 +24064,7 @@
 	    displayName: "PersonInsideBadge",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "person-inside-badge", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-person-inside-badge", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -24113,7 +24113,7 @@
 	    displayName: "PersonProfile",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "person-profile", "viewBox": "0 0 500 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-person-profile", "viewBox": "0 0 500 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -24150,7 +24150,7 @@
 	    displayName: "Pinterest",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "pinterest", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-pinterest", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -24261,7 +24261,7 @@
 	    displayName: "Quote",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "quote", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-quote", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -24461,7 +24461,7 @@
 	    displayName: "ShoppingCart",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "shopping-cart", "viewBox": "-220.7 -160.7 500 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-shopping-cart", "viewBox": "-220.7 -160.7 500 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -24500,7 +24500,7 @@
 	    displayName: "StarFilled",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "star-filled", "viewBox": "0 0 471 448", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-star-filled", "viewBox": "0 0 471 448", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -24620,7 +24620,7 @@
 	    displayName: "Toolbox",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "toolbox", "viewBox": "0 0 518 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-toolbox", "viewBox": "0 0 518 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -24658,7 +24658,7 @@
 	    displayName: "TradeLogo",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "trade-logo", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-trade-logo", "viewBox": "0 0 250 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -24700,7 +24700,7 @@
 	    displayName: "TrashFilled",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "trash-filled", "viewBox": "0 0 218 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-trash-filled", "viewBox": "0 0 218 250", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -24742,7 +24742,7 @@
 	    displayName: "TruckMoving",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "truck-moving", "viewBox": "0 0 518 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-truck-moving", "viewBox": "0 0 518 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -24786,7 +24786,7 @@
 	    displayName: "Twitter",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "twitter", "viewBox": "0 0 612.9 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-twitter", "viewBox": "0 0 612.9 500", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -24823,7 +24823,7 @@
 	    displayName: "Yoga",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg", "id": "yoga", "viewBox": "0 0 420 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-yoga", "viewBox": "0 0 420 518", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -32870,7 +32870,7 @@
   \************************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"account-filled\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M278.088764,500 C190.723711,500 100.959616,499.78903 11.3954418,499.367089 L0,499.367089 L0.799680128,487.552743 C1.19952019,480.801688 4.9980008,421.940928 14.3942423,399.78903 C15.9936026,395.780591 26.1895242,370.886076 51.9792083,361.181435 L130.747701,327.637131 L163.934426,312.236287 C164.534186,312.025316 179.128349,305.696203 183.126749,287.341772 C183.526589,284.599156 183.326669,280.801688 182.926829,279.746835 C181.127549,276.160338 181.127549,276.160338 176.729308,270.886076 L176.529388,270.675105 C175.129948,268.987342 143.942423,229.957806 136.745302,173.628692 C136.345462,170.886076 132.546981,144.092827 136.145542,112.447257 C141.143543,67.5105485 158.336665,34.3881857 186.12555,16.6666667 C187.32507,15.8227848 213.714514,0 251.09956,0 C272.890844,0 294.082367,5.48523207 314.07437,16.0337553 C321.271491,19.4092827 381.847261,51.0548523 365.253898,175.316456 C364.854058,179.324895 358.656537,228.691983 325.669732,270.675105 C324.870052,271.518987 324.070372,272.57384 323.070772,273.839662 C321.471411,275.738397 319.272291,278.059072 318.072771,280.168776 C317.872851,281.223629 317.473011,283.966245 318.472611,287.130802 L318.672531,287.763713 L318.872451,288.607595 C319.072371,289.029536 322.271092,304.219409 341.463415,313.080169 L384.446222,333.544304 L447.820872,360.337553 C449.220312,360.970464 487.005198,376.793249 495.001999,429.324895 L495.201919,430.379747 L500,499.578059 L488.604558,499.578059 C487.604958,499.367089 407.836865,500 278.088764,500 L278.088764,500 Z\"></path>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-account-filled\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M278.088764,500 C190.723711,500 100.959616,499.78903 11.3954418,499.367089 L0,499.367089 L0.799680128,487.552743 C1.19952019,480.801688 4.9980008,421.940928 14.3942423,399.78903 C15.9936026,395.780591 26.1895242,370.886076 51.9792083,361.181435 L130.747701,327.637131 L163.934426,312.236287 C164.534186,312.025316 179.128349,305.696203 183.126749,287.341772 C183.526589,284.599156 183.326669,280.801688 182.926829,279.746835 C181.127549,276.160338 181.127549,276.160338 176.729308,270.886076 L176.529388,270.675105 C175.129948,268.987342 143.942423,229.957806 136.745302,173.628692 C136.345462,170.886076 132.546981,144.092827 136.145542,112.447257 C141.143543,67.5105485 158.336665,34.3881857 186.12555,16.6666667 C187.32507,15.8227848 213.714514,0 251.09956,0 C272.890844,0 294.082367,5.48523207 314.07437,16.0337553 C321.271491,19.4092827 381.847261,51.0548523 365.253898,175.316456 C364.854058,179.324895 358.656537,228.691983 325.669732,270.675105 C324.870052,271.518987 324.070372,272.57384 323.070772,273.839662 C321.471411,275.738397 319.272291,278.059072 318.072771,280.168776 C317.872851,281.223629 317.473011,283.966245 318.472611,287.130802 L318.672531,287.763713 L318.872451,288.607595 C319.072371,289.029536 322.271092,304.219409 341.463415,313.080169 L384.446222,333.544304 L447.820872,360.337553 C449.220312,360.970464 487.005198,376.793249 495.001999,429.324895 L495.201919,430.379747 L500,499.578059 L488.604558,499.578059 C487.604958,499.367089 407.836865,500 278.088764,500 L278.088764,500 Z\"></path>\n</svg>";
 
 /***/ },
 /* 286 */
@@ -32897,7 +32897,7 @@
   \********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"arrow-down\" viewBox=\"0 0 32 15\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M32,1c0,0.3-0.1,0.6-0.3,0.8l-15,13c-0.4,0.3-0.9,0.3-1.3,0l-15-13c-0.4-0.4-0.5-1-0.1-1.4 c0.4-0.4,1-0.5,1.4-0.1L16,12.6L30.3,0.2c0.4-0.4,1-0.3,1.4,0.1C31.9,0.5,32,0.8,32,1z\" />\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-arrow-down\" viewBox=\"0 0 32 15\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M32,1c0,0.3-0.1,0.6-0.3,0.8l-15,13c-0.4,0.3-0.9,0.3-1.3,0l-15-13c-0.4-0.4-0.5-1-0.1-1.4 c0.4-0.4,1-0.5,1.4-0.1L16,12.6L30.3,0.2c0.4-0.4,1-0.3,1.4,0.1C31.9,0.5,32,0.8,32,1z\" />\n</svg>";
 
 /***/ },
 /* 289 */
@@ -32906,7 +32906,7 @@
   \********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"arrow-left\" viewBox=\"0 0 15 32\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M14,32c-0.3,0-0.6-0.1-0.8-0.3l-13-15c-0.3-0.4-0.3-0.9,0-1.3l13-15c0.4-0.4,1-0.5,1.4-0.1 c0.4,0.4,0.5,1,0.1,1.4L2.3,16l12.4,14.3c0.4,0.4,0.3,1-0.1,1.4C14.4,31.9,14.2,32,14,32z\" />\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-arrow-left\" viewBox=\"0 0 15 32\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M14,32c-0.3,0-0.6-0.1-0.8-0.3l-13-15c-0.3-0.4-0.3-0.9,0-1.3l13-15c0.4-0.4,1-0.5,1.4-0.1 c0.4,0.4,0.5,1,0.1,1.4L2.3,16l12.4,14.3c0.4,0.4,0.3,1-0.1,1.4C14.4,31.9,14.2,32,14,32z\" />\n</svg>";
 
 /***/ },
 /* 290 */
@@ -32915,7 +32915,7 @@
   \*********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"arrow-right\" viewBox=\"0 0 15 32\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M1,0c0.3,0,0.6,0.1,0.8,0.3l13,15c0.3,0.4,0.3,0.9,0,1.3l-13,15c-0.4,0.4-1,0.5-1.4,0.1 c-0.4-0.4-0.5-1-0.1-1.4L12.6,16L0.2,1.7c-0.4-0.4-0.3-1,0.1-1.4C0.5,0.1,0.8,0,1,0z\" />\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-arrow-right\" viewBox=\"0 0 15 32\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M1,0c0.3,0,0.6,0.1,0.8,0.3l13,15c0.3,0.4,0.3,0.9,0,1.3l-13,15c-0.4,0.4-1,0.5-1.4,0.1 c-0.4-0.4-0.5-1-0.1-1.4L12.6,16L0.2,1.7c-0.4-0.4-0.3-1,0.1-1.4C0.5,0.1,0.8,0,1,0z\" />\n</svg>";
 
 /***/ },
 /* 291 */
@@ -32924,7 +32924,7 @@
   \******************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"arrow-up\" viewBox=\"0 0 32 15\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M0,14c0-0.3,0.1-0.6,0.3-0.8l15-13c0.4-0.3,0.9-0.3,1.3,0l15,13c0.4,0.4,0.5,1,0.1,1.4 c-0.4,0.4-1,0.5-1.4,0.1L16,2.3L1.7,14.7c-0.4,0.4-1,0.3-1.4-0.1C0.1,14.4,0,14.2,0,14z\" />\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-arrow-up\" viewBox=\"0 0 32 15\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M0,14c0-0.3,0.1-0.6,0.3-0.8l15-13c0.4-0.3,0.9-0.3,1.3,0l15,13c0.4,0.4,0.5,1,0.1,1.4 c-0.4,0.4-1,0.5-1.4,0.1L16,2.3L1.7,14.7c-0.4,0.4-1,0.3-1.4-0.1C0.1,14.4,0,14.2,0,14z\" />\n</svg>";
 
 /***/ },
 /* 292 */
@@ -32942,7 +32942,7 @@
   \**************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"bell\" viewBox=\"0 0 45 30\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path class=\"st0\" d=\"M45,25.9c0,0,0-0.1,0-0.1c0,0,0,0,0,0c-0.5-2.7-2.5-3.5-4-3.7c-0.7-0.1-2.2-0.6-2.4-1.4c-0.3-3.2-1.1-6-2.3-8.2\n            c-1-1.8-2.4-3.3-4-4.4c-2.8-1.9-5.5-2-6-2c0,0,0,0,0,0H23V2.2h2.7V0H19v2.2h2.6V6h-3.1h0C13.6,6.1,10,8.7,7.8,13.5\n            c-1.3,2.9-1.6,5.8-1.7,6.8l-0.1,0v0c0,0.1-0.2,1.4-2.4,1.8c-1.3,0.3-3.7,1.4-3.6,3.9c0,0.3,0.2,0.6,0.5,0.7c0.1,0,7.8,2.7,17.3,3.2\n            c0.7,0,2.5,0.1,4.3,0.1c1.7,0,3.5,0,4.8-0.1c4.6-0.3,11.4-1.1,17.6-3.2C44.9,26.6,45.1,26.2,45,25.9z M9.2,14.1\n            c1.9-4.3,5-6.6,9.3-6.7h7.7h0c0.3,0,2.7,0,5.2,1.7c3.2,2.1,5.1,5.8,5.6,11c-1.8,0.4-7.5,1.6-14.9,1.6c-5.1,0-10-0.6-14.6-1.6\n            C7.7,19.1,8.1,16.6,9.2,14.1z M26.8,28.5c-2.6,0.2-7.6,0.1-8.9,0c-7.9-0.4-14.5-2.4-16.3-3c0.1-0.5,0.5-1,1.1-1.4\n            c0.6-0.4,1.3-0.6,1.4-0.6c1.9-0.4,2.7-1.3,3.2-2c4.8,1.1,9.8,1.7,15,1.7c7.7,0,13.5-1.2,15.3-1.7c0.9,1.3,3,1.8,3.3,1.8c0,0,0,0,0,0\n            c1.9,0.2,2.5,1.4,2.7,2.1C37.2,27.6,30.3,28.2,26.8,28.5z\"/>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-bell\" viewBox=\"0 0 45 30\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path class=\"st0\" d=\"M45,25.9c0,0,0-0.1,0-0.1c0,0,0,0,0,0c-0.5-2.7-2.5-3.5-4-3.7c-0.7-0.1-2.2-0.6-2.4-1.4c-0.3-3.2-1.1-6-2.3-8.2\n            c-1-1.8-2.4-3.3-4-4.4c-2.8-1.9-5.5-2-6-2c0,0,0,0,0,0H23V2.2h2.7V0H19v2.2h2.6V6h-3.1h0C13.6,6.1,10,8.7,7.8,13.5\n            c-1.3,2.9-1.6,5.8-1.7,6.8l-0.1,0v0c0,0.1-0.2,1.4-2.4,1.8c-1.3,0.3-3.7,1.4-3.6,3.9c0,0.3,0.2,0.6,0.5,0.7c0.1,0,7.8,2.7,17.3,3.2\n            c0.7,0,2.5,0.1,4.3,0.1c1.7,0,3.5,0,4.8-0.1c4.6-0.3,11.4-1.1,17.6-3.2C44.9,26.6,45.1,26.2,45,25.9z M9.2,14.1\n            c1.9-4.3,5-6.6,9.3-6.7h7.7h0c0.3,0,2.7,0,5.2,1.7c3.2,2.1,5.1,5.8,5.6,11c-1.8,0.4-7.5,1.6-14.9,1.6c-5.1,0-10-0.6-14.6-1.6\n            C7.7,19.1,8.1,16.6,9.2,14.1z M26.8,28.5c-2.6,0.2-7.6,0.1-8.9,0c-7.9-0.4-14.5-2.4-16.3-3c0.1-0.5,0.5-1,1.1-1.4\n            c0.6-0.4,1.3-0.6,1.4-0.6c1.9-0.4,2.7-1.3,3.2-2c4.8,1.1,9.8,1.7,15,1.7c7.7,0,13.5-1.2,15.3-1.7c0.9,1.3,3,1.8,3.3,1.8c0,0,0,0,0,0\n            c1.9,0.2,2.5,1.4,2.7,2.1C37.2,27.6,30.3,28.2,26.8,28.5z\"/>\n</svg>";
 
 /***/ },
 /* 294 */
@@ -32951,7 +32951,7 @@
   \**********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<!-- 401k on careers -->\n<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"benefits-egg\" viewBox=\"0 0 420 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M310,193.9c-28.1-48.3-63-74.8-98.7-74.8s-70.6,26.5-98.7,74.8c-23.1,39.5-37.8,88.2-37.8,124.7\n            c0,37.8,16,72.2,41.2,96.6c-14.7,5.5-23.1,12.6-23.1,19.7c0,18.5,52.9,33.6,118.4,33.6s118.4-15.1,118.4-33.6\n            c0-7.6-8.8-14.3-23.1-19.7c25.2-24.4,41.2-58.8,41.2-96.6C347.8,282.1,333.1,233.4,310,193.9z M211.7,443.4\n            c-65.9,0-121.8-63-121.8-124.7c0-77.3,57.1-186.5,120.1-186.5c64.3,0,122.2,115.9,122.2,186.5C332.2,387.9,278.5,443.4,211.7,443.4\n            z M216.7,283.8c-7.6-3.4-13-6.3-15.5-8.8c-2.5-2.9-4.2-6.3-4.2-10.9c0-5,1.3-8.8,3.8-11.8c2.5-2.9,6.7-4.6,12.2-4.6\n            s9.7,1.7,12.6,5.5c2.9,3.4,4.6,8.4,4.6,15.1h26v-0.4c0-11.3-2.9-20.2-9.2-27.3c-6.3-7.1-14.7-11.3-25.6-12.6v-19.7h-14.3v19.3\n            c-11.3,1.3-20.2,5-26.9,11.3c-6.7,6.3-10.1,14.7-10.1,24.8c0,10.9,3.4,19.7,10.1,25.6c6.7,5.9,16.8,11.3,30.7,16\n            c7.1,2.9,12.2,5.5,15.1,8.4c2.9,2.9,4.2,7.1,4.2,11.8c0,5-1.7,8.8-4.6,11.8c-2.9,2.9-7.6,4.2-13.4,4.2s-10.9-1.7-14.7-5\n            c-3.8-3.4-5.9-8.8-5.9-16.4h-26l-0.4,0.4c-0.4,13,3.4,22.7,10.9,29.4s17.2,10.5,28.6,11.3v17.6h14.3v-17.6\n            c11.3-1.3,20.6-5,26.9-11.3c6.7-6.3,9.7-14.7,9.7-25.2c0-10.9-3.4-19.7-10.1-26C240.2,293.4,230.2,288,216.7,283.8z\"/>\n    <path d=\"M415.8,309.8h-42.4c-2.5,0-4.2-1.7-4.2-4.2v-10.1c0-2.1,1.7-4.2,4.2-4.2h42.4c2.5,0,4.2,2.1,4.2,4.2v10.1\n            C420,308.1,418.3,309.8,415.8,309.8z\"/>\n    <path d=\"M217.6,53.2v42c0,2.1-1.7,4.2-4.2,4.2h-10.1c-2.1,0-4.2-1.7-4.2-4.2v-42c0-2.1,2.1-4.2,4.2-4.2h10.1\n            C215.9,49,217.6,50.7,217.6,53.2z\"/>\n    <path d=\"M46.6,309.8H4.2c-2.1,0-4.2-1.7-4.2-4.2v-10.1c0-2.1,1.7-4.2,4.2-4.2h42.4c2.1,0,4.2,2.1,4.2,4.2v10.1\n            C50.8,308.1,48.7,309.8,46.6,309.8z\"/>\n    <path d=\"M94.5,169.5l-29.8-29.4c-1.7-1.7-1.7-4.2,0-5.9l7.1-7.1c1.7-1.7,4.2-1.7,5.9,0l29.8,29.4\n            c1.7,1.7,1.7,4.2,0,5.9l-6.7,7.1C99.1,171.2,96.2,171.2,94.5,169.5z\"/>\n    <path d=\"M323.8,169.5l29.8-29.4c1.7-1.7,1.7-4.2,0-5.9l-7.1-7.1c-1.7-1.7-4.2-1.7-5.9,0l-29.8,29.4\n            c-1.7,1.7-1.7,4.2,0,5.9l7.1,7.1C319.6,171.2,322.1,171.2,323.8,169.5z\"/>\n</svg>";
+	module.exports = "<!-- 401k on careers -->\n<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-benefits-egg\" viewBox=\"0 0 420 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M310,193.9c-28.1-48.3-63-74.8-98.7-74.8s-70.6,26.5-98.7,74.8c-23.1,39.5-37.8,88.2-37.8,124.7\n            c0,37.8,16,72.2,41.2,96.6c-14.7,5.5-23.1,12.6-23.1,19.7c0,18.5,52.9,33.6,118.4,33.6s118.4-15.1,118.4-33.6\n            c0-7.6-8.8-14.3-23.1-19.7c25.2-24.4,41.2-58.8,41.2-96.6C347.8,282.1,333.1,233.4,310,193.9z M211.7,443.4\n            c-65.9,0-121.8-63-121.8-124.7c0-77.3,57.1-186.5,120.1-186.5c64.3,0,122.2,115.9,122.2,186.5C332.2,387.9,278.5,443.4,211.7,443.4\n            z M216.7,283.8c-7.6-3.4-13-6.3-15.5-8.8c-2.5-2.9-4.2-6.3-4.2-10.9c0-5,1.3-8.8,3.8-11.8c2.5-2.9,6.7-4.6,12.2-4.6\n            s9.7,1.7,12.6,5.5c2.9,3.4,4.6,8.4,4.6,15.1h26v-0.4c0-11.3-2.9-20.2-9.2-27.3c-6.3-7.1-14.7-11.3-25.6-12.6v-19.7h-14.3v19.3\n            c-11.3,1.3-20.2,5-26.9,11.3c-6.7,6.3-10.1,14.7-10.1,24.8c0,10.9,3.4,19.7,10.1,25.6c6.7,5.9,16.8,11.3,30.7,16\n            c7.1,2.9,12.2,5.5,15.1,8.4c2.9,2.9,4.2,7.1,4.2,11.8c0,5-1.7,8.8-4.6,11.8c-2.9,2.9-7.6,4.2-13.4,4.2s-10.9-1.7-14.7-5\n            c-3.8-3.4-5.9-8.8-5.9-16.4h-26l-0.4,0.4c-0.4,13,3.4,22.7,10.9,29.4s17.2,10.5,28.6,11.3v17.6h14.3v-17.6\n            c11.3-1.3,20.6-5,26.9-11.3c6.7-6.3,9.7-14.7,9.7-25.2c0-10.9-3.4-19.7-10.1-26C240.2,293.4,230.2,288,216.7,283.8z\"/>\n    <path d=\"M415.8,309.8h-42.4c-2.5,0-4.2-1.7-4.2-4.2v-10.1c0-2.1,1.7-4.2,4.2-4.2h42.4c2.5,0,4.2,2.1,4.2,4.2v10.1\n            C420,308.1,418.3,309.8,415.8,309.8z\"/>\n    <path d=\"M217.6,53.2v42c0,2.1-1.7,4.2-4.2,4.2h-10.1c-2.1,0-4.2-1.7-4.2-4.2v-42c0-2.1,2.1-4.2,4.2-4.2h10.1\n            C215.9,49,217.6,50.7,217.6,53.2z\"/>\n    <path d=\"M46.6,309.8H4.2c-2.1,0-4.2-1.7-4.2-4.2v-10.1c0-2.1,1.7-4.2,4.2-4.2h42.4c2.1,0,4.2,2.1,4.2,4.2v10.1\n            C50.8,308.1,48.7,309.8,46.6,309.8z\"/>\n    <path d=\"M94.5,169.5l-29.8-29.4c-1.7-1.7-1.7-4.2,0-5.9l7.1-7.1c1.7-1.7,4.2-1.7,5.9,0l29.8,29.4\n            c1.7,1.7,1.7,4.2,0,5.9l-6.7,7.1C99.1,171.2,96.2,171.2,94.5,169.5z\"/>\n    <path d=\"M323.8,169.5l29.8-29.4c1.7-1.7,1.7-4.2,0-5.9l-7.1-7.1c-1.7-1.7-4.2-1.7-5.9,0l-29.8,29.4\n            c-1.7,1.7-1.7,4.2,0,5.9l7.1,7.1C319.6,171.2,322.1,171.2,323.8,169.5z\"/>\n</svg>";
 
 /***/ },
 /* 295 */
@@ -32960,7 +32960,7 @@
   \**********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"bullet-point\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125,249.3C56.4,249.3,0.7,193.6,0.7,125S56.4,0.7,125,0.7S249.3,56.4,249.3,125S193.6,249.3,125,249.3z\n                 M125,10.7C62,10.7,10.7,62,10.7,125c0,63,51.3,114.3,114.3,114.3c63,0,114.3-51.3,114.3-114.3C239.3,62,188,10.7,125,10.7z\"/>\n        <circle cx=\"124.3\" cy=\"123.7\" r=\"78.3\"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-bullet-point\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125,249.3C56.4,249.3,0.7,193.6,0.7,125S56.4,0.7,125,0.7S249.3,56.4,249.3,125S193.6,249.3,125,249.3z\n                 M125,10.7C62,10.7,10.7,62,10.7,125c0,63,51.3,114.3,114.3,114.3c63,0,114.3-51.3,114.3-114.3C239.3,62,188,10.7,125,10.7z\"/>\n        <circle cx=\"124.3\" cy=\"123.7\" r=\"78.3\"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 296 */
@@ -32969,7 +32969,7 @@
   \*************************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"buyer-assurance\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M48.7-360.7C48.7-360.7,48.7-360.7,48.7-360.7l0,77.3c0,4.1,2.8,8,6.7,9.3l73.5,23.9c0,0,0,0,0,0l45.4,62.6\n                c1.8,2.5,4.9,4,8,4c1,0,2-0.2,2.9-0.5l73.5-23.9c0,0,0,0,0,0l73.5,23.9c0.9,0.3,1.9,0.5,2.9,0.5c3.1,0,6.2-1.5,8-4l45.5-62.6\n                c0,0,0,0,0,0l73.5-23.9c3.9-1.3,6.7-5.2,6.7-9.3v-77.3c0,0,0,0,0,0l45.5-62.6c2.4-3.3,2.4-8.1,0-11.5l-45.4-62.6c0,0,0,0,0,0v-77.3\n                c0-4.1-2.8-8-6.7-9.3l-73.5-23.9c0,0,0,0,0,0l-45.5-62.6c-1.8-2.5-4.9-4-8-4c-1,0-2,0.2-2.9,0.5L258.9-650c0,0,0,0,0,0l-73.5-23.9\n                c-0.9-0.3-1.9-0.5-2.9-0.5c-3.1,0-6.2,1.5-8,4L129-607.8c0,0,0,0,0,0l-73.5,23.9c-3.9,1.3-6.7,5.2-6.7,9.3v77.3c0,0,0,0,0,0\n                L3.3-434.7c-2.4,3.3-2.4,8.1,0,11.5L48.7-360.7z M60.2-489.3c1.5-2.1,2.5-5.1,2.5-7.7v-74.5l70.9-23c2.5-0.8,5.1-2.7,6.6-4.8\n                l43.8-60.3l70.9,23c1.5,0.5,3,0.6,4.1,0.6c1,0,2.5-0.1,4.1-0.6l70.9-23l43.8,60.3c1.5,2.1,4.1,4,6.6,4.8l70.9,23v74.5\n                c0,2.6,1,5.6,2.5,7.7l43.8,60.3l-43.8,60.3c-1.5,2.1-2.5,5.1-2.5,7.7v74.5l-70.9,23c-2.5,0.8-5.1,2.7-6.6,4.8l-43.8,60.3l-70.9-23\n                c-1.5-0.5-3-0.6-4.1-0.6c-1,0-2.5,0.1-4.1,0.6l-70.9,23l-43.8-60.3c-1.5-2.1-4.1-4-6.6-4.8l-70.9-23V-361c0-2.6-1-5.6-2.5-7.7\n                L16.4-429L60.2-489.3z\"/>\n        <path d=\"M207.8-379.3c-7.2-0.4-11.6-0.9-13-1.4c-1.4-0.5-2.8-1.6-4-3.3c-1.2-1.7-1.9-3.4-1.9-5c0-1.6,0.9-5.4,2.6-11.4l34-114.1\n                h-4.3l-51.5,12.3l0.9,3.8c5-0.5,8.3-0.8,10-0.8c3.4,0,6.1,0.9,7.9,2.6c1.8,1.8,2.8,4.1,2.8,7.1c0,1.5-0.2,3.2-0.6,4.9\n                c-0.1,0.6-1.8,6.1-4.9,16.4l-20,67.8c-2.1,7.3-4.1,12.1-5.8,14.4c-1.7,2.3-3.9,3.9-6.6,4.9c-2.7,1-7.4,1.6-14.3,1.7l-1.1,3.6h68.7\n                L207.8-379.3z\"/>\n        <path d=\"M253.2-377.6c-3.1,0-6.4-1-9.8-3.1c-3.4-2.1-6.1-4.8-8.2-8.3c-2-3.5-4.2-9.3-6.6-17.4h-3.3l-5,33.4h3.8\n                c1.1-1.5,2.2-2.6,3.1-3c0.9-0.5,2.2-0.7,3.9-0.7c1.9,0,4.7,0.5,8.4,1.5c5.7,1.5,10.5,2.2,14.4,2.2c5.8,0,11.3-1.4,16.6-4.2\n                c5.3-2.8,9.3-6.6,12-11.3c2.7-4.7,4-9.7,4-14.9c0-4.9-1.1-9.4-3.4-13.7c-2.3-4.3-8.7-12.1-19.3-23.4c-3-3.2-5-5.7-5.8-7.6\n                c-0.9-1.9-1.3-3.9-1.3-6c0-2.5,1-4.7,3-6.5c2-1.8,4.5-2.7,7.6-2.7c5,0,9.7,2.3,14.1,6.9c4.4,4.6,6.8,10.9,7.4,18.8h3.8l4.5-31h-3.6\n                c-1.6,2.3-3.7,3.4-6.3,3.4c-1.8,0-4.2-0.4-7.2-1.1c-6-1.5-11.1-2.3-15.3-2.3c-9.5,0-16.9,2.4-22.2,7.3c-5.3,4.8-7.9,10.9-7.9,18.1\n                c0,4.3,0.9,8.1,2.6,11.5c2.5,4.6,7.6,11.2,15.5,19.7c5.7,6.2,9.3,10.8,10.9,13.7c1.6,2.9,2.4,6,2.4,9.1c0,3.2-1.2,6-3.6,8.3\n                C259.9-378.7,256.9-377.6,253.2-377.6z\"/>\n        <path d=\"M318.9-372.9c5.4,0,10.8-1.9,16.4-5.6c5.6-3.8,10.7-9.6,15.3-17.7l-3.6-2.2c-4.1,5.8-7.6,9.9-10.7,12.3\n                c-1.2,0.9-2.4,1.4-3.5,1.4c-0.7,0-1.4-0.2-2-0.7c-0.6-0.5-0.9-1-0.9-1.7c0-1.9,0.6-4.7,1.7-8.3l18.2-59h11.4l3.5-11.5h-11.2\n                l8.4-27.2h-5.4c-8.5,9.3-15.7,16.1-21.8,20.3c-6,4.2-13.1,7.9-21.3,11l-1.9,7.4h12.9l-17.1,54.4c-1.9,6.1-2.8,11.1-2.8,15\n                c0,3.5,1.3,6.4,3.8,8.7C310.8-374.1,314.3-372.9,318.9-372.9z\"/>\n        <polygon points=\"221.6,315.6 168.3,252.2 139.2,276.7 220.6,373.4 375.8,201.2 347.6,175.8    \"/>\n        <path d=\"M488,205.8c-7-9.7-13-28-13-40v-34.8c0-16.8-12.5-34.1-28.5-39.3l-33.1-10.7c-11.4-3.7-27-15-34-24.7l-20.4-28.1\n                c-7.4-10.2-21-16.8-34.6-16.8c-4.1,0-7.9,0.6-11.5,1.8L279.7,24c-5.4,1.8-13.1,2.8-21,2.8c-8,0-15.6-1-21-2.8l-33.1-10.7\n                c-3.6-1.2-7.5-1.8-11.5-1.8c-13.6,0-27.2,6.6-34.6,16.8l-20.4,28.1c-7,9.7-22.6,21-34,24.7L71,91.8c-16,5.2-28.5,22.4-28.5,39.3\n                v34.8c0,12-5.9,30.3-13,40L9,233.9c-9.9,13.6-9.9,34.9,0,48.5l20.4,28.1c7,9.7,13,28,13,40v34.8c0,16.8,12.5,34.1,28.5,39.3\n                l33.1,10.7c11.4,3.7,27,15,34,24.7l20.4,28.1c7.4,10.2,21,16.8,34.6,16.8c4.1,0,7.9-0.6,11.5-1.8l33.1-10.7\n                c5.4-1.8,13.1-2.8,21-2.8c8,0,15.6,1,21,2.8l33.1,10.7c3.6,1.2,7.5,1.8,11.5,1.8c13.6,0,27.2-6.6,34.6-16.8l20.4-28.1\n                c7-9.7,22.6-21,34-24.7l33.1-10.7c16-5.2,28.5-22.4,28.5-39.3v-34.8c0-12,6-30.3,13-40l20.4-28.1c9.9-13.6,9.9-34.9,0-48.5\n                L488,205.8z M496.2,273.7l-20.4,28.1c-8.9,12.2-15.9,33.7-15.9,48.8v34.8c0,10.2-8.5,21.8-18.2,25l-33.1,10.7\n                c-14.4,4.7-32.6,17.9-41.5,30.2l-20.4,28.1c-4.5,6.2-13.8,10.6-22.5,10.6c-2.5,0-4.8-0.3-6.9-1l-33.1-10.7\n                c-6.9-2.3-16-3.5-25.7-3.5c-9.6,0-18.7,1.2-25.7,3.5L200,488.9c-2.1,0.7-4.4,1-6.9,1c-8.7,0-18-4.3-22.5-10.6l-20.4-28.1\n                c-8.9-12.2-27.1-25.5-41.5-30.2l-33.1-10.7c-9.7-3.1-18.2-14.8-18.2-25v-34.8c0-15.1-7-36.6-15.9-48.8l-20.4-28.1\n                c-6-8.2-6-22.7,0-30.9l20.4-28.1c8.9-12.2,15.9-33.7,15.9-48.8v-34.8c0-10.2,8.5-21.8,18.2-25l33.1-10.7\n                c14.4-4.7,32.6-17.9,41.5-30.2l20.4-28.1c4.5-6.2,13.8-10.6,22.5-10.6c2.5,0,4.8,0.3,6.9,1l33.1,10.7c6.9,2.3,16,3.5,25.7,3.5\n                c9.6,0,18.7-1.2,25.7-3.5l33.1-10.7c2.1-0.7,4.4-1,6.9-1c8.7,0,18,4.3,22.5,10.6l20.4,28.1c8.9,12.2,27.1,25.5,41.5,30.2l33.1,10.7\n                c9.7,3.1,18.2,14.8,18.2,25v34.8c0,15.1,7,36.6,15.9,48.8l20.4,28.1C502.2,251,502.2,265.4,496.2,273.7z\"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-buyer-assurance\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M48.7-360.7C48.7-360.7,48.7-360.7,48.7-360.7l0,77.3c0,4.1,2.8,8,6.7,9.3l73.5,23.9c0,0,0,0,0,0l45.4,62.6\n                c1.8,2.5,4.9,4,8,4c1,0,2-0.2,2.9-0.5l73.5-23.9c0,0,0,0,0,0l73.5,23.9c0.9,0.3,1.9,0.5,2.9,0.5c3.1,0,6.2-1.5,8-4l45.5-62.6\n                c0,0,0,0,0,0l73.5-23.9c3.9-1.3,6.7-5.2,6.7-9.3v-77.3c0,0,0,0,0,0l45.5-62.6c2.4-3.3,2.4-8.1,0-11.5l-45.4-62.6c0,0,0,0,0,0v-77.3\n                c0-4.1-2.8-8-6.7-9.3l-73.5-23.9c0,0,0,0,0,0l-45.5-62.6c-1.8-2.5-4.9-4-8-4c-1,0-2,0.2-2.9,0.5L258.9-650c0,0,0,0,0,0l-73.5-23.9\n                c-0.9-0.3-1.9-0.5-2.9-0.5c-3.1,0-6.2,1.5-8,4L129-607.8c0,0,0,0,0,0l-73.5,23.9c-3.9,1.3-6.7,5.2-6.7,9.3v77.3c0,0,0,0,0,0\n                L3.3-434.7c-2.4,3.3-2.4,8.1,0,11.5L48.7-360.7z M60.2-489.3c1.5-2.1,2.5-5.1,2.5-7.7v-74.5l70.9-23c2.5-0.8,5.1-2.7,6.6-4.8\n                l43.8-60.3l70.9,23c1.5,0.5,3,0.6,4.1,0.6c1,0,2.5-0.1,4.1-0.6l70.9-23l43.8,60.3c1.5,2.1,4.1,4,6.6,4.8l70.9,23v74.5\n                c0,2.6,1,5.6,2.5,7.7l43.8,60.3l-43.8,60.3c-1.5,2.1-2.5,5.1-2.5,7.7v74.5l-70.9,23c-2.5,0.8-5.1,2.7-6.6,4.8l-43.8,60.3l-70.9-23\n                c-1.5-0.5-3-0.6-4.1-0.6c-1,0-2.5,0.1-4.1,0.6l-70.9,23l-43.8-60.3c-1.5-2.1-4.1-4-6.6-4.8l-70.9-23V-361c0-2.6-1-5.6-2.5-7.7\n                L16.4-429L60.2-489.3z\"/>\n        <path d=\"M207.8-379.3c-7.2-0.4-11.6-0.9-13-1.4c-1.4-0.5-2.8-1.6-4-3.3c-1.2-1.7-1.9-3.4-1.9-5c0-1.6,0.9-5.4,2.6-11.4l34-114.1\n                h-4.3l-51.5,12.3l0.9,3.8c5-0.5,8.3-0.8,10-0.8c3.4,0,6.1,0.9,7.9,2.6c1.8,1.8,2.8,4.1,2.8,7.1c0,1.5-0.2,3.2-0.6,4.9\n                c-0.1,0.6-1.8,6.1-4.9,16.4l-20,67.8c-2.1,7.3-4.1,12.1-5.8,14.4c-1.7,2.3-3.9,3.9-6.6,4.9c-2.7,1-7.4,1.6-14.3,1.7l-1.1,3.6h68.7\n                L207.8-379.3z\"/>\n        <path d=\"M253.2-377.6c-3.1,0-6.4-1-9.8-3.1c-3.4-2.1-6.1-4.8-8.2-8.3c-2-3.5-4.2-9.3-6.6-17.4h-3.3l-5,33.4h3.8\n                c1.1-1.5,2.2-2.6,3.1-3c0.9-0.5,2.2-0.7,3.9-0.7c1.9,0,4.7,0.5,8.4,1.5c5.7,1.5,10.5,2.2,14.4,2.2c5.8,0,11.3-1.4,16.6-4.2\n                c5.3-2.8,9.3-6.6,12-11.3c2.7-4.7,4-9.7,4-14.9c0-4.9-1.1-9.4-3.4-13.7c-2.3-4.3-8.7-12.1-19.3-23.4c-3-3.2-5-5.7-5.8-7.6\n                c-0.9-1.9-1.3-3.9-1.3-6c0-2.5,1-4.7,3-6.5c2-1.8,4.5-2.7,7.6-2.7c5,0,9.7,2.3,14.1,6.9c4.4,4.6,6.8,10.9,7.4,18.8h3.8l4.5-31h-3.6\n                c-1.6,2.3-3.7,3.4-6.3,3.4c-1.8,0-4.2-0.4-7.2-1.1c-6-1.5-11.1-2.3-15.3-2.3c-9.5,0-16.9,2.4-22.2,7.3c-5.3,4.8-7.9,10.9-7.9,18.1\n                c0,4.3,0.9,8.1,2.6,11.5c2.5,4.6,7.6,11.2,15.5,19.7c5.7,6.2,9.3,10.8,10.9,13.7c1.6,2.9,2.4,6,2.4,9.1c0,3.2-1.2,6-3.6,8.3\n                C259.9-378.7,256.9-377.6,253.2-377.6z\"/>\n        <path d=\"M318.9-372.9c5.4,0,10.8-1.9,16.4-5.6c5.6-3.8,10.7-9.6,15.3-17.7l-3.6-2.2c-4.1,5.8-7.6,9.9-10.7,12.3\n                c-1.2,0.9-2.4,1.4-3.5,1.4c-0.7,0-1.4-0.2-2-0.7c-0.6-0.5-0.9-1-0.9-1.7c0-1.9,0.6-4.7,1.7-8.3l18.2-59h11.4l3.5-11.5h-11.2\n                l8.4-27.2h-5.4c-8.5,9.3-15.7,16.1-21.8,20.3c-6,4.2-13.1,7.9-21.3,11l-1.9,7.4h12.9l-17.1,54.4c-1.9,6.1-2.8,11.1-2.8,15\n                c0,3.5,1.3,6.4,3.8,8.7C310.8-374.1,314.3-372.9,318.9-372.9z\"/>\n        <polygon points=\"221.6,315.6 168.3,252.2 139.2,276.7 220.6,373.4 375.8,201.2 347.6,175.8    \"/>\n        <path d=\"M488,205.8c-7-9.7-13-28-13-40v-34.8c0-16.8-12.5-34.1-28.5-39.3l-33.1-10.7c-11.4-3.7-27-15-34-24.7l-20.4-28.1\n                c-7.4-10.2-21-16.8-34.6-16.8c-4.1,0-7.9,0.6-11.5,1.8L279.7,24c-5.4,1.8-13.1,2.8-21,2.8c-8,0-15.6-1-21-2.8l-33.1-10.7\n                c-3.6-1.2-7.5-1.8-11.5-1.8c-13.6,0-27.2,6.6-34.6,16.8l-20.4,28.1c-7,9.7-22.6,21-34,24.7L71,91.8c-16,5.2-28.5,22.4-28.5,39.3\n                v34.8c0,12-5.9,30.3-13,40L9,233.9c-9.9,13.6-9.9,34.9,0,48.5l20.4,28.1c7,9.7,13,28,13,40v34.8c0,16.8,12.5,34.1,28.5,39.3\n                l33.1,10.7c11.4,3.7,27,15,34,24.7l20.4,28.1c7.4,10.2,21,16.8,34.6,16.8c4.1,0,7.9-0.6,11.5-1.8l33.1-10.7\n                c5.4-1.8,13.1-2.8,21-2.8c8,0,15.6,1,21,2.8l33.1,10.7c3.6,1.2,7.5,1.8,11.5,1.8c13.6,0,27.2-6.6,34.6-16.8l20.4-28.1\n                c7-9.7,22.6-21,34-24.7l33.1-10.7c16-5.2,28.5-22.4,28.5-39.3v-34.8c0-12,6-30.3,13-40l20.4-28.1c9.9-13.6,9.9-34.9,0-48.5\n                L488,205.8z M496.2,273.7l-20.4,28.1c-8.9,12.2-15.9,33.7-15.9,48.8v34.8c0,10.2-8.5,21.8-18.2,25l-33.1,10.7\n                c-14.4,4.7-32.6,17.9-41.5,30.2l-20.4,28.1c-4.5,6.2-13.8,10.6-22.5,10.6c-2.5,0-4.8-0.3-6.9-1l-33.1-10.7\n                c-6.9-2.3-16-3.5-25.7-3.5c-9.6,0-18.7,1.2-25.7,3.5L200,488.9c-2.1,0.7-4.4,1-6.9,1c-8.7,0-18-4.3-22.5-10.6l-20.4-28.1\n                c-8.9-12.2-27.1-25.5-41.5-30.2l-33.1-10.7c-9.7-3.1-18.2-14.8-18.2-25v-34.8c0-15.1-7-36.6-15.9-48.8l-20.4-28.1\n                c-6-8.2-6-22.7,0-30.9l20.4-28.1c8.9-12.2,15.9-33.7,15.9-48.8v-34.8c0-10.2,8.5-21.8,18.2-25l33.1-10.7\n                c14.4-4.7,32.6-17.9,41.5-30.2l20.4-28.1c4.5-6.2,13.8-10.6,22.5-10.6c2.5,0,4.8,0.3,6.9,1l33.1,10.7c6.9,2.3,16,3.5,25.7,3.5\n                c9.6,0,18.7-1.2,25.7-3.5l33.1-10.7c2.1-0.7,4.4-1,6.9-1c8.7,0,18,4.3,22.5,10.6l20.4,28.1c8.9,12.2,27.1,25.5,41.5,30.2l33.1,10.7\n                c9.7,3.1,18.2,14.8,18.2,25v34.8c0,15.1,7,36.6,15.9,48.8l20.4,28.1C502.2,251,502.2,265.4,496.2,273.7z\"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 297 */
@@ -32987,7 +32987,7 @@
   \**************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"cart\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path fill=\"none\" d=\"M193.6,211.8c-4.7,0-8.6,3.9-8.6,8.7s3.9,8.7,8.6,8.7s8.6-3.9,8.6-8.7S198.3,211.8,193.6,211.8z\"/>\n        <path fill=\"none\" d=\"M100.4,211.8c-4.7,0-8.6,3.9-8.6,8.7s3.9,8.7,8.6,8.7c4.7,0,8.6-3.9,8.6-8.7S105.1,211.8,100.4,211.8z\"/>\n        <polygon fill=\"none\" points=\"63.7,64 83.1,170 214.7,170 235.5,64    \"/>\n        <path d=\"M61.6,53L50.8,7H0v11h42.2l9.5,40.4L74.1,181h149.5l25.1-128H61.6z M214.7,170H83.1L63.7,64h171.7L214.7,170z\"/>\n        <path d=\"M100.4,199.8c-11.3,0-20.4,9.3-20.4,20.7s9.2,20.7,20.4,20.7s20.4-9.3,20.4-20.7S111.7,199.8,100.4,199.8z M100.4,229.1\n                c-4.7,0-8.6-3.9-8.6-8.7s3.9-8.7,8.6-8.7c4.7,0,8.6,3.9,8.6,8.7S105.1,229.1,100.4,229.1z\"/>\n        <path d=\"M193.6,199.8c-11.3,0-20.4,9.3-20.4,20.7s9.2,20.7,20.4,20.7s20.4-9.3,20.4-20.7S204.9,199.8,193.6,199.8z M193.6,229.1\n                c-4.7,0-8.6-3.9-8.6-8.7s3.9-8.7,8.6-8.7s8.6,3.9,8.6,8.7S198.3,229.1,193.6,229.1z\"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-cart\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path fill=\"none\" d=\"M193.6,211.8c-4.7,0-8.6,3.9-8.6,8.7s3.9,8.7,8.6,8.7s8.6-3.9,8.6-8.7S198.3,211.8,193.6,211.8z\"/>\n        <path fill=\"none\" d=\"M100.4,211.8c-4.7,0-8.6,3.9-8.6,8.7s3.9,8.7,8.6,8.7c4.7,0,8.6-3.9,8.6-8.7S105.1,211.8,100.4,211.8z\"/>\n        <polygon fill=\"none\" points=\"63.7,64 83.1,170 214.7,170 235.5,64    \"/>\n        <path d=\"M61.6,53L50.8,7H0v11h42.2l9.5,40.4L74.1,181h149.5l25.1-128H61.6z M214.7,170H83.1L63.7,64h171.7L214.7,170z\"/>\n        <path d=\"M100.4,199.8c-11.3,0-20.4,9.3-20.4,20.7s9.2,20.7,20.4,20.7s20.4-9.3,20.4-20.7S111.7,199.8,100.4,199.8z M100.4,229.1\n                c-4.7,0-8.6-3.9-8.6-8.7s3.9-8.7,8.6-8.7c4.7,0,8.6,3.9,8.6,8.7S105.1,229.1,100.4,229.1z\"/>\n        <path d=\"M193.6,199.8c-11.3,0-20.4,9.3-20.4,20.7s9.2,20.7,20.4,20.7s20.4-9.3,20.4-20.7S204.9,199.8,193.6,199.8z M193.6,229.1\n                c-4.7,0-8.6-3.9-8.6-8.7s3.9-8.7,8.6-8.7s8.6,3.9,8.6,8.7S198.3,229.1,193.6,229.1z\"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 299 */
@@ -32996,7 +32996,7 @@
   \*******************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"checkmark\" viewBox=\"0 0 420 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <polygon class=\"st0\" points=\"188.7,382.1 42,245.3 88.6,196.2 188.7,289.8 427.7,66.4 473.3,114.6 \"/>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-checkmark\" viewBox=\"0 0 420 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <polygon class=\"st0\" points=\"188.7,382.1 42,245.3 88.6,196.2 188.7,289.8 427.7,66.4 473.3,114.6 \"/>\n</svg>";
 
 /***/ },
 /* 300 */
@@ -33014,7 +33014,7 @@
   \****************************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"circle-arrow-right\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M259,518C116.2,518,0,401.8,0,259S116.2,0,259,0s259,116.2,259,259S401.8,518,259,518z M259,20.7\n                C127.6,20.7,20.7,127.6,20.7,259S127.6,497.3,259,497.3S497.3,390.4,497.3,259S390.4,20.7,259,20.7z\"/>\n    </g>\n    <g>\n        <polygon points=\"239.8,371.8 217.8,349.9 302.8,264.6 215.8,190.5 235.9,166.9 348.5,262.8\"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-circle-arrow-right\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M259,518C116.2,518,0,401.8,0,259S116.2,0,259,0s259,116.2,259,259S401.8,518,259,518z M259,20.7\n                C127.6,20.7,20.7,127.6,20.7,259S127.6,497.3,259,497.3S497.3,390.4,497.3,259S390.4,20.7,259,20.7z\"/>\n    </g>\n    <g>\n        <polygon points=\"239.8,371.8 217.8,349.9 302.8,264.6 215.8,190.5 235.9,166.9 348.5,262.8\"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 302 */
@@ -33023,7 +33023,7 @@
   \***************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"clock\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125,0.7C56.4,0.7,0.7,56.4,0.7,125S56.4,249.3,125,249.3S249.3,193.6,249.3,125S193.6,0.7,125,0.7z M125,239.3\n                     C62,239.3,10.7,188,10.7,125C10.7,62,62,10.7,125,10.7c63,0,114.3,51.3,114.3,114.3C239.3,188,188,239.3,125,239.3z\"/>\n        <polygon points=\"87.1,48.8 78,53.2 120.9,139 190,139 190,129 127.2,129\"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-clock\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125,0.7C56.4,0.7,0.7,56.4,0.7,125S56.4,249.3,125,249.3S249.3,193.6,249.3,125S193.6,0.7,125,0.7z M125,239.3\n                     C62,239.3,10.7,188,10.7,125C10.7,62,62,10.7,125,10.7c63,0,114.3,51.3,114.3,114.3C239.3,188,188,239.3,125,239.3z\"/>\n        <polygon points=\"87.1,48.8 78,53.2 120.9,139 190,139 190,129 127.2,129\"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 303 */
@@ -33032,7 +33032,7 @@
   \***************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"close\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M274.1,250L495,470.9c6.7,6.7,6.7,17.5,0,24.1s-17.5,6.7-24.1,0L250,274.1L29.1,495 c-6.7,6.7-17.5,6.7-24.1,0s-6.7-17.5,0-24.1L225.9,250L5,29.1C-1.7,22.4-1.7,11.6,5,5s17.5-6.7,24.1,0L250,225.9L470.9,5 c6.7-6.7,17.5-6.7,24.1,0s6.7,17.5,0,24.1L274.1,250z\"/>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-close\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M274.1,250L495,470.9c6.7,6.7,6.7,17.5,0,24.1s-17.5,6.7-24.1,0L250,274.1L29.1,495 c-6.7,6.7-17.5,6.7-24.1,0s-6.7-17.5,0-24.1L225.9,250L5,29.1C-1.7,22.4-1.7,11.6,5,5s17.5-6.7,24.1,0L250,225.9L470.9,5 c6.7-6.7,17.5-6.7,24.1,0s6.7,17.5,0,24.1L274.1,250z\"/>\n</svg>";
 
 /***/ },
 /* 304 */
@@ -33041,7 +33041,7 @@
   \************************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<!-- commuter benefits on careers -->\n<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"commuter-train\" viewBox=\"0 0 420 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M112.6,313.6c-2.5,2.5-3.8,5.9-3.8,9.2c0,3.4,1.3,6.7,3.8,9.2c2.5,2.5,5.9,3.8,9.2,3.8\n            c3.4,0,6.7-1.3,9.2-3.8s3.8-5.9,3.8-9.2c0-3.4-1.3-6.7-3.8-9.2C126.4,308.6,117.6,308.6,112.6,313.6z\"/>\n    <path d=\"M290.6,313.6c-2.5,2.5-3.8,5.9-3.8,9.2c0,3.4,1.3,6.7,4.2,9.2c2.5,2.5,5.9,3.8,9.2,3.8\n            c3.4,0,6.7-1.3,9.2-3.8s3.8-5.9,3.8-9.2c0-3.4-1.3-6.7-3.8-9.2C304.1,308.6,295.3,308.6,290.6,313.6z\"/>\n    <path d=\"M382.2,346.4V127.1c0-37.8-32.3-64.7-62.2-64.7h-83.2c-1.7-7.6-8.4-13.4-16-13.4h-25.2\n            c-7.6,0-13.9,5.9-16,13.4h-78.1c-37.8,0-63.4,26.9-63.4,64.7v219.2c0,23.9,21,54.6,52.9,60.5l-52.1,51.7c-1.7,1.7-1.7,4.6,0,6.7\n            l2.5,2.5c1.7,1.7,4.6,1.7,6.7,0l60.1-60.1h203.3l60.1,60.1c1.7,1.7,4.6,1.7,6.7,0l2.5-2.5c1.7-1.7,1.7-4.6,0-6.7l-52.5-51.2\n            C358.3,403.1,382.2,377.9,382.2,346.4z M320,394.2h-4.6c-1.3-0.4-2.5-0.4-3.8,0H107.5c-1.3-0.4-2.5-0.4-3.8,0h-2.1\n            c-23.1,0-50.4-25.2-50.4-48.3V127.1c0-32.3,22.7-51.7,50.4-51.7H181c2.5,5.9,8.4,10.1,14.7,10.1h25.2c6.3,0,12.2-4.2,14.7-10.1\n            h84.8c23.1,0,49.1,28.6,49.1,51.7v219.2C369.2,369,343.1,394.2,320,394.2z\"/>\n    <path d=\"M285.6,109.1H136.5c-28.1,0-50.8,22.7-50.8,50.8v89.5c0,7.1,5.9,12.2,13,12.2H323c7.1,0,13-5,13-12.2v-89.5\n            C336.4,131.7,313.3,109.1,285.6,109.1z M322.1,246.8H100v-86.9c0-13.4,16.8-35.3,30.2-35.3h160.9c13.4,0,31.1,21.8,31.1,35.3\n            L322.1,246.8L322.1,246.8z\"/>\n</svg>";
+	module.exports = "<!-- commuter benefits on careers -->\n<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-commuter-train\" viewBox=\"0 0 420 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M112.6,313.6c-2.5,2.5-3.8,5.9-3.8,9.2c0,3.4,1.3,6.7,3.8,9.2c2.5,2.5,5.9,3.8,9.2,3.8\n            c3.4,0,6.7-1.3,9.2-3.8s3.8-5.9,3.8-9.2c0-3.4-1.3-6.7-3.8-9.2C126.4,308.6,117.6,308.6,112.6,313.6z\"/>\n    <path d=\"M290.6,313.6c-2.5,2.5-3.8,5.9-3.8,9.2c0,3.4,1.3,6.7,4.2,9.2c2.5,2.5,5.9,3.8,9.2,3.8\n            c3.4,0,6.7-1.3,9.2-3.8s3.8-5.9,3.8-9.2c0-3.4-1.3-6.7-3.8-9.2C304.1,308.6,295.3,308.6,290.6,313.6z\"/>\n    <path d=\"M382.2,346.4V127.1c0-37.8-32.3-64.7-62.2-64.7h-83.2c-1.7-7.6-8.4-13.4-16-13.4h-25.2\n            c-7.6,0-13.9,5.9-16,13.4h-78.1c-37.8,0-63.4,26.9-63.4,64.7v219.2c0,23.9,21,54.6,52.9,60.5l-52.1,51.7c-1.7,1.7-1.7,4.6,0,6.7\n            l2.5,2.5c1.7,1.7,4.6,1.7,6.7,0l60.1-60.1h203.3l60.1,60.1c1.7,1.7,4.6,1.7,6.7,0l2.5-2.5c1.7-1.7,1.7-4.6,0-6.7l-52.5-51.2\n            C358.3,403.1,382.2,377.9,382.2,346.4z M320,394.2h-4.6c-1.3-0.4-2.5-0.4-3.8,0H107.5c-1.3-0.4-2.5-0.4-3.8,0h-2.1\n            c-23.1,0-50.4-25.2-50.4-48.3V127.1c0-32.3,22.7-51.7,50.4-51.7H181c2.5,5.9,8.4,10.1,14.7,10.1h25.2c6.3,0,12.2-4.2,14.7-10.1\n            h84.8c23.1,0,49.1,28.6,49.1,51.7v219.2C369.2,369,343.1,394.2,320,394.2z\"/>\n    <path d=\"M285.6,109.1H136.5c-28.1,0-50.8,22.7-50.8,50.8v89.5c0,7.1,5.9,12.2,13,12.2H323c7.1,0,13-5,13-12.2v-89.5\n            C336.4,131.7,313.3,109.1,285.6,109.1z M322.1,246.8H100v-86.9c0-13.4,16.8-35.3,30.2-35.3h160.9c13.4,0,31.1,21.8,31.1,35.3\n            L322.1,246.8L322.1,246.8z\"/>\n</svg>";
 
 /***/ },
 /* 305 */
@@ -33050,7 +33050,7 @@
   \**************************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"customer-support\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path class=\"st0\" d=\"M518.6,270.8h-44.4c-1.4-9.6-5.4-26-16.1-40.4c-0.5-0.6-11-14.2-27.5-20.2c13.1-8.4,21.8-23.1,21.8-39.8\n            c0-26.1-21.2-47.3-47.3-47.3s-47.3,21.2-47.3,47.3c0,16.5,8.5,31,21.3,39.5c-9.9,3.1-20.9,9-29.7,20.5\n            c-9.2-19.3-22.4-31.7-33.9-39.4c-8.1-5.4-16.2-9-23-11.4c20.8-11.7,34.9-33.9,34.9-59.4c0-37.5-30.5-68.1-68.1-68.1\n            c-37.5,0-68.1,30.5-68.1,68.1c0,25.1,13.7,47.1,34,58.9c-24.1,7.3-42.9,24.2-55.2,49.8c-0.2,0.4-0.3,0.7-0.5,1.1\n            c-8.7-11.2-19.6-17.1-29.4-20.1c12.8-8.5,21.3-23,21.3-39.5c0-26.1-21.2-47.3-47.3-47.3c-26.1,0-47.3,21.2-47.3,47.3\n            c0,16.7,8.7,31.5,21.9,39.9c-17.2,6.1-26.1,17.9-27.7,20.2c-10,12.5-14.2,30.2-15.8,40.3H0v14.4h31.2v170.4H487V285.2h31.5V270.8z\n             M405,137.6c18.1,0,32.9,14.8,32.9,32.9s-14.8,32.9-32.9,32.9s-32.9-14.8-32.9-32.9S386.9,137.6,405,137.6z M389,222.3\n            c7.6-1.5,27-0.8,32,0.2c15,3,25.5,16.5,25.6,16.6c8.1,10.9,11.5,23.5,13,31.7h-99.2c-0.9-8.6-2.5-16.4-4.5-23.5\n            C364.3,230.4,378.4,224.4,389,222.3z M205.7,120.3c0-29.6,24.1-53.7,53.7-53.7c29.6,0,53.7,24.1,53.7,53.7S288.9,174,259.3,174\n            C229.7,174,205.7,149.9,205.7,120.3z M249.2,189.5l0.8-0.1c0,0,4.8-0.8,11.3-0.8c3.8,0,7.5,0.3,10.9,0.8l0.4,0.1\n            c0.2,0,17.7,2,35.5,13.9c21.7,14.6,34.4,37.3,37.9,67.4H172.1c1.3-8.3,4.3-21.9,10.9-35.6C196.8,206.5,219,191.2,249.2,189.5z\n             M114.2,137.6c18.1,0,32.9,14.8,32.9,32.9s-14.8,32.9-32.9,32.9s-32.9-14.8-32.9-32.9S96,137.6,114.2,137.6z M72.5,239.3l0.4-0.6\n            c0.3-0.5,8.4-12.3,25.6-16.3c4.4-1,23.7-1.7,31.8-0.1c10.4,2,24.3,8,32.8,24.4c-3.1,9.8-4.7,18.4-5.5,24.1H59.9\n            C61.5,261.9,65.1,248.4,72.5,239.3z M472.6,441.2h-427V285.9h427V441.2z\"/>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-customer-support\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path class=\"st0\" d=\"M518.6,270.8h-44.4c-1.4-9.6-5.4-26-16.1-40.4c-0.5-0.6-11-14.2-27.5-20.2c13.1-8.4,21.8-23.1,21.8-39.8\n            c0-26.1-21.2-47.3-47.3-47.3s-47.3,21.2-47.3,47.3c0,16.5,8.5,31,21.3,39.5c-9.9,3.1-20.9,9-29.7,20.5\n            c-9.2-19.3-22.4-31.7-33.9-39.4c-8.1-5.4-16.2-9-23-11.4c20.8-11.7,34.9-33.9,34.9-59.4c0-37.5-30.5-68.1-68.1-68.1\n            c-37.5,0-68.1,30.5-68.1,68.1c0,25.1,13.7,47.1,34,58.9c-24.1,7.3-42.9,24.2-55.2,49.8c-0.2,0.4-0.3,0.7-0.5,1.1\n            c-8.7-11.2-19.6-17.1-29.4-20.1c12.8-8.5,21.3-23,21.3-39.5c0-26.1-21.2-47.3-47.3-47.3c-26.1,0-47.3,21.2-47.3,47.3\n            c0,16.7,8.7,31.5,21.9,39.9c-17.2,6.1-26.1,17.9-27.7,20.2c-10,12.5-14.2,30.2-15.8,40.3H0v14.4h31.2v170.4H487V285.2h31.5V270.8z\n             M405,137.6c18.1,0,32.9,14.8,32.9,32.9s-14.8,32.9-32.9,32.9s-32.9-14.8-32.9-32.9S386.9,137.6,405,137.6z M389,222.3\n            c7.6-1.5,27-0.8,32,0.2c15,3,25.5,16.5,25.6,16.6c8.1,10.9,11.5,23.5,13,31.7h-99.2c-0.9-8.6-2.5-16.4-4.5-23.5\n            C364.3,230.4,378.4,224.4,389,222.3z M205.7,120.3c0-29.6,24.1-53.7,53.7-53.7c29.6,0,53.7,24.1,53.7,53.7S288.9,174,259.3,174\n            C229.7,174,205.7,149.9,205.7,120.3z M249.2,189.5l0.8-0.1c0,0,4.8-0.8,11.3-0.8c3.8,0,7.5,0.3,10.9,0.8l0.4,0.1\n            c0.2,0,17.7,2,35.5,13.9c21.7,14.6,34.4,37.3,37.9,67.4H172.1c1.3-8.3,4.3-21.9,10.9-35.6C196.8,206.5,219,191.2,249.2,189.5z\n             M114.2,137.6c18.1,0,32.9,14.8,32.9,32.9s-14.8,32.9-32.9,32.9s-32.9-14.8-32.9-32.9S96,137.6,114.2,137.6z M72.5,239.3l0.4-0.6\n            c0.3-0.5,8.4-12.3,25.6-16.3c4.4-1,23.7-1.7,31.8-0.1c10.4,2,24.3,8,32.8,24.4c-3.1,9.8-4.7,18.4-5.5,24.1H59.9\n            C61.5,261.9,65.1,248.4,72.5,239.3z M472.6,441.2h-427V285.9h427V441.2z\"/>\n</svg>";
 
 /***/ },
 /* 306 */
@@ -33059,7 +33059,7 @@
   \*********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"do-not-edit\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 250 250\" style=\"enable-background:new 0 0 250 250;\" xml:space=\"preserve\">\n    <g>\n        <rect x=\"67.9\" y=\"97.3\" transform=\"matrix(0.7071 -0.7071 0.7071 0.7071 -44.1474 128.0603)\" class=\"do-not-edit-pencil\" width=\"129.1\" height=\"40.1\"/>\n        <polygon class=\"do-not-edit-pencil\" points=\"79.8,170.1 92.6,182.9 75.1,187.6 57.5,192.3 62.2,174.8 66.9,157.2\"/>\n    </g>\n    <g>\n        <path class=\"do-not-edit-circle\" d=\"M124.9,249.8C56,249.8,0,193.8,0,124.9S56,0,124.9,0s124.9,56,124.9,124.9S193.8,249.8,124.9,249.8z M42.7,52\n            c-17.3,19.4-27.8,45-27.8,73c0,60.6,49.3,109.9,109.9,109.9c28,0,53.5-10.5,73-27.8L42.7,52z M53.4,41.5l155,155\n            c16.5-19.2,26.5-44.2,26.5-71.5C234.9,64.3,185.5,15,124.9,15C97.6,15,72.6,25,53.4,41.5z\"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-do-not-edit\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n\t viewBox=\"0 0 250 250\" style=\"enable-background:new 0 0 250 250;\" xml:space=\"preserve\">\n    <g>\n        <rect x=\"67.9\" y=\"97.3\" transform=\"matrix(0.7071 -0.7071 0.7071 0.7071 -44.1474 128.0603)\" class=\"do-not-edit-pencil\" width=\"129.1\" height=\"40.1\"/>\n        <polygon class=\"do-not-edit-pencil\" points=\"79.8,170.1 92.6,182.9 75.1,187.6 57.5,192.3 62.2,174.8 66.9,157.2\"/>\n    </g>\n    <g>\n        <path class=\"do-not-edit-circle\" d=\"M124.9,249.8C56,249.8,0,193.8,0,124.9S56,0,124.9,0s124.9,56,124.9,124.9S193.8,249.8,124.9,249.8z M42.7,52\n            c-17.3,19.4-27.8,45-27.8,73c0,60.6,49.3,109.9,109.9,109.9c28,0,53.5-10.5,73-27.8L42.7,52z M53.4,41.5l155,155\n            c16.5-19.2,26.5-44.2,26.5-71.5C234.9,64.3,185.5,15,124.9,15C97.6,15,72.6,25,53.4,41.5z\"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 307 */
@@ -33077,7 +33077,7 @@
   \***************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"email\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M0,224V26h250v198H0z M239,213V37h-8.4L126.3,160.9L19.6,37H11v176H239z M126.1,144.3L216.4,37H34L126.1,144.3z\"/>\n</svg>\n";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-email\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M0,224V26h250v198H0z M239,213V37h-8.4L126.3,160.9L19.6,37H11v176H239z M126.1,144.3L216.4,37H34L126.1,144.3z\"/>\n</svg>\n";
 
 /***/ },
 /* 309 */
@@ -33095,7 +33095,7 @@
   \******************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"facebook\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path id=\"f_1_\" d=\"M141.7,250V135.8H180l5.7-44.3h-44.2V63.2c0-13,3.6-21.5,21.9-21.5H187v-40C183,1.1,169.1,0,152.8,0\n            c-34,0-57.2,20.8-57.2,58.7v32.8H57.6v44.3h38.3V250H141.7L141.7,250z\"/>\n</svg>\n";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-facebook\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path id=\"f_1_\" d=\"M141.7,250V135.8H180l5.7-44.3h-44.2V63.2c0-13,3.6-21.5,21.9-21.5H187v-40C183,1.1,169.1,0,152.8,0\n            c-34,0-57.2,20.8-57.2,58.7v32.8H57.6v44.3h38.3V250H141.7L141.7,250z\"/>\n</svg>\n";
 
 /***/ },
 /* 311 */
@@ -33113,7 +33113,7 @@
   \**************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"gear\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M464.8,195.9H459c-6.9,0-13.1-4.6-15.4-11.3c-2.8-8.2-6.2-16.4-10.1-24.3c-3.2-6.5-2.1-14.1,2.8-19l4.2-4.2 c14.1-14.1,14.1-37.1,0-51.2l-25.3-25.4c-14.1-14.1-37.1-14.1-51.2,0l-4.5,4.5c-4.8,4.8-12.6,6-19,2.9c-7.9-3.8-15.9-7.2-24-9.9 c-6.8-2.3-11.4-8.5-11.4-15.4v-6.3c0-20-16.2-36.2-36.2-36.2h-35.9c-20,0-36.2,16.2-36.2,36.2v7c0,6.9-4.5,13.1-11.3,15.4 c-8,2.8-15.8,6.1-23.4,9.8c-6.4,3.2-14.3,2-19.1-2.8l-5-5c-14.1-14.1-37.1-14.1-51.2,0L61.5,85.9c-14.1,14.1-14.1,37.1,0,51.2 l5.3,5.3c4.9,4.9,6,12.5,2.9,19c-3.7,7.5-6.9,15.3-9.6,23.1c-2.3,6.8-8.5,11.4-15.5,11.4h-7.5c-20,0-36.2,16.2-36.2,36.2v35.8 c0,20,16.2,36.2,36.2,36.2h7.5c6.9,0,13.1,4.6,15.4,11.4c2.7,7.8,5.9,15.6,9.6,23.1c3.2,6.5,2,14.1-2.9,19l-5.3,5.3 c-14.1,14.1-14.1,37.1,0,51.2l25.4,25.3c6.5,6.5,15.9,10.3,25.6,10.3c0,0,0,0,0,0c9.7,0,19-3.8,25.6-10.3l5-5 c4.9-4.8,12.7-6,19.1-2.8c7.6,3.7,15.4,7,23.4,9.8c6.8,2.3,11.3,8.5,11.3,15.4v7c0,20,16.2,36.2,36.2,36.2h35.9 c20,0,36.2-16.2,36.2-36.2v-6.3c0-6.9,4.6-13.1,11.4-15.4c8.1-2.7,16.1-6.1,23.9-9.9c6.4-3.1,14.2-1.9,19,2.9l4.5,4.5 c13.6,13.6,37.5,13.6,51.2,0l25.3-25.3c14.1-14.1,14.1-37.1,0-51.2l-4.2-4.2c-4.9-4.9-6-12.6-2.8-19.1c3.9-7.9,7.3-16.1,10.1-24.3 c2.3-6.8,8.5-11.3,15.4-11.3h5.8c20,0,36.2-16.2,36.2-36.2v-35.8C501,212.1,484.8,195.9,464.8,195.9z M415.1,305.7 c-2.4,7-5.3,13.9-8.6,20.6c-9,18.1-5.6,39.7,8.5,53.8l4.2,4.2c1.1,1.1,1.8,2.6,1.8,4.2c0,1.6-0.6,3.1-1.8,4.3l-25.3,25.3 c-1.1,1.1-2.6,1.7-4.3,1.7c0,0,0,0,0,0c-1.6,0-3.2-0.6-4.2-1.7l-4.5-4.5c-13.8-13.8-35.8-17.3-53.6-8.6c-6.7,3.3-13.6,6.1-20.4,8.4 c-19.1,6.5-31.9,24.1-31.9,44v6.3c0,3.3-2.7,6-6,6h-35.9c-3.3,0-6-2.7-6-6v-7c0-19.7-12.7-37.4-31.6-43.9 c-6.8-2.3-13.5-5.1-19.9-8.3c-6.6-3.2-13.9-5-21.1-5c-12.4,0-24,4.8-32.7,13.5l-5,5c-2.2,2.2-6.3,2.2-8.5,0l-25.4-25.3 c-2.3-2.3-2.3-6.2,0-8.5l5.3-5.3c14-14,17.5-35.5,8.6-53.6c-3.1-6.3-5.8-12.9-8.2-19.6c-6.5-19-24.2-31.7-44-31.7h-7.5 c-3.3,0-6-2.7-6-6v-35.8c0-3.3,2.7-6,6-6h7.5c19.8,0,37.5-12.8,44-31.7c2.3-6.7,5.1-13.3,8.2-19.7c8.8-18.1,5.4-39.6-8.6-53.6 l-5.3-5.3c-2.3-2.3-2.3-6.2,0-8.5l25.4-25.3c2.2-2.2,6.3-2.2,8.5,0l5,5c13.9,13.8,36,17.4,53.8,8.5c6.4-3.2,13.1-6,19.9-8.3 c18.9-6.6,31.6-24.2,31.6-43.9v-7c0-3.3,2.7-6,6-6h35.9c3.3,0,6,2.7,6,6v6.3c0,19.9,12.8,37.6,31.9,44c6.8,2.3,13.7,5.1,20.4,8.4 c17.8,8.7,39.8,5.2,53.6-8.6l4.5-4.5c2.2-2.2,6.3-2.2,8.5,0l25.3,25.3c1.1,1.1,1.8,2.7,1.8,4.3c0,1.6-0.6,3.1-1.8,4.3l-4.2,4.2 c-14.1,14.1-17.5,35.7-8.5,53.8c3.3,6.7,6.2,13.7,8.6,20.6c6.5,19,24.1,31.7,43.9,31.7h5.8c3.3,0,6,2.7,6,6v35.8c0,3.3-2.7,6-6,6 H459C439.2,273.9,421.5,286.7,415.1,305.7z\"/>\n    <path d=\"M296.8,121.3c-24.3-8.4-50.6-9.9-76-4.3c-50.7,11.2-90.7,51.3-102,102c-9.2,41.5,0.5,83.9,26.5,116.4 c26.1,32.5,64.9,51.1,106.5,51.1c10.3,0,20.7-1.2,31-3.4c50.7-11.3,90.7-51.3,102-102c9.2-41.5-0.5-83.9-26.6-116.4 C342.3,144.7,321,129.8,296.8,121.3z M355.4,274.5c-8.6,38.7-40.3,70.5-79,79c-40.7,9-81.8-5.2-107.4-37.1 c-20.3-25.3-27.8-58.5-20.6-91c8.6-38.7,40.3-70.5,79-79c8.1-1.8,16.4-2.7,24.5-2.7c32.4,0,62.6,14.5,82.9,39.8 C355.1,208.8,362.6,242,355.4,274.5z\"/>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-gear\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M464.8,195.9H459c-6.9,0-13.1-4.6-15.4-11.3c-2.8-8.2-6.2-16.4-10.1-24.3c-3.2-6.5-2.1-14.1,2.8-19l4.2-4.2 c14.1-14.1,14.1-37.1,0-51.2l-25.3-25.4c-14.1-14.1-37.1-14.1-51.2,0l-4.5,4.5c-4.8,4.8-12.6,6-19,2.9c-7.9-3.8-15.9-7.2-24-9.9 c-6.8-2.3-11.4-8.5-11.4-15.4v-6.3c0-20-16.2-36.2-36.2-36.2h-35.9c-20,0-36.2,16.2-36.2,36.2v7c0,6.9-4.5,13.1-11.3,15.4 c-8,2.8-15.8,6.1-23.4,9.8c-6.4,3.2-14.3,2-19.1-2.8l-5-5c-14.1-14.1-37.1-14.1-51.2,0L61.5,85.9c-14.1,14.1-14.1,37.1,0,51.2 l5.3,5.3c4.9,4.9,6,12.5,2.9,19c-3.7,7.5-6.9,15.3-9.6,23.1c-2.3,6.8-8.5,11.4-15.5,11.4h-7.5c-20,0-36.2,16.2-36.2,36.2v35.8 c0,20,16.2,36.2,36.2,36.2h7.5c6.9,0,13.1,4.6,15.4,11.4c2.7,7.8,5.9,15.6,9.6,23.1c3.2,6.5,2,14.1-2.9,19l-5.3,5.3 c-14.1,14.1-14.1,37.1,0,51.2l25.4,25.3c6.5,6.5,15.9,10.3,25.6,10.3c0,0,0,0,0,0c9.7,0,19-3.8,25.6-10.3l5-5 c4.9-4.8,12.7-6,19.1-2.8c7.6,3.7,15.4,7,23.4,9.8c6.8,2.3,11.3,8.5,11.3,15.4v7c0,20,16.2,36.2,36.2,36.2h35.9 c20,0,36.2-16.2,36.2-36.2v-6.3c0-6.9,4.6-13.1,11.4-15.4c8.1-2.7,16.1-6.1,23.9-9.9c6.4-3.1,14.2-1.9,19,2.9l4.5,4.5 c13.6,13.6,37.5,13.6,51.2,0l25.3-25.3c14.1-14.1,14.1-37.1,0-51.2l-4.2-4.2c-4.9-4.9-6-12.6-2.8-19.1c3.9-7.9,7.3-16.1,10.1-24.3 c2.3-6.8,8.5-11.3,15.4-11.3h5.8c20,0,36.2-16.2,36.2-36.2v-35.8C501,212.1,484.8,195.9,464.8,195.9z M415.1,305.7 c-2.4,7-5.3,13.9-8.6,20.6c-9,18.1-5.6,39.7,8.5,53.8l4.2,4.2c1.1,1.1,1.8,2.6,1.8,4.2c0,1.6-0.6,3.1-1.8,4.3l-25.3,25.3 c-1.1,1.1-2.6,1.7-4.3,1.7c0,0,0,0,0,0c-1.6,0-3.2-0.6-4.2-1.7l-4.5-4.5c-13.8-13.8-35.8-17.3-53.6-8.6c-6.7,3.3-13.6,6.1-20.4,8.4 c-19.1,6.5-31.9,24.1-31.9,44v6.3c0,3.3-2.7,6-6,6h-35.9c-3.3,0-6-2.7-6-6v-7c0-19.7-12.7-37.4-31.6-43.9 c-6.8-2.3-13.5-5.1-19.9-8.3c-6.6-3.2-13.9-5-21.1-5c-12.4,0-24,4.8-32.7,13.5l-5,5c-2.2,2.2-6.3,2.2-8.5,0l-25.4-25.3 c-2.3-2.3-2.3-6.2,0-8.5l5.3-5.3c14-14,17.5-35.5,8.6-53.6c-3.1-6.3-5.8-12.9-8.2-19.6c-6.5-19-24.2-31.7-44-31.7h-7.5 c-3.3,0-6-2.7-6-6v-35.8c0-3.3,2.7-6,6-6h7.5c19.8,0,37.5-12.8,44-31.7c2.3-6.7,5.1-13.3,8.2-19.7c8.8-18.1,5.4-39.6-8.6-53.6 l-5.3-5.3c-2.3-2.3-2.3-6.2,0-8.5l25.4-25.3c2.2-2.2,6.3-2.2,8.5,0l5,5c13.9,13.8,36,17.4,53.8,8.5c6.4-3.2,13.1-6,19.9-8.3 c18.9-6.6,31.6-24.2,31.6-43.9v-7c0-3.3,2.7-6,6-6h35.9c3.3,0,6,2.7,6,6v6.3c0,19.9,12.8,37.6,31.9,44c6.8,2.3,13.7,5.1,20.4,8.4 c17.8,8.7,39.8,5.2,53.6-8.6l4.5-4.5c2.2-2.2,6.3-2.2,8.5,0l25.3,25.3c1.1,1.1,1.8,2.7,1.8,4.3c0,1.6-0.6,3.1-1.8,4.3l-4.2,4.2 c-14.1,14.1-17.5,35.7-8.5,53.8c3.3,6.7,6.2,13.7,8.6,20.6c6.5,19,24.1,31.7,43.9,31.7h5.8c3.3,0,6,2.7,6,6v35.8c0,3.3-2.7,6-6,6 H459C439.2,273.9,421.5,286.7,415.1,305.7z\"/>\n    <path d=\"M296.8,121.3c-24.3-8.4-50.6-9.9-76-4.3c-50.7,11.2-90.7,51.3-102,102c-9.2,41.5,0.5,83.9,26.5,116.4 c26.1,32.5,64.9,51.1,106.5,51.1c10.3,0,20.7-1.2,31-3.4c50.7-11.3,90.7-51.3,102-102c9.2-41.5-0.5-83.9-26.6-116.4 C342.3,144.7,321,129.8,296.8,121.3z M355.4,274.5c-8.6,38.7-40.3,70.5-79,79c-40.7,9-81.8-5.2-107.4-37.1 c-20.3-25.3-27.8-58.5-20.6-91c8.6-38.7,40.3-70.5,79-79c8.1-1.8,16.4-2.7,24.5-2.7c32.4,0,62.6,14.5,82.9,39.8 C355.1,208.8,362.6,242,355.4,274.5z\"/>\n</svg>";
 
 /***/ },
 /* 313 */
@@ -33122,7 +33122,7 @@
   \***************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"globe\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125,0C56.3,0,0.3,55.9,0.3,124.7c0,68.7,55.9,124.7,124.7,124.7s124.7-55.9,124.7-124.7C249.7,55.9,193.7,0,125,0z\n            \t\t M8.3,124.7C8.3,60.3,60.7,8,125,8s116.7,52.3,116.7,116.7c0,23.1-6.7,44.6-18.4,62.8c-4-9-16.6-12.7-24.8-14.4\n            \t\tc-0.1-0.3-11.3-1.6-24-1.5c-9,0.1-9.6,0.9-19,1.5c-1.9,0.1-6.9-1.6-16.3-2c-2.5-0.1-6.6-4.2-6.6-4.2s-2.6-2.8-5.2-6.1\n            \t\tc-2.6-3.3-5.2-2.5-5.2-5.7s-3.5-7.4-7.8-9c-4.3-1.6-6.1,4.9-13,4.9c-6.9,0-5.1-10.2-1.7-19.6c2.6-7.4,14.7-2.5,14.7-2.5\n            \t\tc3.7,1.4,6.1,3.3,10.4,2.5c5.7-1.1,6.9,5.7,6.9,5.7c6.1,16.4,8.7-2.5,8.7-2.5l0.9-11.4c0,0,0.9-4.9,2.6-9s2.6-4.1,6.9-9\n            \t\ts2.6-5.7,6.1-10.6s14.7-4.9,14.7-4.9c13-1.6,2.6-13.1,2.6-13.1c-4.3-4.1-18.2-9.8-18.2-9.8C144.8,65,147.4,56,147.4,56\n            \t\tc0-5.7,12.1,0.8,12.1,0.8c18.2,0.8,7.8-10.6,7.8-10.6c-5.5-4.1-12-6.5-16.4-7.7c-3.1-0.9-9-2.8-10.6-3.2c-8.9-2.3-12,1.9-12,1.9\n            \t\tc-9.2,6.7-21.7,7.4-21.7,7.4c-5.2,0-20,1.6-20,1.6c-9.5,0-15.6,10.6-16.5,17.2s-6.9,27-6.9,27c-6.1,10.6-3.5,13.1-1.7,19.6\n            \t\tc1.7,6.5,2.6,9,3.5,17.2c0.4,4.1,3.5,7.8,6.4,10.4c2.9,2.7,5.8,8.6,6.3,10.5c2.3,7.3,9.5,11.2,9.5,11.2l6.6,2.8\n            \t\tc20.6,4.4,21.4,9.3,21.5,9.2c4.3,7.4,17.8,9.6,17.8,9.6c9.4,2.8,6.4,7.6,6.4,7.6c-6.6,11.6-8.5,16.7-4.6,28.1\n            \t\tc4.5,13,7.7,20,9.3,23.2c-6.3,1-12.7,1.6-19.3,1.6C60.7,241.3,8.3,189,8.3,124.7z M135.2,65c3.5,9.8,3.5,12.3,3.5,12.3\n            \t\ts-6.1-1.6-19.1-2.5c-13-0.8-9.5-7.4-9.5-7.4l5.2-4.1c0,0,7.8-4.9,16.5-8.2C140.4,51.9,131.8,55.2,135.2,65z\"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-globe\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125,0C56.3,0,0.3,55.9,0.3,124.7c0,68.7,55.9,124.7,124.7,124.7s124.7-55.9,124.7-124.7C249.7,55.9,193.7,0,125,0z\n            \t\t M8.3,124.7C8.3,60.3,60.7,8,125,8s116.7,52.3,116.7,116.7c0,23.1-6.7,44.6-18.4,62.8c-4-9-16.6-12.7-24.8-14.4\n            \t\tc-0.1-0.3-11.3-1.6-24-1.5c-9,0.1-9.6,0.9-19,1.5c-1.9,0.1-6.9-1.6-16.3-2c-2.5-0.1-6.6-4.2-6.6-4.2s-2.6-2.8-5.2-6.1\n            \t\tc-2.6-3.3-5.2-2.5-5.2-5.7s-3.5-7.4-7.8-9c-4.3-1.6-6.1,4.9-13,4.9c-6.9,0-5.1-10.2-1.7-19.6c2.6-7.4,14.7-2.5,14.7-2.5\n            \t\tc3.7,1.4,6.1,3.3,10.4,2.5c5.7-1.1,6.9,5.7,6.9,5.7c6.1,16.4,8.7-2.5,8.7-2.5l0.9-11.4c0,0,0.9-4.9,2.6-9s2.6-4.1,6.9-9\n            \t\ts2.6-5.7,6.1-10.6s14.7-4.9,14.7-4.9c13-1.6,2.6-13.1,2.6-13.1c-4.3-4.1-18.2-9.8-18.2-9.8C144.8,65,147.4,56,147.4,56\n            \t\tc0-5.7,12.1,0.8,12.1,0.8c18.2,0.8,7.8-10.6,7.8-10.6c-5.5-4.1-12-6.5-16.4-7.7c-3.1-0.9-9-2.8-10.6-3.2c-8.9-2.3-12,1.9-12,1.9\n            \t\tc-9.2,6.7-21.7,7.4-21.7,7.4c-5.2,0-20,1.6-20,1.6c-9.5,0-15.6,10.6-16.5,17.2s-6.9,27-6.9,27c-6.1,10.6-3.5,13.1-1.7,19.6\n            \t\tc1.7,6.5,2.6,9,3.5,17.2c0.4,4.1,3.5,7.8,6.4,10.4c2.9,2.7,5.8,8.6,6.3,10.5c2.3,7.3,9.5,11.2,9.5,11.2l6.6,2.8\n            \t\tc20.6,4.4,21.4,9.3,21.5,9.2c4.3,7.4,17.8,9.6,17.8,9.6c9.4,2.8,6.4,7.6,6.4,7.6c-6.6,11.6-8.5,16.7-4.6,28.1\n            \t\tc4.5,13,7.7,20,9.3,23.2c-6.3,1-12.7,1.6-19.3,1.6C60.7,241.3,8.3,189,8.3,124.7z M135.2,65c3.5,9.8,3.5,12.3,3.5,12.3\n            \t\ts-6.1-1.6-19.1-2.5c-13-0.8-9.5-7.4-9.5-7.4l5.2-4.1c0,0,7.8-4.9,16.5-8.2C140.4,51.9,131.8,55.2,135.2,65z\"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 314 */
@@ -33140,7 +33140,7 @@
   \**********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"heart-filled\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M29.3,129.8c-6.5-8.5-27.7-37.7-28.9-57.4C-0.8,52.3,4.1,36.2,15,24.6C30.1,8.5,51.4,6.8,59.9,6.8c1.3,0,2.2,0,2.8,0.1 c16.2,0.4,39.5,7.6,58.9,39.4l3.4,5.6l3.6-5.5c16.8-25.7,37.1-39,60.3-39.5c3,0,28.9-0.9,48,20.6c7.2,8.1,15.1,22.5,12.5,45.6 c-1.9,16.9-16.2,39.3-24.3,50.4c-11.8,16.1-88.5,108.3-100.2,122L29.3,129.8z\"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-heart-filled\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M29.3,129.8c-6.5-8.5-27.7-37.7-28.9-57.4C-0.8,52.3,4.1,36.2,15,24.6C30.1,8.5,51.4,6.8,59.9,6.8c1.3,0,2.2,0,2.8,0.1 c16.2,0.4,39.5,7.6,58.9,39.4l3.4,5.6l3.6-5.5c16.8-25.7,37.1-39,60.3-39.5c3,0,28.9-0.9,48,20.6c7.2,8.1,15.1,22.5,12.5,45.6 c-1.9,16.9-16.2,39.3-24.3,50.4c-11.8,16.1-88.5,108.3-100.2,122L29.3,129.8z\"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 316 */
@@ -33149,7 +33149,7 @@
   \************************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"heart-outlined\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M29.2,129.3c-6.5-8.5-27.7-37.7-28.9-57.4C-0.9,51.8,4,35.7,15,24.1C30,8.1,51.4,6.3,59.8,6.3c1.3,0,2.2,0,2.8,0.1 c16.2,0.4,39.5,7.6,58.9,39.4l3.4,5.6l3.6-5.5c16.8-25.7,37.1-39,60.3-39.5c3,0,28.9-0.9,48,20.6c7.2,8.1,15.3,21.4,12.5,45.6 c-1.9,16.9-12.5,34.8-22.5,48.4c-11.8,16.1-90.2,110.3-101.9,124L29.2,129.3z M59.8,16c-7.2,0-25.6,1.2-37.8,14.7 C12.6,41.2,8.5,54,10,71.3C10.7,80.2,15,90,23.6,104c6.4,10.4,12.6,18.7,13.3,19.6l88,106.4l83.8-101c0,0,11.1-13.7,18.1-25.5 c6.2-10.5,12-22.5,13-31.3c1.7-15.7-1.6-29.1-10.2-38.6c-17.9-19.8-40-17.3-41-17.3C163,16.6,141.4,36,124.4,73.8 c-2.3-6.2-5.9-14.6-11-22.9C99.8,28.5,82.1,16.4,62.1,16.1l0,0C61.4,16,60.6,16,59.8,16z\"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-heart-outlined\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M29.2,129.3c-6.5-8.5-27.7-37.7-28.9-57.4C-0.9,51.8,4,35.7,15,24.1C30,8.1,51.4,6.3,59.8,6.3c1.3,0,2.2,0,2.8,0.1 c16.2,0.4,39.5,7.6,58.9,39.4l3.4,5.6l3.6-5.5c16.8-25.7,37.1-39,60.3-39.5c3,0,28.9-0.9,48,20.6c7.2,8.1,15.3,21.4,12.5,45.6 c-1.9,16.9-12.5,34.8-22.5,48.4c-11.8,16.1-90.2,110.3-101.9,124L29.2,129.3z M59.8,16c-7.2,0-25.6,1.2-37.8,14.7 C12.6,41.2,8.5,54,10,71.3C10.7,80.2,15,90,23.6,104c6.4,10.4,12.6,18.7,13.3,19.6l88,106.4l83.8-101c0,0,11.1-13.7,18.1-25.5 c6.2-10.5,12-22.5,13-31.3c1.7-15.7-1.6-29.1-10.2-38.6c-17.9-19.8-40-17.3-41-17.3C163,16.6,141.4,36,124.4,73.8 c-2.3-6.2-5.9-14.6-11-22.9C99.8,28.5,82.1,16.4,62.1,16.1l0,0C61.4,16,60.6,16,59.8,16z\"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 317 */
@@ -33158,7 +33158,7 @@
   \**************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"home\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M245.1,120.7l-122-114L0.3,120l7.5,8.1l16.3-15V245h70v-73h57v73h70V113.2l16.6,15.5L245.1,120.7z M210,103v131h-48v-73H83 v73H35V102.9l88-81.2L210,103L210,103z\"/>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-home\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M245.1,120.7l-122-114L0.3,120l7.5,8.1l16.3-15V245h70v-73h57v73h70V113.2l16.6,15.5L245.1,120.7z M210,103v131h-48v-73H83 v73H35V102.9l88-81.2L210,103L210,103z\"/>\n</svg>";
 
 /***/ },
 /* 318 */
@@ -33167,7 +33167,7 @@
   \*********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"info-circle\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125.7,0.5C57.1,0.5,1.2,56.4,1.2,125s55.9,124.5,124.5,124.5S250.2,193.6,250.2,125S194.4,0.5,125.7,0.5z M125.7,239.5 c-63.1,0-114.5-51.4-114.5-114.5S62.6,10.5,125.7,10.5S240.2,61.9,240.2,125S188.8,239.5,125.7,239.5z\"/>\n        <path d=\"M134.8,187.9c-3.6,0-6.3-0.7-7.9-2c-1.6-1.3-2.4-3.8-2.4-7.5c0-1.5,0.2-3.5,0.7-5.9c0.5-2.4,1-4.9,1.7-7.4l10.2-40.8 c0.5-2,0.9-4,1.2-6s0.4-3.6,0.4-4.7c0-4.2-1.2-7.6-3.6-10.1c-2.4-2.5-6.2-3.7-11.4-3.7c-2.3,0-5.4,0.5-9.4,1.6 c-4,1.1-8.4,2.8-13.4,5l-1.4,6.1c1.2-0.3,3-0.7,5.3-1.2c2.3-0.4,4.2-0.7,5.6-0.7c3.6,0,6.1,0.6,7.2,1.8c1.2,1.2,1.8,3.6,1.8,7.2 c0,1.8-0.2,4-0.7,6.5c-0.5,2.6-1,5-1.5,7.2l-10.1,40.8c-0.6,2.4-1,4.5-1.2,6.1c-0.3,1.6-0.4,3.1-0.4,4.6c0,3.9,1.3,7.2,3.8,9.8 c2.6,2.7,6.4,4,11.5,4c2.5,0,5.5-0.5,9-1.4c3.5-0.9,8.2-2.6,14.1-4.9l1.4-6.1c-1.2,0.4-3,0.8-5.2,1.2 C137.8,187.8,136,187.9,134.8,187.9z\"/>\n        <path d=\"M139.7,51.2c-3.3,0-6.1,1.3-8.4,3.9c-2.4,2.6-3.6,5.7-3.6,9.2c0,3.3,1.2,6.3,3.6,8.9c2.4,2.6,5.2,3.9,8.4,3.9 c3.5,0,6.5-1.4,8.8-4.1c2.4-2.7,3.6-5.9,3.6-9.6c0-3.3-1.2-6.1-3.5-8.6C146.3,52.5,143.3,51.2,139.7,51.2z\"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-info-circle\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125.7,0.5C57.1,0.5,1.2,56.4,1.2,125s55.9,124.5,124.5,124.5S250.2,193.6,250.2,125S194.4,0.5,125.7,0.5z M125.7,239.5 c-63.1,0-114.5-51.4-114.5-114.5S62.6,10.5,125.7,10.5S240.2,61.9,240.2,125S188.8,239.5,125.7,239.5z\"/>\n        <path d=\"M134.8,187.9c-3.6,0-6.3-0.7-7.9-2c-1.6-1.3-2.4-3.8-2.4-7.5c0-1.5,0.2-3.5,0.7-5.9c0.5-2.4,1-4.9,1.7-7.4l10.2-40.8 c0.5-2,0.9-4,1.2-6s0.4-3.6,0.4-4.7c0-4.2-1.2-7.6-3.6-10.1c-2.4-2.5-6.2-3.7-11.4-3.7c-2.3,0-5.4,0.5-9.4,1.6 c-4,1.1-8.4,2.8-13.4,5l-1.4,6.1c1.2-0.3,3-0.7,5.3-1.2c2.3-0.4,4.2-0.7,5.6-0.7c3.6,0,6.1,0.6,7.2,1.8c1.2,1.2,1.8,3.6,1.8,7.2 c0,1.8-0.2,4-0.7,6.5c-0.5,2.6-1,5-1.5,7.2l-10.1,40.8c-0.6,2.4-1,4.5-1.2,6.1c-0.3,1.6-0.4,3.1-0.4,4.6c0,3.9,1.3,7.2,3.8,9.8 c2.6,2.7,6.4,4,11.5,4c2.5,0,5.5-0.5,9-1.4c3.5-0.9,8.2-2.6,14.1-4.9l1.4-6.1c-1.2,0.4-3,0.8-5.2,1.2 C137.8,187.8,136,187.9,134.8,187.9z\"/>\n        <path d=\"M139.7,51.2c-3.3,0-6.1,1.3-8.4,3.9c-2.4,2.6-3.6,5.7-3.6,9.2c0,3.3,1.2,6.3,3.6,8.9c2.4,2.6,5.2,3.9,8.4,3.9 c3.5,0,6.5-1.4,8.8-4.1c2.4-2.7,3.6-5.9,3.6-9.6c0-3.3-1.2-6.1-3.5-8.6C146.3,52.5,143.3,51.2,139.7,51.2z\"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 319 */
@@ -33176,7 +33176,7 @@
   \*******************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"instagram\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path  d=\"M32.2,0h186c17.6,0,32.1,14.5,32.1,32.2v186c0,17.7-14.5,32.1-32.1,32.1h-186\n            C14.5,250.2,0,235.7,0,218.1v-186C0,14.5,14.5,0,32.2,0 M182.3,27.9c-6.2,0-11.3,5.1-11.3,11.3v27c0,6.2,5.1,11.3,11.3,11.3h28.3\n            c6.2,0,11.3-5.1,11.3-11.3v-27c0-6.2-5.1-11.3-11.3-11.3H182.3z M221.9,105.8h-22c2.1,6.8,3.2,14,3.2,21.5\n            c0,41.7-34.8,75.3-77.8,75.3s-77.8-33.7-77.8-75.3c0-7.5,1.1-14.7,3.2-21.5H27.7v105.7c0,5.5,4.5,10,10,10h174.2\n            c5.5,0,10-4.5,10-10V105.8z M125.3,75.9c-27.8,0-50.2,21.8-50.2,48.6s22.4,48.7,50.2,48.7s50.2-21.8,50.2-48.7\n            S153.1,75.9,125.3,75.9\"/>\n</svg>\n";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-instagram\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path  d=\"M32.2,0h186c17.6,0,32.1,14.5,32.1,32.2v186c0,17.7-14.5,32.1-32.1,32.1h-186\n            C14.5,250.2,0,235.7,0,218.1v-186C0,14.5,14.5,0,32.2,0 M182.3,27.9c-6.2,0-11.3,5.1-11.3,11.3v27c0,6.2,5.1,11.3,11.3,11.3h28.3\n            c6.2,0,11.3-5.1,11.3-11.3v-27c0-6.2-5.1-11.3-11.3-11.3H182.3z M221.9,105.8h-22c2.1,6.8,3.2,14,3.2,21.5\n            c0,41.7-34.8,75.3-77.8,75.3s-77.8-33.7-77.8-75.3c0-7.5,1.1-14.7,3.2-21.5H27.7v105.7c0,5.5,4.5,10,10,10h174.2\n            c5.5,0,10-4.5,10-10V105.8z M125.3,75.9c-27.8,0-50.2,21.8-50.2,48.6s22.4,48.7,50.2,48.7s50.2-21.8,50.2-48.7\n            S153.1,75.9,125.3,75.9\"/>\n</svg>\n";
 
 /***/ },
 /* 320 */
@@ -33185,7 +33185,7 @@
   \****************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"iphone\" viewBox=\"0 0 241.7 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M210.2,0H31.8C14.2,0,0,13.6,0,30.2v439.6C0,486.4,14.2,500,31.6,500H210c17.5,0,31.6-13.6,31.6-30.2V30.2 C241.8,13.6,227.6,0,210.2,0z M120.7,21.8c3.9,0,7,3.1,7,7s-3.1,7-7,7c-3.9,0-7-3.1-7-7S116.9,21.8,120.7,21.8z M95.9,49.7h49.7 c2.3,0,4.2,2.3,4.2,5s-1.9,5-4.2,5H95.9c-2.3,0-4.2-2.3-4.2-5S93.6,49.7,95.9,49.7z M119.5,476.2c-13.4,0-24.4-10.9-24.4-24.4 c0-13.4,10.9-24.4,24.4-24.4s24.4,10.9,24.4,24.4C143.9,465.3,133.1,476.2,119.5,476.2z M214.9,404H26.3V81.7h188.6L214.9,404 L214.9,404z\" />\n</svg>\n";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-iphone\" viewBox=\"0 0 241.7 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M210.2,0H31.8C14.2,0,0,13.6,0,30.2v439.6C0,486.4,14.2,500,31.6,500H210c17.5,0,31.6-13.6,31.6-30.2V30.2 C241.8,13.6,227.6,0,210.2,0z M120.7,21.8c3.9,0,7,3.1,7,7s-3.1,7-7,7c-3.9,0-7-3.1-7-7S116.9,21.8,120.7,21.8z M95.9,49.7h49.7 c2.3,0,4.2,2.3,4.2,5s-1.9,5-4.2,5H95.9c-2.3,0-4.2-2.3-4.2-5S93.6,49.7,95.9,49.7z M119.5,476.2c-13.4,0-24.4-10.9-24.4-24.4 c0-13.4,10.9-24.4,24.4-24.4s24.4,10.9,24.4,24.4C143.9,465.3,133.1,476.2,119.5,476.2z M214.9,404H26.3V81.7h188.6L214.9,404 L214.9,404z\" />\n</svg>\n";
 
 /***/ },
 /* 321 */
@@ -33194,7 +33194,7 @@
   \******************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"linkedin\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M463,0H36.9C16.5,0,0,16.2,0,36.1v427.9C0,483.8,16.5,500,36.9,500H463c20.4,0,37-16.2,37-36.1V36.1C500,16.2,483.3,0,463,0 z M148.3,426.1H74.2V187.5h74.2V426.1z M111.2,154.9c-23.8,0-43-19.3-43-43s19.3-43,43-43s43,19.3,43,43S134.9,154.9,111.2,154.9z M426.1,426.1h-74.2V310c0-27.6-0.5-63.2-38.6-63.2c-38.6,0-44.5,30.1-44.5,61.3v118.1h-74V187.5h71.1v32.6h1 c9.9-18.8,34-38.6,70.1-38.6c75.1,0,88.9,49.4,88.9,113.7v130.8H426.1z\" />\n</svg>\n";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-linkedin\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M463,0H36.9C16.5,0,0,16.2,0,36.1v427.9C0,483.8,16.5,500,36.9,500H463c20.4,0,37-16.2,37-36.1V36.1C500,16.2,483.3,0,463,0 z M148.3,426.1H74.2V187.5h74.2V426.1z M111.2,154.9c-23.8,0-43-19.3-43-43s19.3-43,43-43s43,19.3,43,43S134.9,154.9,111.2,154.9z M426.1,426.1h-74.2V310c0-27.6-0.5-63.2-38.6-63.2c-38.6,0-44.5,30.1-44.5,61.3v118.1h-74V187.5h71.1v32.6h1 c9.9-18.8,34-38.6,70.1-38.6c75.1,0,88.9,49.4,88.9,113.7v130.8H426.1z\" />\n</svg>\n";
 
 /***/ },
 /* 322 */
@@ -33212,7 +33212,7 @@
   \*****************************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"lock-with-checkmark\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path class=\"st0\" d=\"M423.3,241v-70.8l0-0.4c-0.1-1.9-2.5-47.3-15.4-71.1c-7.9-14.6-20.8-36.1-41.3-54.7\n                C344.7,24.3,317.6,11,286,4.7c-5.3-1.1-17.8-2.2-30.6-2.2c-10.4,0-19.2,0.7-26.3,2.1c-30.7,6.2-87,26.1-119,90.5\n                c-16.6,33.5-16,81.1-16,81.6c0.3,14.7,0.1,21.4,0,31.6c-0.1,7.6-0.3,16.9-0.3,32.7H43.5v274.3l427.5,0.2V241H423.3z M108.2,176.5\n                c-0.2-12.3,2-49.9,14.5-75.1c29.3-59,81-77.3,109.2-83c6.1-1.2,14.2-1.9,23.5-1.9c12.5,0,24,1.1,27.8,1.9\n                c64.8,13,94.1,53.4,112.3,87c11,20.4,13.6,62,13.8,65v71.2h-60.9L348,171l0-0.6c-4.8-48.2-27.3-71.3-45.4-82.1\n                c-19.2-11.5-37.3-12-39.1-12c-48.9-1.3-72.4,25.5-83.5,47.9c-11.5,23.1-12.1,46-12.1,47l0,70.5h-60.1c0-16,0.2-25.3,0.3-33\n                C108.4,198.7,108.5,191.5,108.2,176.5z M181.9,241v-69.7c0-1.2,0.9-21.6,10.8-41.4c13.2-26.4,35.9-39.7,67.4-39.7c1,0,2,0,3,0\n                l0.2,0c0.2,0,15.5,0.1,32,10c22.3,13.3,35.3,37.3,38.7,71.2l0.4,69.6H181.9z M57.5,501.3V255.6h399.5l-0.3,245.6L57.5,501.3z\"/>\n        <polygon class=\"st0\" points=\"229.5,404.3 196.4,368.5 174.3,388.8 229,448 338.8,334.5 317.2,313.6    \"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-lock-with-checkmark\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path class=\"st0\" d=\"M423.3,241v-70.8l0-0.4c-0.1-1.9-2.5-47.3-15.4-71.1c-7.9-14.6-20.8-36.1-41.3-54.7\n                C344.7,24.3,317.6,11,286,4.7c-5.3-1.1-17.8-2.2-30.6-2.2c-10.4,0-19.2,0.7-26.3,2.1c-30.7,6.2-87,26.1-119,90.5\n                c-16.6,33.5-16,81.1-16,81.6c0.3,14.7,0.1,21.4,0,31.6c-0.1,7.6-0.3,16.9-0.3,32.7H43.5v274.3l427.5,0.2V241H423.3z M108.2,176.5\n                c-0.2-12.3,2-49.9,14.5-75.1c29.3-59,81-77.3,109.2-83c6.1-1.2,14.2-1.9,23.5-1.9c12.5,0,24,1.1,27.8,1.9\n                c64.8,13,94.1,53.4,112.3,87c11,20.4,13.6,62,13.8,65v71.2h-60.9L348,171l0-0.6c-4.8-48.2-27.3-71.3-45.4-82.1\n                c-19.2-11.5-37.3-12-39.1-12c-48.9-1.3-72.4,25.5-83.5,47.9c-11.5,23.1-12.1,46-12.1,47l0,70.5h-60.1c0-16,0.2-25.3,0.3-33\n                C108.4,198.7,108.5,191.5,108.2,176.5z M181.9,241v-69.7c0-1.2,0.9-21.6,10.8-41.4c13.2-26.4,35.9-39.7,67.4-39.7c1,0,2,0,3,0\n                l0.2,0c0.2,0,15.5,0.1,32,10c22.3,13.3,35.3,37.3,38.7,71.2l0.4,69.6H181.9z M57.5,501.3V255.6h399.5l-0.3,245.6L57.5,501.3z\"/>\n        <polygon class=\"st0\" points=\"229.5,404.3 196.4,368.5 174.3,388.8 229,448 338.8,334.5 317.2,313.6    \"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 324 */
@@ -33230,7 +33230,7 @@
   \*********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"logo-no-reg\" viewBox=\"0 0 100 25\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path class=\"st0\" d=\"M15.7,0L9.6,20.2c-0.3,1.1-0.5,1.7-0.5,2c0,0.3,0.1,0.6,0.3,0.9c0.2,0.3,0.5,0.5,0.7,0.6\n                c0.3,0.1,1,0.2,2.3,0.2l-0.2,0.6H0l0.2-0.6c1.2,0,2.1-0.1,2.6-0.3c0.5-0.2,0.9-0.5,1.2-0.9c0.3-0.4,0.6-1.2,1-2.5L8.5,8.2\n                c0.6-1.8,0.9-2.8,0.9-2.9C9.5,5,9.5,4.7,9.5,4.5C9.5,4,9.4,3.5,9,3.2C8.7,2.9,8.2,2.8,7.6,2.8c-0.3,0-0.9,0-1.8,0.1L5.7,2.2\n                L14.9,0H15.7z\"/>\n        <path class=\"st0\" d=\"M28.5,8.1l-0.8,5.5H27c-0.1-1.4-0.5-2.5-1.3-3.3c-0.8-0.8-1.6-1.2-2.5-1.2c-0.5,0-1,0.2-1.4,0.5\n                c-0.4,0.3-0.5,0.7-0.5,1.1c0,0.4,0.1,0.7,0.2,1.1c0.2,0.3,0.5,0.8,1,1.3c1.9,2,3,3.4,3.4,4.1c0.4,0.8,0.6,1.6,0.6,2.4\n                c0,0.9-0.2,1.8-0.7,2.6c-0.5,0.8-1.2,1.5-2.1,2c-1,0.5-1.9,0.7-3,0.7c-0.7,0-1.6-0.1-2.6-0.4c-0.7-0.2-1.2-0.3-1.5-0.3\n                c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.3-0.6,0.5h-0.7l0.9-5.9h0.6c0.4,1.4,0.8,2.5,1.2,3.1c0.4,0.6,0.9,1.1,1.5,1.5\n                c0.6,0.4,1.2,0.5,1.8,0.5c0.7,0,1.2-0.2,1.6-0.6c0.4-0.4,0.6-0.9,0.6-1.5c0-0.6-0.1-1.1-0.4-1.6c-0.3-0.5-0.9-1.3-1.9-2.4\n                c-1.4-1.5-2.3-2.7-2.8-3.5c-0.3-0.6-0.5-1.3-0.5-2c0-1.3,0.5-2.3,1.4-3.2c0.9-0.9,2.3-1.3,4-1.3c0.7,0,1.7,0.1,2.7,0.4\n                c0.5,0.1,1,0.2,1.3,0.2c0.5,0,0.8-0.2,1.1-0.6H28.5z\"/>\n        <path class=\"st0\" d=\"M40,3.8l-1.5,4.8h2l-0.6,2h-2L34.6,21c-0.2,0.6-0.3,1.1-0.3,1.5c0,0.1,0.1,0.2,0.2,0.3\n                c0.1,0.1,0.2,0.1,0.4,0.1c0.2,0,0.4-0.1,0.6-0.2c0.5-0.4,1.2-1.1,1.9-2.2l0.6,0.4c-0.8,1.4-1.7,2.5-2.7,3.1c-1,0.7-2,1-2.9,1\n                c-0.8,0-1.4-0.2-1.9-0.6c-0.4-0.4-0.7-0.9-0.7-1.5c0-0.7,0.2-1.6,0.5-2.6l3.1-9.6H31l0.3-1.3c1.5-0.6,2.7-1.2,3.8-1.9\n                c1.1-0.7,2.4-1.9,3.9-3.6H40z\"/>\n        <path class=\"st0\" d=\"M59.6,0l-6.1,19.8C53.2,21,53,21.7,53,22c0,0.1,0,0.2,0.1,0.3c0.1,0.1,0.2,0.1,0.3,0.1c0.2,0,0.4-0.1,0.7-0.3\n                c0.4-0.3,1-1,1.6-1.9l0.6,0.3c-1.7,2.9-3.5,4.4-5.6,4.4c-0.7,0-1.3-0.2-1.7-0.6c-0.4-0.4-0.6-0.8-0.6-1.4c0-0.6,0.2-1.3,0.5-2.4\n                l0.6-1.8c-1.5,2.6-2.8,4.3-3.9,5.2c-0.8,0.6-1.7,1-2.4,1c-0.9,0-1.7-0.4-2.3-1.1S40,22.2,40,20.8c0-1.8,0.4-3.5,1.2-5.2\n                c0.8-1.7,1.7-3.1,2.8-4.3c1-1.1,2-2,3-2.4c0.9-0.5,1.9-0.7,2.8-0.7c0.5,0,0.9,0.1,1.3,0.3c0.4,0.2,0.8,0.6,1.3,1.1l1.4-4.4\n                c0.4-1.1,0.5-1.9,0.5-2.4c0-0.3-0.1-0.5-0.4-0.7c-0.2-0.2-0.6-0.3-1-0.3c-0.2,0-0.4,0-0.7,0.1l0.2-0.7L58.5,0H59.6z M51.6,11.2\n                c0-0.7-0.1-1.2-0.4-1.6c-0.3-0.3-0.6-0.5-1-0.5c-0.4,0-0.8,0.2-1.3,0.6c-0.9,0.8-1.8,2.3-2.7,4.6c-0.9,2.3-1.4,4.2-1.4,5.8\n                c0,0.6,0.1,1,0.3,1.3c0.2,0.3,0.4,0.4,0.7,0.4c0.4,0,0.9-0.2,1.3-0.6c1-0.9,2.1-2.4,3.1-4.6C51.1,14.3,51.6,12.5,51.6,11.2z\"/>\n        <path class=\"st0\" d=\"M66,0c0.7,0,1.4,0.3,1.9,0.8c0.5,0.5,0.8,1.1,0.8,1.8c0,0.7-0.3,1.3-0.8,1.8C67.4,5,66.8,5.2,66,5.2\n                c-0.7,0-1.3-0.3-1.9-0.8c-0.5-0.5-0.8-1.1-0.8-1.8c0-0.7,0.3-1.3,0.8-1.8C64.7,0.3,65.3,0,66,0z M67.5,8.1l-4,12.5\n                c-0.2,0.7-0.3,1.2-0.3,1.4c0,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.2,0.2,0.3,0.2c0.2,0,0.4-0.1,0.6-0.3c0.5-0.5,1.2-1.3,1.9-2.5l0.6,0.4\n                C65,23.4,63,25,61,25c-0.8,0-1.4-0.2-1.9-0.6c-0.5-0.4-0.7-1-0.7-1.6c0-0.4,0.1-1,0.3-1.7l2.8-8.5c0.3-0.8,0.4-1.4,0.4-1.8\n                c0-0.3-0.1-0.5-0.4-0.7c-0.2-0.2-0.6-0.3-1-0.3c-0.2,0-0.4,0-0.7,0l0.2-0.7l6.3-1H67.5z\"/>\n        <path class=\"st0\" d=\"M80,0l-3.2,10.6c0.9-1,1.7-1.7,2.3-2c0.6-0.3,1.3-0.5,2-0.5c1.4,0,2.4,0.5,3.1,1.5c0.7,1,1,2.2,1,3.5\n                c0,3.2-1.1,6-3.4,8.5c-2,2.2-4.4,3.3-7,3.3c-1.9,0-4-0.6-6.1-1.7l5.6-18.6c0.3-0.9,0.4-1.5,0.4-1.9c0-0.3-0.1-0.5-0.4-0.7\n                c-0.4-0.3-0.9-0.4-1.6-0.3l0.2-0.7L78.9,0H80z M73,23.5c0.5,0.4,1,0.5,1.5,0.5c0.6,0,1.1-0.1,1.5-0.4c0.7-0.4,1.3-1.1,2.1-2.2\n                c0.7-1.1,1.3-2.3,1.8-3.8c0.5-1.5,0.7-3,0.7-4.4c0-0.8-0.2-1.5-0.5-1.9c-0.4-0.4-0.8-0.7-1.2-0.7c-0.8,0-1.5,0.4-2,1.2\n                c-0.4,0.5-0.8,1.7-1.3,3.4L73,23.5z\"/>\n        <path class=\"st0\" d=\"M100,8.1l-0.8,5.5h-0.7c-0.1-1.4-0.5-2.5-1.3-3.3c-0.8-0.8-1.6-1.2-2.5-1.2c-0.5,0-1,0.2-1.4,0.5\n                c-0.4,0.3-0.5,0.7-0.5,1.1c0,0.4,0.1,0.7,0.2,1.1c0.2,0.3,0.5,0.8,1,1.3c1.9,2,3,3.4,3.4,4.1c0.4,0.8,0.6,1.6,0.6,2.4\n                c0,0.9-0.2,1.8-0.7,2.6c-0.5,0.8-1.2,1.5-2.1,2c-1,0.5-1.9,0.7-3,0.7c-0.7,0-1.6-0.1-2.6-0.4c-0.7-0.2-1.2-0.3-1.5-0.3\n                c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.3-0.6,0.5h-0.7l0.9-5.9h0.6c0.4,1.4,0.8,2.5,1.2,3.1c0.4,0.6,0.9,1.1,1.5,1.5\n                c0.6,0.4,1.2,0.5,1.8,0.5c0.7,0,1.2-0.2,1.6-0.6c0.4-0.4,0.6-0.9,0.6-1.5c0-0.6-0.1-1.1-0.4-1.6c-0.3-0.5-0.9-1.3-1.9-2.4\n                c-1.4-1.5-2.3-2.7-2.8-3.5c-0.3-0.6-0.5-1.3-0.5-2c0-1.3,0.5-2.3,1.4-3.2c0.9-0.9,2.3-1.3,4-1.3c0.7,0,1.7,0.1,2.7,0.4\n                c0.5,0.1,1,0.2,1.3,0.2c0.5,0,0.8-0.2,1.1-0.6H100z\"/>\n    </g>\n</svg>\n";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-logo-no-reg\" viewBox=\"0 0 100 25\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path class=\"st0\" d=\"M15.7,0L9.6,20.2c-0.3,1.1-0.5,1.7-0.5,2c0,0.3,0.1,0.6,0.3,0.9c0.2,0.3,0.5,0.5,0.7,0.6\n                c0.3,0.1,1,0.2,2.3,0.2l-0.2,0.6H0l0.2-0.6c1.2,0,2.1-0.1,2.6-0.3c0.5-0.2,0.9-0.5,1.2-0.9c0.3-0.4,0.6-1.2,1-2.5L8.5,8.2\n                c0.6-1.8,0.9-2.8,0.9-2.9C9.5,5,9.5,4.7,9.5,4.5C9.5,4,9.4,3.5,9,3.2C8.7,2.9,8.2,2.8,7.6,2.8c-0.3,0-0.9,0-1.8,0.1L5.7,2.2\n                L14.9,0H15.7z\"/>\n        <path class=\"st0\" d=\"M28.5,8.1l-0.8,5.5H27c-0.1-1.4-0.5-2.5-1.3-3.3c-0.8-0.8-1.6-1.2-2.5-1.2c-0.5,0-1,0.2-1.4,0.5\n                c-0.4,0.3-0.5,0.7-0.5,1.1c0,0.4,0.1,0.7,0.2,1.1c0.2,0.3,0.5,0.8,1,1.3c1.9,2,3,3.4,3.4,4.1c0.4,0.8,0.6,1.6,0.6,2.4\n                c0,0.9-0.2,1.8-0.7,2.6c-0.5,0.8-1.2,1.5-2.1,2c-1,0.5-1.9,0.7-3,0.7c-0.7,0-1.6-0.1-2.6-0.4c-0.7-0.2-1.2-0.3-1.5-0.3\n                c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.3-0.6,0.5h-0.7l0.9-5.9h0.6c0.4,1.4,0.8,2.5,1.2,3.1c0.4,0.6,0.9,1.1,1.5,1.5\n                c0.6,0.4,1.2,0.5,1.8,0.5c0.7,0,1.2-0.2,1.6-0.6c0.4-0.4,0.6-0.9,0.6-1.5c0-0.6-0.1-1.1-0.4-1.6c-0.3-0.5-0.9-1.3-1.9-2.4\n                c-1.4-1.5-2.3-2.7-2.8-3.5c-0.3-0.6-0.5-1.3-0.5-2c0-1.3,0.5-2.3,1.4-3.2c0.9-0.9,2.3-1.3,4-1.3c0.7,0,1.7,0.1,2.7,0.4\n                c0.5,0.1,1,0.2,1.3,0.2c0.5,0,0.8-0.2,1.1-0.6H28.5z\"/>\n        <path class=\"st0\" d=\"M40,3.8l-1.5,4.8h2l-0.6,2h-2L34.6,21c-0.2,0.6-0.3,1.1-0.3,1.5c0,0.1,0.1,0.2,0.2,0.3\n                c0.1,0.1,0.2,0.1,0.4,0.1c0.2,0,0.4-0.1,0.6-0.2c0.5-0.4,1.2-1.1,1.9-2.2l0.6,0.4c-0.8,1.4-1.7,2.5-2.7,3.1c-1,0.7-2,1-2.9,1\n                c-0.8,0-1.4-0.2-1.9-0.6c-0.4-0.4-0.7-0.9-0.7-1.5c0-0.7,0.2-1.6,0.5-2.6l3.1-9.6H31l0.3-1.3c1.5-0.6,2.7-1.2,3.8-1.9\n                c1.1-0.7,2.4-1.9,3.9-3.6H40z\"/>\n        <path class=\"st0\" d=\"M59.6,0l-6.1,19.8C53.2,21,53,21.7,53,22c0,0.1,0,0.2,0.1,0.3c0.1,0.1,0.2,0.1,0.3,0.1c0.2,0,0.4-0.1,0.7-0.3\n                c0.4-0.3,1-1,1.6-1.9l0.6,0.3c-1.7,2.9-3.5,4.4-5.6,4.4c-0.7,0-1.3-0.2-1.7-0.6c-0.4-0.4-0.6-0.8-0.6-1.4c0-0.6,0.2-1.3,0.5-2.4\n                l0.6-1.8c-1.5,2.6-2.8,4.3-3.9,5.2c-0.8,0.6-1.7,1-2.4,1c-0.9,0-1.7-0.4-2.3-1.1S40,22.2,40,20.8c0-1.8,0.4-3.5,1.2-5.2\n                c0.8-1.7,1.7-3.1,2.8-4.3c1-1.1,2-2,3-2.4c0.9-0.5,1.9-0.7,2.8-0.7c0.5,0,0.9,0.1,1.3,0.3c0.4,0.2,0.8,0.6,1.3,1.1l1.4-4.4\n                c0.4-1.1,0.5-1.9,0.5-2.4c0-0.3-0.1-0.5-0.4-0.7c-0.2-0.2-0.6-0.3-1-0.3c-0.2,0-0.4,0-0.7,0.1l0.2-0.7L58.5,0H59.6z M51.6,11.2\n                c0-0.7-0.1-1.2-0.4-1.6c-0.3-0.3-0.6-0.5-1-0.5c-0.4,0-0.8,0.2-1.3,0.6c-0.9,0.8-1.8,2.3-2.7,4.6c-0.9,2.3-1.4,4.2-1.4,5.8\n                c0,0.6,0.1,1,0.3,1.3c0.2,0.3,0.4,0.4,0.7,0.4c0.4,0,0.9-0.2,1.3-0.6c1-0.9,2.1-2.4,3.1-4.6C51.1,14.3,51.6,12.5,51.6,11.2z\"/>\n        <path class=\"st0\" d=\"M66,0c0.7,0,1.4,0.3,1.9,0.8c0.5,0.5,0.8,1.1,0.8,1.8c0,0.7-0.3,1.3-0.8,1.8C67.4,5,66.8,5.2,66,5.2\n                c-0.7,0-1.3-0.3-1.9-0.8c-0.5-0.5-0.8-1.1-0.8-1.8c0-0.7,0.3-1.3,0.8-1.8C64.7,0.3,65.3,0,66,0z M67.5,8.1l-4,12.5\n                c-0.2,0.7-0.3,1.2-0.3,1.4c0,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.2,0.2,0.3,0.2c0.2,0,0.4-0.1,0.6-0.3c0.5-0.5,1.2-1.3,1.9-2.5l0.6,0.4\n                C65,23.4,63,25,61,25c-0.8,0-1.4-0.2-1.9-0.6c-0.5-0.4-0.7-1-0.7-1.6c0-0.4,0.1-1,0.3-1.7l2.8-8.5c0.3-0.8,0.4-1.4,0.4-1.8\n                c0-0.3-0.1-0.5-0.4-0.7c-0.2-0.2-0.6-0.3-1-0.3c-0.2,0-0.4,0-0.7,0l0.2-0.7l6.3-1H67.5z\"/>\n        <path class=\"st0\" d=\"M80,0l-3.2,10.6c0.9-1,1.7-1.7,2.3-2c0.6-0.3,1.3-0.5,2-0.5c1.4,0,2.4,0.5,3.1,1.5c0.7,1,1,2.2,1,3.5\n                c0,3.2-1.1,6-3.4,8.5c-2,2.2-4.4,3.3-7,3.3c-1.9,0-4-0.6-6.1-1.7l5.6-18.6c0.3-0.9,0.4-1.5,0.4-1.9c0-0.3-0.1-0.5-0.4-0.7\n                c-0.4-0.3-0.9-0.4-1.6-0.3l0.2-0.7L78.9,0H80z M73,23.5c0.5,0.4,1,0.5,1.5,0.5c0.6,0,1.1-0.1,1.5-0.4c0.7-0.4,1.3-1.1,2.1-2.2\n                c0.7-1.1,1.3-2.3,1.8-3.8c0.5-1.5,0.7-3,0.7-4.4c0-0.8-0.2-1.5-0.5-1.9c-0.4-0.4-0.8-0.7-1.2-0.7c-0.8,0-1.5,0.4-2,1.2\n                c-0.4,0.5-0.8,1.7-1.3,3.4L73,23.5z\"/>\n        <path class=\"st0\" d=\"M100,8.1l-0.8,5.5h-0.7c-0.1-1.4-0.5-2.5-1.3-3.3c-0.8-0.8-1.6-1.2-2.5-1.2c-0.5,0-1,0.2-1.4,0.5\n                c-0.4,0.3-0.5,0.7-0.5,1.1c0,0.4,0.1,0.7,0.2,1.1c0.2,0.3,0.5,0.8,1,1.3c1.9,2,3,3.4,3.4,4.1c0.4,0.8,0.6,1.6,0.6,2.4\n                c0,0.9-0.2,1.8-0.7,2.6c-0.5,0.8-1.2,1.5-2.1,2c-1,0.5-1.9,0.7-3,0.7c-0.7,0-1.6-0.1-2.6-0.4c-0.7-0.2-1.2-0.3-1.5-0.3\n                c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.3-0.6,0.5h-0.7l0.9-5.9h0.6c0.4,1.4,0.8,2.5,1.2,3.1c0.4,0.6,0.9,1.1,1.5,1.5\n                c0.6,0.4,1.2,0.5,1.8,0.5c0.7,0,1.2-0.2,1.6-0.6c0.4-0.4,0.6-0.9,0.6-1.5c0-0.6-0.1-1.1-0.4-1.6c-0.3-0.5-0.9-1.3-1.9-2.4\n                c-1.4-1.5-2.3-2.7-2.8-3.5c-0.3-0.6-0.5-1.3-0.5-2c0-1.3,0.5-2.3,1.4-3.2c0.9-0.9,2.3-1.3,4-1.3c0.7,0,1.7,0.1,2.7,0.4\n                c0.5,0.1,1,0.2,1.3,0.2c0.5,0,0.8-0.2,1.1-0.6H100z\"/>\n    </g>\n</svg>\n";
 
 /***/ },
 /* 326 */
@@ -33239,7 +33239,7 @@
   \**************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"logo\" title=\"1stdibs.com\" viewBox=\"543 138 2021.4 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M843.7,139.2L726.9,531c-6,20.5-9,33.6-9,39.1c0,5.5,2.1,11.3,6.4,17.1c4.2,5.9,8.8,9.7,13.8,11.4 c4.9,1.7,19.8,3.3,44.6,4.7l-3.8,12.4H543l3.8-12.4c23.4-0.5,39.8-2.4,48.9-5.9c9.2-3.5,16.7-9.1,22.6-17 c5.9-7.9,12.5-24.4,19.8-49.5l68.7-232.7c10.8-35.4,16.5-54.1,17-56.2c1.4-6,2.2-11.6,2.2-16.9c0-10.3-3.2-18.4-9.5-24.5 c-6.3-6-15.4-9.1-27.2-9.1c-5.8,0-17.2,0.9-34.3,2.8l-2.9-12.9l177-42.4H843.7z\" />\n        <path d=\"M1089.2,296.3l-15.3,106.5h-12.9c-1.8-27.4-10.3-48.9-25.3-64.6c-15-15.7-31.1-23.6-48.3-23.6 c-10.5,0-19.2,3.1-26.1,9.3c-6.9,6.2-10.3,13.7-10.3,22.4c0,7.3,1.5,14.2,4.5,20.7c3,6.4,9.6,15.2,20,26.2 c36.3,39,58.3,65.9,66.2,80.5c7.8,14.6,11.7,30.3,11.7,47c0,18.1-4.6,35.2-13.8,51.3c-9.2,16.1-23,29-41.3,38.8 c-18.3,9.7-37.3,14.6-57.1,14.6c-13.3,0-29.8-2.5-49.4-7.6c-12.9-3.5-22.6-5.3-29-5.3c-5.8,0-10.2,0.8-13.5,2.5 c-3.2,1.7-6.8,5.1-10.7,10.4h-12.9l17.1-114.7h11.2c8,28,15.6,47.9,22.6,59.8c7,11.9,16.4,21.4,28.1,28.4 c11.7,7.1,23,10.6,33.8,10.6c12.6,0,23.1-4,31.4-11.9c8.3-7.9,12.4-17.4,12.4-28.4c0-10.8-2.7-21.2-8.1-31.3 c-5.4-10.1-17.9-25.8-37.4-47.2c-26.9-29.1-44.6-51.7-53.1-67.6c-6-11.5-9-24.7-9-39.4c0-24.9,9-45.7,27.1-62.3 c18.1-16.6,43.5-24.9,76.1-24.9c14.3,0,31.8,2.6,52.5,7.9c10.4,2.6,18.7,3.9,24.9,3.9c9,0,16.2-3.9,21.8-11.8H1089.2z\" />\n        <path d=\"M1311.5,212.1l-28.9,93.5h38.6l-12.1,39.4H1270l-62.6,202.6c-4,12.6-6,22.1-6,28.6c0,2.2,1,4.1,3.1,5.7 c2.1,1.6,4.4,2.4,6.9,2.4c3.9,0,7.9-1.6,12-4.8c10.6-8.1,22.8-22.1,36.8-42.1l12.4,7.6c-15.9,27.6-33.4,47.9-52.5,60.7 c-19.1,12.9-37.9,19.3-56.3,19.3c-15.6,0-27.8-3.9-36.4-11.8c-8.6-7.9-12.9-17.9-12.9-30c0-13.3,3.2-30.5,9.7-51.4l58.6-186.8 h-44.2l6.5-25.4c28-10.8,52.3-23.4,73-37.8c20.7-14.4,45.6-37.7,74.7-69.7H1311.5z\" />\n        <path d=\"M1687.6,138l-116.8,384.9c-7.4,24.1-11.1,38.6-11.1,43.7c0,2.5,0.9,4.7,2.7,6.6c1.8,1.8,3.8,2.8,5.8,2.8 c3.9,0,8.3-2,13.4-5.9c8.5-6.5,18.7-18.7,30.9-36.7l12.4,6.6c-32.4,56.8-68,85.2-106.8,85.2c-13.8,0-24.4-3.6-31.9-10.8 c-7.5-7.2-11.2-16.4-11.2-27.7c0-10.8,3-26.1,9-46.1l10.9-35.2c-28.8,50.7-53.8,84.4-75,101.2c-16.1,12.4-31.8,18.6-47,18.6 c-17.3,0-31.9-7-43.7-21c-11.9-14-17.8-34.4-17.8-61.3c0-34.2,7.7-67.9,23-101.2c15.3-33.3,33-61.1,53.1-83.3 c20.1-22.3,39.2-38.2,57.5-47.7c18.2-9.5,36.2-14.3,53.8-14.3c9.1,0,17.1,1.9,24.2,5.6c7.1,3.8,15.1,10.8,24.2,21.1l27-85.4 c6.9-21.5,10.3-36.9,10.3-46.2c0-5.6-2.4-10.4-7-14.3c-4.7-4-11-5.9-18.8-5.9c-3.7,0-8.2,0.3-13.7,1l2.9-13.5L1666,138H1687.6z M1532.8,356c0-14-2.8-24.2-8.4-30.7c-5.6-6.4-12.2-9.7-19.7-9.7c-7.5,0-15.6,3.8-24.2,11.4c-16.6,14.7-34,44.3-52.1,88.8 c-18.1,44.5-27.2,81.9-27.2,112.2c0,11,2,19.2,6,24.5c4,5.3,8.4,7.9,13.3,7.9c8.2,0,16.4-3.7,24.6-11 c19.9-17.5,39.5-47.5,58.8-90.1C1523.1,416.6,1532.8,382.2,1532.8,356z\" />\n        <path d=\"M1810.2,138c14.4,0,26.5,5,36.3,14.9c9.8,9.9,14.8,21.9,14.8,36c0,14.1-5,26.1-14.9,36 c-10,9.9-22,14.9-36.1,14.9c-13.9,0-25.8-5-35.8-14.9c-10-9.9-14.9-21.9-14.9-36c0-14.1,4.9-26.1,14.8-36 C1784.1,143,1796.1,138,1810.2,138z M1838.2,296.3l-76.7,242.9c-4.2,13.9-6.4,23-6.4,27.3c0,2.6,1,5.1,3.1,7.3 c2.1,2.3,4.2,3.4,6.5,3.4c3.9,0,7.7-1.8,11.6-5.4c10.2-8.8,22.5-24.8,36.9-47.9l11.8,7.2c-35,62.7-72.1,94-111.5,94 c-15,0-27-4.2-35.9-12.5c-8.9-8.3-13.4-18.9-13.4-31.7c0-8.5,2.2-19.3,6.5-32.4l52.8-165c5.1-15.9,7.6-27.8,7.6-35.9 c0-5.1-2.3-9.5-7-13.5c-4.7-3.9-11-5.9-19.1-5.9c-3.7,0-8.1,0.1-13.2,0.3l4.7-13.5l120.4-18.8H1838.2z\" />\n        <path d=\"M2078.5,138l-61.1,207c17.3-19.5,31.8-32.5,43.4-39c11.6-6.5,24.2-9.7,37.9-9.7c26.3,0,46,9.9,59.1,29.8 c13.1,19.9,19.6,42.8,19.6,68.7c0,62-22,117.3-66.1,166c-39.1,42.9-83.6,64.4-133.5,64.4c-37.1,0-76.3-11.1-117.7-33.2l106.8-363.3 c5-17.3,7.8-29.3,8.5-36.2c0-5.9-2.5-10.6-7.4-14c-6.9-4.9-17.5-7-31.6-6.3l2.9-13.5l118.2-20.6H2078.5z M1943.6,595.3 c10.3,6.9,19.7,10.4,28,10.4c11.6,0,21.4-2.4,29.3-7.3c12.5-7.8,25.6-22,39.4-42.5c13.7-20.5,25.2-45.2,34.4-74.2 c9.2-29,13.8-57.9,13.8-86.6c0-16.3-3.4-28.8-10.3-37.3c-6.9-8.5-14.8-12.8-23.8-12.8c-15,0-28.1,8-39.2,24.1 c-7.5,10.4-15.7,32.5-24.4,66.3L1943.6,595.3z\" />\n        <path d=\"M2462.1,296.3l-15.3,106.5h-12.9c-1.8-27.4-10.3-48.9-25.3-64.6c-15-15.7-31.1-23.6-48.3-23.6 c-10.5,0-19.2,3.1-26.1,9.3c-6.9,6.2-10.3,13.7-10.3,22.4c0,7.3,1.5,14.2,4.5,20.7c3,6.4,9.6,15.2,20,26.2 c36.3,39,58.3,65.9,66.2,80.5c7.8,14.6,11.7,30.3,11.7,47c0,18.1-4.6,35.2-13.8,51.3c-9.2,16.1-23,29-41.3,38.8 c-18.3,9.7-37.3,14.6-57.1,14.6c-13.3,0-29.8-2.5-49.4-7.6c-12.9-3.5-22.6-5.3-29-5.3c-5.8,0-10.2,0.8-13.5,2.5 c-3.2,1.7-6.8,5.1-10.7,10.4h-12.9l17.1-114.7h11.2c8,28,15.6,47.9,22.6,59.8c7,11.9,16.4,21.4,28.1,28.4 c11.7,7.1,23,10.6,33.8,10.6c12.6,0,23.1-4,31.4-11.9c8.3-7.9,12.4-17.4,12.4-28.4c0-10.8-2.7-21.2-8.1-31.3 c-5.4-10.1-17.9-25.8-37.4-47.2c-26.9-29.1-44.6-51.7-53.1-67.6c-6-11.5-9-24.7-9-39.4c0-24.9,9-45.7,27.1-62.3 c18.1-16.6,43.5-24.9,76.1-24.9c14.3,0,31.8,2.6,52.5,7.9c10.4,2.6,18.7,3.9,24.9,3.9c9,0,16.2-3.9,21.8-11.8H2462.1z\" />\n    </g>\n    <g>\n        <path d=\"M2471.2,591.3V591c0-25.4,20.6-47,46.7-47c26.1,0,46.5,21.4,46.5,46.7v0.3c0,25.4-20.6,47-46.7,47 C2491.5,638,2471.2,616.6,2471.2,591.3z M2559,591v-0.3c0-22.8-17.6-41.6-41.1-41.6c-23.6,0-41.3,19.1-41.3,41.8v0.3 c0,22.8,17.6,41.6,41.1,41.6C2541.2,632.9,2559,613.8,2559,591z M2496,564.9h24.2c8.8,0,14.4,2.2,17.9,5.7c3,3,4.5,6.7,4.5,11.8 v0.3c0,7.1-3.7,12.1-9.8,14.9l11.6,16.9h-18.8l-9.5-14.2h-0.3h-3.2v14.2H2496V564.9z M2519.7,588.4c4,0,6.4-1.7,6.4-4.8v-0.3 c0-3.1-2.6-4.6-6.3-4.6h-7.2v9.7H2519.7z\" />\n    </g>\n</svg>\n";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-logo\" title=\"1stdibs.com\" viewBox=\"543 138 2021.4 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M843.7,139.2L726.9,531c-6,20.5-9,33.6-9,39.1c0,5.5,2.1,11.3,6.4,17.1c4.2,5.9,8.8,9.7,13.8,11.4 c4.9,1.7,19.8,3.3,44.6,4.7l-3.8,12.4H543l3.8-12.4c23.4-0.5,39.8-2.4,48.9-5.9c9.2-3.5,16.7-9.1,22.6-17 c5.9-7.9,12.5-24.4,19.8-49.5l68.7-232.7c10.8-35.4,16.5-54.1,17-56.2c1.4-6,2.2-11.6,2.2-16.9c0-10.3-3.2-18.4-9.5-24.5 c-6.3-6-15.4-9.1-27.2-9.1c-5.8,0-17.2,0.9-34.3,2.8l-2.9-12.9l177-42.4H843.7z\" />\n        <path d=\"M1089.2,296.3l-15.3,106.5h-12.9c-1.8-27.4-10.3-48.9-25.3-64.6c-15-15.7-31.1-23.6-48.3-23.6 c-10.5,0-19.2,3.1-26.1,9.3c-6.9,6.2-10.3,13.7-10.3,22.4c0,7.3,1.5,14.2,4.5,20.7c3,6.4,9.6,15.2,20,26.2 c36.3,39,58.3,65.9,66.2,80.5c7.8,14.6,11.7,30.3,11.7,47c0,18.1-4.6,35.2-13.8,51.3c-9.2,16.1-23,29-41.3,38.8 c-18.3,9.7-37.3,14.6-57.1,14.6c-13.3,0-29.8-2.5-49.4-7.6c-12.9-3.5-22.6-5.3-29-5.3c-5.8,0-10.2,0.8-13.5,2.5 c-3.2,1.7-6.8,5.1-10.7,10.4h-12.9l17.1-114.7h11.2c8,28,15.6,47.9,22.6,59.8c7,11.9,16.4,21.4,28.1,28.4 c11.7,7.1,23,10.6,33.8,10.6c12.6,0,23.1-4,31.4-11.9c8.3-7.9,12.4-17.4,12.4-28.4c0-10.8-2.7-21.2-8.1-31.3 c-5.4-10.1-17.9-25.8-37.4-47.2c-26.9-29.1-44.6-51.7-53.1-67.6c-6-11.5-9-24.7-9-39.4c0-24.9,9-45.7,27.1-62.3 c18.1-16.6,43.5-24.9,76.1-24.9c14.3,0,31.8,2.6,52.5,7.9c10.4,2.6,18.7,3.9,24.9,3.9c9,0,16.2-3.9,21.8-11.8H1089.2z\" />\n        <path d=\"M1311.5,212.1l-28.9,93.5h38.6l-12.1,39.4H1270l-62.6,202.6c-4,12.6-6,22.1-6,28.6c0,2.2,1,4.1,3.1,5.7 c2.1,1.6,4.4,2.4,6.9,2.4c3.9,0,7.9-1.6,12-4.8c10.6-8.1,22.8-22.1,36.8-42.1l12.4,7.6c-15.9,27.6-33.4,47.9-52.5,60.7 c-19.1,12.9-37.9,19.3-56.3,19.3c-15.6,0-27.8-3.9-36.4-11.8c-8.6-7.9-12.9-17.9-12.9-30c0-13.3,3.2-30.5,9.7-51.4l58.6-186.8 h-44.2l6.5-25.4c28-10.8,52.3-23.4,73-37.8c20.7-14.4,45.6-37.7,74.7-69.7H1311.5z\" />\n        <path d=\"M1687.6,138l-116.8,384.9c-7.4,24.1-11.1,38.6-11.1,43.7c0,2.5,0.9,4.7,2.7,6.6c1.8,1.8,3.8,2.8,5.8,2.8 c3.9,0,8.3-2,13.4-5.9c8.5-6.5,18.7-18.7,30.9-36.7l12.4,6.6c-32.4,56.8-68,85.2-106.8,85.2c-13.8,0-24.4-3.6-31.9-10.8 c-7.5-7.2-11.2-16.4-11.2-27.7c0-10.8,3-26.1,9-46.1l10.9-35.2c-28.8,50.7-53.8,84.4-75,101.2c-16.1,12.4-31.8,18.6-47,18.6 c-17.3,0-31.9-7-43.7-21c-11.9-14-17.8-34.4-17.8-61.3c0-34.2,7.7-67.9,23-101.2c15.3-33.3,33-61.1,53.1-83.3 c20.1-22.3,39.2-38.2,57.5-47.7c18.2-9.5,36.2-14.3,53.8-14.3c9.1,0,17.1,1.9,24.2,5.6c7.1,3.8,15.1,10.8,24.2,21.1l27-85.4 c6.9-21.5,10.3-36.9,10.3-46.2c0-5.6-2.4-10.4-7-14.3c-4.7-4-11-5.9-18.8-5.9c-3.7,0-8.2,0.3-13.7,1l2.9-13.5L1666,138H1687.6z M1532.8,356c0-14-2.8-24.2-8.4-30.7c-5.6-6.4-12.2-9.7-19.7-9.7c-7.5,0-15.6,3.8-24.2,11.4c-16.6,14.7-34,44.3-52.1,88.8 c-18.1,44.5-27.2,81.9-27.2,112.2c0,11,2,19.2,6,24.5c4,5.3,8.4,7.9,13.3,7.9c8.2,0,16.4-3.7,24.6-11 c19.9-17.5,39.5-47.5,58.8-90.1C1523.1,416.6,1532.8,382.2,1532.8,356z\" />\n        <path d=\"M1810.2,138c14.4,0,26.5,5,36.3,14.9c9.8,9.9,14.8,21.9,14.8,36c0,14.1-5,26.1-14.9,36 c-10,9.9-22,14.9-36.1,14.9c-13.9,0-25.8-5-35.8-14.9c-10-9.9-14.9-21.9-14.9-36c0-14.1,4.9-26.1,14.8-36 C1784.1,143,1796.1,138,1810.2,138z M1838.2,296.3l-76.7,242.9c-4.2,13.9-6.4,23-6.4,27.3c0,2.6,1,5.1,3.1,7.3 c2.1,2.3,4.2,3.4,6.5,3.4c3.9,0,7.7-1.8,11.6-5.4c10.2-8.8,22.5-24.8,36.9-47.9l11.8,7.2c-35,62.7-72.1,94-111.5,94 c-15,0-27-4.2-35.9-12.5c-8.9-8.3-13.4-18.9-13.4-31.7c0-8.5,2.2-19.3,6.5-32.4l52.8-165c5.1-15.9,7.6-27.8,7.6-35.9 c0-5.1-2.3-9.5-7-13.5c-4.7-3.9-11-5.9-19.1-5.9c-3.7,0-8.1,0.1-13.2,0.3l4.7-13.5l120.4-18.8H1838.2z\" />\n        <path d=\"M2078.5,138l-61.1,207c17.3-19.5,31.8-32.5,43.4-39c11.6-6.5,24.2-9.7,37.9-9.7c26.3,0,46,9.9,59.1,29.8 c13.1,19.9,19.6,42.8,19.6,68.7c0,62-22,117.3-66.1,166c-39.1,42.9-83.6,64.4-133.5,64.4c-37.1,0-76.3-11.1-117.7-33.2l106.8-363.3 c5-17.3,7.8-29.3,8.5-36.2c0-5.9-2.5-10.6-7.4-14c-6.9-4.9-17.5-7-31.6-6.3l2.9-13.5l118.2-20.6H2078.5z M1943.6,595.3 c10.3,6.9,19.7,10.4,28,10.4c11.6,0,21.4-2.4,29.3-7.3c12.5-7.8,25.6-22,39.4-42.5c13.7-20.5,25.2-45.2,34.4-74.2 c9.2-29,13.8-57.9,13.8-86.6c0-16.3-3.4-28.8-10.3-37.3c-6.9-8.5-14.8-12.8-23.8-12.8c-15,0-28.1,8-39.2,24.1 c-7.5,10.4-15.7,32.5-24.4,66.3L1943.6,595.3z\" />\n        <path d=\"M2462.1,296.3l-15.3,106.5h-12.9c-1.8-27.4-10.3-48.9-25.3-64.6c-15-15.7-31.1-23.6-48.3-23.6 c-10.5,0-19.2,3.1-26.1,9.3c-6.9,6.2-10.3,13.7-10.3,22.4c0,7.3,1.5,14.2,4.5,20.7c3,6.4,9.6,15.2,20,26.2 c36.3,39,58.3,65.9,66.2,80.5c7.8,14.6,11.7,30.3,11.7,47c0,18.1-4.6,35.2-13.8,51.3c-9.2,16.1-23,29-41.3,38.8 c-18.3,9.7-37.3,14.6-57.1,14.6c-13.3,0-29.8-2.5-49.4-7.6c-12.9-3.5-22.6-5.3-29-5.3c-5.8,0-10.2,0.8-13.5,2.5 c-3.2,1.7-6.8,5.1-10.7,10.4h-12.9l17.1-114.7h11.2c8,28,15.6,47.9,22.6,59.8c7,11.9,16.4,21.4,28.1,28.4 c11.7,7.1,23,10.6,33.8,10.6c12.6,0,23.1-4,31.4-11.9c8.3-7.9,12.4-17.4,12.4-28.4c0-10.8-2.7-21.2-8.1-31.3 c-5.4-10.1-17.9-25.8-37.4-47.2c-26.9-29.1-44.6-51.7-53.1-67.6c-6-11.5-9-24.7-9-39.4c0-24.9,9-45.7,27.1-62.3 c18.1-16.6,43.5-24.9,76.1-24.9c14.3,0,31.8,2.6,52.5,7.9c10.4,2.6,18.7,3.9,24.9,3.9c9,0,16.2-3.9,21.8-11.8H2462.1z\" />\n    </g>\n    <g>\n        <path d=\"M2471.2,591.3V591c0-25.4,20.6-47,46.7-47c26.1,0,46.5,21.4,46.5,46.7v0.3c0,25.4-20.6,47-46.7,47 C2491.5,638,2471.2,616.6,2471.2,591.3z M2559,591v-0.3c0-22.8-17.6-41.6-41.1-41.6c-23.6,0-41.3,19.1-41.3,41.8v0.3 c0,22.8,17.6,41.6,41.1,41.6C2541.2,632.9,2559,613.8,2559,591z M2496,564.9h24.2c8.8,0,14.4,2.2,17.9,5.7c3,3,4.5,6.7,4.5,11.8 v0.3c0,7.1-3.7,12.1-9.8,14.9l11.6,16.9h-18.8l-9.5-14.2h-0.3h-3.2v14.2H2496V564.9z M2519.7,588.4c4,0,6.4-1.7,6.4-4.8v-0.3 c0-3.1-2.6-4.6-6.3-4.6h-7.2v9.7H2519.7z\" />\n    </g>\n</svg>\n";
 
 /***/ },
 /* 327 */
@@ -33248,7 +33248,7 @@
   \*****************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<!-- unlimited vacation on careers -->\n<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"luggage\" viewBox=\"0 0 420 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M379.7,139.7H258.3v-20.2c0-11.3-8.8-20.2-20.2-20.2h-56.3c-11.3,0-20.2,8.8-20.2,20.2v20.2H40.3\n            C17.6,139.7,0,157.4,0,180v194c0,22.7,17.6,40.3,40.3,40.3h339.4c22.7,0,40.3-17.6,40.3-40.3V180C420,157.4,402.4,139.7,379.7,139.7\n            z M177.7,119.6c0-2.5,1.7-4.2,4.2-4.2h56.7c2.5,0,4.2,1.7,4.2,4.2v20.2h-65.1V119.6z M40.3,398.4c-13.9,0-24.4-10.5-24.4-24.4V180\n            c0-13.9,10.5-24.4,24.4-24.4h48.3v89h-16v56.7h16v97L40.3,398.4L40.3,398.4z M89,285v-24.4h16V285H89z M105,398.4v-97h16v-56.7h-16\n            v-88.6h56.7h16h64.7h16H315v89h-16v56.7h16v97H105V398.4z M315,285v-24.4h16V285H315z M404,374.1c0,13.9-10.5,24.4-24.4,24.4H331\n            v-97h16v-56.7h-16v-88.6h48.3c13.9,0,24.4,10.5,24.4,24.4v193.6H404z\"/>\n</svg>";
+	module.exports = "<!-- unlimited vacation on careers -->\n<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-luggage\" viewBox=\"0 0 420 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M379.7,139.7H258.3v-20.2c0-11.3-8.8-20.2-20.2-20.2h-56.3c-11.3,0-20.2,8.8-20.2,20.2v20.2H40.3\n            C17.6,139.7,0,157.4,0,180v194c0,22.7,17.6,40.3,40.3,40.3h339.4c22.7,0,40.3-17.6,40.3-40.3V180C420,157.4,402.4,139.7,379.7,139.7\n            z M177.7,119.6c0-2.5,1.7-4.2,4.2-4.2h56.7c2.5,0,4.2,1.7,4.2,4.2v20.2h-65.1V119.6z M40.3,398.4c-13.9,0-24.4-10.5-24.4-24.4V180\n            c0-13.9,10.5-24.4,24.4-24.4h48.3v89h-16v56.7h16v97L40.3,398.4L40.3,398.4z M89,285v-24.4h16V285H89z M105,398.4v-97h16v-56.7h-16\n            v-88.6h56.7h16h64.7h16H315v89h-16v56.7h16v97H105V398.4z M315,285v-24.4h16V285H315z M404,374.1c0,13.9-10.5,24.4-24.4,24.4H331\n            v-97h16v-56.7h-16v-88.6h48.3c13.9,0,24.4,10.5,24.4,24.4v193.6H404z\"/>\n</svg>";
 
 /***/ },
 /* 328 */
@@ -33266,7 +33266,7 @@
   \**************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"mask\" viewBox=\"0 0 1060 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M1044.6,5c-47,44.5-253.2,94.9-330,115.2C637.2,140.8,572,176.4,530,216.9c-42-40.5-107.2-76.1-184.6-96.6 C268.5,99.9,62.3,49.6,15.3,5c-40-37.8,9.4,148.4,21.3,186.3C98.8,388.4,142.1,389.4,268.5,411c70.6,12.1,146.6,12.3,206-1.6 c26.6-15.4,23.3-89.8,55.5-89.8c32.3,0,28.9,74.4,55.5,89.8c59.4,13.9,135.4,13.7,206,1.6c126.3-21.7,169.7-22.6,231.8-219.7 C1035.3,153.5,1084.6-32.8,1044.6,5z M441.6,306.6c-11.7,44.2-89,62.1-172.8,39.7c-83.5-22.1-142-75.9-130.3-120.2 c11.7-44.1,89.2-61.9,172.8-39.7C395.1,208.6,453.3,262.4,441.6,306.6z M793,346.3c-83.7,22.5-161,4.5-172.7-39.7 c-11.7-44.2,46.6-98,130.3-120.2c83.6-22.2,161-4.4,172.7,39.7C935,270.3,876.5,324.2,793,346.3z\"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-mask\" viewBox=\"0 0 1060 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M1044.6,5c-47,44.5-253.2,94.9-330,115.2C637.2,140.8,572,176.4,530,216.9c-42-40.5-107.2-76.1-184.6-96.6 C268.5,99.9,62.3,49.6,15.3,5c-40-37.8,9.4,148.4,21.3,186.3C98.8,388.4,142.1,389.4,268.5,411c70.6,12.1,146.6,12.3,206-1.6 c26.6-15.4,23.3-89.8,55.5-89.8c32.3,0,28.9,74.4,55.5,89.8c59.4,13.9,135.4,13.7,206,1.6c126.3-21.7,169.7-22.6,231.8-219.7 C1035.3,153.5,1084.6-32.8,1044.6,5z M441.6,306.6c-11.7,44.2-89,62.1-172.8,39.7c-83.5-22.1-142-75.9-130.3-120.2 c11.7-44.1,89.2-61.9,172.8-39.7C395.1,208.6,453.3,262.4,441.6,306.6z M793,346.3c-83.7,22.5-161,4.5-172.7-39.7 c-11.7-44.2,46.6-98,130.3-120.2c83.6-22.2,161-4.4,172.7,39.7C935,270.3,876.5,324.2,793,346.3z\"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 330 */
@@ -33284,7 +33284,7 @@
   \***************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"minus\" viewBox=\"0 0 250 20\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <rect width=\"250\" height=\"15\" rx=\"10\"></rect>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-minus\" viewBox=\"0 0 250 20\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <rect width=\"250\" height=\"15\" rx=\"10\"></rect>\n</svg>";
 
 /***/ },
 /* 332 */
@@ -33293,7 +33293,7 @@
   \*******************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"net-price\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M0,0v250h250V0H0z M241,241H9V9h232V241z\"/>\n        <polygon points=\"53,111 53,111 70.4,161 87,161 87,90 74,90 74,138 73.4,138 56.1,90 40,90 40,161 53,161  \"/>\n        <polygon points=\"147,149 121,149 121,130 145,130 145,118 121,118 121,102 146,102 146,90 107,90 107,161 147,161  \"/>\n        <polygon points=\"180,161 195,161 195,102 210,102 210,90 165,90 165,102 180,102  \"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-net-price\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M0,0v250h250V0H0z M241,241H9V9h232V241z\"/>\n        <polygon points=\"53,111 53,111 70.4,161 87,161 87,90 74,90 74,138 73.4,138 56.1,90 40,90 40,161 53,161  \"/>\n        <polygon points=\"147,149 121,149 121,130 145,130 145,118 121,118 121,102 146,102 146,90 107,90 107,161 147,161  \"/>\n        <polygon points=\"180,161 195,161 195,102 210,102 210,90 165,90 165,102 180,102  \"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 333 */
@@ -33302,7 +33302,7 @@
   \****************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<!-- snacks on careers -->\n<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"orange\" viewBox=\"0 0 420 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M419.6,79.7L419.6,79.7c-0.4-0.8-0.4-1.7-0.8-2.1c-0.8-1.3-1.7-2.1-2.9-2.5c0,0-0.4,0-0.4-0.4\n            c-4.6-2.1-118.4-47-176.8-12.6c-16.8,10.1-27.7,25.6-31.9,46.6c-17.6,8.8-29.8,17.6-37.8,23.9C161.7,96.5,133.1,86,132.7,86\n            c-3.8-1.3-8,0.8-9.2,4.6c-0.4,2.1-0.4,3.8,0.4,5.9c0.8,1.7,2.5,2.9,4.2,3.8c0.4,0,37,13.9,25.2,71.8C67.2,175,0,240.1,0,320.3\n            C0,402.2,71.4,469,159.2,469s159.2-66.8,159.2-148.7c0-79-65.9-143.6-150.4-148.3c1.3-7.6,2.1-14.7,2.1-21.4\n            c5-4.6,18.1-16,41.6-27.7c19.7,15.5,88.6,56.3,205-35.3c0.8-0.8,1.7-1.3,2.1-2.5c0.4-0.4,0.4-1.3,0.8-1.7\n            C420,82.2,420,80.9,419.6,79.7z M224.3,100.7c4.2-10.9,11.3-19.3,21.8-25.6c12.2-7.1,29-10.9,49.6-10.9c18.9,0,41.2,3.4,65.5,9.2\n            C309.5,74.6,263.8,83.9,224.3,100.7z M391.4,88.1c-87.4,61.3-142,41.2-163.8,27.7C273.8,95.6,328.9,86.4,391.4,88.1z M304.1,320.3\n            c0,73.5-65.1,133.6-144.9,133.6S14.3,393.8,14.3,320.3s65.1-133.6,144.9-133.6C239,186.8,304.1,246.8,304.1,320.3z\"/>\n</svg>";
+	module.exports = "<!-- snacks on careers -->\n<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-orange\" viewBox=\"0 0 420 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M419.6,79.7L419.6,79.7c-0.4-0.8-0.4-1.7-0.8-2.1c-0.8-1.3-1.7-2.1-2.9-2.5c0,0-0.4,0-0.4-0.4\n            c-4.6-2.1-118.4-47-176.8-12.6c-16.8,10.1-27.7,25.6-31.9,46.6c-17.6,8.8-29.8,17.6-37.8,23.9C161.7,96.5,133.1,86,132.7,86\n            c-3.8-1.3-8,0.8-9.2,4.6c-0.4,2.1-0.4,3.8,0.4,5.9c0.8,1.7,2.5,2.9,4.2,3.8c0.4,0,37,13.9,25.2,71.8C67.2,175,0,240.1,0,320.3\n            C0,402.2,71.4,469,159.2,469s159.2-66.8,159.2-148.7c0-79-65.9-143.6-150.4-148.3c1.3-7.6,2.1-14.7,2.1-21.4\n            c5-4.6,18.1-16,41.6-27.7c19.7,15.5,88.6,56.3,205-35.3c0.8-0.8,1.7-1.3,2.1-2.5c0.4-0.4,0.4-1.3,0.8-1.7\n            C420,82.2,420,80.9,419.6,79.7z M224.3,100.7c4.2-10.9,11.3-19.3,21.8-25.6c12.2-7.1,29-10.9,49.6-10.9c18.9,0,41.2,3.4,65.5,9.2\n            C309.5,74.6,263.8,83.9,224.3,100.7z M391.4,88.1c-87.4,61.3-142,41.2-163.8,27.7C273.8,95.6,328.9,86.4,391.4,88.1z M304.1,320.3\n            c0,73.5-65.1,133.6-144.9,133.6S14.3,393.8,14.3,320.3s65.1-133.6,144.9-133.6C239,186.8,304.1,246.8,304.1,320.3z\"/>\n</svg>";
 
 /***/ },
 /* 334 */
@@ -33311,7 +33311,7 @@
   \*************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"pen\" viewBox=\"0 0 420 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <polygon points=\"45.5,354.7 0,518 165.4,455.2 408,156.5 285.3,61.6\"/>\n        <path d=\"M443.8,55.3c-9.4-8.9-54.8-44.4-61.3-48.2c-31-17.8-49.6,3.1-49.6,3.1l-23.8,27.2l117.8,91.1l25.2-30C452.1,98.6,465.2,75.6,443.8,55.3z\"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-pen\" viewBox=\"0 0 420 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <polygon points=\"45.5,354.7 0,518 165.4,455.2 408,156.5 285.3,61.6\"/>\n        <path d=\"M443.8,55.3c-9.4-8.9-54.8-44.4-61.3-48.2c-31-17.8-49.6,3.1-49.6,3.1l-23.8,27.2l117.8,91.1l25.2-30C452.1,98.6,465.2,75.6,443.8,55.3z\"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 335 */
@@ -33320,7 +33320,7 @@
   \*****************************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"person-inside-badge\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path fill-rule=\"evenodd\" d=\"M124.7,0l12.8,4.3l13.4-1.6l11.6,6.8l13.4,1.2l9.9,9.1l12.9,3.9l7.8,10.9l11.8,6.5l5.3,12.3l10.2,8.8l2.7,13.1\n                l8.1,10.7l-0.2,13.4l5.7,12.1l-2.9,13.1l3,13.1l-5.6,12.2l0.2,13.4l-8,10.8l-2.6,13.2l-10.1,8.9l-5.3,12.3l-11.7,6.6l-7.7,11\n                l-12.9,4l-9.9,9.1l-13.4,1.2l-11.6,6.9l-13.4-1.6l-12.7,4.4l-12.8-4.3l-13.4,1.6l-11.6-6.8l-13.4-1.2l-9.9-9.1l-12.9-3.9l-7.8-10.9\n                l-11.8-6.5l-5.3-12.3l-10.2-8.8l-2.7-13.1l-8.1-10.7l0.2-13.4l-5.7-12.1L3,125.3l-3-13.1l5.6-12.2L5.4,86.7l8-10.8L16,62.8\n                l10.1-8.9l5.3-12.3L43.1,35l7.7-11l12.9-4l9.9-9.1L87,9.7l11.6-6.9l13.4,1.6L124.7,0z M124.7,5.8l12.2,4.1l12.8-1.5l11.1,6.5\n                l12.8,1.1l9.4,8.7l12.3,3.7l7.4,10.4l11.2,6.2l5.1,11.7l9.7,8.4l2.5,12.5l7.7,10.2l-0.1,12.8l5.4,11.6l-2.8,12.5l2.9,12.5\n                l-5.4,11.6l0.2,12.8l-7.7,10.3l-2.5,12.5l-9.6,8.4l-5,11.8l-11.2,6.3l-7.4,10.5l-12.3,3.8l-9.4,8.7l-12.8,1.2l-11,6.6l-12.8-1.5\n                l-12.1,4.1l-12.2-4.1l-12.8,1.5l-11.1-6.5L76.5,234l-9.4-8.7l-12.3-3.7l-7.4-10.4L36.2,205l-5.1-11.7l-9.7-8.4l-2.5-12.5l-7.7-10.2\n                l0.1-12.8l-5.4-11.6l2.8-12.5l-2.9-12.5l5.4-11.6l-0.2-12.8l7.7-10.3l2.5-12.5l9.6-8.4l5-11.8l11.2-6.3l7.4-10.5l12.3-3.8l9.4-8.7\n                L88.8,15l11-6.6l12.8,1.5L124.7,5.8z\"/>\n        <path d=\"M125,227.3c-56.7,0-102.8-45.9-102.8-102.3c0-26.3,10-50.3,26.5-68.5c18.8-20.7,46-33.8,76.3-33.8\n                c56.7,0,102.8,45.9,102.8,102.3S181.7,227.3,125,227.3z M125,24.6c-55.7,0-100.9,45-100.9,100.4c0,55.4,45.3,100.4,100.9,100.4\n                s100.9-45,100.9-100.4C225.9,69.6,180.7,24.6,125,24.6z\"/>\n        <path d=\"M125,227.3c-56.7,0-102.8-45.9-102.8-102.3c0-26.3,10-50.3,26.5-68.5c18.8-20.7,46-33.8,76.3-33.8\n                c56.7,0,102.8,45.9,102.8,102.3S181.7,227.3,125,227.3z M125,24.6c-55.7,0-100.9,45-100.9,100.4c0,55.4,45.3,100.4,100.9,100.4\n                s100.9-45,100.9-100.4C225.9,69.6,180.7,24.6,125,24.6z\"/>\n        <g>\n            <path d=\"M194.8,187.2v0.1c0.1,0,0.2,0,0.3,0c0-0.1,0-0.1,0-0.1C195,187.2,194.9,187.2,194.8,187.2z\"/>\n            <path d=\"M191.3,183l-1.3-17l0-0.1c-2.1-13.1-12.1-17-12.5-17.1l-16.8-6.6l-11.4-5.1c-5.1-2.3-6-6-6-6.1l0-0.2\n                    l-0.1-0.2c-0.3-0.8-0.2-1.5-0.1-1.7c0.3-0.5,0.9-1.1,1.3-1.6c0.3-0.3,0.5-0.5,0.7-0.8c8.7-10.5,10.4-22.8,10.5-23.8\n                    c4.4-31-11.7-39-13.6-39.8c-5.3-2.7-10.9-4-16.7-4c-9.9,0-16.9,4-17.2,4.2C100.8,67.5,96.3,75.8,95,87c-0.9,7.9,0.1,14.6,0.2,15.3\n                    c1.9,14.1,10.2,23.8,10.5,24.2l0.1,0.1c1.2,1.3,1.2,1.3,1.6,2.2c0.1,0.3,0.1,1.2,0.1,1.9c-1,4.6-4.9,6.2-5.1,6.2l-8.8,3.8\n                    l-20.8,8.4c-6.8,2.4-9.6,8.7-10,9.6c-2.5,5.5-3.5,20.2-3.6,21.9l-0.2,3l5.7-0.1c0.1,0.1,0.3-2.4,0.3-4l0.1-2.6\n                    c0.5-5.7,1.4-12.7,2.9-15.7l0.1-0.3c0,0,1.9-4.8,6.6-6.5l21-8.5l8.8-3.8c0.9-0.3,6.9-3,8.5-10.4l0-0.2c0.1-0.8,0.4-3.4-0.6-5.3\n                    c-0.8-1.6-1-1.8-2.5-3.5c-0.5-0.6-7.6-9.3-9.2-21.3l0-0.1c0-0.2-3.9-24.9,10.4-33.5c0.1,0,5.9-3.4,14.3-3.4\n                    c4.9,0,9.7,1.2,14.2,3.4l0.2,0.1c0.6,0.2,14.2,6.2,10.2,33.9l0,0.1c0,0.1-1.4,11.6-9.2,20.9c-0.1,0.2-0.3,0.3-0.5,0.5\n                    c-0.7,0.8-1.7,1.8-2.3,3.1l-0.1,0.2c-0.1,0.3-1,2.6,0,5.5c0.3,1.2,2,6.8,9.2,10l11.4,5.1l17,6.7c0.3,0.1,7.3,3,9,12.7l0.8,11.1\n                    c0,0,0,0,0,0c0,0,0.2,5,0.4,5H191.3z\"/>\n        </g>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-person-inside-badge\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path fill-rule=\"evenodd\" d=\"M124.7,0l12.8,4.3l13.4-1.6l11.6,6.8l13.4,1.2l9.9,9.1l12.9,3.9l7.8,10.9l11.8,6.5l5.3,12.3l10.2,8.8l2.7,13.1\n                l8.1,10.7l-0.2,13.4l5.7,12.1l-2.9,13.1l3,13.1l-5.6,12.2l0.2,13.4l-8,10.8l-2.6,13.2l-10.1,8.9l-5.3,12.3l-11.7,6.6l-7.7,11\n                l-12.9,4l-9.9,9.1l-13.4,1.2l-11.6,6.9l-13.4-1.6l-12.7,4.4l-12.8-4.3l-13.4,1.6l-11.6-6.8l-13.4-1.2l-9.9-9.1l-12.9-3.9l-7.8-10.9\n                l-11.8-6.5l-5.3-12.3l-10.2-8.8l-2.7-13.1l-8.1-10.7l0.2-13.4l-5.7-12.1L3,125.3l-3-13.1l5.6-12.2L5.4,86.7l8-10.8L16,62.8\n                l10.1-8.9l5.3-12.3L43.1,35l7.7-11l12.9-4l9.9-9.1L87,9.7l11.6-6.9l13.4,1.6L124.7,0z M124.7,5.8l12.2,4.1l12.8-1.5l11.1,6.5\n                l12.8,1.1l9.4,8.7l12.3,3.7l7.4,10.4l11.2,6.2l5.1,11.7l9.7,8.4l2.5,12.5l7.7,10.2l-0.1,12.8l5.4,11.6l-2.8,12.5l2.9,12.5\n                l-5.4,11.6l0.2,12.8l-7.7,10.3l-2.5,12.5l-9.6,8.4l-5,11.8l-11.2,6.3l-7.4,10.5l-12.3,3.8l-9.4,8.7l-12.8,1.2l-11,6.6l-12.8-1.5\n                l-12.1,4.1l-12.2-4.1l-12.8,1.5l-11.1-6.5L76.5,234l-9.4-8.7l-12.3-3.7l-7.4-10.4L36.2,205l-5.1-11.7l-9.7-8.4l-2.5-12.5l-7.7-10.2\n                l0.1-12.8l-5.4-11.6l2.8-12.5l-2.9-12.5l5.4-11.6l-0.2-12.8l7.7-10.3l2.5-12.5l9.6-8.4l5-11.8l11.2-6.3l7.4-10.5l12.3-3.8l9.4-8.7\n                L88.8,15l11-6.6l12.8,1.5L124.7,5.8z\"/>\n        <path d=\"M125,227.3c-56.7,0-102.8-45.9-102.8-102.3c0-26.3,10-50.3,26.5-68.5c18.8-20.7,46-33.8,76.3-33.8\n                c56.7,0,102.8,45.9,102.8,102.3S181.7,227.3,125,227.3z M125,24.6c-55.7,0-100.9,45-100.9,100.4c0,55.4,45.3,100.4,100.9,100.4\n                s100.9-45,100.9-100.4C225.9,69.6,180.7,24.6,125,24.6z\"/>\n        <path d=\"M125,227.3c-56.7,0-102.8-45.9-102.8-102.3c0-26.3,10-50.3,26.5-68.5c18.8-20.7,46-33.8,76.3-33.8\n                c56.7,0,102.8,45.9,102.8,102.3S181.7,227.3,125,227.3z M125,24.6c-55.7,0-100.9,45-100.9,100.4c0,55.4,45.3,100.4,100.9,100.4\n                s100.9-45,100.9-100.4C225.9,69.6,180.7,24.6,125,24.6z\"/>\n        <g>\n            <path d=\"M194.8,187.2v0.1c0.1,0,0.2,0,0.3,0c0-0.1,0-0.1,0-0.1C195,187.2,194.9,187.2,194.8,187.2z\"/>\n            <path d=\"M191.3,183l-1.3-17l0-0.1c-2.1-13.1-12.1-17-12.5-17.1l-16.8-6.6l-11.4-5.1c-5.1-2.3-6-6-6-6.1l0-0.2\n                    l-0.1-0.2c-0.3-0.8-0.2-1.5-0.1-1.7c0.3-0.5,0.9-1.1,1.3-1.6c0.3-0.3,0.5-0.5,0.7-0.8c8.7-10.5,10.4-22.8,10.5-23.8\n                    c4.4-31-11.7-39-13.6-39.8c-5.3-2.7-10.9-4-16.7-4c-9.9,0-16.9,4-17.2,4.2C100.8,67.5,96.3,75.8,95,87c-0.9,7.9,0.1,14.6,0.2,15.3\n                    c1.9,14.1,10.2,23.8,10.5,24.2l0.1,0.1c1.2,1.3,1.2,1.3,1.6,2.2c0.1,0.3,0.1,1.2,0.1,1.9c-1,4.6-4.9,6.2-5.1,6.2l-8.8,3.8\n                    l-20.8,8.4c-6.8,2.4-9.6,8.7-10,9.6c-2.5,5.5-3.5,20.2-3.6,21.9l-0.2,3l5.7-0.1c0.1,0.1,0.3-2.4,0.3-4l0.1-2.6\n                    c0.5-5.7,1.4-12.7,2.9-15.7l0.1-0.3c0,0,1.9-4.8,6.6-6.5l21-8.5l8.8-3.8c0.9-0.3,6.9-3,8.5-10.4l0-0.2c0.1-0.8,0.4-3.4-0.6-5.3\n                    c-0.8-1.6-1-1.8-2.5-3.5c-0.5-0.6-7.6-9.3-9.2-21.3l0-0.1c0-0.2-3.9-24.9,10.4-33.5c0.1,0,5.9-3.4,14.3-3.4\n                    c4.9,0,9.7,1.2,14.2,3.4l0.2,0.1c0.6,0.2,14.2,6.2,10.2,33.9l0,0.1c0,0.1-1.4,11.6-9.2,20.9c-0.1,0.2-0.3,0.3-0.5,0.5\n                    c-0.7,0.8-1.7,1.8-2.3,3.1l-0.1,0.2c-0.1,0.3-1,2.6,0,5.5c0.3,1.2,2,6.8,9.2,10l11.4,5.1l17,6.7c0.3,0.1,7.3,3,9,12.7l0.8,11.1\n                    c0,0,0,0,0,0c0,0,0.2,5,0.4,5H191.3z\"/>\n        </g>\n    </g>\n</svg>";
 
 /***/ },
 /* 336 */
@@ -33329,7 +33329,7 @@
   \************************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"person-profile\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M28.1,475v-48.4c0-15.9,25.7-29.1,34.9-32.6c4.6-1.5,60.5-19.6,105.3-36.5c19-7.2,32.1-18.7,39-34.1 c10.5-23.3,2.3-46.1,1.4-48.7l-0.8-2.1l-1.4-1.8c-10.8-13.2-25.3-34.2-27.3-37.1c-25.7-43.2-10.6-99.2-10.4-99.8l0.2-0.8l0.1-0.8 c5.8-36.4,21.4-60.7,46.3-72.3c19-8.8,36.9-7,37-6.9l0.7,0.1l0.7,0c30.3,0.7,53.3,14.5,68.2,41c11.9,21.1,14.3,42.6,14.3,42.7l0.1,1 l0.2,0.9c11.9,49-5.4,84.3-5.6,84.6l-0.4,0.8c-7,15.9-25.8,38.7-32.5,46.1l-1.2,1.3l-0.8,1.6c-10.1,19.5-9.4,39.2,1.9,55.6 c8.1,11.7,18.8,17.7,20,18.4l0.9,0.5L426,387.2l0.6,0.2c42.3,13.4,45.2,34.9,45.4,36.8V475H500v-51.1c0-2.1-0.4-13-9.3-26.2 c-10.9-16.3-29.5-28.7-55.3-36.9l-104.7-38.5c-1.6-1-6.2-4.3-9.6-9.2c-5.2-7.5-5.5-15.6-0.8-25.4c5.6-6.3,26.8-31.2,35.9-51.8 c2.5-5.1,21.3-46.2,7.8-102.7c-0.7-5.2-4.2-28.3-17.1-51.7c-19.7-35.6-51.5-55-92-56.1c-4.5-0.4-26.4-1.7-50,8.8 c-42.9,19.1-58.2,61.1-63.5,93.2c-2.2,8.3-16.9,70.2,13.8,121.3l0.4,0.7c0.6,0.9,15.2,22.2,27.2,37.2c1.1,4.2,3.3,15.3-1.3,25.5 c-3.8,8.4-11.6,14.9-23.4,19.4c-45.8,17.4-103.6,35.9-104.2,36.1l-0.5,0.2c-5.5,2-53.6,20.6-53.6,59V475H28.1z\"/>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-person-profile\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M28.1,475v-48.4c0-15.9,25.7-29.1,34.9-32.6c4.6-1.5,60.5-19.6,105.3-36.5c19-7.2,32.1-18.7,39-34.1 c10.5-23.3,2.3-46.1,1.4-48.7l-0.8-2.1l-1.4-1.8c-10.8-13.2-25.3-34.2-27.3-37.1c-25.7-43.2-10.6-99.2-10.4-99.8l0.2-0.8l0.1-0.8 c5.8-36.4,21.4-60.7,46.3-72.3c19-8.8,36.9-7,37-6.9l0.7,0.1l0.7,0c30.3,0.7,53.3,14.5,68.2,41c11.9,21.1,14.3,42.6,14.3,42.7l0.1,1 l0.2,0.9c11.9,49-5.4,84.3-5.6,84.6l-0.4,0.8c-7,15.9-25.8,38.7-32.5,46.1l-1.2,1.3l-0.8,1.6c-10.1,19.5-9.4,39.2,1.9,55.6 c8.1,11.7,18.8,17.7,20,18.4l0.9,0.5L426,387.2l0.6,0.2c42.3,13.4,45.2,34.9,45.4,36.8V475H500v-51.1c0-2.1-0.4-13-9.3-26.2 c-10.9-16.3-29.5-28.7-55.3-36.9l-104.7-38.5c-1.6-1-6.2-4.3-9.6-9.2c-5.2-7.5-5.5-15.6-0.8-25.4c5.6-6.3,26.8-31.2,35.9-51.8 c2.5-5.1,21.3-46.2,7.8-102.7c-0.7-5.2-4.2-28.3-17.1-51.7c-19.7-35.6-51.5-55-92-56.1c-4.5-0.4-26.4-1.7-50,8.8 c-42.9,19.1-58.2,61.1-63.5,93.2c-2.2,8.3-16.9,70.2,13.8,121.3l0.4,0.7c0.6,0.9,15.2,22.2,27.2,37.2c1.1,4.2,3.3,15.3-1.3,25.5 c-3.8,8.4-11.6,14.9-23.4,19.4c-45.8,17.4-103.6,35.9-104.2,36.1l-0.5,0.2c-5.5,2-53.6,20.6-53.6,59V475H28.1z\"/>\n</svg>";
 
 /***/ },
 /* 337 */
@@ -33338,7 +33338,7 @@
   \*******************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"pinterest\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M130.7,2C63.6,2,29.9,50,29.9,90c0,24.3,9.2,45.8,28.9,53.7c3.3,1.3,6.2,0,7.1-3.5c0.8-2.5,2.1-8.9,2.9-11.4\n            c1-3.5,0.8-4.8-2.1-7.7c-5.6-6.7-9.4-15.4-9.4-27.7c0-35.6,26.6-67.6,69.5-67.6c37.9,0,58.7,23.1,58.7,53.9\n            c0,40.8-17.9,74.9-44.9,74.9c-14.6,0-25.8-12.1-22.1-27c4.2-17.9,12.5-37,12.5-50.1c0-11.7-6.2-21.2-19.1-21.2\n            c-15,0-27.2,15.8-27.2,36.6c0,13.3,4.6,22.3,4.6,22.3s-15.6,65.5-18.1,76.8c-5.2,22.7-0.8,50.7-0.6,53.5c0.2,1.7,2.3,2.1,3.3,0.8\n            c1.3-1.9,19.5-24.1,25.6-46.2c1.7-6.2,9.8-38.9,9.8-38.9c4.8,9.4,19.3,17.5,34.5,17.5c45.3,0,76.1-41.2,76.1-96.7\n            C220,40.7,184.6,2,130.7,2z\"/>\n</svg>\n";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-pinterest\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M130.7,2C63.6,2,29.9,50,29.9,90c0,24.3,9.2,45.8,28.9,53.7c3.3,1.3,6.2,0,7.1-3.5c0.8-2.5,2.1-8.9,2.9-11.4\n            c1-3.5,0.8-4.8-2.1-7.7c-5.6-6.7-9.4-15.4-9.4-27.7c0-35.6,26.6-67.6,69.5-67.6c37.9,0,58.7,23.1,58.7,53.9\n            c0,40.8-17.9,74.9-44.9,74.9c-14.6,0-25.8-12.1-22.1-27c4.2-17.9,12.5-37,12.5-50.1c0-11.7-6.2-21.2-19.1-21.2\n            c-15,0-27.2,15.8-27.2,36.6c0,13.3,4.6,22.3,4.6,22.3s-15.6,65.5-18.1,76.8c-5.2,22.7-0.8,50.7-0.6,53.5c0.2,1.7,2.3,2.1,3.3,0.8\n            c1.3-1.9,19.5-24.1,25.6-46.2c1.7-6.2,9.8-38.9,9.8-38.9c4.8,9.4,19.3,17.5,34.5,17.5c45.3,0,76.1-41.2,76.1-96.7\n            C220,40.7,184.6,2,130.7,2z\"/>\n</svg>\n";
 
 /***/ },
 /* 338 */
@@ -33365,7 +33365,7 @@
   \***************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"quote\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M193.2,142h-25.1c3.3-47,40.9-82.6,81.9-106.9l-7.5-12.5c-65.2,32.6-100.3,88.6-100.3,131.2c0,46.8,14.2,75.2,59.3,75.2 c20,0,40.1-21,40.1-42.7C241.6,163.8,227.4,142,193.2,142z\"/>\n        <path d=\"M108,35.1l-7.5-12.5C35.3,55.2,0.2,111.2,0.2,153.8c0,46.8,14.2,75.2,59.3,75.2c20.1,0,40.1-21,40.1-42.7 c0-22.6-14.2-44.4-48.5-44.4H26.1C29.4,95,67,59.4,108,35.1z\"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-quote\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M193.2,142h-25.1c3.3-47,40.9-82.6,81.9-106.9l-7.5-12.5c-65.2,32.6-100.3,88.6-100.3,131.2c0,46.8,14.2,75.2,59.3,75.2 c20,0,40.1-21,40.1-42.7C241.6,163.8,227.4,142,193.2,142z\"/>\n        <path d=\"M108,35.1l-7.5-12.5C35.3,55.2,0.2,111.2,0.2,153.8c0,46.8,14.2,75.2,59.3,75.2c20.1,0,40.1-21,40.1-42.7 c0-22.6-14.2-44.4-48.5-44.4H26.1C29.4,95,67,59.4,108,35.1z\"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 341 */
@@ -33410,7 +33410,7 @@
   \***********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"shopping-cart\" viewBox=\"-220.7 -160.7 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M263.2-67.5H-71.5c-8.9,0-16.1,7.6-16.1,16.9c0,0.1-17.9-92.8-17.9-92.8c-2.1-10.6-8.4-17.4-21.9-17.4h-77.1 c-8.9,0-16.1,7.6-16.1,16.9c0,9.4,7.2,16.9,16.1,16.9h70.4l58.8,307.5c2.3,10.6,11.4,14.6,19.5,14.6c0,0,248.3,0,248.8,0 c8.4,0,17-3.7,19.2-12.8l63.8-219c1.1-3.3,3.3-8.2,3.3-14C279.3-59.9,272.1-67.5,263.2-67.5z M185.4,161.4c-0.1,0-0.2,0-0.3,0 H-47.3L-86.8-45.4c2.1,6.8,8.1,11.8,15.3,11.8h314.1L185.4,161.4z\"/>\n    <path d=\"M-22.9,254.6c-23,0-41.6,19-41.6,42.4c0,23.4,18.6,42.4,41.6,42.4s41.6-19,41.6-42.4S0.1,254.6-22.9,254.6z M-22.6,312.5c-8.7,0-15.7-7-15.7-15.5c0-8.6,7-15.5,15.7-15.5s15.7,7,15.7,15.5C-6.9,305.5-13.9,312.5-22.6,312.5z\"/>\n    <path d=\"M167.7,254.6c-22.7,0-41,19-41,42.4c0,23.4,18.4,42.4,41,42.4s41-19,41-42.4S190.4,254.6,167.7,254.6z M167.8,312.5c-8.6,0-15.5-7-15.5-15.5c0-8.6,7-15.5,15.5-15.5c8.6,0,15.5,7,15.5,15.5C183.3,305.5,176.4,312.5,167.8,312.5z\"/>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-shopping-cart\" viewBox=\"-220.7 -160.7 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M263.2-67.5H-71.5c-8.9,0-16.1,7.6-16.1,16.9c0,0.1-17.9-92.8-17.9-92.8c-2.1-10.6-8.4-17.4-21.9-17.4h-77.1 c-8.9,0-16.1,7.6-16.1,16.9c0,9.4,7.2,16.9,16.1,16.9h70.4l58.8,307.5c2.3,10.6,11.4,14.6,19.5,14.6c0,0,248.3,0,248.8,0 c8.4,0,17-3.7,19.2-12.8l63.8-219c1.1-3.3,3.3-8.2,3.3-14C279.3-59.9,272.1-67.5,263.2-67.5z M185.4,161.4c-0.1,0-0.2,0-0.3,0 H-47.3L-86.8-45.4c2.1,6.8,8.1,11.8,15.3,11.8h314.1L185.4,161.4z\"/>\n    <path d=\"M-22.9,254.6c-23,0-41.6,19-41.6,42.4c0,23.4,18.6,42.4,41.6,42.4s41.6-19,41.6-42.4S0.1,254.6-22.9,254.6z M-22.6,312.5c-8.7,0-15.7-7-15.7-15.5c0-8.6,7-15.5,15.7-15.5s15.7,7,15.7,15.5C-6.9,305.5-13.9,312.5-22.6,312.5z\"/>\n    <path d=\"M167.7,254.6c-22.7,0-41,19-41,42.4c0,23.4,18.4,42.4,41,42.4s41-19,41-42.4S190.4,254.6,167.7,254.6z M167.8,312.5c-8.6,0-15.5-7-15.5-15.5c0-8.6,7-15.5,15.5-15.5c8.6,0,15.5,7,15.5,15.5C183.3,305.5,176.4,312.5,167.8,312.5z\"/>\n</svg>";
 
 /***/ },
 /* 346 */
@@ -33419,7 +33419,7 @@
   \*********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"star-filled\" viewBox=\"0 0 471 448\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M381.12 448l-145.6-104.747-145.493 104.747 54.613-170.773-144.64-106.133 179.307-0.853 56.213-170.24 56.214 170.347 179.307 0.853-144.64 106.027 54.72 170.773z\" />\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-star-filled\" viewBox=\"0 0 471 448\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M381.12 448l-145.6-104.747-145.493 104.747 54.613-170.773-144.64-106.133 179.307-0.853 56.213-170.24 56.214 170.347 179.307 0.853-144.64 106.027 54.72 170.773z\" />\n</svg>";
 
 /***/ },
 /* 347 */
@@ -33446,7 +33446,7 @@
   \*****************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"toolbox\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path class=\"st0\" d=\"M257.8,206.3c-17.4,0-31.5,14.1-31.5,31.5c0,17.4,14.1,31.5,31.5,31.5c17.4,0,31.5-14.1,31.5-31.5\n            C289.3,220.5,275.2,206.3,257.8,206.3z M257.8,255.3c-9.6,0-17.5-7.9-17.5-17.5s7.9-17.5,17.5-17.5s17.5,7.9,17.5,17.5\n            S267.5,255.3,257.8,255.3z\"/>\n    <path class=\"st0\" d=\"M378,136.7V84.4l-26.7-33.8h-183l-29,34.2v51.8H1V199v1.7V407h517V200.7V199v-62.3H378z M165.3,94.4l15-17.8\n            h158.3L352,93.5v43.2H165.3V94.4z M504,391.7H15V213h133v62.5l31.2,29.5h156.9l33.4-28.8l0.5-63.2H504V391.7z M356.1,199l-0.5,70.8\n            L330.9,291H184.8L162,269.5V199H15v-48.3h489V199H356.1z\"/>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-toolbox\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path class=\"st0\" d=\"M257.8,206.3c-17.4,0-31.5,14.1-31.5,31.5c0,17.4,14.1,31.5,31.5,31.5c17.4,0,31.5-14.1,31.5-31.5\n            C289.3,220.5,275.2,206.3,257.8,206.3z M257.8,255.3c-9.6,0-17.5-7.9-17.5-17.5s7.9-17.5,17.5-17.5s17.5,7.9,17.5,17.5\n            S267.5,255.3,257.8,255.3z\"/>\n    <path class=\"st0\" d=\"M378,136.7V84.4l-26.7-33.8h-183l-29,34.2v51.8H1V199v1.7V407h517V200.7V199v-62.3H378z M165.3,94.4l15-17.8\n            h158.3L352,93.5v43.2H165.3V94.4z M504,391.7H15V213h133v62.5l31.2,29.5h156.9l33.4-28.8l0.5-63.2H504V391.7z M356.1,199l-0.5,70.8\n            L330.9,291H184.8L162,269.5V199H15v-48.3h489V199H356.1z\"/>\n</svg>";
 
 /***/ },
 /* 350 */
@@ -33455,7 +33455,7 @@
   \********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"trade-logo\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125.1,250l-2.5-1.5c-1-0.6-24.9-14.8-50.8-47.9c-23.7-30.4-53.6-83.3-60.8-162.4l-0.2-2.5l2.1-1.5\n                C14.8,32.8,60,0.3,125.4,0.3c38.4,0,75.8,11.3,111,33.7l2.1,1.4l0,2.5c0,1.4-0.7,34-14.7,76.4c-12.9,39.2-40.1,94.3-96.3,134.1\n                L125.1,250z M20.3,40c7.4,75.5,35.9,125.9,58.6,155.1c20.1,25.8,39.2,39.7,45.8,44.1c52.6-38.3,78.3-90.5,90.5-127.8\n                c11.4-34.6,13.7-62.9,14.1-71.2c-33.1-20.5-68.1-31-104-31C70.5,9.3,29.7,33.8,20.3,40z\"/>\n        <path d=\"M124.9,209l-1.8-1.1c-0.7-0.4-18.4-10.9-37.4-35.3C68.2,150.3,46.3,111.4,41,53.2l-0.2-1.9l1.5-1.1\n                c1.4-1,34.6-24.9,82.8-24.9c28.3,0,55.8,8.3,81.7,24.8l1.6,1l0,1.9c0,1-0.5,25-10.8,56.2c-9.5,28.8-29.5,69.4-70.9,98.7L124.9,209z\n                 M47.8,54.5c5.4,55.5,26.4,92.6,43.1,114.1c14.8,19,28.9,29.2,33.7,32.5c38.7-28.2,57.6-66.6,66.6-94c8.4-25.4,10.1-46.2,10.4-52.4\n                c-24.4-15.1-50.1-22.8-76.5-22.8C84.7,31.9,54.7,50,47.8,54.5z\"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-trade-logo\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125.1,250l-2.5-1.5c-1-0.6-24.9-14.8-50.8-47.9c-23.7-30.4-53.6-83.3-60.8-162.4l-0.2-2.5l2.1-1.5\n                C14.8,32.8,60,0.3,125.4,0.3c38.4,0,75.8,11.3,111,33.7l2.1,1.4l0,2.5c0,1.4-0.7,34-14.7,76.4c-12.9,39.2-40.1,94.3-96.3,134.1\n                L125.1,250z M20.3,40c7.4,75.5,35.9,125.9,58.6,155.1c20.1,25.8,39.2,39.7,45.8,44.1c52.6-38.3,78.3-90.5,90.5-127.8\n                c11.4-34.6,13.7-62.9,14.1-71.2c-33.1-20.5-68.1-31-104-31C70.5,9.3,29.7,33.8,20.3,40z\"/>\n        <path d=\"M124.9,209l-1.8-1.1c-0.7-0.4-18.4-10.9-37.4-35.3C68.2,150.3,46.3,111.4,41,53.2l-0.2-1.9l1.5-1.1\n                c1.4-1,34.6-24.9,82.8-24.9c28.3,0,55.8,8.3,81.7,24.8l1.6,1l0,1.9c0,1-0.5,25-10.8,56.2c-9.5,28.8-29.5,69.4-70.9,98.7L124.9,209z\n                 M47.8,54.5c5.4,55.5,26.4,92.6,43.1,114.1c14.8,19,28.9,29.2,33.7,32.5c38.7-28.2,57.6-66.6,66.6-94c8.4-25.4,10.1-46.2,10.4-52.4\n                c-24.4-15.1-50.1-22.8-76.5-22.8C84.7,31.9,54.7,50,47.8,54.5z\"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 351 */
@@ -33464,7 +33464,7 @@
   \**********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"trash-filled\" viewBox=\"0 0 218 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M15,15.25 L77,15.25 L77,0 L139.5,0 L139.5,15.25 L202,15.25 L202,32 L15,32 L15,15.25 Z\"></path>\n        <path d=\"M0,47 L218,47 L218,62 L206,62 L167,250 L50,250 L13.5,62 L0,62 L0,47 Z\"></path>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-trash-filled\" viewBox=\"0 0 218 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M15,15.25 L77,15.25 L77,0 L139.5,0 L139.5,15.25 L202,15.25 L202,32 L15,32 L15,15.25 Z\"></path>\n        <path d=\"M0,47 L218,47 L218,62 L206,62 L167,250 L50,250 L13.5,62 L0,62 L0,47 Z\"></path>\n    </g>\n</svg>";
 
 /***/ },
 /* 352 */
@@ -33473,7 +33473,7 @@
   \**********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"truck-moving\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path class=\"st0\" d=\"M467.6,235.5c0.2-1.2,3.5-28.7-23.1-59.3l-2-2.3H390v68h76.8L467.6,235.5z M403.7,227v-38.4h32.8\n                c13.3,16.2,16.7,30.6,17.5,38.4H403.7z\"/>\n        <path class=\"st0\" d=\"M412.8,355.1c-22.6,0-41.1,18.9-41.1,42.2c0,23.3,18.4,42.2,41.1,42.2c22.6,0,41.1-18.9,41.1-42.2\n                C453.8,374,435.4,355.1,412.8,355.1z M412.8,409.3c-6.5,0-11.7-5.4-11.7-12.1c0-6.7,5.3-12.1,11.7-12.1s11.7,5.4,11.7,12.1\n                C424.5,403.9,419.2,409.3,412.8,409.3z\"/>\n        <path class=\"st0\" d=\"M120.8,355.1c-22.6,0-41.1,18.9-41.1,42.2c0,23.3,18.4,42.2,41.1,42.2c22.6,0,41.1-18.9,41.1-42.2\n                C161.8,374,143.4,355.1,120.8,355.1z M120.8,409.3c-6.5,0-11.7-5.4-11.7-12.1c0-6.7,5.3-12.1,11.7-12.1c6.5,0,11.7,5.4,11.7,12.1\n                C132.5,403.9,127.3,409.3,120.8,409.3z\"/>\n        <path class=\"st0\" d=\"M501.9,313.3v-99.8l-15.4-42c-8.6-24.4-31.9-30.2-43.2-29.9h-80.6v14.1h80.7l0.2,0c0.9,0,22.4-0.3,29.7,20.5\n                l14.6,39.8v102.8l2,2c0.1,0.1,9.7,10.4,9.7,23.9v34.2c0,0.1-0.1,6.6-4.5,8.4h-10.4c-1.1-6.4-3.7-16.5-9.6-26.6\n                c-8.8-15.3-26.8-33.6-62.2-33.7c-2.6-0.2-16.2-0.8-31.4,6.1c-24.9,11.4-36.3,34.7-41.5,54.2H193.8c-2.1-6.3-6.5-17.1-14.2-28\n                c-11.8-16.5-27.1-27-44.9-30.8h228V76.6H3.5v251.9h22.3v72.8h36.5l0.9-5.9c8.5-53.4,51.2-54.4,53-54.4l0.2,0\n                c21.1-0.7,38.4,8,51.5,26.1c10.1,14,13.8,28.7,13.8,28.8l1.3,5.4h168.3l1.2-5.5c12.8-58.5,57.5-55,59.4-54.8l0.7,0\n                c55,0,58.8,51.5,58.9,53.7l0.4,6.6h25.1l0.9-0.2c12.4-3.2,15.7-15.9,15.7-22.2v-34.2C513.7,329.7,505.8,318,501.9,313.3z\n                 M17.1,90.7H349v223.8H17.1V90.7z M50.4,387.2H39.8v-58.7h64.6c-5.1,1.2-11.4,3.2-18,6.8C73.4,342.5,56.9,357.3,50.4,387.2z\"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-truck-moving\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path class=\"st0\" d=\"M467.6,235.5c0.2-1.2,3.5-28.7-23.1-59.3l-2-2.3H390v68h76.8L467.6,235.5z M403.7,227v-38.4h32.8\n                c13.3,16.2,16.7,30.6,17.5,38.4H403.7z\"/>\n        <path class=\"st0\" d=\"M412.8,355.1c-22.6,0-41.1,18.9-41.1,42.2c0,23.3,18.4,42.2,41.1,42.2c22.6,0,41.1-18.9,41.1-42.2\n                C453.8,374,435.4,355.1,412.8,355.1z M412.8,409.3c-6.5,0-11.7-5.4-11.7-12.1c0-6.7,5.3-12.1,11.7-12.1s11.7,5.4,11.7,12.1\n                C424.5,403.9,419.2,409.3,412.8,409.3z\"/>\n        <path class=\"st0\" d=\"M120.8,355.1c-22.6,0-41.1,18.9-41.1,42.2c0,23.3,18.4,42.2,41.1,42.2c22.6,0,41.1-18.9,41.1-42.2\n                C161.8,374,143.4,355.1,120.8,355.1z M120.8,409.3c-6.5,0-11.7-5.4-11.7-12.1c0-6.7,5.3-12.1,11.7-12.1c6.5,0,11.7,5.4,11.7,12.1\n                C132.5,403.9,127.3,409.3,120.8,409.3z\"/>\n        <path class=\"st0\" d=\"M501.9,313.3v-99.8l-15.4-42c-8.6-24.4-31.9-30.2-43.2-29.9h-80.6v14.1h80.7l0.2,0c0.9,0,22.4-0.3,29.7,20.5\n                l14.6,39.8v102.8l2,2c0.1,0.1,9.7,10.4,9.7,23.9v34.2c0,0.1-0.1,6.6-4.5,8.4h-10.4c-1.1-6.4-3.7-16.5-9.6-26.6\n                c-8.8-15.3-26.8-33.6-62.2-33.7c-2.6-0.2-16.2-0.8-31.4,6.1c-24.9,11.4-36.3,34.7-41.5,54.2H193.8c-2.1-6.3-6.5-17.1-14.2-28\n                c-11.8-16.5-27.1-27-44.9-30.8h228V76.6H3.5v251.9h22.3v72.8h36.5l0.9-5.9c8.5-53.4,51.2-54.4,53-54.4l0.2,0\n                c21.1-0.7,38.4,8,51.5,26.1c10.1,14,13.8,28.7,13.8,28.8l1.3,5.4h168.3l1.2-5.5c12.8-58.5,57.5-55,59.4-54.8l0.7,0\n                c55,0,58.8,51.5,58.9,53.7l0.4,6.6h25.1l0.9-0.2c12.4-3.2,15.7-15.9,15.7-22.2v-34.2C513.7,329.7,505.8,318,501.9,313.3z\n                 M17.1,90.7H349v223.8H17.1V90.7z M50.4,387.2H39.8v-58.7h64.6c-5.1,1.2-11.4,3.2-18,6.8C73.4,342.5,56.9,357.3,50.4,387.2z\"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 353 */
@@ -33482,7 +33482,7 @@
   \*****************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"twitter\" viewBox=\"0 0 612.9 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M0,441.8h29.9c60.4,0,113.8-16.8,160.1-50c-53.7-1.2-99.2-39-120.2-91.2c5.8,3.3,13.7,5.2,23.2,5.2c3.9,0,10.4-1,18.9-2.7 c8.2-1.5,14-2.5,17.4-2.5c-60.1-10.1-105-60.7-105-123c17.4,7,22.3,9.4,36.9,12.1c7.3,1.5,15,2.1,22.9,2.1 c-35.1-22-59.8-61.9-59.8-101.3c0-30.2,5.2-48.2,19.9-68.7c60.7,78.5,154.6,127.9,255,134.9c0-3.9-0.4-9.2-0.6-15.6 c-0.4-6.4-0.6-11-0.6-14.3c0-45.5,25.4-87.5,63.5-110.1C380.7,5.5,400.8,0,422.3,0c34.8,0,67.1,13.5,97,40.6 c17-2.1,33-8.2,55.2-18.3c11-5.2,18.9-8.6,23.5-10.4c-9.4,27.1-28.1,46.7-60.1,68.9c29.6-3.1,54.6-10.1,75-20.7 c-13.1,22.9-32.6,45.1-58.6,66.8v15c0,54.9-15.2,112.3-42.4,165.6c-27.1,53.3-71.1,101-122.6,136.1S268.5,500,194.3,500 C123.8,500,58.9,480.5,0,441.8z\" />\n</svg>\n";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-twitter\" viewBox=\"0 0 612.9 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M0,441.8h29.9c60.4,0,113.8-16.8,160.1-50c-53.7-1.2-99.2-39-120.2-91.2c5.8,3.3,13.7,5.2,23.2,5.2c3.9,0,10.4-1,18.9-2.7 c8.2-1.5,14-2.5,17.4-2.5c-60.1-10.1-105-60.7-105-123c17.4,7,22.3,9.4,36.9,12.1c7.3,1.5,15,2.1,22.9,2.1 c-35.1-22-59.8-61.9-59.8-101.3c0-30.2,5.2-48.2,19.9-68.7c60.7,78.5,154.6,127.9,255,134.9c0-3.9-0.4-9.2-0.6-15.6 c-0.4-6.4-0.6-11-0.6-14.3c0-45.5,25.4-87.5,63.5-110.1C380.7,5.5,400.8,0,422.3,0c34.8,0,67.1,13.5,97,40.6 c17-2.1,33-8.2,55.2-18.3c11-5.2,18.9-8.6,23.5-10.4c-9.4,27.1-28.1,46.7-60.1,68.9c29.6-3.1,54.6-10.1,75-20.7 c-13.1,22.9-32.6,45.1-58.6,66.8v15c0,54.9-15.2,112.3-42.4,165.6c-27.1,53.3-71.1,101-122.6,136.1S268.5,500,194.3,500 C123.8,500,58.9,480.5,0,441.8z\" />\n</svg>\n";
 
 /***/ },
 /* 354 */
@@ -33491,7 +33491,7 @@
   \**************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<!-- yoga on careers -->\n<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"yoga\" viewBox=\"0 0 420 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M418.7,181.7l-2.1,0.8l0,0L418.7,181.7c-0.4-0.8-0.4-1.3-0.8-1.7c-0.8-2.1-2.1-3.8-4.2-4.6\n            c-5-2.5-13,0-22.3,3.4l-2.1,0.8c-7.1,2.5-15.1,5.5-20.6,3.4c-1.3-0.4-2.1-0.8-3.4-1.3c-7.6-2.9-17.2-7.1-25.2-2.5\n            c-6.7,3.8-8.4,13-8.8,19.3c-8,1.3-26,4.6-35.7,6.3c-4.2,0.8-7.1,1.3-10.1,2.1c-5.5,1.3-9.7,2.5-19.7,2.9\n            c8.4-7.1,19.7-16.8,26.5-23.9c12.6-12.6,21.8-27.7,26.9-43.7c4.6-15.1,4.6-26.9,0.4-37.4c-3.4-8.4-13.4-19.3-23.5-23.5\n            c-11.3-4.6-39.1-3.4-48.3,2.1c-3.8,2.1-22.7,13.4-33.2,26.5c-5,6.3-19.7,17.6-33.6,28.6c-9.7,7.6-19.7,15.5-27.3,21.8\n            c-4.2,3.8-8.4,7.6-12.6,11.3l-0.4,0.4c-12.6,10.9-23.1,20.2-30.2,29c-3.4,6.3-7.1,11.3-8.4,13c-4.2-1.3-16.4-6.3-20.2-10.1\n            c-2.9-2.9-8.8-6.3-15.1-8.8c-0.4-10.5-9.2-18.5-20.2-18.5s-20.2,8.8-20.2,19.7c0,0.4,0,1.3,0,1.7c-4.6,2.1-8.8,5-12.2,8.8\n            C5,216.6-2.5,233.4,0.4,242.6c0.4,2.1,0.8,3.8,1.3,5.5c0.8,4.6,2.1,10.1,8.4,12.6c1.3,0.4,2.1,2.1,2.9,4.2c1.7,2.5,3.4,6.3,8,7.6\n            c2.1,0.4,3.8,0.4,4.6,0.4c0.8,0,1.3,0,1.3,0s0,0.4,0.4,0.8c0.4,1.7,0.8,3.4,0.8,5.5c0.8,5,1.7,11.8,8,12.6c3.8,0.4,6.3-1.3,8-2.5\n            c3.8,2.5,7.6,4.2,13.4,5.9c7.6,1.7,10.1,2.1,13.9-2.1c2.1-2.1,3.4-5,4.6-8c0.4-1.3,1.3-2.9,2.1-4.6c1.3-2.1,2.1-3.8,14.7-5.5\n            c11.8-1.7,27.7-7.1,30.2-8.4c6.7,6.7,13.9,12.6,13.9,12.6c3.8,2.9,13,7.6,22.3,11.8c5.5,2.5,10.5,5,12.6,6.3\n            c5,3.4,15.5,11.8,20.2,16c1.3,1.3,2.5,2.5,4.6,4.2l0.4,0.4c5,4.6,13.4,12.2,15.1,16c2.1,4.6,2.9,21.4,3.4,31.5c0,2.5,0,4.6,0.4,6.3\n            c0.8,15.1,0.8,30.7,0.4,34.9c-1.3,0-3.4,0-4.6,0c-1.7,0-3.4,0-5.5,0h-0.8c-8.4,0-13.4,0-21.8,5.9c-4.6,3.4-13,5-18.9,6.3\n            c-2.5,0.4-4.6,0.8-6.3,1.7l-0.8,0.4c-4.2,1.3-8.8,2.5-9.7,6.7c-0.8,4.2,2.9,7.6,4.6,8.8c2.9,2.5,9.7,3.4,23.1,3.4\n            c10.1,0,23.1-0.4,43.3-1.7c3.8-0.4,6.7-0.4,7.6-0.4c5.9,0,8-4.2,9.7-7.6c0.8-2.1,2.5-5,5-8.8c8.4-12.2,12.6-107.9,12.6-108.8\n            c-0.4-4.2-6.3-9.7-26.5-25.6l-3.4-2.5c-1.7-1.3-5.5-3.8-11.3-7.6c5.9-1.7,12.2-3.8,17.6-5c11.3-2.9,48.3-14.7,61.3-19.3\n            c13.9-5,48.3-16.4,60.1-19.7c13.4-3.8,23.5-12.2,30.2-17.6c3.8-2.9,8.4-5.5,14.3-8.4c4.6-2.5,9.2-5,14.3-8\n            C418.7,192.6,422.1,188.9,418.7,181.7z M159.2,429.5l1.3-0.4c1.3-0.4,3.4-0.8,5-1.3h0.4c6.7-1.3,16-3.4,22.3-8\n            c5.9-4.2,8.4-4.2,16.8-4.2h0.8c1.7,0,3.4,0,5.5,0c5.9,0,11.3,0.4,13.4-5.5c1.7-5.5,0.4-38.6,0.4-39.1l-0.4-6.3\n            c-0.8-16.4-1.3-29.4-4.2-34.9c-2.5-5.5-10.9-13-17.2-18.9l-0.4-0.4c-1.7-1.7-3.4-2.9-4.2-3.8c-5-5-15.5-13.9-21.4-17.2\n            c-2.5-1.7-8-4.2-14.3-7.1c-7.1-3.4-17.2-8.4-20.2-10.5c-9.7-7.6-21-19.3-21.4-22.3c-0.4-1.3-0.8-2.1-2.1-2.9\n            c-0.8-0.8-2.1-0.8-3.4-0.8c-2.5,0.4-4.2,2.9-3.8,5.5c0.4,2.1,1.7,4.6,4.2,7.6c-5.5,1.7-16.4,5.5-24.8,6.7\n            c-12.2,1.7-18.1,3.8-21.4,10.5c-0.8,2.1-1.7,3.8-2.5,5.5c-0.8,2.1-1.7,3.8-2.1,4.6l-0.4,0.4c-0.4,0-2.5-0.4-5-0.8\n            c-5.5-1.3-8.4-2.9-12.6-5.9c-3.8-2.5-7.1,0-8.4,1.3c-0.4,0-0.4,0.4-0.8,0.8c-0.4-1.3-0.8-3.4-0.8-4.6c-0.4-2.1-0.8-4.2-1.3-6.7\n            c-2.1-7.1-7.1-7.6-10.5-7.6c-0.8,0-2.1,0-2.5-0.4c-0.4-0.4-1.3-1.7-1.7-2.5c-0.8-1.3-1.7-3.4-3.4-5.5c2.9-2.1,7.1-4.6,11.3-4.2\n            c8.4,1.7,17.2,0.8,17.6,0.8H50l-0.8-2.9c-1.3-3.8-2.1-9.2-0.8-10.1l0.8-0.4c2.9-2.5,4.2-3.8,9.2-0.4c8,5.5,18.9,3.4,23.9,0\n            c3.4-2.1,10.5-10.1,15.1-15.5c2.1,0.8,3.8,0.8,4.6,0.8c2.5,0,6.3-1.3,15.1-17.2c3.4-3.8,8-8.8,15.1-15.1c5,2.9,16,10.5,22.3,21\n            c5,8.8,6.7,23.1,7.6,31.9c-3.8-5-5.5-12.2-5.5-12.2c-0.4-2.5-2.9-4.2-5.5-3.8c-1.3,0.4-2.1,0.8-2.9,2.1c-0.8,0.8-0.8,2.1-0.8,3.4\n            c0.4,1.3,2.5,13,10.5,20.2c4.2,3.8,18.9,12.6,32.8,21.4l0.8,0.4c10.9,6.7,21.4,13.4,25.2,16l3.4,2.5l1.3-1.7l0,0l-1.3,1.7\n            c17.2,13.4,22.3,18.1,23.1,19.7c0.4,8-5,94.1-10.9,102.1c-2.9,4.2-4.6,8-5.9,10.1c-0.4,0.4-0.8,1.7-1.3,2.1c-1.3,0-4.2,0-8.4,0.4\n            C175.1,431.2,162.5,430.4,159.2,429.5C158.8,429.5,159.2,429.5,159.2,429.5z M410.3,185.9C410.3,185.9,410.3,186.3,410.3,185.9\n            c0,0.8-1.3,1.7-5,4.2l0,0c-4.6,2.9-9.2,5-13.4,7.6c-5.9,2.9-11.8,5.9-16,9.7c-5.9,5-15.1,12.6-26.9,16\n            c-12.2,3.4-46.6,15.1-60.9,19.7c-13.9,5-50,16.4-60.9,18.9c-9.2,2.5-21.8,6.3-25.6,7.6l-5.5-3.4c-8.8-5.5-18.5-11.3-24.8-15.5\n            l20.6-38.2c6.7-12.6,18.1-30.2,26-41.6c5.9-8,20.2-23.5,29.8-33.6l4.2-4.6c4.2,0.8,12.2,3.8,20.6,15.1c9.7,12.6,14.7,23.5,16.8,28.6\n            c-0.8,1.3-2.1,2.1-2.9,2.9c-10.5,10.5-30.7,27.3-36.1,31.5c-6.7,1.3-10.9,3.8-15.1,5.9c-1.7,0.8-2.9,1.7-5,2.5\n            c-10.9,4.6-19.3,21-19.7,21.8c-0.4,1.3-0.8,2.5-0.4,3.4c0.4,1.3,1.3,2.1,2.1,2.5c2.1,1.3,5,0.4,6.3-2.1c2.5-5,9.2-15.1,15.1-17.6\n            c2.1-0.8,3.8-1.7,5.9-2.9c5.9-2.9,10.1-5,23.5-5.5c13.4-0.4,18.9-1.7,25.6-3.4c2.5-0.8,5.5-1.3,9.2-2.1c12.6-2.1,39.1-6.7,39.5-7.1\n            c2.1-0.4,3.8-2.5,3.8-4.6c0-5,0.8-13,4.2-15.1c3.8-2.5,10.9,0.4,16.8,2.9c1.3,0.4,2.5,0.8,3.4,1.3c8.4,3.4,18.5-0.4,26.9-3.4\n            l2.5,0.4c9.7-3.4,13-3.8,14.7-3.8C409.5,184.7,409.9,185.5,410.3,185.9z M210.8,165.3c-4.6,6.7-10.5,15.1-16,23.9\n            c-2.9-5.5-7.6-12.2-11.3-16c-4.2-4.2-10.9-9.7-15.1-13c5.5-4.6,12.2-9.7,18.1-14.3l0,0c15.1-11.8,29-22.7,34.9-29.8c0,0,0,0,0-0.4\n            c2.9,3.8,7.1,9.7,9.2,13.9c1.7,3.4,2.9,6.3,3.8,8.4C225.5,147.7,215.5,158.6,210.8,165.3z\"/>\n</svg>";
+	module.exports = "<!-- yoga on careers -->\n<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-yoga\" viewBox=\"0 0 420 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M418.7,181.7l-2.1,0.8l0,0L418.7,181.7c-0.4-0.8-0.4-1.3-0.8-1.7c-0.8-2.1-2.1-3.8-4.2-4.6\n            c-5-2.5-13,0-22.3,3.4l-2.1,0.8c-7.1,2.5-15.1,5.5-20.6,3.4c-1.3-0.4-2.1-0.8-3.4-1.3c-7.6-2.9-17.2-7.1-25.2-2.5\n            c-6.7,3.8-8.4,13-8.8,19.3c-8,1.3-26,4.6-35.7,6.3c-4.2,0.8-7.1,1.3-10.1,2.1c-5.5,1.3-9.7,2.5-19.7,2.9\n            c8.4-7.1,19.7-16.8,26.5-23.9c12.6-12.6,21.8-27.7,26.9-43.7c4.6-15.1,4.6-26.9,0.4-37.4c-3.4-8.4-13.4-19.3-23.5-23.5\n            c-11.3-4.6-39.1-3.4-48.3,2.1c-3.8,2.1-22.7,13.4-33.2,26.5c-5,6.3-19.7,17.6-33.6,28.6c-9.7,7.6-19.7,15.5-27.3,21.8\n            c-4.2,3.8-8.4,7.6-12.6,11.3l-0.4,0.4c-12.6,10.9-23.1,20.2-30.2,29c-3.4,6.3-7.1,11.3-8.4,13c-4.2-1.3-16.4-6.3-20.2-10.1\n            c-2.9-2.9-8.8-6.3-15.1-8.8c-0.4-10.5-9.2-18.5-20.2-18.5s-20.2,8.8-20.2,19.7c0,0.4,0,1.3,0,1.7c-4.6,2.1-8.8,5-12.2,8.8\n            C5,216.6-2.5,233.4,0.4,242.6c0.4,2.1,0.8,3.8,1.3,5.5c0.8,4.6,2.1,10.1,8.4,12.6c1.3,0.4,2.1,2.1,2.9,4.2c1.7,2.5,3.4,6.3,8,7.6\n            c2.1,0.4,3.8,0.4,4.6,0.4c0.8,0,1.3,0,1.3,0s0,0.4,0.4,0.8c0.4,1.7,0.8,3.4,0.8,5.5c0.8,5,1.7,11.8,8,12.6c3.8,0.4,6.3-1.3,8-2.5\n            c3.8,2.5,7.6,4.2,13.4,5.9c7.6,1.7,10.1,2.1,13.9-2.1c2.1-2.1,3.4-5,4.6-8c0.4-1.3,1.3-2.9,2.1-4.6c1.3-2.1,2.1-3.8,14.7-5.5\n            c11.8-1.7,27.7-7.1,30.2-8.4c6.7,6.7,13.9,12.6,13.9,12.6c3.8,2.9,13,7.6,22.3,11.8c5.5,2.5,10.5,5,12.6,6.3\n            c5,3.4,15.5,11.8,20.2,16c1.3,1.3,2.5,2.5,4.6,4.2l0.4,0.4c5,4.6,13.4,12.2,15.1,16c2.1,4.6,2.9,21.4,3.4,31.5c0,2.5,0,4.6,0.4,6.3\n            c0.8,15.1,0.8,30.7,0.4,34.9c-1.3,0-3.4,0-4.6,0c-1.7,0-3.4,0-5.5,0h-0.8c-8.4,0-13.4,0-21.8,5.9c-4.6,3.4-13,5-18.9,6.3\n            c-2.5,0.4-4.6,0.8-6.3,1.7l-0.8,0.4c-4.2,1.3-8.8,2.5-9.7,6.7c-0.8,4.2,2.9,7.6,4.6,8.8c2.9,2.5,9.7,3.4,23.1,3.4\n            c10.1,0,23.1-0.4,43.3-1.7c3.8-0.4,6.7-0.4,7.6-0.4c5.9,0,8-4.2,9.7-7.6c0.8-2.1,2.5-5,5-8.8c8.4-12.2,12.6-107.9,12.6-108.8\n            c-0.4-4.2-6.3-9.7-26.5-25.6l-3.4-2.5c-1.7-1.3-5.5-3.8-11.3-7.6c5.9-1.7,12.2-3.8,17.6-5c11.3-2.9,48.3-14.7,61.3-19.3\n            c13.9-5,48.3-16.4,60.1-19.7c13.4-3.8,23.5-12.2,30.2-17.6c3.8-2.9,8.4-5.5,14.3-8.4c4.6-2.5,9.2-5,14.3-8\n            C418.7,192.6,422.1,188.9,418.7,181.7z M159.2,429.5l1.3-0.4c1.3-0.4,3.4-0.8,5-1.3h0.4c6.7-1.3,16-3.4,22.3-8\n            c5.9-4.2,8.4-4.2,16.8-4.2h0.8c1.7,0,3.4,0,5.5,0c5.9,0,11.3,0.4,13.4-5.5c1.7-5.5,0.4-38.6,0.4-39.1l-0.4-6.3\n            c-0.8-16.4-1.3-29.4-4.2-34.9c-2.5-5.5-10.9-13-17.2-18.9l-0.4-0.4c-1.7-1.7-3.4-2.9-4.2-3.8c-5-5-15.5-13.9-21.4-17.2\n            c-2.5-1.7-8-4.2-14.3-7.1c-7.1-3.4-17.2-8.4-20.2-10.5c-9.7-7.6-21-19.3-21.4-22.3c-0.4-1.3-0.8-2.1-2.1-2.9\n            c-0.8-0.8-2.1-0.8-3.4-0.8c-2.5,0.4-4.2,2.9-3.8,5.5c0.4,2.1,1.7,4.6,4.2,7.6c-5.5,1.7-16.4,5.5-24.8,6.7\n            c-12.2,1.7-18.1,3.8-21.4,10.5c-0.8,2.1-1.7,3.8-2.5,5.5c-0.8,2.1-1.7,3.8-2.1,4.6l-0.4,0.4c-0.4,0-2.5-0.4-5-0.8\n            c-5.5-1.3-8.4-2.9-12.6-5.9c-3.8-2.5-7.1,0-8.4,1.3c-0.4,0-0.4,0.4-0.8,0.8c-0.4-1.3-0.8-3.4-0.8-4.6c-0.4-2.1-0.8-4.2-1.3-6.7\n            c-2.1-7.1-7.1-7.6-10.5-7.6c-0.8,0-2.1,0-2.5-0.4c-0.4-0.4-1.3-1.7-1.7-2.5c-0.8-1.3-1.7-3.4-3.4-5.5c2.9-2.1,7.1-4.6,11.3-4.2\n            c8.4,1.7,17.2,0.8,17.6,0.8H50l-0.8-2.9c-1.3-3.8-2.1-9.2-0.8-10.1l0.8-0.4c2.9-2.5,4.2-3.8,9.2-0.4c8,5.5,18.9,3.4,23.9,0\n            c3.4-2.1,10.5-10.1,15.1-15.5c2.1,0.8,3.8,0.8,4.6,0.8c2.5,0,6.3-1.3,15.1-17.2c3.4-3.8,8-8.8,15.1-15.1c5,2.9,16,10.5,22.3,21\n            c5,8.8,6.7,23.1,7.6,31.9c-3.8-5-5.5-12.2-5.5-12.2c-0.4-2.5-2.9-4.2-5.5-3.8c-1.3,0.4-2.1,0.8-2.9,2.1c-0.8,0.8-0.8,2.1-0.8,3.4\n            c0.4,1.3,2.5,13,10.5,20.2c4.2,3.8,18.9,12.6,32.8,21.4l0.8,0.4c10.9,6.7,21.4,13.4,25.2,16l3.4,2.5l1.3-1.7l0,0l-1.3,1.7\n            c17.2,13.4,22.3,18.1,23.1,19.7c0.4,8-5,94.1-10.9,102.1c-2.9,4.2-4.6,8-5.9,10.1c-0.4,0.4-0.8,1.7-1.3,2.1c-1.3,0-4.2,0-8.4,0.4\n            C175.1,431.2,162.5,430.4,159.2,429.5C158.8,429.5,159.2,429.5,159.2,429.5z M410.3,185.9C410.3,185.9,410.3,186.3,410.3,185.9\n            c0,0.8-1.3,1.7-5,4.2l0,0c-4.6,2.9-9.2,5-13.4,7.6c-5.9,2.9-11.8,5.9-16,9.7c-5.9,5-15.1,12.6-26.9,16\n            c-12.2,3.4-46.6,15.1-60.9,19.7c-13.9,5-50,16.4-60.9,18.9c-9.2,2.5-21.8,6.3-25.6,7.6l-5.5-3.4c-8.8-5.5-18.5-11.3-24.8-15.5\n            l20.6-38.2c6.7-12.6,18.1-30.2,26-41.6c5.9-8,20.2-23.5,29.8-33.6l4.2-4.6c4.2,0.8,12.2,3.8,20.6,15.1c9.7,12.6,14.7,23.5,16.8,28.6\n            c-0.8,1.3-2.1,2.1-2.9,2.9c-10.5,10.5-30.7,27.3-36.1,31.5c-6.7,1.3-10.9,3.8-15.1,5.9c-1.7,0.8-2.9,1.7-5,2.5\n            c-10.9,4.6-19.3,21-19.7,21.8c-0.4,1.3-0.8,2.5-0.4,3.4c0.4,1.3,1.3,2.1,2.1,2.5c2.1,1.3,5,0.4,6.3-2.1c2.5-5,9.2-15.1,15.1-17.6\n            c2.1-0.8,3.8-1.7,5.9-2.9c5.9-2.9,10.1-5,23.5-5.5c13.4-0.4,18.9-1.7,25.6-3.4c2.5-0.8,5.5-1.3,9.2-2.1c12.6-2.1,39.1-6.7,39.5-7.1\n            c2.1-0.4,3.8-2.5,3.8-4.6c0-5,0.8-13,4.2-15.1c3.8-2.5,10.9,0.4,16.8,2.9c1.3,0.4,2.5,0.8,3.4,1.3c8.4,3.4,18.5-0.4,26.9-3.4\n            l2.5,0.4c9.7-3.4,13-3.8,14.7-3.8C409.5,184.7,409.9,185.5,410.3,185.9z M210.8,165.3c-4.6,6.7-10.5,15.1-16,23.9\n            c-2.9-5.5-7.6-12.2-11.3-16c-4.2-4.2-10.9-9.7-15.1-13c5.5-4.6,12.2-9.7,18.1-14.3l0,0c15.1-11.8,29-22.7,34.9-29.8c0,0,0,0,0-0.4\n            c2.9,3.8,7.1,9.7,9.2,13.9c1.7,3.4,2.9,6.3,3.8,8.4C225.5,147.7,215.5,158.6,210.8,165.3z\"/>\n</svg>";
 
 /***/ },
 /* 355 */
