@@ -24924,13 +24924,17 @@
 	        this.options = options;
 	    },
 	    templateVars: function templateVars() {
-	        var style = this.options.size ? 'width: ' + this.options.size + 'px; height: ' + this.options.size + 'px' : '';
-	        return {
-	            className: this.options.className || '',
-	            icon: this.options.icon,
-	            title: this.options.title || '',
-	            style: style
-	        };
+	        var _options = this.options;
+	        var _options$className = _options.className;
+	        var className = _options$className === undefined ? '' : _options$className;
+	        var _options$icon = _options.icon;
+	        var icon = _options$icon === undefined ? '' : _options$icon;
+	        var _options$title = _options.title;
+	        var title = _options$title === undefined ? '' : _options$title;
+	        var size = _options.size;
+	
+	        var style = size ? 'width: ' + size + 'px; height: ' + size + 'px' : '';
+	        return { className: className, icon: icon, title: title, style: style };
 	    }
 	});
 	
