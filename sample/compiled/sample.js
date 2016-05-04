@@ -24854,19 +24854,15 @@
 	var SvgWrapper = __webpack_require__(/*! ../../js/SvgWrapper.js */ 270);
 	var iconList = __webpack_require__(/*! ../../list.json */ 170);
 	var Backbone = __webpack_require__(/*! backbone */ 281);
-	var template = __webpack_require__(/*! lodash.template */ 271);
+	var _template = __webpack_require__(/*! lodash.template */ 271);
+	var template = _template("<div id='bb-icons'><h1>These icons are all rendered by Backbone :</h1><hr /></div>");
+	var iconTemplate = _template("<span class='icon-container'><%= child %></span>");
 	
 	/**
 	 * Renders each of the icons using the svg wrapper backbone view.
 	 */
 	var BackboneIcons = Backbone.View.extend({
-	
-	    template: template("<div id='bb-icons'><h1>These icons are all rendered by Backbone :</h1><hr /></div>"),
-	    iconTemplate: template("<span class='icon-container'><%= child %></span>"),
-	
 	    allIcons: function allIcons() {
-	        var _this = this;
-	
 	        return iconList.map(function (icon, idx) {
 	            // NOTE* Here we have to use a leading "!" to tell webpack not to use the svg->react loader
 	            var Icon = __webpack_require__(/*! html!../../src */ 284)("./" + icon);
@@ -24874,11 +24870,11 @@
 	                icon: Icon,
 	                size: 50
 	            }).render();
-	            return _this.iconTemplate({ child: svgWrapperEl.$el.html() });
+	            return iconTemplate({ child: svgWrapperEl.$el.html() });
 	        });
 	    },
 	    render: function render() {
-	        this.$el.html(this.template());
+	        this.$el.html(template());
 	        this.$('#bb-icons').append(this.allIcons());
 	        return this;
 	    }
