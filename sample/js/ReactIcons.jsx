@@ -14,7 +14,7 @@ class IconContainer extends React.Component {
             const Icon = require('../../src/' + icon);
             return (
                 <span key={idx} className="icon-container">
-                    <SvgComponent size={50}>
+                    <SvgComponent size={130}>
                         <Icon />
                     </SvgComponent>
                 </span>

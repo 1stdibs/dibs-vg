@@ -21,9 +21,9 @@ const { PropTypes } = React;
  */
 const SvgComponent = props => {
     const compoundClass = 'dibsvg-icon ' + (props.className ? props.className : '');
-    const height = props.size ? {height: props.size} : {};
+    const css = props.size ? {height: props.size, width : props.size} : {};
         return (
-        <span className={compoundClass} title={props.title} style={height}>
+        <span className={compoundClass} title={props.title} style={css}>
             {props.children}
         </span>
     );

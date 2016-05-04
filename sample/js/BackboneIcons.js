@@ -5,7 +5,7 @@ const SvgWrapper = require('../../js/SvgWrapper.js');
 const iconList = require('../../list.json');
 const Backbone = require('backbone');
 const _template = require('lodash.template');
-const template = _template("<div id='bb-icons'><h1>These icons are all rendered by Backbone :</h1><hr /></div>");
+const template = _template("<br /><br /><div id='bb-icons'><h1>These icons are all rendered by Backbone :</h1><hr /></div>");
 const iconTemplate = _template("<span class='icon-container'><%= child %></span>");
 
 
@@ -20,7 +20,7 @@ const BackboneIcons = Backbone.View.extend({
             const Icon = require('!html!../../src/' + icon);
             const svgWrapperEl = new SvgWrapper({
                 icon : Icon,
-                size : 50
+                size : 130
             }).render();
             return iconTemplate({child : svgWrapperEl.$el.html()});
         });

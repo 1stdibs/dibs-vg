@@ -20732,7 +20732,7 @@
 	                    { key: idx, className: 'icon-container' },
 	                    React.createElement(
 	                        SvgComponent,
-	                        { size: 50 },
+	                        { size: 130 },
 	                        React.createElement(Icon, null)
 	                    )
 	                );
@@ -20793,10 +20793,10 @@
 	
 	var SvgComponent = function SvgComponent(props) {
 	    var compoundClass = 'dibsvg-icon ' + (props.className ? props.className : '');
-	    var height = props.size ? { height: props.size } : {};
+	    var css = props.size ? { height: props.size, width: props.size } : {};
 	    return React.createElement(
 	        'span',
-	        { className: compoundClass, title: props.title, style: height },
+	        { className: compoundClass, title: props.title, style: css },
 	        props.children
 	    );
 	};
@@ -24855,7 +24855,7 @@
 	var iconList = __webpack_require__(/*! ../../list.json */ 170);
 	var Backbone = __webpack_require__(/*! backbone */ 281);
 	var _template = __webpack_require__(/*! lodash.template */ 271);
-	var template = _template("<div id='bb-icons'><h1>These icons are all rendered by Backbone :</h1><hr /></div>");
+	var template = _template("<br /><br /><div id='bb-icons'><h1>These icons are all rendered by Backbone :</h1><hr /></div>");
 	var iconTemplate = _template("<span class='icon-container'><%= child %></span>");
 	
 	/**
@@ -24868,7 +24868,7 @@
 	            var Icon = __webpack_require__(/*! html!../../src */ 284)("./" + icon);
 	            var svgWrapperEl = new SvgWrapper({
 	                icon: Icon,
-	                size: 50
+	                size: 130
 	            }).render();
 	            return iconTemplate({ child: svgWrapperEl.$el.html() });
 	        });
@@ -24923,7 +24923,11 @@
 	        this.options = options;
 	    },
 	    templateVars: function templateVars() {
-	        var style = this.options.size ? "height: " + this.options.size : '';
+	        var style = '';
+	        if (this.options.size) {
+	            style += "width:" + this.options.size;
+	            style += "px;height:" + this.options.size + "px";
+	        }
 	        return {
 	            className: this.options.className || '',
 	            icon: this.options.icon,
@@ -33524,7 +33528,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".dibsvg-icon {\n  display: inline-block;\n  fill: #21242b;\n  height: 30px;\n  /* default height, gets over-ridden by style rule in component */ }\n  .dibsvg-icon .dibsvg-svg {\n    max-width: 100%;\n    max-height: 100%;\n    width: auto;\n    height: auto; }\n\n.gold {\n  fill: #b19b57; }\n\n.icon-container {\n  padding: 10px;\n  margin: 10px;\n  display: block;\n  float: left;\n  border: 1px solid #eee; }\n\n.dibsvg-icon {\n  width: 50px;\n  height: 50px; }\n\n.sample-container {\n  font-family: \"Helvetica Neue Light\", \"HelveticaNeue-Light\", \"Helvetica Neue\", Calibri, Helvetica, Arial;\n  margin: 0px 15% 0px 15%;\n  color: #aaa; }\n  .sample-container hr {\n    border: 0px;\n    border-top: 1px solid #ddd; }\n", ""]);
+	exports.push([module.id, ".dibsvg-icon {\n  display: inline-block;\n  fill: #21242b;\n  height: 30px;\n  /* default height, gets over-ridden by style rule in component */ }\n  .dibsvg-icon .dibsvg-svg {\n    max-width: 100%;\n    max-height: 100%;\n    width: auto;\n    height: auto; }\n\n.gold {\n  fill: #b19b57; }\n\n.icon-container {\n  padding: 10px;\n  margin: 10px;\n  display: block;\n  float: left;\n  border: 1px solid #eee; }\n\n.dibsvg-icon {\n  width: 50px;\n  height: 50px; }\n\n.sample-container {\n  font-family: \"Helvetica Neue Light\", \"HelveticaNeue-Light\", \"Helvetica Neue\", Calibri, Helvetica, Arial;\n  margin: 0px 15% 0px 15%;\n  color: #aaa; }\n  .sample-container hr {\n    border: 0px;\n    border-top: 1px solid #ddd; }\n  .sample-container #bb-icons {\n    clear: both;\n    padding-top: 17px; }\n", ""]);
 	
 	// exports
 
