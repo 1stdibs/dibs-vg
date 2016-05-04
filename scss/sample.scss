@@ -1,6 +1,7 @@
 @import "./icons.scss";
 
 $border-color : #eee;
+$text-color : #aaa;
 
 .icon-container {
     padding : 10px;
@@ -10,4 +11,14 @@ $border-color : #eee;
 }
 svg {
     max-width: 50px;
+}
+
+#IconContainer {
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+    margin : 0px 15% 0px 15%;
+    color : $text-color;
+    hr {
+        border: 0px;
+        border-top: 1px solid #ddd
+    }
 }

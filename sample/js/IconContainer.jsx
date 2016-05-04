@@ -25,6 +25,7 @@ class IconContainer extends React.Component {
         return (
             <div>
                 <h1>These icons are all rendered by React :</h1>
+                <hr />
                 {this.allIcons()}
             </div>
         );

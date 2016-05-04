@@ -11,6 +11,7 @@ $gold : #b19b57;
 }
 
 .dibsvg-icon {
+    display: inline-block;
     fill: $grey;
     height: 30px; /* default height, gets over-ridden by style rule in component */
 }.gold {

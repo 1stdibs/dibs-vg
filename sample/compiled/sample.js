@@ -20744,6 +20744,7 @@
 	                    null,
 	                    'These icons are all rendered by React :'
 	                ),
+	                React.createElement('hr', null),
 	                this.allIcons()
 	            );
 	        }
@@ -20786,11 +20787,11 @@
 	 */
 	
 	var SvgComponent = function SvgComponent(props) {
-	    var className = 'dibsvg-icon ' + props.className;
+	    var compoundClass = 'dibsvg-icon ' + (props.className ? props.className : '');
 	    var height = props.size ? { height: props.size } : {};
 	    return React.createElement(
 	        'span',
-	        { className: className, title: props.title, style: height },
+	        { className: compoundClass, title: props.title, style: height },
 	        props.children
 	    );
 	};
@@ -24877,7 +24878,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".dibsvg-svg {\n  max-width: 100%;\n  max-height: 100%;\n  width: auto;\n  height: auto; }\n\n.dibsvg-icon {\n  fill: #21242b;\n  height: 30px;\n  /* default height, gets over-ridden by style rule in component */ }\n\n.gold {\n  fill: #b19b57; }\n\n.icon-container {\n  padding: 10px;\n  margin: 10px;\n  display: inline-block;\n  border: 1px solid #eee; }\n\nsvg {\n  max-width: 50px; }\n", ""]);
+	exports.push([module.id, ".dibsvg-svg {\n  max-width: 100%;\n  max-height: 100%;\n  width: auto;\n  height: auto; }\n\n.dibsvg-icon {\n  display: inline-block;\n  fill: #21242b;\n  height: 30px;\n  /* default height, gets over-ridden by style rule in component */ }\n\n.gold {\n  fill: #b19b57; }\n\n.icon-container {\n  padding: 10px;\n  margin: 10px;\n  display: inline-block;\n  border: 1px solid #eee; }\n\nsvg {\n  max-width: 50px; }\n\n#IconContainer {\n  font-family: \"Helvetica Neue Light\", \"HelveticaNeue-Light\", \"Helvetica Neue\", Calibri, Helvetica, Arial;\n  margin: 0px 15% 0px 15%;\n  color: #aaa; }\n  #IconContainer hr {\n    border: 0px;\n    border-top: 1px solid #ddd; }\n", ""]);
 	
 	// exports
 
