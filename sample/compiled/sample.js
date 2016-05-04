@@ -33528,7 +33528,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".dibsvg-icon {\n  display: inline-block;\n  fill: #21242b;\n  height: 30px;\n  /* default height, gets over-ridden by style rule in component */ }\n  .dibsvg-icon .dibsvg-svg {\n    max-width: 100%;\n    max-height: 100%;\n    width: auto;\n    height: auto; }\n\n.gold {\n  fill: #b19b57; }\n\n.icon-container {\n  padding: 10px;\n  margin: 10px;\n  display: block;\n  float: left;\n  border: 1px solid #eee; }\n\n.dibsvg-icon {\n  width: 50px;\n  height: 50px; }\n\n.sample-container {\n  font-family: \"Helvetica Neue Light\", \"HelveticaNeue-Light\", \"Helvetica Neue\", Calibri, Helvetica, Arial;\n  margin: 0px 15% 0px 15%;\n  color: #aaa; }\n  .sample-container hr {\n    border: 0px;\n    border-top: 1px solid #ddd; }\n  .sample-container #bb-icons {\n    clear: both;\n    padding-top: 17px; }\n", ""]);
+	exports.push([module.id, ".dibsvg-icon {\n  display: inline-block;\n  fill: #21242b;\n  height: 30px;\n  /* default height, gets over-ridden by style rule in component */ }\n  .dibsvg-icon .dibsvg-svg {\n    max-width: 100%;\n    max-height: 100%;\n    width: auto;\n    height: auto; }\n  .dibsvg-icon.gold {\n    fill: #b19b57; }\n\n.icon-container {\n  padding: 10px;\n  margin: 10px;\n  display: block;\n  float: left;\n  border: 1px solid #eee; }\n\n.dibsvg-icon {\n  width: 50px;\n  height: 50px; }\n\n.sample-container {\n  font-family: \"Helvetica Neue Light\", \"HelveticaNeue-Light\", \"Helvetica Neue\", Calibri, Helvetica, Arial;\n  margin: 0px 15% 0px 15%;\n  color: #aaa; }\n  .sample-container hr {\n    border: 0px;\n    border-top: 1px solid #ddd; }\n  .sample-container #bb-icons {\n    clear: both;\n    padding-top: 17px; }\n", ""]);
 	
 	// exports
 

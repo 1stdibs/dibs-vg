@@ -15,6 +15,7 @@ $gold : #b19b57;
         height: auto;
     }
 
-}.gold {
-     fill: $gold;
- }
+    &.gold {
+        fill: $gold;
+    }
+}
