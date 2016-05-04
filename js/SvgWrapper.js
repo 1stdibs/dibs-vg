@@ -33,7 +33,6 @@ const SvgWrapper = Backbone.View.extend({
 
     templateVars () {
         const style = this.options.size ? "height: " + this.options.size : '';
-        console.log(style);
         return {
             className : this.options.className || '',
             icon : this.options.icon,
