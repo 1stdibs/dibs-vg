@@ -26,9 +26,9 @@ const SvgWrapper = Backbone.View.extend({
         return this;
     },
 
-    initialize : function (options) {
+    initialize : function (options={}) {
         console.assert(options.icon, "Icon is required to use SvgWrapper BB component.");
-        this.options = options || {};
+        this.options = options;
     },
 
     templateVars : function () {
