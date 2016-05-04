@@ -13,8 +13,8 @@ class IconContainer extends React.Component {
         return iconList.map((icon, idx) => {
             const Icon = require('../../src/' + icon);
             return (
-                <span className="icon-container">
-                    <SvgComponent key={idx} size={25}>
+                <span key={idx} className="icon-container">
+                    <SvgComponent size={25}>
                         <Icon />
                     </SvgComponent>
                 </span>
@@ -25,7 +25,7 @@ class IconContainer extends React.Component {
         return (
             <div>
                 <h1>These icons are all rendered by React :</h1>
-            {this.allIcons()}
+                {this.allIcons()}
             </div>
         );
     }

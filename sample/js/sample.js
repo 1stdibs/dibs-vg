@@ -1,8 +1,9 @@
 "use strict";
 
-require('babel-register');
-const reactSample = require('./reactSample.jsx');
+const React = require('react');
+const ReactDOM = require('react-dom');
+const IconContainer = require('./IconContainer.jsx');
 
 window.onload = function () {
-    reactSample.render();
+    ReactDOM.render(<IconContainer />, document.getElementById('IconContainer'));
 };
