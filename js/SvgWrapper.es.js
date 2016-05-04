@@ -17,7 +17,7 @@ const tmpString = "<span class='dibsvg-icon <%= className %> <%= size ? 'dibsvg-
  *
  * @type {void|*|Object}
  */
-const SvgWrapper = Backbone.BaseView.extend({
+const SvgWrapper = Backbone.View.extend({
 
     template : template(tmpString),
 
@@ -28,10 +28,6 @@ const SvgWrapper = Backbone.BaseView.extend({
 
     initialize : function (options) {
         console.assert(options.icon, "Icon is required to use SvgWrapper BB component.");
-        ['className', 'icon', 'title', 'size'].forEach(opt => {
-            this[opt] = options[opt];
-        });
-        return this;
     },
 
     templateVars : function () {
