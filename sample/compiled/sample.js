@@ -22453,8 +22453,8 @@
 	            React.createElement(
 	                'g',
 	                null,
-	                React.createElement('path', { fill: '#F2EAD5', d: 'M125,249.3C56.4,249.3,0.7,193.6,0.7,125S56.4,0.7,125,0.7S249.3,56.4,249.3,125S193.6,249.3,125,249.3z M125,10.7C62,10.7,10.7,62,10.7,125c0,63,51.3,114.3,114.3,114.3c63,0,114.3-51.3,114.3-114.3C239.3,62,188,10.7,125,10.7z' }),
-	                React.createElement('circle', { fill: '#B19B57', cx: '124.3', cy: '123.7', r: '78.3' })
+	                React.createElement('path', { d: 'M125,249.3C56.4,249.3,0.7,193.6,0.7,125S56.4,0.7,125,0.7S249.3,56.4,249.3,125S193.6,249.3,125,249.3z M125,10.7C62,10.7,10.7,62,10.7,125c0,63,51.3,114.3,114.3,114.3c63,0,114.3-51.3,114.3-114.3C239.3,62,188,10.7,125,10.7z' }),
+	                React.createElement('circle', { cx: '124.3', cy: '123.7', r: '78.3' })
 	            ),
 	            React.Children.map(children, function (c) {
 	                return c;
@@ -24894,7 +24894,7 @@
 	
 	var template = __webpack_require__(/*! lodash.template */ 271);
 	var Backbone = __webpack_require__(/*! backbone */ 281);
-	var tmpString = "<span class='dibsvg-icon <%= className %>' title='<%= title %>' style='<%= style %>'><%= icon %></span>";
+	var tmpString = template("<span class='dibsvg-icon <%= className %>' title='<%= title %>' style='<%= style %>'><%= icon %></span>");
 	
 	/**
 	 * A very simple wrapper for an SVG icon required from the static repository.
@@ -24911,7 +24911,7 @@
 	 */
 	var SvgWrapper = Backbone.View.extend({
 	
-	    template: template(tmpString),
+	    template: tmpString,
 	
 	    render: function render() {
 	        this.$el.html(this.template(this.templateVars()));
@@ -32960,7 +32960,7 @@
   \**********************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"bullet-point\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path fill=\"#F2EAD5\" d=\"M125,249.3C56.4,249.3,0.7,193.6,0.7,125S56.4,0.7,125,0.7S249.3,56.4,249.3,125S193.6,249.3,125,249.3z\n                 M125,10.7C62,10.7,10.7,62,10.7,125c0,63,51.3,114.3,114.3,114.3c63,0,114.3-51.3,114.3-114.3C239.3,62,188,10.7,125,10.7z\"/>\n        <circle fill=\"#B19B57\" cx=\"124.3\" cy=\"123.7\" r=\"78.3\"/>\n    </g>\n</svg>";
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg\" id=\"bullet-point\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125,249.3C56.4,249.3,0.7,193.6,0.7,125S56.4,0.7,125,0.7S249.3,56.4,249.3,125S193.6,249.3,125,249.3z\n                 M125,10.7C62,10.7,10.7,62,10.7,125c0,63,51.3,114.3,114.3,114.3c63,0,114.3-51.3,114.3-114.3C239.3,62,188,10.7,125,10.7z\"/>\n        <circle cx=\"124.3\" cy=\"123.7\" r=\"78.3\"/>\n    </g>\n</svg>";
 
 /***/ },
 /* 296 */
@@ -33534,7 +33534,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".dibsvg-icon {\n  display: inline-block;\n  fill: #21242b;\n  height: 30px;\n  /* default height, gets over-ridden by style rule in component */ }\n  .dibsvg-icon .dibsvg-svg {\n    max-width: 100%;\n    max-height: 100%;\n    width: auto;\n    height: auto; }\n  .dibsvg-icon.gold {\n    fill: #b19b57; }\n\n.icon-container {\n  padding: 10px;\n  margin: 10px;\n  display: block;\n  float: left;\n  border: 1px solid #eee; }\n\n.dibsvg-icon {\n  width: 50px;\n  height: 50px; }\n\n.sample-container {\n  font-family: \"Helvetica Neue Light\", \"HelveticaNeue-Light\", \"Helvetica Neue\", Calibri, Helvetica, Arial;\n  margin: 0px 15% 0px 15%;\n  color: #aaa; }\n  .sample-container hr {\n    border: 0px;\n    border-top: 1px solid #ddd; }\n  .sample-container #bb-icons {\n    clear: both;\n    padding-top: 17px; }\n", ""]);
+	exports.push([module.id, ".dibsvg-icon {\n  display: inline-block;\n  fill: #21242b;\n  height: 30px;\n  /* default height, gets over-ridden by style rule in component */ }\n\n.dibsvg-svg {\n  max-width: 100%;\n  max-height: 100%;\n  width: auto;\n  height: auto; }\n\n.icon-container {\n  padding: 10px;\n  margin: 10px;\n  display: block;\n  float: left;\n  border: 1px solid #eee; }\n\n.dibsvg-icon {\n  width: 50px;\n  height: 50px; }\n\n.sample-container {\n  font-family: \"Helvetica Neue Light\", \"HelveticaNeue-Light\", \"Helvetica Neue\", Calibri, Helvetica, Arial;\n  margin: 0px 15% 0px 15%;\n  color: #aaa; }\n  .sample-container hr {\n    border: 0px;\n    border-top: 1px solid #ddd; }\n  .sample-container #bb-icons {\n    clear: both;\n    padding-top: 17px; }\n", ""]);
 	
 	// exports
 
