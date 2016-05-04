@@ -8,7 +8,7 @@ module.exports = {
     output : {
         path: path.resolve(__dirname, './sample/compiled'),
         filename: 'sample.js',
-        sourceMapFilename: __dirname + './sample/compiled/[file].map'
+        sourceMapFilename: '[file].map'
     },
     devtool : 'source-map',
     module : {
