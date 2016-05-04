@@ -1,0 +1,9 @@
+.project
+npm-debug.log
+.settings
+.idea
+/nbproject/private
+.DS_Store
+node_modules/
+npmtmp
+.sass-cache
