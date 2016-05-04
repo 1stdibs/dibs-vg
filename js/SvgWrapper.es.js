@@ -35,12 +35,12 @@ const SvgWrapper = Backbone.BaseView.extend({
     },
 
     templateVars : function () {
-        return Object.assign({
+        return {
             className : 'dibsvg-icon ' + this.options.className,
             icon : this.options.icon,
             title : this.options.title,
             size : this.options.size
-        });
+        };
     }
 });
 
