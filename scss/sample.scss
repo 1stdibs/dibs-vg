@@ -1,0 +1,13 @@
+@import "./icons.scss";
+
+$border-color : #eee;
+
+.icon-container {
+    padding : 10px;
+    margin: 10px;
+    display : inline-block;
+    border: 1px solid $border-color;
+}
+svg {
+    max-width: 50px;
+}

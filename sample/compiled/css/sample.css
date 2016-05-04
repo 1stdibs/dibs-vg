@@ -12,4 +12,13 @@
 .gold {
   fill: #b19b57; }
 
-/*# sourceMappingURL=icons.css.map */
+.icon-container {
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border: 1px solid #eee; }
+
+svg {
+  max-width: 50px; }
+
+/*# sourceMappingURL=sample.css.map */

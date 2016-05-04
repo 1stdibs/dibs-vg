@@ -20,10 +20,10 @@ const { PropTypes } = React;
  * @constructor
  */
 const SvgComponent = props => {
-    let className = 'dibsvg-icon ' + props.className;
-    className += props.size ? ' dibsvg-icon-' + props.size : '';
+    const className = 'dibsvg-icon ' + props.className;
+    const height = props.size ? {height: props.size} : {};
     return (
-        <span className={className} title={props.title}>
+        <span className={className} title={props.title} style={height}>
             {props.children}
         </span>
     );

@@ -16,6 +16,7 @@ module.exports = {
             { test: /\.(js|jsx|svg)$/, loader: 'babel', query: { presets: ['es2015', 'stage-2', 'react']}},
             { test: /\.svg$/, loader: 'svg-react' },
             { test: /\.json/, loader: 'json' }
+            //{ test: /\.scss/, loaders: ["style", "css", "sass"] }
         ],
         resolve: {
             alias: {
