@@ -6,5 +6,5 @@ const IconContainer = require('./IconContainer.jsx');
 require('../../scss/sample.scss');
 
 window.onload = function () {
-    ReactDOM.render(<IconContainer />, document.getElementById('IconContainer'));
+    ReactDOM.render(<IconContainer />, document.getElementsByClassName('sample-container')[0]);
 };

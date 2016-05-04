@@ -3,17 +3,18 @@
 $grey : #21242b;
 $gold : #b19b57;
 
-.dibsvg-svg {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-}
-
 .dibsvg-icon {
     display: inline-block;
     fill: $grey;
     height: 30px; /* default height, gets over-ridden by style rule in component */
+
+    .dibsvg-svg {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+
 }.gold {
      fill: $gold;
  }
