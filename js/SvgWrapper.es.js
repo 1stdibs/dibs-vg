@@ -21,17 +21,17 @@ const SvgWrapper = Backbone.View.extend({
 
     template : template(tmpString),
 
-    render : function () {
+    render () {
         this.$el.html(this.template(this.templateVars()));
         return this;
     },
 
-    initialize : function (options={}) {
+    initialize (options={}) {
         console.assert(options.icon, "Icon is required to use SvgWrapper BB component.");
         this.options = options;
     },
 
-    templateVars : function () {
+    templateVars () {
         return {
             className : 'dibsvg-icon ' + this.options.className,
             icon : this.options.icon,
