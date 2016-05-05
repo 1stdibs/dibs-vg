@@ -1,8 +1,11 @@
 'use strict';
 
-const template = require('lodash.template');
 const Backbone = require('backbone');
-const tmpString = template("<span class='dibsvg-icon <%= className %>' title='<%= title %>' style='<%= style %>'><%= icon %></span>");
+const template = require('lodash.template')(
+    `<span class='dibsvg-icon <%= className %>' title='<%= title %>' style='<%= style %>'>
+        <%= icon %>
+    </span>`
+);
 
 /**
  * A very simple wrapper for an SVG icon required from the static repository.
@@ -19,10 +22,8 @@ const tmpString = template("<span class='dibsvg-icon <%= className %>' title='<%
  */
 const SvgWrapper = Backbone.View.extend({
 
-    template : tmpString,
-
     render () {
-        this.$el.html(this.template(this.templateVars()));
+        this.$el.html(template(this.templateVars()));
         return this;
     },
 
