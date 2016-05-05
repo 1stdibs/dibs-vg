@@ -18,53 +18,9 @@ New icons added to the set will be considered a minor version bump. Changes to e
 
 Inline SVGs are great, not only because they're more performant, but they're also easier for developers to manipulate. Of course you can scale them infinitely in either direction just by changing some CSS, but having different paths inside of your SVG files also allows you to apply colors or other transformations to individual parts of the SVG. Check out this example : 
 
-<div style="float:left; width:100px; height:100px; margin-right:20px;">
-    <svg version="1.1" class="dibsvg-svg dibsvg-do-not-edit" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
-        <g>
-            <rect x="67.9" y="97.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -44.1474 128.0603)" class="do-not-edit-pencil" width="129.1" height="40.1"/>
-            <polygon class="do-not-edit-pencil" points="79.8,170.1 92.6,182.9 75.1,187.6 57.5,192.3 62.2,174.8 66.9,157.2"/>
-        </g>
-        <g>
-            <path class="do-not-edit-circle" d="M124.9,249.8C56,249.8,0,193.8,0,124.9S56,0,124.9,0s124.9,56,124.9,124.9S193.8,249.8,124.9,249.8z M42.7,52
-                c-17.3,19.4-27.8,45-27.8,73c0,60.6,49.3,109.9,109.9,109.9c28,0,53.5-10.5,73-27.8L42.7,52z M53.4,41.5l155,155
-                c16.5-19.2,26.5-44.2,26.5-71.5C234.9,64.3,185.5,15,124.9,15C97.6,15,72.6,25,53.4,41.5z"/>
-        </g>
-    </svg>
-</div>
-
-<div style="float:left; width:100px; height:100px; margin-right:20px;">
-    <svg version="1.1" class="dibsvg-svg dibsvg-do-not-edit" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;fill:#b19b57;" xml:space="preserve">
-        <g>
-            <rect x="67.9" y="97.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -44.1474 128.0603)" class="do-not-edit-pencil" width="129.1" height="40.1"/>
-            <polygon class="do-not-edit-pencil" points="79.8,170.1 92.6,182.9 75.1,187.6 57.5,192.3 62.2,174.8 66.9,157.2"/>
-        </g>
-        <g>
-            <path class="do-not-edit-circle" d="M124.9,249.8C56,249.8,0,193.8,0,124.9S56,0,124.9,0s124.9,56,124.9,124.9S193.8,249.8,124.9,249.8z M42.7,52
-                c-17.3,19.4-27.8,45-27.8,73c0,60.6,49.3,109.9,109.9,109.9c28,0,53.5-10.5,73-27.8L42.7,52z M53.4,41.5l155,155
-                c16.5-19.2,26.5-44.2,26.5-71.5C234.9,64.3,185.5,15,124.9,15C97.6,15,72.6,25,53.4,41.5z"/>
-        </g>
-    </svg>
-</div>
-
-
-<div style="float:left; width:100px; height:100px; fill=gold;">
-    <svg version="1.1" class="dibsvg-svg dibsvg-do-not-edit" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
-        <g>
-            <rect x="67.9" y="97.3" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -44.1474 128.0603)" class="do-not-edit-pencil" width="129.1" height="40.1"/>
-            <polygon class="do-not-edit-pencil" points="79.8,170.1 92.6,182.9 75.1,187.6 57.5,192.3 62.2,174.8 66.9,157.2"/>
-        </g>
-        <g style="fill:red;">
-            <path class="do-not-edit-circle" d="M124.9,249.8C56,249.8,0,193.8,0,124.9S56,0,124.9,0s124.9,56,124.9,124.9S193.8,249.8,124.9,249.8z M42.7,52
-                c-17.3,19.4-27.8,45-27.8,73c0,60.6,49.3,109.9,109.9,109.9c28,0,53.5-10.5,73-27.8L42.7,52z M53.4,41.5l155,155
-                c16.5-19.2,26.5-44.2,26.5-71.5C234.9,64.3,185.5,15,124.9,15C97.6,15,72.6,25,53.4,41.5z"/>
-        </g>
-    </svg>
-</div>
-<div style="clear:both"></div>
-<br />
+![](https://cdn.rawgit.com/nameofname/dibs-vg/update-readme/readme_imgs/do-not-edit.svg)
+![](https://cdn.rawgit.com/nameofname/dibs-vg/update-readme/readme_imgs/do-not-edit-gold.svg)
+![](https://cdn.rawgit.com/nameofname/dibs-vg/update-readme/readme_imgs/do-not-edit-two-color.svg)
 
 ## With React / JSX : 
 
