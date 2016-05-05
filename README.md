@@ -12,6 +12,14 @@ We also provide some basic styling and wrapper modules for React and Backbone.
 
 New icons added to the set will be considered a minor version bump. Changes to existing icons will be a major version.  
 
+## Customize it, style it, resize it : 
+
+Inline SVGs are great, not only because they're more performant, but they're also easier for developers to manipulate. Of course you can scale them infinitely in either direction just by changing some CSS, but having different paths inside of your SVG files also allows you to apply colors or other transformations to individual parts of the SVG. Check out this example : 
+
+![](./readme_imgs/do-not-edit-dark-grey.jpeg)
+![](./readme_imgs/do-not-edit-gold.jpeg)
+![](./readme_imgs/do-not-edit-two-color.jpeg)
+
 ## With React / JSX : 
 
 If you are using Webpack, and want to render your SVG with React we recomment [svg-react-loader](https://github.com/jhamlet/svg-react-loader) which will allow you to require your SVG files direclty in your JS as React components. 
