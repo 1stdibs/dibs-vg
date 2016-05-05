@@ -1,4 +1,4 @@
-![](./src/logo.svg)
+![](https://cdn.rawgit.com/1stdibs/dibs-vg/master/src/logo-no-reg.svg)
 
 # dibs-vg 
 1stdibs's in-house vector graphics.
