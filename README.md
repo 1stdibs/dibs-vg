@@ -1,4 +1,6 @@
-# dibs-vg
+![](./src/logo.svg)
+
+# dibs-vg 
 1stdibs's in-house vector graphics.
 
 ## Description
