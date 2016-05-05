@@ -1,4 +1,6 @@
-# dibs-vg
+![](https://cdn.rawgit.com/1stdibs/dibs-vg/master/src/logo-no-reg.svg)
+
+# dibs-vg 
 1stdibs's in-house vector graphics.
 
 ## Description
@@ -11,6 +13,12 @@ We also provide some basic styling and wrapper modules for React and Backbone.
 ## Versioning : 
 
 New icons added to the set will be considered a minor version bump. Changes to existing icons will be a major version.  
+
+## Customize it, style it, resize it : 
+
+Inline SVGs are great, not only because they're more performant, but they're also easier for developers to manipulate. Of course you can scale them infinitely in either direction just by changing some CSS, but having different paths inside of your SVG files also allows you to apply colors or other transformations to individual parts of the SVG. Check out this example : 
+
+![](https://cdn.rawgit.com/1stdibs/dibs-vg/master/readme_imgs/do-not-edit-two-color.svg)
 
 ## With React / JSX : 
 
