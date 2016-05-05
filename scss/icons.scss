@@ -3,7 +3,6 @@
 $icon-color-dark : #21242b;
 
 .dibsvg-icon {
-    display: inline-block;
     fill: $icon-color-dark;
     height: 30px; /* default height, gets over-ridden by style rule in component */
 }
