@@ -20,7 +20,8 @@ const BackboneIcons = Backbone.View.extend({
             const Icon = require('!html!../../src/' + icon);
             const svgWrapperEl = new SvgWrapper({
                 icon : Icon,
-                size : 130
+                width : 130,
+                height : 130
             }).render();
             return iconTemplate({child : svgWrapperEl.$el.html()});
         });

@@ -20735,7 +20735,7 @@
 	                    { key: idx, className: 'icon-container' },
 	                    React.createElement(
 	                        SvgComponent,
-	                        { size: 130 },
+	                        { width: 130, height: 130 },
 	                        React.createElement(Icon, null)
 	                    )
 	                );
@@ -20784,29 +20784,45 @@
 	 *      const Icon = require('dibs-vg/src/clock.svg');
 	 *      const SvgComponent = require('dibs-vg/js/SvgComponent.svg');
 	 *      // ... then inside your React component, you can do...
-	 *              <SvgComponent size={25} className={myClass}>
+	 *              <SvgComponent width={10} height={10} className={myClass} inline={false}>
 	 *                  <Icon />
 	 *              </SvgComponent>
 	 *
 	 *
-	 * @param props
+	 * @param children
+	 * @param className
+	 * @param width
+	 * @param height
+	 * @param title
+	 * @param inline
 	 * @returns {XML}
 	 * @constructor
 	 */
 	
-	var SvgComponent = function SvgComponent(props) {
-	    var compoundClass = 'dibsvg-icon ' + (props.className ? props.className : '');
-	    var css = props.size ? { height: props.size, width: props.size } : {};
+	var SvgComponent = function SvgComponent(_ref) {
+	    var children = _ref.children;
+	    var className = _ref.className;
+	    var width = _ref.width;
+	    var height = _ref.height;
+	    var title = _ref.title;
+	    var _ref$inline = _ref.inline;
+	    var inline = _ref$inline === undefined ? true : _ref$inline;
+	
+	    var compoundClass = 'dibsvg-icon ' + className;
+	    var css = { width: width, height: height };
+	    if (inline) css.display = 'inline-block';
 	    return React.createElement(
 	        'span',
-	        { className: compoundClass, title: props.title, style: css },
-	        props.children
+	        { className: compoundClass, title: title, style: css },
+	        children
 	    );
 	};
 	
 	SvgComponent.propTypes = {
 	    className: PropTypes.string,
-	    size: PropTypes.number,
+	    width: PropTypes.number,
+	    height: PropTypes.number,
+	    inline: PropTypes.bool,
 	    title: PropTypes.string
 	};
 	
@@ -24871,7 +24887,8 @@
 	            var Icon = __webpack_require__(/*! html!../../src */ 284)("./" + icon);
 	            var svgWrapperEl = new SvgWrapper({
 	                icon: Icon,
-	                size: 130
+	                width: 130,
+	                height: 130
 	            }).render();
 	            return iconTemplate({ child: svgWrapperEl.$el.html() });
 	        });
@@ -24895,7 +24912,14 @@
 	'use strict';
 	
 	var Backbone = __webpack_require__(/*! backbone */ 271);
-	var template = __webpack_require__(/*! lodash.template */ 275)('<span class=\'dibsvg-icon <%= className %>\' title=\'<%= title %>\' style=\'<%= style %>\'>\n        <%= icon %>\n    </span>');
+	var template = function template(_ref) {
+	    var className = _ref.className;
+	    var icon = _ref.icon;
+	    var title = _ref.title;
+	    var style = _ref.style;
+	
+	    return '<span class=\'dibsvg-icon ' + className + '\' title=\'' + title + '\' style=\'' + style + '\'>\n        ' + icon + '\n    </span>';
+	};
 	
 	/**
 	 * A very simple wrapper for an SVG icon required from the static repository.
@@ -24929,9 +24953,12 @@
 	        var icon = _options$icon === undefined ? '' : _options$icon;
 	        var _options$title = _options.title;
 	        var title = _options$title === undefined ? '' : _options$title;
-	        var size = _options.size;
+	        var width = _options.width;
+	        var height = _options.height;
+	        var _options$inline = _options.inline;
+	        var inline = _options$inline === undefined ? true : _options$inline;
 	
-	        var style = size ? 'width: ' + size + 'px; height: ' + size + 'px' : '';
+	        var style = (width ? 'width:' + width + 'px;' : '') + ' ' + (height ? 'height:' + height + 'px;' : '') + ' ' + (inline ? 'display:inline-block' : '');
 	        return {
 	            className: className,
 	            icon: icon,
