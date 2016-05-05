@@ -24957,7 +24957,7 @@
 	        var _options$inline = _options.inline;
 	        var inline = _options$inline === undefined ? true : _options$inline;
 	
-	        var style = (width ? 'width:' + width + 'px;' : '') + ' ' + (height ? 'height:' + height + 'px;' : '') + ' ' + (inline ? 'display:inline-block' : '');
+	        var style = (width ? 'width:' + width + 'px;' : '') + ' ' + (height ? 'height:' + height + 'px;' : '') + ' ' + (inline ? 'display:inline-block;' : '');
 	        return {
 	            className: className,
 	            icon: icon,
