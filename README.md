@@ -18,9 +18,9 @@ New icons added to the set will be considered a minor version bump. Changes to e
 
 Inline SVGs are great, not only because they're more performant, but they're also easier for developers to manipulate. Of course you can scale them infinitely in either direction just by changing some CSS, but having different paths inside of your SVG files also allows you to apply colors or other transformations to individual parts of the SVG. Check out this example : 
 
-![](https://cdn.rawgit.com/nameofname/dibs-vg/update-readme/readme_imgs/do-not-edit.svg)
-![](https://cdn.rawgit.com/nameofname/dibs-vg/update-readme/readme_imgs/do-not-edit-gold.svg)
-![](https://cdn.rawgit.com/nameofname/dibs-vg/update-readme/readme_imgs/do-not-edit-two-color.svg)
+![](https://rawgit.com/nameofname/dibs-vg/update-readme/readme_imgs/do-not-edit.svg)
+![](https://rawgit.com/nameofname/dibs-vg/update-readme/readme_imgs/do-not-edit-gold.svg)
+![](https://rawgit.com/nameofname/dibs-vg/update-readme/readme_imgs/do-not-edit-two-color.svg)
 
 ## With React / JSX : 
 
