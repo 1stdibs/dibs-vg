@@ -10,7 +10,7 @@ const { PropTypes } = React;
  *      const Icon = require('dibs-vg/src/clock.svg');
  *      const SvgComponent = require('dibs-vg/js/SvgComponent.svg');
  *      // ... then inside your React component, you can do...
- *              <SvgComponent width={10} height={10} className={myClass} inline={false}>
+ *              <SvgComponent width={10} height={10} className={myClass} display={'block'}>
  *                  <Icon />
  *              </SvgComponent>
  *
