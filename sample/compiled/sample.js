@@ -20794,23 +20794,23 @@
 	 * @param width
 	 * @param height
 	 * @param title
-	 * @param inline
+	 * @param display - sets the CSS display value. Defaults to inline-block.
 	 * @returns {XML}
 	 * @constructor
 	 */
 	
 	var SvgComponent = function SvgComponent(_ref) {
 	    var children = _ref.children;
-	    var className = _ref.className;
 	    var width = _ref.width;
 	    var height = _ref.height;
 	    var title = _ref.title;
-	    var _ref$inline = _ref.inline;
-	    var inline = _ref$inline === undefined ? true : _ref$inline;
+	    var _ref$display = _ref.display;
+	    var display = _ref$display === undefined ? 'inline-block' : _ref$display;
+	    var _ref$className = _ref.className;
+	    var className = _ref$className === undefined ? '' : _ref$className;
 	
 	    var compoundClass = 'dibsvg-icon ' + className;
-	    var css = { width: width, height: height };
-	    if (inline) css.display = 'inline-block';
+	    var css = { width: width, height: height, display: display };
 	    return React.createElement(
 	        'span',
 	        { className: compoundClass, title: title, style: css },
@@ -24954,10 +24954,10 @@
 	        var title = _options$title === undefined ? '' : _options$title;
 	        var width = _options.width;
 	        var height = _options.height;
-	        var _options$inline = _options.inline;
-	        var inline = _options$inline === undefined ? true : _options$inline;
+	        var _options$display = _options.display;
+	        var display = _options$display === undefined ? 'inline-block' : _options$display;
 	
-	        var style = (width ? 'width:' + width + 'px;' : '') + ' ' + (height ? 'height:' + height + 'px;' : '') + ' ' + (inline ? 'display:inline-block;' : '');
+	        var style = (width ? 'width:' + width + 'px;' : '') + ' ' + (height ? 'height:' + height + 'px;' : '') + ' display:' + display;
 	        return {
 	            className: className,
 	            icon: icon,

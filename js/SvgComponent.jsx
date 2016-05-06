@@ -20,14 +20,13 @@ const { PropTypes } = React;
  * @param width
  * @param height
  * @param title
- * @param inline
+ * @param display - sets the CSS display value. Defaults to inline-block.
  * @returns {XML}
  * @constructor
  */
-const SvgComponent = ({ children, className, width, height, title, inline=true }) => {
+const SvgComponent = ({ children, width, height, title, display='inline-block', className='' }) => {
     const compoundClass = `dibsvg-icon ${className}`;
-    const css = {width, height};
-    if (inline) css.display = 'inline-block';
+    const css = {width, height, display};
     return (
         <span className={compoundClass} title={title} style={css}>
             {children}
