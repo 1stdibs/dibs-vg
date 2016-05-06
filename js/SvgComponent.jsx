@@ -10,28 +10,35 @@ const { PropTypes } = React;
  *      const Icon = require('dibs-vg/src/clock.svg');
  *      const SvgComponent = require('dibs-vg/js/SvgComponent.svg');
  *      // ... then inside your React component, you can do...
- *              <SvgComponent size={25} className={myClass}>
+ *              <SvgComponent width={10} height={10} className={myClass} display={'block'}>
  *                  <Icon />
  *              </SvgComponent>
  *
  *
- * @param props
+ * @param children
+ * @param className
+ * @param width
+ * @param height
+ * @param title
+ * @param display - sets the CSS display value. Defaults to inline-block.
  * @returns {XML}
  * @constructor
  */
-const SvgComponent = props => {
-    const compoundClass = 'dibsvg-icon ' + (props.className ? props.className : '');
-    const css = props.size ? {height: props.size, width : props.size} : {};
-        return (
-        <span className={compoundClass} title={props.title} style={css}>
-            {props.children}
+const SvgComponent = ({ children, width, height, title, display='inline-block', className='' }) => {
+    const compoundClass = `dibsvg-icon ${className}`;
+    const css = {width, height, display};
+    return (
+        <span className={compoundClass} title={title} style={css}>
+            {children}
         </span>
     );
 };
 
 SvgComponent.propTypes = {
     className: PropTypes.string,
-    size: PropTypes.number,
+    width: PropTypes.number,
+    height: PropTypes.number,
+    display: PropTypes.string,
     title: PropTypes.string
 };
 
