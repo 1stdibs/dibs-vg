@@ -20822,7 +20822,7 @@
 	    className: PropTypes.string,
 	    width: PropTypes.number,
 	    height: PropTypes.number,
-	    inline: PropTypes.bool,
+	    display: PropTypes.string,
 	    title: PropTypes.string
 	};
 	
