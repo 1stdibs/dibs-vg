@@ -1,7 +1,7 @@
 ![](https://cdn.rawgit.com/1stdibs/dibs-vg/master/src/logo-no-reg.svg)
 
 # dibs-vg 
-1stdibs's in-house vector graphics.
+1stdibs's in-house vector graphics. See the full list of SVGs in action [HERE.](http://beautifulcode.1stdibs.com/dibs-vg/)
 
 ## Description
 
