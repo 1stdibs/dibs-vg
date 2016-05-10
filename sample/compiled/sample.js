@@ -20730,7 +20730,15 @@
 	            return iconList.map(function (icon, idx) {
 	                // Note* here we require the SVG file itself. See dibs-vg webpack config for info on how this works.
 	                var Icon = __webpack_require__(/*! ../../src */ 171)("./" + icon);
-	                return React.createElement(Icon, null);
+	                return React.createElement(
+	                    'span',
+	                    { key: idx, className: 'icon-container' },
+	                    React.createElement(
+	                        SvgComponent,
+	                        { width: 130, height: 130 },
+	                        React.createElement(Icon, null)
+	                    )
+	                );
 	            });
 	        }
 	    }, {
