@@ -14,11 +14,7 @@ class IconContainer extends React.Component {
             // Note* here we require the SVG file itself. See dibs-vg webpack config for info on how this works.
             const Icon = require('../../src/' + icon);
             return (
-                <span key={idx} className="icon-container">
-                    <SvgComponent width={130} height={130}>
-                        <Icon />
-                    </SvgComponent>
-                </span>
+                <Icon />
             );
         });
     }
