@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="24px" height="20px" viewBox="0 0 24 20" style="enable-background:new 0 0 24 20;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#999999;}
-	.st1{fill:none;stroke:#999999;stroke-width:0.8889;stroke-miterlimit:10;}
-</style>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 viewBox="0 0 24 20">
 <g>
 	<g>
-		<path class="st0" d="M23.1,0.9v18.2H0.9V0.9H23.1 M24,0H0v20h24V0L24,0z"/>
+		<path d="M23.1,0.9v18.2H0.9V0.9H23.1 M24,0H0v20h24V0L24,0z"/>
 	</g>
-	<ellipse class="st1" cx="6.5" cy="5.2" rx="2.3" ry="2.2"/>
-	<polyline class="st1" points="0.3,17.9 5.4,12.2 9.3,14.2 15.7,7.4 24,15 	"/>
+	<ellipse cx="6.5" cy="5.2" rx="2.3" ry="2.2"/>
+	<polyline points="0.3,17.9 5.4,12.2 9.3,14.2 15.7,7.4 24,15 	"/>
 </g>
 </svg>
