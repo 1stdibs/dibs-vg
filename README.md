@@ -26,7 +26,7 @@ If you are using Webpack, and want to render your SVG with React we recomment [s
 
 Configuration for svg-react-loader looks like this (see gotcha below, [via their documentation](https://github.com/jhamlet/svg-react-loader)) : 
 
-```javascript
+```js
 module.exports = {
     loaders: [
         { test: /\.svg$/, loader: 'babel!svg-react' }
@@ -41,13 +41,13 @@ module.exports = {
 
 One gotcha I ran into while implementing is that svg-react-loader requires that you also use babel loader, so this line : 
 
-```javascript
+```js
 { test: /\.svg$/, loader: 'babel!svg-react' }
 ```
 
 will not work if you already have babel configured as a loader in your config. To solve, add ".svg" to the list of extensions to match against, and remove it from that line to end up with something like :
 
-```javascript
+```js
 module.exports = {
     loaders: [
         { test: /\.(js|jsx|svg)$/, loader: 'babel' },
@@ -61,11 +61,18 @@ module.exports = {
 }
 ```
 
-Now that that's out of the way, require your icon and the icon wrapper then let it rip : 
+Now that that's out of the way, require your icon and let it rip : 
 
-```javascript
+```js
+const Icon = require('dibs-vg/src/bell.svg');
+// ...
+<Icon className={myKlass} />
+```
+
+Use it with the icon wraper React component : 
+```js
 const IconWrapper = require('dibs-vg/js/SvgComponent');
-const Icon = require('dibs-vg/src/bell');
+const Icon = require('dibs-vg/src/bell.svg');
 // ...
 <IconWrapper className="icon-spin" size={25} title={"Weeee! Weeeeeeeee!"}>
     <Icon />
@@ -76,7 +83,7 @@ const Icon = require('dibs-vg/src/bell');
 
 If you are using Webpack and want to render your SVG with Backbone we recomment using the [html loader](https://www.npmjs.com/package/html-loader) which returns the SVG file as a string, or the [webpack compile templates loader](https://www.npmjs.com/package/webpack-compile-templates) which will transform the SVG file to an underscore template.
 
-```javascript
+```js
 var SvgWrapper = require('dibs-vg/js/SvgWrapper.es.js');
 const icon = require('!html!dibs-vg/src/bell.svg');
 
