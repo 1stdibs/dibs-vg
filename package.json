@@ -6,9 +6,10 @@
   "scripts": {
     "watch": "webpack -d --progress --watch",
     "webpack": "webpack -d --progress",
-    "build": "node ./generateList && npm run webpack",
+    "build": "node ./generateList && node ./generateDist && npm run webpack",
     "gitlint": "node_modules/.bin/dibslint --git --warnings --es6",
-    "lint": "dibslint --root=. --es6"
+    "lint": "dibslint --root=. --es6",
+    "prepublish": "node ./generateList && node ./generateDist"
   },
   "pre-commit": {
     "run": [
@@ -62,6 +63,7 @@
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
     "svg-react-loader": "^0.3.3",
-    "webpack": "^1.13.0"
+    "webpack": "^1.13.0",
+    "xml2js": "^0.4.16"
   }
 }
