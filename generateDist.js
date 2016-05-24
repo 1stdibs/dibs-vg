@@ -9,7 +9,8 @@ const svgs = fs.readdirSync(process.cwd() + '/src');
 const dest = process.cwd() + '/dist/templateString';
 
 svgs.forEach(file => {
-    const fileName = dest + '/' + file;
+    const name = file.split('.')[0];
+    const fileName = dest + '/' + name + '.js';
     const leFile = process.cwd() + '/src/' + file;
     const contents = ["module.exports = `", fs.readFileSync(leFile), "`;", "\n"];
     fs.writeFileSync(fileName, contents.join(''), { encoding : 'UTF-8' });
