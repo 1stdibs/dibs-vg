@@ -39,9 +39,7 @@ svgs.forEach(file => {
                 checkError(err);
             });
 
-        }).catch(err => {
-            checkError(err);
-        });
+        }).catch(checkError);
     });
 });
 
