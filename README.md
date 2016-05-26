@@ -20,7 +20,22 @@ Inline SVGs are great, not only because they're more performant, but they're als
 
 ![](https://cdn.rawgit.com/1stdibs/dibs-vg/master/readme_imgs/do-not-edit-two-color.svg)
 
-## With React / JSX : 
+## Require pre-compiled modules : 
+
+dibs-vg pre-compiles each SVG file into 2 formats : React component and template string. 
+
+```js
+const stringSvg = require('dibs-vg/dist/templateString/account-filled.es.js');
+const svgComponent = require('dibs-vg/dist/templateString/account-filled.jsx');
+```
+
+Require these files directly in your modules and use just like you would any React component or string for inserting into pages. Pre-compiled React components accept a className prop so you can apply custom styling. 
+
+## Methods for loading with Webpack :
+
+You don't have to use pre-compiled modules. If you want to grab the raw SVG files and manipulate them go ahead, or if you want to use webpack to load the SVG files, use the method(s) below.
+
+### With React / JSX : 
 
 If you are using Webpack, and want to render your SVG with React we recomment [svg-react-loader](https://github.com/jhamlet/svg-react-loader) which will allow you to require your SVG files direclty in your JS as React components. 
 
@@ -79,7 +94,7 @@ const Icon = require('dibs-vg/src/bell.svg');
 </IconWrapper>
 ```
 
-## In Backbone : 
+### In Backbone : 
 
 If you are using Webpack and want to render your SVG with Backbone we recomment using the [html loader](https://www.npmjs.com/package/html-loader) which returns the SVG file as a string, or the [webpack compile templates loader](https://www.npmjs.com/package/webpack-compile-templates) which will transform the SVG file to an underscore template.
 
