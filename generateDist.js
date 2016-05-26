@@ -25,7 +25,7 @@ svgs.forEach(file => {
 
         // generate template string module :
         const fileContents = data.toString();
-        const stringContents = `module.exports = \`${fileContents};\`\n`;
+        const stringContents = `module.exports = \`${fileContents}\`;`;
 
         fs.writeFile(`${stringDest}/${name}.es.js`, stringContents, { encoding : 'UTF-8' }, err => {
             checkError(err);
