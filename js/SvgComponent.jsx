@@ -24,7 +24,7 @@ const { PropTypes } = React;
  * @returns {XML}
  * @constructor
  */
-const SvgComponent = ({ children, width, height, title, display='inline-block', className='' }) => {
+const SvgComponent = ({ children, width, height, title, display = 'inline-block', className = '' }) => {
     const compoundClass = `dibsvg-icon ${className}`;
     const css = {width, height, display};
     return (
@@ -35,6 +35,7 @@ const SvgComponent = ({ children, width, height, title, display='inline-block', 
 };
 
 SvgComponent.propTypes = {
+    children: PropTypes.element.isRequired,
     className: PropTypes.string,
     width: PropTypes.number,
     height: PropTypes.number,
