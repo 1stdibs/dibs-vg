@@ -4,7 +4,6 @@ const fs = require('fs');
 const checkError = err => {
     if (err) {
         throw err;
-        process.exit(1);
     }
 };
 

@@ -13,7 +13,6 @@ const reactDest = `${process.cwd()}/dist/react`;
 const checkError = err => {
     if (err) {
         throw err;
-        process.exit(1);
     }
 };
 
