@@ -22,19 +22,19 @@ const template = function ({className, icon, title, style}) {
  */
 const SvgWrapper = Backbone.View.extend({
 
-    render () {
+    render() {
         this.$el.html(template(this.templateVars()));
         return this;
     },
 
-    initialize (options={}) {
+    initialize(options = {}) {
         console.assert(options.icon, "Icon is required to use SvgWrapper BB component.");
         this.options = options;
     },
 
-    templateVars () {
-        const { className='', icon='', title='', width, height, display='inline-block' } = this.options;
-        const style = `${width ? 'width:'+width+'px;' : ''} ${height ? 'height:'+height+'px;' : ''} display:${display}`;
+    templateVars() {
+        const { className = '', icon = '', title = '', width, height, display = 'inline-block' } = this.options;
+        const style = `${width ? 'width:' + width + 'px;' : ''} ${height ? 'height:' + height + 'px;' : ''} display:${display}`;
         return {
             className,
             icon,
