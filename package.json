@@ -16,13 +16,6 @@
       "gitlint"
     ]
   },
-  "babel": {
-    "presets": [
-      "es2015",
-      "stage-2",
-      "react"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/1stdibs/dibs-vg.git"
