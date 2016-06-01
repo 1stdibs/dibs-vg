@@ -50,10 +50,10 @@
 	"use strict";
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var ReactDOM = __webpack_require__(/*! react-dom */ 33);
+	var ReactDOM = __webpack_require__(/*! react-dom */ 38);
 	var ReactIcons = __webpack_require__(/*! ./ReactIcons.jsx */ 168);
-	var BackboneIcons = __webpack_require__(/*! ./BackboneIcons.js */ 276);
-	__webpack_require__(/*! ../../scss/sample.scss */ 360);
+	var BackboneIcons = __webpack_require__(/*! ./BackboneIcons.js */ 359);
+	__webpack_require__(/*! ../../scss/sample.scss */ 445);
 	
 	window.onload = function () {
 	    // React :
@@ -98,14 +98,14 @@
 	
 	var ReactChildren = __webpack_require__(/*! ./ReactChildren */ 5);
 	var ReactComponent = __webpack_require__(/*! ./ReactComponent */ 16);
-	var ReactClass = __webpack_require__(/*! ./ReactClass */ 22);
-	var ReactDOMFactories = __webpack_require__(/*! ./ReactDOMFactories */ 27);
+	var ReactClass = __webpack_require__(/*! ./ReactClass */ 27);
+	var ReactDOMFactories = __webpack_require__(/*! ./ReactDOMFactories */ 32);
 	var ReactElement = __webpack_require__(/*! ./ReactElement */ 8);
-	var ReactElementValidator = __webpack_require__(/*! ./ReactElementValidator */ 28);
-	var ReactPropTypes = __webpack_require__(/*! ./ReactPropTypes */ 30);
-	var ReactVersion = __webpack_require__(/*! ./ReactVersion */ 31);
+	var ReactElementValidator = __webpack_require__(/*! ./ReactElementValidator */ 33);
+	var ReactPropTypes = __webpack_require__(/*! ./ReactPropTypes */ 35);
+	var ReactVersion = __webpack_require__(/*! ./ReactVersion */ 36);
 	
-	var onlyChild = __webpack_require__(/*! ./onlyChild */ 32);
+	var onlyChild = __webpack_require__(/*! ./onlyChild */ 37);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
 	
 	var createElement = ReactElement.createElement;
@@ -188,6 +188,9 @@
 	var queueIndex = -1;
 	
 	function cleanUpNextTick() {
+	    if (!draining || !currentQueue) {
+	        return;
+	    }
 	    draining = false;
 	    if (currentQueue.length) {
 	        queue = currentQueue.concat(queue);
@@ -430,6 +433,8 @@
 	/**
 	 * Iterates through children that are typically specified as `props.children`.
 	 *
+	 * See https://facebook.github.io/react/docs/top-level-api.html#react.children.foreach
+	 *
 	 * The provided forEachFunc(child, index) will be called for each
 	 * leaf child.
 	 *
@@ -504,7 +509,9 @@
 	/**
 	 * Maps children that are typically specified as `props.children`.
 	 *
-	 * The provided mapFunction(child, index) will be called for each
+	 * See https://facebook.github.io/react/docs/top-level-api.html#react.children.map
+	 *
+	 * The provided mapFunction(child, key, index) will be called for each
 	 * leaf child.
 	 *
 	 * @param {?*} children Children tree container.
@@ -529,6 +536,8 @@
 	 * Count the number of children that are typically specified as
 	 * `props.children`.
 	 *
+	 * See https://facebook.github.io/react/docs/top-level-api.html#react.children.count
+	 *
 	 * @param {?*} children Children tree container.
 	 * @return {number} The number of children.
 	 */
@@ -539,6 +548,8 @@
 	/**
 	 * Flatten a children object (typically specified as `props.children`) and
 	 * return an array with appropriately re-keyed children.
+	 *
+	 * See https://facebook.github.io/react/docs/top-level-api.html#react.children.toarray
 	 */
 	function toArray(children) {
 	  var result = [];
@@ -866,6 +877,10 @@
 	  return element;
 	};
 	
+	/**
+	 * Create and return a new ReactElement of the given type.
+	 * See https://facebook.github.io/react/docs/top-level-api.html#react.createelement
+	 */
 	ReactElement.createElement = function (type, config, children) {
 	  var propName;
 	
@@ -879,6 +894,11 @@
 	
 	  if (config != null) {
 	    if (process.env.NODE_ENV !== 'production') {
+	      process.env.NODE_ENV !== 'production' ? warning(
+	      /* eslint-disable no-proto */
+	      config.__proto__ == null || config.__proto__ === Object.prototype,
+	      /* eslint-enable no-proto */
+	      'React.createElement(...): Expected props argument to be a plain object. ' + 'Properties defined in its prototype chain will be ignored.') : void 0;
 	      ref = !config.hasOwnProperty('ref') || Object.getOwnPropertyDescriptor(config, 'ref').get ? null : config.ref;
 	      key = !config.hasOwnProperty('key') || Object.getOwnPropertyDescriptor(config, 'key').get ? null : '' + config.key;
 	    } else {
@@ -950,6 +970,10 @@
 	  return ReactElement(type, key, ref, self, source, ReactCurrentOwner.current, props);
 	};
 	
+	/**
+	 * Return a function that produces ReactElements of a given type.
+	 * See https://facebook.github.io/react/docs/top-level-api.html#react.createfactory
+	 */
 	ReactElement.createFactory = function (type) {
 	  var factory = ReactElement.createElement.bind(null, type);
 	  // Expose the type on the factory and the prototype so that it can be
@@ -967,6 +991,10 @@
 	  return newElement;
 	};
 	
+	/**
+	 * Clone and return a new ReactElement using element as the starting point.
+	 * See https://facebook.github.io/react/docs/top-level-api.html#react.cloneelement
+	 */
 	ReactElement.cloneElement = function (element, config, children) {
 	  var propName;
 	
@@ -987,6 +1015,13 @@
 	  var owner = element._owner;
 	
 	  if (config != null) {
+	    if (process.env.NODE_ENV !== 'production') {
+	      process.env.NODE_ENV !== 'production' ? warning(
+	      /* eslint-disable no-proto */
+	      config.__proto__ == null || config.__proto__ === Object.prototype,
+	      /* eslint-enable no-proto */
+	      'React.cloneElement(...): Expected props argument to be a plain object. ' + 'Properties defined in its prototype chain will be ignored.') : void 0;
+	    }
 	    if (config.ref !== undefined) {
 	      // Silently steal the ref from the parent.
 	      ref = config.ref;
@@ -1029,6 +1064,8 @@
 	};
 	
 	/**
+	 * Verifies the object is a ReactElement.
+	 * See https://facebook.github.io/react/docs/top-level-api.html#react.isvalidelement
 	 * @param {?object} object
 	 * @return {boolean} True if `object` is a valid component.
 	 * @final
@@ -1161,6 +1198,7 @@
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
+	 * 
 	 */
 	
 	function makeEmptyFunction(arg) {
@@ -1174,7 +1212,7 @@
 	 * primarily useful idiomatically for overridable function endpoints which
 	 * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
 	 */
-	function emptyFunction() {}
+	var emptyFunction = function emptyFunction() {};
 	
 	emptyFunction.thatReturns = makeEmptyFunction;
 	emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
@@ -1531,7 +1569,7 @@
 	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 18);
 	
 	var canDefineProperty = __webpack_require__(/*! ./canDefineProperty */ 12);
-	var emptyObject = __webpack_require__(/*! fbjs/lib/emptyObject */ 21);
+	var emptyObject = __webpack_require__(/*! fbjs/lib/emptyObject */ 26);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
 	
@@ -1785,7 +1823,9 @@
 	
 	'use strict';
 	
-	var ReactInvalidSetStateWarningDevTool = __webpack_require__(/*! ./ReactInvalidSetStateWarningDevTool */ 20);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 20);
+	
+	var performanceNow = __webpack_require__(/*! fbjs/lib/performanceNow */ 21);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
 	
 	var eventHandlers = [];
@@ -1806,6 +1846,70 @@
 	  }
 	}
 	
+	var isProfiling = false;
+	var flushHistory = [];
+	var currentFlushNesting = 0;
+	var currentFlushMeasurements = null;
+	var currentFlushStartTime = null;
+	var currentTimerDebugID = null;
+	var currentTimerStartTime = null;
+	var currentTimerType = null;
+	
+	function clearHistory() {
+	  ReactComponentTreeDevtool.purgeUnmountedComponents();
+	  ReactNativeOperationHistoryDevtool.clearHistory();
+	}
+	
+	function getTreeSnapshot(registeredIDs) {
+	  return registeredIDs.reduce(function (tree, id) {
+	    var ownerID = ReactComponentTreeDevtool.getOwnerID(id);
+	    var parentID = ReactComponentTreeDevtool.getParentID(id);
+	    tree[id] = {
+	      displayName: ReactComponentTreeDevtool.getDisplayName(id),
+	      text: ReactComponentTreeDevtool.getText(id),
+	      updateCount: ReactComponentTreeDevtool.getUpdateCount(id),
+	      childIDs: ReactComponentTreeDevtool.getChildIDs(id),
+	      // Text nodes don't have owners but this is close enough.
+	      ownerID: ownerID || ReactComponentTreeDevtool.getOwnerID(parentID),
+	      parentID: parentID
+	    };
+	    return tree;
+	  }, {});
+	}
+	
+	function resetMeasurements() {
+	  if (process.env.NODE_ENV !== 'production') {
+	    var previousStartTime = currentFlushStartTime;
+	    var previousMeasurements = currentFlushMeasurements || [];
+	    var previousOperations = ReactNativeOperationHistoryDevtool.getHistory();
+	
+	    if (!isProfiling || currentFlushNesting === 0) {
+	      currentFlushStartTime = null;
+	      currentFlushMeasurements = null;
+	      clearHistory();
+	      return;
+	    }
+	
+	    if (previousMeasurements.length || previousOperations.length) {
+	      var registeredIDs = ReactComponentTreeDevtool.getRegisteredIDs();
+	      flushHistory.push({
+	        duration: performanceNow() - previousStartTime,
+	        measurements: previousMeasurements || [],
+	        operations: previousOperations || [],
+	        treeSnapshot: getTreeSnapshot(registeredIDs)
+	      });
+	    }
+	
+	    clearHistory();
+	    currentFlushStartTime = performanceNow();
+	    currentFlushMeasurements = [];
+	  }
+	}
+	
+	function checkDebugID(debugID) {
+	  process.env.NODE_ENV !== 'production' ? warning(debugID, 'ReactDebugTool: debugID may not be empty.') : void 0;
+	}
+	
 	var ReactDebugTool = {
 	  addDevtool: function addDevtool(devtool) {
 	    eventHandlers.push(devtool);
@@ -1818,36 +1922,262 @@
 	      }
 	    }
 	  },
+	  beginProfiling: function beginProfiling() {
+	    if (process.env.NODE_ENV !== 'production') {
+	      if (isProfiling) {
+	        return;
+	      }
+	
+	      isProfiling = true;
+	      flushHistory.length = 0;
+	      resetMeasurements();
+	    }
+	  },
+	  endProfiling: function endProfiling() {
+	    if (process.env.NODE_ENV !== 'production') {
+	      if (!isProfiling) {
+	        return;
+	      }
+	
+	      isProfiling = false;
+	      resetMeasurements();
+	    }
+	  },
+	  getFlushHistory: function getFlushHistory() {
+	    if (process.env.NODE_ENV !== 'production') {
+	      return flushHistory;
+	    }
+	  },
+	  onBeginFlush: function onBeginFlush() {
+	    if (process.env.NODE_ENV !== 'production') {
+	      currentFlushNesting++;
+	      resetMeasurements();
+	    }
+	    emitEvent('onBeginFlush');
+	  },
+	  onEndFlush: function onEndFlush() {
+	    if (process.env.NODE_ENV !== 'production') {
+	      resetMeasurements();
+	      currentFlushNesting--;
+	    }
+	    emitEvent('onEndFlush');
+	  },
+	  onBeginLifeCycleTimer: function onBeginLifeCycleTimer(debugID, timerType) {
+	    checkDebugID(debugID);
+	    emitEvent('onBeginLifeCycleTimer', debugID, timerType);
+	    if (process.env.NODE_ENV !== 'production') {
+	      if (isProfiling && currentFlushNesting > 0) {
+	        process.env.NODE_ENV !== 'production' ? warning(!currentTimerType, 'There is an internal error in the React performance measurement code. ' + 'Did not expect %s timer to start while %s timer is still in ' + 'progress for %s instance.', timerType, currentTimerType || 'no', debugID === currentTimerDebugID ? 'the same' : 'another') : void 0;
+	        currentTimerStartTime = performanceNow();
+	        currentTimerDebugID = debugID;
+	        currentTimerType = timerType;
+	      }
+	    }
+	  },
+	  onEndLifeCycleTimer: function onEndLifeCycleTimer(debugID, timerType) {
+	    checkDebugID(debugID);
+	    if (process.env.NODE_ENV !== 'production') {
+	      if (isProfiling && currentFlushNesting > 0) {
+	        process.env.NODE_ENV !== 'production' ? warning(currentTimerType === timerType, 'There is an internal error in the React performance measurement code. ' + 'We did not expect %s timer to stop while %s timer is still in ' + 'progress for %s instance. Please report this as a bug in React.', timerType, currentTimerType || 'no', debugID === currentTimerDebugID ? 'the same' : 'another') : void 0;
+	        currentFlushMeasurements.push({
+	          timerType: timerType,
+	          instanceID: debugID,
+	          duration: performanceNow() - currentTimerStartTime
+	        });
+	        currentTimerStartTime = null;
+	        currentTimerDebugID = null;
+	        currentTimerType = null;
+	      }
+	    }
+	    emitEvent('onEndLifeCycleTimer', debugID, timerType);
+	  },
+	  onBeginReconcilerTimer: function onBeginReconcilerTimer(debugID, timerType) {
+	    checkDebugID(debugID);
+	    emitEvent('onBeginReconcilerTimer', debugID, timerType);
+	  },
+	  onEndReconcilerTimer: function onEndReconcilerTimer(debugID, timerType) {
+	    checkDebugID(debugID);
+	    emitEvent('onEndReconcilerTimer', debugID, timerType);
+	  },
 	  onBeginProcessingChildContext: function onBeginProcessingChildContext() {
 	    emitEvent('onBeginProcessingChildContext');
 	  },
 	  onEndProcessingChildContext: function onEndProcessingChildContext() {
 	    emitEvent('onEndProcessingChildContext');
 	  },
+	  onNativeOperation: function onNativeOperation(debugID, type, payload) {
+	    checkDebugID(debugID);
+	    emitEvent('onNativeOperation', debugID, type, payload);
+	  },
 	  onSetState: function onSetState() {
 	    emitEvent('onSetState');
 	  },
-	  onMountRootComponent: function onMountRootComponent(internalInstance) {
-	    emitEvent('onMountRootComponent', internalInstance);
+	  onSetDisplayName: function onSetDisplayName(debugID, displayName) {
+	    checkDebugID(debugID);
+	    emitEvent('onSetDisplayName', debugID, displayName);
 	  },
-	  onMountComponent: function onMountComponent(internalInstance) {
-	    emitEvent('onMountComponent', internalInstance);
+	  onSetChildren: function onSetChildren(debugID, childDebugIDs) {
+	    checkDebugID(debugID);
+	    emitEvent('onSetChildren', debugID, childDebugIDs);
 	  },
-	  onUpdateComponent: function onUpdateComponent(internalInstance) {
-	    emitEvent('onUpdateComponent', internalInstance);
+	  onSetOwner: function onSetOwner(debugID, ownerDebugID) {
+	    checkDebugID(debugID);
+	    emitEvent('onSetOwner', debugID, ownerDebugID);
 	  },
-	  onUnmountComponent: function onUnmountComponent(internalInstance) {
-	    emitEvent('onUnmountComponent', internalInstance);
+	  onSetText: function onSetText(debugID, text) {
+	    checkDebugID(debugID);
+	    emitEvent('onSetText', debugID, text);
+	  },
+	  onMountRootComponent: function onMountRootComponent(debugID) {
+	    checkDebugID(debugID);
+	    emitEvent('onMountRootComponent', debugID);
+	  },
+	  onMountComponent: function onMountComponent(debugID) {
+	    checkDebugID(debugID);
+	    emitEvent('onMountComponent', debugID);
+	  },
+	  onUpdateComponent: function onUpdateComponent(debugID) {
+	    checkDebugID(debugID);
+	    emitEvent('onUpdateComponent', debugID);
+	  },
+	  onUnmountComponent: function onUnmountComponent(debugID) {
+	    checkDebugID(debugID);
+	    emitEvent('onUnmountComponent', debugID);
 	  }
 	};
 	
-	ReactDebugTool.addDevtool(ReactInvalidSetStateWarningDevTool);
+	if (process.env.NODE_ENV !== 'production') {
+	  var ReactInvalidSetStateWarningDevTool = __webpack_require__(/*! ./ReactInvalidSetStateWarningDevTool */ 23);
+	  var ReactNativeOperationHistoryDevtool = __webpack_require__(/*! ./ReactNativeOperationHistoryDevtool */ 24);
+	  var ReactComponentTreeDevtool = __webpack_require__(/*! ./ReactComponentTreeDevtool */ 25);
+	  ReactDebugTool.addDevtool(ReactInvalidSetStateWarningDevTool);
+	  ReactDebugTool.addDevtool(ReactComponentTreeDevtool);
+	  ReactDebugTool.addDevtool(ReactNativeOperationHistoryDevtool);
+	  var url = ExecutionEnvironment.canUseDOM && window.location.href || '';
+	  if (/[?&]react_perf\b/.test(url)) {
+	    ReactDebugTool.beginProfiling();
+	  }
+	}
 	
 	module.exports = ReactDebugTool;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
 /* 20 */
+/*!****************************************************!*\
+  !*** ./~/react/~/fbjs/lib/ExecutionEnvironment.js ***!
+  \****************************************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 */
+	
+	'use strict';
+	
+	var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
+	
+	/**
+	 * Simple, lightweight module assisting with the detection and context of
+	 * Worker. Helps avoid circular dependencies and allows code to reason about
+	 * whether or not they are in a Worker, even if they never include the main
+	 * `ReactWorker` dependency.
+	 */
+	var ExecutionEnvironment = {
+	
+	  canUseDOM: canUseDOM,
+	
+	  canUseWorkers: typeof Worker !== 'undefined',
+	
+	  canUseEventListeners: canUseDOM && !!(window.addEventListener || window.attachEvent),
+	
+	  canUseViewport: canUseDOM && !!window.screen,
+	
+	  isInWorker: !canUseDOM // For now, this is true - might change in the future.
+	
+	};
+	
+	module.exports = ExecutionEnvironment;
+
+/***/ },
+/* 21 */
+/*!**********************************************!*\
+  !*** ./~/react/~/fbjs/lib/performanceNow.js ***!
+  \**********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @typechecks
+	 */
+	
+	var performance = __webpack_require__(/*! ./performance */ 22);
+	
+	var performanceNow;
+	
+	/**
+	 * Detect if we can use `window.performance.now()` and gracefully fallback to
+	 * `Date.now()` if it doesn't exist. We need to support Firefox < 15 for now
+	 * because of Facebook's testing infrastructure.
+	 */
+	if (performance.now) {
+	  performanceNow = function performanceNow() {
+	    return performance.now();
+	  };
+	} else {
+	  performanceNow = function performanceNow() {
+	    return Date.now();
+	  };
+	}
+	
+	module.exports = performanceNow;
+
+/***/ },
+/* 22 */
+/*!*******************************************!*\
+  !*** ./~/react/~/fbjs/lib/performance.js ***!
+  \*******************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @typechecks
+	 */
+	
+	'use strict';
+	
+	var ExecutionEnvironment = __webpack_require__(/*! ./ExecutionEnvironment */ 20);
+	
+	var performance;
+	
+	if (ExecutionEnvironment.canUseDOM) {
+	  performance = window.performance || window.msPerformance || window.webkitPerformance;
+	}
+	
+	module.exports = performance || {};
+
+/***/ },
+/* 23 */
 /*!***********************************************************!*\
   !*** ./~/react/lib/ReactInvalidSetStateWarningDevTool.js ***!
   \***********************************************************/
@@ -1892,7 +2222,206 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 21 */
+/* 24 */
+/*!***********************************************************!*\
+  !*** ./~/react/lib/ReactNativeOperationHistoryDevtool.js ***!
+  \***********************************************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Copyright 2016-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactNativeOperationHistoryDevtool
+	 */
+	
+	'use strict';
+	
+	var history = [];
+	
+	var ReactNativeOperationHistoryDevtool = {
+	  onNativeOperation: function onNativeOperation(debugID, type, payload) {
+	    history.push({
+	      instanceID: debugID,
+	      type: type,
+	      payload: payload
+	    });
+	  },
+	  clearHistory: function clearHistory() {
+	    if (ReactNativeOperationHistoryDevtool._preventClearing) {
+	      // Should only be used for tests.
+	      return;
+	    }
+	
+	    history = [];
+	  },
+	  getHistory: function getHistory() {
+	    return history;
+	  }
+	};
+	
+	module.exports = ReactNativeOperationHistoryDevtool;
+
+/***/ },
+/* 25 */
+/*!**************************************************!*\
+  !*** ./~/react/lib/ReactComponentTreeDevtool.js ***!
+  \**************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright 2016-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactComponentTreeDevtool
+	 */
+	
+	'use strict';
+	
+	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
+	
+	var tree = {};
+	var rootIDs = [];
+	
+	function updateTree(id, update) {
+	  if (!tree[id]) {
+	    tree[id] = {
+	      parentID: null,
+	      ownerID: null,
+	      text: null,
+	      childIDs: [],
+	      displayName: 'Unknown',
+	      isMounted: false,
+	      updateCount: 0
+	    };
+	  }
+	  update(tree[id]);
+	}
+	
+	function purgeDeep(id) {
+	  var item = tree[id];
+	  if (item) {
+	    var childIDs = item.childIDs;
+	
+	    delete tree[id];
+	    childIDs.forEach(purgeDeep);
+	  }
+	}
+	
+	var ReactComponentTreeDevtool = {
+	  onSetDisplayName: function onSetDisplayName(id, displayName) {
+	    updateTree(id, function (item) {
+	      return item.displayName = displayName;
+	    });
+	  },
+	  onSetChildren: function onSetChildren(id, nextChildIDs) {
+	    updateTree(id, function (item) {
+	      var prevChildIDs = item.childIDs;
+	      item.childIDs = nextChildIDs;
+	
+	      nextChildIDs.forEach(function (nextChildID) {
+	        var nextChild = tree[nextChildID];
+	        !nextChild ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Expected devtool events to fire for the child ' + 'before its parent includes it in onSetChildren().') : invariant(false) : void 0;
+	        !(nextChild.displayName != null) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Expected onSetDisplayName() to fire for the child ' + 'before its parent includes it in onSetChildren().') : invariant(false) : void 0;
+	        !(nextChild.childIDs != null || nextChild.text != null) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Expected onSetChildren() or onSetText() to fire for the child ' + 'before its parent includes it in onSetChildren().') : invariant(false) : void 0;
+	        !nextChild.isMounted ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Expected onMountComponent() to fire for the child ' + 'before its parent includes it in onSetChildren().') : invariant(false) : void 0;
+	
+	        if (prevChildIDs.indexOf(nextChildID) === -1) {
+	          nextChild.parentID = id;
+	        }
+	      });
+	    });
+	  },
+	  onSetOwner: function onSetOwner(id, ownerID) {
+	    updateTree(id, function (item) {
+	      return item.ownerID = ownerID;
+	    });
+	  },
+	  onSetText: function onSetText(id, text) {
+	    updateTree(id, function (item) {
+	      return item.text = text;
+	    });
+	  },
+	  onMountComponent: function onMountComponent(id) {
+	    updateTree(id, function (item) {
+	      return item.isMounted = true;
+	    });
+	  },
+	  onMountRootComponent: function onMountRootComponent(id) {
+	    rootIDs.push(id);
+	  },
+	  onUpdateComponent: function onUpdateComponent(id) {
+	    updateTree(id, function (item) {
+	      return item.updateCount++;
+	    });
+	  },
+	  onUnmountComponent: function onUnmountComponent(id) {
+	    updateTree(id, function (item) {
+	      return item.isMounted = false;
+	    });
+	    rootIDs = rootIDs.filter(function (rootID) {
+	      return rootID !== id;
+	    });
+	  },
+	  purgeUnmountedComponents: function purgeUnmountedComponents() {
+	    if (ReactComponentTreeDevtool._preventPurging) {
+	      // Should only be used for testing.
+	      return;
+	    }
+	
+	    Object.keys(tree).filter(function (id) {
+	      return !tree[id].isMounted;
+	    }).forEach(purgeDeep);
+	  },
+	  isMounted: function isMounted(id) {
+	    var item = tree[id];
+	    return item ? item.isMounted : false;
+	  },
+	  getChildIDs: function getChildIDs(id) {
+	    var item = tree[id];
+	    return item ? item.childIDs : [];
+	  },
+	  getDisplayName: function getDisplayName(id) {
+	    var item = tree[id];
+	    return item ? item.displayName : 'Unknown';
+	  },
+	  getOwnerID: function getOwnerID(id) {
+	    var item = tree[id];
+	    return item ? item.ownerID : null;
+	  },
+	  getParentID: function getParentID(id) {
+	    var item = tree[id];
+	    return item ? item.parentID : null;
+	  },
+	  getText: function getText(id) {
+	    var item = tree[id];
+	    return item ? item.text : null;
+	  },
+	  getUpdateCount: function getUpdateCount(id) {
+	    var item = tree[id];
+	    return item ? item.updateCount : 0;
+	  },
+	  getRootIDs: function getRootIDs() {
+	    return rootIDs;
+	  },
+	  getRegisteredIDs: function getRegisteredIDs() {
+	    return Object.keys(tree);
+	  }
+	};
+	
+	module.exports = ReactComponentTreeDevtool;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
+
+/***/ },
+/* 26 */
 /*!*******************************************!*\
   !*** ./~/react/~/fbjs/lib/emptyObject.js ***!
   \*******************************************/
@@ -1920,7 +2449,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 22 */
+/* 27 */
 /*!***********************************!*\
   !*** ./~/react/lib/ReactClass.js ***!
   \***********************************/
@@ -1945,14 +2474,14 @@
 	
 	var ReactComponent = __webpack_require__(/*! ./ReactComponent */ 16);
 	var ReactElement = __webpack_require__(/*! ./ReactElement */ 8);
-	var ReactPropTypeLocations = __webpack_require__(/*! ./ReactPropTypeLocations */ 23);
-	var ReactPropTypeLocationNames = __webpack_require__(/*! ./ReactPropTypeLocationNames */ 25);
+	var ReactPropTypeLocations = __webpack_require__(/*! ./ReactPropTypeLocations */ 28);
+	var ReactPropTypeLocationNames = __webpack_require__(/*! ./ReactPropTypeLocationNames */ 30);
 	var ReactNoopUpdateQueue = __webpack_require__(/*! ./ReactNoopUpdateQueue */ 17);
 	
-	var emptyObject = __webpack_require__(/*! fbjs/lib/emptyObject */ 21);
+	var emptyObject = __webpack_require__(/*! fbjs/lib/emptyObject */ 26);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
-	var keyMirror = __webpack_require__(/*! fbjs/lib/keyMirror */ 24);
-	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 26);
+	var keyMirror = __webpack_require__(/*! fbjs/lib/keyMirror */ 29);
+	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 31);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
 	
 	var MIXINS_KEY = keyOf({ mixins: null });
@@ -2557,6 +3086,7 @@
 	
 	  /**
 	   * Creates a composite component class given a class specification.
+	   * See https://facebook.github.io/react/docs/top-level-api.html#react.createclass
 	   *
 	   * @param {object} spec Class specification (which must define `render`).
 	   * @return {function} Component constructor function.
@@ -2654,7 +3184,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 23 */
+/* 28 */
 /*!***********************************************!*\
   !*** ./~/react/lib/ReactPropTypeLocations.js ***!
   \***********************************************/
@@ -2673,7 +3203,7 @@
 	
 	'use strict';
 	
-	var keyMirror = __webpack_require__(/*! fbjs/lib/keyMirror */ 24);
+	var keyMirror = __webpack_require__(/*! fbjs/lib/keyMirror */ 29);
 	
 	var ReactPropTypeLocations = keyMirror({
 	  prop: null,
@@ -2684,7 +3214,7 @@
 	module.exports = ReactPropTypeLocations;
 
 /***/ },
-/* 24 */
+/* 29 */
 /*!*****************************************!*\
   !*** ./~/react/~/fbjs/lib/keyMirror.js ***!
   \*****************************************/
@@ -2740,7 +3270,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 25 */
+/* 30 */
 /*!***************************************************!*\
   !*** ./~/react/lib/ReactPropTypeLocationNames.js ***!
   \***************************************************/
@@ -2773,7 +3303,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 26 */
+/* 31 */
 /*!*************************************!*\
   !*** ./~/react/~/fbjs/lib/keyOf.js ***!
   \*************************************/
@@ -2816,7 +3346,7 @@
 	module.exports = keyOf;
 
 /***/ },
-/* 27 */
+/* 32 */
 /*!******************************************!*\
   !*** ./~/react/lib/ReactDOMFactories.js ***!
   \******************************************/
@@ -2836,9 +3366,9 @@
 	'use strict';
 	
 	var ReactElement = __webpack_require__(/*! ./ReactElement */ 8);
-	var ReactElementValidator = __webpack_require__(/*! ./ReactElementValidator */ 28);
+	var ReactElementValidator = __webpack_require__(/*! ./ReactElementValidator */ 33);
 	
-	var mapObject = __webpack_require__(/*! fbjs/lib/mapObject */ 29);
+	var mapObject = __webpack_require__(/*! fbjs/lib/mapObject */ 34);
 	
 	/**
 	 * Create a factory that creates HTML tag elements.
@@ -3001,7 +3531,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 28 */
+/* 33 */
 /*!**********************************************!*\
   !*** ./~/react/lib/ReactElementValidator.js ***!
   \**********************************************/
@@ -3030,8 +3560,8 @@
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 	
 	var ReactElement = __webpack_require__(/*! ./ReactElement */ 8);
-	var ReactPropTypeLocations = __webpack_require__(/*! ./ReactPropTypeLocations */ 23);
-	var ReactPropTypeLocationNames = __webpack_require__(/*! ./ReactPropTypeLocationNames */ 25);
+	var ReactPropTypeLocations = __webpack_require__(/*! ./ReactPropTypeLocations */ 28);
+	var ReactPropTypeLocationNames = __webpack_require__(/*! ./ReactPropTypeLocationNames */ 30);
 	var ReactCurrentOwner = __webpack_require__(/*! ./ReactCurrentOwner */ 9);
 	
 	var canDefineProperty = __webpack_require__(/*! ./canDefineProperty */ 12);
@@ -3293,7 +3823,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 29 */
+/* 34 */
 /*!*****************************************!*\
   !*** ./~/react/~/fbjs/lib/mapObject.js ***!
   \*****************************************/
@@ -3351,7 +3881,7 @@
 	module.exports = mapObject;
 
 /***/ },
-/* 30 */
+/* 35 */
 /*!***************************************!*\
   !*** ./~/react/lib/ReactPropTypes.js ***!
   \***************************************/
@@ -3373,7 +3903,7 @@
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 	
 	var ReactElement = __webpack_require__(/*! ./ReactElement */ 8);
-	var ReactPropTypeLocationNames = __webpack_require__(/*! ./ReactPropTypeLocationNames */ 25);
+	var ReactPropTypeLocationNames = __webpack_require__(/*! ./ReactPropTypeLocationNames */ 30);
 	
 	var emptyFunction = __webpack_require__(/*! fbjs/lib/emptyFunction */ 11);
 	var getIteratorFn = __webpack_require__(/*! ./getIteratorFn */ 14);
@@ -3741,7 +4271,7 @@
 	module.exports = ReactPropTypes;
 
 /***/ },
-/* 31 */
+/* 36 */
 /*!*************************************!*\
   !*** ./~/react/lib/ReactVersion.js ***!
   \*************************************/
@@ -3760,10 +4290,10 @@
 	
 	'use strict';
 	
-	module.exports = '15.0.2';
+	module.exports = '15.1.0';
 
 /***/ },
-/* 32 */
+/* 37 */
 /*!**********************************!*\
   !*** ./~/react/lib/onlyChild.js ***!
   \**********************************/
@@ -3787,10 +4317,13 @@
 	
 	/**
 	 * Returns the first child in a collection of children and verifies that there
-	 * is only one child in the collection. The current implementation of this
-	 * function assumes that a single child gets passed without a wrapper, but the
-	 * purpose of this helper function is to abstract away the particular structure
-	 * of children.
+	 * is only one child in the collection.
+	 *
+	 * See https://facebook.github.io/react/docs/top-level-api.html#react.children.only
+	 *
+	 * The current implementation of this function assumes that a single child gets
+	 * passed without a wrapper, but the purpose of this helper function is to
+	 * abstract away the particular structure of children.
 	 *
 	 * @param {?object} children Child collection structure.
 	 * @return {ReactElement} The first and only `ReactElement` contained in the
@@ -3805,7 +4338,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 33 */
+/* 38 */
 /*!******************************!*\
   !*** ./~/react-dom/index.js ***!
   \******************************/
@@ -3813,10 +4346,10 @@
 
 	'use strict';
 	
-	module.exports = __webpack_require__(/*! react/lib/ReactDOM */ 34);
+	module.exports = __webpack_require__(/*! react/lib/ReactDOM */ 39);
 
 /***/ },
-/* 34 */
+/* 39 */
 /*!*********************************!*\
   !*** ./~/react/lib/ReactDOM.js ***!
   \*********************************/
@@ -3837,13 +4370,12 @@
 	
 	'use strict';
 	
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var ReactDefaultInjection = __webpack_require__(/*! ./ReactDefaultInjection */ 38);
-	var ReactMount = __webpack_require__(/*! ./ReactMount */ 158);
-	var ReactPerf = __webpack_require__(/*! ./ReactPerf */ 58);
-	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 59);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 55);
-	var ReactVersion = __webpack_require__(/*! ./ReactVersion */ 31);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var ReactDefaultInjection = __webpack_require__(/*! ./ReactDefaultInjection */ 43);
+	var ReactMount = __webpack_require__(/*! ./ReactMount */ 160);
+	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 62);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 59);
+	var ReactVersion = __webpack_require__(/*! ./ReactVersion */ 36);
 	
 	var findDOMNode = __webpack_require__(/*! ./findDOMNode */ 165);
 	var getNativeComponentFromComposite = __webpack_require__(/*! ./getNativeComponentFromComposite */ 166);
@@ -3852,11 +4384,9 @@
 	
 	ReactDefaultInjection.inject();
 	
-	var render = ReactPerf.measure('React', 'render', ReactMount.render);
-	
 	var React = {
 	  findDOMNode: findDOMNode,
-	  render: render,
+	  render: ReactMount.render,
 	  unmountComponentAtNode: ReactMount.unmountComponentAtNode,
 	  version: ReactVersion,
 	
@@ -3890,7 +4420,7 @@
 	}
 	
 	if (process.env.NODE_ENV !== 'production') {
-	  var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 48);
+	  var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 20);
 	  if (ExecutionEnvironment.canUseDOM && window.top === window.self) {
 	
 	    // First check if devtools is not installed
@@ -3929,7 +4459,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 35 */
+/* 40 */
 /*!**********************************************!*\
   !*** ./~/react/lib/ReactDOMComponentTree.js ***!
   \**********************************************/
@@ -3948,8 +4478,8 @@
 	
 	'use strict';
 	
-	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 36);
-	var ReactDOMComponentFlags = __webpack_require__(/*! ./ReactDOMComponentFlags */ 37);
+	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 41);
+	var ReactDOMComponentFlags = __webpack_require__(/*! ./ReactDOMComponentFlags */ 42);
 	
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
 	
@@ -4124,7 +4654,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 36 */
+/* 41 */
 /*!************************************!*\
   !*** ./~/react/lib/DOMProperty.js ***!
   \************************************/
@@ -4346,7 +4876,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 37 */
+/* 42 */
 /*!***********************************************!*\
   !*** ./~/react/lib/ReactDOMComponentFlags.js ***!
   \***********************************************/
@@ -4372,13 +4902,13 @@
 	module.exports = ReactDOMComponentFlags;
 
 /***/ },
-/* 38 */
+/* 43 */
 /*!**********************************************!*\
   !*** ./~/react/lib/ReactDefaultInjection.js ***!
   \**********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {/**
+	/**
 	 * Copyright 2013-present, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -4391,25 +4921,24 @@
 	
 	'use strict';
 	
-	var BeforeInputEventPlugin = __webpack_require__(/*! ./BeforeInputEventPlugin */ 39);
-	var ChangeEventPlugin = __webpack_require__(/*! ./ChangeEventPlugin */ 54);
-	var DefaultEventPluginOrder = __webpack_require__(/*! ./DefaultEventPluginOrder */ 66);
-	var EnterLeaveEventPlugin = __webpack_require__(/*! ./EnterLeaveEventPlugin */ 67);
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 48);
-	var HTMLDOMPropertyConfig = __webpack_require__(/*! ./HTMLDOMPropertyConfig */ 72);
-	var ReactComponentBrowserEnvironment = __webpack_require__(/*! ./ReactComponentBrowserEnvironment */ 73);
-	var ReactDOMComponent = __webpack_require__(/*! ./ReactDOMComponent */ 86);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var ReactDOMEmptyComponent = __webpack_require__(/*! ./ReactDOMEmptyComponent */ 127);
-	var ReactDOMTreeTraversal = __webpack_require__(/*! ./ReactDOMTreeTraversal */ 128);
-	var ReactDOMTextComponent = __webpack_require__(/*! ./ReactDOMTextComponent */ 129);
-	var ReactDefaultBatchingStrategy = __webpack_require__(/*! ./ReactDefaultBatchingStrategy */ 130);
-	var ReactEventListener = __webpack_require__(/*! ./ReactEventListener */ 131);
-	var ReactInjection = __webpack_require__(/*! ./ReactInjection */ 134);
-	var ReactReconcileTransaction = __webpack_require__(/*! ./ReactReconcileTransaction */ 135);
-	var SVGDOMPropertyConfig = __webpack_require__(/*! ./SVGDOMPropertyConfig */ 143);
-	var SelectEventPlugin = __webpack_require__(/*! ./SelectEventPlugin */ 144);
-	var SimpleEventPlugin = __webpack_require__(/*! ./SimpleEventPlugin */ 145);
+	var BeforeInputEventPlugin = __webpack_require__(/*! ./BeforeInputEventPlugin */ 44);
+	var ChangeEventPlugin = __webpack_require__(/*! ./ChangeEventPlugin */ 58);
+	var DefaultEventPluginOrder = __webpack_require__(/*! ./DefaultEventPluginOrder */ 69);
+	var EnterLeaveEventPlugin = __webpack_require__(/*! ./EnterLeaveEventPlugin */ 70);
+	var HTMLDOMPropertyConfig = __webpack_require__(/*! ./HTMLDOMPropertyConfig */ 75);
+	var ReactComponentBrowserEnvironment = __webpack_require__(/*! ./ReactComponentBrowserEnvironment */ 76);
+	var ReactDOMComponent = __webpack_require__(/*! ./ReactDOMComponent */ 90);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var ReactDOMEmptyComponent = __webpack_require__(/*! ./ReactDOMEmptyComponent */ 131);
+	var ReactDOMTreeTraversal = __webpack_require__(/*! ./ReactDOMTreeTraversal */ 132);
+	var ReactDOMTextComponent = __webpack_require__(/*! ./ReactDOMTextComponent */ 133);
+	var ReactDefaultBatchingStrategy = __webpack_require__(/*! ./ReactDefaultBatchingStrategy */ 134);
+	var ReactEventListener = __webpack_require__(/*! ./ReactEventListener */ 135);
+	var ReactInjection = __webpack_require__(/*! ./ReactInjection */ 138);
+	var ReactReconcileTransaction = __webpack_require__(/*! ./ReactReconcileTransaction */ 139);
+	var SVGDOMPropertyConfig = __webpack_require__(/*! ./SVGDOMPropertyConfig */ 147);
+	var SelectEventPlugin = __webpack_require__(/*! ./SelectEventPlugin */ 148);
+	var SimpleEventPlugin = __webpack_require__(/*! ./SimpleEventPlugin */ 149);
 	
 	var alreadyInjected = false;
 	
@@ -4458,23 +4987,14 @@
 	  ReactInjection.Updates.injectBatchingStrategy(ReactDefaultBatchingStrategy);
 	
 	  ReactInjection.Component.injectEnvironment(ReactComponentBrowserEnvironment);
-	
-	  if (process.env.NODE_ENV !== 'production') {
-	    var url = ExecutionEnvironment.canUseDOM && window.location.href || '';
-	    if (/[?&]react_perf\b/.test(url)) {
-	      var ReactDefaultPerf = __webpack_require__(/*! ./ReactDefaultPerf */ 156);
-	      ReactDefaultPerf.start();
-	    }
-	  }
 	}
 	
 	module.exports = {
 	  inject: inject
 	};
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 39 */
+/* 44 */
 /*!***********************************************!*\
   !*** ./~/react/lib/BeforeInputEventPlugin.js ***!
   \***********************************************/
@@ -4495,14 +5015,14 @@
 	
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 	
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 40);
-	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 41);
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 48);
-	var FallbackCompositionState = __webpack_require__(/*! ./FallbackCompositionState */ 49);
-	var SyntheticCompositionEvent = __webpack_require__(/*! ./SyntheticCompositionEvent */ 51);
-	var SyntheticInputEvent = __webpack_require__(/*! ./SyntheticInputEvent */ 53);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 45);
+	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 46);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 20);
+	var FallbackCompositionState = __webpack_require__(/*! ./FallbackCompositionState */ 53);
+	var SyntheticCompositionEvent = __webpack_require__(/*! ./SyntheticCompositionEvent */ 55);
+	var SyntheticInputEvent = __webpack_require__(/*! ./SyntheticInputEvent */ 57);
 	
-	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 26);
+	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 31);
 	
 	var END_KEYCODES = [9, 13, 27, 32]; // Tab, Return, Esc, Space
 	var START_KEYCODE = 229;
@@ -4872,7 +5392,7 @@
 	module.exports = BeforeInputEventPlugin;
 
 /***/ },
-/* 40 */
+/* 45 */
 /*!***************************************!*\
   !*** ./~/react/lib/EventConstants.js ***!
   \***************************************/
@@ -4891,7 +5411,7 @@
 	
 	'use strict';
 	
-	var keyMirror = __webpack_require__(/*! fbjs/lib/keyMirror */ 24);
+	var keyMirror = __webpack_require__(/*! fbjs/lib/keyMirror */ 29);
 	
 	var PropagationPhases = keyMirror({ bubbled: null, captured: null });
 	
@@ -4977,7 +5497,7 @@
 	module.exports = EventConstants;
 
 /***/ },
-/* 41 */
+/* 46 */
 /*!*****************************************!*\
   !*** ./~/react/lib/EventPropagators.js ***!
   \*****************************************/
@@ -4996,12 +5516,12 @@
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 40);
-	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 42);
-	var EventPluginUtils = __webpack_require__(/*! ./EventPluginUtils */ 44);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 45);
+	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 47);
+	var EventPluginUtils = __webpack_require__(/*! ./EventPluginUtils */ 49);
 	
-	var accumulateInto = __webpack_require__(/*! ./accumulateInto */ 46);
-	var forEachAccumulated = __webpack_require__(/*! ./forEachAccumulated */ 47);
+	var accumulateInto = __webpack_require__(/*! ./accumulateInto */ 51);
+	var forEachAccumulated = __webpack_require__(/*! ./forEachAccumulated */ 52);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
 	
 	var PropagationPhases = EventConstants.PropagationPhases;
@@ -5123,7 +5643,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 42 */
+/* 47 */
 /*!***************************************!*\
   !*** ./~/react/lib/EventPluginHub.js ***!
   \***************************************/
@@ -5144,12 +5664,12 @@
 	
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 	
-	var EventPluginRegistry = __webpack_require__(/*! ./EventPluginRegistry */ 43);
-	var EventPluginUtils = __webpack_require__(/*! ./EventPluginUtils */ 44);
-	var ReactErrorUtils = __webpack_require__(/*! ./ReactErrorUtils */ 45);
+	var EventPluginRegistry = __webpack_require__(/*! ./EventPluginRegistry */ 48);
+	var EventPluginUtils = __webpack_require__(/*! ./EventPluginUtils */ 49);
+	var ReactErrorUtils = __webpack_require__(/*! ./ReactErrorUtils */ 50);
 	
-	var accumulateInto = __webpack_require__(/*! ./accumulateInto */ 46);
-	var forEachAccumulated = __webpack_require__(/*! ./forEachAccumulated */ 47);
+	var accumulateInto = __webpack_require__(/*! ./accumulateInto */ 51);
+	var forEachAccumulated = __webpack_require__(/*! ./forEachAccumulated */ 52);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
 	
 	/**
@@ -5369,7 +5889,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 43 */
+/* 48 */
 /*!********************************************!*\
   !*** ./~/react/lib/EventPluginRegistry.js ***!
   \********************************************/
@@ -5619,7 +6139,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 44 */
+/* 49 */
 /*!*****************************************!*\
   !*** ./~/react/lib/EventPluginUtils.js ***!
   \*****************************************/
@@ -5638,8 +6158,8 @@
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 40);
-	var ReactErrorUtils = __webpack_require__(/*! ./ReactErrorUtils */ 45);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 45);
+	var ReactErrorUtils = __webpack_require__(/*! ./ReactErrorUtils */ 50);
 	
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
@@ -5855,7 +6375,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 45 */
+/* 50 */
 /*!****************************************!*\
   !*** ./~/react/lib/ReactErrorUtils.js ***!
   \****************************************/
@@ -5940,7 +6460,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 46 */
+/* 51 */
 /*!***************************************!*\
   !*** ./~/react/lib/accumulateInto.js ***!
   \***************************************/
@@ -6008,7 +6528,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 47 */
+/* 52 */
 /*!*******************************************!*\
   !*** ./~/react/lib/forEachAccumulated.js ***!
   \*******************************************/
@@ -6046,50 +6566,7 @@
 	module.exports = forEachAccumulated;
 
 /***/ },
-/* 48 */
-/*!****************************************************!*\
-  !*** ./~/react/~/fbjs/lib/ExecutionEnvironment.js ***!
-  \****************************************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Copyright (c) 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 */
-	
-	'use strict';
-	
-	var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
-	
-	/**
-	 * Simple, lightweight module assisting with the detection and context of
-	 * Worker. Helps avoid circular dependencies and allows code to reason about
-	 * whether or not they are in a Worker, even if they never include the main
-	 * `ReactWorker` dependency.
-	 */
-	var ExecutionEnvironment = {
-	
-	  canUseDOM: canUseDOM,
-	
-	  canUseWorkers: typeof Worker !== 'undefined',
-	
-	  canUseEventListeners: canUseDOM && !!(window.addEventListener || window.attachEvent),
-	
-	  canUseViewport: canUseDOM && !!window.screen,
-	
-	  isInWorker: !canUseDOM // For now, this is true - might change in the future.
-	
-	};
-	
-	module.exports = ExecutionEnvironment;
-
-/***/ },
-/* 49 */
+/* 53 */
 /*!*************************************************!*\
   !*** ./~/react/lib/FallbackCompositionState.js ***!
   \*************************************************/
@@ -6112,7 +6589,7 @@
 	
 	var PooledClass = __webpack_require__(/*! ./PooledClass */ 6);
 	
-	var getTextContentAccessor = __webpack_require__(/*! ./getTextContentAccessor */ 50);
+	var getTextContentAccessor = __webpack_require__(/*! ./getTextContentAccessor */ 54);
 	
 	/**
 	 * This helper class stores information about text content of a target node,
@@ -6192,7 +6669,7 @@
 	module.exports = FallbackCompositionState;
 
 /***/ },
-/* 50 */
+/* 54 */
 /*!***********************************************!*\
   !*** ./~/react/lib/getTextContentAccessor.js ***!
   \***********************************************/
@@ -6211,7 +6688,7 @@
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 48);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 20);
 	
 	var contentKey = null;
 	
@@ -6233,7 +6710,7 @@
 	module.exports = getTextContentAccessor;
 
 /***/ },
-/* 51 */
+/* 55 */
 /*!**************************************************!*\
   !*** ./~/react/lib/SyntheticCompositionEvent.js ***!
   \**************************************************/
@@ -6252,7 +6729,7 @@
 	
 	'use strict';
 	
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 52);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 56);
 	
 	/**
 	 * @interface Event
@@ -6277,7 +6754,7 @@
 	module.exports = SyntheticCompositionEvent;
 
 /***/ },
-/* 52 */
+/* 56 */
 /*!***************************************!*\
   !*** ./~/react/lib/SyntheticEvent.js ***!
   \***************************************/
@@ -6547,7 +7024,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 53 */
+/* 57 */
 /*!********************************************!*\
   !*** ./~/react/lib/SyntheticInputEvent.js ***!
   \********************************************/
@@ -6566,7 +7043,7 @@
 	
 	'use strict';
 	
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 52);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 56);
 	
 	/**
 	 * @interface Event
@@ -6592,7 +7069,7 @@
 	module.exports = SyntheticInputEvent;
 
 /***/ },
-/* 54 */
+/* 58 */
 /*!******************************************!*\
   !*** ./~/react/lib/ChangeEventPlugin.js ***!
   \******************************************/
@@ -6611,18 +7088,18 @@
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 40);
-	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 42);
-	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 41);
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 48);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 55);
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 52);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 45);
+	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 47);
+	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 46);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 20);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 59);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 56);
 	
-	var getEventTarget = __webpack_require__(/*! ./getEventTarget */ 63);
-	var isEventSupported = __webpack_require__(/*! ./isEventSupported */ 64);
-	var isTextInputElement = __webpack_require__(/*! ./isTextInputElement */ 65);
-	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 26);
+	var getEventTarget = __webpack_require__(/*! ./getEventTarget */ 66);
+	var isEventSupported = __webpack_require__(/*! ./isEventSupported */ 67);
+	var isTextInputElement = __webpack_require__(/*! ./isTextInputElement */ 68);
+	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 31);
 	
 	var topLevelTypes = EventConstants.topLevelTypes;
 	
@@ -6925,7 +7402,7 @@
 	module.exports = ChangeEventPlugin;
 
 /***/ },
-/* 55 */
+/* 59 */
 /*!*************************************!*\
   !*** ./~/react/lib/ReactUpdates.js ***!
   \*************************************/
@@ -6946,16 +7423,17 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 4);
 	
-	var CallbackQueue = __webpack_require__(/*! ./CallbackQueue */ 56);
+	var CallbackQueue = __webpack_require__(/*! ./CallbackQueue */ 60);
 	var PooledClass = __webpack_require__(/*! ./PooledClass */ 6);
-	var ReactFeatureFlags = __webpack_require__(/*! ./ReactFeatureFlags */ 57);
-	var ReactPerf = __webpack_require__(/*! ./ReactPerf */ 58);
-	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 59);
-	var Transaction = __webpack_require__(/*! ./Transaction */ 62);
+	var ReactFeatureFlags = __webpack_require__(/*! ./ReactFeatureFlags */ 61);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 18);
+	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 62);
+	var Transaction = __webpack_require__(/*! ./Transaction */ 65);
 	
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
 	
 	var dirtyComponents = [];
+	var updateBatchNumber = 0;
 	var asapCallbackQueue = CallbackQueue.getPooled();
 	var asapEnqueued = false;
 	
@@ -7050,6 +7528,13 @@
 	  // them before their children by sorting the array.
 	  dirtyComponents.sort(mountOrderComparator);
 	
+	  // Any updates enqueued while reconciling must be performed after this entire
+	  // batch. Otherwise, if dirtyComponents is [A, B] where A has children B and
+	  // C, B could update twice in a single batch if C's render enqueues an update
+	  // to B (since B would have already updated, we should skip it, and the only
+	  // way we can know to do so is by checking the batch counter).
+	  updateBatchNumber++;
+	
 	  for (var i = 0; i < len; i++) {
 	    // If a component is unmounted before pending changes apply, it will still
 	    // be here, but we assume that it has cleared its _pendingCallbacks and
@@ -7073,7 +7558,7 @@
 	      console.time(markerName);
 	    }
 	
-	    ReactReconciler.performUpdateIfNecessary(component, transaction.reconcileTransaction);
+	    ReactReconciler.performUpdateIfNecessary(component, transaction.reconcileTransaction, updateBatchNumber);
 	
 	    if (markerName) {
 	      console.timeEnd(markerName);
@@ -7088,6 +7573,10 @@
 	}
 	
 	var flushBatchedUpdates = function flushBatchedUpdates() {
+	  if (process.env.NODE_ENV !== 'production') {
+	    ReactInstrumentation.debugTool.onBeginFlush();
+	  }
+	
 	  // ReactUpdatesFlushTransaction's wrappers will clear the dirtyComponents
 	  // array and perform any updates enqueued by mount-ready handlers (i.e.,
 	  // componentDidUpdate) but we need to check here too in order to catch
@@ -7107,8 +7596,11 @@
 	      CallbackQueue.release(queue);
 	    }
 	  }
+	
+	  if (process.env.NODE_ENV !== 'production') {
+	    ReactInstrumentation.debugTool.onEndFlush();
+	  }
 	};
-	flushBatchedUpdates = ReactPerf.measure('ReactUpdates', 'flushBatchedUpdates', flushBatchedUpdates);
 	
 	/**
 	 * Mark a component as needing a rerender, adding an optional callback to a
@@ -7129,6 +7621,9 @@
 	  }
 	
 	  dirtyComponents.push(component);
+	  if (component._updateBatchNumber == null) {
+	    component._updateBatchNumber = updateBatchNumber + 1;
+	  }
 	}
 	
 	/**
@@ -7175,7 +7670,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 56 */
+/* 60 */
 /*!**************************************!*\
   !*** ./~/react/lib/CallbackQueue.js ***!
   \**************************************/
@@ -7289,7 +7784,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 57 */
+/* 61 */
 /*!******************************************!*\
   !*** ./~/react/lib/ReactFeatureFlags.js ***!
   \******************************************/
@@ -7318,112 +7813,7 @@
 	module.exports = ReactFeatureFlags;
 
 /***/ },
-/* 58 */
-/*!**********************************!*\
-  !*** ./~/react/lib/ReactPerf.js ***!
-  \**********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactPerf
-	 */
-	
-	'use strict';
-	
-	/**
-	 * ReactPerf is a general AOP system designed to measure performance. This
-	 * module only has the hooks: see ReactDefaultPerf for the analysis tool.
-	 */
-	
-	var ReactPerf = {
-	  /**
-	   * Boolean to enable/disable measurement. Set to false by default to prevent
-	   * accidental logging and perf loss.
-	   */
-	  enableMeasure: false,
-	
-	  /**
-	   * Holds onto the measure function in use. By default, don't measure
-	   * anything, but we'll override this if we inject a measure function.
-	   */
-	  storedMeasure: _noMeasure,
-	
-	  /**
-	   * @param {object} object
-	   * @param {string} objectName
-	   * @param {object<string>} methodNames
-	   */
-	  measureMethods: function measureMethods(object, objectName, methodNames) {
-	    if (process.env.NODE_ENV !== 'production') {
-	      for (var key in methodNames) {
-	        if (!methodNames.hasOwnProperty(key)) {
-	          continue;
-	        }
-	        object[key] = ReactPerf.measure(objectName, methodNames[key], object[key]);
-	      }
-	    }
-	  },
-	
-	  /**
-	   * Use this to wrap methods you want to measure. Zero overhead in production.
-	   *
-	   * @param {string} objName
-	   * @param {string} fnName
-	   * @param {function} func
-	   * @return {function}
-	   */
-	  measure: function measure(objName, fnName, func) {
-	    if (process.env.NODE_ENV !== 'production') {
-	      var measuredFunc = null;
-	      var wrapper = function wrapper() {
-	        if (ReactPerf.enableMeasure) {
-	          if (!measuredFunc) {
-	            measuredFunc = ReactPerf.storedMeasure(objName, fnName, func);
-	          }
-	          return measuredFunc.apply(this, arguments);
-	        }
-	        return func.apply(this, arguments);
-	      };
-	      wrapper.displayName = objName + '_' + fnName;
-	      return wrapper;
-	    }
-	    return func;
-	  },
-	
-	  injection: {
-	    /**
-	     * @param {function} measure
-	     */
-	    injectMeasure: function injectMeasure(measure) {
-	      ReactPerf.storedMeasure = measure;
-	    }
-	  }
-	};
-	
-	/**
-	 * Simply passes through the measured function, without measuring it.
-	 *
-	 * @param {string} objName
-	 * @param {string} fnName
-	 * @param {function} func
-	 * @return {function}
-	 */
-	function _noMeasure(objName, fnName, func) {
-	  return func;
-	}
-	
-	module.exports = ReactPerf;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
-
-/***/ },
-/* 59 */
+/* 62 */
 /*!****************************************!*\
   !*** ./~/react/lib/ReactReconciler.js ***!
   \****************************************/
@@ -7442,8 +7832,10 @@
 	
 	'use strict';
 	
-	var ReactRef = __webpack_require__(/*! ./ReactRef */ 60);
+	var ReactRef = __webpack_require__(/*! ./ReactRef */ 63);
 	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 18);
+	
+	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
 	
 	/**
 	 * Helper to call ReactRef.attachRefs with this composite component, split out
@@ -7467,12 +7859,20 @@
 	   * @internal
 	   */
 	  mountComponent: function mountComponent(internalInstance, transaction, nativeParent, nativeContainerInfo, context) {
+	    if (process.env.NODE_ENV !== 'production') {
+	      if (internalInstance._debugID !== 0) {
+	        ReactInstrumentation.debugTool.onBeginReconcilerTimer(internalInstance._debugID, 'mountComponent');
+	      }
+	    }
 	    var markup = internalInstance.mountComponent(transaction, nativeParent, nativeContainerInfo, context);
 	    if (internalInstance._currentElement && internalInstance._currentElement.ref != null) {
 	      transaction.getReactMountReady().enqueue(attachRefs, internalInstance);
 	    }
 	    if (process.env.NODE_ENV !== 'production') {
-	      ReactInstrumentation.debugTool.onMountComponent(internalInstance);
+	      if (internalInstance._debugID !== 0) {
+	        ReactInstrumentation.debugTool.onEndReconcilerTimer(internalInstance._debugID, 'mountComponent');
+	        ReactInstrumentation.debugTool.onMountComponent(internalInstance._debugID);
+	      }
 	    }
 	    return markup;
 	  },
@@ -7492,10 +7892,18 @@
 	   * @internal
 	   */
 	  unmountComponent: function unmountComponent(internalInstance, safely) {
+	    if (process.env.NODE_ENV !== 'production') {
+	      if (internalInstance._debugID !== 0) {
+	        ReactInstrumentation.debugTool.onBeginReconcilerTimer(internalInstance._debugID, 'unmountComponent');
+	      }
+	    }
 	    ReactRef.detachRefs(internalInstance, internalInstance._currentElement);
 	    internalInstance.unmountComponent(safely);
 	    if (process.env.NODE_ENV !== 'production') {
-	      ReactInstrumentation.debugTool.onUnmountComponent(internalInstance);
+	      if (internalInstance._debugID !== 0) {
+	        ReactInstrumentation.debugTool.onEndReconcilerTimer(internalInstance._debugID, 'unmountComponent');
+	        ReactInstrumentation.debugTool.onUnmountComponent(internalInstance._debugID);
+	      }
 	    }
 	  },
 	
@@ -7525,6 +7933,12 @@
 	      return;
 	    }
 	
+	    if (process.env.NODE_ENV !== 'production') {
+	      if (internalInstance._debugID !== 0) {
+	        ReactInstrumentation.debugTool.onBeginReconcilerTimer(internalInstance._debugID, 'receiveComponent');
+	      }
+	    }
+	
 	    var refsChanged = ReactRef.shouldUpdateRefs(prevElement, nextElement);
 	
 	    if (refsChanged) {
@@ -7538,7 +7952,10 @@
 	    }
 	
 	    if (process.env.NODE_ENV !== 'production') {
-	      ReactInstrumentation.debugTool.onUpdateComponent(internalInstance);
+	      if (internalInstance._debugID !== 0) {
+	        ReactInstrumentation.debugTool.onEndReconcilerTimer(internalInstance._debugID, 'receiveComponent');
+	        ReactInstrumentation.debugTool.onUpdateComponent(internalInstance._debugID);
+	      }
 	    }
 	  },
 	
@@ -7549,10 +7966,24 @@
 	   * @param {ReactReconcileTransaction} transaction
 	   * @internal
 	   */
-	  performUpdateIfNecessary: function performUpdateIfNecessary(internalInstance, transaction) {
+	  performUpdateIfNecessary: function performUpdateIfNecessary(internalInstance, transaction, updateBatchNumber) {
+	    if (internalInstance._updateBatchNumber !== updateBatchNumber) {
+	      // The component's enqueued batch number should always be the current
+	      // batch or the following one.
+	      !(internalInstance._updateBatchNumber == null || internalInstance._updateBatchNumber === updateBatchNumber + 1) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'performUpdateIfNecessary: Unexpected batch number (current %s, ' + 'pending %s)', updateBatchNumber, internalInstance._updateBatchNumber) : invariant(false) : void 0;
+	      return;
+	    }
+	    if (process.env.NODE_ENV !== 'production') {
+	      if (internalInstance._debugID !== 0) {
+	        ReactInstrumentation.debugTool.onBeginReconcilerTimer(internalInstance._debugID, 'performUpdateIfNecessary');
+	      }
+	    }
 	    internalInstance.performUpdateIfNecessary(transaction);
 	    if (process.env.NODE_ENV !== 'production') {
-	      ReactInstrumentation.debugTool.onUpdateComponent(internalInstance);
+	      if (internalInstance._debugID !== 0) {
+	        ReactInstrumentation.debugTool.onEndReconcilerTimer(internalInstance._debugID, 'performUpdateIfNecessary');
+	        ReactInstrumentation.debugTool.onUpdateComponent(internalInstance._debugID);
+	      }
 	    }
 	  }
 	
@@ -7562,7 +7993,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 60 */
+/* 63 */
 /*!*********************************!*\
   !*** ./~/react/lib/ReactRef.js ***!
   \*********************************/
@@ -7581,7 +8012,7 @@
 	
 	'use strict';
 	
-	var ReactOwner = __webpack_require__(/*! ./ReactOwner */ 61);
+	var ReactOwner = __webpack_require__(/*! ./ReactOwner */ 64);
 	
 	var ReactRef = {};
 	
@@ -7648,7 +8079,7 @@
 	module.exports = ReactRef;
 
 /***/ },
-/* 61 */
+/* 64 */
 /*!***********************************!*\
   !*** ./~/react/lib/ReactOwner.js ***!
   \***********************************/
@@ -7749,7 +8180,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 62 */
+/* 65 */
 /*!************************************!*\
   !*** ./~/react/lib/Transaction.js ***!
   \************************************/
@@ -7989,7 +8420,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 63 */
+/* 66 */
 /*!***************************************!*\
   !*** ./~/react/lib/getEventTarget.js ***!
   \***************************************/
@@ -8032,7 +8463,7 @@
 	module.exports = getEventTarget;
 
 /***/ },
-/* 64 */
+/* 67 */
 /*!*****************************************!*\
   !*** ./~/react/lib/isEventSupported.js ***!
   \*****************************************/
@@ -8051,7 +8482,7 @@
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 48);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 20);
 	
 	var useHasFeature;
 	if (ExecutionEnvironment.canUseDOM) {
@@ -8100,7 +8531,7 @@
 	module.exports = isEventSupported;
 
 /***/ },
-/* 65 */
+/* 68 */
 /*!*******************************************!*\
   !*** ./~/react/lib/isTextInputElement.js ***!
   \*******************************************/
@@ -8149,7 +8580,7 @@
 	module.exports = isTextInputElement;
 
 /***/ },
-/* 66 */
+/* 69 */
 /*!************************************************!*\
   !*** ./~/react/lib/DefaultEventPluginOrder.js ***!
   \************************************************/
@@ -8168,7 +8599,7 @@
 	
 	'use strict';
 	
-	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 26);
+	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 31);
 	
 	/**
 	 * Module that is injectable into `EventPluginHub`, that specifies a
@@ -8184,7 +8615,7 @@
 	module.exports = DefaultEventPluginOrder;
 
 /***/ },
-/* 67 */
+/* 70 */
 /*!**********************************************!*\
   !*** ./~/react/lib/EnterLeaveEventPlugin.js ***!
   \**********************************************/
@@ -8203,12 +8634,12 @@
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 40);
-	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 41);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var SyntheticMouseEvent = __webpack_require__(/*! ./SyntheticMouseEvent */ 68);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 45);
+	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 46);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var SyntheticMouseEvent = __webpack_require__(/*! ./SyntheticMouseEvent */ 71);
 	
-	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 26);
+	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 31);
 	
 	var topLevelTypes = EventConstants.topLevelTypes;
 	
@@ -8297,7 +8728,7 @@
 	module.exports = EnterLeaveEventPlugin;
 
 /***/ },
-/* 68 */
+/* 71 */
 /*!********************************************!*\
   !*** ./~/react/lib/SyntheticMouseEvent.js ***!
   \********************************************/
@@ -8316,10 +8747,10 @@
 	
 	'use strict';
 	
-	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 69);
-	var ViewportMetrics = __webpack_require__(/*! ./ViewportMetrics */ 70);
+	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 72);
+	var ViewportMetrics = __webpack_require__(/*! ./ViewportMetrics */ 73);
 	
-	var getEventModifierState = __webpack_require__(/*! ./getEventModifierState */ 71);
+	var getEventModifierState = __webpack_require__(/*! ./getEventModifierState */ 74);
 	
 	/**
 	 * @interface MouseEvent
@@ -8377,7 +8808,7 @@
 	module.exports = SyntheticMouseEvent;
 
 /***/ },
-/* 69 */
+/* 72 */
 /*!*****************************************!*\
   !*** ./~/react/lib/SyntheticUIEvent.js ***!
   \*****************************************/
@@ -8396,9 +8827,9 @@
 	
 	'use strict';
 	
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 52);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 56);
 	
-	var getEventTarget = __webpack_require__(/*! ./getEventTarget */ 63);
+	var getEventTarget = __webpack_require__(/*! ./getEventTarget */ 66);
 	
 	/**
 	 * @interface UIEvent
@@ -8444,7 +8875,7 @@
 	module.exports = SyntheticUIEvent;
 
 /***/ },
-/* 70 */
+/* 73 */
 /*!****************************************!*\
   !*** ./~/react/lib/ViewportMetrics.js ***!
   \****************************************/
@@ -8479,7 +8910,7 @@
 	module.exports = ViewportMetrics;
 
 /***/ },
-/* 71 */
+/* 74 */
 /*!**********************************************!*\
   !*** ./~/react/lib/getEventModifierState.js ***!
   \**********************************************/
@@ -8530,7 +8961,7 @@
 	module.exports = getEventModifierState;
 
 /***/ },
-/* 72 */
+/* 75 */
 /*!**********************************************!*\
   !*** ./~/react/lib/HTMLDOMPropertyConfig.js ***!
   \**********************************************/
@@ -8549,7 +8980,7 @@
 	
 	'use strict';
 	
-	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 36);
+	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 41);
 	
 	var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
 	var HAS_BOOLEAN_VALUE = DOMProperty.injection.HAS_BOOLEAN_VALUE;
@@ -8747,7 +9178,7 @@
 	module.exports = HTMLDOMPropertyConfig;
 
 /***/ },
-/* 73 */
+/* 76 */
 /*!*********************************************************!*\
   !*** ./~/react/lib/ReactComponentBrowserEnvironment.js ***!
   \*********************************************************/
@@ -8766,9 +9197,8 @@
 	
 	'use strict';
 	
-	var DOMChildrenOperations = __webpack_require__(/*! ./DOMChildrenOperations */ 74);
-	var ReactDOMIDOperations = __webpack_require__(/*! ./ReactDOMIDOperations */ 85);
-	var ReactPerf = __webpack_require__(/*! ./ReactPerf */ 58);
+	var DOMChildrenOperations = __webpack_require__(/*! ./DOMChildrenOperations */ 77);
+	var ReactDOMIDOperations = __webpack_require__(/*! ./ReactDOMIDOperations */ 89);
 	
 	/**
 	 * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -8792,20 +9222,16 @@
 	
 	};
 	
-	ReactPerf.measureMethods(ReactComponentBrowserEnvironment, 'ReactComponentBrowserEnvironment', {
-	  replaceNodeWithMarkup: 'replaceNodeWithMarkup'
-	});
-	
 	module.exports = ReactComponentBrowserEnvironment;
 
 /***/ },
-/* 74 */
+/* 77 */
 /*!**********************************************!*\
   !*** ./~/react/lib/DOMChildrenOperations.js ***!
   \**********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	/**
+	/* WEBPACK VAR INJECTION */(function(process) {/**
 	 * Copyright 2013-present, Facebook, Inc.
 	 * All rights reserved.
 	 *
@@ -8818,14 +9244,15 @@
 	
 	'use strict';
 	
-	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 75);
-	var Danger = __webpack_require__(/*! ./Danger */ 80);
-	var ReactMultiChildUpdateTypes = __webpack_require__(/*! ./ReactMultiChildUpdateTypes */ 84);
-	var ReactPerf = __webpack_require__(/*! ./ReactPerf */ 58);
+	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 78);
+	var Danger = __webpack_require__(/*! ./Danger */ 84);
+	var ReactMultiChildUpdateTypes = __webpack_require__(/*! ./ReactMultiChildUpdateTypes */ 88);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 18);
 	
-	var createMicrosoftUnsafeLocalFunction = __webpack_require__(/*! ./createMicrosoftUnsafeLocalFunction */ 76);
-	var setInnerHTML = __webpack_require__(/*! ./setInnerHTML */ 79);
-	var setTextContent = __webpack_require__(/*! ./setTextContent */ 77);
+	var createMicrosoftUnsafeLocalFunction = __webpack_require__(/*! ./createMicrosoftUnsafeLocalFunction */ 80);
+	var setInnerHTML = __webpack_require__(/*! ./setInnerHTML */ 83);
+	var setTextContent = __webpack_require__(/*! ./setTextContent */ 81);
 	
 	function getNodeAfter(parentNode, node) {
 	  // Special case for text components, which return [open, close] comments
@@ -8916,6 +9343,25 @@
 	      removeDelimitedText(parentNode, openingComment, closingComment);
 	    }
 	  }
+	
+	  if (process.env.NODE_ENV !== 'production') {
+	    ReactInstrumentation.debugTool.onNativeOperation(ReactDOMComponentTree.getInstanceFromNode(openingComment)._debugID, 'replace text', stringText);
+	  }
+	}
+	
+	var dangerouslyReplaceNodeWithMarkup = Danger.dangerouslyReplaceNodeWithMarkup;
+	if (process.env.NODE_ENV !== 'production') {
+	  dangerouslyReplaceNodeWithMarkup = function dangerouslyReplaceNodeWithMarkup(oldChild, markup, prevInstance) {
+	    Danger.dangerouslyReplaceNodeWithMarkup(oldChild, markup);
+	    if (prevInstance._debugID !== 0) {
+	      ReactInstrumentation.debugTool.onNativeOperation(prevInstance._debugID, 'replace with', markup.toString());
+	    } else {
+	      var nextInstance = ReactDOMComponentTree.getInstanceFromNode(markup.node);
+	      if (nextInstance._debugID !== 0) {
+	        ReactInstrumentation.debugTool.onNativeOperation(nextInstance._debugID, 'mount', markup.toString());
+	      }
+	    }
+	  };
 	}
 	
 	/**
@@ -8923,7 +9369,7 @@
 	 */
 	var DOMChildrenOperations = {
 	
-	  dangerouslyReplaceNodeWithMarkup: Danger.dangerouslyReplaceNodeWithMarkup,
+	  dangerouslyReplaceNodeWithMarkup: dangerouslyReplaceNodeWithMarkup,
 	
 	  replaceDelimitedText: replaceDelimitedText,
 	
@@ -8935,23 +9381,42 @@
 	   * @internal
 	   */
 	  processUpdates: function processUpdates(parentNode, updates) {
+	    if (process.env.NODE_ENV !== 'production') {
+	      var parentNodeDebugID = ReactDOMComponentTree.getInstanceFromNode(parentNode)._debugID;
+	    }
+	
 	    for (var k = 0; k < updates.length; k++) {
 	      var update = updates[k];
 	      switch (update.type) {
 	        case ReactMultiChildUpdateTypes.INSERT_MARKUP:
 	          insertLazyTreeChildAt(parentNode, update.content, getNodeAfter(parentNode, update.afterNode));
+	          if (process.env.NODE_ENV !== 'production') {
+	            ReactInstrumentation.debugTool.onNativeOperation(parentNodeDebugID, 'insert child', { toIndex: update.toIndex, content: update.content.toString() });
+	          }
 	          break;
 	        case ReactMultiChildUpdateTypes.MOVE_EXISTING:
 	          moveChild(parentNode, update.fromNode, getNodeAfter(parentNode, update.afterNode));
+	          if (process.env.NODE_ENV !== 'production') {
+	            ReactInstrumentation.debugTool.onNativeOperation(parentNodeDebugID, 'move child', { fromIndex: update.fromIndex, toIndex: update.toIndex });
+	          }
 	          break;
 	        case ReactMultiChildUpdateTypes.SET_MARKUP:
 	          setInnerHTML(parentNode, update.content);
+	          if (process.env.NODE_ENV !== 'production') {
+	            ReactInstrumentation.debugTool.onNativeOperation(parentNodeDebugID, 'replace children', update.content.toString());
+	          }
 	          break;
 	        case ReactMultiChildUpdateTypes.TEXT_CONTENT:
 	          setTextContent(parentNode, update.content);
+	          if (process.env.NODE_ENV !== 'production') {
+	            ReactInstrumentation.debugTool.onNativeOperation(parentNodeDebugID, 'replace text', update.content.toString());
+	          }
 	          break;
 	        case ReactMultiChildUpdateTypes.REMOVE_NODE:
 	          removeChild(parentNode, update.fromNode);
+	          if (process.env.NODE_ENV !== 'production') {
+	            ReactInstrumentation.debugTool.onNativeOperation(parentNodeDebugID, 'remove child', { fromIndex: update.fromIndex });
+	          }
 	          break;
 	      }
 	    }
@@ -8959,14 +9424,11 @@
 	
 	};
 	
-	ReactPerf.measureMethods(DOMChildrenOperations, 'DOMChildrenOperations', {
-	  replaceDelimitedText: 'replaceDelimitedText'
-	});
-	
 	module.exports = DOMChildrenOperations;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 75 */
+/* 78 */
 /*!************************************!*\
   !*** ./~/react/lib/DOMLazyTree.js ***!
   \************************************/
@@ -8985,8 +9447,13 @@
 	
 	'use strict';
 	
-	var createMicrosoftUnsafeLocalFunction = __webpack_require__(/*! ./createMicrosoftUnsafeLocalFunction */ 76);
-	var setTextContent = __webpack_require__(/*! ./setTextContent */ 77);
+	var DOMNamespaces = __webpack_require__(/*! ./DOMNamespaces */ 79);
+	
+	var createMicrosoftUnsafeLocalFunction = __webpack_require__(/*! ./createMicrosoftUnsafeLocalFunction */ 80);
+	var setTextContent = __webpack_require__(/*! ./setTextContent */ 81);
+	
+	var ELEMENT_NODE_TYPE = 1;
+	var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
 	
 	/**
 	 * In IE (8-11) and Edge, appending nodes with no children is dramatically
@@ -9022,8 +9489,10 @@
 	  // DocumentFragments aren't actually part of the DOM after insertion so
 	  // appending children won't update the DOM. We need to ensure the fragment
 	  // is properly populated first, breaking out of our lazy approach for just
-	  // this level.
-	  if (tree.node.nodeType === 11) {
+	  // this level. Also, some <object> plugins (like Flash Player) will read
+	  // <param> nodes immediately upon insertion into the DOM, so <object>
+	  // must also be populated prior to insertion into the DOM.
+	  if (tree.node.nodeType === DOCUMENT_FRAGMENT_NODE_TYPE || tree.node.nodeType === ELEMENT_NODE_TYPE && tree.node.nodeName.toLowerCase() === 'object' && (tree.node.namespaceURI == null || tree.node.namespaceURI === DOMNamespaces.html)) {
 	    insertTreeChildren(tree);
 	    parentNode.insertBefore(tree.node, referenceNode);
 	  } else {
@@ -9061,12 +9530,17 @@
 	  }
 	}
 	
+	function toString() {
+	  return this.node.nodeName;
+	}
+	
 	function DOMLazyTree(node) {
 	  return {
 	    node: node,
 	    children: [],
 	    html: null,
-	    text: null
+	    text: null,
+	    toString: toString
 	  };
 	}
 	
@@ -9079,7 +9553,35 @@
 	module.exports = DOMLazyTree;
 
 /***/ },
-/* 76 */
+/* 79 */
+/*!**************************************!*\
+  !*** ./~/react/lib/DOMNamespaces.js ***!
+  \**************************************/
+/***/ function(module, exports) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule DOMNamespaces
+	 */
+	
+	'use strict';
+	
+	var DOMNamespaces = {
+	  html: 'http://www.w3.org/1999/xhtml',
+	  mathml: 'http://www.w3.org/1998/Math/MathML',
+	  svg: 'http://www.w3.org/2000/svg'
+	};
+	
+	module.exports = DOMNamespaces;
+
+/***/ },
+/* 80 */
 /*!***********************************************************!*\
   !*** ./~/react/lib/createMicrosoftUnsafeLocalFunction.js ***!
   \***********************************************************/
@@ -9119,7 +9621,7 @@
 	module.exports = createMicrosoftUnsafeLocalFunction;
 
 /***/ },
-/* 77 */
+/* 81 */
 /*!***************************************!*\
   !*** ./~/react/lib/setTextContent.js ***!
   \***************************************/
@@ -9138,9 +9640,9 @@
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 48);
-	var escapeTextContentForBrowser = __webpack_require__(/*! ./escapeTextContentForBrowser */ 78);
-	var setInnerHTML = __webpack_require__(/*! ./setInnerHTML */ 79);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 20);
+	var escapeTextContentForBrowser = __webpack_require__(/*! ./escapeTextContentForBrowser */ 82);
+	var setInnerHTML = __webpack_require__(/*! ./setInnerHTML */ 83);
 	
 	/**
 	 * Set the textContent property of a node, ensuring that whitespace is preserved
@@ -9167,7 +9669,7 @@
 	module.exports = setTextContent;
 
 /***/ },
-/* 78 */
+/* 82 */
 /*!****************************************************!*\
   !*** ./~/react/lib/escapeTextContentForBrowser.js ***!
   \****************************************************/
@@ -9213,7 +9715,7 @@
 	module.exports = escapeTextContentForBrowser;
 
 /***/ },
-/* 79 */
+/* 83 */
 /*!*************************************!*\
   !*** ./~/react/lib/setInnerHTML.js ***!
   \*************************************/
@@ -9232,12 +9734,12 @@
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 48);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 20);
 	
 	var WHITESPACE_TEST = /^[ \r\n\t\f]/;
 	var NONVISIBLE_TEST = /<(!--|link|noscript|meta|script|style)[ \r\n\t\f\/>]/;
 	
-	var createMicrosoftUnsafeLocalFunction = __webpack_require__(/*! ./createMicrosoftUnsafeLocalFunction */ 76);
+	var createMicrosoftUnsafeLocalFunction = __webpack_require__(/*! ./createMicrosoftUnsafeLocalFunction */ 80);
 	
 	/**
 	 * Set the innerHTML property of a node, ensuring that whitespace is preserved
@@ -9303,7 +9805,7 @@
 	module.exports = setInnerHTML;
 
 /***/ },
-/* 80 */
+/* 84 */
 /*!*******************************!*\
   !*** ./~/react/lib/Danger.js ***!
   \*******************************/
@@ -9322,12 +9824,12 @@
 	
 	'use strict';
 	
-	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 75);
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 48);
+	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 78);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 20);
 	
-	var createNodesFromMarkup = __webpack_require__(/*! fbjs/lib/createNodesFromMarkup */ 81);
+	var createNodesFromMarkup = __webpack_require__(/*! fbjs/lib/createNodesFromMarkup */ 85);
 	var emptyFunction = __webpack_require__(/*! fbjs/lib/emptyFunction */ 11);
-	var getMarkupWrap = __webpack_require__(/*! fbjs/lib/getMarkupWrap */ 83);
+	var getMarkupWrap = __webpack_require__(/*! fbjs/lib/getMarkupWrap */ 87);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
 	
 	var OPEN_TAG_NAME_EXP = /^(<[^ \/>]+)/;
@@ -9456,7 +9958,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 81 */
+/* 85 */
 /*!*****************************************************!*\
   !*** ./~/react/~/fbjs/lib/createNodesFromMarkup.js ***!
   \*****************************************************/
@@ -9477,10 +9979,10 @@
 	
 	/*eslint-disable fb-www/unsafe-html*/
 	
-	var ExecutionEnvironment = __webpack_require__(/*! ./ExecutionEnvironment */ 48);
+	var ExecutionEnvironment = __webpack_require__(/*! ./ExecutionEnvironment */ 20);
 	
-	var createArrayFromMixed = __webpack_require__(/*! ./createArrayFromMixed */ 82);
-	var getMarkupWrap = __webpack_require__(/*! ./getMarkupWrap */ 83);
+	var createArrayFromMixed = __webpack_require__(/*! ./createArrayFromMixed */ 86);
+	var getMarkupWrap = __webpack_require__(/*! ./getMarkupWrap */ 87);
 	var invariant = __webpack_require__(/*! ./invariant */ 7);
 	
 	/**
@@ -9548,7 +10050,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 82 */
+/* 86 */
 /*!****************************************************!*\
   !*** ./~/react/~/fbjs/lib/createArrayFromMixed.js ***!
   \****************************************************/
@@ -9685,7 +10187,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 83 */
+/* 87 */
 /*!*********************************************!*\
   !*** ./~/react/~/fbjs/lib/getMarkupWrap.js ***!
   \*********************************************/
@@ -9705,7 +10207,7 @@
 	
 	/*eslint-disable fb-www/unsafe-html */
 	
-	var ExecutionEnvironment = __webpack_require__(/*! ./ExecutionEnvironment */ 48);
+	var ExecutionEnvironment = __webpack_require__(/*! ./ExecutionEnvironment */ 20);
 	
 	var invariant = __webpack_require__(/*! ./invariant */ 7);
 	
@@ -9788,7 +10290,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 84 */
+/* 88 */
 /*!***************************************************!*\
   !*** ./~/react/lib/ReactMultiChildUpdateTypes.js ***!
   \***************************************************/
@@ -9807,7 +10309,7 @@
 	
 	'use strict';
 	
-	var keyMirror = __webpack_require__(/*! fbjs/lib/keyMirror */ 24);
+	var keyMirror = __webpack_require__(/*! fbjs/lib/keyMirror */ 29);
 	
 	/**
 	 * When a component's children are updated, a series of update configuration
@@ -9828,7 +10330,7 @@
 	module.exports = ReactMultiChildUpdateTypes;
 
 /***/ },
-/* 85 */
+/* 89 */
 /*!*********************************************!*\
   !*** ./~/react/lib/ReactDOMIDOperations.js ***!
   \*********************************************/
@@ -9847,9 +10349,8 @@
 	
 	'use strict';
 	
-	var DOMChildrenOperations = __webpack_require__(/*! ./DOMChildrenOperations */ 74);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var ReactPerf = __webpack_require__(/*! ./ReactPerf */ 58);
+	var DOMChildrenOperations = __webpack_require__(/*! ./DOMChildrenOperations */ 77);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
 	
 	/**
 	 * Operations used to process updates to DOM nodes.
@@ -9868,14 +10369,10 @@
 	  }
 	};
 	
-	ReactPerf.measureMethods(ReactDOMIDOperations, 'ReactDOMIDOperations', {
-	  dangerouslyProcessChildrenUpdates: 'dangerouslyProcessChildrenUpdates'
-	});
-	
 	module.exports = ReactDOMIDOperations;
 
 /***/ },
-/* 86 */
+/* 90 */
 /*!******************************************!*\
   !*** ./~/react/lib/ReactDOMComponent.js ***!
   \******************************************/
@@ -9900,33 +10397,35 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 4);
 	
-	var AutoFocusUtils = __webpack_require__(/*! ./AutoFocusUtils */ 87);
-	var CSSPropertyOperations = __webpack_require__(/*! ./CSSPropertyOperations */ 89);
-	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 75);
-	var DOMNamespaces = __webpack_require__(/*! ./DOMNamespaces */ 97);
-	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 36);
-	var DOMPropertyOperations = __webpack_require__(/*! ./DOMPropertyOperations */ 98);
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 40);
-	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 42);
-	var EventPluginRegistry = __webpack_require__(/*! ./EventPluginRegistry */ 43);
-	var ReactBrowserEventEmitter = __webpack_require__(/*! ./ReactBrowserEventEmitter */ 103);
-	var ReactComponentBrowserEnvironment = __webpack_require__(/*! ./ReactComponentBrowserEnvironment */ 73);
-	var ReactDOMButton = __webpack_require__(/*! ./ReactDOMButton */ 106);
-	var ReactDOMComponentFlags = __webpack_require__(/*! ./ReactDOMComponentFlags */ 37);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var ReactDOMInput = __webpack_require__(/*! ./ReactDOMInput */ 108);
-	var ReactDOMOption = __webpack_require__(/*! ./ReactDOMOption */ 110);
-	var ReactDOMSelect = __webpack_require__(/*! ./ReactDOMSelect */ 111);
-	var ReactDOMTextarea = __webpack_require__(/*! ./ReactDOMTextarea */ 112);
-	var ReactMultiChild = __webpack_require__(/*! ./ReactMultiChild */ 113);
-	var ReactPerf = __webpack_require__(/*! ./ReactPerf */ 58);
+	var AutoFocusUtils = __webpack_require__(/*! ./AutoFocusUtils */ 91);
+	var CSSPropertyOperations = __webpack_require__(/*! ./CSSPropertyOperations */ 93);
+	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 78);
+	var DOMNamespaces = __webpack_require__(/*! ./DOMNamespaces */ 79);
+	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 41);
+	var DOMPropertyOperations = __webpack_require__(/*! ./DOMPropertyOperations */ 101);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 45);
+	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 47);
+	var EventPluginRegistry = __webpack_require__(/*! ./EventPluginRegistry */ 48);
+	var ReactBrowserEventEmitter = __webpack_require__(/*! ./ReactBrowserEventEmitter */ 106);
+	var ReactComponentBrowserEnvironment = __webpack_require__(/*! ./ReactComponentBrowserEnvironment */ 76);
+	var ReactDOMButton = __webpack_require__(/*! ./ReactDOMButton */ 109);
+	var ReactDOMComponentFlags = __webpack_require__(/*! ./ReactDOMComponentFlags */ 42);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var ReactDOMInput = __webpack_require__(/*! ./ReactDOMInput */ 111);
+	var ReactDOMOption = __webpack_require__(/*! ./ReactDOMOption */ 113);
+	var ReactDOMSelect = __webpack_require__(/*! ./ReactDOMSelect */ 114);
+	var ReactDOMTextarea = __webpack_require__(/*! ./ReactDOMTextarea */ 115);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 18);
+	var ReactMultiChild = __webpack_require__(/*! ./ReactMultiChild */ 116);
+	var ReactServerRenderingTransaction = __webpack_require__(/*! ./ReactServerRenderingTransaction */ 128);
 	
-	var escapeTextContentForBrowser = __webpack_require__(/*! ./escapeTextContentForBrowser */ 78);
+	var emptyFunction = __webpack_require__(/*! fbjs/lib/emptyFunction */ 11);
+	var escapeTextContentForBrowser = __webpack_require__(/*! ./escapeTextContentForBrowser */ 82);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
-	var isEventSupported = __webpack_require__(/*! ./isEventSupported */ 64);
-	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 26);
-	var shallowEqual = __webpack_require__(/*! fbjs/lib/shallowEqual */ 125);
-	var validateDOMNesting = __webpack_require__(/*! ./validateDOMNesting */ 126);
+	var isEventSupported = __webpack_require__(/*! ./isEventSupported */ 67);
+	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 31);
+	var shallowEqual = __webpack_require__(/*! fbjs/lib/shallowEqual */ 129);
+	var validateDOMNesting = __webpack_require__(/*! ./validateDOMNesting */ 130);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
 	
 	var Flags = ReactDOMComponentFlags;
@@ -10039,6 +10538,9 @@
 	}
 	
 	function enqueuePutListener(inst, registrationName, listener, transaction) {
+	  if (transaction instanceof ReactServerRenderingTransaction) {
+	    return;
+	  }
 	  if (process.env.NODE_ENV !== 'production') {
 	    // IE8 has no API for event capturing and the `onScroll` event doesn't
 	    // bubble.
@@ -10047,10 +10549,6 @@
 	  var containerInfo = inst._nativeContainerInfo;
 	  var isDocumentFragment = containerInfo._node && containerInfo._node.nodeType === DOC_FRAGMENT_TYPE;
 	  var doc = isDocumentFragment ? containerInfo._node : containerInfo._ownerDocument;
-	  if (!doc) {
-	    // Server rendering.
-	    return;
-	  }
 	  listenTo(registrationName, doc);
 	  transaction.getReactMountReady().enqueue(putListener, {
 	    inst: inst,
@@ -10067,6 +10565,19 @@
 	function optionPostMount() {
 	  var inst = this;
 	  ReactDOMOption.postMountWrapper(inst);
+	}
+	
+	var setContentChildForInstrumentation = emptyFunction;
+	if (process.env.NODE_ENV !== 'production') {
+	  setContentChildForInstrumentation = function setContentChildForInstrumentation(contentToUse) {
+	    var debugID = this._debugID;
+	    var contentDebugID = debugID + '#text';
+	    this._contentDebugID = contentDebugID;
+	    ReactInstrumentation.debugTool.onSetDisplayName(contentDebugID, '#text');
+	    ReactInstrumentation.debugTool.onSetText(contentDebugID, '' + contentToUse);
+	    ReactInstrumentation.debugTool.onMountComponent(contentDebugID);
+	    ReactInstrumentation.debugTool.onSetChildren(debugID, [contentDebugID]);
+	  };
 	}
 	
 	// There are so many media events, it makes sense to just
@@ -10229,6 +10740,7 @@
 	  this._flags = 0;
 	  if (process.env.NODE_ENV !== 'production') {
 	    this._ancestorInfo = null;
+	    this._contentDebugID = null;
 	  }
 	}
 	
@@ -10344,7 +10856,7 @@
 	          div.innerHTML = '<' + type + '></' + type + '>';
 	          el = div.removeChild(div.firstChild);
 	        } else {
-	          el = ownerDocument.createElement(this._currentElement.type);
+	          el = ownerDocument.createElement(this._currentElement.type, props.is || null);
 	        }
 	      } else {
 	        el = ownerDocument.createElementNS(namespaceURI, this._currentElement.type);
@@ -10474,6 +10986,9 @@
 	      if (contentToUse != null) {
 	        // TODO: Validate that text is allowed as a child of this node
 	        ret = escapeTextContentForBrowser(contentToUse);
+	        if (process.env.NODE_ENV !== 'production') {
+	          setContentChildForInstrumentation.call(this, contentToUse);
+	        }
 	      } else if (childrenToUse != null) {
 	        var mountImages = this.mountChildren(childrenToUse, transaction, context);
 	        ret = mountImages.join('');
@@ -10508,6 +11023,9 @@
 	      var childrenToUse = contentToUse != null ? null : props.children;
 	      if (contentToUse != null) {
 	        // TODO: Validate that text is allowed as a child of this node
+	        if (process.env.NODE_ENV !== 'production') {
+	          setContentChildForInstrumentation.call(this, contentToUse);
+	        }
 	        DOMLazyTree.queueText(lazyTree, contentToUse);
 	      } else if (childrenToUse != null) {
 	        var mountImages = this.mountChildren(childrenToUse, transaction, context);
@@ -10716,17 +11234,34 @@
 	      this.updateChildren(null, transaction, context);
 	    } else if (lastHasContentOrHtml && !nextHasContentOrHtml) {
 	      this.updateTextContent('');
+	      if (process.env.NODE_ENV !== 'production') {
+	        ReactInstrumentation.debugTool.onSetChildren(this._debugID, []);
+	      }
 	    }
 	
 	    if (nextContent != null) {
 	      if (lastContent !== nextContent) {
 	        this.updateTextContent('' + nextContent);
+	        if (process.env.NODE_ENV !== 'production') {
+	          this._contentDebugID = this._debugID + '#text';
+	          setContentChildForInstrumentation.call(this, nextContent);
+	        }
 	      }
 	    } else if (nextHtml != null) {
 	      if (lastHtml !== nextHtml) {
 	        this.updateMarkup('' + nextHtml);
 	      }
+	      if (process.env.NODE_ENV !== 'production') {
+	        ReactInstrumentation.debugTool.onSetChildren(this._debugID, []);
+	      }
 	    } else if (nextChildren != null) {
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (this._contentDebugID) {
+	          ReactInstrumentation.debugTool.onUnmountComponent(this._contentDebugID);
+	          this._contentDebugID = null;
+	        }
+	      }
+	
 	      this.updateChildren(nextChildren, transaction, context);
 	    }
 	  },
@@ -10776,6 +11311,13 @@
 	    this._rootNodeID = null;
 	    this._domID = null;
 	    this._wrapperState = null;
+	
+	    if (process.env.NODE_ENV !== 'production') {
+	      if (this._contentDebugID) {
+	        ReactInstrumentation.debugTool.onUnmountComponent(this._contentDebugID);
+	        this._contentDebugID = null;
+	      }
+	    }
 	  },
 	
 	  getPublicInstance: function getPublicInstance() {
@@ -10784,18 +11326,13 @@
 	
 	};
 	
-	ReactPerf.measureMethods(ReactDOMComponent.Mixin, 'ReactDOMComponent', {
-	  mountComponent: 'mountComponent',
-	  receiveComponent: 'receiveComponent'
-	});
-	
 	_assign(ReactDOMComponent.prototype, ReactDOMComponent.Mixin, ReactMultiChild.Mixin);
 	
 	module.exports = ReactDOMComponent;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 87 */
+/* 91 */
 /*!***************************************!*\
   !*** ./~/react/lib/AutoFocusUtils.js ***!
   \***************************************/
@@ -10814,9 +11351,9 @@
 	
 	'use strict';
 	
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
 	
-	var focusNode = __webpack_require__(/*! fbjs/lib/focusNode */ 88);
+	var focusNode = __webpack_require__(/*! fbjs/lib/focusNode */ 92);
 	
 	var AutoFocusUtils = {
 	  focusDOMComponent: function focusDOMComponent() {
@@ -10827,7 +11364,7 @@
 	module.exports = AutoFocusUtils;
 
 /***/ },
-/* 88 */
+/* 92 */
 /*!*****************************************!*\
   !*** ./~/react/~/fbjs/lib/focusNode.js ***!
   \*****************************************/
@@ -10861,7 +11398,7 @@
 	module.exports = focusNode;
 
 /***/ },
-/* 89 */
+/* 93 */
 /*!**********************************************!*\
   !*** ./~/react/lib/CSSPropertyOperations.js ***!
   \**********************************************/
@@ -10880,14 +11417,14 @@
 	
 	'use strict';
 	
-	var CSSProperty = __webpack_require__(/*! ./CSSProperty */ 90);
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 48);
-	var ReactPerf = __webpack_require__(/*! ./ReactPerf */ 58);
+	var CSSProperty = __webpack_require__(/*! ./CSSProperty */ 94);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 20);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 18);
 	
-	var camelizeStyleName = __webpack_require__(/*! fbjs/lib/camelizeStyleName */ 91);
-	var dangerousStyleValue = __webpack_require__(/*! ./dangerousStyleValue */ 93);
-	var hyphenateStyleName = __webpack_require__(/*! fbjs/lib/hyphenateStyleName */ 94);
-	var memoizeStringOnly = __webpack_require__(/*! fbjs/lib/memoizeStringOnly */ 96);
+	var camelizeStyleName = __webpack_require__(/*! fbjs/lib/camelizeStyleName */ 95);
+	var dangerousStyleValue = __webpack_require__(/*! ./dangerousStyleValue */ 97);
+	var hyphenateStyleName = __webpack_require__(/*! fbjs/lib/hyphenateStyleName */ 98);
+	var memoizeStringOnly = __webpack_require__(/*! fbjs/lib/memoizeStringOnly */ 100);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
 	
 	var processStyleName = memoizeStringOnly(function (styleName) {
@@ -11036,6 +11573,10 @@
 	   * @param {ReactDOMComponent} component
 	   */
 	  setValueForStyles: function setValueForStyles(node, styles, component) {
+	    if (process.env.NODE_ENV !== 'production') {
+	      ReactInstrumentation.debugTool.onNativeOperation(component._debugID, 'update styles', styles);
+	    }
+	
 	    var style = node.style;
 	    for (var styleName in styles) {
 	      if (!styles.hasOwnProperty(styleName)) {
@@ -11067,15 +11608,11 @@
 	
 	};
 	
-	ReactPerf.measureMethods(CSSPropertyOperations, 'CSSPropertyOperations', {
-	  setValueForStyles: 'setValueForStyles'
-	});
-	
 	module.exports = CSSPropertyOperations;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 90 */
+/* 94 */
 /*!************************************!*\
   !*** ./~/react/lib/CSSProperty.js ***!
   \************************************/
@@ -11231,7 +11768,7 @@
 	module.exports = CSSProperty;
 
 /***/ },
-/* 91 */
+/* 95 */
 /*!*************************************************!*\
   !*** ./~/react/~/fbjs/lib/camelizeStyleName.js ***!
   \*************************************************/
@@ -11250,7 +11787,7 @@
 	
 	'use strict';
 	
-	var camelize = __webpack_require__(/*! ./camelize */ 92);
+	var camelize = __webpack_require__(/*! ./camelize */ 96);
 	
 	var msPattern = /^-ms-/;
 	
@@ -11278,7 +11815,7 @@
 	module.exports = camelizeStyleName;
 
 /***/ },
-/* 92 */
+/* 96 */
 /*!****************************************!*\
   !*** ./~/react/~/fbjs/lib/camelize.js ***!
   \****************************************/
@@ -11317,7 +11854,7 @@
 	module.exports = camelize;
 
 /***/ },
-/* 93 */
+/* 97 */
 /*!********************************************!*\
   !*** ./~/react/lib/dangerousStyleValue.js ***!
   \********************************************/
@@ -11336,7 +11873,7 @@
 	
 	'use strict';
 	
-	var CSSProperty = __webpack_require__(/*! ./CSSProperty */ 90);
+	var CSSProperty = __webpack_require__(/*! ./CSSProperty */ 94);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
 	
 	var isUnitlessNumber = CSSProperty.isUnitlessNumber;
@@ -11403,7 +11940,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 94 */
+/* 98 */
 /*!**************************************************!*\
   !*** ./~/react/~/fbjs/lib/hyphenateStyleName.js ***!
   \**************************************************/
@@ -11422,7 +11959,7 @@
 	
 	'use strict';
 	
-	var hyphenate = __webpack_require__(/*! ./hyphenate */ 95);
+	var hyphenate = __webpack_require__(/*! ./hyphenate */ 99);
 	
 	var msPattern = /^ms-/;
 	
@@ -11449,7 +11986,7 @@
 	module.exports = hyphenateStyleName;
 
 /***/ },
-/* 95 */
+/* 99 */
 /*!*****************************************!*\
   !*** ./~/react/~/fbjs/lib/hyphenate.js ***!
   \*****************************************/
@@ -11489,7 +12026,7 @@
 	module.exports = hyphenate;
 
 /***/ },
-/* 96 */
+/* 100 */
 /*!*************************************************!*\
   !*** ./~/react/~/fbjs/lib/memoizeStringOnly.js ***!
   \*************************************************/
@@ -11503,6 +12040,7 @@
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
+	 * 
 	 * @typechecks static-only
 	 */
 	
@@ -11510,9 +12048,6 @@
 	
 	/**
 	 * Memoizes the return value of a function that accepts one string argument.
-	 *
-	 * @param {function} callback
-	 * @return {function}
 	 */
 	
 	function memoizeStringOnly(callback) {
@@ -11528,35 +12063,7 @@
 	module.exports = memoizeStringOnly;
 
 /***/ },
-/* 97 */
-/*!**************************************!*\
-  !*** ./~/react/lib/DOMNamespaces.js ***!
-  \**************************************/
-/***/ function(module, exports) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule DOMNamespaces
-	 */
-	
-	'use strict';
-	
-	var DOMNamespaces = {
-	  html: 'http://www.w3.org/1999/xhtml',
-	  mathml: 'http://www.w3.org/1998/Math/MathML',
-	  svg: 'http://www.w3.org/2000/svg'
-	};
-	
-	module.exports = DOMNamespaces;
-
-/***/ },
-/* 98 */
+/* 101 */
 /*!**********************************************!*\
   !*** ./~/react/lib/DOMPropertyOperations.js ***!
   \**********************************************/
@@ -11575,11 +12082,12 @@
 	
 	'use strict';
 	
-	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 36);
-	var ReactDOMInstrumentation = __webpack_require__(/*! ./ReactDOMInstrumentation */ 99);
-	var ReactPerf = __webpack_require__(/*! ./ReactPerf */ 58);
+	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 41);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var ReactDOMInstrumentation = __webpack_require__(/*! ./ReactDOMInstrumentation */ 102);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 18);
 	
-	var quoteAttributeValueForBrowser = __webpack_require__(/*! ./quoteAttributeValueForBrowser */ 102);
+	var quoteAttributeValueForBrowser = __webpack_require__(/*! ./quoteAttributeValueForBrowser */ 105);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
 	
 	var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -11685,9 +12193,6 @@
 	   * @param {*} value
 	   */
 	  setValueForProperty: function setValueForProperty(node, name, value) {
-	    if (process.env.NODE_ENV !== 'production') {
-	      ReactDOMInstrumentation.debugTool.onSetValueForProperty(node, name, value);
-	    }
 	    var propertyInfo = DOMProperty.properties.hasOwnProperty(name) ? DOMProperty.properties[name] : null;
 	    if (propertyInfo) {
 	      var mutationMethod = propertyInfo.mutationMethod;
@@ -11695,6 +12200,7 @@
 	        mutationMethod(node, value);
 	      } else if (shouldIgnoreValue(propertyInfo, value)) {
 	        this.deleteValueForProperty(node, name);
+	        return;
 	      } else if (propertyInfo.mustUseProperty) {
 	        var propName = propertyInfo.propertyName;
 	        // Must explicitly cast values for HAS_SIDE_EFFECTS-properties to the
@@ -11719,6 +12225,14 @@
 	      }
 	    } else if (DOMProperty.isCustomAttribute(name)) {
 	      DOMPropertyOperations.setValueForAttribute(node, name, value);
+	      return;
+	    }
+	
+	    if (process.env.NODE_ENV !== 'production') {
+	      ReactDOMInstrumentation.debugTool.onSetValueForProperty(node, name, value);
+	      var payload = {};
+	      payload[name] = value;
+	      ReactInstrumentation.debugTool.onNativeOperation(ReactDOMComponentTree.getInstanceFromNode(node)._debugID, 'update attribute', payload);
 	    }
 	  },
 	
@@ -11731,6 +12245,12 @@
 	    } else {
 	      node.setAttribute(name, '' + value);
 	    }
+	
+	    if (process.env.NODE_ENV !== 'production') {
+	      var payload = {};
+	      payload[name] = value;
+	      ReactInstrumentation.debugTool.onNativeOperation(ReactDOMComponentTree.getInstanceFromNode(node)._debugID, 'update attribute', payload);
+	    }
 	  },
 	
 	  /**
@@ -11740,9 +12260,6 @@
 	   * @param {string} name
 	   */
 	  deleteValueForProperty: function deleteValueForProperty(node, name) {
-	    if (process.env.NODE_ENV !== 'production') {
-	      ReactDOMInstrumentation.debugTool.onDeleteValueForProperty(node, name);
-	    }
 	    var propertyInfo = DOMProperty.properties.hasOwnProperty(name) ? DOMProperty.properties[name] : null;
 	    if (propertyInfo) {
 	      var mutationMethod = propertyInfo.mutationMethod;
@@ -11764,21 +12281,20 @@
 	    } else if (DOMProperty.isCustomAttribute(name)) {
 	      node.removeAttribute(name);
 	    }
+	
+	    if (process.env.NODE_ENV !== 'production') {
+	      ReactDOMInstrumentation.debugTool.onDeleteValueForProperty(node, name);
+	      ReactInstrumentation.debugTool.onNativeOperation(ReactDOMComponentTree.getInstanceFromNode(node)._debugID, 'remove attribute', name);
+	    }
 	  }
 	
 	};
-	
-	ReactPerf.measureMethods(DOMPropertyOperations, 'DOMPropertyOperations', {
-	  setValueForProperty: 'setValueForProperty',
-	  setValueForAttribute: 'setValueForAttribute',
-	  deleteValueForProperty: 'deleteValueForProperty'
-	});
 	
 	module.exports = DOMPropertyOperations;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 99 */
+/* 102 */
 /*!************************************************!*\
   !*** ./~/react/lib/ReactDOMInstrumentation.js ***!
   \************************************************/
@@ -11797,12 +12313,12 @@
 	
 	'use strict';
 	
-	var ReactDOMDebugTool = __webpack_require__(/*! ./ReactDOMDebugTool */ 100);
+	var ReactDOMDebugTool = __webpack_require__(/*! ./ReactDOMDebugTool */ 103);
 	
 	module.exports = { debugTool: ReactDOMDebugTool };
 
 /***/ },
-/* 100 */
+/* 103 */
 /*!******************************************!*\
   !*** ./~/react/lib/ReactDOMDebugTool.js ***!
   \******************************************/
@@ -11821,7 +12337,7 @@
 	
 	'use strict';
 	
-	var ReactDOMUnknownPropertyDevtool = __webpack_require__(/*! ./ReactDOMUnknownPropertyDevtool */ 101);
+	var ReactDOMUnknownPropertyDevtool = __webpack_require__(/*! ./ReactDOMUnknownPropertyDevtool */ 104);
 	
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
 	
@@ -11872,7 +12388,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 101 */
+/* 104 */
 /*!*******************************************************!*\
   !*** ./~/react/lib/ReactDOMUnknownPropertyDevtool.js ***!
   \*******************************************************/
@@ -11891,8 +12407,8 @@
 	
 	'use strict';
 	
-	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 36);
-	var EventPluginRegistry = __webpack_require__(/*! ./EventPluginRegistry */ 43);
+	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 41);
+	var EventPluginRegistry = __webpack_require__(/*! ./EventPluginRegistry */ 48);
 	
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
 	
@@ -11945,7 +12461,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 102 */
+/* 105 */
 /*!******************************************************!*\
   !*** ./~/react/lib/quoteAttributeValueForBrowser.js ***!
   \******************************************************/
@@ -11964,7 +12480,7 @@
 	
 	'use strict';
 	
-	var escapeTextContentForBrowser = __webpack_require__(/*! ./escapeTextContentForBrowser */ 78);
+	var escapeTextContentForBrowser = __webpack_require__(/*! ./escapeTextContentForBrowser */ 82);
 	
 	/**
 	 * Escapes attribute value to prevent scripting attacks.
@@ -11979,7 +12495,7 @@
 	module.exports = quoteAttributeValueForBrowser;
 
 /***/ },
-/* 103 */
+/* 106 */
 /*!*************************************************!*\
   !*** ./~/react/lib/ReactBrowserEventEmitter.js ***!
   \*************************************************/
@@ -12000,13 +12516,13 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 4);
 	
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 40);
-	var EventPluginRegistry = __webpack_require__(/*! ./EventPluginRegistry */ 43);
-	var ReactEventEmitterMixin = __webpack_require__(/*! ./ReactEventEmitterMixin */ 104);
-	var ViewportMetrics = __webpack_require__(/*! ./ViewportMetrics */ 70);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 45);
+	var EventPluginRegistry = __webpack_require__(/*! ./EventPluginRegistry */ 48);
+	var ReactEventEmitterMixin = __webpack_require__(/*! ./ReactEventEmitterMixin */ 107);
+	var ViewportMetrics = __webpack_require__(/*! ./ViewportMetrics */ 73);
 	
-	var getVendorPrefixedEventName = __webpack_require__(/*! ./getVendorPrefixedEventName */ 105);
-	var isEventSupported = __webpack_require__(/*! ./isEventSupported */ 64);
+	var getVendorPrefixedEventName = __webpack_require__(/*! ./getVendorPrefixedEventName */ 108);
+	var isEventSupported = __webpack_require__(/*! ./isEventSupported */ 67);
 	
 	/**
 	 * Summary of `ReactBrowserEventEmitter` event handling:
@@ -12304,7 +12820,7 @@
 	module.exports = ReactBrowserEventEmitter;
 
 /***/ },
-/* 104 */
+/* 107 */
 /*!***********************************************!*\
   !*** ./~/react/lib/ReactEventEmitterMixin.js ***!
   \***********************************************/
@@ -12323,7 +12839,7 @@
 	
 	'use strict';
 	
-	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 42);
+	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 47);
 	
 	function runEventQueueInBatch(events) {
 	  EventPluginHub.enqueueEvents(events);
@@ -12345,7 +12861,7 @@
 	module.exports = ReactEventEmitterMixin;
 
 /***/ },
-/* 105 */
+/* 108 */
 /*!***************************************************!*\
   !*** ./~/react/lib/getVendorPrefixedEventName.js ***!
   \***************************************************/
@@ -12364,7 +12880,7 @@
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 48);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 20);
 	
 	/**
 	 * Generate a mapping of standard vendor prefixes using the defined style property and event name.
@@ -12454,7 +12970,7 @@
 	module.exports = getVendorPrefixedEventName;
 
 /***/ },
-/* 106 */
+/* 109 */
 /*!***************************************!*\
   !*** ./~/react/lib/ReactDOMButton.js ***!
   \***************************************/
@@ -12473,7 +12989,7 @@
 	
 	'use strict';
 	
-	var DisabledInputUtils = __webpack_require__(/*! ./DisabledInputUtils */ 107);
+	var DisabledInputUtils = __webpack_require__(/*! ./DisabledInputUtils */ 110);
 	
 	/**
 	 * Implements a <button> native component that does not receive mouse events
@@ -12486,7 +13002,7 @@
 	module.exports = ReactDOMButton;
 
 /***/ },
-/* 107 */
+/* 110 */
 /*!*******************************************!*\
   !*** ./~/react/lib/DisabledInputUtils.js ***!
   \*******************************************/
@@ -12544,7 +13060,7 @@
 	module.exports = DisabledInputUtils;
 
 /***/ },
-/* 108 */
+/* 111 */
 /*!**************************************!*\
   !*** ./~/react/lib/ReactDOMInput.js ***!
   \**************************************/
@@ -12565,11 +13081,11 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 4);
 	
-	var DisabledInputUtils = __webpack_require__(/*! ./DisabledInputUtils */ 107);
-	var DOMPropertyOperations = __webpack_require__(/*! ./DOMPropertyOperations */ 98);
-	var LinkedValueUtils = __webpack_require__(/*! ./LinkedValueUtils */ 109);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 55);
+	var DisabledInputUtils = __webpack_require__(/*! ./DisabledInputUtils */ 110);
+	var DOMPropertyOperations = __webpack_require__(/*! ./DOMPropertyOperations */ 101);
+	var LinkedValueUtils = __webpack_require__(/*! ./LinkedValueUtils */ 112);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 59);
 	
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
@@ -12637,6 +13153,8 @@
 	    if (process.env.NODE_ENV !== 'production') {
 	      LinkedValueUtils.checkPropTypes('input', props, inst._currentElement._owner);
 	
+	      var owner = inst._currentElement._owner;
+	
 	      if (props.valueLink !== undefined && !didWarnValueLink) {
 	        process.env.NODE_ENV !== 'production' ? warning(false, '`valueLink` prop on `input` is deprecated; set `value` and `onChange` instead.') : void 0;
 	        didWarnValueLink = true;
@@ -12646,11 +13164,11 @@
 	        didWarnCheckedLink = true;
 	      }
 	      if (props.checked !== undefined && props.defaultChecked !== undefined && !didWarnCheckedDefaultChecked) {
-	        process.env.NODE_ENV !== 'production' ? warning(false, 'Input elements must be either controlled or uncontrolled ' + '(specify either the checked prop, or the defaultChecked prop, but not ' + 'both). Decide between using a controlled or uncontrolled input ' + 'element and remove one of these props. More info: ' + 'https://fb.me/react-controlled-components') : void 0;
+	        process.env.NODE_ENV !== 'production' ? warning(false, '%s contains an input of type %s with both checked and defaultChecked props. ' + 'Input elements must be either controlled or uncontrolled ' + '(specify either the checked prop, or the defaultChecked prop, but not ' + 'both). Decide between using a controlled or uncontrolled input ' + 'element and remove one of these props. More info: ' + 'https://fb.me/react-controlled-components', owner && owner.getName() || 'A component', props.type) : void 0;
 	        didWarnCheckedDefaultChecked = true;
 	      }
 	      if (props.value !== undefined && props.defaultValue !== undefined && !didWarnValueDefaultValue) {
-	        process.env.NODE_ENV !== 'production' ? warning(false, 'Input elements must be either controlled or uncontrolled ' + '(specify either the value prop, or the defaultValue prop, but not ' + 'both). Decide between using a controlled or uncontrolled input ' + 'element and remove one of these props. More info: ' + 'https://fb.me/react-controlled-components') : void 0;
+	        process.env.NODE_ENV !== 'production' ? warning(false, '%s contains an input of type %s with both value and defaultValue props. ' + 'Input elements must be either controlled or uncontrolled ' + '(specify either the value prop, or the defaultValue prop, but not ' + 'both). Decide between using a controlled or uncontrolled input ' + 'element and remove one of these props. More info: ' + 'https://fb.me/react-controlled-components', owner && owner.getName() || 'A component', props.type) : void 0;
 	        didWarnValueDefaultValue = true;
 	      }
 	      warnIfValueIsNull(props);
@@ -12681,7 +13199,7 @@
 	      var owner = inst._currentElement._owner;
 	
 	      if ((initialValue || !inst._wrapperState.controlled) && controlled && !didWarnUncontrolledToControlled) {
-	        process.env.NODE_ENV !== 'production' ? warning(false, '%s is changing a uncontrolled input of type %s to be controlled. ' + 'Input elements should not switch from uncontrolled to controlled (or vice versa). ' + 'Decide between using a controlled or uncontrolled input ' + 'element for the lifetime of the component. More info: https://fb.me/react-controlled-components', owner && owner.getName() || 'A component', props.type) : void 0;
+	        process.env.NODE_ENV !== 'production' ? warning(false, '%s is changing an uncontrolled input of type %s to be controlled. ' + 'Input elements should not switch from uncontrolled to controlled (or vice versa). ' + 'Decide between using a controlled or uncontrolled input ' + 'element for the lifetime of the component. More info: https://fb.me/react-controlled-components', owner && owner.getName() || 'A component', props.type) : void 0;
 	        didWarnUncontrolledToControlled = true;
 	      }
 	      if (inst._wrapperState.controlled && (defaultValue || !controlled) && !didWarnControlledToUncontrolled) {
@@ -12757,7 +13275,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 109 */
+/* 112 */
 /*!*****************************************!*\
   !*** ./~/react/lib/LinkedValueUtils.js ***!
   \*****************************************/
@@ -12776,8 +13294,8 @@
 	
 	'use strict';
 	
-	var ReactPropTypes = __webpack_require__(/*! ./ReactPropTypes */ 30);
-	var ReactPropTypeLocations = __webpack_require__(/*! ./ReactPropTypeLocations */ 23);
+	var ReactPropTypes = __webpack_require__(/*! ./ReactPropTypes */ 35);
+	var ReactPropTypeLocations = __webpack_require__(/*! ./ReactPropTypeLocations */ 28);
 	
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
@@ -12899,7 +13417,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 110 */
+/* 113 */
 /*!***************************************!*\
   !*** ./~/react/lib/ReactDOMOption.js ***!
   \***************************************/
@@ -12921,8 +13439,8 @@
 	var _assign = __webpack_require__(/*! object-assign */ 4);
 	
 	var ReactChildren = __webpack_require__(/*! ./ReactChildren */ 5);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var ReactDOMSelect = __webpack_require__(/*! ./ReactDOMSelect */ 111);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var ReactDOMSelect = __webpack_require__(/*! ./ReactDOMSelect */ 114);
 	
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
 	
@@ -13017,7 +13535,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 111 */
+/* 114 */
 /*!***************************************!*\
   !*** ./~/react/lib/ReactDOMSelect.js ***!
   \***************************************/
@@ -13038,10 +13556,10 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 4);
 	
-	var DisabledInputUtils = __webpack_require__(/*! ./DisabledInputUtils */ 107);
-	var LinkedValueUtils = __webpack_require__(/*! ./LinkedValueUtils */ 109);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 55);
+	var DisabledInputUtils = __webpack_require__(/*! ./DisabledInputUtils */ 110);
+	var LinkedValueUtils = __webpack_require__(/*! ./LinkedValueUtils */ 112);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 59);
 	
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
 	
@@ -13239,7 +13757,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 112 */
+/* 115 */
 /*!*****************************************!*\
   !*** ./~/react/lib/ReactDOMTextarea.js ***!
   \*****************************************/
@@ -13260,11 +13778,11 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 4);
 	
-	var DisabledInputUtils = __webpack_require__(/*! ./DisabledInputUtils */ 107);
-	var DOMPropertyOperations = __webpack_require__(/*! ./DOMPropertyOperations */ 98);
-	var LinkedValueUtils = __webpack_require__(/*! ./LinkedValueUtils */ 109);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 55);
+	var DisabledInputUtils = __webpack_require__(/*! ./DisabledInputUtils */ 110);
+	var DOMPropertyOperations = __webpack_require__(/*! ./DOMPropertyOperations */ 101);
+	var LinkedValueUtils = __webpack_require__(/*! ./LinkedValueUtils */ 112);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 59);
 	
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
@@ -13390,7 +13908,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 113 */
+/* 116 */
 /*!****************************************!*\
   !*** ./~/react/lib/ReactMultiChild.js ***!
   \****************************************/
@@ -13409,14 +13927,16 @@
 	
 	'use strict';
 	
-	var ReactComponentEnvironment = __webpack_require__(/*! ./ReactComponentEnvironment */ 114);
-	var ReactMultiChildUpdateTypes = __webpack_require__(/*! ./ReactMultiChildUpdateTypes */ 84);
+	var ReactComponentEnvironment = __webpack_require__(/*! ./ReactComponentEnvironment */ 117);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 18);
+	var ReactMultiChildUpdateTypes = __webpack_require__(/*! ./ReactMultiChildUpdateTypes */ 88);
 	
 	var ReactCurrentOwner = __webpack_require__(/*! ./ReactCurrentOwner */ 9);
-	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 59);
-	var ReactChildReconciler = __webpack_require__(/*! ./ReactChildReconciler */ 115);
+	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 62);
+	var ReactChildReconciler = __webpack_require__(/*! ./ReactChildReconciler */ 118);
 	
-	var flattenChildren = __webpack_require__(/*! ./flattenChildren */ 124);
+	var emptyFunction = __webpack_require__(/*! fbjs/lib/emptyFunction */ 11);
+	var flattenChildren = __webpack_require__(/*! ./flattenChildren */ 127);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
 	
 	/**
@@ -13532,6 +14052,15 @@
 	  ReactComponentEnvironment.processChildrenUpdates(inst, updateQueue);
 	}
 	
+	var setChildrenForInstrumentation = emptyFunction;
+	if (process.env.NODE_ENV !== 'production') {
+	  setChildrenForInstrumentation = function setChildrenForInstrumentation(children) {
+	    ReactInstrumentation.debugTool.onSetChildren(this._debugID, children ? Object.keys(children).map(function (key) {
+	      return children[key]._debugID;
+	    }) : []);
+	  };
+	}
+	
 	/**
 	 * ReactMultiChild are capable of reconciling multiple children.
 	 *
@@ -13593,6 +14122,7 @@
 	    mountChildren: function mountChildren(nestedChildren, transaction, context) {
 	      var children = this._reconcilerInstantiateChildren(nestedChildren, transaction, context);
 	      this._renderedChildren = children;
+	
 	      var mountImages = [];
 	      var index = 0;
 	      for (var name in children) {
@@ -13603,6 +14133,11 @@
 	          mountImages.push(mountImage);
 	        }
 	      }
+	
+	      if (process.env.NODE_ENV !== 'production') {
+	        setChildrenForInstrumentation.call(this, children);
+	      }
+	
 	      return mountImages;
 	    },
 	
@@ -13709,6 +14244,10 @@
 	        processQueue(this, updates);
 	      }
 	      this._renderedChildren = nextChildren;
+	
+	      if (process.env.NODE_ENV !== 'production') {
+	        setChildrenForInstrumentation.call(this, nextChildren);
+	      }
 	    },
 	
 	    /**
@@ -13801,7 +14340,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 114 */
+/* 117 */
 /*!**************************************************!*\
   !*** ./~/react/lib/ReactComponentEnvironment.js ***!
   \**************************************************/
@@ -13861,7 +14400,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 115 */
+/* 118 */
 /*!*********************************************!*\
   !*** ./~/react/lib/ReactChildReconciler.js ***!
   \*********************************************/
@@ -13880,11 +14419,11 @@
 	
 	'use strict';
 	
-	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 59);
+	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 62);
 	
-	var instantiateReactComponent = __webpack_require__(/*! ./instantiateReactComponent */ 116);
+	var instantiateReactComponent = __webpack_require__(/*! ./instantiateReactComponent */ 119);
 	var KeyEscapeUtils = __webpack_require__(/*! ./KeyEscapeUtils */ 15);
-	var shouldUpdateReactComponent = __webpack_require__(/*! ./shouldUpdateReactComponent */ 121);
+	var shouldUpdateReactComponent = __webpack_require__(/*! ./shouldUpdateReactComponent */ 124);
 	var traverseAllChildren = __webpack_require__(/*! ./traverseAllChildren */ 13);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
 	
@@ -13995,7 +14534,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 116 */
+/* 119 */
 /*!**************************************************!*\
   !*** ./~/react/lib/instantiateReactComponent.js ***!
   \**************************************************/
@@ -14018,9 +14557,10 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 4);
 	
-	var ReactCompositeComponent = __webpack_require__(/*! ./ReactCompositeComponent */ 117);
-	var ReactEmptyComponent = __webpack_require__(/*! ./ReactEmptyComponent */ 122);
-	var ReactNativeComponent = __webpack_require__(/*! ./ReactNativeComponent */ 123);
+	var ReactCompositeComponent = __webpack_require__(/*! ./ReactCompositeComponent */ 120);
+	var ReactEmptyComponent = __webpack_require__(/*! ./ReactEmptyComponent */ 125);
+	var ReactNativeComponent = __webpack_require__(/*! ./ReactNativeComponent */ 126);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 18);
 	
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
@@ -14043,6 +14583,21 @@
 	  return '';
 	}
 	
+	function getDisplayName(instance) {
+	  var element = instance._currentElement;
+	  if (element == null) {
+	    return '#empty';
+	  } else if (typeof element === 'string' || typeof element === 'number') {
+	    return '#text';
+	  } else if (typeof element.type === 'string') {
+	    return element.type;
+	  } else if (instance.getName) {
+	    return instance.getName() || 'Unknown';
+	  } else {
+	    return element.type.displayName || element.type.name || 'Unknown';
+	  }
+	}
+	
 	/**
 	 * Check if the type reference is a known internal type. I.e. not a user
 	 * provided composite type.
@@ -14054,6 +14609,8 @@
 	  return typeof type === 'function' && typeof type.prototype !== 'undefined' && typeof type.prototype.mountComponent === 'function' && typeof type.prototype.receiveComponent === 'function';
 	}
 	
+	var nextDebugID = 1;
+	
 	/**
 	 * Given a ReactNode, create an instance that will actually be mounted.
 	 *
@@ -14064,7 +14621,8 @@
 	function instantiateReactComponent(node) {
 	  var instance;
 	
-	  if (node === null || node === false) {
+	  var isEmpty = node === null || node === false;
+	  if (isEmpty) {
 	    instance = ReactEmptyComponent.create(instantiateReactComponent);
 	  } else if ((typeof node === 'undefined' ? 'undefined' : _typeof(node)) === 'object') {
 	    var element = node;
@@ -14102,6 +14660,20 @@
 	    instance._warnedAboutRefsInRender = false;
 	  }
 	
+	  if (process.env.NODE_ENV !== 'production') {
+	    var debugID = isEmpty ? 0 : nextDebugID++;
+	    instance._debugID = debugID;
+	
+	    if (debugID !== 0) {
+	      var displayName = getDisplayName(instance);
+	      ReactInstrumentation.debugTool.onSetDisplayName(debugID, displayName);
+	      var owner = node && node._owner;
+	      if (owner) {
+	        ReactInstrumentation.debugTool.onSetOwner(debugID, owner._debugID);
+	      }
+	    }
+	  }
+	
 	  // Internal instances should fully constructed at this point, so they should
 	  // not get any new fields added to them at this point.
 	  if (process.env.NODE_ENV !== 'production') {
@@ -14117,7 +14689,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 117 */
+/* 120 */
 /*!************************************************!*\
   !*** ./~/react/lib/ReactCompositeComponent.js ***!
   \************************************************/
@@ -14140,22 +14712,21 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 4);
 	
-	var ReactComponentEnvironment = __webpack_require__(/*! ./ReactComponentEnvironment */ 114);
+	var ReactComponentEnvironment = __webpack_require__(/*! ./ReactComponentEnvironment */ 117);
 	var ReactCurrentOwner = __webpack_require__(/*! ./ReactCurrentOwner */ 9);
 	var ReactElement = __webpack_require__(/*! ./ReactElement */ 8);
-	var ReactErrorUtils = __webpack_require__(/*! ./ReactErrorUtils */ 45);
-	var ReactInstanceMap = __webpack_require__(/*! ./ReactInstanceMap */ 118);
+	var ReactErrorUtils = __webpack_require__(/*! ./ReactErrorUtils */ 50);
+	var ReactInstanceMap = __webpack_require__(/*! ./ReactInstanceMap */ 121);
 	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 18);
-	var ReactNodeTypes = __webpack_require__(/*! ./ReactNodeTypes */ 119);
-	var ReactPerf = __webpack_require__(/*! ./ReactPerf */ 58);
-	var ReactPropTypeLocations = __webpack_require__(/*! ./ReactPropTypeLocations */ 23);
-	var ReactPropTypeLocationNames = __webpack_require__(/*! ./ReactPropTypeLocationNames */ 25);
-	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 59);
-	var ReactUpdateQueue = __webpack_require__(/*! ./ReactUpdateQueue */ 120);
+	var ReactNodeTypes = __webpack_require__(/*! ./ReactNodeTypes */ 122);
+	var ReactPropTypeLocations = __webpack_require__(/*! ./ReactPropTypeLocations */ 28);
+	var ReactPropTypeLocationNames = __webpack_require__(/*! ./ReactPropTypeLocationNames */ 30);
+	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 62);
+	var ReactUpdateQueue = __webpack_require__(/*! ./ReactUpdateQueue */ 123);
 	
-	var emptyObject = __webpack_require__(/*! fbjs/lib/emptyObject */ 21);
+	var emptyObject = __webpack_require__(/*! fbjs/lib/emptyObject */ 26);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
-	var shouldUpdateReactComponent = __webpack_require__(/*! ./shouldUpdateReactComponent */ 121);
+	var shouldUpdateReactComponent = __webpack_require__(/*! ./shouldUpdateReactComponent */ 124);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
 	
 	function getDeclarationErrorAddendum(component) {
@@ -14180,6 +14751,28 @@
 	function warnIfInvalidElement(Component, element) {
 	  if (process.env.NODE_ENV !== 'production') {
 	    process.env.NODE_ENV !== 'production' ? warning(element === null || element === false || ReactElement.isValidElement(element), '%s(...): A valid React element (or null) must be returned. You may have ' + 'returned undefined, an array or some other invalid object.', Component.displayName || Component.name || 'Component') : void 0;
+	  }
+	}
+	
+	function invokeComponentDidMountWithTimer() {
+	  var publicInstance = this._instance;
+	  if (this._debugID !== 0) {
+	    ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'componentDidMount');
+	  }
+	  publicInstance.componentDidMount();
+	  if (this._debugID !== 0) {
+	    ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'componentDidMount');
+	  }
+	}
+	
+	function invokeComponentDidUpdateWithTimer(prevProps, prevState, prevContext) {
+	  var publicInstance = this._instance;
+	  if (this._debugID !== 0) {
+	    ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'componentDidUpdate');
+	  }
+	  publicInstance.componentDidUpdate(prevProps, prevState, prevContext);
+	  if (this._debugID !== 0) {
+	    ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'componentDidUpdate');
 	  }
 	}
 	
@@ -14242,6 +14835,7 @@
 	    this._nativeContainerInfo = null;
 	
 	    // See ReactUpdateQueue
+	    this._updateBatchNumber = null;
 	    this._pendingElement = null;
 	    this._pendingStateQueue = null;
 	    this._pendingReplaceState = false;
@@ -14350,7 +14944,11 @@
 	    }
 	
 	    if (inst.componentDidMount) {
-	      transaction.getReactMountReady().enqueue(inst.componentDidMount, inst);
+	      if (process.env.NODE_ENV !== 'production') {
+	        transaction.getReactMountReady().enqueue(invokeComponentDidMountWithTimer, this);
+	      } else {
+	        transaction.getReactMountReady().enqueue(inst.componentDidMount, inst);
+	      }
 	    }
 	
 	    return markup;
@@ -14371,11 +14969,35 @@
 	
 	  _constructComponentWithoutOwner: function _constructComponentWithoutOwner(publicProps, publicContext) {
 	    var Component = this._currentElement.type;
+	    var instanceOrElement;
 	    if (shouldConstruct(Component)) {
-	      return new Component(publicProps, publicContext, ReactUpdateQueue);
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (this._debugID !== 0) {
+	          ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'ctor');
+	        }
+	      }
+	      instanceOrElement = new Component(publicProps, publicContext, ReactUpdateQueue);
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (this._debugID !== 0) {
+	          ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'ctor');
+	        }
+	      }
 	    } else {
-	      return Component(publicProps, publicContext, ReactUpdateQueue);
+	      // This can still be an instance in case of factory components
+	      // but we'll count this as time spent rendering as the more common case.
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (this._debugID !== 0) {
+	          ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'render');
+	        }
+	      }
+	      instanceOrElement = Component(publicProps, publicContext, ReactUpdateQueue);
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (this._debugID !== 0) {
+	          ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'render');
+	        }
+	      }
 	    }
+	    return instanceOrElement;
 	  },
 	
 	  performInitialMountWithErrorHandling: function performInitialMountWithErrorHandling(renderedElement, nativeParent, nativeContainerInfo, transaction, context) {
@@ -14405,7 +15027,17 @@
 	  performInitialMount: function performInitialMount(renderedElement, nativeParent, nativeContainerInfo, transaction, context) {
 	    var inst = this._instance;
 	    if (inst.componentWillMount) {
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (this._debugID !== 0) {
+	          ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'componentWillMount');
+	        }
+	      }
 	      inst.componentWillMount();
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (this._debugID !== 0) {
+	          ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'componentWillMount');
+	        }
+	      }
 	      // When mounting, calls to `setState` by `componentWillMount` will set
 	      // `this._pendingStateQueue` without triggering a re-render.
 	      if (this._pendingStateQueue) {
@@ -14422,6 +15054,12 @@
 	    this._renderedComponent = this._instantiateReactComponent(renderedElement);
 	
 	    var markup = ReactReconciler.mountComponent(this._renderedComponent, transaction, nativeParent, nativeContainerInfo, this._processChildContext(context));
+	
+	    if (process.env.NODE_ENV !== 'production') {
+	      if (this._debugID !== 0) {
+	        ReactInstrumentation.debugTool.onSetChildren(this._debugID, this._renderedComponent._debugID !== 0 ? [this._renderedComponent._debugID] : []);
+	      }
+	    }
 	
 	    return markup;
 	  },
@@ -14444,11 +15082,21 @@
 	
 	    if (inst.componentWillUnmount && !inst._calledComponentWillUnmount) {
 	      inst._calledComponentWillUnmount = true;
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (this._debugID !== 0) {
+	          ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'componentWillUnmount');
+	        }
+	      }
 	      if (safely) {
 	        var name = this.getName() + '.componentWillUnmount()';
 	        ReactErrorUtils.invokeGuardedCallback(name, inst.componentWillUnmount.bind(inst));
 	      } else {
 	        inst.componentWillUnmount();
+	      }
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (this._debugID !== 0) {
+	          ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'componentWillUnmount');
+	        }
 	      }
 	    }
 	
@@ -14632,10 +15280,10 @@
 	  performUpdateIfNecessary: function performUpdateIfNecessary(transaction) {
 	    if (this._pendingElement != null) {
 	      ReactReconciler.receiveComponent(this, this._pendingElement, transaction, this._context);
-	    }
-	
-	    if (this._pendingStateQueue !== null || this._pendingForceUpdate) {
+	    } else if (this._pendingStateQueue !== null || this._pendingForceUpdate) {
 	      this.updateComponent(transaction, this._currentElement, this._currentElement, this._context, this._context);
+	    } else {
+	      this._updateBatchNumber = null;
 	    }
 	  },
 	
@@ -14682,17 +15330,41 @@
 	    // _pendingStateQueue which will ensure that any state updates gets
 	    // immediately reconciled instead of waiting for the next batch.
 	    if (willReceive && inst.componentWillReceiveProps) {
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (this._debugID !== 0) {
+	          ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'componentWillReceiveProps');
+	        }
+	      }
 	      inst.componentWillReceiveProps(nextProps, nextContext);
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (this._debugID !== 0) {
+	          ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'componentWillReceiveProps');
+	        }
+	      }
 	    }
 	
 	    var nextState = this._processPendingState(nextProps, nextContext);
+	    var shouldUpdate = true;
 	
-	    var shouldUpdate = this._pendingForceUpdate || !inst.shouldComponentUpdate || inst.shouldComponentUpdate(nextProps, nextState, nextContext);
+	    if (!this._pendingForceUpdate && inst.shouldComponentUpdate) {
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (this._debugID !== 0) {
+	          ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'shouldComponentUpdate');
+	        }
+	      }
+	      shouldUpdate = inst.shouldComponentUpdate(nextProps, nextState, nextContext);
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (this._debugID !== 0) {
+	          ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'shouldComponentUpdate');
+	        }
+	      }
+	    }
 	
 	    if (process.env.NODE_ENV !== 'production') {
 	      process.env.NODE_ENV !== 'production' ? warning(shouldUpdate !== undefined, '%s.shouldComponentUpdate(): Returned undefined instead of a ' + 'boolean value. Make sure to return true or false.', this.getName() || 'ReactCompositeComponent') : void 0;
 	    }
 	
+	    this._updateBatchNumber = null;
 	    if (shouldUpdate) {
 	      this._pendingForceUpdate = false;
 	      // Will set `this.props`, `this.state` and `this.context`.
@@ -14758,7 +15430,17 @@
 	    }
 	
 	    if (inst.componentWillUpdate) {
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (this._debugID !== 0) {
+	          ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'componentWillUpdate');
+	        }
+	      }
 	      inst.componentWillUpdate(nextProps, nextState, nextContext);
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (this._debugID !== 0) {
+	          ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'componentWillUpdate');
+	        }
+	      }
 	    }
 	
 	    this._currentElement = nextElement;
@@ -14770,7 +15452,11 @@
 	    this._updateRenderedComponent(transaction, unmaskedContext);
 	
 	    if (hasComponentDidUpdate) {
-	      transaction.getReactMountReady().enqueue(inst.componentDidUpdate.bind(inst, prevProps, prevState, prevContext), inst);
+	      if (process.env.NODE_ENV !== 'production') {
+	        transaction.getReactMountReady().enqueue(invokeComponentDidUpdateWithTimer.bind(this, prevProps, prevState, prevContext), this);
+	      } else {
+	        transaction.getReactMountReady().enqueue(inst.componentDidUpdate.bind(inst, prevProps, prevState, prevContext), inst);
+	      }
 	    }
 	  },
 	
@@ -14792,8 +15478,16 @@
 	
 	      this._renderedNodeType = ReactNodeTypes.getType(nextRenderedElement);
 	      this._renderedComponent = this._instantiateReactComponent(nextRenderedElement);
+	
 	      var nextMarkup = ReactReconciler.mountComponent(this._renderedComponent, transaction, this._nativeParent, this._nativeContainerInfo, this._processChildContext(context));
-	      this._replaceNodeWithMarkup(oldNativeNode, nextMarkup);
+	
+	      if (process.env.NODE_ENV !== 'production') {
+	        if (this._debugID !== 0) {
+	          ReactInstrumentation.debugTool.onSetChildren(this._debugID, this._renderedComponent._debugID !== 0 ? [this._renderedComponent._debugID] : []);
+	        }
+	      }
+	
+	      this._replaceNodeWithMarkup(oldNativeNode, nextMarkup, prevComponentInstance);
 	    }
 	  },
 	
@@ -14802,8 +15496,8 @@
 	   *
 	   * @protected
 	   */
-	  _replaceNodeWithMarkup: function _replaceNodeWithMarkup(oldNativeNode, nextMarkup) {
-	    ReactComponentEnvironment.replaceNodeWithMarkup(oldNativeNode, nextMarkup);
+	  _replaceNodeWithMarkup: function _replaceNodeWithMarkup(oldNativeNode, nextMarkup, prevInstance) {
+	    ReactComponentEnvironment.replaceNodeWithMarkup(oldNativeNode, nextMarkup, prevInstance);
 	  },
 	
 	  /**
@@ -14811,7 +15505,19 @@
 	   */
 	  _renderValidatedComponentWithoutOwnerOrContext: function _renderValidatedComponentWithoutOwnerOrContext() {
 	    var inst = this._instance;
+	
+	    if (process.env.NODE_ENV !== 'production') {
+	      if (this._debugID !== 0) {
+	        ReactInstrumentation.debugTool.onBeginLifeCycleTimer(this._debugID, 'render');
+	      }
+	    }
 	    var renderedComponent = inst.render();
+	    if (process.env.NODE_ENV !== 'production') {
+	      if (this._debugID !== 0) {
+	        ReactInstrumentation.debugTool.onEndLifeCycleTimer(this._debugID, 'render');
+	      }
+	    }
+	
 	    if (process.env.NODE_ENV !== 'production') {
 	      // We allow auto-mocks to proceed as if they're returning null.
 	      if (renderedComponent === undefined && inst.render._isMockFunction) {
@@ -14838,6 +15544,7 @@
 	    !(
 	    // TODO: An `isValidNode` function would probably be more appropriate
 	    renderedComponent === null || renderedComponent === false || ReactElement.isValidElement(renderedComponent)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%s.render(): A valid React element (or null) must be returned. You may have ' + 'returned undefined, an array or some other invalid object.', this.getName() || 'ReactCompositeComponent') : invariant(false) : void 0;
+	
 	    return renderedComponent;
 	  },
 	
@@ -14906,12 +15613,6 @@
 	
 	};
 	
-	ReactPerf.measureMethods(ReactCompositeComponentMixin, 'ReactCompositeComponent', {
-	  mountComponent: 'mountComponent',
-	  updateComponent: 'updateComponent',
-	  _renderValidatedComponent: '_renderValidatedComponent'
-	});
-	
 	var ReactCompositeComponent = {
 	
 	  Mixin: ReactCompositeComponentMixin
@@ -14922,7 +15623,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 118 */
+/* 121 */
 /*!*****************************************!*\
   !*** ./~/react/lib/ReactInstanceMap.js ***!
   \*****************************************/
@@ -14978,7 +15679,7 @@
 	module.exports = ReactInstanceMap;
 
 /***/ },
-/* 119 */
+/* 122 */
 /*!***************************************!*\
   !*** ./~/react/lib/ReactNodeTypes.js ***!
   \***************************************/
@@ -15024,7 +15725,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 120 */
+/* 123 */
 /*!*****************************************!*\
   !*** ./~/react/lib/ReactUpdateQueue.js ***!
   \*****************************************/
@@ -15046,8 +15747,8 @@
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 	
 	var ReactCurrentOwner = __webpack_require__(/*! ./ReactCurrentOwner */ 9);
-	var ReactInstanceMap = __webpack_require__(/*! ./ReactInstanceMap */ 118);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 55);
+	var ReactInstanceMap = __webpack_require__(/*! ./ReactInstanceMap */ 121);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 59);
 	
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
@@ -15250,7 +15951,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 121 */
+/* 124 */
 /*!***************************************************!*\
   !*** ./~/react/lib/shouldUpdateReactComponent.js ***!
   \***************************************************/
@@ -15302,7 +16003,7 @@
 	module.exports = shouldUpdateReactComponent;
 
 /***/ },
-/* 122 */
+/* 125 */
 /*!********************************************!*\
   !*** ./~/react/lib/ReactEmptyComponent.js ***!
   \********************************************/
@@ -15340,7 +16041,7 @@
 	module.exports = ReactEmptyComponent;
 
 /***/ },
-/* 123 */
+/* 126 */
 /*!*********************************************!*\
   !*** ./~/react/lib/ReactNativeComponent.js ***!
   \*********************************************/
@@ -15444,7 +16145,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 124 */
+/* 127 */
 /*!****************************************!*\
   !*** ./~/react/lib/flattenChildren.js ***!
   \****************************************/
@@ -15502,7 +16203,88 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 125 */
+/* 128 */
+/*!********************************************************!*\
+  !*** ./~/react/lib/ReactServerRenderingTransaction.js ***!
+  \********************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2014-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactServerRenderingTransaction
+	 */
+	
+	'use strict';
+	
+	var _assign = __webpack_require__(/*! object-assign */ 4);
+	
+	var PooledClass = __webpack_require__(/*! ./PooledClass */ 6);
+	var Transaction = __webpack_require__(/*! ./Transaction */ 65);
+	
+	/**
+	 * Executed within the scope of the `Transaction` instance. Consider these as
+	 * being member methods, but with an implied ordering while being isolated from
+	 * each other.
+	 */
+	var TRANSACTION_WRAPPERS = [];
+	
+	var noopCallbackQueue = {
+	  enqueue: function enqueue() {}
+	};
+	
+	/**
+	 * @class ReactServerRenderingTransaction
+	 * @param {boolean} renderToStaticMarkup
+	 */
+	function ReactServerRenderingTransaction(renderToStaticMarkup) {
+	  this.reinitializeTransaction();
+	  this.renderToStaticMarkup = renderToStaticMarkup;
+	  this.useCreateElement = false;
+	}
+	
+	var Mixin = {
+	  /**
+	   * @see Transaction
+	   * @abstract
+	   * @final
+	   * @return {array} Empty list of operation wrap procedures.
+	   */
+	  getTransactionWrappers: function getTransactionWrappers() {
+	    return TRANSACTION_WRAPPERS;
+	  },
+	
+	  /**
+	   * @return {object} The queue to collect `onDOMReady` callbacks with.
+	   */
+	  getReactMountReady: function getReactMountReady() {
+	    return noopCallbackQueue;
+	  },
+	
+	  /**
+	   * `PooledClass` looks for this, and will invoke this before allowing this
+	   * instance to be reused.
+	   */
+	  destructor: function destructor() {},
+	
+	  checkpoint: function checkpoint() {},
+	
+	  rollback: function rollback() {}
+	};
+	
+	_assign(ReactServerRenderingTransaction.prototype, Transaction.Mixin, Mixin);
+	
+	PooledClass.addPoolingTo(ReactServerRenderingTransaction);
+	
+	module.exports = ReactServerRenderingTransaction;
+
+/***/ },
+/* 129 */
 /*!********************************************!*\
   !*** ./~/react/~/fbjs/lib/shallowEqual.js ***!
   \********************************************/
@@ -15578,7 +16360,7 @@
 	module.exports = shallowEqual;
 
 /***/ },
-/* 126 */
+/* 130 */
 /*!*******************************************!*\
   !*** ./~/react/lib/validateDOMNesting.js ***!
   \*******************************************/
@@ -15956,7 +16738,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 127 */
+/* 131 */
 /*!***********************************************!*\
   !*** ./~/react/lib/ReactDOMEmptyComponent.js ***!
   \***********************************************/
@@ -15977,8 +16759,8 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 4);
 	
-	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 75);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
+	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 78);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
 	
 	var ReactDOMEmptyComponent = function ReactDOMEmptyComponent(instantiate) {
 	  // ReactCompositeComponent uses this:
@@ -16024,7 +16806,7 @@
 	module.exports = ReactDOMEmptyComponent;
 
 /***/ },
-/* 128 */
+/* 132 */
 /*!**********************************************!*\
   !*** ./~/react/lib/ReactDOMTreeTraversal.js ***!
   \**********************************************/
@@ -16167,7 +16949,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 129 */
+/* 133 */
 /*!**********************************************!*\
   !*** ./~/react/lib/ReactDOMTextComponent.js ***!
   \**********************************************/
@@ -16188,14 +16970,14 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 4);
 	
-	var DOMChildrenOperations = __webpack_require__(/*! ./DOMChildrenOperations */ 74);
-	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 75);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var ReactPerf = __webpack_require__(/*! ./ReactPerf */ 58);
+	var DOMChildrenOperations = __webpack_require__(/*! ./DOMChildrenOperations */ 77);
+	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 78);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 18);
 	
-	var escapeTextContentForBrowser = __webpack_require__(/*! ./escapeTextContentForBrowser */ 78);
+	var escapeTextContentForBrowser = __webpack_require__(/*! ./escapeTextContentForBrowser */ 82);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
-	var validateDOMNesting = __webpack_require__(/*! ./validateDOMNesting */ 126);
+	var validateDOMNesting = __webpack_require__(/*! ./validateDOMNesting */ 130);
 	
 	/**
 	 * Text nodes violate a couple assumptions that React makes about components:
@@ -16239,6 +17021,8 @@
 	   */
 	  mountComponent: function mountComponent(transaction, nativeParent, nativeContainerInfo, context) {
 	    if (process.env.NODE_ENV !== 'production') {
+	      ReactInstrumentation.debugTool.onSetText(this._debugID, this._stringText);
+	
 	      var parentInfo;
 	      if (nativeParent != null) {
 	        parentInfo = nativeParent._ancestorInfo;
@@ -16302,6 +17086,10 @@
 	        this._stringText = nextStringText;
 	        var commentNodes = this.getNativeNode();
 	        DOMChildrenOperations.replaceDelimitedText(commentNodes[0], commentNodes[1], nextStringText);
+	
+	        if (process.env.NODE_ENV !== 'production') {
+	          ReactInstrumentation.debugTool.onSetText(this._debugID, nextStringText);
+	        }
 	      }
 	    }
 	  },
@@ -16336,16 +17124,11 @@
 	
 	});
 	
-	ReactPerf.measureMethods(ReactDOMTextComponent.prototype, 'ReactDOMTextComponent', {
-	  mountComponent: 'mountComponent',
-	  receiveComponent: 'receiveComponent'
-	});
-	
 	module.exports = ReactDOMTextComponent;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 130 */
+/* 134 */
 /*!*****************************************************!*\
   !*** ./~/react/lib/ReactDefaultBatchingStrategy.js ***!
   \*****************************************************/
@@ -16366,8 +17149,8 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 4);
 	
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 55);
-	var Transaction = __webpack_require__(/*! ./Transaction */ 62);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 59);
+	var Transaction = __webpack_require__(/*! ./Transaction */ 65);
 	
 	var emptyFunction = __webpack_require__(/*! fbjs/lib/emptyFunction */ 11);
 	
@@ -16421,7 +17204,7 @@
 	module.exports = ReactDefaultBatchingStrategy;
 
 /***/ },
-/* 131 */
+/* 135 */
 /*!*******************************************!*\
   !*** ./~/react/lib/ReactEventListener.js ***!
   \*******************************************/
@@ -16442,14 +17225,14 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 4);
 	
-	var EventListener = __webpack_require__(/*! fbjs/lib/EventListener */ 132);
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 48);
+	var EventListener = __webpack_require__(/*! fbjs/lib/EventListener */ 136);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 20);
 	var PooledClass = __webpack_require__(/*! ./PooledClass */ 6);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 55);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 59);
 	
-	var getEventTarget = __webpack_require__(/*! ./getEventTarget */ 63);
-	var getUnboundedScrollPosition = __webpack_require__(/*! fbjs/lib/getUnboundedScrollPosition */ 133);
+	var getEventTarget = __webpack_require__(/*! ./getEventTarget */ 66);
+	var getUnboundedScrollPosition = __webpack_require__(/*! fbjs/lib/getUnboundedScrollPosition */ 137);
 	
 	/**
 	 * Find the deepest React component completely containing the root of the
@@ -16586,7 +17369,7 @@
 	module.exports = ReactEventListener;
 
 /***/ },
-/* 132 */
+/* 136 */
 /*!*********************************************!*\
   !*** ./~/react/~/fbjs/lib/EventListener.js ***!
   \*********************************************/
@@ -16678,7 +17461,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 133 */
+/* 137 */
 /*!**********************************************************!*\
   !*** ./~/react/~/fbjs/lib/getUnboundedScrollPosition.js ***!
   \**********************************************************/
@@ -16724,7 +17507,7 @@
 	module.exports = getUnboundedScrollPosition;
 
 /***/ },
-/* 134 */
+/* 138 */
 /*!***************************************!*\
   !*** ./~/react/lib/ReactInjection.js ***!
   \***************************************/
@@ -16743,16 +17526,15 @@
 	
 	'use strict';
 	
-	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 36);
-	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 42);
-	var EventPluginUtils = __webpack_require__(/*! ./EventPluginUtils */ 44);
-	var ReactComponentEnvironment = __webpack_require__(/*! ./ReactComponentEnvironment */ 114);
-	var ReactClass = __webpack_require__(/*! ./ReactClass */ 22);
-	var ReactEmptyComponent = __webpack_require__(/*! ./ReactEmptyComponent */ 122);
-	var ReactBrowserEventEmitter = __webpack_require__(/*! ./ReactBrowserEventEmitter */ 103);
-	var ReactNativeComponent = __webpack_require__(/*! ./ReactNativeComponent */ 123);
-	var ReactPerf = __webpack_require__(/*! ./ReactPerf */ 58);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 55);
+	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 41);
+	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 47);
+	var EventPluginUtils = __webpack_require__(/*! ./EventPluginUtils */ 49);
+	var ReactComponentEnvironment = __webpack_require__(/*! ./ReactComponentEnvironment */ 117);
+	var ReactClass = __webpack_require__(/*! ./ReactClass */ 27);
+	var ReactEmptyComponent = __webpack_require__(/*! ./ReactEmptyComponent */ 125);
+	var ReactBrowserEventEmitter = __webpack_require__(/*! ./ReactBrowserEventEmitter */ 106);
+	var ReactNativeComponent = __webpack_require__(/*! ./ReactNativeComponent */ 126);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 59);
 	
 	var ReactInjection = {
 	  Component: ReactComponentEnvironment.injection,
@@ -16763,14 +17545,13 @@
 	  EventPluginUtils: EventPluginUtils.injection,
 	  EventEmitter: ReactBrowserEventEmitter.injection,
 	  NativeComponent: ReactNativeComponent.injection,
-	  Perf: ReactPerf.injection,
 	  Updates: ReactUpdates.injection
 	};
 	
 	module.exports = ReactInjection;
 
 /***/ },
-/* 135 */
+/* 139 */
 /*!**************************************************!*\
   !*** ./~/react/lib/ReactReconcileTransaction.js ***!
   \**************************************************/
@@ -16791,11 +17572,11 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 4);
 	
-	var CallbackQueue = __webpack_require__(/*! ./CallbackQueue */ 56);
+	var CallbackQueue = __webpack_require__(/*! ./CallbackQueue */ 60);
 	var PooledClass = __webpack_require__(/*! ./PooledClass */ 6);
-	var ReactBrowserEventEmitter = __webpack_require__(/*! ./ReactBrowserEventEmitter */ 103);
-	var ReactInputSelection = __webpack_require__(/*! ./ReactInputSelection */ 136);
-	var Transaction = __webpack_require__(/*! ./Transaction */ 62);
+	var ReactBrowserEventEmitter = __webpack_require__(/*! ./ReactBrowserEventEmitter */ 106);
+	var ReactInputSelection = __webpack_require__(/*! ./ReactInputSelection */ 140);
+	var Transaction = __webpack_require__(/*! ./Transaction */ 65);
 	
 	/**
 	 * Ensures that, when possible, the selection range (currently selected text
@@ -16940,7 +17721,7 @@
 	module.exports = ReactReconcileTransaction;
 
 /***/ },
-/* 136 */
+/* 140 */
 /*!********************************************!*\
   !*** ./~/react/lib/ReactInputSelection.js ***!
   \********************************************/
@@ -16959,11 +17740,11 @@
 	
 	'use strict';
 	
-	var ReactDOMSelection = __webpack_require__(/*! ./ReactDOMSelection */ 137);
+	var ReactDOMSelection = __webpack_require__(/*! ./ReactDOMSelection */ 141);
 	
-	var containsNode = __webpack_require__(/*! fbjs/lib/containsNode */ 139);
-	var focusNode = __webpack_require__(/*! fbjs/lib/focusNode */ 88);
-	var getActiveElement = __webpack_require__(/*! fbjs/lib/getActiveElement */ 142);
+	var containsNode = __webpack_require__(/*! fbjs/lib/containsNode */ 143);
+	var focusNode = __webpack_require__(/*! fbjs/lib/focusNode */ 92);
+	var getActiveElement = __webpack_require__(/*! fbjs/lib/getActiveElement */ 146);
 	
 	function isInDocument(node) {
 	  return containsNode(document.documentElement, node);
@@ -17072,7 +17853,7 @@
 	module.exports = ReactInputSelection;
 
 /***/ },
-/* 137 */
+/* 141 */
 /*!******************************************!*\
   !*** ./~/react/lib/ReactDOMSelection.js ***!
   \******************************************/
@@ -17091,10 +17872,10 @@
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 48);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 20);
 	
-	var getNodeForCharacterOffset = __webpack_require__(/*! ./getNodeForCharacterOffset */ 138);
-	var getTextContentAccessor = __webpack_require__(/*! ./getTextContentAccessor */ 50);
+	var getNodeForCharacterOffset = __webpack_require__(/*! ./getNodeForCharacterOffset */ 142);
+	var getTextContentAccessor = __webpack_require__(/*! ./getTextContentAccessor */ 54);
 	
 	/**
 	 * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -17292,7 +18073,7 @@
 	module.exports = ReactDOMSelection;
 
 /***/ },
-/* 138 */
+/* 142 */
 /*!**************************************************!*\
   !*** ./~/react/lib/getNodeForCharacterOffset.js ***!
   \**************************************************/
@@ -17374,7 +18155,7 @@
 	module.exports = getNodeForCharacterOffset;
 
 /***/ },
-/* 139 */
+/* 143 */
 /*!********************************************!*\
   !*** ./~/react/~/fbjs/lib/containsNode.js ***!
   \********************************************/
@@ -17390,19 +18171,15 @@
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
-	 * @typechecks
+	 * 
 	 */
 	
-	var isTextNode = __webpack_require__(/*! ./isTextNode */ 140);
+	var isTextNode = __webpack_require__(/*! ./isTextNode */ 144);
 	
 	/*eslint-disable no-bitwise */
 	
 	/**
 	 * Checks if a given DOM node contains or is another DOM node.
-	 *
-	 * @param {?DOMNode} outerNode Outer DOM node.
-	 * @param {?DOMNode} innerNode Inner DOM node.
-	 * @return {boolean} True if `outerNode` contains or is `innerNode`.
 	 */
 	function containsNode(outerNode, innerNode) {
 	  if (!outerNode || !innerNode) {
@@ -17413,7 +18190,7 @@
 	    return false;
 	  } else if (isTextNode(innerNode)) {
 	    return containsNode(outerNode, innerNode.parentNode);
-	  } else if (outerNode.contains) {
+	  } else if ('contains' in outerNode) {
 	    return outerNode.contains(innerNode);
 	  } else if (outerNode.compareDocumentPosition) {
 	    return !!(outerNode.compareDocumentPosition(innerNode) & 16);
@@ -17425,7 +18202,7 @@
 	module.exports = containsNode;
 
 /***/ },
-/* 140 */
+/* 144 */
 /*!******************************************!*\
   !*** ./~/react/~/fbjs/lib/isTextNode.js ***!
   \******************************************/
@@ -17444,7 +18221,7 @@
 	 * @typechecks
 	 */
 	
-	var isNode = __webpack_require__(/*! ./isNode */ 141);
+	var isNode = __webpack_require__(/*! ./isNode */ 145);
 	
 	/**
 	 * @param {*} object The object to check.
@@ -17457,7 +18234,7 @@
 	module.exports = isTextNode;
 
 /***/ },
-/* 141 */
+/* 145 */
 /*!**************************************!*\
   !*** ./~/react/~/fbjs/lib/isNode.js ***!
   \**************************************/
@@ -17490,7 +18267,7 @@
 	module.exports = isNode;
 
 /***/ },
-/* 142 */
+/* 146 */
 /*!************************************************!*\
   !*** ./~/react/~/fbjs/lib/getActiveElement.js ***!
   \************************************************/
@@ -17533,7 +18310,7 @@
 	module.exports = getActiveElement;
 
 /***/ },
-/* 143 */
+/* 147 */
 /*!*********************************************!*\
   !*** ./~/react/lib/SVGDOMPropertyConfig.js ***!
   \*********************************************/
@@ -17841,7 +18618,7 @@
 	module.exports = SVGDOMPropertyConfig;
 
 /***/ },
-/* 144 */
+/* 148 */
 /*!******************************************!*\
   !*** ./~/react/lib/SelectEventPlugin.js ***!
   \******************************************/
@@ -17860,17 +18637,17 @@
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 40);
-	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 41);
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 48);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var ReactInputSelection = __webpack_require__(/*! ./ReactInputSelection */ 136);
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 52);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 45);
+	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 46);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 20);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var ReactInputSelection = __webpack_require__(/*! ./ReactInputSelection */ 140);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 56);
 	
-	var getActiveElement = __webpack_require__(/*! fbjs/lib/getActiveElement */ 142);
-	var isTextInputElement = __webpack_require__(/*! ./isTextInputElement */ 65);
-	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 26);
-	var shallowEqual = __webpack_require__(/*! fbjs/lib/shallowEqual */ 125);
+	var getActiveElement = __webpack_require__(/*! fbjs/lib/getActiveElement */ 146);
+	var isTextInputElement = __webpack_require__(/*! ./isTextInputElement */ 68);
+	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 31);
+	var shallowEqual = __webpack_require__(/*! fbjs/lib/shallowEqual */ 129);
 	
 	var topLevelTypes = EventConstants.topLevelTypes;
 	
@@ -18045,7 +18822,7 @@
 	module.exports = SelectEventPlugin;
 
 /***/ },
-/* 145 */
+/* 149 */
 /*!******************************************!*\
   !*** ./~/react/lib/SimpleEventPlugin.js ***!
   \******************************************/
@@ -18064,26 +18841,26 @@
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 40);
-	var EventListener = __webpack_require__(/*! fbjs/lib/EventListener */ 132);
-	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 41);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var SyntheticAnimationEvent = __webpack_require__(/*! ./SyntheticAnimationEvent */ 146);
-	var SyntheticClipboardEvent = __webpack_require__(/*! ./SyntheticClipboardEvent */ 147);
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 52);
-	var SyntheticFocusEvent = __webpack_require__(/*! ./SyntheticFocusEvent */ 148);
-	var SyntheticKeyboardEvent = __webpack_require__(/*! ./SyntheticKeyboardEvent */ 149);
-	var SyntheticMouseEvent = __webpack_require__(/*! ./SyntheticMouseEvent */ 68);
-	var SyntheticDragEvent = __webpack_require__(/*! ./SyntheticDragEvent */ 152);
-	var SyntheticTouchEvent = __webpack_require__(/*! ./SyntheticTouchEvent */ 153);
-	var SyntheticTransitionEvent = __webpack_require__(/*! ./SyntheticTransitionEvent */ 154);
-	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 69);
-	var SyntheticWheelEvent = __webpack_require__(/*! ./SyntheticWheelEvent */ 155);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 45);
+	var EventListener = __webpack_require__(/*! fbjs/lib/EventListener */ 136);
+	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 46);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var SyntheticAnimationEvent = __webpack_require__(/*! ./SyntheticAnimationEvent */ 150);
+	var SyntheticClipboardEvent = __webpack_require__(/*! ./SyntheticClipboardEvent */ 151);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 56);
+	var SyntheticFocusEvent = __webpack_require__(/*! ./SyntheticFocusEvent */ 152);
+	var SyntheticKeyboardEvent = __webpack_require__(/*! ./SyntheticKeyboardEvent */ 153);
+	var SyntheticMouseEvent = __webpack_require__(/*! ./SyntheticMouseEvent */ 71);
+	var SyntheticDragEvent = __webpack_require__(/*! ./SyntheticDragEvent */ 156);
+	var SyntheticTouchEvent = __webpack_require__(/*! ./SyntheticTouchEvent */ 157);
+	var SyntheticTransitionEvent = __webpack_require__(/*! ./SyntheticTransitionEvent */ 158);
+	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 72);
+	var SyntheticWheelEvent = __webpack_require__(/*! ./SyntheticWheelEvent */ 159);
 	
 	var emptyFunction = __webpack_require__(/*! fbjs/lib/emptyFunction */ 11);
-	var getEventCharCode = __webpack_require__(/*! ./getEventCharCode */ 150);
+	var getEventCharCode = __webpack_require__(/*! ./getEventCharCode */ 154);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
-	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 26);
+	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 31);
 	
 	var topLevelTypes = EventConstants.topLevelTypes;
 	
@@ -18681,7 +19458,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 146 */
+/* 150 */
 /*!************************************************!*\
   !*** ./~/react/lib/SyntheticAnimationEvent.js ***!
   \************************************************/
@@ -18700,7 +19477,7 @@
 	
 	'use strict';
 	
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 52);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 56);
 	
 	/**
 	 * @interface Event
@@ -18728,7 +19505,7 @@
 	module.exports = SyntheticAnimationEvent;
 
 /***/ },
-/* 147 */
+/* 151 */
 /*!************************************************!*\
   !*** ./~/react/lib/SyntheticClipboardEvent.js ***!
   \************************************************/
@@ -18747,7 +19524,7 @@
 	
 	'use strict';
 	
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 52);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 56);
 	
 	/**
 	 * @interface Event
@@ -18774,7 +19551,7 @@
 	module.exports = SyntheticClipboardEvent;
 
 /***/ },
-/* 148 */
+/* 152 */
 /*!********************************************!*\
   !*** ./~/react/lib/SyntheticFocusEvent.js ***!
   \********************************************/
@@ -18793,7 +19570,7 @@
 	
 	'use strict';
 	
-	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 69);
+	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 72);
 	
 	/**
 	 * @interface FocusEvent
@@ -18818,7 +19595,7 @@
 	module.exports = SyntheticFocusEvent;
 
 /***/ },
-/* 149 */
+/* 153 */
 /*!***********************************************!*\
   !*** ./~/react/lib/SyntheticKeyboardEvent.js ***!
   \***********************************************/
@@ -18837,11 +19614,11 @@
 	
 	'use strict';
 	
-	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 69);
+	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 72);
 	
-	var getEventCharCode = __webpack_require__(/*! ./getEventCharCode */ 150);
-	var getEventKey = __webpack_require__(/*! ./getEventKey */ 151);
-	var getEventModifierState = __webpack_require__(/*! ./getEventModifierState */ 71);
+	var getEventCharCode = __webpack_require__(/*! ./getEventCharCode */ 154);
+	var getEventKey = __webpack_require__(/*! ./getEventKey */ 155);
+	var getEventModifierState = __webpack_require__(/*! ./getEventModifierState */ 74);
 	
 	/**
 	 * @interface KeyboardEvent
@@ -18910,7 +19687,7 @@
 	module.exports = SyntheticKeyboardEvent;
 
 /***/ },
-/* 150 */
+/* 154 */
 /*!*****************************************!*\
   !*** ./~/react/lib/getEventCharCode.js ***!
   \*****************************************/
@@ -18968,7 +19745,7 @@
 	module.exports = getEventCharCode;
 
 /***/ },
-/* 151 */
+/* 155 */
 /*!************************************!*\
   !*** ./~/react/lib/getEventKey.js ***!
   \************************************/
@@ -18987,7 +19764,7 @@
 	
 	'use strict';
 	
-	var getEventCharCode = __webpack_require__(/*! ./getEventCharCode */ 150);
+	var getEventCharCode = __webpack_require__(/*! ./getEventCharCode */ 154);
 	
 	/**
 	 * Normalization of deprecated HTML5 `key` values
@@ -19078,7 +19855,7 @@
 	module.exports = getEventKey;
 
 /***/ },
-/* 152 */
+/* 156 */
 /*!*******************************************!*\
   !*** ./~/react/lib/SyntheticDragEvent.js ***!
   \*******************************************/
@@ -19097,7 +19874,7 @@
 	
 	'use strict';
 	
-	var SyntheticMouseEvent = __webpack_require__(/*! ./SyntheticMouseEvent */ 68);
+	var SyntheticMouseEvent = __webpack_require__(/*! ./SyntheticMouseEvent */ 71);
 	
 	/**
 	 * @interface DragEvent
@@ -19122,7 +19899,7 @@
 	module.exports = SyntheticDragEvent;
 
 /***/ },
-/* 153 */
+/* 157 */
 /*!********************************************!*\
   !*** ./~/react/lib/SyntheticTouchEvent.js ***!
   \********************************************/
@@ -19141,9 +19918,9 @@
 	
 	'use strict';
 	
-	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 69);
+	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 72);
 	
-	var getEventModifierState = __webpack_require__(/*! ./getEventModifierState */ 71);
+	var getEventModifierState = __webpack_require__(/*! ./getEventModifierState */ 74);
 	
 	/**
 	 * @interface TouchEvent
@@ -19175,7 +19952,7 @@
 	module.exports = SyntheticTouchEvent;
 
 /***/ },
-/* 154 */
+/* 158 */
 /*!*************************************************!*\
   !*** ./~/react/lib/SyntheticTransitionEvent.js ***!
   \*************************************************/
@@ -19194,7 +19971,7 @@
 	
 	'use strict';
 	
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 52);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 56);
 	
 	/**
 	 * @interface Event
@@ -19222,7 +19999,7 @@
 	module.exports = SyntheticTransitionEvent;
 
 /***/ },
-/* 155 */
+/* 159 */
 /*!********************************************!*\
   !*** ./~/react/lib/SyntheticWheelEvent.js ***!
   \********************************************/
@@ -19241,7 +20018,7 @@
 	
 	'use strict';
 	
-	var SyntheticMouseEvent = __webpack_require__(/*! ./SyntheticMouseEvent */ 68);
+	var SyntheticMouseEvent = __webpack_require__(/*! ./SyntheticMouseEvent */ 71);
 	
 	/**
 	 * @interface WheelEvent
@@ -19284,552 +20061,7 @@
 	module.exports = SyntheticWheelEvent;
 
 /***/ },
-/* 156 */
-/*!*****************************************!*\
-  !*** ./~/react/lib/ReactDefaultPerf.js ***!
-  \*****************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactDefaultPerf
-	 */
-	
-	'use strict';
-	
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
-	
-	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 36);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var ReactDefaultPerfAnalysis = __webpack_require__(/*! ./ReactDefaultPerfAnalysis */ 157);
-	var ReactMount = __webpack_require__(/*! ./ReactMount */ 158);
-	var ReactPerf = __webpack_require__(/*! ./ReactPerf */ 58);
-	
-	var performanceNow = __webpack_require__(/*! fbjs/lib/performanceNow */ 163);
-	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
-	
-	function roundFloat(val) {
-	  return Math.floor(val * 100) / 100;
-	}
-	
-	function addValue(obj, key, val) {
-	  obj[key] = (obj[key] || 0) + val;
-	}
-	
-	// Composite/text components don't have any built-in ID: we have to make our own
-	var compositeIDMap;
-	var compositeIDCounter = 17000;
-	function getIDOfComposite(inst) {
-	  if (!compositeIDMap) {
-	    compositeIDMap = new WeakMap();
-	  }
-	  if (compositeIDMap.has(inst)) {
-	    return compositeIDMap.get(inst);
-	  } else {
-	    var id = compositeIDCounter++;
-	    compositeIDMap.set(inst, id);
-	    return id;
-	  }
-	}
-	
-	function getID(inst) {
-	  if (inst.hasOwnProperty('_rootNodeID')) {
-	    return inst._rootNodeID;
-	  } else {
-	    return getIDOfComposite(inst);
-	  }
-	}
-	
-	function stripComplexValues(key, value) {
-	  if ((typeof value === 'undefined' ? 'undefined' : _typeof(value)) !== 'object' || Array.isArray(value) || value == null) {
-	    return value;
-	  }
-	  var prototype = Object.getPrototypeOf(value);
-	  if (!prototype || prototype === Object.prototype) {
-	    return value;
-	  }
-	  return '<not serializable>';
-	}
-	
-	// This implementation of ReactPerf is going away some time mid 15.x.
-	// While we plan to keep most of the API, the actual format of measurements
-	// will change dramatically. To signal this, we wrap them into an opaque-ish
-	// object to discourage reaching into it until the API stabilizes.
-	function wrapLegacyMeasurements(measurements) {
-	  return { __unstable_this_format_will_change: measurements };
-	}
-	function unwrapLegacyMeasurements(measurements) {
-	  return measurements && measurements.__unstable_this_format_will_change || measurements;
-	}
-	
-	var warnedAboutPrintDOM = false;
-	var warnedAboutGetMeasurementsSummaryMap = false;
-	
-	var ReactDefaultPerf = {
-	  _allMeasurements: [], // last item in the list is the current one
-	  _mountStack: [0],
-	  _compositeStack: [],
-	  _injected: false,
-	
-	  start: function start() {
-	    if (!ReactDefaultPerf._injected) {
-	      ReactPerf.injection.injectMeasure(ReactDefaultPerf.measure);
-	    }
-	
-	    ReactDefaultPerf._allMeasurements.length = 0;
-	    ReactPerf.enableMeasure = true;
-	  },
-	
-	  stop: function stop() {
-	    ReactPerf.enableMeasure = false;
-	  },
-	
-	  getLastMeasurements: function getLastMeasurements() {
-	    return wrapLegacyMeasurements(ReactDefaultPerf._allMeasurements);
-	  },
-	
-	  printExclusive: function printExclusive(measurements) {
-	    measurements = unwrapLegacyMeasurements(measurements || ReactDefaultPerf._allMeasurements);
-	    var summary = ReactDefaultPerfAnalysis.getExclusiveSummary(measurements);
-	    console.table(summary.map(function (item) {
-	      return {
-	        'Component class name': item.componentName,
-	        'Total inclusive time (ms)': roundFloat(item.inclusive),
-	        'Exclusive mount time (ms)': roundFloat(item.exclusive),
-	        'Exclusive render time (ms)': roundFloat(item.render),
-	        'Mount time per instance (ms)': roundFloat(item.exclusive / item.count),
-	        'Render time per instance (ms)': roundFloat(item.render / item.count),
-	        'Instances': item.count
-	      };
-	    }));
-	    // TODO: ReactDefaultPerfAnalysis.getTotalTime() does not return the correct
-	    // number.
-	  },
-	
-	  printInclusive: function printInclusive(measurements) {
-	    measurements = unwrapLegacyMeasurements(measurements || ReactDefaultPerf._allMeasurements);
-	    var summary = ReactDefaultPerfAnalysis.getInclusiveSummary(measurements);
-	    console.table(summary.map(function (item) {
-	      return {
-	        'Owner > component': item.componentName,
-	        'Inclusive time (ms)': roundFloat(item.time),
-	        'Instances': item.count
-	      };
-	    }));
-	    console.log('Total time:', ReactDefaultPerfAnalysis.getTotalTime(measurements).toFixed(2) + ' ms');
-	  },
-	
-	  getMeasurementsSummaryMap: function getMeasurementsSummaryMap(measurements) {
-	    process.env.NODE_ENV !== 'production' ? warning(warnedAboutGetMeasurementsSummaryMap, '`ReactPerf.getMeasurementsSummaryMap(...)` is deprecated. Use ' + '`ReactPerf.getWasted(...)` instead.') : void 0;
-	    warnedAboutGetMeasurementsSummaryMap = true;
-	    return ReactDefaultPerf.getWasted(measurements);
-	  },
-	
-	  getWasted: function getWasted(measurements) {
-	    measurements = unwrapLegacyMeasurements(measurements);
-	    var summary = ReactDefaultPerfAnalysis.getInclusiveSummary(measurements, true);
-	    return summary.map(function (item) {
-	      return {
-	        'Owner > component': item.componentName,
-	        'Wasted time (ms)': item.time,
-	        'Instances': item.count
-	      };
-	    });
-	  },
-	
-	  printWasted: function printWasted(measurements) {
-	    measurements = unwrapLegacyMeasurements(measurements || ReactDefaultPerf._allMeasurements);
-	    console.table(ReactDefaultPerf.getWasted(measurements));
-	    console.log('Total time:', ReactDefaultPerfAnalysis.getTotalTime(measurements).toFixed(2) + ' ms');
-	  },
-	
-	  printDOM: function printDOM(measurements) {
-	    process.env.NODE_ENV !== 'production' ? warning(warnedAboutPrintDOM, '`ReactPerf.printDOM(...)` is deprecated. Use ' + '`ReactPerf.printOperations(...)` instead.') : void 0;
-	    warnedAboutPrintDOM = true;
-	    return ReactDefaultPerf.printOperations(measurements);
-	  },
-	
-	  printOperations: function printOperations(measurements) {
-	    measurements = unwrapLegacyMeasurements(measurements || ReactDefaultPerf._allMeasurements);
-	    var summary = ReactDefaultPerfAnalysis.getDOMSummary(measurements);
-	    console.table(summary.map(function (item) {
-	      var result = {};
-	      result[DOMProperty.ID_ATTRIBUTE_NAME] = item.id;
-	      result.type = item.type;
-	      result.args = JSON.stringify(item.args, stripComplexValues);
-	      return result;
-	    }));
-	    console.log('Total time:', ReactDefaultPerfAnalysis.getTotalTime(measurements).toFixed(2) + ' ms');
-	  },
-	
-	  _recordWrite: function _recordWrite(id, fnName, totalTime, args) {
-	    // TODO: totalTime isn't that useful since it doesn't count paints/reflows
-	    var entry = ReactDefaultPerf._allMeasurements[ReactDefaultPerf._allMeasurements.length - 1];
-	    var writes = entry.writes;
-	    writes[id] = writes[id] || [];
-	    writes[id].push({
-	      type: fnName,
-	      time: totalTime,
-	      args: args
-	    });
-	  },
-	
-	  measure: function measure(moduleName, fnName, func) {
-	    return function () {
-	      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	        args[_key] = arguments[_key];
-	      }
-	
-	      var totalTime;
-	      var rv;
-	      var start;
-	
-	      var entry = ReactDefaultPerf._allMeasurements[ReactDefaultPerf._allMeasurements.length - 1];
-	
-	      if (fnName === '_renderNewRootComponent' || fnName === 'flushBatchedUpdates') {
-	        // A "measurement" is a set of metrics recorded for each flush. We want
-	        // to group the metrics for a given flush together so we can look at the
-	        // components that rendered and the DOM operations that actually
-	        // happened to determine the amount of "wasted work" performed.
-	        ReactDefaultPerf._allMeasurements.push(entry = {
-	          exclusive: {},
-	          inclusive: {},
-	          render: {},
-	          counts: {},
-	          writes: {},
-	          displayNames: {},
-	          hierarchy: {},
-	          totalTime: 0,
-	          created: {}
-	        });
-	        start = performanceNow();
-	        rv = func.apply(this, args);
-	        entry.totalTime = performanceNow() - start;
-	        return rv;
-	      } else if (fnName === '_mountImageIntoNode' || moduleName === 'ReactDOMIDOperations' || moduleName === 'CSSPropertyOperations' || moduleName === 'DOMChildrenOperations' || moduleName === 'DOMPropertyOperations' || moduleName === 'ReactComponentBrowserEnvironment') {
-	        start = performanceNow();
-	        rv = func.apply(this, args);
-	        totalTime = performanceNow() - start;
-	
-	        if (fnName === '_mountImageIntoNode') {
-	          ReactDefaultPerf._recordWrite('', fnName, totalTime, args[0]);
-	        } else if (fnName === 'dangerouslyProcessChildrenUpdates') {
-	          // special format
-	          args[1].forEach(function (update) {
-	            var writeArgs = {};
-	            if (update.fromIndex !== null) {
-	              writeArgs.fromIndex = update.fromIndex;
-	            }
-	            if (update.toIndex !== null) {
-	              writeArgs.toIndex = update.toIndex;
-	            }
-	            if (update.content !== null) {
-	              writeArgs.content = update.content;
-	            }
-	            ReactDefaultPerf._recordWrite(args[0]._rootNodeID, update.type, totalTime, writeArgs);
-	          });
-	        } else {
-	          // basic format
-	          var id = args[0];
-	          if (moduleName === 'EventPluginHub') {
-	            id = id._rootNodeID;
-	          } else if (fnName === 'replaceNodeWithMarkup') {
-	            // Old node is already unmounted; can't get its instance
-	            id = ReactDOMComponentTree.getInstanceFromNode(args[1].node)._rootNodeID;
-	          } else if (fnName === 'replaceDelimitedText') {
-	            id = getID(ReactDOMComponentTree.getInstanceFromNode(args[0]));
-	          } else if ((typeof id === 'undefined' ? 'undefined' : _typeof(id)) === 'object') {
-	            id = getID(ReactDOMComponentTree.getInstanceFromNode(args[0]));
-	          }
-	          ReactDefaultPerf._recordWrite(id, fnName, totalTime, Array.prototype.slice.call(args, 1));
-	        }
-	        return rv;
-	      } else if (moduleName === 'ReactCompositeComponent' && (fnName === 'mountComponent' || fnName === 'updateComponent' || // TODO: receiveComponent()?
-	      fnName === '_renderValidatedComponent')) {
-	
-	        if (this._currentElement.type === ReactMount.TopLevelWrapper) {
-	          return func.apply(this, args);
-	        }
-	
-	        var rootNodeID = getIDOfComposite(this);
-	        var isRender = fnName === '_renderValidatedComponent';
-	        var isMount = fnName === 'mountComponent';
-	
-	        var mountStack = ReactDefaultPerf._mountStack;
-	
-	        if (isRender) {
-	          addValue(entry.counts, rootNodeID, 1);
-	        } else if (isMount) {
-	          entry.created[rootNodeID] = true;
-	          mountStack.push(0);
-	        }
-	
-	        ReactDefaultPerf._compositeStack.push(rootNodeID);
-	
-	        start = performanceNow();
-	        rv = func.apply(this, args);
-	        totalTime = performanceNow() - start;
-	
-	        ReactDefaultPerf._compositeStack.pop();
-	
-	        if (isRender) {
-	          addValue(entry.render, rootNodeID, totalTime);
-	        } else if (isMount) {
-	          var subMountTime = mountStack.pop();
-	          mountStack[mountStack.length - 1] += totalTime;
-	          addValue(entry.exclusive, rootNodeID, totalTime - subMountTime);
-	          addValue(entry.inclusive, rootNodeID, totalTime);
-	        } else {
-	          addValue(entry.inclusive, rootNodeID, totalTime);
-	        }
-	
-	        entry.displayNames[rootNodeID] = {
-	          current: this.getName(),
-	          owner: this._currentElement._owner ? this._currentElement._owner.getName() : '<root>'
-	        };
-	
-	        return rv;
-	      } else if ((moduleName === 'ReactDOMComponent' || moduleName === 'ReactDOMTextComponent') && (fnName === 'mountComponent' || fnName === 'receiveComponent')) {
-	
-	        rv = func.apply(this, args);
-	        entry.hierarchy[getID(this)] = ReactDefaultPerf._compositeStack.slice();
-	        return rv;
-	      } else {
-	        return func.apply(this, args);
-	      }
-	    };
-	  }
-	};
-	
-	module.exports = ReactDefaultPerf;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
-
-/***/ },
-/* 157 */
-/*!*************************************************!*\
-  !*** ./~/react/lib/ReactDefaultPerfAnalysis.js ***!
-  \*************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule ReactDefaultPerfAnalysis
-	 */
-	
-	'use strict';
-	
-	// Don't try to save users less than 1.2ms (a number I made up)
-	
-	var _assign = __webpack_require__(/*! object-assign */ 4);
-	
-	var DONT_CARE_THRESHOLD = 1.2;
-	var DOM_OPERATION_TYPES = {
-	  '_mountImageIntoNode': 'set innerHTML',
-	  INSERT_MARKUP: 'set innerHTML',
-	  MOVE_EXISTING: 'move',
-	  REMOVE_NODE: 'remove',
-	  SET_MARKUP: 'set innerHTML',
-	  TEXT_CONTENT: 'set textContent',
-	  'setValueForProperty': 'update attribute',
-	  'setValueForAttribute': 'update attribute',
-	  'deleteValueForProperty': 'remove attribute',
-	  'setValueForStyles': 'update styles',
-	  'replaceNodeWithMarkup': 'replace',
-	  'replaceDelimitedText': 'replace'
-	};
-	
-	function getTotalTime(measurements) {
-	  // TODO: return number of DOM ops? could be misleading.
-	  // TODO: measure dropped frames after reconcile?
-	  // TODO: log total time of each reconcile and the top-level component
-	  // class that triggered it.
-	  var totalTime = 0;
-	  for (var i = 0; i < measurements.length; i++) {
-	    var measurement = measurements[i];
-	    totalTime += measurement.totalTime;
-	  }
-	  return totalTime;
-	}
-	
-	function getDOMSummary(measurements) {
-	  var items = [];
-	  measurements.forEach(function (measurement) {
-	    Object.keys(measurement.writes).forEach(function (id) {
-	      measurement.writes[id].forEach(function (write) {
-	        items.push({
-	          id: id,
-	          type: DOM_OPERATION_TYPES[write.type] || write.type,
-	          args: write.args
-	        });
-	      });
-	    });
-	  });
-	  return items;
-	}
-	
-	function getExclusiveSummary(measurements) {
-	  var candidates = {};
-	  var displayName;
-	
-	  for (var i = 0; i < measurements.length; i++) {
-	    var measurement = measurements[i];
-	    var allIDs = _assign({}, measurement.exclusive, measurement.inclusive);
-	
-	    for (var id in allIDs) {
-	      displayName = measurement.displayNames[id].current;
-	
-	      candidates[displayName] = candidates[displayName] || {
-	        componentName: displayName,
-	        inclusive: 0,
-	        exclusive: 0,
-	        render: 0,
-	        count: 0
-	      };
-	      if (measurement.render[id]) {
-	        candidates[displayName].render += measurement.render[id];
-	      }
-	      if (measurement.exclusive[id]) {
-	        candidates[displayName].exclusive += measurement.exclusive[id];
-	      }
-	      if (measurement.inclusive[id]) {
-	        candidates[displayName].inclusive += measurement.inclusive[id];
-	      }
-	      if (measurement.counts[id]) {
-	        candidates[displayName].count += measurement.counts[id];
-	      }
-	    }
-	  }
-	
-	  // Now make a sorted array with the results.
-	  var arr = [];
-	  for (displayName in candidates) {
-	    if (candidates[displayName].exclusive >= DONT_CARE_THRESHOLD) {
-	      arr.push(candidates[displayName]);
-	    }
-	  }
-	
-	  arr.sort(function (a, b) {
-	    return b.exclusive - a.exclusive;
-	  });
-	
-	  return arr;
-	}
-	
-	function getInclusiveSummary(measurements, onlyClean) {
-	  var candidates = {};
-	  var inclusiveKey;
-	
-	  for (var i = 0; i < measurements.length; i++) {
-	    var measurement = measurements[i];
-	    var allIDs = _assign({}, measurement.exclusive, measurement.inclusive);
-	    var cleanComponents;
-	
-	    if (onlyClean) {
-	      cleanComponents = getUnchangedComponents(measurement);
-	    }
-	
-	    for (var id in allIDs) {
-	      if (onlyClean && !cleanComponents[id]) {
-	        continue;
-	      }
-	
-	      var displayName = measurement.displayNames[id];
-	
-	      // Inclusive time is not useful for many components without knowing where
-	      // they are instantiated. So we aggregate inclusive time with both the
-	      // owner and current displayName as the key.
-	      inclusiveKey = displayName.owner + ' > ' + displayName.current;
-	
-	      candidates[inclusiveKey] = candidates[inclusiveKey] || {
-	        componentName: inclusiveKey,
-	        time: 0,
-	        count: 0
-	      };
-	
-	      if (measurement.inclusive[id]) {
-	        candidates[inclusiveKey].time += measurement.inclusive[id];
-	      }
-	      if (measurement.counts[id]) {
-	        candidates[inclusiveKey].count += measurement.counts[id];
-	      }
-	    }
-	  }
-	
-	  // Now make a sorted array with the results.
-	  var arr = [];
-	  for (inclusiveKey in candidates) {
-	    if (candidates[inclusiveKey].time >= DONT_CARE_THRESHOLD) {
-	      arr.push(candidates[inclusiveKey]);
-	    }
-	  }
-	
-	  arr.sort(function (a, b) {
-	    return b.time - a.time;
-	  });
-	
-	  return arr;
-	}
-	
-	function getUnchangedComponents(measurement) {
-	  // For a given reconcile, look at which components did not actually
-	  // render anything to the DOM and return a mapping of their ID to
-	  // the amount of time it took to render the entire subtree.
-	  var cleanComponents = {};
-	  var writes = measurement.writes;
-	  var hierarchy = measurement.hierarchy;
-	  var dirtyComposites = {};
-	  Object.keys(writes).forEach(function (id) {
-	    writes[id].forEach(function (write) {
-	      // Root mounting (innerHTML set) is recorded with an ID of ''
-	      if (id !== '' && hierarchy.hasOwnProperty(id)) {
-	        hierarchy[id].forEach(function (c) {
-	          return dirtyComposites[c] = true;
-	        });
-	      }
-	    });
-	  });
-	  var allIDs = _assign({}, measurement.exclusive, measurement.inclusive);
-	
-	  for (var id in allIDs) {
-	    var isDirty = false;
-	    // See if any of the DOM operations applied to this component's subtree.
-	    if (dirtyComposites[id]) {
-	      isDirty = true;
-	    }
-	    // check if component newly created
-	    if (measurement.created[id]) {
-	      isDirty = true;
-	    }
-	    if (!isDirty && measurement.counts[id] > 0) {
-	      cleanComponents[id] = true;
-	    }
-	  }
-	  return cleanComponents;
-	}
-	
-	var ReactDefaultPerfAnalysis = {
-	  getExclusiveSummary: getExclusiveSummary,
-	  getInclusiveSummary: getInclusiveSummary,
-	  getDOMSummary: getDOMSummary,
-	  getTotalTime: getTotalTime
-	};
-	
-	module.exports = ReactDefaultPerfAnalysis;
-
-/***/ },
-/* 158 */
+/* 160 */
 /*!***********************************!*\
   !*** ./~/react/lib/ReactMount.js ***!
   \***********************************/
@@ -19848,27 +20080,26 @@
 	
 	'use strict';
 	
-	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 75);
-	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 36);
-	var ReactBrowserEventEmitter = __webpack_require__(/*! ./ReactBrowserEventEmitter */ 103);
+	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 78);
+	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 41);
+	var ReactBrowserEventEmitter = __webpack_require__(/*! ./ReactBrowserEventEmitter */ 106);
 	var ReactCurrentOwner = __webpack_require__(/*! ./ReactCurrentOwner */ 9);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var ReactDOMContainerInfo = __webpack_require__(/*! ./ReactDOMContainerInfo */ 159);
-	var ReactDOMFeatureFlags = __webpack_require__(/*! ./ReactDOMFeatureFlags */ 160);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var ReactDOMContainerInfo = __webpack_require__(/*! ./ReactDOMContainerInfo */ 161);
+	var ReactDOMFeatureFlags = __webpack_require__(/*! ./ReactDOMFeatureFlags */ 162);
 	var ReactElement = __webpack_require__(/*! ./ReactElement */ 8);
-	var ReactFeatureFlags = __webpack_require__(/*! ./ReactFeatureFlags */ 57);
+	var ReactFeatureFlags = __webpack_require__(/*! ./ReactFeatureFlags */ 61);
 	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 18);
-	var ReactMarkupChecksum = __webpack_require__(/*! ./ReactMarkupChecksum */ 161);
-	var ReactPerf = __webpack_require__(/*! ./ReactPerf */ 58);
-	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 59);
-	var ReactUpdateQueue = __webpack_require__(/*! ./ReactUpdateQueue */ 120);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 55);
+	var ReactMarkupChecksum = __webpack_require__(/*! ./ReactMarkupChecksum */ 163);
+	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 62);
+	var ReactUpdateQueue = __webpack_require__(/*! ./ReactUpdateQueue */ 123);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 59);
 	
-	var emptyObject = __webpack_require__(/*! fbjs/lib/emptyObject */ 21);
-	var instantiateReactComponent = __webpack_require__(/*! ./instantiateReactComponent */ 116);
+	var emptyObject = __webpack_require__(/*! fbjs/lib/emptyObject */ 26);
+	var instantiateReactComponent = __webpack_require__(/*! ./instantiateReactComponent */ 119);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
-	var setInnerHTML = __webpack_require__(/*! ./setInnerHTML */ 79);
-	var shouldUpdateReactComponent = __webpack_require__(/*! ./shouldUpdateReactComponent */ 121);
+	var setInnerHTML = __webpack_require__(/*! ./setInnerHTML */ 83);
+	var shouldUpdateReactComponent = __webpack_require__(/*! ./shouldUpdateReactComponent */ 124);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 10);
 	
 	var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
@@ -20097,6 +20328,10 @@
 	   * @return {ReactComponent} nextComponent
 	   */
 	  _renderNewRootComponent: function _renderNewRootComponent(nextElement, container, shouldReuseMarkup, context) {
+	    if (process.env.NODE_ENV !== 'production') {
+	      ReactInstrumentation.debugTool.onBeginFlush();
+	    }
+	
 	    // Various parts of our code (such as ReactCompositeComponent's
 	    // _renderValidatedComponent) assume that calls to render aren't nested;
 	    // verify that that's the case.
@@ -20106,6 +20341,12 @@
 	
 	    ReactBrowserEventEmitter.ensureScrollValueMonitoring();
 	    var componentInstance = instantiateReactComponent(nextElement);
+	
+	    if (process.env.NODE_ENV !== 'production') {
+	      // Mute future events from the top level wrapper.
+	      // It is an implementation detail that devtools should not know about.
+	      componentInstance._debugID = 0;
+	    }
 	
 	    // The initial render is synchronous but any updates that happen during
 	    // rendering, in componentWillMount or componentDidMount, will be batched
@@ -20117,7 +20358,9 @@
 	    instancesByReactRootID[wrapperID] = componentInstance;
 	
 	    if (process.env.NODE_ENV !== 'production') {
-	      ReactInstrumentation.debugTool.onMountRootComponent(componentInstance);
+	      // The instance here is TopLevelWrapper so we report mount for its child.
+	      ReactInstrumentation.debugTool.onMountRootComponent(componentInstance._renderedComponent._debugID);
+	      ReactInstrumentation.debugTool.onEndFlush();
 	    }
 	
 	    return componentInstance;
@@ -20197,6 +20440,7 @@
 	
 	  /**
 	   * Renders a React component into the DOM in the supplied `container`.
+	   * See https://facebook.github.io/react/docs/top-level-api.html#reactdom.render
 	   *
 	   * If the React component was previously rendered into `container`, this will
 	   * perform an update on it and only mutate the DOM as necessary to reflect the
@@ -20213,6 +20457,7 @@
 	
 	  /**
 	   * Unmounts and destroys the React component rendered in the `container`.
+	   * See https://facebook.github.io/react/docs/top-level-api.html#reactdom.unmountcomponentatnode
 	   *
 	   * @param {DOMElement} container DOM element containing a React component.
 	   * @return {boolean} True if a component was found in and unmounted from
@@ -20304,19 +20549,21 @@
 	      setInnerHTML(container, markup);
 	      ReactDOMComponentTree.precacheNode(instance, container.firstChild);
 	    }
+	
+	    if (process.env.NODE_ENV !== 'production') {
+	      var nativeNode = ReactDOMComponentTree.getInstanceFromNode(container.firstChild);
+	      if (nativeNode._debugID !== 0) {
+	        ReactInstrumentation.debugTool.onNativeOperation(nativeNode._debugID, 'mount', markup.toString());
+	      }
+	    }
 	  }
 	};
-	
-	ReactPerf.measureMethods(ReactMount, 'ReactMount', {
-	  _renderNewRootComponent: '_renderNewRootComponent',
-	  _mountImageIntoNode: '_mountImageIntoNode'
-	});
 	
 	module.exports = ReactMount;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 159 */
+/* 161 */
 /*!**********************************************!*\
   !*** ./~/react/lib/ReactDOMContainerInfo.js ***!
   \**********************************************/
@@ -20335,7 +20582,7 @@
 	
 	'use strict';
 	
-	var validateDOMNesting = __webpack_require__(/*! ./validateDOMNesting */ 126);
+	var validateDOMNesting = __webpack_require__(/*! ./validateDOMNesting */ 130);
 	
 	var DOC_NODE_TYPE = 9;
 	
@@ -20358,7 +20605,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! (webpack)/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 160 */
+/* 162 */
 /*!*********************************************!*\
   !*** ./~/react/lib/ReactDOMFeatureFlags.js ***!
   \*********************************************/
@@ -20384,7 +20631,7 @@
 	module.exports = ReactDOMFeatureFlags;
 
 /***/ },
-/* 161 */
+/* 163 */
 /*!********************************************!*\
   !*** ./~/react/lib/ReactMarkupChecksum.js ***!
   \********************************************/
@@ -20403,7 +20650,7 @@
 	
 	'use strict';
 	
-	var adler32 = __webpack_require__(/*! ./adler32 */ 162);
+	var adler32 = __webpack_require__(/*! ./adler32 */ 164);
 	
 	var TAG_END = /\/?>/;
 	var COMMENT_START = /^<\!\-\-/;
@@ -20442,7 +20689,7 @@
 	module.exports = ReactMarkupChecksum;
 
 /***/ },
-/* 162 */
+/* 164 */
 /*!********************************!*\
   !*** ./~/react/lib/adler32.js ***!
   \********************************/
@@ -20493,77 +20740,6 @@
 	module.exports = adler32;
 
 /***/ },
-/* 163 */
-/*!**********************************************!*\
-  !*** ./~/react/~/fbjs/lib/performanceNow.js ***!
-  \**********************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	/**
-	 * Copyright (c) 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @typechecks
-	 */
-	
-	var performance = __webpack_require__(/*! ./performance */ 164);
-	
-	var performanceNow;
-	
-	/**
-	 * Detect if we can use `window.performance.now()` and gracefully fallback to
-	 * `Date.now()` if it doesn't exist. We need to support Firefox < 15 for now
-	 * because of Facebook's testing infrastructure.
-	 */
-	if (performance.now) {
-	  performanceNow = function performanceNow() {
-	    return performance.now();
-	  };
-	} else {
-	  performanceNow = function performanceNow() {
-	    return Date.now();
-	  };
-	}
-	
-	module.exports = performanceNow;
-
-/***/ },
-/* 164 */
-/*!*******************************************!*\
-  !*** ./~/react/~/fbjs/lib/performance.js ***!
-  \*******************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright (c) 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @typechecks
-	 */
-	
-	'use strict';
-	
-	var ExecutionEnvironment = __webpack_require__(/*! ./ExecutionEnvironment */ 48);
-	
-	var performance;
-	
-	if (ExecutionEnvironment.canUseDOM) {
-	  performance = window.performance || window.msPerformance || window.webkitPerformance;
-	}
-	
-	module.exports = performance || {};
-
-/***/ },
 /* 165 */
 /*!************************************!*\
   !*** ./~/react/lib/findDOMNode.js ***!
@@ -20584,8 +20760,8 @@
 	'use strict';
 	
 	var ReactCurrentOwner = __webpack_require__(/*! ./ReactCurrentOwner */ 9);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 35);
-	var ReactInstanceMap = __webpack_require__(/*! ./ReactInstanceMap */ 118);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 40);
+	var ReactInstanceMap = __webpack_require__(/*! ./ReactInstanceMap */ 121);
 	
 	var getNativeComponentFromComposite = __webpack_require__(/*! ./getNativeComponentFromComposite */ 166);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 7);
@@ -20593,6 +20769,8 @@
 	
 	/**
 	 * Returns the DOM node rendered by this element.
+	 *
+	 * See https://facebook.github.io/react/docs/top-level-api.html#reactdom.finddomnode
 	 *
 	 * @param {ReactComponent|DOMElement} componentOrElement
 	 * @return {?DOMElement} The root node of this element.
@@ -20648,7 +20826,7 @@
 	
 	'use strict';
 	
-	var ReactNodeTypes = __webpack_require__(/*! ./ReactNodeTypes */ 119);
+	var ReactNodeTypes = __webpack_require__(/*! ./ReactNodeTypes */ 122);
 	
 	function getNativeComponentFromComposite(inst) {
 	  var type;
@@ -20686,7 +20864,7 @@
 	
 	'use strict';
 	
-	var ReactMount = __webpack_require__(/*! ./ReactMount */ 158);
+	var ReactMount = __webpack_require__(/*! ./ReactMount */ 160);
 	
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
@@ -20819,6 +20997,7 @@
 	};
 	
 	SvgComponent.propTypes = {
+	    children: PropTypes.element.isRequired,
 	    className: PropTypes.string,
 	    width: PropTypes.number,
 	    height: PropTypes.number,
@@ -20898,6 +21077,8 @@
 		"print.svg",
 		"quote.svg",
 		"ramen.svg",
+		"reject.svg",
+		"repost.svg",
 		"return-arrow.svg",
 		"service-person.svg",
 		"share.svg",
@@ -20924,82 +21105,84 @@
 
 	var map = {
 		"./account-filled.svg": 172,
-		"./account-outlined.svg": 200,
-		"./app-store.svg": 201,
-		"./arrow-down.svg": 202,
-		"./arrow-left.svg": 203,
-		"./arrow-right.svg": 204,
-		"./arrow-up.svg": 205,
-		"./baby-bottle.svg": 206,
-		"./bell.svg": 207,
-		"./benefits-egg.svg": 208,
-		"./bookmark.svg": 209,
-		"./bookmarked.svg": 210,
-		"./bullet-point.svg": 211,
-		"./buyer-assurance.svg": 212,
-		"./cart-open.svg": 213,
-		"./cart.svg": 214,
-		"./checkmark.svg": 215,
-		"./circle-arrow-left.svg": 216,
-		"./circle-arrow-right.svg": 217,
-		"./clock.svg": 218,
-		"./close.svg": 219,
-		"./commuter-train.svg": 220,
-		"./customer-support.svg": 221,
-		"./do-not-edit.svg": 222,
-		"./early-access.svg": 223,
-		"./email.svg": 224,
-		"./envelope.svg": 225,
-		"./facebook.svg": 226,
-		"./gallery.svg": 227,
-		"./gear-filled.svg": 228,
-		"./gear.svg": 229,
-		"./globe.svg": 230,
-		"./hamburger-menu.svg": 231,
-		"./heart-filled.svg": 232,
-		"./heart-outlined.svg": 233,
-		"./home.svg": 234,
-		"./image-upload-multiple.svg": 235,
-		"./image-upload.svg": 236,
-		"./info-circle.svg": 237,
-		"./instagram.svg": 238,
-		"./iphone.svg": 239,
-		"./linkedin.svg": 240,
-		"./location-pin.svg": 241,
-		"./lock-with-checkmark.svg": 242,
-		"./lock.svg": 243,
-		"./logo-no-reg.svg": 244,
-		"./logo.svg": 245,
-		"./luggage.svg": 246,
-		"./magnifying-glass.svg": 247,
-		"./mask.svg": 248,
-		"./message.svg": 249,
-		"./minus.svg": 250,
-		"./net-price.svg": 251,
-		"./orange.svg": 252,
-		"./pen.svg": 253,
-		"./person-inside-badge.svg": 254,
-		"./person-profile.svg": 255,
-		"./pinterest.svg": 256,
-		"./plus.svg": 257,
-		"./print.svg": 258,
-		"./quote.svg": 259,
-		"./ramen.svg": 260,
-		"./return-arrow.svg": 261,
-		"./service-person.svg": 262,
-		"./share.svg": 263,
-		"./shipping.svg": 264,
-		"./shopping-cart.svg": 265,
-		"./star-filled.svg": 266,
-		"./star-outlined.svg": 267,
-		"./storefront.svg": 268,
-		"./toolbox.svg": 269,
-		"./trade-arrow.svg": 270,
-		"./trade-logo.svg": 271,
-		"./trash-filled.svg": 272,
-		"./truck-moving.svg": 273,
-		"./twitter.svg": 274,
-		"./yoga.svg": 275
+		"./account-outlined.svg": 281,
+		"./app-store.svg": 282,
+		"./arrow-down.svg": 283,
+		"./arrow-left.svg": 284,
+		"./arrow-right.svg": 285,
+		"./arrow-up.svg": 286,
+		"./baby-bottle.svg": 287,
+		"./bell.svg": 288,
+		"./benefits-egg.svg": 289,
+		"./bookmark.svg": 290,
+		"./bookmarked.svg": 291,
+		"./bullet-point.svg": 292,
+		"./buyer-assurance.svg": 293,
+		"./cart-open.svg": 294,
+		"./cart.svg": 295,
+		"./checkmark.svg": 296,
+		"./circle-arrow-left.svg": 297,
+		"./circle-arrow-right.svg": 298,
+		"./clock.svg": 299,
+		"./close.svg": 300,
+		"./commuter-train.svg": 301,
+		"./customer-support.svg": 302,
+		"./do-not-edit.svg": 303,
+		"./early-access.svg": 304,
+		"./email.svg": 305,
+		"./envelope.svg": 306,
+		"./facebook.svg": 307,
+		"./gallery.svg": 308,
+		"./gear-filled.svg": 309,
+		"./gear.svg": 310,
+		"./globe.svg": 311,
+		"./hamburger-menu.svg": 312,
+		"./heart-filled.svg": 313,
+		"./heart-outlined.svg": 314,
+		"./home.svg": 315,
+		"./image-upload-multiple.svg": 316,
+		"./image-upload.svg": 317,
+		"./info-circle.svg": 318,
+		"./instagram.svg": 319,
+		"./iphone.svg": 320,
+		"./linkedin.svg": 321,
+		"./location-pin.svg": 322,
+		"./lock-with-checkmark.svg": 323,
+		"./lock.svg": 324,
+		"./logo-no-reg.svg": 325,
+		"./logo.svg": 326,
+		"./luggage.svg": 327,
+		"./magnifying-glass.svg": 328,
+		"./mask.svg": 329,
+		"./message.svg": 330,
+		"./minus.svg": 331,
+		"./net-price.svg": 332,
+		"./orange.svg": 333,
+		"./pen.svg": 334,
+		"./person-inside-badge.svg": 335,
+		"./person-profile.svg": 336,
+		"./pinterest.svg": 337,
+		"./plus.svg": 338,
+		"./print.svg": 339,
+		"./quote.svg": 340,
+		"./ramen.svg": 341,
+		"./reject.svg": 342,
+		"./repost.svg": 343,
+		"./return-arrow.svg": 344,
+		"./service-person.svg": 345,
+		"./share.svg": 346,
+		"./shipping.svg": 347,
+		"./shopping-cart.svg": 348,
+		"./star-filled.svg": 349,
+		"./star-outlined.svg": 350,
+		"./storefront.svg": 351,
+		"./toolbox.svg": 352,
+		"./trade-arrow.svg": 353,
+		"./trade-logo.svg": 354,
+		"./trash-filled.svg": 355,
+		"./truck-moving.svg": 356,
+		"./twitter.svg": 357,
+		"./yoga.svg": 358
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -21025,7 +21208,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -21061,7 +21244,7 @@
 
 	'use strict';
 	
-	var forEach = __webpack_require__(/*! lodash/collection/forEach */ 174);
+	var forEach = __webpack_require__(/*! lodash/forEach */ 174);
 	var ATTR_KEY = 'data-svgreactloader';
 	
 	var MODULE = {
@@ -21106,72 +21289,76 @@
 
 /***/ },
 /* 174 */
-/*!***********************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/collection/forEach.js ***!
-  \***********************************************************/
+/*!************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/forEach.js ***!
+  \************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var arrayEach = __webpack_require__(/*! ../internal/arrayEach */ 175),
-	    baseEach = __webpack_require__(/*! ../internal/baseEach */ 176),
-	    createForEach = __webpack_require__(/*! ../internal/createForEach */ 197);
+	var arrayEach = __webpack_require__(/*! ./_arrayEach */ 175),
+	    baseEach = __webpack_require__(/*! ./_baseEach */ 176),
+	    baseIteratee = __webpack_require__(/*! ./_baseIteratee */ 200),
+	    isArray = __webpack_require__(/*! ./isArray */ 195);
 	
 	/**
-	 * Iterates over elements of `collection` invoking `iteratee` for each element.
-	 * The `iteratee` is bound to `thisArg` and invoked with three arguments:
-	 * (value, index|key, collection). Iteratee functions may exit iteration early
-	 * by explicitly returning `false`.
+	 * Iterates over elements of `collection` and invokes `iteratee` for each element.
+	 * The iteratee is invoked with three arguments: (value, index|key, collection).
+	 * Iteratee functions may exit iteration early by explicitly returning `false`.
 	 *
-	 * **Note:** As with other "Collections" methods, objects with a "length" property
-	 * are iterated like arrays. To avoid this behavior `_.forIn` or `_.forOwn`
-	 * may be used for object iteration.
+	 * **Note:** As with other "Collections" methods, objects with a "length"
+	 * property are iterated like arrays. To avoid this behavior use `_.forIn`
+	 * or `_.forOwn` for object iteration.
 	 *
 	 * @static
 	 * @memberOf _
+	 * @since 0.1.0
 	 * @alias each
 	 * @category Collection
-	 * @param {Array|Object|string} collection The collection to iterate over.
+	 * @param {Array|Object} collection The collection to iterate over.
 	 * @param {Function} [iteratee=_.identity] The function invoked per iteration.
-	 * @param {*} [thisArg] The `this` binding of `iteratee`.
-	 * @returns {Array|Object|string} Returns `collection`.
+	 * @returns {Array|Object} Returns `collection`.
+	 * @see _.forEachRight
 	 * @example
 	 *
-	 * _([1, 2]).forEach(function(n) {
-	 *   console.log(n);
-	 * }).value();
-	 * // => logs each value from left to right and returns the array
-	 *
-	 * _.forEach({ 'a': 1, 'b': 2 }, function(n, key) {
-	 *   console.log(n, key);
+	 * _([1, 2]).forEach(function(value) {
+	 *   console.log(value);
 	 * });
-	 * // => logs each value-key pair and returns the object (iteration order is not guaranteed)
+	 * // => Logs `1` then `2`.
+	 *
+	 * _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+	 *   console.log(key);
+	 * });
+	 * // => Logs 'a' then 'b' (iteration order is not guaranteed).
 	 */
-	var forEach = createForEach(arrayEach, baseEach);
+	function forEach(collection, iteratee) {
+	  var func = isArray(collection) ? arrayEach : baseEach;
+	  return func(collection, baseIteratee(iteratee, 3));
+	}
 	
 	module.exports = forEach;
 
 /***/ },
 /* 175 */
-/*!***********************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/arrayEach.js ***!
-  \***********************************************************/
+/*!***************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_arrayEach.js ***!
+  \***************************************************/
 /***/ function(module, exports) {
 
 	"use strict";
 	
 	/**
-	 * A specialized version of `_.forEach` for arrays without support for callback
-	 * shorthands and `this` binding.
+	 * A specialized version of `_.forEach` for arrays without support for
+	 * iteratee shorthands.
 	 *
 	 * @private
-	 * @param {Array} array The array to iterate over.
+	 * @param {Array} [array] The array to iterate over.
 	 * @param {Function} iteratee The function invoked per iteration.
 	 * @returns {Array} Returns `array`.
 	 */
 	function arrayEach(array, iteratee) {
 	  var index = -1,
-	      length = array.length;
+	      length = array ? array.length : 0;
 	
 	  while (++index < length) {
 	    if (iteratee(array[index], index, array) === false) {
@@ -21185,24 +21372,23 @@
 
 /***/ },
 /* 176 */
-/*!**********************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/baseEach.js ***!
-  \**********************************************************/
+/*!**************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseEach.js ***!
+  \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var baseForOwn = __webpack_require__(/*! ./baseForOwn */ 177),
-	    createBaseEach = __webpack_require__(/*! ./createBaseEach */ 196);
+	var baseForOwn = __webpack_require__(/*! ./_baseForOwn */ 177),
+	    createBaseEach = __webpack_require__(/*! ./_createBaseEach */ 199);
 	
 	/**
-	 * The base implementation of `_.forEach` without support for callback
-	 * shorthands and `this` binding.
+	 * The base implementation of `_.forEach` without support for iteratee shorthands.
 	 *
 	 * @private
-	 * @param {Array|Object|string} collection The collection to iterate over.
+	 * @param {Array|Object} collection The collection to iterate over.
 	 * @param {Function} iteratee The function invoked per iteration.
-	 * @returns {Array|Object|string} Returns `collection`.
+	 * @returns {Array|Object} Returns `collection`.
 	 */
 	var baseEach = createBaseEach(baseForOwn);
 	
@@ -21210,19 +21396,18 @@
 
 /***/ },
 /* 177 */
-/*!************************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/baseForOwn.js ***!
-  \************************************************************/
+/*!****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseForOwn.js ***!
+  \****************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var baseFor = __webpack_require__(/*! ./baseFor */ 178),
-	    keys = __webpack_require__(/*! ../object/keys */ 182);
+	var baseFor = __webpack_require__(/*! ./_baseFor */ 178),
+	    keys = __webpack_require__(/*! ./keys */ 180);
 	
 	/**
-	 * The base implementation of `_.forOwn` without support for callback
-	 * shorthands and `this` binding.
+	 * The base implementation of `_.forOwn` without support for iteratee shorthands.
 	 *
 	 * @private
 	 * @param {Object} object The object to iterate over.
@@ -21230,27 +21415,26 @@
 	 * @returns {Object} Returns `object`.
 	 */
 	function baseForOwn(object, iteratee) {
-	  return baseFor(object, iteratee, keys);
+	  return object && baseFor(object, iteratee, keys);
 	}
 	
 	module.exports = baseForOwn;
 
 /***/ },
 /* 178 */
-/*!*********************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/baseFor.js ***!
-  \*********************************************************/
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseFor.js ***!
+  \*************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var createBaseFor = __webpack_require__(/*! ./createBaseFor */ 179);
+	var createBaseFor = __webpack_require__(/*! ./_createBaseFor */ 179);
 	
 	/**
-	 * The base implementation of `baseForIn` and `baseForOwn` which iterates
-	 * over `object` properties returned by `keysFunc` invoking `iteratee` for
-	 * each property. Iteratee functions may exit iteration early by explicitly
-	 * returning `false`.
+	 * The base implementation of `baseForOwn` which iterates over `object`
+	 * properties returned by `keysFunc` and invokes `iteratee` for each property.
+	 * Iteratee functions may exit iteration early by explicitly returning `false`.
 	 *
 	 * @private
 	 * @param {Object} object The object to iterate over.
@@ -21264,17 +21448,15 @@
 
 /***/ },
 /* 179 */
-/*!***************************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/createBaseFor.js ***!
-  \***************************************************************/
-/***/ function(module, exports, __webpack_require__) {
+/*!*******************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_createBaseFor.js ***!
+  \*******************************************************/
+/***/ function(module, exports) {
 
-	'use strict';
-	
-	var toObject = __webpack_require__(/*! ./toObject */ 180);
+	"use strict";
 	
 	/**
-	 * Creates a base function for `_.forIn` or `_.forInRight`.
+	 * Creates a base function for methods like `_.forIn` and `_.forOwn`.
 	 *
 	 * @private
 	 * @param {boolean} [fromRight] Specify iterating from right to left.
@@ -21282,13 +21464,13 @@
 	 */
 	function createBaseFor(fromRight) {
 	  return function (object, iteratee, keysFunc) {
-	    var iterable = toObject(object),
+	    var index = -1,
+	        iterable = Object(object),
 	        props = keysFunc(object),
-	        length = props.length,
-	        index = fromRight ? length : -1;
+	        length = props.length;
 	
-	    while (fromRight ? index-- : ++index < length) {
-	      var key = props[index];
+	    while (length--) {
+	      var key = props[fromRight ? length : ++index];
 	      if (iteratee(iterable[key], key, iterable) === false) {
 	        break;
 	      }
@@ -21301,84 +21483,19 @@
 
 /***/ },
 /* 180 */
-/*!**********************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/toObject.js ***!
-  \**********************************************************/
+/*!*********************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/keys.js ***!
+  \*********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var isObject = __webpack_require__(/*! ../lang/isObject */ 181);
-	
-	/**
-	 * Converts `value` to an object if it's not one.
-	 *
-	 * @private
-	 * @param {*} value The value to process.
-	 * @returns {Object} Returns the object.
-	 */
-	function toObject(value) {
-	  return isObject(value) ? value : Object(value);
-	}
-	
-	module.exports = toObject;
-
-/***/ },
-/* 181 */
-/*!******************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/lang/isObject.js ***!
-  \******************************************************/
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
-	
-	/**
-	 * Checks if `value` is the [language type](https://es5.github.io/#x8) of `Object`.
-	 * (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
-	 * @example
-	 *
-	 * _.isObject({});
-	 * // => true
-	 *
-	 * _.isObject([1, 2, 3]);
-	 * // => true
-	 *
-	 * _.isObject(1);
-	 * // => false
-	 */
-	function isObject(value) {
-	  // Avoid a V8 JIT bug in Chrome 19-20.
-	  // See https://code.google.com/p/v8/issues/detail?id=2291 for more details.
-	  var type = typeof value === 'undefined' ? 'undefined' : _typeof(value);
-	  return !!value && (type == 'object' || type == 'function');
-	}
-	
-	module.exports = isObject;
-
-/***/ },
-/* 182 */
-/*!****************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/object/keys.js ***!
-  \****************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var getNative = __webpack_require__(/*! ../internal/getNative */ 183),
-	    isArrayLike = __webpack_require__(/*! ../internal/isArrayLike */ 187),
-	    isObject = __webpack_require__(/*! ../lang/isObject */ 181),
-	    shimKeys = __webpack_require__(/*! ../internal/shimKeys */ 191);
-	
-	/* Native method references for those with the same name as other `lodash` methods. */
-	var nativeKeys = getNative(Object, 'keys');
+	var baseHas = __webpack_require__(/*! ./_baseHas */ 181),
+	    baseKeys = __webpack_require__(/*! ./_baseKeys */ 183),
+	    indexKeys = __webpack_require__(/*! ./_indexKeys */ 184),
+	    isArrayLike = __webpack_require__(/*! ./isArrayLike */ 188),
+	    isIndex = __webpack_require__(/*! ./_isIndex */ 197),
+	    isPrototype = __webpack_require__(/*! ./_isPrototype */ 198);
 	
 	/**
 	 * Creates an array of the own enumerable property names of `object`.
@@ -21388,6 +21505,7 @@
 	 * for more details.
 	 *
 	 * @static
+	 * @since 0.1.0
 	 * @memberOf _
 	 * @category Object
 	 * @param {Object} object The object to query.
@@ -21407,210 +21525,335 @@
 	 * _.keys('hi');
 	 * // => ['0', '1']
 	 */
-	var keys = !nativeKeys ? shimKeys : function (object) {
-	  var Ctor = object == null ? undefined : object.constructor;
-	  if (typeof Ctor == 'function' && Ctor.prototype === object || typeof object != 'function' && isArrayLike(object)) {
-	    return shimKeys(object);
+	function keys(object) {
+	  var isProto = isPrototype(object);
+	  if (!(isProto || isArrayLike(object))) {
+	    return baseKeys(object);
 	  }
-	  return isObject(object) ? nativeKeys(object) : [];
-	};
+	  var indexes = indexKeys(object),
+	      skipIndexes = !!indexes,
+	      result = indexes || [],
+	      length = result.length;
+	
+	  for (var key in object) {
+	    if (baseHas(object, key) && !(skipIndexes && (key == 'length' || isIndex(key, length))) && !(isProto && key == 'constructor')) {
+	      result.push(key);
+	    }
+	  }
+	  return result;
+	}
 	
 	module.exports = keys;
 
 /***/ },
-/* 183 */
-/*!***********************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/getNative.js ***!
-  \***********************************************************/
+/* 181 */
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseHas.js ***!
+  \*************************************************/
 /***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var isNative = __webpack_require__(/*! ../lang/isNative */ 184);
-	
-	/**
-	 * Gets the native function at `key` of `object`.
-	 *
-	 * @private
-	 * @param {Object} object The object to query.
-	 * @param {string} key The key of the method to get.
-	 * @returns {*} Returns the function if it's native, else `undefined`.
-	 */
-	function getNative(object, key) {
-	  var value = object == null ? undefined : object[key];
-	  return isNative(value) ? value : undefined;
-	}
-	
-	module.exports = getNative;
-
-/***/ },
-/* 184 */
-/*!******************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/lang/isNative.js ***!
-  \******************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var isFunction = __webpack_require__(/*! ./isFunction */ 185),
-	    isObjectLike = __webpack_require__(/*! ../internal/isObjectLike */ 186);
-	
-	/** Used to detect host constructors (Safari > 5). */
-	var reIsHostCtor = /^\[object .+?Constructor\]$/;
-	
-	/** Used for native method references. */
-	var objectProto = Object.prototype;
-	
-	/** Used to resolve the decompiled source of functions. */
-	var fnToString = Function.prototype.toString;
-	
-	/** Used to check objects for own properties. */
-	var hasOwnProperty = objectProto.hasOwnProperty;
-	
-	/** Used to detect if a method is native. */
-	var reIsNative = RegExp('^' + fnToString.call(hasOwnProperty).replace(/[\\^$.*+?()[\]{}|]/g, '\\$&').replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$');
-	
-	/**
-	 * Checks if `value` is a native function.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is a native function, else `false`.
-	 * @example
-	 *
-	 * _.isNative(Array.prototype.push);
-	 * // => true
-	 *
-	 * _.isNative(_);
-	 * // => false
-	 */
-	function isNative(value) {
-	  if (value == null) {
-	    return false;
-	  }
-	  if (isFunction(value)) {
-	    return reIsNative.test(fnToString.call(value));
-	  }
-	  return isObjectLike(value) && reIsHostCtor.test(value);
-	}
-	
-	module.exports = isNative;
-
-/***/ },
-/* 185 */
-/*!********************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/lang/isFunction.js ***!
-  \********************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var isObject = __webpack_require__(/*! ./isObject */ 181);
-	
-	/** `Object#toString` result references. */
-	var funcTag = '[object Function]';
-	
-	/** Used for native method references. */
-	var objectProto = Object.prototype;
-	
-	/**
-	 * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
-	 * of values.
-	 */
-	var objToString = objectProto.toString;
-	
-	/**
-	 * Checks if `value` is classified as a `Function` object.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Lang
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is correctly classified, else `false`.
-	 * @example
-	 *
-	 * _.isFunction(_);
-	 * // => true
-	 *
-	 * _.isFunction(/abc/);
-	 * // => false
-	 */
-	function isFunction(value) {
-	  // The use of `Object#toString` avoids issues with the `typeof` operator
-	  // in older versions of Chrome and Safari which return 'function' for regexes
-	  // and Safari 8 which returns 'object' for typed array constructors.
-	  return isObject(value) && objToString.call(value) == funcTag;
-	}
-	
-	module.exports = isFunction;
-
-/***/ },
-/* 186 */
-/*!**************************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/isObjectLike.js ***!
-  \**************************************************************/
-/***/ function(module, exports) {
 
 	'use strict';
 	
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 	
+	var getPrototype = __webpack_require__(/*! ./_getPrototype */ 182);
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
 	/**
-	 * Checks if `value` is object-like.
+	 * The base implementation of `_.has` without support for deep paths.
 	 *
 	 * @private
-	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+	 * @param {Object} [object] The object to query.
+	 * @param {Array|string} key The key to check.
+	 * @returns {boolean} Returns `true` if `key` exists, else `false`.
 	 */
-	function isObjectLike(value) {
-	  return !!value && (typeof value === 'undefined' ? 'undefined' : _typeof(value)) == 'object';
+	function baseHas(object, key) {
+	  // Avoid a bug in IE 10-11 where objects with a [[Prototype]] of `null`,
+	  // that are composed entirely of index properties, return `false` for
+	  // `hasOwnProperty` checks of them.
+	  return object != null && (hasOwnProperty.call(object, key) || (typeof object === 'undefined' ? 'undefined' : _typeof(object)) == 'object' && key in object && getPrototype(object) === null);
 	}
 	
-	module.exports = isObjectLike;
+	module.exports = baseHas;
 
 /***/ },
-/* 187 */
-/*!*************************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/isArrayLike.js ***!
-  \*************************************************************/
+/* 182 */
+/*!******************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_getPrototype.js ***!
+  \******************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	/* Built-in method references for those with the same name as other `lodash` methods. */
+	var nativeGetPrototype = Object.getPrototypeOf;
+	
+	/**
+	 * Gets the `[[Prototype]]` of `value`.
+	 *
+	 * @private
+	 * @param {*} value The value to query.
+	 * @returns {null|Object} Returns the `[[Prototype]]`.
+	 */
+	function getPrototype(value) {
+	  return nativeGetPrototype(Object(value));
+	}
+	
+	module.exports = getPrototype;
+
+/***/ },
+/* 183 */
+/*!**************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseKeys.js ***!
+  \**************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	/* Built-in method references for those with the same name as other `lodash` methods. */
+	var nativeKeys = Object.keys;
+	
+	/**
+	 * The base implementation of `_.keys` which doesn't skip the constructor
+	 * property of prototypes or treat sparse arrays as dense.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @returns {Array} Returns the array of property names.
+	 */
+	function baseKeys(object) {
+	  return nativeKeys(Object(object));
+	}
+	
+	module.exports = baseKeys;
+
+/***/ },
+/* 184 */
+/*!***************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_indexKeys.js ***!
+  \***************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var getLength = __webpack_require__(/*! ./getLength */ 188),
-	    isLength = __webpack_require__(/*! ./isLength */ 190);
+	var baseTimes = __webpack_require__(/*! ./_baseTimes */ 185),
+	    isArguments = __webpack_require__(/*! ./isArguments */ 186),
+	    isArray = __webpack_require__(/*! ./isArray */ 195),
+	    isLength = __webpack_require__(/*! ./isLength */ 193),
+	    isString = __webpack_require__(/*! ./isString */ 196);
 	
 	/**
-	 * Checks if `value` is array-like.
+	 * Creates an array of index keys for `object` values of arrays,
+	 * `arguments` objects, and strings, otherwise `null` is returned.
 	 *
 	 * @private
+	 * @param {Object} object The object to query.
+	 * @returns {Array|null} Returns index keys, else `null`.
+	 */
+	function indexKeys(object) {
+	  var length = object ? object.length : undefined;
+	  if (isLength(length) && (isArray(object) || isString(object) || isArguments(object))) {
+	    return baseTimes(length, String);
+	  }
+	  return null;
+	}
+	
+	module.exports = indexKeys;
+
+/***/ },
+/* 185 */
+/*!***************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseTimes.js ***!
+  \***************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * The base implementation of `_.times` without support for iteratee shorthands
+	 * or max array length checks.
+	 *
+	 * @private
+	 * @param {number} n The number of times to invoke `iteratee`.
+	 * @param {Function} iteratee The function invoked per iteration.
+	 * @returns {Array} Returns the array of results.
+	 */
+	function baseTimes(n, iteratee) {
+	  var index = -1,
+	      result = Array(n);
+	
+	  while (++index < n) {
+	    result[index] = iteratee(index);
+	  }
+	  return result;
+	}
+	
+	module.exports = baseTimes;
+
+/***/ },
+/* 186 */
+/*!****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/isArguments.js ***!
+  \****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var isArrayLikeObject = __webpack_require__(/*! ./isArrayLikeObject */ 187);
+	
+	/** `Object#toString` result references. */
+	var argsTag = '[object Arguments]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/** Built-in value references. */
+	var propertyIsEnumerable = objectProto.propertyIsEnumerable;
+	
+	/**
+	 * Checks if `value` is likely an `arguments` object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isArguments(function() { return arguments; }());
+	 * // => true
+	 *
+	 * _.isArguments([1, 2, 3]);
+	 * // => false
+	 */
+	function isArguments(value) {
+	  // Safari 8.1 incorrectly makes `arguments.callee` enumerable in strict mode.
+	  return isArrayLikeObject(value) && hasOwnProperty.call(value, 'callee') && (!propertyIsEnumerable.call(value, 'callee') || objectToString.call(value) == argsTag);
+	}
+	
+	module.exports = isArguments;
+
+/***/ },
+/* 187 */
+/*!**********************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/isArrayLikeObject.js ***!
+  \**********************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var isArrayLike = __webpack_require__(/*! ./isArrayLike */ 188),
+	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 194);
+	
+	/**
+	 * This method is like `_.isArrayLike` except that it also checks if `value`
+	 * is an object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is an array-like object,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isArrayLikeObject([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isArrayLikeObject(document.body.children);
+	 * // => true
+	 *
+	 * _.isArrayLikeObject('abc');
+	 * // => false
+	 *
+	 * _.isArrayLikeObject(_.noop);
+	 * // => false
+	 */
+	function isArrayLikeObject(value) {
+	  return isObjectLike(value) && isArrayLike(value);
+	}
+	
+	module.exports = isArrayLikeObject;
+
+/***/ },
+/* 188 */
+/*!****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/isArrayLike.js ***!
+  \****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var getLength = __webpack_require__(/*! ./_getLength */ 189),
+	    isFunction = __webpack_require__(/*! ./isFunction */ 191),
+	    isLength = __webpack_require__(/*! ./isLength */ 193);
+	
+	/**
+	 * Checks if `value` is array-like. A value is considered array-like if it's
+	 * not a function and has a `value.length` that's an integer greater than or
+	 * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
 	 * @param {*} value The value to check.
 	 * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
+	 * @example
+	 *
+	 * _.isArrayLike([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isArrayLike(document.body.children);
+	 * // => true
+	 *
+	 * _.isArrayLike('abc');
+	 * // => true
+	 *
+	 * _.isArrayLike(_.noop);
+	 * // => false
 	 */
 	function isArrayLike(value) {
-	  return value != null && isLength(getLength(value));
+	  return value != null && isLength(getLength(value)) && !isFunction(value);
 	}
 	
 	module.exports = isArrayLike;
 
 /***/ },
-/* 188 */
-/*!***********************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/getLength.js ***!
-  \***********************************************************/
+/* 189 */
+/*!***************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_getLength.js ***!
+  \***************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var baseProperty = __webpack_require__(/*! ./baseProperty */ 189);
+	var baseProperty = __webpack_require__(/*! ./_baseProperty */ 190);
 	
 	/**
 	 * Gets the "length" property value of `object`.
 	 *
-	 * **Note:** This function is used to avoid a [JIT bug](https://bugs.webkit.org/show_bug.cgi?id=142792)
-	 * that affects Safari on at least iOS 8.1-8.3 ARM64.
+	 * **Note:** This function is used to avoid a
+	 * [JIT bug](https://bugs.webkit.org/show_bug.cgi?id=142792) that affects
+	 * Safari on at least iOS 8.1-8.3 ARM64.
 	 *
 	 * @private
 	 * @param {Object} object The object to query.
@@ -21621,10 +21864,10 @@
 	module.exports = getLength;
 
 /***/ },
-/* 189 */
-/*!**************************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/baseProperty.js ***!
-  \**************************************************************/
+/* 190 */
+/*!******************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseProperty.js ***!
+  \******************************************************/
 /***/ function(module, exports) {
 
 	"use strict";
@@ -21634,7 +21877,7 @@
 	 *
 	 * @private
 	 * @param {string} key The key of the property to get.
-	 * @returns {Function} Returns the new function.
+	 * @returns {Function} Returns the new accessor function.
 	 */
 	function baseProperty(key) {
 	  return function (object) {
@@ -21645,28 +21888,139 @@
 	module.exports = baseProperty;
 
 /***/ },
-/* 190 */
-/*!**********************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/isLength.js ***!
-  \**********************************************************/
+/* 191 */
+/*!***************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/isFunction.js ***!
+  \***************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var isObject = __webpack_require__(/*! ./isObject */ 192);
+	
+	/** `Object#toString` result references. */
+	var funcTag = '[object Function]',
+	    genTag = '[object GeneratorFunction]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/**
+	 * Checks if `value` is classified as a `Function` object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isFunction(_);
+	 * // => true
+	 *
+	 * _.isFunction(/abc/);
+	 * // => false
+	 */
+	function isFunction(value) {
+	  // The use of `Object#toString` avoids issues with the `typeof` operator
+	  // in Safari 8 which returns 'object' for typed array and weak map constructors,
+	  // and PhantomJS 1.9 which returns 'function' for `NodeList` instances.
+	  var tag = isObject(value) ? objectToString.call(value) : '';
+	  return tag == funcTag || tag == genTag;
+	}
+	
+	module.exports = isFunction;
+
+/***/ },
+/* 192 */
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/isObject.js ***!
+  \*************************************************/
 /***/ function(module, exports) {
 
 	'use strict';
 	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+	
 	/**
-	 * Used as the [maximum length](http://ecma-international.org/ecma-262/6.0/#sec-number.max_safe_integer)
-	 * of an array-like value.
+	 * Checks if `value` is the
+	 * [language type](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-types)
+	 * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+	 * @example
+	 *
+	 * _.isObject({});
+	 * // => true
+	 *
+	 * _.isObject([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isObject(_.noop);
+	 * // => true
+	 *
+	 * _.isObject(null);
+	 * // => false
 	 */
+	function isObject(value) {
+	  var type = typeof value === 'undefined' ? 'undefined' : _typeof(value);
+	  return !!value && (type == 'object' || type == 'function');
+	}
+	
+	module.exports = isObject;
+
+/***/ },
+/* 193 */
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/isLength.js ***!
+  \*************************************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	/** Used as references for various `Number` constants. */
 	var MAX_SAFE_INTEGER = 9007199254740991;
 	
 	/**
 	 * Checks if `value` is a valid array-like length.
 	 *
-	 * **Note:** This function is based on [`ToLength`](http://ecma-international.org/ecma-262/6.0/#sec-tolength).
+	 * **Note:** This function is loosely based on
+	 * [`ToLength`](http://ecma-international.org/ecma-262/6.0/#sec-tolength).
 	 *
-	 * @private
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
 	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+	 * @returns {boolean} Returns `true` if `value` is a valid length,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isLength(3);
+	 * // => true
+	 *
+	 * _.isLength(Number.MIN_VALUE);
+	 * // => false
+	 *
+	 * _.isLength(Infinity);
+	 * // => false
+	 *
+	 * _.isLength('3');
+	 * // => false
 	 */
 	function isLength(value) {
 	  return typeof value == 'number' && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
@@ -21675,165 +22029,147 @@
 	module.exports = isLength;
 
 /***/ },
-/* 191 */
-/*!**********************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/shimKeys.js ***!
-  \**********************************************************/
-/***/ function(module, exports, __webpack_require__) {
+/* 194 */
+/*!*****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/isObjectLike.js ***!
+  \*****************************************************/
+/***/ function(module, exports) {
 
 	'use strict';
 	
-	var isArguments = __webpack_require__(/*! ../lang/isArguments */ 192),
-	    isArray = __webpack_require__(/*! ../lang/isArray */ 193),
-	    isIndex = __webpack_require__(/*! ./isIndex */ 194),
-	    isLength = __webpack_require__(/*! ./isLength */ 190),
-	    keysIn = __webpack_require__(/*! ../object/keysIn */ 195);
-	
-	/** Used for native method references. */
-	var objectProto = Object.prototype;
-	
-	/** Used to check objects for own properties. */
-	var hasOwnProperty = objectProto.hasOwnProperty;
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 	
 	/**
-	 * A fallback implementation of `Object.keys` which creates an array of the
-	 * own enumerable property names of `object`.
-	 *
-	 * @private
-	 * @param {Object} object The object to query.
-	 * @returns {Array} Returns the array of property names.
-	 */
-	function shimKeys(object) {
-	  var props = keysIn(object),
-	      propsLength = props.length,
-	      length = propsLength && object.length;
-	
-	  var allowIndexes = !!length && isLength(length) && (isArray(object) || isArguments(object));
-	
-	  var index = -1,
-	      result = [];
-	
-	  while (++index < propsLength) {
-	    var key = props[index];
-	    if (allowIndexes && isIndex(key, length) || hasOwnProperty.call(object, key)) {
-	      result.push(key);
-	    }
-	  }
-	  return result;
-	}
-	
-	module.exports = shimKeys;
-
-/***/ },
-/* 192 */
-/*!*********************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/lang/isArguments.js ***!
-  \*********************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var isArrayLike = __webpack_require__(/*! ../internal/isArrayLike */ 187),
-	    isObjectLike = __webpack_require__(/*! ../internal/isObjectLike */ 186);
-	
-	/** Used for native method references. */
-	var objectProto = Object.prototype;
-	
-	/** Used to check objects for own properties. */
-	var hasOwnProperty = objectProto.hasOwnProperty;
-	
-	/** Native method references. */
-	var propertyIsEnumerable = objectProto.propertyIsEnumerable;
-	
-	/**
-	 * Checks if `value` is classified as an `arguments` object.
+	 * Checks if `value` is object-like. A value is object-like if it's not `null`
+	 * and has a `typeof` result of "object".
 	 *
 	 * @static
 	 * @memberOf _
+	 * @since 4.0.0
 	 * @category Lang
 	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is correctly classified, else `false`.
+	 * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
 	 * @example
 	 *
-	 * _.isArguments(function() { return arguments; }());
+	 * _.isObjectLike({});
 	 * // => true
 	 *
-	 * _.isArguments([1, 2, 3]);
+	 * _.isObjectLike([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isObjectLike(_.noop);
+	 * // => false
+	 *
+	 * _.isObjectLike(null);
 	 * // => false
 	 */
-	function isArguments(value) {
-	    return isObjectLike(value) && isArrayLike(value) && hasOwnProperty.call(value, 'callee') && !propertyIsEnumerable.call(value, 'callee');
+	function isObjectLike(value) {
+	  return !!value && (typeof value === 'undefined' ? 'undefined' : _typeof(value)) == 'object';
 	}
 	
-	module.exports = isArguments;
+	module.exports = isObjectLike;
 
 /***/ },
-/* 193 */
-/*!*****************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/lang/isArray.js ***!
-  \*****************************************************/
-/***/ function(module, exports, __webpack_require__) {
+/* 195 */
+/*!************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/isArray.js ***!
+  \************************************************/
+/***/ function(module, exports) {
 
-	'use strict';
-	
-	var getNative = __webpack_require__(/*! ../internal/getNative */ 183),
-	    isLength = __webpack_require__(/*! ../internal/isLength */ 190),
-	    isObjectLike = __webpack_require__(/*! ../internal/isObjectLike */ 186);
-	
-	/** `Object#toString` result references. */
-	var arrayTag = '[object Array]';
-	
-	/** Used for native method references. */
-	var objectProto = Object.prototype;
-	
-	/**
-	 * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
-	 * of values.
-	 */
-	var objToString = objectProto.toString;
-	
-	/* Native method references for those with the same name as other `lodash` methods. */
-	var nativeIsArray = getNative(Array, 'isArray');
+	"use strict";
 	
 	/**
 	 * Checks if `value` is classified as an `Array` object.
 	 *
 	 * @static
 	 * @memberOf _
+	 * @since 0.1.0
+	 * @type {Function}
 	 * @category Lang
 	 * @param {*} value The value to check.
-	 * @returns {boolean} Returns `true` if `value` is correctly classified, else `false`.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
 	 * @example
 	 *
 	 * _.isArray([1, 2, 3]);
 	 * // => true
 	 *
-	 * _.isArray(function() { return arguments; }());
+	 * _.isArray(document.body.children);
+	 * // => false
+	 *
+	 * _.isArray('abc');
+	 * // => false
+	 *
+	 * _.isArray(_.noop);
 	 * // => false
 	 */
-	var isArray = nativeIsArray || function (value) {
-	  return isObjectLike(value) && isLength(value.length) && objToString.call(value) == arrayTag;
-	};
+	var isArray = Array.isArray;
 	
 	module.exports = isArray;
 
 /***/ },
-/* 194 */
-/*!*********************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/isIndex.js ***!
-  \*********************************************************/
+/* 196 */
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/isString.js ***!
+  \*************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var isArray = __webpack_require__(/*! ./isArray */ 195),
+	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 194);
+	
+	/** `Object#toString` result references. */
+	var stringTag = '[object String]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/**
+	 * Checks if `value` is classified as a `String` primitive or object.
+	 *
+	 * @static
+	 * @since 0.1.0
+	 * @memberOf _
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isString('abc');
+	 * // => true
+	 *
+	 * _.isString(1);
+	 * // => false
+	 */
+	function isString(value) {
+	  return typeof value == 'string' || !isArray(value) && isObjectLike(value) && objectToString.call(value) == stringTag;
+	}
+	
+	module.exports = isString;
+
+/***/ },
+/* 197 */
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_isIndex.js ***!
+  \*************************************************/
 /***/ function(module, exports) {
 
 	'use strict';
 	
-	/** Used to detect unsigned integer values. */
-	var reIsUint = /^\d+$/;
-	
-	/**
-	 * Used as the [maximum length](http://ecma-international.org/ecma-262/6.0/#sec-number.max_safe_integer)
-	 * of an array-like value.
-	 */
+	/** Used as references for various `Number` constants. */
 	var MAX_SAFE_INTEGER = 9007199254740991;
+	
+	/** Used to detect unsigned integer values. */
+	var reIsUint = /^(?:0|[1-9]\d*)$/;
 	
 	/**
 	 * Checks if `value` is a valid array-like index.
@@ -21844,97 +22180,50 @@
 	 * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
 	 */
 	function isIndex(value, length) {
-	  value = typeof value == 'number' || reIsUint.test(value) ? +value : -1;
 	  length = length == null ? MAX_SAFE_INTEGER : length;
-	  return value > -1 && value % 1 == 0 && value < length;
+	  return !!length && (typeof value == 'number' || reIsUint.test(value)) && value > -1 && value % 1 == 0 && value < length;
 	}
 	
 	module.exports = isIndex;
 
 /***/ },
-/* 195 */
-/*!******************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/object/keysIn.js ***!
-  \******************************************************/
-/***/ function(module, exports, __webpack_require__) {
+/* 198 */
+/*!*****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_isPrototype.js ***!
+  \*****************************************************/
+/***/ function(module, exports) {
 
 	'use strict';
 	
-	var isArguments = __webpack_require__(/*! ../lang/isArguments */ 192),
-	    isArray = __webpack_require__(/*! ../lang/isArray */ 193),
-	    isIndex = __webpack_require__(/*! ../internal/isIndex */ 194),
-	    isLength = __webpack_require__(/*! ../internal/isLength */ 190),
-	    isObject = __webpack_require__(/*! ../lang/isObject */ 181);
-	
-	/** Used for native method references. */
+	/** Used for built-in method references. */
 	var objectProto = Object.prototype;
 	
-	/** Used to check objects for own properties. */
-	var hasOwnProperty = objectProto.hasOwnProperty;
-	
 	/**
-	 * Creates an array of the own and inherited enumerable property names of `object`.
+	 * Checks if `value` is likely a prototype object.
 	 *
-	 * **Note:** Non-object values are coerced to objects.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @category Object
-	 * @param {Object} object The object to query.
-	 * @returns {Array} Returns the array of property names.
-	 * @example
-	 *
-	 * function Foo() {
-	 *   this.a = 1;
-	 *   this.b = 2;
-	 * }
-	 *
-	 * Foo.prototype.c = 3;
-	 *
-	 * _.keysIn(new Foo);
-	 * // => ['a', 'b', 'c'] (iteration order is not guaranteed)
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a prototype, else `false`.
 	 */
-	function keysIn(object) {
-	  if (object == null) {
-	    return [];
-	  }
-	  if (!isObject(object)) {
-	    object = Object(object);
-	  }
-	  var length = object.length;
-	  length = length && isLength(length) && (isArray(object) || isArguments(object)) && length || 0;
+	function isPrototype(value) {
+	  var Ctor = value && value.constructor,
+	      proto = typeof Ctor == 'function' && Ctor.prototype || objectProto;
 	
-	  var Ctor = object.constructor,
-	      index = -1,
-	      isProto = typeof Ctor == 'function' && Ctor.prototype === object,
-	      result = Array(length),
-	      skipIndexes = length > 0;
-	
-	  while (++index < length) {
-	    result[index] = index + '';
-	  }
-	  for (var key in object) {
-	    if (!(skipIndexes && isIndex(key, length)) && !(key == 'constructor' && (isProto || !hasOwnProperty.call(object, key)))) {
-	      result.push(key);
-	    }
-	  }
-	  return result;
+	  return value === proto;
 	}
 	
-	module.exports = keysIn;
+	module.exports = isPrototype;
 
 /***/ },
-/* 196 */
-/*!****************************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/createBaseEach.js ***!
-  \****************************************************************/
+/* 199 */
+/*!********************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_createBaseEach.js ***!
+  \********************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var getLength = __webpack_require__(/*! ./getLength */ 188),
-	    isLength = __webpack_require__(/*! ./isLength */ 190),
-	    toObject = __webpack_require__(/*! ./toObject */ 180);
+	var isArrayLike = __webpack_require__(/*! ./isArrayLike */ 188);
 	
 	/**
 	 * Creates a `baseEach` or `baseEachRight` function.
@@ -21946,12 +22235,15 @@
 	 */
 	function createBaseEach(eachFunc, fromRight) {
 	  return function (collection, iteratee) {
-	    var length = collection ? getLength(collection) : 0;
-	    if (!isLength(length)) {
+	    if (collection == null) {
+	      return collection;
+	    }
+	    if (!isArrayLike(collection)) {
 	      return eachFunc(collection, iteratee);
 	    }
-	    var index = fromRight ? length : -1,
-	        iterable = toObject(collection);
+	    var length = collection.length,
+	        index = fromRight ? length : -1,
+	        iterable = Object(collection);
 	
 	    while (fromRight ? index-- : ++index < length) {
 	      if (iteratee(iterable[index], index, iterable) === false) {
@@ -21965,108 +22257,2858 @@
 	module.exports = createBaseEach;
 
 /***/ },
-/* 197 */
-/*!***************************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/createForEach.js ***!
-  \***************************************************************/
+/* 200 */
+/*!******************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseIteratee.js ***!
+  \******************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var bindCallback = __webpack_require__(/*! ./bindCallback */ 198),
-	    isArray = __webpack_require__(/*! ../lang/isArray */ 193);
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+	
+	var baseMatches = __webpack_require__(/*! ./_baseMatches */ 201),
+	    baseMatchesProperty = __webpack_require__(/*! ./_baseMatchesProperty */ 264),
+	    identity = __webpack_require__(/*! ./identity */ 278),
+	    isArray = __webpack_require__(/*! ./isArray */ 195),
+	    property = __webpack_require__(/*! ./property */ 279);
 	
 	/**
-	 * Creates a function for `_.forEach` or `_.forEachRight`.
+	 * The base implementation of `_.iteratee`.
 	 *
 	 * @private
-	 * @param {Function} arrayFunc The function to iterate over an array.
-	 * @param {Function} eachFunc The function to iterate over a collection.
-	 * @returns {Function} Returns the new each function.
+	 * @param {*} [value=_.identity] The value to convert to an iteratee.
+	 * @returns {Function} Returns the iteratee.
 	 */
-	function createForEach(arrayFunc, eachFunc) {
-	  return function (collection, iteratee, thisArg) {
-	    return typeof iteratee == 'function' && thisArg === undefined && isArray(collection) ? arrayFunc(collection, iteratee) : eachFunc(collection, bindCallback(iteratee, thisArg, 3));
-	  };
-	}
-	
-	module.exports = createForEach;
-
-/***/ },
-/* 198 */
-/*!**************************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/internal/bindCallback.js ***!
-  \**************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var identity = __webpack_require__(/*! ../utility/identity */ 199);
-	
-	/**
-	 * A specialized version of `baseCallback` which only supports `this` binding
-	 * and specifying the number of arguments to provide to `func`.
-	 *
-	 * @private
-	 * @param {Function} func The function to bind.
-	 * @param {*} thisArg The `this` binding of `func`.
-	 * @param {number} [argCount] The number of arguments to provide to `func`.
-	 * @returns {Function} Returns the callback.
-	 */
-	function bindCallback(func, thisArg, argCount) {
-	  if (typeof func != 'function') {
+	function baseIteratee(value) {
+	  // Don't store the `typeof` result in a variable to avoid a JIT bug in Safari 9.
+	  // See https://bugs.webkit.org/show_bug.cgi?id=156034 for more details.
+	  if (typeof value == 'function') {
+	    return value;
+	  }
+	  if (value == null) {
 	    return identity;
 	  }
-	  if (thisArg === undefined) {
-	    return func;
+	  if ((typeof value === 'undefined' ? 'undefined' : _typeof(value)) == 'object') {
+	    return isArray(value) ? baseMatchesProperty(value[0], value[1]) : baseMatches(value);
 	  }
-	  switch (argCount) {
-	    case 1:
-	      return function (value) {
-	        return func.call(thisArg, value);
-	      };
-	    case 3:
-	      return function (value, index, collection) {
-	        return func.call(thisArg, value, index, collection);
-	      };
-	    case 4:
-	      return function (accumulator, value, index, collection) {
-	        return func.call(thisArg, accumulator, value, index, collection);
-	      };
-	    case 5:
-	      return function (value, other, key, object, source) {
-	        return func.call(thisArg, value, other, key, object, source);
-	      };
+	  return property(value);
+	}
+	
+	module.exports = baseIteratee;
+
+/***/ },
+/* 201 */
+/*!*****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseMatches.js ***!
+  \*****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var baseIsMatch = __webpack_require__(/*! ./_baseIsMatch */ 202),
+	    getMatchData = __webpack_require__(/*! ./_getMatchData */ 261),
+	    matchesStrictComparable = __webpack_require__(/*! ./_matchesStrictComparable */ 263);
+	
+	/**
+	 * The base implementation of `_.matches` which doesn't clone `source`.
+	 *
+	 * @private
+	 * @param {Object} source The object of property values to match.
+	 * @returns {Function} Returns the new spec function.
+	 */
+	function baseMatches(source) {
+	  var matchData = getMatchData(source);
+	  if (matchData.length == 1 && matchData[0][2]) {
+	    return matchesStrictComparable(matchData[0][0], matchData[0][1]);
 	  }
-	  return function () {
-	    return func.apply(thisArg, arguments);
+	  return function (object) {
+	    return object === source || baseIsMatch(object, source, matchData);
 	  };
 	}
 	
-	module.exports = bindCallback;
+	module.exports = baseMatches;
 
 /***/ },
-/* 199 */
-/*!*********************************************************!*\
-  !*** ./~/svg-react-loader/~/lodash/utility/identity.js ***!
-  \*********************************************************/
+/* 202 */
+/*!*****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseIsMatch.js ***!
+  \*****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var Stack = __webpack_require__(/*! ./_Stack */ 203),
+	    baseIsEqual = __webpack_require__(/*! ./_baseIsEqual */ 242);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var UNORDERED_COMPARE_FLAG = 1,
+	    PARTIAL_COMPARE_FLAG = 2;
+	
+	/**
+	 * The base implementation of `_.isMatch` without support for iteratee shorthands.
+	 *
+	 * @private
+	 * @param {Object} object The object to inspect.
+	 * @param {Object} source The object of property values to match.
+	 * @param {Array} matchData The property names, values, and compare flags to match.
+	 * @param {Function} [customizer] The function to customize comparisons.
+	 * @returns {boolean} Returns `true` if `object` is a match, else `false`.
+	 */
+	function baseIsMatch(object, source, matchData, customizer) {
+	  var index = matchData.length,
+	      length = index,
+	      noCustomizer = !customizer;
+	
+	  if (object == null) {
+	    return !length;
+	  }
+	  object = Object(object);
+	  while (index--) {
+	    var data = matchData[index];
+	    if (noCustomizer && data[2] ? data[1] !== object[data[0]] : !(data[0] in object)) {
+	      return false;
+	    }
+	  }
+	  while (++index < length) {
+	    data = matchData[index];
+	    var key = data[0],
+	        objValue = object[key],
+	        srcValue = data[1];
+	
+	    if (noCustomizer && data[2]) {
+	      if (objValue === undefined && !(key in object)) {
+	        return false;
+	      }
+	    } else {
+	      var stack = new Stack();
+	      if (customizer) {
+	        var result = customizer(objValue, srcValue, key, object, source, stack);
+	      }
+	      if (!(result === undefined ? baseIsEqual(srcValue, objValue, customizer, UNORDERED_COMPARE_FLAG | PARTIAL_COMPARE_FLAG, stack) : result)) {
+	        return false;
+	      }
+	    }
+	  }
+	  return true;
+	}
+	
+	module.exports = baseIsMatch;
+
+/***/ },
+/* 203 */
+/*!***********************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_Stack.js ***!
+  \***********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var ListCache = __webpack_require__(/*! ./_ListCache */ 204),
+	    stackClear = __webpack_require__(/*! ./_stackClear */ 212),
+	    stackDelete = __webpack_require__(/*! ./_stackDelete */ 213),
+	    stackGet = __webpack_require__(/*! ./_stackGet */ 214),
+	    stackHas = __webpack_require__(/*! ./_stackHas */ 215),
+	    stackSet = __webpack_require__(/*! ./_stackSet */ 216);
+	
+	/**
+	 * Creates a stack cache object to store key-value pairs.
+	 *
+	 * @private
+	 * @constructor
+	 * @param {Array} [entries] The key-value pairs to cache.
+	 */
+	function Stack(entries) {
+	  this.__data__ = new ListCache(entries);
+	}
+	
+	// Add methods to `Stack`.
+	Stack.prototype.clear = stackClear;
+	Stack.prototype['delete'] = stackDelete;
+	Stack.prototype.get = stackGet;
+	Stack.prototype.has = stackHas;
+	Stack.prototype.set = stackSet;
+	
+	module.exports = Stack;
+
+/***/ },
+/* 204 */
+/*!***************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_ListCache.js ***!
+  \***************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var listCacheClear = __webpack_require__(/*! ./_listCacheClear */ 205),
+	    listCacheDelete = __webpack_require__(/*! ./_listCacheDelete */ 206),
+	    listCacheGet = __webpack_require__(/*! ./_listCacheGet */ 209),
+	    listCacheHas = __webpack_require__(/*! ./_listCacheHas */ 210),
+	    listCacheSet = __webpack_require__(/*! ./_listCacheSet */ 211);
+	
+	/**
+	 * Creates an list cache object.
+	 *
+	 * @private
+	 * @constructor
+	 * @param {Array} [entries] The key-value pairs to cache.
+	 */
+	function ListCache(entries) {
+	    var index = -1,
+	        length = entries ? entries.length : 0;
+	
+	    this.clear();
+	    while (++index < length) {
+	        var entry = entries[index];
+	        this.set(entry[0], entry[1]);
+	    }
+	}
+	
+	// Add methods to `ListCache`.
+	ListCache.prototype.clear = listCacheClear;
+	ListCache.prototype['delete'] = listCacheDelete;
+	ListCache.prototype.get = listCacheGet;
+	ListCache.prototype.has = listCacheHas;
+	ListCache.prototype.set = listCacheSet;
+	
+	module.exports = ListCache;
+
+/***/ },
+/* 205 */
+/*!********************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_listCacheClear.js ***!
+  \********************************************************/
 /***/ function(module, exports) {
 
 	"use strict";
 	
 	/**
-	 * This method returns the first argument provided to it.
+	 * Removes all key-value entries from the list cache.
+	 *
+	 * @private
+	 * @name clear
+	 * @memberOf ListCache
+	 */
+	function listCacheClear() {
+	  this.__data__ = [];
+	}
+	
+	module.exports = listCacheClear;
+
+/***/ },
+/* 206 */
+/*!*********************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_listCacheDelete.js ***!
+  \*********************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ 207);
+	
+	/** Used for built-in method references. */
+	var arrayProto = Array.prototype;
+	
+	/** Built-in value references. */
+	var splice = arrayProto.splice;
+	
+	/**
+	 * Removes `key` and its value from the list cache.
+	 *
+	 * @private
+	 * @name delete
+	 * @memberOf ListCache
+	 * @param {string} key The key of the value to remove.
+	 * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+	 */
+	function listCacheDelete(key) {
+	  var data = this.__data__,
+	      index = assocIndexOf(data, key);
+	
+	  if (index < 0) {
+	    return false;
+	  }
+	  var lastIndex = data.length - 1;
+	  if (index == lastIndex) {
+	    data.pop();
+	  } else {
+	    splice.call(data, index, 1);
+	  }
+	  return true;
+	}
+	
+	module.exports = listCacheDelete;
+
+/***/ },
+/* 207 */
+/*!******************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_assocIndexOf.js ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var eq = __webpack_require__(/*! ./eq */ 208);
+	
+	/**
+	 * Gets the index at which the `key` is found in `array` of key-value pairs.
+	 *
+	 * @private
+	 * @param {Array} array The array to search.
+	 * @param {*} key The key to search for.
+	 * @returns {number} Returns the index of the matched value, else `-1`.
+	 */
+	function assocIndexOf(array, key) {
+	  var length = array.length;
+	  while (length--) {
+	    if (eq(array[length][0], key)) {
+	      return length;
+	    }
+	  }
+	  return -1;
+	}
+	
+	module.exports = assocIndexOf;
+
+/***/ },
+/* 208 */
+/*!*******************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/eq.js ***!
+  \*******************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * Performs a
+	 * [`SameValueZero`](http://ecma-international.org/ecma-262/6.0/#sec-samevaluezero)
+	 * comparison between two values to determine if they are equivalent.
 	 *
 	 * @static
 	 * @memberOf _
-	 * @category Utility
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to compare.
+	 * @param {*} other The other value to compare.
+	 * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+	 * @example
+	 *
+	 * var object = { 'user': 'fred' };
+	 * var other = { 'user': 'fred' };
+	 *
+	 * _.eq(object, object);
+	 * // => true
+	 *
+	 * _.eq(object, other);
+	 * // => false
+	 *
+	 * _.eq('a', 'a');
+	 * // => true
+	 *
+	 * _.eq('a', Object('a'));
+	 * // => false
+	 *
+	 * _.eq(NaN, NaN);
+	 * // => true
+	 */
+	function eq(value, other) {
+	  return value === other || value !== value && other !== other;
+	}
+	
+	module.exports = eq;
+
+/***/ },
+/* 209 */
+/*!******************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_listCacheGet.js ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ 207);
+	
+	/**
+	 * Gets the list cache value for `key`.
+	 *
+	 * @private
+	 * @name get
+	 * @memberOf ListCache
+	 * @param {string} key The key of the value to get.
+	 * @returns {*} Returns the entry value.
+	 */
+	function listCacheGet(key) {
+	  var data = this.__data__,
+	      index = assocIndexOf(data, key);
+	
+	  return index < 0 ? undefined : data[index][1];
+	}
+	
+	module.exports = listCacheGet;
+
+/***/ },
+/* 210 */
+/*!******************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_listCacheHas.js ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ 207);
+	
+	/**
+	 * Checks if a list cache value for `key` exists.
+	 *
+	 * @private
+	 * @name has
+	 * @memberOf ListCache
+	 * @param {string} key The key of the entry to check.
+	 * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+	 */
+	function listCacheHas(key) {
+	  return assocIndexOf(this.__data__, key) > -1;
+	}
+	
+	module.exports = listCacheHas;
+
+/***/ },
+/* 211 */
+/*!******************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_listCacheSet.js ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ 207);
+	
+	/**
+	 * Sets the list cache `key` to `value`.
+	 *
+	 * @private
+	 * @name set
+	 * @memberOf ListCache
+	 * @param {string} key The key of the value to set.
+	 * @param {*} value The value to set.
+	 * @returns {Object} Returns the list cache instance.
+	 */
+	function listCacheSet(key, value) {
+	  var data = this.__data__,
+	      index = assocIndexOf(data, key);
+	
+	  if (index < 0) {
+	    data.push([key, value]);
+	  } else {
+	    data[index][1] = value;
+	  }
+	  return this;
+	}
+	
+	module.exports = listCacheSet;
+
+/***/ },
+/* 212 */
+/*!****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_stackClear.js ***!
+  \****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var ListCache = __webpack_require__(/*! ./_ListCache */ 204);
+	
+	/**
+	 * Removes all key-value entries from the stack.
+	 *
+	 * @private
+	 * @name clear
+	 * @memberOf Stack
+	 */
+	function stackClear() {
+	  this.__data__ = new ListCache();
+	}
+	
+	module.exports = stackClear;
+
+/***/ },
+/* 213 */
+/*!*****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_stackDelete.js ***!
+  \*****************************************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	/**
+	 * Removes `key` and its value from the stack.
+	 *
+	 * @private
+	 * @name delete
+	 * @memberOf Stack
+	 * @param {string} key The key of the value to remove.
+	 * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+	 */
+	function stackDelete(key) {
+	  return this.__data__['delete'](key);
+	}
+	
+	module.exports = stackDelete;
+
+/***/ },
+/* 214 */
+/*!**************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_stackGet.js ***!
+  \**************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * Gets the stack value for `key`.
+	 *
+	 * @private
+	 * @name get
+	 * @memberOf Stack
+	 * @param {string} key The key of the value to get.
+	 * @returns {*} Returns the entry value.
+	 */
+	function stackGet(key) {
+	  return this.__data__.get(key);
+	}
+	
+	module.exports = stackGet;
+
+/***/ },
+/* 215 */
+/*!**************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_stackHas.js ***!
+  \**************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * Checks if a stack value for `key` exists.
+	 *
+	 * @private
+	 * @name has
+	 * @memberOf Stack
+	 * @param {string} key The key of the entry to check.
+	 * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+	 */
+	function stackHas(key) {
+	  return this.__data__.has(key);
+	}
+	
+	module.exports = stackHas;
+
+/***/ },
+/* 216 */
+/*!**************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_stackSet.js ***!
+  \**************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var ListCache = __webpack_require__(/*! ./_ListCache */ 204),
+	    MapCache = __webpack_require__(/*! ./_MapCache */ 217);
+	
+	/** Used as the size to enable large array optimizations. */
+	var LARGE_ARRAY_SIZE = 200;
+	
+	/**
+	 * Sets the stack `key` to `value`.
+	 *
+	 * @private
+	 * @name set
+	 * @memberOf Stack
+	 * @param {string} key The key of the value to set.
+	 * @param {*} value The value to set.
+	 * @returns {Object} Returns the stack cache instance.
+	 */
+	function stackSet(key, value) {
+	  var cache = this.__data__;
+	  if (cache instanceof ListCache && cache.__data__.length == LARGE_ARRAY_SIZE) {
+	    cache = this.__data__ = new MapCache(cache.__data__);
+	  }
+	  cache.set(key, value);
+	  return this;
+	}
+	
+	module.exports = stackSet;
+
+/***/ },
+/* 217 */
+/*!**************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_MapCache.js ***!
+  \**************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var mapCacheClear = __webpack_require__(/*! ./_mapCacheClear */ 218),
+	    mapCacheDelete = __webpack_require__(/*! ./_mapCacheDelete */ 236),
+	    mapCacheGet = __webpack_require__(/*! ./_mapCacheGet */ 239),
+	    mapCacheHas = __webpack_require__(/*! ./_mapCacheHas */ 240),
+	    mapCacheSet = __webpack_require__(/*! ./_mapCacheSet */ 241);
+	
+	/**
+	 * Creates a map cache object to store key-value pairs.
+	 *
+	 * @private
+	 * @constructor
+	 * @param {Array} [entries] The key-value pairs to cache.
+	 */
+	function MapCache(entries) {
+	    var index = -1,
+	        length = entries ? entries.length : 0;
+	
+	    this.clear();
+	    while (++index < length) {
+	        var entry = entries[index];
+	        this.set(entry[0], entry[1]);
+	    }
+	}
+	
+	// Add methods to `MapCache`.
+	MapCache.prototype.clear = mapCacheClear;
+	MapCache.prototype['delete'] = mapCacheDelete;
+	MapCache.prototype.get = mapCacheGet;
+	MapCache.prototype.has = mapCacheHas;
+	MapCache.prototype.set = mapCacheSet;
+	
+	module.exports = MapCache;
+
+/***/ },
+/* 218 */
+/*!*******************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_mapCacheClear.js ***!
+  \*******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var Hash = __webpack_require__(/*! ./_Hash */ 219),
+	    ListCache = __webpack_require__(/*! ./_ListCache */ 204),
+	    Map = __webpack_require__(/*! ./_Map */ 235);
+	
+	/**
+	 * Removes all key-value entries from the map.
+	 *
+	 * @private
+	 * @name clear
+	 * @memberOf MapCache
+	 */
+	function mapCacheClear() {
+	  this.__data__ = {
+	    'hash': new Hash(),
+	    'map': new (Map || ListCache)(),
+	    'string': new Hash()
+	  };
+	}
+	
+	module.exports = mapCacheClear;
+
+/***/ },
+/* 219 */
+/*!**********************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_Hash.js ***!
+  \**********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var hashClear = __webpack_require__(/*! ./_hashClear */ 220),
+	    hashDelete = __webpack_require__(/*! ./_hashDelete */ 231),
+	    hashGet = __webpack_require__(/*! ./_hashGet */ 232),
+	    hashHas = __webpack_require__(/*! ./_hashHas */ 233),
+	    hashSet = __webpack_require__(/*! ./_hashSet */ 234);
+	
+	/**
+	 * Creates a hash object.
+	 *
+	 * @private
+	 * @constructor
+	 * @param {Array} [entries] The key-value pairs to cache.
+	 */
+	function Hash(entries) {
+	    var index = -1,
+	        length = entries ? entries.length : 0;
+	
+	    this.clear();
+	    while (++index < length) {
+	        var entry = entries[index];
+	        this.set(entry[0], entry[1]);
+	    }
+	}
+	
+	// Add methods to `Hash`.
+	Hash.prototype.clear = hashClear;
+	Hash.prototype['delete'] = hashDelete;
+	Hash.prototype.get = hashGet;
+	Hash.prototype.has = hashHas;
+	Hash.prototype.set = hashSet;
+	
+	module.exports = Hash;
+
+/***/ },
+/* 220 */
+/*!***************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_hashClear.js ***!
+  \***************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ 221);
+	
+	/**
+	 * Removes all key-value entries from the hash.
+	 *
+	 * @private
+	 * @name clear
+	 * @memberOf Hash
+	 */
+	function hashClear() {
+	  this.__data__ = nativeCreate ? nativeCreate(null) : {};
+	}
+	
+	module.exports = hashClear;
+
+/***/ },
+/* 221 */
+/*!******************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_nativeCreate.js ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var getNative = __webpack_require__(/*! ./_getNative */ 222);
+	
+	/* Built-in method references that are verified to be native. */
+	var nativeCreate = getNative(Object, 'create');
+	
+	module.exports = nativeCreate;
+
+/***/ },
+/* 222 */
+/*!***************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_getNative.js ***!
+  \***************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var baseIsNative = __webpack_require__(/*! ./_baseIsNative */ 223),
+	    getValue = __webpack_require__(/*! ./_getValue */ 230);
+	
+	/**
+	 * Gets the native function at `key` of `object`.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @param {string} key The key of the method to get.
+	 * @returns {*} Returns the function if it's native, else `undefined`.
+	 */
+	function getNative(object, key) {
+	  var value = getValue(object, key);
+	  return baseIsNative(value) ? value : undefined;
+	}
+	
+	module.exports = getNative;
+
+/***/ },
+/* 223 */
+/*!******************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseIsNative.js ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var isFunction = __webpack_require__(/*! ./isFunction */ 191),
+	    isHostObject = __webpack_require__(/*! ./_isHostObject */ 224),
+	    isMasked = __webpack_require__(/*! ./_isMasked */ 225),
+	    isObject = __webpack_require__(/*! ./isObject */ 192),
+	    toSource = __webpack_require__(/*! ./_toSource */ 229);
+	
+	/**
+	 * Used to match `RegExp`
+	 * [syntax characters](http://ecma-international.org/ecma-262/6.0/#sec-patterns).
+	 */
+	var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
+	
+	/** Used to detect host constructors (Safari). */
+	var reIsHostCtor = /^\[object .+?Constructor\]$/;
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to resolve the decompiled source of functions. */
+	var funcToString = Function.prototype.toString;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/** Used to detect if a method is native. */
+	var reIsNative = RegExp('^' + funcToString.call(hasOwnProperty).replace(reRegExpChar, '\\$&').replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$');
+	
+	/**
+	 * The base implementation of `_.isNative` without bad shim checks.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a native function,
+	 *  else `false`.
+	 */
+	function baseIsNative(value) {
+	  if (!isObject(value) || isMasked(value)) {
+	    return false;
+	  }
+	  var pattern = isFunction(value) || isHostObject(value) ? reIsNative : reIsHostCtor;
+	  return pattern.test(toSource(value));
+	}
+	
+	module.exports = baseIsNative;
+
+/***/ },
+/* 224 */
+/*!******************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_isHostObject.js ***!
+  \******************************************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	/**
+	 * Checks if `value` is a host object in IE < 9.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a host object, else `false`.
+	 */
+	function isHostObject(value) {
+	  // Many host objects are `Object` objects that can coerce to strings
+	  // despite having improperly defined `toString` methods.
+	  var result = false;
+	  if (value != null && typeof value.toString != 'function') {
+	    try {
+	      result = !!(value + '');
+	    } catch (e) {}
+	  }
+	  return result;
+	}
+	
+	module.exports = isHostObject;
+
+/***/ },
+/* 225 */
+/*!**************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_isMasked.js ***!
+  \**************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var coreJsData = __webpack_require__(/*! ./_coreJsData */ 226);
+	
+	/** Used to detect methods masquerading as native. */
+	var maskSrcKey = function () {
+	  var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || '');
+	  return uid ? 'Symbol(src)_1.' + uid : '';
+	}();
+	
+	/**
+	 * Checks if `func` has its source masked.
+	 *
+	 * @private
+	 * @param {Function} func The function to check.
+	 * @returns {boolean} Returns `true` if `func` is masked, else `false`.
+	 */
+	function isMasked(func) {
+	  return !!maskSrcKey && maskSrcKey in func;
+	}
+	
+	module.exports = isMasked;
+
+/***/ },
+/* 226 */
+/*!****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_coreJsData.js ***!
+  \****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var root = __webpack_require__(/*! ./_root */ 227);
+	
+	/** Used to detect overreaching core-js shims. */
+	var coreJsData = root['__core-js_shared__'];
+	
+	module.exports = coreJsData;
+
+/***/ },
+/* 227 */
+/*!**********************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_root.js ***!
+  \**********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+	
+	var checkGlobal = __webpack_require__(/*! ./_checkGlobal */ 228);
+	
+	/** Detect free variable `global` from Node.js. */
+	var freeGlobal = checkGlobal((typeof global === 'undefined' ? 'undefined' : _typeof(global)) == 'object' && global);
+	
+	/** Detect free variable `self`. */
+	var freeSelf = checkGlobal((typeof self === 'undefined' ? 'undefined' : _typeof(self)) == 'object' && self);
+	
+	/** Detect `this` as the global object. */
+	var thisGlobal = checkGlobal(_typeof(undefined) == 'object' && undefined);
+	
+	/** Used as a reference to the global object. */
+	var root = freeGlobal || freeSelf || thisGlobal || Function('return this')();
+	
+	module.exports = root;
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 228 */
+/*!*****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_checkGlobal.js ***!
+  \*****************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * Checks if `value` is a global object.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {null|Object} Returns `value` if it's a global object, else `null`.
+	 */
+	function checkGlobal(value) {
+	  return value && value.Object === Object ? value : null;
+	}
+	
+	module.exports = checkGlobal;
+
+/***/ },
+/* 229 */
+/*!**************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_toSource.js ***!
+  \**************************************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	/** Used to resolve the decompiled source of functions. */
+	var funcToString = Function.prototype.toString;
+	
+	/**
+	 * Converts `func` to its source code.
+	 *
+	 * @private
+	 * @param {Function} func The function to process.
+	 * @returns {string} Returns the source code.
+	 */
+	function toSource(func) {
+	  if (func != null) {
+	    try {
+	      return funcToString.call(func);
+	    } catch (e) {}
+	    try {
+	      return func + '';
+	    } catch (e) {}
+	  }
+	  return '';
+	}
+	
+	module.exports = toSource;
+
+/***/ },
+/* 230 */
+/*!**************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_getValue.js ***!
+  \**************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * Gets the value at `key` of `object`.
+	 *
+	 * @private
+	 * @param {Object} [object] The object to query.
+	 * @param {string} key The key of the property to get.
+	 * @returns {*} Returns the property value.
+	 */
+	function getValue(object, key) {
+	  return object == null ? undefined : object[key];
+	}
+	
+	module.exports = getValue;
+
+/***/ },
+/* 231 */
+/*!****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_hashDelete.js ***!
+  \****************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * Removes `key` and its value from the hash.
+	 *
+	 * @private
+	 * @name delete
+	 * @memberOf Hash
+	 * @param {Object} hash The hash to modify.
+	 * @param {string} key The key of the value to remove.
+	 * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+	 */
+	function hashDelete(key) {
+	  return this.has(key) && delete this.__data__[key];
+	}
+	
+	module.exports = hashDelete;
+
+/***/ },
+/* 232 */
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_hashGet.js ***!
+  \*************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ 221);
+	
+	/** Used to stand-in for `undefined` hash values. */
+	var HASH_UNDEFINED = '__lodash_hash_undefined__';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/**
+	 * Gets the hash value for `key`.
+	 *
+	 * @private
+	 * @name get
+	 * @memberOf Hash
+	 * @param {string} key The key of the value to get.
+	 * @returns {*} Returns the entry value.
+	 */
+	function hashGet(key) {
+	  var data = this.__data__;
+	  if (nativeCreate) {
+	    var result = data[key];
+	    return result === HASH_UNDEFINED ? undefined : result;
+	  }
+	  return hasOwnProperty.call(data, key) ? data[key] : undefined;
+	}
+	
+	module.exports = hashGet;
+
+/***/ },
+/* 233 */
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_hashHas.js ***!
+  \*************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ 221);
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/**
+	 * Checks if a hash value for `key` exists.
+	 *
+	 * @private
+	 * @name has
+	 * @memberOf Hash
+	 * @param {string} key The key of the entry to check.
+	 * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+	 */
+	function hashHas(key) {
+	  var data = this.__data__;
+	  return nativeCreate ? data[key] !== undefined : hasOwnProperty.call(data, key);
+	}
+	
+	module.exports = hashHas;
+
+/***/ },
+/* 234 */
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_hashSet.js ***!
+  \*************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ 221);
+	
+	/** Used to stand-in for `undefined` hash values. */
+	var HASH_UNDEFINED = '__lodash_hash_undefined__';
+	
+	/**
+	 * Sets the hash `key` to `value`.
+	 *
+	 * @private
+	 * @name set
+	 * @memberOf Hash
+	 * @param {string} key The key of the value to set.
+	 * @param {*} value The value to set.
+	 * @returns {Object} Returns the hash instance.
+	 */
+	function hashSet(key, value) {
+	  var data = this.__data__;
+	  data[key] = nativeCreate && value === undefined ? HASH_UNDEFINED : value;
+	  return this;
+	}
+	
+	module.exports = hashSet;
+
+/***/ },
+/* 235 */
+/*!*********************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_Map.js ***!
+  \*********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var getNative = __webpack_require__(/*! ./_getNative */ 222),
+	    root = __webpack_require__(/*! ./_root */ 227);
+	
+	/* Built-in method references that are verified to be native. */
+	var Map = getNative(root, 'Map');
+	
+	module.exports = Map;
+
+/***/ },
+/* 236 */
+/*!********************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_mapCacheDelete.js ***!
+  \********************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var getMapData = __webpack_require__(/*! ./_getMapData */ 237);
+	
+	/**
+	 * Removes `key` and its value from the map.
+	 *
+	 * @private
+	 * @name delete
+	 * @memberOf MapCache
+	 * @param {string} key The key of the value to remove.
+	 * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+	 */
+	function mapCacheDelete(key) {
+	  return getMapData(this, key)['delete'](key);
+	}
+	
+	module.exports = mapCacheDelete;
+
+/***/ },
+/* 237 */
+/*!****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_getMapData.js ***!
+  \****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var isKeyable = __webpack_require__(/*! ./_isKeyable */ 238);
+	
+	/**
+	 * Gets the data for `map`.
+	 *
+	 * @private
+	 * @param {Object} map The map to query.
+	 * @param {string} key The reference key.
+	 * @returns {*} Returns the map data.
+	 */
+	function getMapData(map, key) {
+	  var data = map.__data__;
+	  return isKeyable(key) ? data[typeof key == 'string' ? 'string' : 'hash'] : data.map;
+	}
+	
+	module.exports = getMapData;
+
+/***/ },
+/* 238 */
+/*!***************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_isKeyable.js ***!
+  \***************************************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+	
+	/**
+	 * Checks if `value` is suitable for use as unique object key.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is suitable, else `false`.
+	 */
+	function isKeyable(value) {
+	  var type = typeof value === 'undefined' ? 'undefined' : _typeof(value);
+	  return type == 'string' || type == 'number' || type == 'symbol' || type == 'boolean' ? value !== '__proto__' : value === null;
+	}
+	
+	module.exports = isKeyable;
+
+/***/ },
+/* 239 */
+/*!*****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_mapCacheGet.js ***!
+  \*****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var getMapData = __webpack_require__(/*! ./_getMapData */ 237);
+	
+	/**
+	 * Gets the map value for `key`.
+	 *
+	 * @private
+	 * @name get
+	 * @memberOf MapCache
+	 * @param {string} key The key of the value to get.
+	 * @returns {*} Returns the entry value.
+	 */
+	function mapCacheGet(key) {
+	  return getMapData(this, key).get(key);
+	}
+	
+	module.exports = mapCacheGet;
+
+/***/ },
+/* 240 */
+/*!*****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_mapCacheHas.js ***!
+  \*****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var getMapData = __webpack_require__(/*! ./_getMapData */ 237);
+	
+	/**
+	 * Checks if a map value for `key` exists.
+	 *
+	 * @private
+	 * @name has
+	 * @memberOf MapCache
+	 * @param {string} key The key of the entry to check.
+	 * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+	 */
+	function mapCacheHas(key) {
+	  return getMapData(this, key).has(key);
+	}
+	
+	module.exports = mapCacheHas;
+
+/***/ },
+/* 241 */
+/*!*****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_mapCacheSet.js ***!
+  \*****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var getMapData = __webpack_require__(/*! ./_getMapData */ 237);
+	
+	/**
+	 * Sets the map `key` to `value`.
+	 *
+	 * @private
+	 * @name set
+	 * @memberOf MapCache
+	 * @param {string} key The key of the value to set.
+	 * @param {*} value The value to set.
+	 * @returns {Object} Returns the map cache instance.
+	 */
+	function mapCacheSet(key, value) {
+	  getMapData(this, key).set(key, value);
+	  return this;
+	}
+	
+	module.exports = mapCacheSet;
+
+/***/ },
+/* 242 */
+/*!*****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseIsEqual.js ***!
+  \*****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var baseIsEqualDeep = __webpack_require__(/*! ./_baseIsEqualDeep */ 243),
+	    isObject = __webpack_require__(/*! ./isObject */ 192),
+	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 194);
+	
+	/**
+	 * The base implementation of `_.isEqual` which supports partial comparisons
+	 * and tracks traversed objects.
+	 *
+	 * @private
+	 * @param {*} value The value to compare.
+	 * @param {*} other The other value to compare.
+	 * @param {Function} [customizer] The function to customize comparisons.
+	 * @param {boolean} [bitmask] The bitmask of comparison flags.
+	 *  The bitmask may be composed of the following flags:
+	 *     1 - Unordered comparison
+	 *     2 - Partial comparison
+	 * @param {Object} [stack] Tracks traversed `value` and `other` objects.
+	 * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+	 */
+	function baseIsEqual(value, other, customizer, bitmask, stack) {
+	  if (value === other) {
+	    return true;
+	  }
+	  if (value == null || other == null || !isObject(value) && !isObjectLike(other)) {
+	    return value !== value && other !== other;
+	  }
+	  return baseIsEqualDeep(value, other, baseIsEqual, customizer, bitmask, stack);
+	}
+	
+	module.exports = baseIsEqual;
+
+/***/ },
+/* 243 */
+/*!*********************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseIsEqualDeep.js ***!
+  \*********************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var Stack = __webpack_require__(/*! ./_Stack */ 203),
+	    equalArrays = __webpack_require__(/*! ./_equalArrays */ 244),
+	    equalByTag = __webpack_require__(/*! ./_equalByTag */ 249),
+	    equalObjects = __webpack_require__(/*! ./_equalObjects */ 254),
+	    getTag = __webpack_require__(/*! ./_getTag */ 255),
+	    isArray = __webpack_require__(/*! ./isArray */ 195),
+	    isHostObject = __webpack_require__(/*! ./_isHostObject */ 224),
+	    isTypedArray = __webpack_require__(/*! ./isTypedArray */ 260);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var PARTIAL_COMPARE_FLAG = 2;
+	
+	/** `Object#toString` result references. */
+	var argsTag = '[object Arguments]',
+	    arrayTag = '[object Array]',
+	    objectTag = '[object Object]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+	
+	/**
+	 * A specialized version of `baseIsEqual` for arrays and objects which performs
+	 * deep comparisons and tracks traversed objects enabling objects with circular
+	 * references to be compared.
+	 *
+	 * @private
+	 * @param {Object} object The object to compare.
+	 * @param {Object} other The other object to compare.
+	 * @param {Function} equalFunc The function to determine equivalents of values.
+	 * @param {Function} [customizer] The function to customize comparisons.
+	 * @param {number} [bitmask] The bitmask of comparison flags. See `baseIsEqual`
+	 *  for more details.
+	 * @param {Object} [stack] Tracks traversed `object` and `other` objects.
+	 * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+	 */
+	function baseIsEqualDeep(object, other, equalFunc, customizer, bitmask, stack) {
+	  var objIsArr = isArray(object),
+	      othIsArr = isArray(other),
+	      objTag = arrayTag,
+	      othTag = arrayTag;
+	
+	  if (!objIsArr) {
+	    objTag = getTag(object);
+	    objTag = objTag == argsTag ? objectTag : objTag;
+	  }
+	  if (!othIsArr) {
+	    othTag = getTag(other);
+	    othTag = othTag == argsTag ? objectTag : othTag;
+	  }
+	  var objIsObj = objTag == objectTag && !isHostObject(object),
+	      othIsObj = othTag == objectTag && !isHostObject(other),
+	      isSameTag = objTag == othTag;
+	
+	  if (isSameTag && !objIsObj) {
+	    stack || (stack = new Stack());
+	    return objIsArr || isTypedArray(object) ? equalArrays(object, other, equalFunc, customizer, bitmask, stack) : equalByTag(object, other, objTag, equalFunc, customizer, bitmask, stack);
+	  }
+	  if (!(bitmask & PARTIAL_COMPARE_FLAG)) {
+	    var objIsWrapped = objIsObj && hasOwnProperty.call(object, '__wrapped__'),
+	        othIsWrapped = othIsObj && hasOwnProperty.call(other, '__wrapped__');
+	
+	    if (objIsWrapped || othIsWrapped) {
+	      var objUnwrapped = objIsWrapped ? object.value() : object,
+	          othUnwrapped = othIsWrapped ? other.value() : other;
+	
+	      stack || (stack = new Stack());
+	      return equalFunc(objUnwrapped, othUnwrapped, customizer, bitmask, stack);
+	    }
+	  }
+	  if (!isSameTag) {
+	    return false;
+	  }
+	  stack || (stack = new Stack());
+	  return equalObjects(object, other, equalFunc, customizer, bitmask, stack);
+	}
+	
+	module.exports = baseIsEqualDeep;
+
+/***/ },
+/* 244 */
+/*!*****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_equalArrays.js ***!
+  \*****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var SetCache = __webpack_require__(/*! ./_SetCache */ 245),
+	    arraySome = __webpack_require__(/*! ./_arraySome */ 248);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var UNORDERED_COMPARE_FLAG = 1,
+	    PARTIAL_COMPARE_FLAG = 2;
+	
+	/**
+	 * A specialized version of `baseIsEqualDeep` for arrays with support for
+	 * partial deep comparisons.
+	 *
+	 * @private
+	 * @param {Array} array The array to compare.
+	 * @param {Array} other The other array to compare.
+	 * @param {Function} equalFunc The function to determine equivalents of values.
+	 * @param {Function} customizer The function to customize comparisons.
+	 * @param {number} bitmask The bitmask of comparison flags. See `baseIsEqual`
+	 *  for more details.
+	 * @param {Object} stack Tracks traversed `array` and `other` objects.
+	 * @returns {boolean} Returns `true` if the arrays are equivalent, else `false`.
+	 */
+	function equalArrays(array, other, equalFunc, customizer, bitmask, stack) {
+	  var isPartial = bitmask & PARTIAL_COMPARE_FLAG,
+	      arrLength = array.length,
+	      othLength = other.length;
+	
+	  if (arrLength != othLength && !(isPartial && othLength > arrLength)) {
+	    return false;
+	  }
+	  // Assume cyclic values are equal.
+	  var stacked = stack.get(array);
+	  if (stacked) {
+	    return stacked == other;
+	  }
+	  var index = -1,
+	      result = true,
+	      seen = bitmask & UNORDERED_COMPARE_FLAG ? new SetCache() : undefined;
+	
+	  stack.set(array, other);
+	
+	  // Ignore non-index properties.
+	  while (++index < arrLength) {
+	    var arrValue = array[index],
+	        othValue = other[index];
+	
+	    if (customizer) {
+	      var compared = isPartial ? customizer(othValue, arrValue, index, other, array, stack) : customizer(arrValue, othValue, index, array, other, stack);
+	    }
+	    if (compared !== undefined) {
+	      if (compared) {
+	        continue;
+	      }
+	      result = false;
+	      break;
+	    }
+	    // Recursively compare arrays (susceptible to call stack limits).
+	    if (seen) {
+	      if (!arraySome(other, function (othValue, othIndex) {
+	        if (!seen.has(othIndex) && (arrValue === othValue || equalFunc(arrValue, othValue, customizer, bitmask, stack))) {
+	          return seen.add(othIndex);
+	        }
+	      })) {
+	        result = false;
+	        break;
+	      }
+	    } else if (!(arrValue === othValue || equalFunc(arrValue, othValue, customizer, bitmask, stack))) {
+	      result = false;
+	      break;
+	    }
+	  }
+	  stack['delete'](array);
+	  return result;
+	}
+	
+	module.exports = equalArrays;
+
+/***/ },
+/* 245 */
+/*!**************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_SetCache.js ***!
+  \**************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var MapCache = __webpack_require__(/*! ./_MapCache */ 217),
+	    setCacheAdd = __webpack_require__(/*! ./_setCacheAdd */ 246),
+	    setCacheHas = __webpack_require__(/*! ./_setCacheHas */ 247);
+	
+	/**
+	 *
+	 * Creates an array cache object to store unique values.
+	 *
+	 * @private
+	 * @constructor
+	 * @param {Array} [values] The values to cache.
+	 */
+	function SetCache(values) {
+	    var index = -1,
+	        length = values ? values.length : 0;
+	
+	    this.__data__ = new MapCache();
+	    while (++index < length) {
+	        this.add(values[index]);
+	    }
+	}
+	
+	// Add methods to `SetCache`.
+	SetCache.prototype.add = SetCache.prototype.push = setCacheAdd;
+	SetCache.prototype.has = setCacheHas;
+	
+	module.exports = SetCache;
+
+/***/ },
+/* 246 */
+/*!*****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_setCacheAdd.js ***!
+  \*****************************************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	/** Used to stand-in for `undefined` hash values. */
+	var HASH_UNDEFINED = '__lodash_hash_undefined__';
+	
+	/**
+	 * Adds `value` to the array cache.
+	 *
+	 * @private
+	 * @name add
+	 * @memberOf SetCache
+	 * @alias push
+	 * @param {*} value The value to cache.
+	 * @returns {Object} Returns the cache instance.
+	 */
+	function setCacheAdd(value) {
+	  this.__data__.set(value, HASH_UNDEFINED);
+	  return this;
+	}
+	
+	module.exports = setCacheAdd;
+
+/***/ },
+/* 247 */
+/*!*****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_setCacheHas.js ***!
+  \*****************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * Checks if `value` is in the array cache.
+	 *
+	 * @private
+	 * @name has
+	 * @memberOf SetCache
+	 * @param {*} value The value to search for.
+	 * @returns {number} Returns `true` if `value` is found, else `false`.
+	 */
+	function setCacheHas(value) {
+	  return this.__data__.has(value);
+	}
+	
+	module.exports = setCacheHas;
+
+/***/ },
+/* 248 */
+/*!***************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_arraySome.js ***!
+  \***************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * A specialized version of `_.some` for arrays without support for iteratee
+	 * shorthands.
+	 *
+	 * @private
+	 * @param {Array} [array] The array to iterate over.
+	 * @param {Function} predicate The function invoked per iteration.
+	 * @returns {boolean} Returns `true` if any element passes the predicate check,
+	 *  else `false`.
+	 */
+	function arraySome(array, predicate) {
+	  var index = -1,
+	      length = array ? array.length : 0;
+	
+	  while (++index < length) {
+	    if (predicate(array[index], index, array)) {
+	      return true;
+	    }
+	  }
+	  return false;
+	}
+	
+	module.exports = arraySome;
+
+/***/ },
+/* 249 */
+/*!****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_equalByTag.js ***!
+  \****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _Symbol = __webpack_require__(/*! ./_Symbol */ 250),
+	    Uint8Array = __webpack_require__(/*! ./_Uint8Array */ 251),
+	    equalArrays = __webpack_require__(/*! ./_equalArrays */ 244),
+	    mapToArray = __webpack_require__(/*! ./_mapToArray */ 252),
+	    setToArray = __webpack_require__(/*! ./_setToArray */ 253);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var UNORDERED_COMPARE_FLAG = 1,
+	    PARTIAL_COMPARE_FLAG = 2;
+	
+	/** `Object#toString` result references. */
+	var boolTag = '[object Boolean]',
+	    dateTag = '[object Date]',
+	    errorTag = '[object Error]',
+	    mapTag = '[object Map]',
+	    numberTag = '[object Number]',
+	    regexpTag = '[object RegExp]',
+	    setTag = '[object Set]',
+	    stringTag = '[object String]',
+	    symbolTag = '[object Symbol]';
+	
+	var arrayBufferTag = '[object ArrayBuffer]',
+	    dataViewTag = '[object DataView]';
+	
+	/** Used to convert symbols to primitives and strings. */
+	var symbolProto = _Symbol ? _Symbol.prototype : undefined,
+	    symbolValueOf = symbolProto ? symbolProto.valueOf : undefined;
+	
+	/**
+	 * A specialized version of `baseIsEqualDeep` for comparing objects of
+	 * the same `toStringTag`.
+	 *
+	 * **Note:** This function only supports comparing values with tags of
+	 * `Boolean`, `Date`, `Error`, `Number`, `RegExp`, or `String`.
+	 *
+	 * @private
+	 * @param {Object} object The object to compare.
+	 * @param {Object} other The other object to compare.
+	 * @param {string} tag The `toStringTag` of the objects to compare.
+	 * @param {Function} equalFunc The function to determine equivalents of values.
+	 * @param {Function} customizer The function to customize comparisons.
+	 * @param {number} bitmask The bitmask of comparison flags. See `baseIsEqual`
+	 *  for more details.
+	 * @param {Object} stack Tracks traversed `object` and `other` objects.
+	 * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+	 */
+	function equalByTag(object, other, tag, equalFunc, customizer, bitmask, stack) {
+	  switch (tag) {
+	    case dataViewTag:
+	      if (object.byteLength != other.byteLength || object.byteOffset != other.byteOffset) {
+	        return false;
+	      }
+	      object = object.buffer;
+	      other = other.buffer;
+	
+	    case arrayBufferTag:
+	      if (object.byteLength != other.byteLength || !equalFunc(new Uint8Array(object), new Uint8Array(other))) {
+	        return false;
+	      }
+	      return true;
+	
+	    case boolTag:
+	    case dateTag:
+	      // Coerce dates and booleans to numbers, dates to milliseconds and
+	      // booleans to `1` or `0` treating invalid dates coerced to `NaN` as
+	      // not equal.
+	      return +object == +other;
+	
+	    case errorTag:
+	      return object.name == other.name && object.message == other.message;
+	
+	    case numberTag:
+	      // Treat `NaN` vs. `NaN` as equal.
+	      return object != +object ? other != +other : object == +other;
+	
+	    case regexpTag:
+	    case stringTag:
+	      // Coerce regexes to strings and treat strings, primitives and objects,
+	      // as equal. See http://www.ecma-international.org/ecma-262/6.0/#sec-regexp.prototype.tostring
+	      // for more details.
+	      return object == other + '';
+	
+	    case mapTag:
+	      var convert = mapToArray;
+	
+	    case setTag:
+	      var isPartial = bitmask & PARTIAL_COMPARE_FLAG;
+	      convert || (convert = setToArray);
+	
+	      if (object.size != other.size && !isPartial) {
+	        return false;
+	      }
+	      // Assume cyclic values are equal.
+	      var stacked = stack.get(object);
+	      if (stacked) {
+	        return stacked == other;
+	      }
+	      bitmask |= UNORDERED_COMPARE_FLAG;
+	      stack.set(object, other);
+	
+	      // Recursively compare objects (susceptible to call stack limits).
+	      return equalArrays(convert(object), convert(other), equalFunc, customizer, bitmask, stack);
+	
+	    case symbolTag:
+	      if (symbolValueOf) {
+	        return symbolValueOf.call(object) == symbolValueOf.call(other);
+	      }
+	  }
+	  return false;
+	}
+	
+	module.exports = equalByTag;
+
+/***/ },
+/* 250 */
+/*!************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_Symbol.js ***!
+  \************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var root = __webpack_require__(/*! ./_root */ 227);
+	
+	/** Built-in value references. */
+	var _Symbol = root.Symbol;
+	
+	module.exports = _Symbol;
+
+/***/ },
+/* 251 */
+/*!****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_Uint8Array.js ***!
+  \****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var root = __webpack_require__(/*! ./_root */ 227);
+	
+	/** Built-in value references. */
+	var Uint8Array = root.Uint8Array;
+	
+	module.exports = Uint8Array;
+
+/***/ },
+/* 252 */
+/*!****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_mapToArray.js ***!
+  \****************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * Converts `map` to its key-value pairs.
+	 *
+	 * @private
+	 * @param {Object} map The map to convert.
+	 * @returns {Array} Returns the key-value pairs.
+	 */
+	function mapToArray(map) {
+	  var index = -1,
+	      result = Array(map.size);
+	
+	  map.forEach(function (value, key) {
+	    result[++index] = [key, value];
+	  });
+	  return result;
+	}
+	
+	module.exports = mapToArray;
+
+/***/ },
+/* 253 */
+/*!****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_setToArray.js ***!
+  \****************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * Converts `set` to an array of its values.
+	 *
+	 * @private
+	 * @param {Object} set The set to convert.
+	 * @returns {Array} Returns the values.
+	 */
+	function setToArray(set) {
+	  var index = -1,
+	      result = Array(set.size);
+	
+	  set.forEach(function (value) {
+	    result[++index] = value;
+	  });
+	  return result;
+	}
+	
+	module.exports = setToArray;
+
+/***/ },
+/* 254 */
+/*!******************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_equalObjects.js ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var baseHas = __webpack_require__(/*! ./_baseHas */ 181),
+	    keys = __webpack_require__(/*! ./keys */ 180);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var PARTIAL_COMPARE_FLAG = 2;
+	
+	/**
+	 * A specialized version of `baseIsEqualDeep` for objects with support for
+	 * partial deep comparisons.
+	 *
+	 * @private
+	 * @param {Object} object The object to compare.
+	 * @param {Object} other The other object to compare.
+	 * @param {Function} equalFunc The function to determine equivalents of values.
+	 * @param {Function} customizer The function to customize comparisons.
+	 * @param {number} bitmask The bitmask of comparison flags. See `baseIsEqual`
+	 *  for more details.
+	 * @param {Object} stack Tracks traversed `object` and `other` objects.
+	 * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+	 */
+	function equalObjects(object, other, equalFunc, customizer, bitmask, stack) {
+	  var isPartial = bitmask & PARTIAL_COMPARE_FLAG,
+	      objProps = keys(object),
+	      objLength = objProps.length,
+	      othProps = keys(other),
+	      othLength = othProps.length;
+	
+	  if (objLength != othLength && !isPartial) {
+	    return false;
+	  }
+	  var index = objLength;
+	  while (index--) {
+	    var key = objProps[index];
+	    if (!(isPartial ? key in other : baseHas(other, key))) {
+	      return false;
+	    }
+	  }
+	  // Assume cyclic values are equal.
+	  var stacked = stack.get(object);
+	  if (stacked) {
+	    return stacked == other;
+	  }
+	  var result = true;
+	  stack.set(object, other);
+	
+	  var skipCtor = isPartial;
+	  while (++index < objLength) {
+	    key = objProps[index];
+	    var objValue = object[key],
+	        othValue = other[key];
+	
+	    if (customizer) {
+	      var compared = isPartial ? customizer(othValue, objValue, key, other, object, stack) : customizer(objValue, othValue, key, object, other, stack);
+	    }
+	    // Recursively compare objects (susceptible to call stack limits).
+	    if (!(compared === undefined ? objValue === othValue || equalFunc(objValue, othValue, customizer, bitmask, stack) : compared)) {
+	      result = false;
+	      break;
+	    }
+	    skipCtor || (skipCtor = key == 'constructor');
+	  }
+	  if (result && !skipCtor) {
+	    var objCtor = object.constructor,
+	        othCtor = other.constructor;
+	
+	    // Non `Object` object instances with different constructors are not equal.
+	    if (objCtor != othCtor && 'constructor' in object && 'constructor' in other && !(typeof objCtor == 'function' && objCtor instanceof objCtor && typeof othCtor == 'function' && othCtor instanceof othCtor)) {
+	      result = false;
+	    }
+	  }
+	  stack['delete'](object);
+	  return result;
+	}
+	
+	module.exports = equalObjects;
+
+/***/ },
+/* 255 */
+/*!************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_getTag.js ***!
+  \************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var DataView = __webpack_require__(/*! ./_DataView */ 256),
+	    Map = __webpack_require__(/*! ./_Map */ 235),
+	    Promise = __webpack_require__(/*! ./_Promise */ 257),
+	    Set = __webpack_require__(/*! ./_Set */ 258),
+	    WeakMap = __webpack_require__(/*! ./_WeakMap */ 259),
+	    toSource = __webpack_require__(/*! ./_toSource */ 229);
+	
+	/** `Object#toString` result references. */
+	var mapTag = '[object Map]',
+	    objectTag = '[object Object]',
+	    promiseTag = '[object Promise]',
+	    setTag = '[object Set]',
+	    weakMapTag = '[object WeakMap]';
+	
+	var dataViewTag = '[object DataView]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/** Used to detect maps, sets, and weakmaps. */
+	var dataViewCtorString = toSource(DataView),
+	    mapCtorString = toSource(Map),
+	    promiseCtorString = toSource(Promise),
+	    setCtorString = toSource(Set),
+	    weakMapCtorString = toSource(WeakMap);
+	
+	/**
+	 * Gets the `toStringTag` of `value`.
+	 *
+	 * @private
+	 * @param {*} value The value to query.
+	 * @returns {string} Returns the `toStringTag`.
+	 */
+	function getTag(value) {
+	  return objectToString.call(value);
+	}
+	
+	// Fallback for data views, maps, sets, and weak maps in IE 11,
+	// for data views in Edge, and promises in Node.js.
+	if (DataView && getTag(new DataView(new ArrayBuffer(1))) != dataViewTag || Map && getTag(new Map()) != mapTag || Promise && getTag(Promise.resolve()) != promiseTag || Set && getTag(new Set()) != setTag || WeakMap && getTag(new WeakMap()) != weakMapTag) {
+	  getTag = function getTag(value) {
+	    var result = objectToString.call(value),
+	        Ctor = result == objectTag ? value.constructor : undefined,
+	        ctorString = Ctor ? toSource(Ctor) : undefined;
+	
+	    if (ctorString) {
+	      switch (ctorString) {
+	        case dataViewCtorString:
+	          return dataViewTag;
+	        case mapCtorString:
+	          return mapTag;
+	        case promiseCtorString:
+	          return promiseTag;
+	        case setCtorString:
+	          return setTag;
+	        case weakMapCtorString:
+	          return weakMapTag;
+	      }
+	    }
+	    return result;
+	  };
+	}
+	
+	module.exports = getTag;
+
+/***/ },
+/* 256 */
+/*!**************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_DataView.js ***!
+  \**************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var getNative = __webpack_require__(/*! ./_getNative */ 222),
+	    root = __webpack_require__(/*! ./_root */ 227);
+	
+	/* Built-in method references that are verified to be native. */
+	var DataView = getNative(root, 'DataView');
+	
+	module.exports = DataView;
+
+/***/ },
+/* 257 */
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_Promise.js ***!
+  \*************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var getNative = __webpack_require__(/*! ./_getNative */ 222),
+	    root = __webpack_require__(/*! ./_root */ 227);
+	
+	/* Built-in method references that are verified to be native. */
+	var Promise = getNative(root, 'Promise');
+	
+	module.exports = Promise;
+
+/***/ },
+/* 258 */
+/*!*********************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_Set.js ***!
+  \*********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var getNative = __webpack_require__(/*! ./_getNative */ 222),
+	    root = __webpack_require__(/*! ./_root */ 227);
+	
+	/* Built-in method references that are verified to be native. */
+	var Set = getNative(root, 'Set');
+	
+	module.exports = Set;
+
+/***/ },
+/* 259 */
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_WeakMap.js ***!
+  \*************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var getNative = __webpack_require__(/*! ./_getNative */ 222),
+	    root = __webpack_require__(/*! ./_root */ 227);
+	
+	/* Built-in method references that are verified to be native. */
+	var WeakMap = getNative(root, 'WeakMap');
+	
+	module.exports = WeakMap;
+
+/***/ },
+/* 260 */
+/*!*****************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/isTypedArray.js ***!
+  \*****************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var isLength = __webpack_require__(/*! ./isLength */ 193),
+	    isObjectLike = __webpack_require__(/*! ./isObjectLike */ 194);
+	
+	/** `Object#toString` result references. */
+	var argsTag = '[object Arguments]',
+	    arrayTag = '[object Array]',
+	    boolTag = '[object Boolean]',
+	    dateTag = '[object Date]',
+	    errorTag = '[object Error]',
+	    funcTag = '[object Function]',
+	    mapTag = '[object Map]',
+	    numberTag = '[object Number]',
+	    objectTag = '[object Object]',
+	    regexpTag = '[object RegExp]',
+	    setTag = '[object Set]',
+	    stringTag = '[object String]',
+	    weakMapTag = '[object WeakMap]';
+	
+	var arrayBufferTag = '[object ArrayBuffer]',
+	    dataViewTag = '[object DataView]',
+	    float32Tag = '[object Float32Array]',
+	    float64Tag = '[object Float64Array]',
+	    int8Tag = '[object Int8Array]',
+	    int16Tag = '[object Int16Array]',
+	    int32Tag = '[object Int32Array]',
+	    uint8Tag = '[object Uint8Array]',
+	    uint8ClampedTag = '[object Uint8ClampedArray]',
+	    uint16Tag = '[object Uint16Array]',
+	    uint32Tag = '[object Uint32Array]';
+	
+	/** Used to identify `toStringTag` values of typed arrays. */
+	var typedArrayTags = {};
+	typedArrayTags[float32Tag] = typedArrayTags[float64Tag] = typedArrayTags[int8Tag] = typedArrayTags[int16Tag] = typedArrayTags[int32Tag] = typedArrayTags[uint8Tag] = typedArrayTags[uint8ClampedTag] = typedArrayTags[uint16Tag] = typedArrayTags[uint32Tag] = true;
+	typedArrayTags[argsTag] = typedArrayTags[arrayTag] = typedArrayTags[arrayBufferTag] = typedArrayTags[boolTag] = typedArrayTags[dataViewTag] = typedArrayTags[dateTag] = typedArrayTags[errorTag] = typedArrayTags[funcTag] = typedArrayTags[mapTag] = typedArrayTags[numberTag] = typedArrayTags[objectTag] = typedArrayTags[regexpTag] = typedArrayTags[setTag] = typedArrayTags[stringTag] = typedArrayTags[weakMapTag] = false;
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/**
+	 * Checks if `value` is classified as a typed array.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 3.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isTypedArray(new Uint8Array);
+	 * // => true
+	 *
+	 * _.isTypedArray([]);
+	 * // => false
+	 */
+	function isTypedArray(value) {
+	    return isObjectLike(value) && isLength(value.length) && !!typedArrayTags[objectToString.call(value)];
+	}
+	
+	module.exports = isTypedArray;
+
+/***/ },
+/* 261 */
+/*!******************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_getMatchData.js ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var isStrictComparable = __webpack_require__(/*! ./_isStrictComparable */ 262),
+	    keys = __webpack_require__(/*! ./keys */ 180);
+	
+	/**
+	 * Gets the property names, values, and compare flags of `object`.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @returns {Array} Returns the match data of `object`.
+	 */
+	function getMatchData(object) {
+	    var result = keys(object),
+	        length = result.length;
+	
+	    while (length--) {
+	        var key = result[length],
+	            value = object[key];
+	
+	        result[length] = [key, value, isStrictComparable(value)];
+	    }
+	    return result;
+	}
+	
+	module.exports = getMatchData;
+
+/***/ },
+/* 262 */
+/*!************************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_isStrictComparable.js ***!
+  \************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var isObject = __webpack_require__(/*! ./isObject */ 192);
+	
+	/**
+	 * Checks if `value` is suitable for strict equality comparisons, i.e. `===`.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` if suitable for strict
+	 *  equality comparisons, else `false`.
+	 */
+	function isStrictComparable(value) {
+	  return value === value && !isObject(value);
+	}
+	
+	module.exports = isStrictComparable;
+
+/***/ },
+/* 263 */
+/*!*****************************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_matchesStrictComparable.js ***!
+  \*****************************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * A specialized version of `matchesProperty` for source values suitable
+	 * for strict equality comparisons, i.e. `===`.
+	 *
+	 * @private
+	 * @param {string} key The key of the property to get.
+	 * @param {*} srcValue The value to match.
+	 * @returns {Function} Returns the new spec function.
+	 */
+	function matchesStrictComparable(key, srcValue) {
+	  return function (object) {
+	    if (object == null) {
+	      return false;
+	    }
+	    return object[key] === srcValue && (srcValue !== undefined || key in Object(object));
+	  };
+	}
+	
+	module.exports = matchesStrictComparable;
+
+/***/ },
+/* 264 */
+/*!*************************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseMatchesProperty.js ***!
+  \*************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var baseIsEqual = __webpack_require__(/*! ./_baseIsEqual */ 242),
+	    get = __webpack_require__(/*! ./get */ 265),
+	    hasIn = __webpack_require__(/*! ./hasIn */ 275),
+	    isKey = __webpack_require__(/*! ./_isKey */ 273),
+	    isStrictComparable = __webpack_require__(/*! ./_isStrictComparable */ 262),
+	    matchesStrictComparable = __webpack_require__(/*! ./_matchesStrictComparable */ 263),
+	    toKey = __webpack_require__(/*! ./_toKey */ 274);
+	
+	/** Used to compose bitmasks for comparison styles. */
+	var UNORDERED_COMPARE_FLAG = 1,
+	    PARTIAL_COMPARE_FLAG = 2;
+	
+	/**
+	 * The base implementation of `_.matchesProperty` which doesn't clone `srcValue`.
+	 *
+	 * @private
+	 * @param {string} path The path of the property to get.
+	 * @param {*} srcValue The value to match.
+	 * @returns {Function} Returns the new spec function.
+	 */
+	function baseMatchesProperty(path, srcValue) {
+	  if (isKey(path) && isStrictComparable(srcValue)) {
+	    return matchesStrictComparable(toKey(path), srcValue);
+	  }
+	  return function (object) {
+	    var objValue = get(object, path);
+	    return objValue === undefined && objValue === srcValue ? hasIn(object, path) : baseIsEqual(srcValue, objValue, undefined, UNORDERED_COMPARE_FLAG | PARTIAL_COMPARE_FLAG);
+	  };
+	}
+	
+	module.exports = baseMatchesProperty;
+
+/***/ },
+/* 265 */
+/*!********************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/get.js ***!
+  \********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var baseGet = __webpack_require__(/*! ./_baseGet */ 266);
+	
+	/**
+	 * Gets the value at `path` of `object`. If the resolved value is
+	 * `undefined`, the `defaultValue` is used in its place.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 3.7.0
+	 * @category Object
+	 * @param {Object} object The object to query.
+	 * @param {Array|string} path The path of the property to get.
+	 * @param {*} [defaultValue] The value returned for `undefined` resolved values.
+	 * @returns {*} Returns the resolved value.
+	 * @example
+	 *
+	 * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+	 *
+	 * _.get(object, 'a[0].b.c');
+	 * // => 3
+	 *
+	 * _.get(object, ['a', '0', 'b', 'c']);
+	 * // => 3
+	 *
+	 * _.get(object, 'a.b.c', 'default');
+	 * // => 'default'
+	 */
+	function get(object, path, defaultValue) {
+	  var result = object == null ? undefined : baseGet(object, path);
+	  return result === undefined ? defaultValue : result;
+	}
+	
+	module.exports = get;
+
+/***/ },
+/* 266 */
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseGet.js ***!
+  \*************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var castPath = __webpack_require__(/*! ./_castPath */ 267),
+	    isKey = __webpack_require__(/*! ./_isKey */ 273),
+	    toKey = __webpack_require__(/*! ./_toKey */ 274);
+	
+	/**
+	 * The base implementation of `_.get` without support for default values.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @param {Array|string} path The path of the property to get.
+	 * @returns {*} Returns the resolved value.
+	 */
+	function baseGet(object, path) {
+	  path = isKey(path, object) ? [path] : castPath(path);
+	
+	  var index = 0,
+	      length = path.length;
+	
+	  while (object != null && index < length) {
+	    object = object[toKey(path[index++])];
+	  }
+	  return index && index == length ? object : undefined;
+	}
+	
+	module.exports = baseGet;
+
+/***/ },
+/* 267 */
+/*!**************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_castPath.js ***!
+  \**************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var isArray = __webpack_require__(/*! ./isArray */ 195),
+	    stringToPath = __webpack_require__(/*! ./_stringToPath */ 268);
+	
+	/**
+	 * Casts `value` to a path array if it's not one.
+	 *
+	 * @private
+	 * @param {*} value The value to inspect.
+	 * @returns {Array} Returns the cast property path array.
+	 */
+	function castPath(value) {
+	  return isArray(value) ? value : stringToPath(value);
+	}
+	
+	module.exports = castPath;
+
+/***/ },
+/* 268 */
+/*!******************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_stringToPath.js ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var memoize = __webpack_require__(/*! ./memoize */ 269),
+	    toString = __webpack_require__(/*! ./toString */ 270);
+	
+	/** Used to match property names within property paths. */
+	var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(\.|\[\])(?:\4|$))/g;
+	
+	/** Used to match backslashes in property paths. */
+	var reEscapeChar = /\\(\\)?/g;
+	
+	/**
+	 * Converts `string` to a property path array.
+	 *
+	 * @private
+	 * @param {string} string The string to convert.
+	 * @returns {Array} Returns the property path array.
+	 */
+	var stringToPath = memoize(function (string) {
+	  var result = [];
+	  toString(string).replace(rePropName, function (match, number, quote, string) {
+	    result.push(quote ? string.replace(reEscapeChar, '$1') : number || match);
+	  });
+	  return result;
+	});
+	
+	module.exports = stringToPath;
+
+/***/ },
+/* 269 */
+/*!************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/memoize.js ***!
+  \************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var MapCache = __webpack_require__(/*! ./_MapCache */ 217);
+	
+	/** Used as the `TypeError` message for "Functions" methods. */
+	var FUNC_ERROR_TEXT = 'Expected a function';
+	
+	/**
+	 * Creates a function that memoizes the result of `func`. If `resolver` is
+	 * provided, it determines the cache key for storing the result based on the
+	 * arguments provided to the memoized function. By default, the first argument
+	 * provided to the memoized function is used as the map cache key. The `func`
+	 * is invoked with the `this` binding of the memoized function.
+	 *
+	 * **Note:** The cache is exposed as the `cache` property on the memoized
+	 * function. Its creation may be customized by replacing the `_.memoize.Cache`
+	 * constructor with one whose instances implement the
+	 * [`Map`](http://ecma-international.org/ecma-262/6.0/#sec-properties-of-the-map-prototype-object)
+	 * method interface of `delete`, `get`, `has`, and `set`.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Function
+	 * @param {Function} func The function to have its output memoized.
+	 * @param {Function} [resolver] The function to resolve the cache key.
+	 * @returns {Function} Returns the new memoized function.
+	 * @example
+	 *
+	 * var object = { 'a': 1, 'b': 2 };
+	 * var other = { 'c': 3, 'd': 4 };
+	 *
+	 * var values = _.memoize(_.values);
+	 * values(object);
+	 * // => [1, 2]
+	 *
+	 * values(other);
+	 * // => [3, 4]
+	 *
+	 * object.a = 2;
+	 * values(object);
+	 * // => [1, 2]
+	 *
+	 * // Modify the result cache.
+	 * values.cache.set(object, ['a', 'b']);
+	 * values(object);
+	 * // => ['a', 'b']
+	 *
+	 * // Replace `_.memoize.Cache`.
+	 * _.memoize.Cache = WeakMap;
+	 */
+	function memoize(func, resolver) {
+	  if (typeof func != 'function' || resolver && typeof resolver != 'function') {
+	    throw new TypeError(FUNC_ERROR_TEXT);
+	  }
+	  var memoized = function memoized() {
+	    var args = arguments,
+	        key = resolver ? resolver.apply(this, args) : args[0],
+	        cache = memoized.cache;
+	
+	    if (cache.has(key)) {
+	      return cache.get(key);
+	    }
+	    var result = func.apply(this, args);
+	    memoized.cache = cache.set(key, result);
+	    return result;
+	  };
+	  memoized.cache = new (memoize.Cache || MapCache)();
+	  return memoized;
+	}
+	
+	// Assign cache to `_.memoize`.
+	memoize.Cache = MapCache;
+	
+	module.exports = memoize;
+
+/***/ },
+/* 270 */
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/toString.js ***!
+  \*************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var baseToString = __webpack_require__(/*! ./_baseToString */ 271);
+	
+	/**
+	 * Converts `value` to a string. An empty string is returned for `null`
+	 * and `undefined` values. The sign of `-0` is preserved.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to process.
+	 * @returns {string} Returns the string.
+	 * @example
+	 *
+	 * _.toString(null);
+	 * // => ''
+	 *
+	 * _.toString(-0);
+	 * // => '-0'
+	 *
+	 * _.toString([1, 2, 3]);
+	 * // => '1,2,3'
+	 */
+	function toString(value) {
+	  return value == null ? '' : baseToString(value);
+	}
+	
+	module.exports = toString;
+
+/***/ },
+/* 271 */
+/*!******************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseToString.js ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _Symbol = __webpack_require__(/*! ./_Symbol */ 250),
+	    isSymbol = __webpack_require__(/*! ./isSymbol */ 272);
+	
+	/** Used as references for various `Number` constants. */
+	var INFINITY = 1 / 0;
+	
+	/** Used to convert symbols to primitives and strings. */
+	var symbolProto = _Symbol ? _Symbol.prototype : undefined,
+	    symbolToString = symbolProto ? symbolProto.toString : undefined;
+	
+	/**
+	 * The base implementation of `_.toString` which doesn't convert nullish
+	 * values to empty strings.
+	 *
+	 * @private
+	 * @param {*} value The value to process.
+	 * @returns {string} Returns the string.
+	 */
+	function baseToString(value) {
+	  // Exit early for strings to avoid a performance hit in some environments.
+	  if (typeof value == 'string') {
+	    return value;
+	  }
+	  if (isSymbol(value)) {
+	    return symbolToString ? symbolToString.call(value) : '';
+	  }
+	  var result = value + '';
+	  return result == '0' && 1 / value == -INFINITY ? '-0' : result;
+	}
+	
+	module.exports = baseToString;
+
+/***/ },
+/* 272 */
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/isSymbol.js ***!
+  \*************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+	
+	var isObjectLike = __webpack_require__(/*! ./isObjectLike */ 194);
+	
+	/** `Object#toString` result references. */
+	var symbolTag = '[object Symbol]';
+	
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+	
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+	
+	/**
+	 * Checks if `value` is classified as a `Symbol` primitive or object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isSymbol(Symbol.iterator);
+	 * // => true
+	 *
+	 * _.isSymbol('abc');
+	 * // => false
+	 */
+	function isSymbol(value) {
+	  return (typeof value === 'undefined' ? 'undefined' : _typeof(value)) == 'symbol' || isObjectLike(value) && objectToString.call(value) == symbolTag;
+	}
+	
+	module.exports = isSymbol;
+
+/***/ },
+/* 273 */
+/*!***********************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_isKey.js ***!
+  \***********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+	
+	var isArray = __webpack_require__(/*! ./isArray */ 195),
+	    isSymbol = __webpack_require__(/*! ./isSymbol */ 272);
+	
+	/** Used to match property names within property paths. */
+	var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
+	    reIsPlainProp = /^\w*$/;
+	
+	/**
+	 * Checks if `value` is a property name and not a property path.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @param {Object} [object] The object to query keys on.
+	 * @returns {boolean} Returns `true` if `value` is a property name, else `false`.
+	 */
+	function isKey(value, object) {
+	  if (isArray(value)) {
+	    return false;
+	  }
+	  var type = typeof value === 'undefined' ? 'undefined' : _typeof(value);
+	  if (type == 'number' || type == 'symbol' || type == 'boolean' || value == null || isSymbol(value)) {
+	    return true;
+	  }
+	  return reIsPlainProp.test(value) || !reIsDeepProp.test(value) || object != null && value in Object(object);
+	}
+	
+	module.exports = isKey;
+
+/***/ },
+/* 274 */
+/*!***********************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_toKey.js ***!
+  \***********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var isSymbol = __webpack_require__(/*! ./isSymbol */ 272);
+	
+	/** Used as references for various `Number` constants. */
+	var INFINITY = 1 / 0;
+	
+	/**
+	 * Converts `value` to a string key if it's not a string or symbol.
+	 *
+	 * @private
+	 * @param {*} value The value to inspect.
+	 * @returns {string|symbol} Returns the key.
+	 */
+	function toKey(value) {
+	  if (typeof value == 'string' || isSymbol(value)) {
+	    return value;
+	  }
+	  var result = value + '';
+	  return result == '0' && 1 / value == -INFINITY ? '-0' : result;
+	}
+	
+	module.exports = toKey;
+
+/***/ },
+/* 275 */
+/*!**********************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/hasIn.js ***!
+  \**********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var baseHasIn = __webpack_require__(/*! ./_baseHasIn */ 276),
+	    hasPath = __webpack_require__(/*! ./_hasPath */ 277);
+	
+	/**
+	 * Checks if `path` is a direct or inherited property of `object`.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Object
+	 * @param {Object} object The object to query.
+	 * @param {Array|string} path The path to check.
+	 * @returns {boolean} Returns `true` if `path` exists, else `false`.
+	 * @example
+	 *
+	 * var object = _.create({ 'a': _.create({ 'b': 2 }) });
+	 *
+	 * _.hasIn(object, 'a');
+	 * // => true
+	 *
+	 * _.hasIn(object, 'a.b');
+	 * // => true
+	 *
+	 * _.hasIn(object, ['a', 'b']);
+	 * // => true
+	 *
+	 * _.hasIn(object, 'b');
+	 * // => false
+	 */
+	function hasIn(object, path) {
+	  return object != null && hasPath(object, path, baseHasIn);
+	}
+	
+	module.exports = hasIn;
+
+/***/ },
+/* 276 */
+/*!***************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_baseHasIn.js ***!
+  \***************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * The base implementation of `_.hasIn` without support for deep paths.
+	 *
+	 * @private
+	 * @param {Object} [object] The object to query.
+	 * @param {Array|string} key The key to check.
+	 * @returns {boolean} Returns `true` if `key` exists, else `false`.
+	 */
+	function baseHasIn(object, key) {
+	  return object != null && key in Object(object);
+	}
+	
+	module.exports = baseHasIn;
+
+/***/ },
+/* 277 */
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_hasPath.js ***!
+  \*************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var castPath = __webpack_require__(/*! ./_castPath */ 267),
+	    isArguments = __webpack_require__(/*! ./isArguments */ 186),
+	    isArray = __webpack_require__(/*! ./isArray */ 195),
+	    isIndex = __webpack_require__(/*! ./_isIndex */ 197),
+	    isKey = __webpack_require__(/*! ./_isKey */ 273),
+	    isLength = __webpack_require__(/*! ./isLength */ 193),
+	    isString = __webpack_require__(/*! ./isString */ 196),
+	    toKey = __webpack_require__(/*! ./_toKey */ 274);
+	
+	/**
+	 * Checks if `path` exists on `object`.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @param {Array|string} path The path to check.
+	 * @param {Function} hasFunc The function to check properties.
+	 * @returns {boolean} Returns `true` if `path` exists, else `false`.
+	 */
+	function hasPath(object, path, hasFunc) {
+	  path = isKey(path, object) ? [path] : castPath(path);
+	
+	  var result,
+	      index = -1,
+	      length = path.length;
+	
+	  while (++index < length) {
+	    var key = toKey(path[index]);
+	    if (!(result = object != null && hasFunc(object, key))) {
+	      break;
+	    }
+	    object = object[key];
+	  }
+	  if (result) {
+	    return result;
+	  }
+	  var length = object ? object.length : 0;
+	  return !!length && isLength(length) && isIndex(key, length) && (isArray(object) || isString(object) || isArguments(object));
+	}
+	
+	module.exports = hasPath;
+
+/***/ },
+/* 278 */
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/identity.js ***!
+  \*************************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * This method returns the first argument given to it.
+	 *
+	 * @static
+	 * @since 0.1.0
+	 * @memberOf _
+	 * @category Util
 	 * @param {*} value Any value.
 	 * @returns {*} Returns `value`.
 	 * @example
 	 *
 	 * var object = { 'user': 'fred' };
 	 *
-	 * _.identity(object) === object;
+	 * console.log(_.identity(object) === object);
 	 * // => true
 	 */
 	function identity(value) {
@@ -22076,7 +25118,75 @@
 	module.exports = identity;
 
 /***/ },
-/* 200 */
+/* 279 */
+/*!*************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/property.js ***!
+  \*************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var baseProperty = __webpack_require__(/*! ./_baseProperty */ 190),
+	    basePropertyDeep = __webpack_require__(/*! ./_basePropertyDeep */ 280),
+	    isKey = __webpack_require__(/*! ./_isKey */ 273),
+	    toKey = __webpack_require__(/*! ./_toKey */ 274);
+	
+	/**
+	 * Creates a function that returns the value at `path` of a given object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 2.4.0
+	 * @category Util
+	 * @param {Array|string} path The path of the property to get.
+	 * @returns {Function} Returns the new accessor function.
+	 * @example
+	 *
+	 * var objects = [
+	 *   { 'a': { 'b': 2 } },
+	 *   { 'a': { 'b': 1 } }
+	 * ];
+	 *
+	 * _.map(objects, _.property('a.b'));
+	 * // => [2, 1]
+	 *
+	 * _.map(_.sortBy(objects, _.property(['a', 'b'])), 'a.b');
+	 * // => [1, 2]
+	 */
+	function property(path) {
+	  return isKey(path) ? baseProperty(toKey(path)) : basePropertyDeep(path);
+	}
+	
+	module.exports = property;
+
+/***/ },
+/* 280 */
+/*!**********************************************************!*\
+  !*** ./~/svg-react-loader/~/lodash/_basePropertyDeep.js ***!
+  \**********************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var baseGet = __webpack_require__(/*! ./_baseGet */ 266);
+	
+	/**
+	 * A specialized version of `baseProperty` which supports deep paths.
+	 *
+	 * @private
+	 * @param {Array|string} path The path of the property to get.
+	 * @returns {Function} Returns the new accessor function.
+	 */
+	function basePropertyDeep(path) {
+	  return function (object) {
+	    return baseGet(object, path);
+	  };
+	}
+	
+	module.exports = basePropertyDeep;
+
+/***/ },
+/* 281 */
 /*!**********************************!*\
   !*** ./src/account-outlined.svg ***!
   \**********************************/
@@ -22085,7 +25195,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22113,7 +25223,7 @@
 	});
 
 /***/ },
-/* 201 */
+/* 282 */
 /*!***************************!*\
   !*** ./src/app-store.svg ***!
   \***************************/
@@ -22122,7 +25232,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22190,7 +25300,7 @@
 	});
 
 /***/ },
-/* 202 */
+/* 283 */
 /*!****************************!*\
   !*** ./src/arrow-down.svg ***!
   \****************************/
@@ -22199,7 +25309,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22227,7 +25337,7 @@
 	});
 
 /***/ },
-/* 203 */
+/* 284 */
 /*!****************************!*\
   !*** ./src/arrow-left.svg ***!
   \****************************/
@@ -22236,7 +25346,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22264,7 +25374,7 @@
 	});
 
 /***/ },
-/* 204 */
+/* 285 */
 /*!*****************************!*\
   !*** ./src/arrow-right.svg ***!
   \*****************************/
@@ -22273,7 +25383,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22301,7 +25411,7 @@
 	});
 
 /***/ },
-/* 205 */
+/* 286 */
 /*!**************************!*\
   !*** ./src/arrow-up.svg ***!
   \**************************/
@@ -22310,7 +25420,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22338,7 +25448,7 @@
 	});
 
 /***/ },
-/* 206 */
+/* 287 */
 /*!*****************************!*\
   !*** ./src/baby-bottle.svg ***!
   \*****************************/
@@ -22347,7 +25457,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22375,7 +25485,7 @@
 	});
 
 /***/ },
-/* 207 */
+/* 288 */
 /*!**********************!*\
   !*** ./src/bell.svg ***!
   \**********************/
@@ -22384,7 +25494,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22412,7 +25522,7 @@
 	});
 
 /***/ },
-/* 208 */
+/* 289 */
 /*!******************************!*\
   !*** ./src/benefits-egg.svg ***!
   \******************************/
@@ -22421,7 +25531,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22454,7 +25564,7 @@
 	});
 
 /***/ },
-/* 209 */
+/* 290 */
 /*!**************************!*\
   !*** ./src/bookmark.svg ***!
   \**************************/
@@ -22463,7 +25573,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22491,7 +25601,7 @@
 	});
 
 /***/ },
-/* 210 */
+/* 291 */
 /*!****************************!*\
   !*** ./src/bookmarked.svg ***!
   \****************************/
@@ -22500,7 +25610,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22529,7 +25639,7 @@
 	});
 
 /***/ },
-/* 211 */
+/* 292 */
 /*!******************************!*\
   !*** ./src/bullet-point.svg ***!
   \******************************/
@@ -22538,7 +25648,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22571,7 +25681,7 @@
 	});
 
 /***/ },
-/* 212 */
+/* 293 */
 /*!*********************************!*\
   !*** ./src/buyer-assurance.svg ***!
   \*********************************/
@@ -22580,7 +25690,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22617,7 +25727,7 @@
 	});
 
 /***/ },
-/* 213 */
+/* 294 */
 /*!***************************!*\
   !*** ./src/cart-open.svg ***!
   \***************************/
@@ -22626,7 +25736,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22660,7 +25770,7 @@
 	});
 
 /***/ },
-/* 214 */
+/* 295 */
 /*!**********************!*\
   !*** ./src/cart.svg ***!
   \**********************/
@@ -22669,7 +25779,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22706,7 +25816,7 @@
 	});
 
 /***/ },
-/* 215 */
+/* 296 */
 /*!***************************!*\
   !*** ./src/checkmark.svg ***!
   \***************************/
@@ -22715,7 +25825,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22743,7 +25853,7 @@
 	});
 
 /***/ },
-/* 216 */
+/* 297 */
 /*!***********************************!*\
   !*** ./src/circle-arrow-left.svg ***!
   \***********************************/
@@ -22752,7 +25862,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22785,7 +25895,7 @@
 	});
 
 /***/ },
-/* 217 */
+/* 298 */
 /*!************************************!*\
   !*** ./src/circle-arrow-right.svg ***!
   \************************************/
@@ -22794,7 +25904,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22831,7 +25941,7 @@
 	});
 
 /***/ },
-/* 218 */
+/* 299 */
 /*!***********************!*\
   !*** ./src/clock.svg ***!
   \***********************/
@@ -22840,7 +25950,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22873,7 +25983,7 @@
 	});
 
 /***/ },
-/* 219 */
+/* 300 */
 /*!***********************!*\
   !*** ./src/close.svg ***!
   \***********************/
@@ -22882,7 +25992,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22910,7 +26020,7 @@
 	});
 
 /***/ },
-/* 220 */
+/* 301 */
 /*!********************************!*\
   !*** ./src/commuter-train.svg ***!
   \********************************/
@@ -22919,7 +26029,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22954,7 +26064,7 @@
 	});
 
 /***/ },
-/* 221 */
+/* 302 */
 /*!**********************************!*\
   !*** ./src/customer-support.svg ***!
   \**********************************/
@@ -22963,7 +26073,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -22991,7 +26101,7 @@
 	});
 
 /***/ },
-/* 222 */
+/* 303 */
 /*!*****************************!*\
   !*** ./src/do-not-edit.svg ***!
   \*****************************/
@@ -23000,7 +26110,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23038,7 +26148,7 @@
 	});
 
 /***/ },
-/* 223 */
+/* 304 */
 /*!******************************!*\
   !*** ./src/early-access.svg ***!
   \******************************/
@@ -23047,7 +26157,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23075,7 +26185,7 @@
 	});
 
 /***/ },
-/* 224 */
+/* 305 */
 /*!***********************!*\
   !*** ./src/email.svg ***!
   \***********************/
@@ -23084,7 +26194,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23112,7 +26222,7 @@
 	});
 
 /***/ },
-/* 225 */
+/* 306 */
 /*!**************************!*\
   !*** ./src/envelope.svg ***!
   \**************************/
@@ -23121,7 +26231,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23149,7 +26259,7 @@
 	});
 
 /***/ },
-/* 226 */
+/* 307 */
 /*!**************************!*\
   !*** ./src/facebook.svg ***!
   \**************************/
@@ -23158,7 +26268,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23186,7 +26296,7 @@
 	});
 
 /***/ },
-/* 227 */
+/* 308 */
 /*!*************************!*\
   !*** ./src/gallery.svg ***!
   \*************************/
@@ -23195,7 +26305,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23228,7 +26338,7 @@
 	});
 
 /***/ },
-/* 228 */
+/* 309 */
 /*!*****************************!*\
   !*** ./src/gear-filled.svg ***!
   \*****************************/
@@ -23237,7 +26347,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23265,7 +26375,7 @@
 	});
 
 /***/ },
-/* 229 */
+/* 310 */
 /*!**********************!*\
   !*** ./src/gear.svg ***!
   \**********************/
@@ -23274,7 +26384,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23303,7 +26413,7 @@
 	});
 
 /***/ },
-/* 230 */
+/* 311 */
 /*!***********************!*\
   !*** ./src/globe.svg ***!
   \***********************/
@@ -23312,7 +26422,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23340,7 +26450,7 @@
 	});
 
 /***/ },
-/* 231 */
+/* 312 */
 /*!********************************!*\
   !*** ./src/hamburger-menu.svg ***!
   \********************************/
@@ -23349,7 +26459,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23377,7 +26487,7 @@
 	});
 
 /***/ },
-/* 232 */
+/* 313 */
 /*!******************************!*\
   !*** ./src/heart-filled.svg ***!
   \******************************/
@@ -23386,7 +26496,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23414,7 +26524,7 @@
 	});
 
 /***/ },
-/* 233 */
+/* 314 */
 /*!********************************!*\
   !*** ./src/heart-outlined.svg ***!
   \********************************/
@@ -23423,7 +26533,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23451,7 +26561,7 @@
 	});
 
 /***/ },
-/* 234 */
+/* 315 */
 /*!**********************!*\
   !*** ./src/home.svg ***!
   \**********************/
@@ -23460,7 +26570,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23488,7 +26598,7 @@
 	});
 
 /***/ },
-/* 235 */
+/* 316 */
 /*!***************************************!*\
   !*** ./src/image-upload-multiple.svg ***!
   \***************************************/
@@ -23497,7 +26607,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23531,7 +26641,7 @@
 	});
 
 /***/ },
-/* 236 */
+/* 317 */
 /*!******************************!*\
   !*** ./src/image-upload.svg ***!
   \******************************/
@@ -23540,7 +26650,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23574,7 +26684,7 @@
 	});
 
 /***/ },
-/* 237 */
+/* 318 */
 /*!*****************************!*\
   !*** ./src/info-circle.svg ***!
   \*****************************/
@@ -23583,7 +26693,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23613,7 +26723,7 @@
 	});
 
 /***/ },
-/* 238 */
+/* 319 */
 /*!***************************!*\
   !*** ./src/instagram.svg ***!
   \***************************/
@@ -23622,7 +26732,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23650,7 +26760,7 @@
 	});
 
 /***/ },
-/* 239 */
+/* 320 */
 /*!************************!*\
   !*** ./src/iphone.svg ***!
   \************************/
@@ -23659,7 +26769,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23687,7 +26797,7 @@
 	});
 
 /***/ },
-/* 240 */
+/* 321 */
 /*!**************************!*\
   !*** ./src/linkedin.svg ***!
   \**************************/
@@ -23696,7 +26806,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23724,7 +26834,7 @@
 	});
 
 /***/ },
-/* 241 */
+/* 322 */
 /*!******************************!*\
   !*** ./src/location-pin.svg ***!
   \******************************/
@@ -23733,7 +26843,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23768,7 +26878,7 @@
 	});
 
 /***/ },
-/* 242 */
+/* 323 */
 /*!*************************************!*\
   !*** ./src/lock-with-checkmark.svg ***!
   \*************************************/
@@ -23777,7 +26887,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23810,7 +26920,7 @@
 	});
 
 /***/ },
-/* 243 */
+/* 324 */
 /*!**********************!*\
   !*** ./src/lock.svg ***!
   \**********************/
@@ -23819,7 +26929,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23851,7 +26961,7 @@
 	});
 
 /***/ },
-/* 244 */
+/* 325 */
 /*!*****************************!*\
   !*** ./src/logo-no-reg.svg ***!
   \*****************************/
@@ -23860,7 +26970,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23898,7 +27008,7 @@
 	});
 
 /***/ },
-/* 245 */
+/* 326 */
 /*!**********************!*\
   !*** ./src/logo.svg ***!
   \**********************/
@@ -23907,7 +27017,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23950,7 +27060,7 @@
 	});
 
 /***/ },
-/* 246 */
+/* 327 */
 /*!*************************!*\
   !*** ./src/luggage.svg ***!
   \*************************/
@@ -23959,7 +27069,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -23987,7 +27097,7 @@
 	});
 
 /***/ },
-/* 247 */
+/* 328 */
 /*!**********************************!*\
   !*** ./src/magnifying-glass.svg ***!
   \**********************************/
@@ -23996,7 +27106,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24024,7 +27134,7 @@
 	});
 
 /***/ },
-/* 248 */
+/* 329 */
 /*!**********************!*\
   !*** ./src/mask.svg ***!
   \**********************/
@@ -24033,7 +27143,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24061,7 +27171,7 @@
 	});
 
 /***/ },
-/* 249 */
+/* 330 */
 /*!*************************!*\
   !*** ./src/message.svg ***!
   \*************************/
@@ -24070,7 +27180,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24102,7 +27212,7 @@
 	});
 
 /***/ },
-/* 250 */
+/* 331 */
 /*!***********************!*\
   !*** ./src/minus.svg ***!
   \***********************/
@@ -24111,7 +27221,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24139,7 +27249,7 @@
 	});
 
 /***/ },
-/* 251 */
+/* 332 */
 /*!***************************!*\
   !*** ./src/net-price.svg ***!
   \***************************/
@@ -24148,7 +27258,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24183,7 +27293,7 @@
 	});
 
 /***/ },
-/* 252 */
+/* 333 */
 /*!************************!*\
   !*** ./src/orange.svg ***!
   \************************/
@@ -24192,7 +27302,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24220,7 +27330,7 @@
 	});
 
 /***/ },
-/* 253 */
+/* 334 */
 /*!*********************!*\
   !*** ./src/pen.svg ***!
   \*********************/
@@ -24229,7 +27339,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24262,7 +27372,7 @@
 	});
 
 /***/ },
-/* 254 */
+/* 335 */
 /*!*************************************!*\
   !*** ./src/person-inside-badge.svg ***!
   \*************************************/
@@ -24271,7 +27381,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24311,7 +27421,7 @@
 	});
 
 /***/ },
-/* 255 */
+/* 336 */
 /*!********************************!*\
   !*** ./src/person-profile.svg ***!
   \********************************/
@@ -24320,7 +27430,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24348,7 +27458,7 @@
 	});
 
 /***/ },
-/* 256 */
+/* 337 */
 /*!***************************!*\
   !*** ./src/pinterest.svg ***!
   \***************************/
@@ -24357,7 +27467,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24385,7 +27495,7 @@
 	});
 
 /***/ },
-/* 257 */
+/* 338 */
 /*!**********************!*\
   !*** ./src/plus.svg ***!
   \**********************/
@@ -24394,7 +27504,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24422,7 +27532,7 @@
 	});
 
 /***/ },
-/* 258 */
+/* 339 */
 /*!***********************!*\
   !*** ./src/print.svg ***!
   \***********************/
@@ -24431,7 +27541,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24459,7 +27569,7 @@
 	});
 
 /***/ },
-/* 259 */
+/* 340 */
 /*!***********************!*\
   !*** ./src/quote.svg ***!
   \***********************/
@@ -24468,7 +27578,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24501,7 +27611,7 @@
 	});
 
 /***/ },
-/* 260 */
+/* 341 */
 /*!***********************!*\
   !*** ./src/ramen.svg ***!
   \***********************/
@@ -24510,7 +27620,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24538,7 +27648,88 @@
 	});
 
 /***/ },
-/* 261 */
+/* 342 */
+/*!************************!*\
+  !*** ./src/reject.svg ***!
+  \************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Reject",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-reject", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]", "viewBox": "0 0 250 250" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'g',
+	                null,
+	                React.createElement('path', { className: 'st0', d: 'M155.3,196.1V250h-55v-53.9H155.3z M139.9,175.1H115L101.7,67.2V0h51.8v67.2L139.9,175.1z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 343 */
+/*!************************!*\
+  !*** ./src/repost.svg ***!
+  \************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
+	
+	module.exports = React.createClass({
+	
+	    displayName: "Repost",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-repost", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]", "viewBox": "0 0 250 250" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement('path', { className: 'st0', d: 'M130.9,232c-30.6-0.4-61-15.9-90.5-46.3l20.8-20.6c26.6,27.4,52.9,39.9,78.2,37.1c41.3-4.6,68.8-48.5,69.1-49 l24.8,15.4c-1.4,2.3-34.9,56.5-90.5,62.8C138.9,231.8,134.9,232,130.9,232z' }),
+	            React.createElement('path', { className: 'st0', d: 'M44.1,79.9L19.1,64.7c1.4-2.4,35.3-57.9,91.1-64.2c34.5-3.9,68.6,11.6,101.5,46.1l-21,20.4 c-26.3-27.6-52.3-40.1-77.3-37.3c-21.4,2.4-39.1,15.8-50.1,26.6C51.2,68.3,44.1,79.8,44.1,79.9z' }),
+	            React.createElement('polygon', { className: 'st0', points: '104,142.2 1.6,79.8 5,210.2 ' }),
+	            React.createElement('polygon', { className: 'st0', points: '148.1,90.8 250,153.8 247.1,21.3 ' }),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	});
+
+/***/ },
+/* 344 */
 /*!******************************!*\
   !*** ./src/return-arrow.svg ***!
   \******************************/
@@ -24547,7 +27738,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24575,7 +27766,7 @@
 	});
 
 /***/ },
-/* 262 */
+/* 345 */
 /*!********************************!*\
   !*** ./src/service-person.svg ***!
   \********************************/
@@ -24584,7 +27775,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24613,7 +27804,7 @@
 	});
 
 /***/ },
-/* 263 */
+/* 346 */
 /*!***********************!*\
   !*** ./src/share.svg ***!
   \***********************/
@@ -24622,7 +27813,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24655,7 +27846,7 @@
 	});
 
 /***/ },
-/* 264 */
+/* 347 */
 /*!**************************!*\
   !*** ./src/shipping.svg ***!
   \**************************/
@@ -24664,7 +27855,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24692,7 +27883,7 @@
 	});
 
 /***/ },
-/* 265 */
+/* 348 */
 /*!*******************************!*\
   !*** ./src/shopping-cart.svg ***!
   \*******************************/
@@ -24701,7 +27892,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24731,7 +27922,7 @@
 	});
 
 /***/ },
-/* 266 */
+/* 349 */
 /*!*****************************!*\
   !*** ./src/star-filled.svg ***!
   \*****************************/
@@ -24740,7 +27931,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24768,7 +27959,7 @@
 	});
 
 /***/ },
-/* 267 */
+/* 350 */
 /*!*******************************!*\
   !*** ./src/star-outlined.svg ***!
   \*******************************/
@@ -24777,7 +27968,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24805,7 +27996,7 @@
 	});
 
 /***/ },
-/* 268 */
+/* 351 */
 /*!****************************!*\
   !*** ./src/storefront.svg ***!
   \****************************/
@@ -24814,7 +28005,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24851,7 +28042,7 @@
 	});
 
 /***/ },
-/* 269 */
+/* 352 */
 /*!*************************!*\
   !*** ./src/toolbox.svg ***!
   \*************************/
@@ -24860,7 +28051,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24889,7 +28080,7 @@
 	});
 
 /***/ },
-/* 270 */
+/* 353 */
 /*!*****************************!*\
   !*** ./src/trade-arrow.svg ***!
   \*****************************/
@@ -24898,7 +28089,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24926,7 +28117,7 @@
 	});
 
 /***/ },
-/* 271 */
+/* 354 */
 /*!****************************!*\
   !*** ./src/trade-logo.svg ***!
   \****************************/
@@ -24935,7 +28126,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -24968,7 +28159,7 @@
 	});
 
 /***/ },
-/* 272 */
+/* 355 */
 /*!******************************!*\
   !*** ./src/trash-filled.svg ***!
   \******************************/
@@ -24977,7 +28168,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -25010,7 +28201,7 @@
 	});
 
 /***/ },
-/* 273 */
+/* 356 */
 /*!******************************!*\
   !*** ./src/truck-moving.svg ***!
   \******************************/
@@ -25019,7 +28210,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -25054,7 +28245,7 @@
 	});
 
 /***/ },
-/* 274 */
+/* 357 */
 /*!*************************!*\
   !*** ./src/twitter.svg ***!
   \*************************/
@@ -25063,7 +28254,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -25091,7 +28282,7 @@
 	});
 
 /***/ },
-/* 275 */
+/* 358 */
 /*!**********************!*\
   !*** ./src/yoga.svg ***!
   \**********************/
@@ -25100,7 +28291,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 33));
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 173)(__webpack_require__(/*! react-dom */ 38));
 	
 	module.exports = React.createClass({
 	
@@ -25128,7 +28319,7 @@
 	});
 
 /***/ },
-/* 276 */
+/* 359 */
 /*!************************************!*\
   !*** ./sample/js/BackboneIcons.js ***!
   \************************************/
@@ -25136,9 +28327,9 @@
 
 	"use strict";
 	
-	var SvgWrapper = __webpack_require__(/*! ../../js/SvgWrapper.js */ 277);
+	var SvgWrapper = __webpack_require__(/*! ../../js/SvgWrapper.js */ 360);
 	var iconList = __webpack_require__(/*! ../../list.json */ 170);
-	var Backbone = __webpack_require__(/*! backbone */ 278);
+	var Backbone = __webpack_require__(/*! backbone */ 361);
 	var heading = '<br /><br /><div id=\'bb-icons\'><h1>These icons are all rendered by Backbone :</h1><hr /></div>';
 	
 	/**
@@ -25148,7 +28339,7 @@
 	    allIcons: function allIcons() {
 	        return iconList.map(function (icon, idx) {
 	            // NOTE* Here we have to use a leading "!" to tell webpack not to use the svg->react loader
-	            var Icon = __webpack_require__(/*! html!../../src */ 282)("./" + icon);
+	            var Icon = __webpack_require__(/*! html!../../src */ 365)("./" + icon);
 	            var svgWrapperEl = new SvgWrapper({
 	                icon: Icon,
 	                width: 130,
@@ -25168,7 +28359,7 @@
 	module.exports = BackboneIcons;
 
 /***/ },
-/* 277 */
+/* 360 */
 /*!**************************!*\
   !*** ./js/SvgWrapper.js ***!
   \**************************/
@@ -25176,7 +28367,7 @@
 
 	'use strict';
 	
-	var Backbone = __webpack_require__(/*! backbone */ 278);
+	var Backbone = __webpack_require__(/*! backbone */ 361);
 	var template = function template(_ref) {
 	    var className = _ref.className;
 	    var icon = _ref.icon;
@@ -25236,7 +28427,7 @@
 	module.exports = SvgWrapper;
 
 /***/ },
-/* 278 */
+/* 361 */
 /*!********************************!*\
   !*** ./~/backbone/backbone.js ***!
   \********************************/
@@ -25261,7 +28452,7 @@
 	
 	  // Set up Backbone appropriately for the environment. Start with AMD.
 	  if (true) {
-	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! underscore */ 279), __webpack_require__(/*! jquery */ 280), exports], __WEBPACK_AMD_DEFINE_RESULT__ = function (_, $, exports) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! underscore */ 362), __webpack_require__(/*! jquery */ 363), exports], __WEBPACK_AMD_DEFINE_RESULT__ = function (_, $, exports) {
 	      // Export global even in AMD case in case this script is loaded with
 	      // others that may still expect a global Backbone.
 	      root.Backbone = factory(root, exports, _, $);
@@ -27197,7 +30388,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 279 */
+/* 362 */
 /*!***********************************************!*\
   !*** ./~/backbone/~/underscore/underscore.js ***!
   \***********************************************/
@@ -28777,14 +31968,14 @@
 	}).call(undefined);
 
 /***/ },
-/* 280 */
+/* 363 */
 /*!*********************************!*\
   !*** ./~/jquery/dist/jquery.js ***!
   \*********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module) {"use strict";var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol?"symbol":typeof obj;}; /*!
-	 * jQuery JavaScript Library v2.2.3
+	 * jQuery JavaScript Library v2.2.4
 	 * http://jquery.com/
 	 *
 	 * Includes Sizzle.js
@@ -28794,7 +31985,7 @@
 	 * Released under the MIT license
 	 * http://jquery.org/license
 	 *
-	 * Date: 2016-04-05T19:26Z
+	 * Date: 2016-05-20T17:23Z
 	 */(function(global,factory){if(( false?"undefined":_typeof(module))==="object"&&_typeof(module.exports)==="object"){ // For CommonJS and CommonJS-like environments where a proper `window`
 	// is present, execute the factory and get jQuery.
 	// For environments that do not have a `window` with a `document`
@@ -28808,7 +31999,7 @@
 	// the stack via arguments.caller.callee and Firefox dies if
 	// you try to trace through "use strict" call chains. (#13335)
 	//"use strict";
-	var arr=[];var document=window.document;var _slice=arr.slice;var concat=arr.concat;var push=arr.push;var indexOf=arr.indexOf;var class2type={};var toString=class2type.toString;var hasOwn=class2type.hasOwnProperty;var support={};var version="2.2.3", // Define a local copy of jQuery
+	var arr=[];var document=window.document;var _slice=arr.slice;var concat=arr.concat;var push=arr.push;var indexOf=arr.indexOf;var class2type={};var toString=class2type.toString;var hasOwn=class2type.hasOwnProperty;var support={};var version="2.2.4", // Define a local copy of jQuery
 	jQuery=function jQuery(selector,context){ // The jQuery object is actually just the init constructor 'enhanced'
 	// Need init if jQuery is called (just allow error to be thrown if not included)
 	return new jQuery.fn.init(selector,context);}, // Support: Android<4.1
@@ -29684,7 +32875,7 @@
 	this.timeStamp=src&&src.timeStamp||jQuery.now(); // Mark it as fixed
 	this[jQuery.expando]=true;}; // jQuery.Event is based on DOM3 Events as specified by the ECMAScript Language Binding
 	// http://www.w3.org/TR/2003/WD-DOM-Level-3-Events-20030331/ecma-script-binding.html
-	jQuery.Event.prototype={constructor:jQuery.Event,isDefaultPrevented:returnFalse,isPropagationStopped:returnFalse,isImmediatePropagationStopped:returnFalse,preventDefault:function preventDefault(){var e=this.originalEvent;this.isDefaultPrevented=returnTrue;if(e){e.preventDefault();}},stopPropagation:function stopPropagation(){var e=this.originalEvent;this.isPropagationStopped=returnTrue;if(e){e.stopPropagation();}},stopImmediatePropagation:function stopImmediatePropagation(){var e=this.originalEvent;this.isImmediatePropagationStopped=returnTrue;if(e){e.stopImmediatePropagation();}this.stopPropagation();}}; // Create mouseenter/leave events using mouseover/out and event-time checks
+	jQuery.Event.prototype={constructor:jQuery.Event,isDefaultPrevented:returnFalse,isPropagationStopped:returnFalse,isImmediatePropagationStopped:returnFalse,isSimulated:false,preventDefault:function preventDefault(){var e=this.originalEvent;this.isDefaultPrevented=returnTrue;if(e&&!this.isSimulated){e.preventDefault();}},stopPropagation:function stopPropagation(){var e=this.originalEvent;this.isPropagationStopped=returnTrue;if(e&&!this.isSimulated){e.stopPropagation();}},stopImmediatePropagation:function stopImmediatePropagation(){var e=this.originalEvent;this.isImmediatePropagationStopped=returnTrue;if(e&&!this.isSimulated){e.stopImmediatePropagation();}this.stopPropagation();}}; // Create mouseenter/leave events using mouseover/out and event-time checks
 	// so that event delegation works in jQuery.
 	// Do the same for pointerenter/pointerleave and pointerover/pointerout
 	//
@@ -29822,13 +33013,7 @@
 	if(extra!=="margin"){val-=jQuery.css(elem,"border"+cssExpand[i]+"Width",true,styles);}}else { // At this point, extra isn't content, so add padding
 	val+=jQuery.css(elem,"padding"+cssExpand[i],true,styles); // At this point, extra isn't content nor padding, so add border
 	if(extra!=="padding"){val+=jQuery.css(elem,"border"+cssExpand[i]+"Width",true,styles);}}}return val;}function getWidthOrHeight(elem,name,extra){ // Start with offset property, which is equivalent to the border-box value
-	var valueIsBorderBox=true,val=name==="width"?elem.offsetWidth:elem.offsetHeight,styles=getStyles(elem),isBorderBox=jQuery.css(elem,"boxSizing",false,styles)==="border-box"; // Support: IE11 only
-	// In IE 11 fullscreen elements inside of an iframe have
-	// 100x too small dimensions (gh-1764).
-	if(document.msFullscreenElement&&window.top!==window){ // Support: IE11 only
-	// Running getBoundingClientRect on a disconnected node
-	// in IE throws an error.
-	if(elem.getClientRects().length){val=Math.round(elem.getBoundingClientRect()[name]*100);}} // Some non-html elements return undefined for offsetWidth, so check for null/undefined
+	var valueIsBorderBox=true,val=name==="width"?elem.offsetWidth:elem.offsetHeight,styles=getStyles(elem),isBorderBox=jQuery.css(elem,"boxSizing",false,styles)==="border-box"; // Some non-html elements return undefined for offsetWidth, so check for null/undefined
 	// svg - https://bugzilla.mozilla.org/show_bug.cgi?id=649285
 	// MathML - https://bugzilla.mozilla.org/show_bug.cgi?id=491668
 	if(val<=0||val==null){ // Fall back to computed then uncomputed css if necessary
@@ -30018,19 +33203,8 @@
 	if(ontype&&jQuery.isFunction(elem[type])&&!jQuery.isWindow(elem)){ // Don't re-trigger an onFOO event when we call its FOO() method
 	tmp=elem[ontype];if(tmp){elem[ontype]=null;} // Prevent re-triggering of the same event, since we already bubbled it above
 	jQuery.event.triggered=type;elem[type]();jQuery.event.triggered=undefined;if(tmp){elem[ontype]=tmp;}}}}return event.result;}, // Piggyback on a donor event to simulate a different one
-	simulate:function simulate(type,elem,event){var e=jQuery.extend(new jQuery.Event(),event,{type:type,isSimulated:true // Previously, `originalEvent: {}` was set here, so stopPropagation call
-	// would not be triggered on donor event, since in our own
-	// jQuery.event.stopPropagation function we had a check for existence of
-	// originalEvent.stopPropagation method, so, consequently it would be a noop.
-	//
-	// But now, this "simulate" function is used only for events
-	// for which stopPropagation() is noop, so there is no need for that anymore.
-	//
-	// For the 1.x branch though, guard for "click" and "submit"
-	// events is still used, but was moved to jQuery.event.stopPropagation function
-	// because `originalEvent` should point to the original event for the constancy
-	// with other events and for more focused logic
-	});jQuery.event.trigger(e,null,elem);if(e.isDefaultPrevented()){event.preventDefault();}}});jQuery.fn.extend({trigger:function trigger(type,data){return this.each(function(){jQuery.event.trigger(type,data,this);});},triggerHandler:function triggerHandler(type,data){var elem=this[0];if(elem){return jQuery.event.trigger(type,data,elem,true);}}});jQuery.each(("blur focus focusin focusout load resize scroll unload click dblclick "+"mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave "+"change select submit keydown keypress keyup error contextmenu").split(" "),function(i,name){ // Handle event binding
+	// Used only for `focus(in | out)` events
+	simulate:function simulate(type,elem,event){var e=jQuery.extend(new jQuery.Event(),event,{type:type,isSimulated:true});jQuery.event.trigger(e,null,elem);}});jQuery.fn.extend({trigger:function trigger(type,data){return this.each(function(){jQuery.event.trigger(type,data,this);});},triggerHandler:function triggerHandler(type,data){var elem=this[0];if(elem){return jQuery.event.trigger(type,data,elem,true);}}});jQuery.each(("blur focus focusin focusout load resize scroll unload click dblclick "+"mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave "+"change select submit keydown keypress keyup error contextmenu").split(" "),function(i,name){ // Handle event binding
 	jQuery.fn[name]=function(data,fn){return arguments.length>0?this.on(name,null,data,fn):this.trigger(name);};});jQuery.fn.extend({hover:function hover(fnOver,fnOut){return this.mouseenter(fnOver).mouseleave(fnOut||fnOver);}});support.focusin="onfocusin" in window; // Support: Firefox
 	// Firefox doesn't have focus(in | out) events
 	// Related ticket - https://bugzilla.mozilla.org/show_bug.cgi?id=687787
@@ -30375,10 +33549,10 @@
 	// (#7102#comment:10, https://github.com/jquery/jquery/pull/557)
 	// and CommonJS for browser emulators (#13566)
 	if(!noGlobal){window.jQuery=window.$=jQuery;}return jQuery;});
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../webpack/buildin/module.js */ 281)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../webpack/buildin/module.js */ 364)(module)))
 
 /***/ },
-/* 281 */
+/* 364 */
 /*!***********************************!*\
   !*** (webpack)/buildin/module.js ***!
   \***********************************/
@@ -30398,90 +33572,92 @@
 	};
 
 /***/ },
-/* 282 */
+/* 365 */
 /*!**************************************!*\
   !*** ./src ./~/html-loader!^\.\/.*$ ***!
   \**************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./account-filled.svg": 283,
-		"./account-outlined.svg": 284,
-		"./app-store.svg": 285,
-		"./arrow-down.svg": 286,
-		"./arrow-left.svg": 287,
-		"./arrow-right.svg": 288,
-		"./arrow-up.svg": 289,
-		"./baby-bottle.svg": 290,
-		"./bell.svg": 291,
-		"./benefits-egg.svg": 292,
-		"./bookmark.svg": 293,
-		"./bookmarked.svg": 294,
-		"./bullet-point.svg": 295,
-		"./buyer-assurance.svg": 296,
-		"./cart-open.svg": 297,
-		"./cart.svg": 298,
-		"./checkmark.svg": 299,
-		"./circle-arrow-left.svg": 300,
-		"./circle-arrow-right.svg": 301,
-		"./clock.svg": 302,
-		"./close.svg": 303,
-		"./commuter-train.svg": 304,
-		"./customer-support.svg": 305,
-		"./do-not-edit.svg": 306,
-		"./early-access.svg": 307,
-		"./email.svg": 308,
-		"./envelope.svg": 309,
-		"./facebook.svg": 310,
-		"./gallery.svg": 311,
-		"./gear-filled.svg": 312,
-		"./gear.svg": 313,
-		"./globe.svg": 314,
-		"./hamburger-menu.svg": 315,
-		"./heart-filled.svg": 316,
-		"./heart-outlined.svg": 317,
-		"./home.svg": 318,
-		"./image-upload-multiple.svg": 319,
-		"./image-upload.svg": 320,
-		"./info-circle.svg": 321,
-		"./instagram.svg": 322,
-		"./iphone.svg": 323,
-		"./linkedin.svg": 324,
-		"./location-pin.svg": 325,
-		"./lock-with-checkmark.svg": 326,
-		"./lock.svg": 327,
-		"./logo-no-reg.svg": 328,
-		"./logo.svg": 329,
-		"./luggage.svg": 330,
-		"./magnifying-glass.svg": 331,
-		"./mask.svg": 332,
-		"./message.svg": 333,
-		"./minus.svg": 334,
-		"./net-price.svg": 335,
-		"./orange.svg": 336,
-		"./pen.svg": 337,
-		"./person-inside-badge.svg": 338,
-		"./person-profile.svg": 339,
-		"./pinterest.svg": 340,
-		"./plus.svg": 341,
-		"./print.svg": 342,
-		"./quote.svg": 343,
-		"./ramen.svg": 344,
-		"./return-arrow.svg": 345,
-		"./service-person.svg": 346,
-		"./share.svg": 347,
-		"./shipping.svg": 348,
-		"./shopping-cart.svg": 349,
-		"./star-filled.svg": 350,
-		"./star-outlined.svg": 351,
-		"./storefront.svg": 352,
-		"./toolbox.svg": 353,
-		"./trade-arrow.svg": 354,
-		"./trade-logo.svg": 355,
-		"./trash-filled.svg": 356,
-		"./truck-moving.svg": 357,
-		"./twitter.svg": 358,
-		"./yoga.svg": 359
+		"./account-filled.svg": 366,
+		"./account-outlined.svg": 367,
+		"./app-store.svg": 368,
+		"./arrow-down.svg": 369,
+		"./arrow-left.svg": 370,
+		"./arrow-right.svg": 371,
+		"./arrow-up.svg": 372,
+		"./baby-bottle.svg": 373,
+		"./bell.svg": 374,
+		"./benefits-egg.svg": 375,
+		"./bookmark.svg": 376,
+		"./bookmarked.svg": 377,
+		"./bullet-point.svg": 378,
+		"./buyer-assurance.svg": 379,
+		"./cart-open.svg": 380,
+		"./cart.svg": 381,
+		"./checkmark.svg": 382,
+		"./circle-arrow-left.svg": 383,
+		"./circle-arrow-right.svg": 384,
+		"./clock.svg": 385,
+		"./close.svg": 386,
+		"./commuter-train.svg": 387,
+		"./customer-support.svg": 388,
+		"./do-not-edit.svg": 389,
+		"./early-access.svg": 390,
+		"./email.svg": 391,
+		"./envelope.svg": 392,
+		"./facebook.svg": 393,
+		"./gallery.svg": 394,
+		"./gear-filled.svg": 395,
+		"./gear.svg": 396,
+		"./globe.svg": 397,
+		"./hamburger-menu.svg": 398,
+		"./heart-filled.svg": 399,
+		"./heart-outlined.svg": 400,
+		"./home.svg": 401,
+		"./image-upload-multiple.svg": 402,
+		"./image-upload.svg": 403,
+		"./info-circle.svg": 404,
+		"./instagram.svg": 405,
+		"./iphone.svg": 406,
+		"./linkedin.svg": 407,
+		"./location-pin.svg": 408,
+		"./lock-with-checkmark.svg": 409,
+		"./lock.svg": 410,
+		"./logo-no-reg.svg": 411,
+		"./logo.svg": 412,
+		"./luggage.svg": 413,
+		"./magnifying-glass.svg": 414,
+		"./mask.svg": 415,
+		"./message.svg": 416,
+		"./minus.svg": 417,
+		"./net-price.svg": 418,
+		"./orange.svg": 419,
+		"./pen.svg": 420,
+		"./person-inside-badge.svg": 421,
+		"./person-profile.svg": 422,
+		"./pinterest.svg": 423,
+		"./plus.svg": 424,
+		"./print.svg": 425,
+		"./quote.svg": 426,
+		"./ramen.svg": 427,
+		"./reject.svg": 428,
+		"./repost.svg": 429,
+		"./return-arrow.svg": 430,
+		"./service-person.svg": 431,
+		"./share.svg": 432,
+		"./shipping.svg": 433,
+		"./shopping-cart.svg": 434,
+		"./star-filled.svg": 435,
+		"./star-outlined.svg": 436,
+		"./storefront.svg": 437,
+		"./toolbox.svg": 438,
+		"./trade-arrow.svg": 439,
+		"./trade-logo.svg": 440,
+		"./trash-filled.svg": 441,
+		"./truck-moving.svg": 442,
+		"./twitter.svg": 443,
+		"./yoga.svg": 444
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -30494,11 +33670,11 @@
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 282;
+	webpackContext.id = 365;
 
 
 /***/ },
-/* 283 */
+/* 366 */
 /*!************************************************!*\
   !*** ./~/html-loader!./src/account-filled.svg ***!
   \************************************************/
@@ -30507,7 +33683,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-account-filled\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M278.088764,500 C190.723711,500 100.959616,499.78903 11.3954418,499.367089 L0,499.367089 L0.799680128,487.552743 C1.19952019,480.801688 4.9980008,421.940928 14.3942423,399.78903 C15.9936026,395.780591 26.1895242,370.886076 51.9792083,361.181435 L130.747701,327.637131 L163.934426,312.236287 C164.534186,312.025316 179.128349,305.696203 183.126749,287.341772 C183.526589,284.599156 183.326669,280.801688 182.926829,279.746835 C181.127549,276.160338 181.127549,276.160338 176.729308,270.886076 L176.529388,270.675105 C175.129948,268.987342 143.942423,229.957806 136.745302,173.628692 C136.345462,170.886076 132.546981,144.092827 136.145542,112.447257 C141.143543,67.5105485 158.336665,34.3881857 186.12555,16.6666667 C187.32507,15.8227848 213.714514,0 251.09956,0 C272.890844,0 294.082367,5.48523207 314.07437,16.0337553 C321.271491,19.4092827 381.847261,51.0548523 365.253898,175.316456 C364.854058,179.324895 358.656537,228.691983 325.669732,270.675105 C324.870052,271.518987 324.070372,272.57384 323.070772,273.839662 C321.471411,275.738397 319.272291,278.059072 318.072771,280.168776 C317.872851,281.223629 317.473011,283.966245 318.472611,287.130802 L318.672531,287.763713 L318.872451,288.607595 C319.072371,289.029536 322.271092,304.219409 341.463415,313.080169 L384.446222,333.544304 L447.820872,360.337553 C449.220312,360.970464 487.005198,376.793249 495.001999,429.324895 L495.201919,430.379747 L500,499.578059 L488.604558,499.578059 C487.604958,499.367089 407.836865,500 278.088764,500 L278.088764,500 Z\"></path>\n</svg>";
 
 /***/ },
-/* 284 */
+/* 367 */
 /*!**************************************************!*\
   !*** ./~/html-loader!./src/account-outlined.svg ***!
   \**************************************************/
@@ -30516,7 +33692,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-account-outlined\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M278.088764,500 C190.723711,500 100.959616,499.78903 11.3954418,499.367089 L0,499.367089 L0.799680128,487.552743 C1.19952019,480.801688 4.9980008,421.940928 14.3942423,399.78903 C15.9936026,395.780591 26.1895242,370.886076 51.9792083,361.181435 L130.747701,327.637131 L163.934426,312.236287 C164.534186,312.025316 179.128349,305.696203 183.126749,287.341772 C183.526589,284.599156 183.326669,280.801688 182.926829,279.746835 C181.127549,276.160338 181.127549,276.160338 176.729308,270.886076 L176.529388,270.675105 C175.129948,268.987342 143.942423,229.957806 136.745302,173.628692 C136.345462,170.886076 132.546981,144.092827 136.145542,112.447257 C141.143543,67.5105485 158.336665,34.3881857 186.12555,16.6666667 C187.32507,15.8227848 213.714514,0 251.09956,0 C272.890844,0 294.082367,5.48523207 314.07437,16.0337553 C321.271491,19.4092827 381.847261,51.0548523 365.253898,175.316456 C364.854058,179.324895 358.656537,228.691983 325.669732,270.675105 C324.870052,271.518987 324.070372,272.57384 323.070772,273.839662 C321.471411,275.738397 319.272291,278.059072 318.072771,280.168776 C317.872851,281.223629 317.473011,283.966245 318.472611,287.130802 L318.672531,287.763713 L318.872451,288.607595 C319.072371,289.029536 322.271092,304.219409 341.463415,313.080169 L384.446222,333.544304 L447.820872,360.337553 C449.220312,360.970464 487.005198,376.793249 495.001999,429.324895 L495.201919,430.379747 L500,499.578059 L488.604558,499.578059 C487.604958,499.367089 407.836865,500 278.088764,500 L278.088764,500 L278.088764,500 L278.088764,500 L278.088764,500 Z M22.7908836,476.793249 C108.556577,477.21519 194.322271,477.42616 277.888844,477.42616 C379.448221,477.42616 450.219912,477.004219 476.609356,477.004219 L473.610556,432.278481 C467.612955,393.459916 441.023591,381.64557 439.82407,381.223629 L375.64974,354.219409 L332.666933,333.755274 C305.677729,321.097046 299.080368,298.734177 297.880848,293.670886 C294.482207,282.278481 297.680928,272.78481 298.080768,271.729958 L298.480608,270.675105 C300.879648,265.400844 304.678129,261.392405 307.277089,258.227848 C307.876849,257.383966 308.676529,256.751055 309.076369,256.118143 C338.464614,218.776371 343.862455,172.995781 343.862455,172.362869 L343.862455,172.151899 C358.656537,61.6033755 307.477009,37.5527426 305.277889,36.4978903 L304.478209,36.0759494 C287.485006,27.0042194 269.492203,22.3628692 250.89964,22.3628692 C219.312275,22.3628692 197.121152,35.6540084 196.921232,35.8649789 C143.142743,70.2531646 157.736905,168.987342 157.736905,170.042194 L157.736905,170.464135 C163.734506,218.776371 190.723711,253.586498 192.522991,255.907173 C198.320672,262.658228 198.920432,263.50211 201.919232,269.831224 C205.517793,277.42616 204.518193,287.974684 204.118353,290.92827 L203.918433,291.772152 C197.920832,321.097046 174.930028,331.85654 171.731307,333.333333 L138.544582,348.523207 L59.1763295,382.489451 C41.1835266,389.240506 34.1863255,408.016878 34.1863255,408.227848 L33.7864854,409.07173 C28.3886445,421.308017 24.5901639,455.485232 22.7908836,476.793249 L22.7908836,476.793249 L22.7908836,476.793249 L22.7908836,476.793249 L22.7908836,476.793249 Z\"></path>\n</svg>";
 
 /***/ },
-/* 285 */
+/* 368 */
 /*!*******************************************!*\
   !*** ./~/html-loader!./src/app-store.svg ***!
   \*******************************************/
@@ -30525,7 +33701,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-app-store\" viewBox=\"0 -47 135 135\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M130.197,40 L4.729,40 C2.122,40 0,37.872 0,35.267 L0,4.726 C0,2.12 2.122,0 4.729,0 L130.197,0 C132.803,0 135,2.12 135,4.726 L135,35.267 C135,37.872 132.803,40 130.197,40 L130.197,40 L130.197,40 Z\" fill=\"#404040\"></path>\n        <path d=\"M134.032,35.268 C134.032,37.384 132.318,39.098 130.198,39.098 L4.729,39.098 C2.61,39.098 0.89,37.384 0.89,35.268 L0.89,4.725 C0.89,2.61 2.61,0.89 4.729,0.89 L130.197,0.89 C132.318,0.89 134.031,2.61 134.031,4.725 L134.032,35.268 L134.032,35.268 L134.032,35.268 Z\" fill=\"#404040\"></path>\n        <g transform=\"translate(12.000000, 6.000000)\" fill=\"#000000\">\n            <path d=\"M18.128,13.784 C18.099,10.561 20.767,8.993 20.889,8.92 C19.378,6.717 17.036,6.416 16.213,6.392 C14.246,6.185 12.338,7.569 11.336,7.569 C10.314,7.569 8.771,6.412 7.108,6.446 C4.968,6.479 2.966,7.718 1.868,9.642 C-0.398,13.565 1.292,19.33 3.463,22.501 C4.549,24.054 5.818,25.788 7.479,25.727 C9.104,25.66 9.711,24.691 11.672,24.691 C13.615,24.691 14.185,25.727 15.879,25.688 C17.623,25.66 18.721,24.128 19.769,22.561 C21.024,20.781 21.528,19.028 21.548,18.938 C21.507,18.924 18.161,17.647 18.128,13.784 L18.128,13.784 Z\"></path>\n            <path d=\"M14.928,4.306 C15.802,3.213 16.4,1.726 16.234,0.217 C14.969,0.273 13.387,1.092 12.476,2.161 C11.67,3.103 10.95,4.647 11.136,6.099 C12.557,6.205 14.016,5.382 14.928,4.306 L14.928,4.306 Z\"></path>\n        </g>\n        <g transform=\"translate(42.000000, 18.000000)\" fill=\"#000000\">\n            <path d=\"M11.645,13.504 L9.374,13.504 L8.13,9.595 L3.806,9.595 L2.621,13.504 L0.41,13.504 L4.694,0.196 L7.34,0.196 L11.645,13.504 L11.645,13.504 Z M7.755,7.955 L6.63,4.48 C6.511,4.125 6.288,3.289 5.959,1.973 L5.919,1.973 C5.788,2.539 5.577,3.375 5.287,4.48 L4.182,7.955 L7.755,7.955 L7.755,7.955 Z\"></path>\n            <path d=\"M22.662,8.588 C22.662,10.22 22.221,11.51 21.339,12.457 C20.549,13.3 19.568,13.721 18.397,13.721 C17.133,13.721 16.225,13.267 15.672,12.359 L15.632,12.359 L15.632,17.414 L13.5,17.414 L13.5,7.067 C13.5,6.041 13.473,4.988 13.421,3.908 L15.296,3.908 L15.415,5.429 L15.455,5.429 C16.166,4.283 17.245,3.711 18.693,3.711 C19.825,3.711 20.77,4.158 21.526,5.053 C22.284,5.949 22.662,7.127 22.662,8.588 L22.662,8.588 Z M20.49,8.666 C20.49,7.732 20.28,6.962 19.858,6.356 C19.397,5.724 18.778,5.408 18.002,5.408 C17.476,5.408 16.998,5.584 16.571,5.931 C16.143,6.281 15.863,6.738 15.732,7.304 C15.666,7.568 15.633,7.784 15.633,7.954 L15.633,9.554 C15.633,10.252 15.847,10.841 16.275,11.322 C16.703,11.803 17.259,12.043 17.943,12.043 C18.746,12.043 19.371,11.733 19.818,11.115 C20.266,10.496 20.49,9.68 20.49,8.666 L20.49,8.666 Z\"></path>\n            <path d=\"M33.699,8.588 C33.699,10.22 33.258,11.51 32.375,12.457 C31.586,13.3 30.605,13.721 29.434,13.721 C28.17,13.721 27.262,13.267 26.71,12.359 L26.67,12.359 L26.67,17.414 L24.538,17.414 L24.538,7.067 C24.538,6.041 24.511,4.988 24.459,3.908 L26.334,3.908 L26.453,5.429 L26.493,5.429 C27.203,4.283 28.282,3.711 29.731,3.711 C30.862,3.711 31.807,4.158 32.565,5.053 C33.32,5.949 33.699,7.127 33.699,8.588 L33.699,8.588 Z M31.527,8.666 C31.527,7.732 31.316,6.962 30.894,6.356 C30.433,5.724 29.816,5.408 29.039,5.408 C28.512,5.408 28.035,5.584 27.607,5.931 C27.179,6.281 26.9,6.738 26.769,7.304 C26.704,7.568 26.67,7.784 26.67,7.954 L26.67,9.554 C26.67,10.252 26.884,10.841 27.31,11.322 C27.738,11.802 28.294,12.043 28.98,12.043 C29.783,12.043 30.408,11.733 30.855,11.115 C31.303,10.496 31.527,9.68 31.527,8.666 L31.527,8.666 Z\"></path>\n            <path d=\"M46.039,9.772 C46.039,10.904 45.646,11.825 44.857,12.536 C43.99,13.313 42.783,13.701 41.232,13.701 C39.8,13.701 38.652,13.425 37.783,12.872 L38.277,11.095 C39.213,11.661 40.24,11.945 41.359,11.945 C42.162,11.945 42.787,11.763 43.236,11.401 C43.683,11.039 43.906,10.553 43.906,9.947 C43.906,9.407 43.722,8.952 43.353,8.583 C42.986,8.214 42.373,7.871 41.517,7.554 C39.187,6.685 38.023,5.412 38.023,3.738 C38.023,2.644 38.431,1.747 39.248,1.049 C40.062,0.35 41.148,0.001 42.506,0.001 C43.717,0.001 44.723,0.212 45.526,0.633 L44.993,2.371 C44.243,1.963 43.395,1.759 42.446,1.759 C41.696,1.759 41.11,1.944 40.69,2.312 C40.335,2.641 40.157,3.042 40.157,3.517 C40.157,4.043 40.36,4.478 40.768,4.82 C41.123,5.136 41.768,5.478 42.704,5.847 C43.849,6.308 44.69,6.847 45.231,7.465 C45.77,8.081 46.039,8.852 46.039,9.772 L46.039,9.772 Z\"></path>\n            <path d=\"M53.088,5.508 L50.738,5.508 L50.738,10.167 C50.738,11.352 51.152,11.944 51.982,11.944 C52.363,11.944 52.679,11.911 52.929,11.845 L52.988,13.464 C52.568,13.621 52.015,13.7 51.33,13.7 C50.488,13.7 49.83,13.443 49.355,12.93 C48.882,12.416 48.644,11.554 48.644,10.343 L48.644,5.506 L47.244,5.506 L47.244,3.906 L48.644,3.906 L48.644,2.149 L50.738,1.517 L50.738,3.906 L53.088,3.906 L53.088,5.508 L53.088,5.508 Z\"></path>\n            <path d=\"M63.691,8.627 C63.691,10.102 63.269,11.313 62.427,12.26 C61.544,13.235 60.372,13.721 58.911,13.721 C57.503,13.721 56.382,13.254 55.546,12.32 C54.71,11.386 54.292,10.207 54.292,8.786 C54.292,7.299 54.722,6.081 55.585,5.134 C56.446,4.186 57.608,3.712 59.069,3.712 C60.477,3.712 61.61,4.179 62.465,5.114 C63.283,6.021 63.691,7.192 63.691,8.627 L63.691,8.627 Z M61.479,8.696 C61.479,7.811 61.29,7.052 60.907,6.419 C60.46,5.653 59.821,5.271 58.993,5.271 C58.136,5.271 57.485,5.654 57.038,6.419 C56.655,7.053 56.466,7.824 56.466,8.736 C56.466,9.621 56.655,10.38 57.038,11.012 C57.499,11.778 58.143,12.16 58.974,12.16 C59.788,12.16 60.427,11.77 60.888,10.992 C61.281,10.347 61.479,9.58 61.479,8.696 L61.479,8.696 Z\"></path>\n            <path d=\"M70.621,5.783 C70.41,5.744 70.185,5.724 69.949,5.724 C69.199,5.724 68.619,6.007 68.211,6.574 C67.856,7.074 67.678,7.706 67.678,8.469 L67.678,13.504 L65.547,13.504 L65.567,6.93 C65.567,5.824 65.54,4.817 65.487,3.909 L67.344,3.909 L67.422,5.745 L67.481,5.745 C67.706,5.114 68.061,4.606 68.547,4.225 C69.022,3.882 69.535,3.711 70.088,3.711 C70.285,3.711 70.463,3.725 70.621,3.75 L70.621,5.783 L70.621,5.783 Z\"></path>\n            <path d=\"M80.156,8.252 C80.156,8.634 80.131,8.956 80.078,9.219 L73.682,9.219 C73.707,10.167 74.016,10.892 74.61,11.392 C75.149,11.839 75.846,12.063 76.702,12.063 C77.649,12.063 78.513,11.912 79.29,11.609 L79.624,13.089 C78.716,13.485 77.644,13.682 76.407,13.682 C74.919,13.682 73.751,13.244 72.901,12.369 C72.053,11.494 71.628,10.319 71.628,8.845 C71.628,7.398 72.023,6.193 72.814,5.232 C73.642,4.206 74.761,3.693 76.169,3.693 C77.552,3.693 78.599,4.206 79.31,5.232 C79.873,6.047 80.156,7.055 80.156,8.252 L80.156,8.252 Z M78.123,7.699 C78.137,7.067 77.998,6.521 77.709,6.06 C77.34,5.467 76.773,5.171 76.01,5.171 C75.313,5.171 74.746,5.46 74.313,6.04 C73.958,6.501 73.747,7.054 73.682,7.698 L78.123,7.698 L78.123,7.699 Z\"></path>\n        </g>\n        <g transform=\"translate(43.000000, 6.000000)\" fill=\"#000000\">\n            <path d=\"M6.05,4.009 C6.05,5.186 5.697,6.072 4.992,6.667 C4.339,7.216 3.411,7.491 2.209,7.491 C1.613,7.491 1.103,7.465 0.676,7.413 L0.676,0.982 C1.233,0.892 1.833,0.846 2.481,0.846 C3.626,0.846 4.489,1.095 5.071,1.593 C5.723,2.156 6.05,2.961 6.05,4.009 L6.05,4.009 Z M4.945,4.038 C4.945,3.275 4.743,2.69 4.339,2.282 C3.935,1.875 3.345,1.671 2.568,1.671 C2.238,1.671 1.957,1.693 1.724,1.739 L1.724,6.628 C1.853,6.648 2.089,6.657 2.432,6.657 C3.234,6.657 3.853,6.434 4.289,5.988 C4.725,5.542 4.945,4.892 4.945,4.038 L4.945,4.038 Z\"></path>\n            <path d=\"M11.909,5.037 C11.909,5.762 11.702,6.356 11.288,6.822 C10.854,7.301 10.279,7.54 9.561,7.54 C8.869,7.54 8.318,7.311 7.907,6.851 C7.497,6.392 7.292,5.813 7.292,5.115 C7.292,4.385 7.503,3.786 7.927,3.321 C8.351,2.856 8.921,2.623 9.639,2.623 C10.331,2.623 10.887,2.852 11.308,3.311 C11.708,3.757 11.909,4.333 11.909,5.037 L11.909,5.037 Z M10.822,5.071 C10.822,4.636 10.728,4.263 10.541,3.952 C10.321,3.576 10.008,3.388 9.601,3.388 C9.18,3.388 8.86,3.576 8.64,3.952 C8.452,4.263 8.359,4.642 8.359,5.09 C8.359,5.525 8.453,5.898 8.64,6.209 C8.867,6.585 9.183,6.773 9.591,6.773 C9.991,6.773 10.305,6.582 10.531,6.199 C10.725,5.882 10.822,5.506 10.822,5.071 L10.822,5.071 Z\"></path>\n            <path d=\"M19.765,2.719 L18.29,7.433 L17.33,7.433 L16.719,5.386 C16.564,4.875 16.438,4.367 16.34,3.863 L16.321,3.863 C16.23,4.381 16.104,4.888 15.942,5.386 L15.293,7.433 L14.322,7.433 L12.935,2.719 L14.012,2.719 L14.545,4.96 C14.674,5.49 14.78,5.995 14.865,6.473 L14.884,6.473 C14.962,6.079 15.091,5.577 15.273,4.97 L15.942,2.72 L16.796,2.72 L17.437,4.922 C17.592,5.459 17.718,5.976 17.815,6.474 L17.844,6.474 C17.915,5.989 18.022,5.472 18.164,4.922 L18.736,2.72 L19.765,2.72 L19.765,2.719 Z\"></path>\n            <path d=\"M25.198,7.433 L24.15,7.433 L24.15,4.733 C24.15,3.901 23.834,3.485 23.2,3.485 C22.889,3.485 22.638,3.599 22.443,3.828 C22.25,4.057 22.152,4.327 22.152,4.636 L22.152,7.432 L21.104,7.432 L21.104,4.066 C21.104,3.652 21.091,3.203 21.066,2.717 L21.987,2.717 L22.036,3.454 L22.065,3.454 C22.187,3.225 22.369,3.036 22.608,2.885 C22.892,2.709 23.21,2.62 23.558,2.62 C23.998,2.62 24.364,2.762 24.655,3.047 C25.017,3.396 25.198,3.917 25.198,4.609 L25.198,7.433 L25.198,7.433 Z\"></path>\n            <path d=\"M28.088,7.433 L27.041,7.433 L27.041,0.556 L28.088,0.556 L28.088,7.433 L28.088,7.433 Z\"></path>\n            <path d=\"M34.258,5.037 C34.258,5.762 34.051,6.356 33.637,6.822 C33.203,7.301 32.627,7.54 31.91,7.54 C31.217,7.54 30.666,7.311 30.256,6.851 C29.846,6.392 29.641,5.813 29.641,5.115 C29.641,4.385 29.852,3.786 30.276,3.321 C30.7,2.856 31.27,2.623 31.987,2.623 C32.68,2.623 33.235,2.852 33.657,3.311 C34.057,3.757 34.258,4.333 34.258,5.037 L34.258,5.037 Z M33.17,5.071 C33.17,4.636 33.076,4.263 32.889,3.952 C32.67,3.576 32.356,3.388 31.95,3.388 C31.528,3.388 31.208,3.576 30.989,3.952 C30.801,4.263 30.708,4.642 30.708,5.09 C30.708,5.525 30.802,5.898 30.989,6.209 C31.216,6.585 31.532,6.773 31.94,6.773 C32.34,6.773 32.653,6.582 32.879,6.199 C33.074,5.882 33.17,5.506 33.17,5.071 L33.17,5.071 Z\"></path>\n            <path d=\"M39.33,7.433 L38.389,7.433 L38.311,6.89 L38.282,6.89 C37.96,7.323 37.501,7.54 36.905,7.54 C36.46,7.54 36.1,7.397 35.829,7.113 C35.583,6.855 35.46,6.534 35.46,6.153 C35.46,5.577 35.7,5.138 36.183,4.834 C36.665,4.53 37.343,4.381 38.216,4.388 L38.216,4.3 C38.216,3.679 37.89,3.369 37.237,3.369 C36.772,3.369 36.362,3.486 36.008,3.718 L35.795,3.03 C36.233,2.759 36.774,2.623 37.412,2.623 C38.644,2.623 39.262,3.273 39.262,4.573 L39.262,6.309 C39.262,6.78 39.285,7.155 39.33,7.433 L39.33,7.433 Z M38.242,5.813 L38.242,5.086 C37.086,5.066 36.508,5.383 36.508,6.036 C36.508,6.282 36.574,6.466 36.709,6.589 C36.844,6.712 37.016,6.773 37.221,6.773 C37.451,6.773 37.666,6.7 37.862,6.555 C38.059,6.409 38.18,6.224 38.225,5.997 C38.236,5.946 38.242,5.884 38.242,5.813 L38.242,5.813 Z\"></path>\n            <path d=\"M45.285,7.433 L44.355,7.433 L44.306,6.676 L44.277,6.676 C43.98,7.252 43.474,7.54 42.763,7.54 C42.195,7.54 41.722,7.317 41.347,6.871 C40.972,6.425 40.785,5.846 40.785,5.135 C40.785,4.372 40.988,3.754 41.396,3.282 C41.791,2.842 42.275,2.622 42.851,2.622 C43.484,2.622 43.927,2.835 44.179,3.262 L44.199,3.262 L44.199,0.556 L45.248,0.556 L45.248,6.163 C45.248,6.622 45.26,7.045 45.285,7.433 L45.285,7.433 Z M44.199,5.445 L44.199,4.659 C44.199,4.523 44.189,4.413 44.17,4.329 C44.111,4.077 43.984,3.865 43.791,3.694 C43.596,3.523 43.361,3.437 43.09,3.437 C42.699,3.437 42.393,3.592 42.168,3.903 C41.945,4.214 41.832,4.611 41.832,5.096 C41.832,5.562 41.939,5.94 42.154,6.231 C42.381,6.541 42.687,6.696 43.07,6.696 C43.414,6.696 43.689,6.567 43.898,6.308 C44.1,6.069 44.199,5.781 44.199,5.445 L44.199,5.445 Z\"></path>\n            <path d=\"M54.248,5.037 C54.248,5.762 54.041,6.356 53.627,6.822 C53.193,7.301 52.619,7.54 51.9,7.54 C51.209,7.54 50.658,7.311 50.246,6.851 C49.836,6.392 49.631,5.813 49.631,5.115 C49.631,4.385 49.842,3.786 50.266,3.321 C50.69,2.856 51.26,2.623 51.979,2.623 C52.67,2.623 53.227,2.852 53.647,3.311 C54.047,3.757 54.248,4.333 54.248,5.037 L54.248,5.037 Z M53.162,5.071 C53.162,4.636 53.068,4.263 52.881,3.952 C52.66,3.576 52.348,3.388 51.94,3.388 C51.52,3.388 51.2,3.576 50.979,3.952 C50.791,4.263 50.698,4.642 50.698,5.09 C50.698,5.525 50.792,5.898 50.979,6.209 C51.206,6.585 51.522,6.773 51.93,6.773 C52.33,6.773 52.645,6.582 52.871,6.199 C53.064,5.882 53.162,5.506 53.162,5.071 L53.162,5.071 Z\"></path>\n            <path d=\"M59.883,7.433 L58.836,7.433 L58.836,4.733 C58.836,3.901 58.52,3.485 57.885,3.485 C57.574,3.485 57.323,3.599 57.129,3.828 C56.935,4.057 56.838,4.327 56.838,4.636 L56.838,7.432 L55.789,7.432 L55.789,4.066 C55.789,3.652 55.777,3.203 55.752,2.717 L56.672,2.717 L56.721,3.454 L56.75,3.454 C56.873,3.225 57.055,3.036 57.293,2.885 C57.578,2.709 57.895,2.62 58.244,2.62 C58.683,2.62 59.049,2.762 59.34,3.047 C59.703,3.396 59.883,3.917 59.883,4.609 L59.883,7.433 L59.883,7.433 Z\"></path>\n            <path d=\"M66.936,3.504 L65.782,3.504 L65.782,5.794 C65.782,6.376 65.987,6.667 66.393,6.667 C66.581,6.667 66.737,6.651 66.86,6.618 L66.887,7.413 C66.68,7.491 66.408,7.53 66.073,7.53 C65.659,7.53 65.337,7.404 65.104,7.152 C64.87,6.9 64.754,6.476 64.754,5.881 L64.754,3.504 L64.065,3.504 L64.065,2.719 L64.754,2.719 L64.754,1.855 L65.781,1.545 L65.781,2.718 L66.935,2.718 L66.935,3.504 L66.936,3.504 Z\"></path>\n            <path d=\"M72.484,7.433 L71.435,7.433 L71.435,4.753 C71.435,3.908 71.119,3.485 70.486,3.485 C70,3.485 69.668,3.73 69.486,4.22 C69.455,4.323 69.437,4.449 69.437,4.597 L69.437,7.432 L68.39,7.432 L68.39,0.556 L69.437,0.556 L69.437,3.397 L69.457,3.397 C69.787,2.88 70.26,2.622 70.873,2.622 C71.307,2.622 71.666,2.764 71.951,3.049 C72.306,3.404 72.484,3.932 72.484,4.63 L72.484,7.433 L72.484,7.433 Z\"></path>\n            <path d=\"M78.207,4.853 C78.207,5.041 78.193,5.199 78.168,5.328 L75.025,5.328 C75.039,5.794 75.189,6.149 75.48,6.395 C75.746,6.615 76.089,6.725 76.509,6.725 C76.974,6.725 77.398,6.651 77.78,6.502 L77.944,7.23 C77.497,7.424 76.971,7.521 76.362,7.521 C75.632,7.521 75.057,7.306 74.641,6.876 C74.223,6.446 74.016,5.869 74.016,5.145 C74.016,4.434 74.209,3.842 74.598,3.37 C75.004,2.866 75.553,2.614 76.246,2.614 C76.924,2.614 77.439,2.866 77.787,3.37 C78.068,3.77 78.207,4.265 78.207,4.853 L78.207,4.853 Z M77.207,4.582 C77.215,4.271 77.146,4.003 77.004,3.777 C76.822,3.486 76.545,3.34 76.17,3.34 C75.828,3.34 75.549,3.482 75.336,3.767 C75.162,3.994 75.059,4.265 75.025,4.582 L77.207,4.582 L77.207,4.582 Z\"></path>\n        </g>\n    </g>\n</svg>\n";
 
 /***/ },
-/* 286 */
+/* 369 */
 /*!********************************************!*\
   !*** ./~/html-loader!./src/arrow-down.svg ***!
   \********************************************/
@@ -30534,7 +33710,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-arrow-down\" viewBox=\"0 -8.5 32 32\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M32,1c0,0.3-0.1,0.6-0.3,0.8l-15,13c-0.4,0.3-0.9,0.3-1.3,0l-15-13c-0.4-0.4-0.5-1-0.1-1.4 c0.4-0.4,1-0.5,1.4-0.1L16,12.6L30.3,0.2c0.4-0.4,1-0.3,1.4,0.1C31.9,0.5,32,0.8,32,1z\" />\n</svg>";
 
 /***/ },
-/* 287 */
+/* 370 */
 /*!********************************************!*\
   !*** ./~/html-loader!./src/arrow-left.svg ***!
   \********************************************/
@@ -30543,7 +33719,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-arrow-left\" viewBox=\"-8.5 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M14,32c-0.3,0-0.6-0.1-0.8-0.3l-13-15c-0.3-0.4-0.3-0.9,0-1.3l13-15c0.4-0.4,1-0.5,1.4-0.1 c0.4,0.4,0.5,1,0.1,1.4L2.3,16l12.4,14.3c0.4,0.4,0.3,1-0.1,1.4C14.4,31.9,14.2,32,14,32z\" />\n</svg>";
 
 /***/ },
-/* 288 */
+/* 371 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/arrow-right.svg ***!
   \*********************************************/
@@ -30552,7 +33728,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-arrow-right\" viewBox=\"-8.5 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M1,0c0.3,0,0.6,0.1,0.8,0.3l13,15c0.3,0.4,0.3,0.9,0,1.3l-13,15c-0.4,0.4-1,0.5-1.4,0.1 c-0.4-0.4-0.5-1-0.1-1.4L12.6,16L0.2,1.7c-0.4-0.4-0.3-1,0.1-1.4C0.5,0.1,0.8,0,1,0z\" />\n</svg>";
 
 /***/ },
-/* 289 */
+/* 372 */
 /*!******************************************!*\
   !*** ./~/html-loader!./src/arrow-up.svg ***!
   \******************************************/
@@ -30561,7 +33737,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-arrow-up\" viewBox=\"0 -8.5 32 32\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M0,14c0-0.3,0.1-0.6,0.3-0.8l15-13c0.4-0.3,0.9-0.3,1.3,0l15,13c0.4,0.4,0.5,1,0.1,1.4 c-0.4,0.4-1,0.5-1.4,0.1L16,2.3L1.7,14.7c-0.4,0.4-1,0.3-1.4-0.1C0.1,14.4,0,14.2,0,14z\" />\n</svg>";
 
 /***/ },
-/* 290 */
+/* 373 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/baby-bottle.svg ***!
   \*********************************************/
@@ -30570,7 +33746,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-baby-bottle\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<path d=\"M84.9,47.5c3.5,1.5,4.4,2.7,8.4-0.5c4.3-4.3,3.1-8.4,0-12.1c3.7-6.1,4.5-12.8,2.1-19.5c0,0,8.4-7.4,2.5-13.3\r\n\tc-5.9-5.9-13,2.8-13,2.8c-6.8-1.7-13.8-1.8-20.4,1.4c-3.7-3.1-7.2-3.1-11,0c-2,1.6-3,5.7-0.6,9c-3.3,0.3-8.5,1.5-11,4.1L4,56.9\r\n\tc-2.8,2.8-4,3.6-4,7.6c0,3.9,1.8,8,4.5,10.8l20.5,20.7c5.7,5.7,12.9,5.3,18.6-0.4l37.2-37.3C83.3,55.6,84.6,50.9,84.9,47.5z\r\n\t M83.7,8.3c1.3,0.6,2.8,0.4,3.8-0.6l3-3c1.3-1.3,3.5-1.3,4.9,0s1.3,3.5,0,4.9l-3,3c-1,1-1.3,2.5-0.6,3.8c2.3,4.7,0.9,11.5-1.3,16.1\r\n\tL67.6,9.5C72.2,7.4,79,6,83.7,8.3z M28.3,94.4L5.5,71.6c-1.5-1.5-2.4-3.5-2.4-5.7c0-2.1,0.8-4.2,2.4-5.7l38.7-38.7\r\n\tc3.1-3.1,10-4.9,13.2-1.8l22.8,22.8c3.1,3.1,1.3,10-1.8,13.1L39.7,94.4C36.6,97.6,31.5,97.6,28.3,94.4z M86.5,44.1L55,12.6\r\n\tc-0.7-1.5-0.6-2.6,0.9-4.1c1.1-1.1,3.5-1.7,4.6-0.6L92,39.5c1.1,1.1,0.5,3.5-0.6,4.6C90.4,45.2,87.6,45.2,86.5,44.1z M45,31l4.1,4.1\r\n\tc1.3,1.3,2.4,2.3,3.7,1c1.3-1.3,0.3-2.4-1-3.7l-4.1-4.1c-1.3-1.3-2.4-2.3-3.7-1C42.7,28.6,43.7,29.7,45,31z M35.8,35.5\r\n\tc-1.3,1.3-0.4,2.5,0.8,3.8l9,9c1.3,1.3,2.5,2.1,3.8,0.8c1.3-1.3,0.4-2.5-0.9-3.8l-9-9C38.3,35.1,37.1,34.2,35.8,35.5z M31.4,44.5\r\n\tc-1.3-1.3-2.5-2.2-3.8-0.9c-1.3,1.3,0,3.4,1.3,4.7l4.1,4.1c1.3,1.3,2.1,1.3,3.4,0c1.3-1.3,0.4-2.5-0.9-3.8L31.4,44.5z\"/>\r\n</svg>";
 
 /***/ },
-/* 291 */
+/* 374 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/bell.svg ***!
   \**************************************/
@@ -30579,7 +33755,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-bell\" viewBox=\"0 -8 45 45\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M45,25.9c0,0,0-0.1,0-0.1c0,0,0,0,0,0c-0.5-2.7-2.5-3.5-4-3.7c-0.7-0.1-2.2-0.6-2.4-1.4c-0.3-3.2-1.1-6-2.3-8.2\n            c-1-1.8-2.4-3.3-4-4.4c-2.8-1.9-5.5-2-6-2c0,0,0,0,0,0H23V2.2h2.7V0H19v2.2h2.6V6h-3.1h0C13.6,6.1,10,8.7,7.8,13.5\n            c-1.3,2.9-1.6,5.8-1.7,6.8l-0.1,0v0c0,0.1-0.2,1.4-2.4,1.8c-1.3,0.3-3.7,1.4-3.6,3.9c0,0.3,0.2,0.6,0.5,0.7c0.1,0,7.8,2.7,17.3,3.2\n            c0.7,0,2.5,0.1,4.3,0.1c1.7,0,3.5,0,4.8-0.1c4.6-0.3,11.4-1.1,17.6-3.2C44.9,26.6,45.1,26.2,45,25.9z M9.2,14.1\n            c1.9-4.3,5-6.6,9.3-6.7h7.7h0c0.3,0,2.7,0,5.2,1.7c3.2,2.1,5.1,5.8,5.6,11c-1.8,0.4-7.5,1.6-14.9,1.6c-5.1,0-10-0.6-14.6-1.6\n            C7.7,19.1,8.1,16.6,9.2,14.1z M26.8,28.5c-2.6,0.2-7.6,0.1-8.9,0c-7.9-0.4-14.5-2.4-16.3-3c0.1-0.5,0.5-1,1.1-1.4\n            c0.6-0.4,1.3-0.6,1.4-0.6c1.9-0.4,2.7-1.3,3.2-2c4.8,1.1,9.8,1.7,15,1.7c7.7,0,13.5-1.2,15.3-1.7c0.9,1.3,3,1.8,3.3,1.8c0,0,0,0,0,0\n            c1.9,0.2,2.5,1.4,2.7,2.1C37.2,27.6,30.3,28.2,26.8,28.5z\"/>\n</svg>";
 
 /***/ },
-/* 292 */
+/* 375 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/benefits-egg.svg ***!
   \**********************************************/
@@ -30588,7 +33764,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-benefits-egg\" viewBox=\"-10 35 440 440\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M310,193.9c-28.1-48.3-63-74.8-98.7-74.8s-70.6,26.5-98.7,74.8c-23.1,39.5-37.8,88.2-37.8,124.7\n            c0,37.8,16,72.2,41.2,96.6c-14.7,5.5-23.1,12.6-23.1,19.7c0,18.5,52.9,33.6,118.4,33.6s118.4-15.1,118.4-33.6\n            c0-7.6-8.8-14.3-23.1-19.7c25.2-24.4,41.2-58.8,41.2-96.6C347.8,282.1,333.1,233.4,310,193.9z M211.7,443.4\n            c-65.9,0-121.8-63-121.8-124.7c0-77.3,57.1-186.5,120.1-186.5c64.3,0,122.2,115.9,122.2,186.5C332.2,387.9,278.5,443.4,211.7,443.4\n            z M216.7,283.8c-7.6-3.4-13-6.3-15.5-8.8c-2.5-2.9-4.2-6.3-4.2-10.9c0-5,1.3-8.8,3.8-11.8c2.5-2.9,6.7-4.6,12.2-4.6\n            s9.7,1.7,12.6,5.5c2.9,3.4,4.6,8.4,4.6,15.1h26v-0.4c0-11.3-2.9-20.2-9.2-27.3c-6.3-7.1-14.7-11.3-25.6-12.6v-19.7h-14.3v19.3\n            c-11.3,1.3-20.2,5-26.9,11.3c-6.7,6.3-10.1,14.7-10.1,24.8c0,10.9,3.4,19.7,10.1,25.6c6.7,5.9,16.8,11.3,30.7,16\n            c7.1,2.9,12.2,5.5,15.1,8.4c2.9,2.9,4.2,7.1,4.2,11.8c0,5-1.7,8.8-4.6,11.8c-2.9,2.9-7.6,4.2-13.4,4.2s-10.9-1.7-14.7-5\n            c-3.8-3.4-5.9-8.8-5.9-16.4h-26l-0.4,0.4c-0.4,13,3.4,22.7,10.9,29.4s17.2,10.5,28.6,11.3v17.6h14.3v-17.6\n            c11.3-1.3,20.6-5,26.9-11.3c6.7-6.3,9.7-14.7,9.7-25.2c0-10.9-3.4-19.7-10.1-26C240.2,293.4,230.2,288,216.7,283.8z\"/>\n    <path d=\"M415.8,309.8h-42.4c-2.5,0-4.2-1.7-4.2-4.2v-10.1c0-2.1,1.7-4.2,4.2-4.2h42.4c2.5,0,4.2,2.1,4.2,4.2v10.1\n            C420,308.1,418.3,309.8,415.8,309.8z\"/>\n    <path d=\"M217.6,53.2v42c0,2.1-1.7,4.2-4.2,4.2h-10.1c-2.1,0-4.2-1.7-4.2-4.2v-42c0-2.1,2.1-4.2,4.2-4.2h10.1\n            C215.9,49,217.6,50.7,217.6,53.2z\"/>\n    <path d=\"M46.6,309.8H4.2c-2.1,0-4.2-1.7-4.2-4.2v-10.1c0-2.1,1.7-4.2,4.2-4.2h42.4c2.1,0,4.2,2.1,4.2,4.2v10.1\n            C50.8,308.1,48.7,309.8,46.6,309.8z\"/>\n    <path d=\"M94.5,169.5l-29.8-29.4c-1.7-1.7-1.7-4.2,0-5.9l7.1-7.1c1.7-1.7,4.2-1.7,5.9,0l29.8,29.4\n            c1.7,1.7,1.7,4.2,0,5.9l-6.7,7.1C99.1,171.2,96.2,171.2,94.5,169.5z\"/>\n    <path d=\"M323.8,169.5l29.8-29.4c1.7-1.7,1.7-4.2,0-5.9l-7.1-7.1c-1.7-1.7-4.2-1.7-5.9,0l-29.8,29.4\n            c-1.7,1.7-1.7,4.2,0,5.9l7.1,7.1C319.6,171.2,322.1,171.2,323.8,169.5z\"/>\n</svg>";
 
 /***/ },
-/* 293 */
+/* 376 */
 /*!******************************************!*\
   !*** ./~/html-loader!./src/bookmark.svg ***!
   \******************************************/
@@ -30597,7 +33773,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-bookmark\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n<path d=\"M52.3,8c41.8,0,83.7,0,125.5,0c5.8,0,11.7,0,17.5,0c-1.7-1.7-3.3-3.3-5-5c0,27.3,0,54.6,0,81.8\n\tc0,43.5,0,87,0,130.4c0,10,0,20,0,30c2.8-1.2,5.7-2.4,8.5-3.5c-20.9-23.2-41.7-46.4-62.6-69.7c-3-3.3-5.9-6.6-8.9-9.9\n\tc-1.7-1.9-5.3-1.9-7.1,0c-20.9,23.2-41.7,46.4-62.6,69.7c-3,3.3-5.9,6.6-8.9,9.9c2.8,1.2,5.7,2.4,8.5,3.5c0-27.3,0-54.6,0-81.8\n\tc0-43.5,0-87,0-130.4c0-10,0-20,0-30c0-6.4-10-6.4-10,0c0,27.3,0,54.6,0,81.8c0,43.5,0,87,0,130.4c0,10,0,20,0,30\n\tc0,4.2,5.6,6.8,8.5,3.5c20.9-23.2,41.7-46.4,62.6-69.7c3-3.3,5.9-6.6,8.9-9.9c-2.4,0-4.7,0-7.1,0c20.9,23.2,41.7,46.4,62.6,69.7\n\tc3,3.3,5.9,6.6,8.9,9.9c3,3.3,8.5,0.6,8.5-3.5c0-27.3,0-54.6,0-81.8c0-43.5,0-87,0-130.4c0-10,0-20,0-30c0-2.7-2.3-5-5-5\n\tc-41.8,0-83.7,0-125.5,0C64-2,58.1-2,52.3-2C45.8-2,45.8,8,52.3,8z\"/>\n</svg>\n";
 
 /***/ },
-/* 294 */
+/* 377 */
 /*!********************************************!*\
   !*** ./~/html-loader!./src/bookmarked.svg ***!
   \********************************************/
@@ -30606,7 +33782,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-bookmarked\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <polygon points=\"52.3,5 195.4,5 195.4,246.5 123.8,167.2 52.3,246.5 \t\"/>\n    <path d=\"M52.3,10c41.9,0,83.7,0,125.6,0c5.8,0,11.7,0,17.5,0c-1.7-1.7-3.3-3.3-5-5c0,27.3,0,54.6,0,82\n\t\t\tc0,43.2,0,86.4,0,129.5c0,10,0,20,0,30c2.8-1.2,5.7-2.4,8.5-3.5c-20.9-23.2-41.8-46.3-62.6-69.5c-3-3.3-5.9-6.6-8.9-9.9\n\t\t\tc-1.7-1.9-5.3-1.9-7.1,0c-20.9,23.2-41.8,46.3-62.6,69.5c-3,3.3-5.9,6.6-8.9,9.9c2.8,1.2,5.7,2.4,8.5,3.5c0-27.3,0-54.6,0-82\n\t\t\tc0-43.2,0-86.4,0-129.5c0-10,0-20,0-30c0-6.4-10-6.4-10,0c0,27.3,0,54.6,0,82c0,43.2,0,86.4,0,129.5c0,10,0,20,0,30\n\t\t\tc0,4.2,5.6,6.8,8.5,3.5c20.9-23.2,41.8-46.3,62.6-69.5c3-3.3,5.9-6.6,8.9-9.9c-2.4,0-4.7,0-7.1,0c20.9,23.2,41.8,46.3,62.6,69.5\n\t\t\tc3,3.3,5.9,6.6,8.9,9.9c3,3.3,8.5,0.6,8.5-3.5c0-27.3,0-54.6,0-82c0-43.2,0-86.4,0-129.5c0-10,0-20,0-30c0-2.7-2.3-5-5-5\n\t\t\tc-41.9,0-83.7,0-125.6,0C64,0,58.1,0,52.3,0C45.8,0,45.8,10,52.3,10z\"/>\n</svg>\n";
 
 /***/ },
-/* 295 */
+/* 378 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/bullet-point.svg ***!
   \**********************************************/
@@ -30615,7 +33791,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-bullet-point\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125,249.3C56.4,249.3,0.7,193.6,0.7,125S56.4,0.7,125,0.7S249.3,56.4,249.3,125S193.6,249.3,125,249.3z\n                 M125,10.7C62,10.7,10.7,62,10.7,125c0,63,51.3,114.3,114.3,114.3c63,0,114.3-51.3,114.3-114.3C239.3,62,188,10.7,125,10.7z\"/>\n        <circle cx=\"124.3\" cy=\"123.7\" r=\"78.3\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 296 */
+/* 379 */
 /*!*************************************************!*\
   !*** ./~/html-loader!./src/buyer-assurance.svg ***!
   \*************************************************/
@@ -30624,7 +33800,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-buyer-assurance\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M48.7-360.7C48.7-360.7,48.7-360.7,48.7-360.7l0,77.3c0,4.1,2.8,8,6.7,9.3l73.5,23.9c0,0,0,0,0,0l45.4,62.6\n                c1.8,2.5,4.9,4,8,4c1,0,2-0.2,2.9-0.5l73.5-23.9c0,0,0,0,0,0l73.5,23.9c0.9,0.3,1.9,0.5,2.9,0.5c3.1,0,6.2-1.5,8-4l45.5-62.6\n                c0,0,0,0,0,0l73.5-23.9c3.9-1.3,6.7-5.2,6.7-9.3v-77.3c0,0,0,0,0,0l45.5-62.6c2.4-3.3,2.4-8.1,0-11.5l-45.4-62.6c0,0,0,0,0,0v-77.3\n                c0-4.1-2.8-8-6.7-9.3l-73.5-23.9c0,0,0,0,0,0l-45.5-62.6c-1.8-2.5-4.9-4-8-4c-1,0-2,0.2-2.9,0.5L258.9-650c0,0,0,0,0,0l-73.5-23.9\n                c-0.9-0.3-1.9-0.5-2.9-0.5c-3.1,0-6.2,1.5-8,4L129-607.8c0,0,0,0,0,0l-73.5,23.9c-3.9,1.3-6.7,5.2-6.7,9.3v77.3c0,0,0,0,0,0\n                L3.3-434.7c-2.4,3.3-2.4,8.1,0,11.5L48.7-360.7z M60.2-489.3c1.5-2.1,2.5-5.1,2.5-7.7v-74.5l70.9-23c2.5-0.8,5.1-2.7,6.6-4.8\n                l43.8-60.3l70.9,23c1.5,0.5,3,0.6,4.1,0.6c1,0,2.5-0.1,4.1-0.6l70.9-23l43.8,60.3c1.5,2.1,4.1,4,6.6,4.8l70.9,23v74.5\n                c0,2.6,1,5.6,2.5,7.7l43.8,60.3l-43.8,60.3c-1.5,2.1-2.5,5.1-2.5,7.7v74.5l-70.9,23c-2.5,0.8-5.1,2.7-6.6,4.8l-43.8,60.3l-70.9-23\n                c-1.5-0.5-3-0.6-4.1-0.6c-1,0-2.5,0.1-4.1,0.6l-70.9,23l-43.8-60.3c-1.5-2.1-4.1-4-6.6-4.8l-70.9-23V-361c0-2.6-1-5.6-2.5-7.7\n                L16.4-429L60.2-489.3z\"/>\n        <path d=\"M207.8-379.3c-7.2-0.4-11.6-0.9-13-1.4c-1.4-0.5-2.8-1.6-4-3.3c-1.2-1.7-1.9-3.4-1.9-5c0-1.6,0.9-5.4,2.6-11.4l34-114.1\n                h-4.3l-51.5,12.3l0.9,3.8c5-0.5,8.3-0.8,10-0.8c3.4,0,6.1,0.9,7.9,2.6c1.8,1.8,2.8,4.1,2.8,7.1c0,1.5-0.2,3.2-0.6,4.9\n                c-0.1,0.6-1.8,6.1-4.9,16.4l-20,67.8c-2.1,7.3-4.1,12.1-5.8,14.4c-1.7,2.3-3.9,3.9-6.6,4.9c-2.7,1-7.4,1.6-14.3,1.7l-1.1,3.6h68.7\n                L207.8-379.3z\"/>\n        <path d=\"M253.2-377.6c-3.1,0-6.4-1-9.8-3.1c-3.4-2.1-6.1-4.8-8.2-8.3c-2-3.5-4.2-9.3-6.6-17.4h-3.3l-5,33.4h3.8\n                c1.1-1.5,2.2-2.6,3.1-3c0.9-0.5,2.2-0.7,3.9-0.7c1.9,0,4.7,0.5,8.4,1.5c5.7,1.5,10.5,2.2,14.4,2.2c5.8,0,11.3-1.4,16.6-4.2\n                c5.3-2.8,9.3-6.6,12-11.3c2.7-4.7,4-9.7,4-14.9c0-4.9-1.1-9.4-3.4-13.7c-2.3-4.3-8.7-12.1-19.3-23.4c-3-3.2-5-5.7-5.8-7.6\n                c-0.9-1.9-1.3-3.9-1.3-6c0-2.5,1-4.7,3-6.5c2-1.8,4.5-2.7,7.6-2.7c5,0,9.7,2.3,14.1,6.9c4.4,4.6,6.8,10.9,7.4,18.8h3.8l4.5-31h-3.6\n                c-1.6,2.3-3.7,3.4-6.3,3.4c-1.8,0-4.2-0.4-7.2-1.1c-6-1.5-11.1-2.3-15.3-2.3c-9.5,0-16.9,2.4-22.2,7.3c-5.3,4.8-7.9,10.9-7.9,18.1\n                c0,4.3,0.9,8.1,2.6,11.5c2.5,4.6,7.6,11.2,15.5,19.7c5.7,6.2,9.3,10.8,10.9,13.7c1.6,2.9,2.4,6,2.4,9.1c0,3.2-1.2,6-3.6,8.3\n                C259.9-378.7,256.9-377.6,253.2-377.6z\"/>\n        <path d=\"M318.9-372.9c5.4,0,10.8-1.9,16.4-5.6c5.6-3.8,10.7-9.6,15.3-17.7l-3.6-2.2c-4.1,5.8-7.6,9.9-10.7,12.3\n                c-1.2,0.9-2.4,1.4-3.5,1.4c-0.7,0-1.4-0.2-2-0.7c-0.6-0.5-0.9-1-0.9-1.7c0-1.9,0.6-4.7,1.7-8.3l18.2-59h11.4l3.5-11.5h-11.2\n                l8.4-27.2h-5.4c-8.5,9.3-15.7,16.1-21.8,20.3c-6,4.2-13.1,7.9-21.3,11l-1.9,7.4h12.9l-17.1,54.4c-1.9,6.1-2.8,11.1-2.8,15\n                c0,3.5,1.3,6.4,3.8,8.7C310.8-374.1,314.3-372.9,318.9-372.9z\"/>\n        <polygon points=\"221.6,315.6 168.3,252.2 139.2,276.7 220.6,373.4 375.8,201.2 347.6,175.8    \"/>\n        <path d=\"M488,205.8c-7-9.7-13-28-13-40v-34.8c0-16.8-12.5-34.1-28.5-39.3l-33.1-10.7c-11.4-3.7-27-15-34-24.7l-20.4-28.1\n                c-7.4-10.2-21-16.8-34.6-16.8c-4.1,0-7.9,0.6-11.5,1.8L279.7,24c-5.4,1.8-13.1,2.8-21,2.8c-8,0-15.6-1-21-2.8l-33.1-10.7\n                c-3.6-1.2-7.5-1.8-11.5-1.8c-13.6,0-27.2,6.6-34.6,16.8l-20.4,28.1c-7,9.7-22.6,21-34,24.7L71,91.8c-16,5.2-28.5,22.4-28.5,39.3\n                v34.8c0,12-5.9,30.3-13,40L9,233.9c-9.9,13.6-9.9,34.9,0,48.5l20.4,28.1c7,9.7,13,28,13,40v34.8c0,16.8,12.5,34.1,28.5,39.3\n                l33.1,10.7c11.4,3.7,27,15,34,24.7l20.4,28.1c7.4,10.2,21,16.8,34.6,16.8c4.1,0,7.9-0.6,11.5-1.8l33.1-10.7\n                c5.4-1.8,13.1-2.8,21-2.8c8,0,15.6,1,21,2.8l33.1,10.7c3.6,1.2,7.5,1.8,11.5,1.8c13.6,0,27.2-6.6,34.6-16.8l20.4-28.1\n                c7-9.7,22.6-21,34-24.7l33.1-10.7c16-5.2,28.5-22.4,28.5-39.3v-34.8c0-12,6-30.3,13-40l20.4-28.1c9.9-13.6,9.9-34.9,0-48.5\n                L488,205.8z M496.2,273.7l-20.4,28.1c-8.9,12.2-15.9,33.7-15.9,48.8v34.8c0,10.2-8.5,21.8-18.2,25l-33.1,10.7\n                c-14.4,4.7-32.6,17.9-41.5,30.2l-20.4,28.1c-4.5,6.2-13.8,10.6-22.5,10.6c-2.5,0-4.8-0.3-6.9-1l-33.1-10.7\n                c-6.9-2.3-16-3.5-25.7-3.5c-9.6,0-18.7,1.2-25.7,3.5L200,488.9c-2.1,0.7-4.4,1-6.9,1c-8.7,0-18-4.3-22.5-10.6l-20.4-28.1\n                c-8.9-12.2-27.1-25.5-41.5-30.2l-33.1-10.7c-9.7-3.1-18.2-14.8-18.2-25v-34.8c0-15.1-7-36.6-15.9-48.8l-20.4-28.1\n                c-6-8.2-6-22.7,0-30.9l20.4-28.1c8.9-12.2,15.9-33.7,15.9-48.8v-34.8c0-10.2,8.5-21.8,18.2-25l33.1-10.7\n                c14.4-4.7,32.6-17.9,41.5-30.2l20.4-28.1c4.5-6.2,13.8-10.6,22.5-10.6c2.5,0,4.8,0.3,6.9,1l33.1,10.7c6.9,2.3,16,3.5,25.7,3.5\n                c9.6,0,18.7-1.2,25.7-3.5l33.1-10.7c2.1-0.7,4.4-1,6.9-1c8.7,0,18,4.3,22.5,10.6l20.4,28.1c8.9,12.2,27.1,25.5,41.5,30.2l33.1,10.7\n                c9.7,3.1,18.2,14.8,18.2,25v34.8c0,15.1,7,36.6,15.9,48.8l20.4,28.1C502.2,251,502.2,265.4,496.2,273.7z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 297 */
+/* 380 */
 /*!*******************************************!*\
   !*** ./~/html-loader!./src/cart-open.svg ***!
   \*******************************************/
@@ -30633,7 +33809,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-cart-open\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <polygon points=\"239.5,73.2 216.5,163 83.2,163 51.8,37 1,37 1,47 44,47 75.4,173 224.3,173 250.3,73.2\"/>\n        <circle cx=\"107.3\" cy=\"201.7\" r=\"11.7\"/>\n        <circle cx=\"193.3\" cy=\"201.7\" r=\"11.7\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 298 */
+/* 381 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/cart.svg ***!
   \**************************************/
@@ -30642,7 +33818,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-cart\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path fill=\"none\" d=\"M193.6,211.8c-4.7,0-8.6,3.9-8.6,8.7s3.9,8.7,8.6,8.7s8.6-3.9,8.6-8.7S198.3,211.8,193.6,211.8z\"/>\n        <path fill=\"none\" d=\"M100.4,211.8c-4.7,0-8.6,3.9-8.6,8.7s3.9,8.7,8.6,8.7c4.7,0,8.6-3.9,8.6-8.7S105.1,211.8,100.4,211.8z\"/>\n        <polygon fill=\"none\" points=\"63.7,64 83.1,170 214.7,170 235.5,64    \"/>\n        <path d=\"M61.6,53L50.8,7H0v11h42.2l9.5,40.4L74.1,181h149.5l25.1-128H61.6z M214.7,170H83.1L63.7,64h171.7L214.7,170z\"/>\n        <path d=\"M100.4,199.8c-11.3,0-20.4,9.3-20.4,20.7s9.2,20.7,20.4,20.7s20.4-9.3,20.4-20.7S111.7,199.8,100.4,199.8z M100.4,229.1\n                c-4.7,0-8.6-3.9-8.6-8.7s3.9-8.7,8.6-8.7c4.7,0,8.6,3.9,8.6,8.7S105.1,229.1,100.4,229.1z\"/>\n        <path d=\"M193.6,199.8c-11.3,0-20.4,9.3-20.4,20.7s9.2,20.7,20.4,20.7s20.4-9.3,20.4-20.7S204.9,199.8,193.6,199.8z M193.6,229.1\n                c-4.7,0-8.6-3.9-8.6-8.7s3.9-8.7,8.6-8.7s8.6,3.9,8.6,8.7S198.3,229.1,193.6,229.1z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 299 */
+/* 382 */
 /*!*******************************************!*\
   !*** ./~/html-loader!./src/checkmark.svg ***!
   \*******************************************/
@@ -30651,7 +33827,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-checkmark\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<polygon points=\"86.1,218.4 2.2,140.1 28.8,112 86.1,165.5 222.7,37.9 248.8,65.4 \"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 300 */
+/* 383 */
 /*!***************************************************!*\
   !*** ./~/html-loader!./src/circle-arrow-left.svg ***!
   \***************************************************/
@@ -30660,7 +33836,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-circle-arrow-left\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M0,125 C0,56.0810811 56.0810811,0 125,0 C193.918919,0 250,56.0810811 250,125 C250,193.918919 193.918919,250 125,250 C56.0810811,250 0,193.918919 0,125 L0,125 Z M9.99034749,125 C9.99034749,188.416988 61.5830116,240.009653 125,240.009653 C188.416988,240.009653 240.009653,188.416988 240.009653,125 C240.009653,61.5830116 188.416988,9.99034749 125,9.99034749 C61.5830116,9.99034749 9.99034749,61.5830116 9.99034749,125 L9.99034749,125 Z\"></path>\n        <path d=\"M134.266409,179.440154 L144.88417,168.870656 L103.861004,127.702703 L145.849421,91.9401544 L136.148649,80.5501931 L81.8050193,126.833977 L134.266409,179.440154 Z\"></path>\n    </g>\n</svg>";
 
 /***/ },
-/* 301 */
+/* 384 */
 /*!****************************************************!*\
   !*** ./~/html-loader!./src/circle-arrow-right.svg ***!
   \****************************************************/
@@ -30669,7 +33845,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-circle-arrow-right\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M259,518C116.2,518,0,401.8,0,259S116.2,0,259,0s259,116.2,259,259S401.8,518,259,518z M259,20.7\n                C127.6,20.7,20.7,127.6,20.7,259S127.6,497.3,259,497.3S497.3,390.4,497.3,259S390.4,20.7,259,20.7z\"/>\n    </g>\n    <g>\n        <polygon points=\"239.8,371.8 217.8,349.9 302.8,264.6 215.8,190.5 235.9,166.9 348.5,262.8\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 302 */
+/* 385 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/clock.svg ***!
   \***************************************/
@@ -30678,7 +33854,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-clock\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125,0.7C56.4,0.7,0.7,56.4,0.7,125S56.4,249.3,125,249.3S249.3,193.6,249.3,125S193.6,0.7,125,0.7z M125,239.3\n                     C62,239.3,10.7,188,10.7,125C10.7,62,62,10.7,125,10.7c63,0,114.3,51.3,114.3,114.3C239.3,188,188,239.3,125,239.3z\"/>\n        <polygon points=\"87.1,48.8 78,53.2 120.9,139 190,139 190,129 127.2,129\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 303 */
+/* 386 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/close.svg ***!
   \***************************************/
@@ -30687,7 +33863,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-close\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M274.1,250L495,470.9c6.7,6.7,6.7,17.5,0,24.1s-17.5,6.7-24.1,0L250,274.1L29.1,495 c-6.7,6.7-17.5,6.7-24.1,0s-6.7-17.5,0-24.1L225.9,250L5,29.1C-1.7,22.4-1.7,11.6,5,5s17.5-6.7,24.1,0L250,225.9L470.9,5 c6.7-6.7,17.5-6.7,24.1,0s6.7,17.5,0,24.1L274.1,250z\"/>\n</svg>";
 
 /***/ },
-/* 304 */
+/* 387 */
 /*!************************************************!*\
   !*** ./~/html-loader!./src/commuter-train.svg ***!
   \************************************************/
@@ -30696,7 +33872,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-commuter-train\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<g>\r\n\t<path d=\"M67.3,156.8c-1.5,1.5-2.2,3.5-2.2,5.5c0,2,0.7,4,2.2,5.5c1.5,1.5,3.5,2.2,5.5,2.2s4-0.7,5.5-2.2c1.5-1.5,2.2-3.5,2.2-5.5\r\n\t\ts-0.7-4-2.2-5.5C75.5,153.8,70.3,153.8,67.3,156.8z\"/>\r\n\t<path d=\"M172.7,156.8c-1.5,1.5-2.2,3.5-2.2,5.5c0,2,0.7,4,2.5,5.5c1.5,1.5,3.5,2.2,5.5,2.2c2,0,4-0.7,5.5-2.2\r\n\t\tc1.5-1.5,2.2-3.5,2.2-5.5s-0.7-4-2.2-5.5C180.7,153.8,175.5,153.8,172.7,156.8z\"/>\r\n\t<path d=\"M226.9,176.2V46.4c0-22.4-19.1-38.3-36.8-38.3h-49.2c-1-4.5-5-8-9.4-8h-14.9c-4.5,0-8.2,3.5-9.4,8H60.9\r\n\t\tc-22.4,0-37.5,15.9-37.5,38.3v129.8c0,14.2,12.4,32.3,31.3,35.8l-30.8,30.6c-1,1-1,2.7,0,4l1.5,1.5c1,1,2.7,1,4,0l35.5-35.5h120.3\r\n\t\tl35.5,35.5c1,1,2.7,1,4,0l1.5-1.5c1-1,1-2.7,0-4l-31.1-30.3C212.8,209.8,226.9,194.8,226.9,176.2z M190.1,204.5h-2.7\r\n\t\tc-0.7-0.2-1.5-0.2-2.2,0H64.3c-0.7-0.2-1.5-0.2-2.2,0h-1.2c-13.7,0-29.8-14.9-29.8-28.6V46.4c0-19.1,13.4-30.6,29.8-30.6h47\r\n\t\tc1.5,3.5,5,6,8.7,6h14.9c3.7,0,7.2-2.5,8.7-6h50.2c13.7,0,29.1,16.9,29.1,30.6v129.8C219.2,189.6,203.8,204.5,190.1,204.5z\"/>\r\n\t<path d=\"M169.7,35.7H81.5c-16.7,0-30.1,13.4-30.1,30.1v52.9c0,4.2,3.5,7.2,7.7,7.2h132.7c4.2,0,7.7-3,7.7-7.2V65.8\r\n\t\tC199.8,49.2,186.2,35.7,169.7,35.7z M191.4,117.3H59.9V65.8c0-8,9.9-20.9,17.9-20.9H173c8,0,18.4,12.9,18.4,20.9L191.4,117.3\r\n\t\tL191.4,117.3z\"/>\r\n</g>\r\n</svg>\r\n";
 
 /***/ },
-/* 305 */
+/* 388 */
 /*!**************************************************!*\
   !*** ./~/html-loader!./src/customer-support.svg ***!
   \**************************************************/
@@ -30705,7 +33881,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-customer-support\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M518.6,270.8h-44.4c-1.4-9.6-5.4-26-16.1-40.4c-0.5-0.6-11-14.2-27.5-20.2c13.1-8.4,21.8-23.1,21.8-39.8\n            c0-26.1-21.2-47.3-47.3-47.3s-47.3,21.2-47.3,47.3c0,16.5,8.5,31,21.3,39.5c-9.9,3.1-20.9,9-29.7,20.5\n            c-9.2-19.3-22.4-31.7-33.9-39.4c-8.1-5.4-16.2-9-23-11.4c20.8-11.7,34.9-33.9,34.9-59.4c0-37.5-30.5-68.1-68.1-68.1\n            c-37.5,0-68.1,30.5-68.1,68.1c0,25.1,13.7,47.1,34,58.9c-24.1,7.3-42.9,24.2-55.2,49.8c-0.2,0.4-0.3,0.7-0.5,1.1\n            c-8.7-11.2-19.6-17.1-29.4-20.1c12.8-8.5,21.3-23,21.3-39.5c0-26.1-21.2-47.3-47.3-47.3c-26.1,0-47.3,21.2-47.3,47.3\n            c0,16.7,8.7,31.5,21.9,39.9c-17.2,6.1-26.1,17.9-27.7,20.2c-10,12.5-14.2,30.2-15.8,40.3H0v14.4h31.2v170.4H487V285.2h31.5V270.8z\n             M405,137.6c18.1,0,32.9,14.8,32.9,32.9s-14.8,32.9-32.9,32.9s-32.9-14.8-32.9-32.9S386.9,137.6,405,137.6z M389,222.3\n            c7.6-1.5,27-0.8,32,0.2c15,3,25.5,16.5,25.6,16.6c8.1,10.9,11.5,23.5,13,31.7h-99.2c-0.9-8.6-2.5-16.4-4.5-23.5\n            C364.3,230.4,378.4,224.4,389,222.3z M205.7,120.3c0-29.6,24.1-53.7,53.7-53.7c29.6,0,53.7,24.1,53.7,53.7S288.9,174,259.3,174\n            C229.7,174,205.7,149.9,205.7,120.3z M249.2,189.5l0.8-0.1c0,0,4.8-0.8,11.3-0.8c3.8,0,7.5,0.3,10.9,0.8l0.4,0.1\n            c0.2,0,17.7,2,35.5,13.9c21.7,14.6,34.4,37.3,37.9,67.4H172.1c1.3-8.3,4.3-21.9,10.9-35.6C196.8,206.5,219,191.2,249.2,189.5z\n             M114.2,137.6c18.1,0,32.9,14.8,32.9,32.9s-14.8,32.9-32.9,32.9s-32.9-14.8-32.9-32.9S96,137.6,114.2,137.6z M72.5,239.3l0.4-0.6\n            c0.3-0.5,8.4-12.3,25.6-16.3c4.4-1,23.7-1.7,31.8-0.1c10.4,2,24.3,8,32.8,24.4c-3.1,9.8-4.7,18.4-5.5,24.1H59.9\n            C61.5,261.9,65.1,248.4,72.5,239.3z M472.6,441.2h-427V285.9h427V441.2z\"/>\n</svg>";
 
 /***/ },
-/* 306 */
+/* 389 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/do-not-edit.svg ***!
   \*********************************************/
@@ -30714,7 +33890,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-do-not-edit\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <rect x=\"67.9\" y=\"97.3\" transform=\"matrix(0.7071 -0.7071 0.7071 0.7071 -44.1474 128.0603)\" class=\"do-not-edit-pencil\" width=\"129.1\" height=\"40.1\"/>\n        <polygon class=\"do-not-edit-pencil\" points=\"79.8,170.1 92.6,182.9 75.1,187.6 57.5,192.3 62.2,174.8 66.9,157.2\"/>\n    </g>\n    <g>\n        <path class=\"do-not-edit-circle\" d=\"M124.9,249.8C56,249.8,0,193.8,0,124.9S56,0,124.9,0s124.9,56,124.9,124.9S193.8,249.8,124.9,249.8z M42.7,52\n            c-17.3,19.4-27.8,45-27.8,73c0,60.6,49.3,109.9,109.9,109.9c28,0,53.5-10.5,73-27.8L42.7,52z M53.4,41.5l155,155\n            c16.5-19.2,26.5-44.2,26.5-71.5C234.9,64.3,185.5,15,124.9,15C97.6,15,72.6,25,53.4,41.5z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 307 */
+/* 390 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/early-access.svg ***!
   \**********************************************/
@@ -30723,7 +33899,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-early-access\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M56,238.7c-30.6,0-55.5-24.9-55.5-55.5s24.9-55.5,55.5-55.5c12.5,0,24.3,4.1,34.1,11.8l0.7,0.6L221,9.1l7.6,7.6l-16.4,16.5\n            L250,71.6l-7.7,7.5l-37.7-38.4l-19.3,19.5L223,98.7l-7.7,7.5l-37.6-38.3l-79.2,79.6l0.6,0.7c8,9.9,12.4,22.3,12.4,34.9\n            C111.5,213.8,86.6,238.7,56,238.7z M56,138.4c-24.7,0-44.7,20.1-44.7,44.7s20.1,44.7,44.7,44.7s44.7-20.1,44.7-44.7\n            S80.6,138.4,56,138.4z\"/>\n</svg>";
 
 /***/ },
-/* 308 */
+/* 391 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/email.svg ***!
   \***************************************/
@@ -30732,7 +33908,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-email\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M0,224V26h250v198H0z M239,213V37h-8.4L126.3,160.9L19.6,37H11v176H239z M126.1,144.3L216.4,37H34L126.1,144.3z\"/>\n</svg>\n";
 
 /***/ },
-/* 309 */
+/* 392 */
 /*!******************************************!*\
   !*** ./~/html-loader!./src/envelope.svg ***!
   \******************************************/
@@ -30741,7 +33917,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-envelope\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M3,444.9V77.8h512v367.1H3z M498,427.9V107.4L259.5,315.5L20,106.3v321.6H498z M259.5,292.9l227-198.1H32.7\n            L259.5,292.9z\"/>\n</svg>";
 
 /***/ },
-/* 310 */
+/* 393 */
 /*!******************************************!*\
   !*** ./~/html-loader!./src/facebook.svg ***!
   \******************************************/
@@ -30750,7 +33926,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-facebook\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M141.7,250V135.8H180l5.7-44.3h-44.2V63.2c0-13,3.6-21.5,21.9-21.5H187v-40C183,1.1,169.1,0,152.8,0\n            c-34,0-57.2,20.8-57.2,58.7v32.8H57.6v44.3h38.3V250H141.7L141.7,250z\"/>\n</svg>\n";
 
 /***/ },
-/* 311 */
+/* 394 */
 /*!*****************************************!*\
   !*** ./~/html-loader!./src/gallery.svg ***!
   \*****************************************/
@@ -30759,7 +33935,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-gallery\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M83,41v20H48v28H0v146h201v-37h27v-33h22V41H83z M193,97v103.3L127.5,140l-47.8,45.8l-14.2-13.6L8,221.8V97H193z M15.6,227 l49.6-42.8L79.7,198l48-45.9l65.3,60.1V227H15.6z M221,191h-20V89H55V68h166V191z M244,159h-16V61H89V47h155V159z\"/>\n        <path d=\"M43.3,157.5c13,0,23.6-10.3,23.6-23c0-12.7-10.6-23-23.6-23c-13,0-23.6,10.3-23.6,23C19.7,147.2,30.3,157.5,43.3,157.5z M43.3,120.3c8.1,0,14.7,6.3,14.7,14.1c0,7.8-6.6,14.1-14.7,14.1s-14.7-6.3-14.7-14.1C28.5,126.7,35.1,120.3,43.3,120.3z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 312 */
+/* 395 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/gear-filled.svg ***!
   \*********************************************/
@@ -30768,7 +33944,7 @@
 	module.exports = "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"\r\n\t viewBox=\"0 0 250 250\" class=\"dibsvg-svg dibsvg-gear-filled\">\r\n<path d=\"M101.8,4.6c0,0,23.5,49.9,51.5,4.5l1.5-3.1c0,0,2.7-6.5,8.7-4.6L190,14.2c0,0,6.7,2.9,3.1,10.2c0,0-8.1,16.8-2,25.5\r\n\tc0,0,7.7,16.8,26,15.3l9.2-2.1c0,0,10.3-3.6,13.8,4.1l9.2,22.2c0,0,3.3,8.5-4.4,11.3l-11.4,5.3c0,0-15.8,10.2-11.2,27\r\n\tc0,0-0.9,6.9,17.9,19.9l5.6,4.1c0,0,6.1,4.1,1,12.2l-9.7,19.4c0,0-2.1,6.5-10.8,3.7l-15.7-4.1c0,0-4.1-0.3-6.5,0.4\r\n\tc-4.4,1.2-11.2,3.7-13.8,7.7c0,0-10.2,8.2-6.6,21.4l2.1,9.7c0,0,3,9.8-2,12.2l-23.9,8.7c0,0-6.1,2.6-10.7-4.1l-10.7-16.3\r\n\tc0,0-6.1-9.2-20.4-6.6c0,0-11.7,1.5-17.3,12.8l-7.3,10.1c0,0-2.8,5.5-9.9,2.9l-23.7-12.6c0,0-7.4-3.6-1.8-12.5\r\n\tc0,0,12.1-19.5-5.2-33.7c0,0-11.7-7.1-29.6-3c0,0-9.2,4.3-13.3-2.5l-9.7-24.5c0,0-1.7-6.5,3.9-9.5c0.5-0.3,1-0.5,1.7-0.7\r\n\tc7.6-2.6,22.4-7.7,22.4-26.5c0,0,1-13.3-15.3-22.9l-6.6-4.1c0,0-7.1-4.6-3.1-13.8l9.5-19.9c0,0,2.8-7,11.4-3.6l14.3,3.5\r\n\tc0,0,25.5,2.5,28-18.4l-0.4-11.3c0,0-0.8-5.4-1.4-8.4c-1-5-1-12.3,4-13.8L87,1.1C87,1.1,97.7-3,101.8,4.6z M123.8,65\r\n\tc-33.4,0.1-60.4,27.1-60.3,60.5c0.1,33.4,27.1,60.4,60.5,60.3s60.4-27.1,60.3-60.5S157.2,65,123.8,65z\"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 313 */
+/* 396 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/gear.svg ***!
   \**************************************/
@@ -30777,7 +33953,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-gear\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M464.8,195.9H459c-6.9,0-13.1-4.6-15.4-11.3c-2.8-8.2-6.2-16.4-10.1-24.3c-3.2-6.5-2.1-14.1,2.8-19l4.2-4.2 c14.1-14.1,14.1-37.1,0-51.2l-25.3-25.4c-14.1-14.1-37.1-14.1-51.2,0l-4.5,4.5c-4.8,4.8-12.6,6-19,2.9c-7.9-3.8-15.9-7.2-24-9.9 c-6.8-2.3-11.4-8.5-11.4-15.4v-6.3c0-20-16.2-36.2-36.2-36.2h-35.9c-20,0-36.2,16.2-36.2,36.2v7c0,6.9-4.5,13.1-11.3,15.4 c-8,2.8-15.8,6.1-23.4,9.8c-6.4,3.2-14.3,2-19.1-2.8l-5-5c-14.1-14.1-37.1-14.1-51.2,0L61.5,85.9c-14.1,14.1-14.1,37.1,0,51.2 l5.3,5.3c4.9,4.9,6,12.5,2.9,19c-3.7,7.5-6.9,15.3-9.6,23.1c-2.3,6.8-8.5,11.4-15.5,11.4h-7.5c-20,0-36.2,16.2-36.2,36.2v35.8 c0,20,16.2,36.2,36.2,36.2h7.5c6.9,0,13.1,4.6,15.4,11.4c2.7,7.8,5.9,15.6,9.6,23.1c3.2,6.5,2,14.1-2.9,19l-5.3,5.3 c-14.1,14.1-14.1,37.1,0,51.2l25.4,25.3c6.5,6.5,15.9,10.3,25.6,10.3c0,0,0,0,0,0c9.7,0,19-3.8,25.6-10.3l5-5 c4.9-4.8,12.7-6,19.1-2.8c7.6,3.7,15.4,7,23.4,9.8c6.8,2.3,11.3,8.5,11.3,15.4v7c0,20,16.2,36.2,36.2,36.2h35.9 c20,0,36.2-16.2,36.2-36.2v-6.3c0-6.9,4.6-13.1,11.4-15.4c8.1-2.7,16.1-6.1,23.9-9.9c6.4-3.1,14.2-1.9,19,2.9l4.5,4.5 c13.6,13.6,37.5,13.6,51.2,0l25.3-25.3c14.1-14.1,14.1-37.1,0-51.2l-4.2-4.2c-4.9-4.9-6-12.6-2.8-19.1c3.9-7.9,7.3-16.1,10.1-24.3 c2.3-6.8,8.5-11.3,15.4-11.3h5.8c20,0,36.2-16.2,36.2-36.2v-35.8C501,212.1,484.8,195.9,464.8,195.9z M415.1,305.7 c-2.4,7-5.3,13.9-8.6,20.6c-9,18.1-5.6,39.7,8.5,53.8l4.2,4.2c1.1,1.1,1.8,2.6,1.8,4.2c0,1.6-0.6,3.1-1.8,4.3l-25.3,25.3 c-1.1,1.1-2.6,1.7-4.3,1.7c0,0,0,0,0,0c-1.6,0-3.2-0.6-4.2-1.7l-4.5-4.5c-13.8-13.8-35.8-17.3-53.6-8.6c-6.7,3.3-13.6,6.1-20.4,8.4 c-19.1,6.5-31.9,24.1-31.9,44v6.3c0,3.3-2.7,6-6,6h-35.9c-3.3,0-6-2.7-6-6v-7c0-19.7-12.7-37.4-31.6-43.9 c-6.8-2.3-13.5-5.1-19.9-8.3c-6.6-3.2-13.9-5-21.1-5c-12.4,0-24,4.8-32.7,13.5l-5,5c-2.2,2.2-6.3,2.2-8.5,0l-25.4-25.3 c-2.3-2.3-2.3-6.2,0-8.5l5.3-5.3c14-14,17.5-35.5,8.6-53.6c-3.1-6.3-5.8-12.9-8.2-19.6c-6.5-19-24.2-31.7-44-31.7h-7.5 c-3.3,0-6-2.7-6-6v-35.8c0-3.3,2.7-6,6-6h7.5c19.8,0,37.5-12.8,44-31.7c2.3-6.7,5.1-13.3,8.2-19.7c8.8-18.1,5.4-39.6-8.6-53.6 l-5.3-5.3c-2.3-2.3-2.3-6.2,0-8.5l25.4-25.3c2.2-2.2,6.3-2.2,8.5,0l5,5c13.9,13.8,36,17.4,53.8,8.5c6.4-3.2,13.1-6,19.9-8.3 c18.9-6.6,31.6-24.2,31.6-43.9v-7c0-3.3,2.7-6,6-6h35.9c3.3,0,6,2.7,6,6v6.3c0,19.9,12.8,37.6,31.9,44c6.8,2.3,13.7,5.1,20.4,8.4 c17.8,8.7,39.8,5.2,53.6-8.6l4.5-4.5c2.2-2.2,6.3-2.2,8.5,0l25.3,25.3c1.1,1.1,1.8,2.7,1.8,4.3c0,1.6-0.6,3.1-1.8,4.3l-4.2,4.2 c-14.1,14.1-17.5,35.7-8.5,53.8c3.3,6.7,6.2,13.7,8.6,20.6c6.5,19,24.1,31.7,43.9,31.7h5.8c3.3,0,6,2.7,6,6v35.8c0,3.3-2.7,6-6,6 H459C439.2,273.9,421.5,286.7,415.1,305.7z\"/>\n    <path d=\"M296.8,121.3c-24.3-8.4-50.6-9.9-76-4.3c-50.7,11.2-90.7,51.3-102,102c-9.2,41.5,0.5,83.9,26.5,116.4 c26.1,32.5,64.9,51.1,106.5,51.1c10.3,0,20.7-1.2,31-3.4c50.7-11.3,90.7-51.3,102-102c9.2-41.5-0.5-83.9-26.6-116.4 C342.3,144.7,321,129.8,296.8,121.3z M355.4,274.5c-8.6,38.7-40.3,70.5-79,79c-40.7,9-81.8-5.2-107.4-37.1 c-20.3-25.3-27.8-58.5-20.6-91c8.6-38.7,40.3-70.5,79-79c8.1-1.8,16.4-2.7,24.5-2.7c32.4,0,62.6,14.5,82.9,39.8 C355.1,208.8,362.6,242,355.4,274.5z\"/>\n</svg>";
 
 /***/ },
-/* 314 */
+/* 397 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/globe.svg ***!
   \***************************************/
@@ -30786,7 +33962,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-globe\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M125,0C56.3,0,0.3,55.9,0.3,124.7c0,68.7,55.9,124.7,124.7,124.7s124.7-55.9,124.7-124.7C249.7,55.9,193.7,0,125,0z\n         M8.3,124.7C8.3,60.3,60.7,8,125,8s116.7,52.3,116.7,116.7c0,23.1-6.7,44.6-18.4,62.8c-4-9-16.6-12.7-24.8-14.4\n        c-0.1-0.3-11.3-1.6-24-1.5c-9,0.1-9.6,0.9-19,1.5c-1.9,0.1-6.9-1.6-16.3-2c-2.5-0.1-6.6-4.2-6.6-4.2s-2.6-2.8-5.2-6.1\n        c-2.6-3.3-5.2-2.5-5.2-5.7s-3.5-7.4-7.8-9c-4.3-1.6-6.1,4.9-13,4.9c-6.9,0-5.1-10.2-1.7-19.6c2.6-7.4,14.7-2.5,14.7-2.5\n        c3.7,1.4,6.1,3.3,10.4,2.5c5.7-1.1,6.9,5.7,6.9,5.7c6.1,16.4,8.7-2.5,8.7-2.5l0.9-11.4c0,0,0.9-4.9,2.6-9s2.6-4.1,6.9-9\n        s2.6-5.7,6.1-10.6s14.7-4.9,14.7-4.9c13-1.6,2.6-13.1,2.6-13.1c-4.3-4.1-18.2-9.8-18.2-9.8C144.8,65,147.4,56,147.4,56\n        c0-5.7,12.1,0.8,12.1,0.8c18.2,0.8,7.8-10.6,7.8-10.6c-5.5-4.1-12-6.5-16.4-7.7c-3.1-0.9-9-2.8-10.6-3.2c-8.9-2.3-12,1.9-12,1.9\n        c-9.2,6.7-21.7,7.4-21.7,7.4c-5.2,0-20,1.6-20,1.6c-9.5,0-15.6,10.6-16.5,17.2s-6.9,27-6.9,27c-6.1,10.6-3.5,13.1-1.7,19.6\n        c1.7,6.5,2.6,9,3.5,17.2c0.4,4.1,3.5,7.8,6.4,10.4c2.9,2.7,5.8,8.6,6.3,10.5c2.3,7.3,9.5,11.2,9.5,11.2l6.6,2.8\n        c20.6,4.4,21.4,9.3,21.5,9.2c4.3,7.4,17.8,9.6,17.8,9.6c9.4,2.8,6.4,7.6,6.4,7.6c-6.6,11.6-8.5,16.7-4.6,28.1\n        c4.5,13,7.7,20,9.3,23.2c-6.3,1-12.7,1.6-19.3,1.6C60.7,241.3,8.3,189,8.3,124.7z M135.2,65c3.5,9.8,3.5,12.3,3.5,12.3\n        s-6.1-1.6-19.1-2.5c-13-0.8-9.5-7.4-9.5-7.4l5.2-4.1c0,0,7.8-4.9,16.5-8.2C140.4,51.9,131.8,55.2,135.2,65z\"/>\n</svg>";
 
 /***/ },
-/* 315 */
+/* 398 */
 /*!************************************************!*\
   !*** ./~/html-loader!./src/hamburger-menu.svg ***!
   \************************************************/
@@ -30795,7 +33971,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-hamburger-menu\" viewBox=\"-220.7 -160.7 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M260.8,107.7h-463c-10.2,0-18.5-8.2-18.5-18.4s8.3-18.4,18.5-18.4h463 c10.2,0,18.5,8.2,18.5,18.4S271,107.7,260.8,107.7z M260.8-30h-463c-10.2,0-18.5-8.2-18.5-18.4s8.3-18.4,18.5-18.4h463 c10.2,0,18.5,8.2,18.5,18.4S271-30,260.8-30z M-202.2,208.6h463c10.2,0,18.5,8.2,18.5,18.4c0,10.1-8.3,18.4-18.5,18.4h-463 c-10.2,0-18.5-8.2-18.5-18.4C-220.7,216.8-212.4,208.6-202.2,208.6z\"/>\n</svg>";
 
 /***/ },
-/* 316 */
+/* 399 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/heart-filled.svg ***!
   \**********************************************/
@@ -30804,7 +33980,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-heart-filled\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M29.3,129.8c-6.5-8.5-27.7-37.7-28.9-57.4C-0.8,52.3,4.1,36.2,15,24.6C30.1,8.5,51.4,6.8,59.9,6.8c1.3,0,2.2,0,2.8,0.1 c16.2,0.4,39.5,7.6,58.9,39.4l3.4,5.6l3.6-5.5c16.8-25.7,37.1-39,60.3-39.5c3,0,28.9-0.9,48,20.6c7.2,8.1,15.1,22.5,12.5,45.6 c-1.9,16.9-16.2,39.3-24.3,50.4c-11.8,16.1-88.5,108.3-100.2,122L29.3,129.8z\"/>\n</svg>";
 
 /***/ },
-/* 317 */
+/* 400 */
 /*!************************************************!*\
   !*** ./~/html-loader!./src/heart-outlined.svg ***!
   \************************************************/
@@ -30813,7 +33989,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-heart-outlined\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M29.2,129.3c-6.5-8.5-27.7-37.7-28.9-57.4C-0.9,51.8,4,35.7,15,24.1C30,8.1,51.4,6.3,59.8,6.3c1.3,0,2.2,0,2.8,0.1 c16.2,0.4,39.5,7.6,58.9,39.4l3.4,5.6l3.6-5.5c16.8-25.7,37.1-39,60.3-39.5c3,0,28.9-0.9,48,20.6c7.2,8.1,15.3,21.4,12.5,45.6 c-1.9,16.9-12.5,34.8-22.5,48.4c-11.8,16.1-90.2,110.3-101.9,124L29.2,129.3z M59.8,16c-7.2,0-25.6,1.2-37.8,14.7 C12.6,41.2,8.5,54,10,71.3C10.7,80.2,15,90,23.6,104c6.4,10.4,12.6,18.7,13.3,19.6l88,106.4l83.8-101c0,0,11.1-13.7,18.1-25.5 c6.2-10.5,12-22.5,13-31.3c1.7-15.7-1.6-29.1-10.2-38.6c-17.9-19.8-40-17.3-41-17.3C163,16.6,141.4,36,124.4,73.8 c-2.3-6.2-5.9-14.6-11-22.9C99.8,28.5,82.1,16.4,62.1,16.1l0,0C61.4,16,60.6,16,59.8,16z\"/>\n</svg>";
 
 /***/ },
-/* 318 */
+/* 401 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/home.svg ***!
   \**************************************/
@@ -30822,7 +33998,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-home\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M245.1,120.7l-122-114L0.3,120l7.5,8.1l16.3-15V245h70v-73h57v73h70V113.2l16.6,15.5L245.1,120.7z M210,103v131h-48v-73H83 v73H35V102.9l88-81.2L210,103L210,103z\"/>\n</svg>";
 
 /***/ },
-/* 319 */
+/* 402 */
 /*!*******************************************************!*\
   !*** ./~/html-loader!./src/image-upload-multiple.svg ***!
   \*******************************************************/
@@ -30831,7 +34007,7 @@
 	module.exports = "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"\r\n\t viewBox=\"0 0 250 250\" class=\"dibsvg-svg dibsvg-img-upload-multiple\">\r\n<g>\r\n\t<polygon points=\"131,17.2 131,137 140,137 140,16.6 186.6,58.8 192.6,52.1 135.4,0.3 82.2,52.2 88.5,58.7 \t\"/>\r\n\t<path d=\"M155,94v9h65v97.2l-63.9-49.7l-46.9,38.8L97,178.7L52,212V103h64v-9H43v34H22v122h166v-21h41V94H155z M179,241H31V137h12\r\n\t\tv92h136V241z M220,220H56.3l40.3-29.8l12.5,10.9l47.2-39l63.7,49.5V220z\"/>\r\n\t<path d=\"M65.8,138.7c0,11.5,9.3,20.8,20.8,20.8s20.8-9.3,20.8-20.8s-9.3-20.8-20.8-20.8S65.8,127.2,65.8,138.7z M98.4,138.7\r\n\t\tc0,6.5-5.3,11.8-11.8,11.8s-11.8-5.3-11.8-11.8s5.3-11.8,11.8-11.8C93.1,126.9,98.4,132.2,98.4,138.7z\"/>\r\n</g>\r\n</svg>\r\n";
 
 /***/ },
-/* 320 */
+/* 403 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/image-upload.svg ***!
   \**********************************************/
@@ -30840,7 +34016,7 @@
 	module.exports = "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"\r\n\t viewBox=\"0 0 250 250\" class=\"dibsvg-svg dibsvg-img-upload\">\r\n<g>\r\n\t<polygon points=\"120,17.2 120,137 129,137 129,16.6 175.6,58.8 181.6,52.1 124.4,0.3 71.2,52.2 77.5,58.7 \t\"/>\r\n\t<path d=\"M148,94v9h76v115.7l-75.3-58.5L94,205.4l-14.3-12.5L27,232V103h75v-9H18v144.6l-0.1,0.1l0.1,0.2V250h215V94H148z M224,241\r\n\t\tH29.9l49.4-36.6l14.6,12.7l55-45.5l75.1,58.4V241z\"/>\r\n\t<path d=\"M44.2,144.3c0,13,10.5,23.5,23.5,23.5s23.5-10.5,23.5-23.5s-10.5-23.5-23.5-23.5S44.2,131.4,44.2,144.3z M82.2,144.3\r\n\t\tc0,8-6.5,14.5-14.5,14.5s-14.5-6.5-14.5-14.5s6.5-14.5,14.5-14.5S82.2,136.3,82.2,144.3z\"/>\r\n</g>\r\n</svg>\r\n";
 
 /***/ },
-/* 321 */
+/* 404 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/info-circle.svg ***!
   \*********************************************/
@@ -30849,7 +34025,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-info-circle\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M125.7,0.5C57.1,0.5,1.2,56.4,1.2,125s55.9,124.5,124.5,124.5S250.2,193.6,250.2,125S194.4,0.5,125.7,0.5z M125.7,239.5 c-63.1,0-114.5-51.4-114.5-114.5S62.6,10.5,125.7,10.5S240.2,61.9,240.2,125S188.8,239.5,125.7,239.5z\"/>\n    <path d=\"M134.8,187.9c-3.6,0-6.3-0.7-7.9-2c-1.6-1.3-2.4-3.8-2.4-7.5c0-1.5,0.2-3.5,0.7-5.9c0.5-2.4,1-4.9,1.7-7.4l10.2-40.8 c0.5-2,0.9-4,1.2-6s0.4-3.6,0.4-4.7c0-4.2-1.2-7.6-3.6-10.1c-2.4-2.5-6.2-3.7-11.4-3.7c-2.3,0-5.4,0.5-9.4,1.6 c-4,1.1-8.4,2.8-13.4,5l-1.4,6.1c1.2-0.3,3-0.7,5.3-1.2c2.3-0.4,4.2-0.7,5.6-0.7c3.6,0,6.1,0.6,7.2,1.8c1.2,1.2,1.8,3.6,1.8,7.2 c0,1.8-0.2,4-0.7,6.5c-0.5,2.6-1,5-1.5,7.2l-10.1,40.8c-0.6,2.4-1,4.5-1.2,6.1c-0.3,1.6-0.4,3.1-0.4,4.6c0,3.9,1.3,7.2,3.8,9.8 c2.6,2.7,6.4,4,11.5,4c2.5,0,5.5-0.5,9-1.4c3.5-0.9,8.2-2.6,14.1-4.9l1.4-6.1c-1.2,0.4-3,0.8-5.2,1.2 C137.8,187.8,136,187.9,134.8,187.9z\"/>\n    <path d=\"M139.7,51.2c-3.3,0-6.1,1.3-8.4,3.9c-2.4,2.6-3.6,5.7-3.6,9.2c0,3.3,1.2,6.3,3.6,8.9c2.4,2.6,5.2,3.9,8.4,3.9 c3.5,0,6.5-1.4,8.8-4.1c2.4-2.7,3.6-5.9,3.6-9.6c0-3.3-1.2-6.1-3.5-8.6C146.3,52.5,143.3,51.2,139.7,51.2z\"/>\n</svg>";
 
 /***/ },
-/* 322 */
+/* 405 */
 /*!*******************************************!*\
   !*** ./~/html-loader!./src/instagram.svg ***!
   \*******************************************/
@@ -30858,7 +34034,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-instagram\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path  d=\"M32.2,0h186c17.6,0,32.1,14.5,32.1,32.2v186c0,17.7-14.5,32.1-32.1,32.1h-186\n            C14.5,250.2,0,235.7,0,218.1v-186C0,14.5,14.5,0,32.2,0 M182.3,27.9c-6.2,0-11.3,5.1-11.3,11.3v27c0,6.2,5.1,11.3,11.3,11.3h28.3\n            c6.2,0,11.3-5.1,11.3-11.3v-27c0-6.2-5.1-11.3-11.3-11.3H182.3z M221.9,105.8h-22c2.1,6.8,3.2,14,3.2,21.5\n            c0,41.7-34.8,75.3-77.8,75.3s-77.8-33.7-77.8-75.3c0-7.5,1.1-14.7,3.2-21.5H27.7v105.7c0,5.5,4.5,10,10,10h174.2\n            c5.5,0,10-4.5,10-10V105.8z M125.3,75.9c-27.8,0-50.2,21.8-50.2,48.6s22.4,48.7,50.2,48.7s50.2-21.8,50.2-48.7\n            S153.1,75.9,125.3,75.9\"/>\n</svg>\n";
 
 /***/ },
-/* 323 */
+/* 406 */
 /*!****************************************!*\
   !*** ./~/html-loader!./src/iphone.svg ***!
   \****************************************/
@@ -30867,7 +34043,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-iphone\" viewBox=\"-110 0 425 425\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<path d=\"M176.7-0.5h-150C11.9-0.5,0,10.9,0,24.9v369.6c0,14,11.9,25.4,26.6,25.4h150c14.7,0,26.6-11.4,26.6-25.4V24.9\r\n\tC203.3,10.9,191.4-0.5,176.7-0.5z M101.5,17.8c3.3,0,5.9,2.6,5.9,5.9s-2.6,5.9-5.9,5.9c-3.3,0-5.9-2.6-5.9-5.9S98.3,17.8,101.5,17.8\r\n\tz M80.6,41.3h41.8c1.9,0,3.5,1.9,3.5,4.2c0,2.3-1.6,4.2-3.5,4.2H80.6c-1.9,0-3.5-1.9-3.5-4.2C77.1,43.2,78.7,41.3,80.6,41.3z\r\n\t M100.5,399.9c-11.3,0-20.5-9.2-20.5-20.5c0-11.3,9.2-20.5,20.5-20.5c11.3,0,20.5,9.2,20.5,20.5C121,390.7,111.9,399.9,100.5,399.9z\r\n\t M180.7,339.2H22.1v-271h158.6V339.2z\"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 324 */
+/* 407 */
 /*!******************************************!*\
   !*** ./~/html-loader!./src/linkedin.svg ***!
   \******************************************/
@@ -30876,7 +34052,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-linkedin\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M463,0H36.9C16.5,0,0,16.2,0,36.1v427.9C0,483.8,16.5,500,36.9,500H463c20.4,0,37-16.2,37-36.1V36.1C500,16.2,483.3,0,463,0 z M148.3,426.1H74.2V187.5h74.2V426.1z M111.2,154.9c-23.8,0-43-19.3-43-43s19.3-43,43-43s43,19.3,43,43S134.9,154.9,111.2,154.9z M426.1,426.1h-74.2V310c0-27.6-0.5-63.2-38.6-63.2c-38.6,0-44.5,30.1-44.5,61.3v118.1h-74V187.5h71.1v32.6h1 c9.9-18.8,34-38.6,70.1-38.6c75.1,0,88.9,49.4,88.9,113.7v130.8H426.1z\" />\n</svg>\n";
 
 /***/ },
-/* 325 */
+/* 408 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/location-pin.svg ***!
   \**********************************************/
@@ -30885,7 +34061,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-location-pin\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path fill=\"none\" d=\"M124.1,10.8C103.5,10.8,82.7,21,67,38.6c-18.1,20.4-26.7,48-23.4,75.5c6.2,52.4,66,108.3,80.5,121.1\n                c15.4-13.4,77-69.9,80.5-120.9c2-29.6-7.8-58.2-26.8-78.5C162.6,19.7,143.6,10.8,124.1,10.8z M123.8,141.5\n                c-22.2,0-40.3-18.1-40.3-40.3s18.1-40.3,40.3-40.3s40.3,18.1,40.3,40.3S146.1,141.5,123.8,141.5z\"/>\n        <path fill=\"none\" d=\"M123.8,71.8c-16.2,0-29.3,13.2-29.3,29.3s13.2,29.3,29.3,29.3s29.3-13.2,29.3-29.3S140,71.8,123.8,71.8z\"/>\n        <path d=\"M185.8,28.4C168.6,10,146.6-0.2,124.1-0.2c-23.8,0-47.6,11.5-65.3,31.5C38.5,54.1,29,84.7,32.7,115.4\n                c3.2,26.8,18.9,57.1,46.8,90c10.8,12.8,21.3,23.3,28.2,29.8C121.1,248,122,248,124.1,248c1.3,0,2.5-0.4,3.5-1.2\n                c3.4-2.8,83.8-68.8,88-131.6C217.7,82.6,206.9,50.9,185.8,28.4z M204.5,114.4c-3.4,51-65,107.5-80.5,120.9\n                c-14.5-12.9-74.3-68.7-80.5-121.1C40.3,86.6,48.8,59,67,38.6c15.7-17.6,36.5-27.8,57.1-27.8c19.5,0,38.5,8.9,53.7,25.1\n                C196.8,56.2,206.5,84.9,204.5,114.4z\"/>\n        <path d=\"M123.8,60.8c-22.2,0-40.3,18.1-40.3,40.3s18.1,40.3,40.3,40.3s40.3-18.1,40.3-40.3S146.1,60.8,123.8,60.8z M123.8,130.5\n                c-16.2,0-29.3-13.2-29.3-29.3s13.2-29.3,29.3-29.3s29.3,13.2,29.3,29.3S140,130.5,123.8,130.5z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 326 */
+/* 409 */
 /*!*****************************************************!*\
   !*** ./~/html-loader!./src/lock-with-checkmark.svg ***!
   \*****************************************************/
@@ -30894,7 +34070,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-lock-with-checkmark\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M423.3,241v-70.8l0-0.4c-0.1-1.9-2.5-47.3-15.4-71.1c-7.9-14.6-20.8-36.1-41.3-54.7\n                C344.7,24.3,317.6,11,286,4.7c-5.3-1.1-17.8-2.2-30.6-2.2c-10.4,0-19.2,0.7-26.3,2.1c-30.7,6.2-87,26.1-119,90.5\n                c-16.6,33.5-16,81.1-16,81.6c0.3,14.7,0.1,21.4,0,31.6c-0.1,7.6-0.3,16.9-0.3,32.7H43.5v274.3l427.5,0.2V241H423.3z M108.2,176.5\n                c-0.2-12.3,2-49.9,14.5-75.1c29.3-59,81-77.3,109.2-83c6.1-1.2,14.2-1.9,23.5-1.9c12.5,0,24,1.1,27.8,1.9\n                c64.8,13,94.1,53.4,112.3,87c11,20.4,13.6,62,13.8,65v71.2h-60.9L348,171l0-0.6c-4.8-48.2-27.3-71.3-45.4-82.1\n                c-19.2-11.5-37.3-12-39.1-12c-48.9-1.3-72.4,25.5-83.5,47.9c-11.5,23.1-12.1,46-12.1,47l0,70.5h-60.1c0-16,0.2-25.3,0.3-33\n                C108.4,198.7,108.5,191.5,108.2,176.5z M181.9,241v-69.7c0-1.2,0.9-21.6,10.8-41.4c13.2-26.4,35.9-39.7,67.4-39.7c1,0,2,0,3,0\n                l0.2,0c0.2,0,15.5,0.1,32,10c22.3,13.3,35.3,37.3,38.7,71.2l0.4,69.6H181.9z M57.5,501.3V255.6h399.5l-0.3,245.6L57.5,501.3z\"/>\n        <polygon points=\"229.5,404.3 196.4,368.5 174.3,388.8 229,448 338.8,334.5 317.2,313.6    \"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 327 */
+/* 410 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/lock.svg ***!
   \**************************************/
@@ -30903,7 +34079,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-lock\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M423.3,241v-70.8l0-0.4c-0.1-1.9-2.5-47.3-15.4-71.1c-7.9-14.6-20.8-36.1-41.3-54.7\n                C344.7,24.3,317.6,11,286,4.7c-5.3-1.1-17.8-2.2-30.6-2.2c-10.4,0-19.2,0.7-26.3,2.1c-30.7,6.2-87,26.1-119,90.5\n                c-16.6,33.5-16,81.1-16,81.6c0.3,14.7,0.1,21.4,0,31.6c-0.1,7.6-0.3,16.9-0.3,32.7H43.5v274.3l427.5,0.2V241H423.3z M108.2,176.5\n                c-0.2-12.3,2-49.9,14.5-75.1c29.3-59,81-77.3,109.2-83c6.1-1.2,14.2-1.9,23.5-1.9c12.5,0,24,1.1,27.8,1.9\n                c64.8,13,94.1,53.4,112.3,87c11,20.4,13.6,62,13.8,65v71.2h-60.9L348,171l0-0.6c-4.8-48.2-27.3-71.3-45.4-82.1\n                c-19.2-11.5-37.3-12-39.1-12c-48.9-1.3-72.4,25.5-83.5,47.9c-11.5,23.1-12.1,46-12.1,47l0,70.5h-60.1c0-16,0.2-25.3,0.3-33\n                C108.4,198.7,108.5,191.5,108.2,176.5z M181.9,241v-69.7c0-1.2,0.9-21.6,10.8-41.4c13.2-26.4,35.9-39.7,67.4-39.7c1,0,2,0,3,0\n                l0.2,0c0.2,0,15.5,0.1,32,10c22.3,13.3,35.3,37.3,38.7,71.2l0.4,69.6H181.9z M57.5,501.3V255.6h399.5l-0.3,245.6L57.5,501.3z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 328 */
+/* 411 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/logo-no-reg.svg ***!
   \*********************************************/
@@ -30912,7 +34088,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-logo-no-reg\" viewBox=\"0 -38 100 100\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M15.7,0L9.6,20.2c-0.3,1.1-0.5,1.7-0.5,2c0,0.3,0.1,0.6,0.3,0.9c0.2,0.3,0.5,0.5,0.7,0.6\n                c0.3,0.1,1,0.2,2.3,0.2l-0.2,0.6H0l0.2-0.6c1.2,0,2.1-0.1,2.6-0.3c0.5-0.2,0.9-0.5,1.2-0.9c0.3-0.4,0.6-1.2,1-2.5L8.5,8.2\n                c0.6-1.8,0.9-2.8,0.9-2.9C9.5,5,9.5,4.7,9.5,4.5C9.5,4,9.4,3.5,9,3.2C8.7,2.9,8.2,2.8,7.6,2.8c-0.3,0-0.9,0-1.8,0.1L5.7,2.2\n                L14.9,0H15.7z\"/>\n        <path d=\"M28.5,8.1l-0.8,5.5H27c-0.1-1.4-0.5-2.5-1.3-3.3c-0.8-0.8-1.6-1.2-2.5-1.2c-0.5,0-1,0.2-1.4,0.5\n                c-0.4,0.3-0.5,0.7-0.5,1.1c0,0.4,0.1,0.7,0.2,1.1c0.2,0.3,0.5,0.8,1,1.3c1.9,2,3,3.4,3.4,4.1c0.4,0.8,0.6,1.6,0.6,2.4\n                c0,0.9-0.2,1.8-0.7,2.6c-0.5,0.8-1.2,1.5-2.1,2c-1,0.5-1.9,0.7-3,0.7c-0.7,0-1.6-0.1-2.6-0.4c-0.7-0.2-1.2-0.3-1.5-0.3\n                c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.3-0.6,0.5h-0.7l0.9-5.9h0.6c0.4,1.4,0.8,2.5,1.2,3.1c0.4,0.6,0.9,1.1,1.5,1.5\n                c0.6,0.4,1.2,0.5,1.8,0.5c0.7,0,1.2-0.2,1.6-0.6c0.4-0.4,0.6-0.9,0.6-1.5c0-0.6-0.1-1.1-0.4-1.6c-0.3-0.5-0.9-1.3-1.9-2.4\n                c-1.4-1.5-2.3-2.7-2.8-3.5c-0.3-0.6-0.5-1.3-0.5-2c0-1.3,0.5-2.3,1.4-3.2c0.9-0.9,2.3-1.3,4-1.3c0.7,0,1.7,0.1,2.7,0.4\n                c0.5,0.1,1,0.2,1.3,0.2c0.5,0,0.8-0.2,1.1-0.6H28.5z\"/>\n        <path d=\"M40,3.8l-1.5,4.8h2l-0.6,2h-2L34.6,21c-0.2,0.6-0.3,1.1-0.3,1.5c0,0.1,0.1,0.2,0.2,0.3\n                c0.1,0.1,0.2,0.1,0.4,0.1c0.2,0,0.4-0.1,0.6-0.2c0.5-0.4,1.2-1.1,1.9-2.2l0.6,0.4c-0.8,1.4-1.7,2.5-2.7,3.1c-1,0.7-2,1-2.9,1\n                c-0.8,0-1.4-0.2-1.9-0.6c-0.4-0.4-0.7-0.9-0.7-1.5c0-0.7,0.2-1.6,0.5-2.6l3.1-9.6H31l0.3-1.3c1.5-0.6,2.7-1.2,3.8-1.9\n                c1.1-0.7,2.4-1.9,3.9-3.6H40z\"/>\n        <path d=\"M59.6,0l-6.1,19.8C53.2,21,53,21.7,53,22c0,0.1,0,0.2,0.1,0.3c0.1,0.1,0.2,0.1,0.3,0.1c0.2,0,0.4-0.1,0.7-0.3\n                c0.4-0.3,1-1,1.6-1.9l0.6,0.3c-1.7,2.9-3.5,4.4-5.6,4.4c-0.7,0-1.3-0.2-1.7-0.6c-0.4-0.4-0.6-0.8-0.6-1.4c0-0.6,0.2-1.3,0.5-2.4\n                l0.6-1.8c-1.5,2.6-2.8,4.3-3.9,5.2c-0.8,0.6-1.7,1-2.4,1c-0.9,0-1.7-0.4-2.3-1.1S40,22.2,40,20.8c0-1.8,0.4-3.5,1.2-5.2\n                c0.8-1.7,1.7-3.1,2.8-4.3c1-1.1,2-2,3-2.4c0.9-0.5,1.9-0.7,2.8-0.7c0.5,0,0.9,0.1,1.3,0.3c0.4,0.2,0.8,0.6,1.3,1.1l1.4-4.4\n                c0.4-1.1,0.5-1.9,0.5-2.4c0-0.3-0.1-0.5-0.4-0.7c-0.2-0.2-0.6-0.3-1-0.3c-0.2,0-0.4,0-0.7,0.1l0.2-0.7L58.5,0H59.6z M51.6,11.2\n                c0-0.7-0.1-1.2-0.4-1.6c-0.3-0.3-0.6-0.5-1-0.5c-0.4,0-0.8,0.2-1.3,0.6c-0.9,0.8-1.8,2.3-2.7,4.6c-0.9,2.3-1.4,4.2-1.4,5.8\n                c0,0.6,0.1,1,0.3,1.3c0.2,0.3,0.4,0.4,0.7,0.4c0.4,0,0.9-0.2,1.3-0.6c1-0.9,2.1-2.4,3.1-4.6C51.1,14.3,51.6,12.5,51.6,11.2z\"/>\n        <path d=\"M66,0c0.7,0,1.4,0.3,1.9,0.8c0.5,0.5,0.8,1.1,0.8,1.8c0,0.7-0.3,1.3-0.8,1.8C67.4,5,66.8,5.2,66,5.2\n                c-0.7,0-1.3-0.3-1.9-0.8c-0.5-0.5-0.8-1.1-0.8-1.8c0-0.7,0.3-1.3,0.8-1.8C64.7,0.3,65.3,0,66,0z M67.5,8.1l-4,12.5\n                c-0.2,0.7-0.3,1.2-0.3,1.4c0,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.2,0.2,0.3,0.2c0.2,0,0.4-0.1,0.6-0.3c0.5-0.5,1.2-1.3,1.9-2.5l0.6,0.4\n                C65,23.4,63,25,61,25c-0.8,0-1.4-0.2-1.9-0.6c-0.5-0.4-0.7-1-0.7-1.6c0-0.4,0.1-1,0.3-1.7l2.8-8.5c0.3-0.8,0.4-1.4,0.4-1.8\n                c0-0.3-0.1-0.5-0.4-0.7c-0.2-0.2-0.6-0.3-1-0.3c-0.2,0-0.4,0-0.7,0l0.2-0.7l6.3-1H67.5z\"/>\n        <path d=\"M80,0l-3.2,10.6c0.9-1,1.7-1.7,2.3-2c0.6-0.3,1.3-0.5,2-0.5c1.4,0,2.4,0.5,3.1,1.5c0.7,1,1,2.2,1,3.5\n                c0,3.2-1.1,6-3.4,8.5c-2,2.2-4.4,3.3-7,3.3c-1.9,0-4-0.6-6.1-1.7l5.6-18.6c0.3-0.9,0.4-1.5,0.4-1.9c0-0.3-0.1-0.5-0.4-0.7\n                c-0.4-0.3-0.9-0.4-1.6-0.3l0.2-0.7L78.9,0H80z M73,23.5c0.5,0.4,1,0.5,1.5,0.5c0.6,0,1.1-0.1,1.5-0.4c0.7-0.4,1.3-1.1,2.1-2.2\n                c0.7-1.1,1.3-2.3,1.8-3.8c0.5-1.5,0.7-3,0.7-4.4c0-0.8-0.2-1.5-0.5-1.9c-0.4-0.4-0.8-0.7-1.2-0.7c-0.8,0-1.5,0.4-2,1.2\n                c-0.4,0.5-0.8,1.7-1.3,3.4L73,23.5z\"/>\n        <path d=\"M100,8.1l-0.8,5.5h-0.7c-0.1-1.4-0.5-2.5-1.3-3.3c-0.8-0.8-1.6-1.2-2.5-1.2c-0.5,0-1,0.2-1.4,0.5\n                c-0.4,0.3-0.5,0.7-0.5,1.1c0,0.4,0.1,0.7,0.2,1.1c0.2,0.3,0.5,0.8,1,1.3c1.9,2,3,3.4,3.4,4.1c0.4,0.8,0.6,1.6,0.6,2.4\n                c0,0.9-0.2,1.8-0.7,2.6c-0.5,0.8-1.2,1.5-2.1,2c-1,0.5-1.9,0.7-3,0.7c-0.7,0-1.6-0.1-2.6-0.4c-0.7-0.2-1.2-0.3-1.5-0.3\n                c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.3-0.6,0.5h-0.7l0.9-5.9h0.6c0.4,1.4,0.8,2.5,1.2,3.1c0.4,0.6,0.9,1.1,1.5,1.5\n                c0.6,0.4,1.2,0.5,1.8,0.5c0.7,0,1.2-0.2,1.6-0.6c0.4-0.4,0.6-0.9,0.6-1.5c0-0.6-0.1-1.1-0.4-1.6c-0.3-0.5-0.9-1.3-1.9-2.4\n                c-1.4-1.5-2.3-2.7-2.8-3.5c-0.3-0.6-0.5-1.3-0.5-2c0-1.3,0.5-2.3,1.4-3.2c0.9-0.9,2.3-1.3,4-1.3c0.7,0,1.7,0.1,2.7,0.4\n                c0.5,0.1,1,0.2,1.3,0.2c0.5,0,0.8-0.2,1.1-0.6H100z\"/>\n    </g>\n</svg>\n";
 
 /***/ },
-/* 329 */
+/* 412 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/logo.svg ***!
   \**************************************/
@@ -30921,7 +34097,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-logo\" title=\"1stdibs.com\" viewBox=\"543 -650 2022 2022\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M843.7,139.2L726.9,531c-6,20.5-9,33.6-9,39.1c0,5.5,2.1,11.3,6.4,17.1c4.2,5.9,8.8,9.7,13.8,11.4 c4.9,1.7,19.8,3.3,44.6,4.7l-3.8,12.4H543l3.8-12.4c23.4-0.5,39.8-2.4,48.9-5.9c9.2-3.5,16.7-9.1,22.6-17 c5.9-7.9,12.5-24.4,19.8-49.5l68.7-232.7c10.8-35.4,16.5-54.1,17-56.2c1.4-6,2.2-11.6,2.2-16.9c0-10.3-3.2-18.4-9.5-24.5 c-6.3-6-15.4-9.1-27.2-9.1c-5.8,0-17.2,0.9-34.3,2.8l-2.9-12.9l177-42.4H843.7z\" />\n        <path d=\"M1089.2,296.3l-15.3,106.5h-12.9c-1.8-27.4-10.3-48.9-25.3-64.6c-15-15.7-31.1-23.6-48.3-23.6 c-10.5,0-19.2,3.1-26.1,9.3c-6.9,6.2-10.3,13.7-10.3,22.4c0,7.3,1.5,14.2,4.5,20.7c3,6.4,9.6,15.2,20,26.2 c36.3,39,58.3,65.9,66.2,80.5c7.8,14.6,11.7,30.3,11.7,47c0,18.1-4.6,35.2-13.8,51.3c-9.2,16.1-23,29-41.3,38.8 c-18.3,9.7-37.3,14.6-57.1,14.6c-13.3,0-29.8-2.5-49.4-7.6c-12.9-3.5-22.6-5.3-29-5.3c-5.8,0-10.2,0.8-13.5,2.5 c-3.2,1.7-6.8,5.1-10.7,10.4h-12.9l17.1-114.7h11.2c8,28,15.6,47.9,22.6,59.8c7,11.9,16.4,21.4,28.1,28.4 c11.7,7.1,23,10.6,33.8,10.6c12.6,0,23.1-4,31.4-11.9c8.3-7.9,12.4-17.4,12.4-28.4c0-10.8-2.7-21.2-8.1-31.3 c-5.4-10.1-17.9-25.8-37.4-47.2c-26.9-29.1-44.6-51.7-53.1-67.6c-6-11.5-9-24.7-9-39.4c0-24.9,9-45.7,27.1-62.3 c18.1-16.6,43.5-24.9,76.1-24.9c14.3,0,31.8,2.6,52.5,7.9c10.4,2.6,18.7,3.9,24.9,3.9c9,0,16.2-3.9,21.8-11.8H1089.2z\" />\n        <path d=\"M1311.5,212.1l-28.9,93.5h38.6l-12.1,39.4H1270l-62.6,202.6c-4,12.6-6,22.1-6,28.6c0,2.2,1,4.1,3.1,5.7 c2.1,1.6,4.4,2.4,6.9,2.4c3.9,0,7.9-1.6,12-4.8c10.6-8.1,22.8-22.1,36.8-42.1l12.4,7.6c-15.9,27.6-33.4,47.9-52.5,60.7 c-19.1,12.9-37.9,19.3-56.3,19.3c-15.6,0-27.8-3.9-36.4-11.8c-8.6-7.9-12.9-17.9-12.9-30c0-13.3,3.2-30.5,9.7-51.4l58.6-186.8 h-44.2l6.5-25.4c28-10.8,52.3-23.4,73-37.8c20.7-14.4,45.6-37.7,74.7-69.7H1311.5z\" />\n        <path d=\"M1687.6,138l-116.8,384.9c-7.4,24.1-11.1,38.6-11.1,43.7c0,2.5,0.9,4.7,2.7,6.6c1.8,1.8,3.8,2.8,5.8,2.8 c3.9,0,8.3-2,13.4-5.9c8.5-6.5,18.7-18.7,30.9-36.7l12.4,6.6c-32.4,56.8-68,85.2-106.8,85.2c-13.8,0-24.4-3.6-31.9-10.8 c-7.5-7.2-11.2-16.4-11.2-27.7c0-10.8,3-26.1,9-46.1l10.9-35.2c-28.8,50.7-53.8,84.4-75,101.2c-16.1,12.4-31.8,18.6-47,18.6 c-17.3,0-31.9-7-43.7-21c-11.9-14-17.8-34.4-17.8-61.3c0-34.2,7.7-67.9,23-101.2c15.3-33.3,33-61.1,53.1-83.3 c20.1-22.3,39.2-38.2,57.5-47.7c18.2-9.5,36.2-14.3,53.8-14.3c9.1,0,17.1,1.9,24.2,5.6c7.1,3.8,15.1,10.8,24.2,21.1l27-85.4 c6.9-21.5,10.3-36.9,10.3-46.2c0-5.6-2.4-10.4-7-14.3c-4.7-4-11-5.9-18.8-5.9c-3.7,0-8.2,0.3-13.7,1l2.9-13.5L1666,138H1687.6z M1532.8,356c0-14-2.8-24.2-8.4-30.7c-5.6-6.4-12.2-9.7-19.7-9.7c-7.5,0-15.6,3.8-24.2,11.4c-16.6,14.7-34,44.3-52.1,88.8 c-18.1,44.5-27.2,81.9-27.2,112.2c0,11,2,19.2,6,24.5c4,5.3,8.4,7.9,13.3,7.9c8.2,0,16.4-3.7,24.6-11 c19.9-17.5,39.5-47.5,58.8-90.1C1523.1,416.6,1532.8,382.2,1532.8,356z\" />\n        <path d=\"M1810.2,138c14.4,0,26.5,5,36.3,14.9c9.8,9.9,14.8,21.9,14.8,36c0,14.1-5,26.1-14.9,36 c-10,9.9-22,14.9-36.1,14.9c-13.9,0-25.8-5-35.8-14.9c-10-9.9-14.9-21.9-14.9-36c0-14.1,4.9-26.1,14.8-36 C1784.1,143,1796.1,138,1810.2,138z M1838.2,296.3l-76.7,242.9c-4.2,13.9-6.4,23-6.4,27.3c0,2.6,1,5.1,3.1,7.3 c2.1,2.3,4.2,3.4,6.5,3.4c3.9,0,7.7-1.8,11.6-5.4c10.2-8.8,22.5-24.8,36.9-47.9l11.8,7.2c-35,62.7-72.1,94-111.5,94 c-15,0-27-4.2-35.9-12.5c-8.9-8.3-13.4-18.9-13.4-31.7c0-8.5,2.2-19.3,6.5-32.4l52.8-165c5.1-15.9,7.6-27.8,7.6-35.9 c0-5.1-2.3-9.5-7-13.5c-4.7-3.9-11-5.9-19.1-5.9c-3.7,0-8.1,0.1-13.2,0.3l4.7-13.5l120.4-18.8H1838.2z\" />\n        <path d=\"M2078.5,138l-61.1,207c17.3-19.5,31.8-32.5,43.4-39c11.6-6.5,24.2-9.7,37.9-9.7c26.3,0,46,9.9,59.1,29.8 c13.1,19.9,19.6,42.8,19.6,68.7c0,62-22,117.3-66.1,166c-39.1,42.9-83.6,64.4-133.5,64.4c-37.1,0-76.3-11.1-117.7-33.2l106.8-363.3 c5-17.3,7.8-29.3,8.5-36.2c0-5.9-2.5-10.6-7.4-14c-6.9-4.9-17.5-7-31.6-6.3l2.9-13.5l118.2-20.6H2078.5z M1943.6,595.3 c10.3,6.9,19.7,10.4,28,10.4c11.6,0,21.4-2.4,29.3-7.3c12.5-7.8,25.6-22,39.4-42.5c13.7-20.5,25.2-45.2,34.4-74.2 c9.2-29,13.8-57.9,13.8-86.6c0-16.3-3.4-28.8-10.3-37.3c-6.9-8.5-14.8-12.8-23.8-12.8c-15,0-28.1,8-39.2,24.1 c-7.5,10.4-15.7,32.5-24.4,66.3L1943.6,595.3z\" />\n        <path d=\"M2462.1,296.3l-15.3,106.5h-12.9c-1.8-27.4-10.3-48.9-25.3-64.6c-15-15.7-31.1-23.6-48.3-23.6 c-10.5,0-19.2,3.1-26.1,9.3c-6.9,6.2-10.3,13.7-10.3,22.4c0,7.3,1.5,14.2,4.5,20.7c3,6.4,9.6,15.2,20,26.2 c36.3,39,58.3,65.9,66.2,80.5c7.8,14.6,11.7,30.3,11.7,47c0,18.1-4.6,35.2-13.8,51.3c-9.2,16.1-23,29-41.3,38.8 c-18.3,9.7-37.3,14.6-57.1,14.6c-13.3,0-29.8-2.5-49.4-7.6c-12.9-3.5-22.6-5.3-29-5.3c-5.8,0-10.2,0.8-13.5,2.5 c-3.2,1.7-6.8,5.1-10.7,10.4h-12.9l17.1-114.7h11.2c8,28,15.6,47.9,22.6,59.8c7,11.9,16.4,21.4,28.1,28.4 c11.7,7.1,23,10.6,33.8,10.6c12.6,0,23.1-4,31.4-11.9c8.3-7.9,12.4-17.4,12.4-28.4c0-10.8-2.7-21.2-8.1-31.3 c-5.4-10.1-17.9-25.8-37.4-47.2c-26.9-29.1-44.6-51.7-53.1-67.6c-6-11.5-9-24.7-9-39.4c0-24.9,9-45.7,27.1-62.3 c18.1-16.6,43.5-24.9,76.1-24.9c14.3,0,31.8,2.6,52.5,7.9c10.4,2.6,18.7,3.9,24.9,3.9c9,0,16.2-3.9,21.8-11.8H2462.1z\" />\n    </g>\n    <g>\n        <path d=\"M2471.2,591.3V591c0-25.4,20.6-47,46.7-47c26.1,0,46.5,21.4,46.5,46.7v0.3c0,25.4-20.6,47-46.7,47 C2491.5,638,2471.2,616.6,2471.2,591.3z M2559,591v-0.3c0-22.8-17.6-41.6-41.1-41.6c-23.6,0-41.3,19.1-41.3,41.8v0.3 c0,22.8,17.6,41.6,41.1,41.6C2541.2,632.9,2559,613.8,2559,591z M2496,564.9h24.2c8.8,0,14.4,2.2,17.9,5.7c3,3,4.5,6.7,4.5,11.8 v0.3c0,7.1-3.7,12.1-9.8,14.9l11.6,16.9h-18.8l-9.5-14.2h-0.3h-3.2v14.2H2496V564.9z M2519.7,588.4c4,0,6.4-1.7,6.4-4.8v-0.3 c0-3.1-2.6-4.6-6.3-4.6h-7.2v9.7H2519.7z\" />\n    </g>\n</svg>\n";
 
 /***/ },
-/* 330 */
+/* 413 */
 /*!*****************************************!*\
   !*** ./~/html-loader!./src/luggage.svg ***!
   \*****************************************/
@@ -30930,7 +34106,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-luggage\" viewBox=\"0 100 612 612\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<path d=\"M553.2,222.2H376.4v-29.4c0-16.5-12.9-29.4-29.4-29.4h-82c-16.5,0-29.4,12.9-29.4,29.4v29.4H58.8c-33,0-58.8,25.7-58.8,58.8\r\n\tv282.7c0,33,25.7,58.8,58.8,58.8h494.5c33,0,58.8-25.7,58.8-58.8V280.9C612,247.9,586.3,222.2,553.2,222.2z M258.9,192.8\r\n\tc0-3.7,2.4-6.1,6.1-6.1h82.6c3.7,0,6.1,2.4,6.1,6.1v29.4h-94.9V192.8z M58.8,599.2c-20.2,0-35.5-15.3-35.5-35.5V280.9\r\n\tc0-20.2,15.3-35.5,35.5-35.5h70.4v129.7h-23.3v82.6h23.3v141.4L58.8,599.2L58.8,599.2z M129.7,433.9v-35.5H153v35.5H129.7z\r\n\t M153,599.2V457.8h23.3v-82.6H153V246.1h82.6h23.3h94.2h23.3H459v129.7h-23.3v82.6H459v141.4H153V599.2z M459,433.9v-35.5h23.3v35.5\r\n\tH459z M588.7,563.7c0,20.2-15.3,35.5-35.5,35.5h-71V457.8h23.3v-82.6h-23.3V246.1h70.4c20.2,0,35.5,15.3,35.5,35.5v282.1H588.7z\"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 331 */
+/* 414 */
 /*!**************************************************!*\
   !*** ./~/html-loader!./src/magnifying-glass.svg ***!
   \**************************************************/
@@ -30939,7 +34115,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-magnifying-glass\"  viewBox=\"0 0 518 518\">\n    <path d=\"M494.2,470.1l-158-160.6c25.1-32.4,40.1-73.2,40.1-117.7C376.4,86.4,292.3,1,188.7,1\n            C85,1,0.9,86.4,0.9,191.8s84,190.8,187.7,190.8c47.9,0,91.5-18.4,124.7-48.4L470.6,494c6.5,6.6,17.1,6.6,23.6,0\n            C500.7,487.4,500.7,476.7,494.2,470.1z M188.8,348.8c-88.7,0-156.4-68.4-156.4-158c0-89.6,67.7-158,156.4-158s156.4,68.5,156.4,158\n            S277.5,348.8,188.8,348.8z\"/>\n</svg>";
 
 /***/ },
-/* 332 */
+/* 415 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/mask.svg ***!
   \**************************************/
@@ -30948,7 +34124,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-mask\" viewBox=\"0 -300 1060 1060\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M1044.6,5c-47,44.5-253.2,94.9-330,115.2C637.2,140.8,572,176.4,530,216.9c-42-40.5-107.2-76.1-184.6-96.6 C268.5,99.9,62.3,49.6,15.3,5c-40-37.8,9.4,148.4,21.3,186.3C98.8,388.4,142.1,389.4,268.5,411c70.6,12.1,146.6,12.3,206-1.6 c26.6-15.4,23.3-89.8,55.5-89.8c32.3,0,28.9,74.4,55.5,89.8c59.4,13.9,135.4,13.7,206,1.6c126.3-21.7,169.7-22.6,231.8-219.7 C1035.3,153.5,1084.6-32.8,1044.6,5z M441.6,306.6c-11.7,44.2-89,62.1-172.8,39.7c-83.5-22.1-142-75.9-130.3-120.2 c11.7-44.1,89.2-61.9,172.8-39.7C395.1,208.6,453.3,262.4,441.6,306.6z M793,346.3c-83.7,22.5-161,4.5-172.7-39.7 c-11.7-44.2,46.6-98,130.3-120.2c83.6-22.2,161-4.4,172.7,39.7C935,270.3,876.5,324.2,793,346.3z\"/>\n</svg>";
 
 /***/ },
-/* 333 */
+/* 416 */
 /*!*****************************************!*\
   !*** ./~/html-loader!./src/message.svg ***!
   \*****************************************/
@@ -30957,7 +34133,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-message\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M189,249.6L119.6,183H0V11h250v172h-61V249.6z M8,175h114.8l58.2,55.8V175h61V19H8V175z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 334 */
+/* 417 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/minus.svg ***!
   \***************************************/
@@ -30966,7 +34142,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-minus\" viewBox=\"0 -120 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <rect width=\"250\" height=\"15\" rx=\"10\"></rect>\n</svg>";
 
 /***/ },
-/* 335 */
+/* 418 */
 /*!*******************************************!*\
   !*** ./~/html-loader!./src/net-price.svg ***!
   \*******************************************/
@@ -30975,7 +34151,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-net-price\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M0,0v250h250V0H0z M241,241H9V9h232V241z\"/>\n        <polygon points=\"53,111 53,111 70.4,161 87,161 87,90 74,90 74,138 73.4,138 56.1,90 40,90 40,161 53,161  \"/>\n        <polygon points=\"147,149 121,149 121,130 145,130 145,118 121,118 121,102 146,102 146,90 107,90 107,161 147,161  \"/>\n        <polygon points=\"180,161 195,161 195,102 210,102 210,90 165,90 165,102 180,102  \"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 336 */
+/* 419 */
 /*!****************************************!*\
   !*** ./~/html-loader!./src/orange.svg ***!
   \****************************************/
@@ -30984,7 +34160,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-orange\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<path d=\"M99.9,7.3L99.9,7.3c-0.1-0.2-0.1-0.4-0.2-0.5c-0.2-0.3-0.4-0.5-0.7-0.6c0,0-0.1,0-0.1-0.1\r\n\tc-1.1-0.5-28.2-11.2-42.1-3c-4,2.4-6.6,6.1-7.6,11.1c-4.2,2.1-7.1,4.2-9,5.7c-1.7-8.6-8.5-11.1-8.6-11.1c-0.9-0.3-1.9,0.2-2.2,1.1\r\n\tc-0.1,0.5-0.1,0.9,0.1,1.4c0.2,0.4,0.6,0.7,1,0.9c0.1,0,8.8,3.3,6,17.1C16,30,0,45.5,0,64.6C0,84.1,17,100,37.9,100\r\n\ts37.9-15.9,37.9-35.4c0-18.8-15.7-34.2-35.8-35.3c0.3-1.8,0.5-3.5,0.5-5.1c1.2-1.1,4.3-3.8,9.9-6.6c4.7,3.7,21.1,13.4,48.8-8.4\r\n\tc0.2-0.2,0.4-0.3,0.5-0.6c0.1-0.1,0.1-0.3,0.2-0.4C100,7.9,100,7.6,99.9,7.3z M53.4,12.3c1-2.6,2.7-4.6,5.2-6.1\r\n\tc2.9-1.7,6.9-2.6,11.8-2.6c4.5,0,9.8,0.8,15.6,2.2C73.7,6.1,62.8,8.3,53.4,12.3z M93.2,9.3c-20.8,14.6-33.8,9.8-39,6.6\r\n\tC65.2,11.1,78.3,8.9,93.2,9.3z M72.4,64.6c0,17.5-15.5,31.8-34.5,31.8c-19,0-34.5-14.3-34.5-31.8c0-17.5,15.5-31.8,34.5-31.8\r\n\tC56.9,32.8,72.4,47.1,72.4,64.6z\"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 337 */
+/* 420 */
 /*!*************************************!*\
   !*** ./~/html-loader!./src/pen.svg ***!
   \*************************************/
@@ -30993,7 +34169,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-pen\" viewBox=\"-30 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <polygon points=\"45.5,354.7 0,518 165.4,455.2 408,156.5 285.3,61.6\"/>\n        <path d=\"M443.8,55.3c-9.4-8.9-54.8-44.4-61.3-48.2c-31-17.8-49.6,3.1-49.6,3.1l-23.8,27.2l117.8,91.1l25.2-30C452.1,98.6,465.2,75.6,443.8,55.3z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 338 */
+/* 421 */
 /*!*****************************************************!*\
   !*** ./~/html-loader!./src/person-inside-badge.svg ***!
   \*****************************************************/
@@ -31002,7 +34178,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-person-inside-badge\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path fill-rule=\"evenodd\" d=\"M124.7,0l12.8,4.3l13.4-1.6l11.6,6.8l13.4,1.2l9.9,9.1l12.9,3.9l7.8,10.9l11.8,6.5l5.3,12.3l10.2,8.8l2.7,13.1\n                l8.1,10.7l-0.2,13.4l5.7,12.1l-2.9,13.1l3,13.1l-5.6,12.2l0.2,13.4l-8,10.8l-2.6,13.2l-10.1,8.9l-5.3,12.3l-11.7,6.6l-7.7,11\n                l-12.9,4l-9.9,9.1l-13.4,1.2l-11.6,6.9l-13.4-1.6l-12.7,4.4l-12.8-4.3l-13.4,1.6l-11.6-6.8l-13.4-1.2l-9.9-9.1l-12.9-3.9l-7.8-10.9\n                l-11.8-6.5l-5.3-12.3l-10.2-8.8l-2.7-13.1l-8.1-10.7l0.2-13.4l-5.7-12.1L3,125.3l-3-13.1l5.6-12.2L5.4,86.7l8-10.8L16,62.8\n                l10.1-8.9l5.3-12.3L43.1,35l7.7-11l12.9-4l9.9-9.1L87,9.7l11.6-6.9l13.4,1.6L124.7,0z M124.7,5.8l12.2,4.1l12.8-1.5l11.1,6.5\n                l12.8,1.1l9.4,8.7l12.3,3.7l7.4,10.4l11.2,6.2l5.1,11.7l9.7,8.4l2.5,12.5l7.7,10.2l-0.1,12.8l5.4,11.6l-2.8,12.5l2.9,12.5\n                l-5.4,11.6l0.2,12.8l-7.7,10.3l-2.5,12.5l-9.6,8.4l-5,11.8l-11.2,6.3l-7.4,10.5l-12.3,3.8l-9.4,8.7l-12.8,1.2l-11,6.6l-12.8-1.5\n                l-12.1,4.1l-12.2-4.1l-12.8,1.5l-11.1-6.5L76.5,234l-9.4-8.7l-12.3-3.7l-7.4-10.4L36.2,205l-5.1-11.7l-9.7-8.4l-2.5-12.5l-7.7-10.2\n                l0.1-12.8l-5.4-11.6l2.8-12.5l-2.9-12.5l5.4-11.6l-0.2-12.8l7.7-10.3l2.5-12.5l9.6-8.4l5-11.8l11.2-6.3l7.4-10.5l12.3-3.8l9.4-8.7\n                L88.8,15l11-6.6l12.8,1.5L124.7,5.8z\"/>\n        <path d=\"M125,227.3c-56.7,0-102.8-45.9-102.8-102.3c0-26.3,10-50.3,26.5-68.5c18.8-20.7,46-33.8,76.3-33.8\n                c56.7,0,102.8,45.9,102.8,102.3S181.7,227.3,125,227.3z M125,24.6c-55.7,0-100.9,45-100.9,100.4c0,55.4,45.3,100.4,100.9,100.4\n                s100.9-45,100.9-100.4C225.9,69.6,180.7,24.6,125,24.6z\"/>\n        <path d=\"M125,227.3c-56.7,0-102.8-45.9-102.8-102.3c0-26.3,10-50.3,26.5-68.5c18.8-20.7,46-33.8,76.3-33.8\n                c56.7,0,102.8,45.9,102.8,102.3S181.7,227.3,125,227.3z M125,24.6c-55.7,0-100.9,45-100.9,100.4c0,55.4,45.3,100.4,100.9,100.4\n                s100.9-45,100.9-100.4C225.9,69.6,180.7,24.6,125,24.6z\"/>\n        <g>\n            <path d=\"M194.8,187.2v0.1c0.1,0,0.2,0,0.3,0c0-0.1,0-0.1,0-0.1C195,187.2,194.9,187.2,194.8,187.2z\"/>\n            <path d=\"M191.3,183l-1.3-17l0-0.1c-2.1-13.1-12.1-17-12.5-17.1l-16.8-6.6l-11.4-5.1c-5.1-2.3-6-6-6-6.1l0-0.2\n                    l-0.1-0.2c-0.3-0.8-0.2-1.5-0.1-1.7c0.3-0.5,0.9-1.1,1.3-1.6c0.3-0.3,0.5-0.5,0.7-0.8c8.7-10.5,10.4-22.8,10.5-23.8\n                    c4.4-31-11.7-39-13.6-39.8c-5.3-2.7-10.9-4-16.7-4c-9.9,0-16.9,4-17.2,4.2C100.8,67.5,96.3,75.8,95,87c-0.9,7.9,0.1,14.6,0.2,15.3\n                    c1.9,14.1,10.2,23.8,10.5,24.2l0.1,0.1c1.2,1.3,1.2,1.3,1.6,2.2c0.1,0.3,0.1,1.2,0.1,1.9c-1,4.6-4.9,6.2-5.1,6.2l-8.8,3.8\n                    l-20.8,8.4c-6.8,2.4-9.6,8.7-10,9.6c-2.5,5.5-3.5,20.2-3.6,21.9l-0.2,3l5.7-0.1c0.1,0.1,0.3-2.4,0.3-4l0.1-2.6\n                    c0.5-5.7,1.4-12.7,2.9-15.7l0.1-0.3c0,0,1.9-4.8,6.6-6.5l21-8.5l8.8-3.8c0.9-0.3,6.9-3,8.5-10.4l0-0.2c0.1-0.8,0.4-3.4-0.6-5.3\n                    c-0.8-1.6-1-1.8-2.5-3.5c-0.5-0.6-7.6-9.3-9.2-21.3l0-0.1c0-0.2-3.9-24.9,10.4-33.5c0.1,0,5.9-3.4,14.3-3.4\n                    c4.9,0,9.7,1.2,14.2,3.4l0.2,0.1c0.6,0.2,14.2,6.2,10.2,33.9l0,0.1c0,0.1-1.4,11.6-9.2,20.9c-0.1,0.2-0.3,0.3-0.5,0.5\n                    c-0.7,0.8-1.7,1.8-2.3,3.1l-0.1,0.2c-0.1,0.3-1,2.6,0,5.5c0.3,1.2,2,6.8,9.2,10l11.4,5.1l17,6.7c0.3,0.1,7.3,3,9,12.7l0.8,11.1\n                    c0,0,0,0,0,0c0,0,0.2,5,0.4,5H191.3z\"/>\n        </g>\n    </g>\n</svg>";
 
 /***/ },
-/* 339 */
+/* 422 */
 /*!************************************************!*\
   !*** ./~/html-loader!./src/person-profile.svg ***!
   \************************************************/
@@ -31011,7 +34187,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-person-profile\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M28.1,475v-48.4c0-15.9,25.7-29.1,34.9-32.6c4.6-1.5,60.5-19.6,105.3-36.5c19-7.2,32.1-18.7,39-34.1 c10.5-23.3,2.3-46.1,1.4-48.7l-0.8-2.1l-1.4-1.8c-10.8-13.2-25.3-34.2-27.3-37.1c-25.7-43.2-10.6-99.2-10.4-99.8l0.2-0.8l0.1-0.8 c5.8-36.4,21.4-60.7,46.3-72.3c19-8.8,36.9-7,37-6.9l0.7,0.1l0.7,0c30.3,0.7,53.3,14.5,68.2,41c11.9,21.1,14.3,42.6,14.3,42.7l0.1,1 l0.2,0.9c11.9,49-5.4,84.3-5.6,84.6l-0.4,0.8c-7,15.9-25.8,38.7-32.5,46.1l-1.2,1.3l-0.8,1.6c-10.1,19.5-9.4,39.2,1.9,55.6 c8.1,11.7,18.8,17.7,20,18.4l0.9,0.5L426,387.2l0.6,0.2c42.3,13.4,45.2,34.9,45.4,36.8V475H500v-51.1c0-2.1-0.4-13-9.3-26.2 c-10.9-16.3-29.5-28.7-55.3-36.9l-104.7-38.5c-1.6-1-6.2-4.3-9.6-9.2c-5.2-7.5-5.5-15.6-0.8-25.4c5.6-6.3,26.8-31.2,35.9-51.8 c2.5-5.1,21.3-46.2,7.8-102.7c-0.7-5.2-4.2-28.3-17.1-51.7c-19.7-35.6-51.5-55-92-56.1c-4.5-0.4-26.4-1.7-50,8.8 c-42.9,19.1-58.2,61.1-63.5,93.2c-2.2,8.3-16.9,70.2,13.8,121.3l0.4,0.7c0.6,0.9,15.2,22.2,27.2,37.2c1.1,4.2,3.3,15.3-1.3,25.5 c-3.8,8.4-11.6,14.9-23.4,19.4c-45.8,17.4-103.6,35.9-104.2,36.1l-0.5,0.2c-5.5,2-53.6,20.6-53.6,59V475H28.1z\"/>\n</svg>";
 
 /***/ },
-/* 340 */
+/* 423 */
 /*!*******************************************!*\
   !*** ./~/html-loader!./src/pinterest.svg ***!
   \*******************************************/
@@ -31020,7 +34196,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-pinterest\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M130.7,2C63.6,2,29.9,50,29.9,90c0,24.3,9.2,45.8,28.9,53.7c3.3,1.3,6.2,0,7.1-3.5c0.8-2.5,2.1-8.9,2.9-11.4\n            c1-3.5,0.8-4.8-2.1-7.7c-5.6-6.7-9.4-15.4-9.4-27.7c0-35.6,26.6-67.6,69.5-67.6c37.9,0,58.7,23.1,58.7,53.9\n            c0,40.8-17.9,74.9-44.9,74.9c-14.6,0-25.8-12.1-22.1-27c4.2-17.9,12.5-37,12.5-50.1c0-11.7-6.2-21.2-19.1-21.2\n            c-15,0-27.2,15.8-27.2,36.6c0,13.3,4.6,22.3,4.6,22.3s-15.6,65.5-18.1,76.8c-5.2,22.7-0.8,50.7-0.6,53.5c0.2,1.7,2.3,2.1,3.3,0.8\n            c1.3-1.9,19.5-24.1,25.6-46.2c1.7-6.2,9.8-38.9,9.8-38.9c4.8,9.4,19.3,17.5,34.5,17.5c45.3,0,76.1-41.2,76.1-96.7\n            C220,40.7,184.6,2,130.7,2z\"/>\n</svg>\n";
 
 /***/ },
-/* 341 */
+/* 424 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/plus.svg ***!
   \**************************************/
@@ -31029,7 +34205,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-plus\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M117,118 L7.4990045,118 C3.35670226,118 0,121.357864 0,125.5 C0,129.633707 3.35741867,133 7.4990045,133 L117,133 L117,242.500996 C117,246.643298 120.357864,250 124.5,250 C128.633707,250 132,246.642581 132,242.500996 L132,133 L242.500996,133 C246.643298,133 250,129.642136 250,125.5 C250,121.366293 246.642581,118 242.500996,118 L132,118 L132,7.4990045 C132,3.35670226 128.642136,0 124.5,0 C120.366293,0 117,3.35741867 117,7.4990045 L117,118 Z\"></path>\n</svg>";
 
 /***/ },
-/* 342 */
+/* 425 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/print.svg ***!
   \***************************************/
@@ -31038,7 +34214,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-print\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M63,250v-40H35.1c-3,0-12.9-0.7-20.5-7.8C9.2,197,6,189.6,7,180.5v-107c0-1.3,0-13.4,8.6-21.3c4.8-4.6,11.1-6.9,19.1-6.9\n            c0.6,0,1.4,0,2.1,0l12.2,0V32.6l-0.2-0.1c0.5-7.1,6.3-9.7,9.4-10.1l0,0l4.8-0.1V0h124v22.1l5.3,0.1l0.1,0c3.1,0.4,9,3,9.6,10.1\n            l0,0.1V46h10.8c0.6,0,1.3-0.5,1.9-0.5c7.9,0,14.5,2.1,19.3,6.7c8.8,8.3,9,20.6,9,21.1v107.1c0,9.3-2.6,16.5-8.4,21.9\n            c-7.3,7-17.8,7.8-20.8,7.8H187v40H63z M177,239v-57H74v57H177z M34.4,55.2c-5,0-9,1.3-11.8,4c-5.5,5.1-5.6,14-5.6,14.1v80.5\n            c8-8.6,21.5-9.8,27.2-9.8c1.2,0,2-0.1,2.3-0.1h159.1c14.2,0,22.4,4.7,27.4,9.5V73.3c0-0.4-0.3-8.9-5.9-14.1c-2.8-2.7-6.9-4-11.9-4\n            c-0.6,0-1.2,0-1.8,0.1l-177.1,0C35.6,55.3,35,55.2,34.4,55.2z M177,44V10H74v34H177z\"/>\n</svg>\n";
 
 /***/ },
-/* 343 */
+/* 426 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/quote.svg ***!
   \***************************************/
@@ -31047,7 +34223,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-quote\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M193.2,142h-25.1c3.3-47,40.9-82.6,81.9-106.9l-7.5-12.5c-65.2,32.6-100.3,88.6-100.3,131.2c0,46.8,14.2,75.2,59.3,75.2 c20,0,40.1-21,40.1-42.7C241.6,163.8,227.4,142,193.2,142z\"/>\n        <path d=\"M108,35.1l-7.5-12.5C35.3,55.2,0.2,111.2,0.2,153.8c0,46.8,14.2,75.2,59.3,75.2c20.1,0,40.1-21,40.1-42.7 c0-22.6-14.2-44.4-48.5-44.4H26.1C29.4,95,67,59.4,108,35.1z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 344 */
+/* 427 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/ramen.svg ***!
   \***************************************/
@@ -31056,7 +34232,25 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-ramen\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n    <path d=\"M98.2,17l-44,2.4c-0.2-1.4-0.5-2.6-0.9-3.6l42.2-7.3c1-0.2,1.6-1.1,1.4-2c-0.2-1-1.1-1.6-2-1.4l-43.4,7.5\r\n        c-0.5-0.3-1.1-0.3-1.7,0c-0.2,0.1-0.3,0.2-0.4,0.4l-3.6,0.6c-0.1-0.2-0.2-0.3-0.2-0.3c-0.5-0.8-1.5-1.1-2.4-0.7\r\n        c-0.6,0.3-0.9,1-0.9,1.6l-2.7,0.5c-0.3-0.8-0.6-1.3-0.7-1.4c-0.5-0.8-1.5-1.1-2.4-0.7c-0.8,0.5-1.1,1.5-0.7,2.4c0,0,0.1,0.1,0.2,0.3\r\n        l-9.2,1.6c-0.9,0.2-1.6,1.1-1.4,2c0.1,0.9,0.9,1.5,1.7,1.5c0.1,0,0.2,0,0.3,0l9.7-1.7c0.1,0.5,0.2,1.1,0.3,1.7l-3.6,0.2\r\n        c-1,0.1-1.7,0.9-1.7,1.8c0.1,0.9,0.8,1.7,1.7,1.7c0,0,0.1,0,0.1,0l3.5-0.2c-0.1,1.5-0.5,3.1-1.1,4.8C23.9,29.1,0,30.8,0,37.7\r\n        c0,0.2,0,0.4,0.1,0.6C0,41.1-0.8,63.7,12.6,77.9c2,2.1,4.2,3.8,6.3,5.3V93c0,1,1.2,2,2.2,2h45.5c1,0,0.9-1,0.9-2V82.6\r\n        c3-1.9,6.4-4.3,8.9-7.1c12-13.5,11.6-32.7,11.2-37.7c0-0.1-0.1-0.8-0.2-1c0,0-0.2-0.8-0.5-1.3c-4.3-4.7-22.1-6.3-33.4-6.8\r\n        c0.7-2.1,1-4,1-5.8l44-2.4c1-0.1,1.7-0.9,1.7-1.8C99.9,17.7,99.1,16.9,98.2,17z M49.8,16.4c0.3,0.8,0.6,1.9,0.8,3.2l-3.1,0.2\r\n        c-0.1-1.1-0.3-2-0.6-2.9L49.8,16.4z M40.7,18l2.9-0.5c0.2,0.7,0.4,1.5,0.5,2.5L41,20.1C40.9,19.4,40.8,18.6,40.7,18z M41.1,23.6\r\n        l3.1-0.2c-0.1,1.6-0.4,3.3-1.1,5.1c-0.6,0-1.6,0-2.9,0C40.7,26.8,41,25.2,41.1,23.6z M84.2,37.7c-1.3,1.8-12.1,4.7-30.8,5.5\r\n        c-1-1.1-4-5.1-1.4-11C71.5,32.8,82.8,35.8,84.2,37.7C84.2,37.7,84.2,37.7,84.2,37.7z M49.2,43.3c-0.7,0-1.5,0-2.3,0\r\n        c-0.7-0.8-4.3-4.9-1.5-11.3c1,0,1.9,0,2.8,0C46.7,36.7,47.7,40.7,49.2,43.3z M40.3,43.4c-0.8-0.8-4.3-4.9-1.5-11.3\r\n        c0.9,0,1.9,0,2.9,0c-1.6,4.7-0.6,8.7,0.9,11.3C41.8,43.4,41.1,43.4,40.3,43.4z M35,32.2c-1.5,4.6-0.5,8.4,0.9,11.1\r\n        c-19.7-0.7-31.1-3.7-32.4-5.6C4.8,35.9,15.8,32.9,35,32.2z M64.4,91H21.9v-5.8c6.1,2.6,11.9,4,18.9,4c9,0,18.5-1.6,23.5-4.7V91z\r\n         M74.1,73.2c-7.3,8.2-18.3,12.4-32.6,12.4c-11,0-19.7-3.4-26.1-10.2C5.4,64.9,3.8,48.9,3.6,41.8c10.2,5.1,38.8,5.1,40.3,5.1\r\n        c1.5,0,30.4-0.1,40.5-5.2C84.4,48.8,83.1,63,74.1,73.2z M49.7,28.6c-1.1,0-2.1-0.1-2.9-0.1c0.6-1.9,0.9-3.6,0.9-5.3l3.1-0.2\r\n        C50.8,24.8,50.5,26.6,49.7,28.6z\"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 345 */
+/* 428 */
+/*!****************************************!*\
+  !*** ./~/html-loader!./src/reject.svg ***!
+  \****************************************/
+/***/ function(module, exports) {
+
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-reject\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 250 250\">\n<g>\n\t<path class=\"st0\" d=\"M155.3,196.1V250h-55v-53.9H155.3z M139.9,175.1H115L101.7,67.2V0h51.8v67.2L139.9,175.1z\"/>\n</g>\n</svg>\n";
+
+/***/ },
+/* 429 */
+/*!****************************************!*\
+  !*** ./~/html-loader!./src/repost.svg ***!
+  \****************************************/
+/***/ function(module, exports) {
+
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-repost\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 250 250\">\n<path class=\"st0\" d=\"M130.9,232c-30.6-0.4-61-15.9-90.5-46.3l20.8-20.6c26.6,27.4,52.9,39.9,78.2,37.1c41.3-4.6,68.8-48.5,69.1-49\n\tl24.8,15.4c-1.4,2.3-34.9,56.5-90.5,62.8C138.9,231.8,134.9,232,130.9,232z\"/>\n<polygon class=\"st0\" points=\"104,142.2 1.6,79.8 5,210.2 \"/>\n<path class=\"st0\" d=\"M44.1,79.9L19.1,64.7c1.4-2.4,35.3-57.9,91.1-64.2c34.5-3.9,68.6,11.6,101.5,46.1l-21,20.4\n\tc-26.3-27.6-52.3-40.1-77.3-37.3c-21.4,2.4-39.1,15.8-50.1,26.6C51.2,68.3,44.1,79.8,44.1,79.9z\"/>\n<polygon class=\"st0\" points=\"148.1,90.8 250,153.8 247.1,21.3 \"/>\n</svg>\n";
+
+/***/ },
+/* 430 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/return-arrow.svg ***!
   \**********************************************/
@@ -31065,7 +34259,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-return-arrow\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M230.7,21C218.3,7.3,194.3,7.3,188.8,7H69v10h120l0.4,0c0.2,0,21.6-0.3,33.5,10.5c6.8,6.2,10.2,15.4,10.2,27V158l0,0.1\n         c0,0.1,0.1,7.6-5.1,15.3c-7.2,10.7-21.2,16.8-40.5,17.5H20.1l32.9-41.4l-7.8-6.2L4.1,195l40.6,51.8l7.9-6.2l-31-39.6h166l0.1,0\n         c15.8-0.6,37.1-4.9,48.5-22c6.7-10,6.8-19.9,6.8-21.1V54.5C242.3,37.7,238,29.2,230.7,21z\"/>\n</svg>";
 
 /***/ },
-/* 346 */
+/* 431 */
 /*!************************************************!*\
   !*** ./~/html-loader!./src/service-person.svg ***!
   \************************************************/
@@ -31074,7 +34268,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-service-person\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M-30.3,45\"/>\n    <path d=\"M454,498.6c-2.5-41.3-12.8-77.3-30.5-107.2c-14.3-24-33.3-44.1-56.6-59.6c-1.1-0.7-2.2-1.5-3.4-2.2\n            c32.3-22.8,45-45.5,46.9-49.1c42.3-64.5,23.5-134.5,22.7-137.4c-19.7-70.4-63.9-103.9-97.5-119.5c-35.3-16.5-66-17.2-69-17.2\n            c-76.6-4-126.4,44.9-130.4,48.9C93.8,93.4,84,144.1,82.3,154.9c-1,2.8-1.7,6.1-2,10.1L79,216.3c0,0-0.7,13.3,14.3,14.7h46.4\n            c0,0-0.3-1-0.8-2.8c12.5,34.8,39.7,62.7,74.2,76.2c-27.2,5-51.3,15.7-72,32.1c-21.4,16.9-39.1,39.7-52.5,67.8\n            c-22.8,47.4-25.6,93.1-25.8,95l-0.4,7.4l392.2-0.7L454,498.6z M99.9,140.9c5.5-19.2,18.2-50.6,45.8-75.4l0.4-0.3\n            c0.5-0.5,48-48.7,119.9-44.9l0.3,0c0.3,0,29.7,0.3,63.3,15.9c19.7,9.2,36.9,21.8,51,37.5c17.8,19.6,30.9,44.3,38.9,73.2\n            c0.2,0.7,17.9,67.1-21.1,126.3l-0.4,0.7c-0.2,0.3-12.7,24.6-48.1,47.9c-17.5-9.2-33.6-14.4-45.1-17.2\n            c48.1-18.4,82.4-65.1,82.4-119.6c0-70.6-57.4-128-128-128c-55.1,0-102.2,35-120.2,84h-37.6C101.5,141,100.9,140.9,99.9,140.9z\n             M145.3,185c0-62.9,51.1-114,114-114s114,51.1,114,114s-51.1,114-114,114S145.3,247.9,145.3,185z M77.4,492.7\n            c1.7-14.5,7.3-48.3,23.7-82.4c12.6-26.2,28.9-47.3,48.6-62.9c24.5-19.4,54.5-30.2,89.1-32.1l0.8-0.1c0.1,0,10-1.7,23.6-1.7\n            c8,0,15.7,0.6,22.8,1.7l0.4,0.1c0.3,0,22.3,2.4,49.5,15.1c-7.4,4.1-15.7,8.1-24.8,11.8V337c0-2.2-1.8-4-4-4h-60.7c-2.2,0-4,1.8-4,4\n            v34c0,2.2,1.8,4,4,4H307c2.2,0,4-1.8,4-4v-13.8c15.2-5.8,28.3-12.3,39.5-19.1c3,1.8,6.1,3.7,9.1,5.7c21.4,14.3,39,32.9,52,55\n            c15.4,26.1,24.7,57.4,27.8,93.1L77.4,492.7z\"/>\n</svg>";
 
 /***/ },
-/* 347 */
+/* 432 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/share.svg ***!
   \***************************************/
@@ -31083,7 +34277,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-share\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <polygon points=\"153,81 153,92 199,92 199,239 49,239 49,92 99,92 99,81 38,81 38,250 210,250 210,81  \"/>\n        <polygon points=\"120,21 120,180 131,180 131,21.7 161.9,55 169.8,47.6 125.8,0 81,45.9 88.6,53.5  \"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 348 */
+/* 433 */
 /*!******************************************!*\
   !*** ./~/html-loader!./src/shipping.svg ***!
   \******************************************/
@@ -31092,7 +34286,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-shipping\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<path d=\"M125.5,1.1L2.1,41l10.4,145.6L125,248.1l113.1-60.6l10-145.1L125.5,1.1z M121,236.7L20.2,181.6l-9.3-131L59,74.2V108\r\n\tl26,13.5l-0.1-34.6l36.1,17.7V236.7z M124.7,97.4L87.2,79l85.9-37.4l-27.3-8.9L60.5,65.9L17.1,44.7L125.5,9.5l107.9,36.4L124.7,97.4\r\n\tz M230.5,182.4L129,236.8V104.3L239.4,52L230.5,182.4z\"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 349 */
+/* 434 */
 /*!***********************************************!*\
   !*** ./~/html-loader!./src/shopping-cart.svg ***!
   \***********************************************/
@@ -31101,7 +34295,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-shopping-cart\" viewBox=\"-220.7 -160.7 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M263.2-67.5H-71.5c-8.9,0-16.1,7.6-16.1,16.9c0,0.1-17.9-92.8-17.9-92.8c-2.1-10.6-8.4-17.4-21.9-17.4h-77.1 c-8.9,0-16.1,7.6-16.1,16.9c0,9.4,7.2,16.9,16.1,16.9h70.4l58.8,307.5c2.3,10.6,11.4,14.6,19.5,14.6c0,0,248.3,0,248.8,0 c8.4,0,17-3.7,19.2-12.8l63.8-219c1.1-3.3,3.3-8.2,3.3-14C279.3-59.9,272.1-67.5,263.2-67.5z M185.4,161.4c-0.1,0-0.2,0-0.3,0 H-47.3L-86.8-45.4c2.1,6.8,8.1,11.8,15.3,11.8h314.1L185.4,161.4z\"/>\n    <path d=\"M-22.9,254.6c-23,0-41.6,19-41.6,42.4c0,23.4,18.6,42.4,41.6,42.4s41.6-19,41.6-42.4S0.1,254.6-22.9,254.6z M-22.6,312.5c-8.7,0-15.7-7-15.7-15.5c0-8.6,7-15.5,15.7-15.5s15.7,7,15.7,15.5C-6.9,305.5-13.9,312.5-22.6,312.5z\"/>\n    <path d=\"M167.7,254.6c-22.7,0-41,19-41,42.4c0,23.4,18.4,42.4,41,42.4s41-19,41-42.4S190.4,254.6,167.7,254.6z M167.8,312.5c-8.6,0-15.5-7-15.5-15.5c0-8.6,7-15.5,15.5-15.5c8.6,0,15.5,7,15.5,15.5C183.3,305.5,176.4,312.5,167.8,312.5z\"/>\n</svg>";
 
 /***/ },
-/* 350 */
+/* 435 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/star-filled.svg ***!
   \*********************************************/
@@ -31110,7 +34304,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-star-filled\" viewBox=\"0 -8 471 471\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M381.12 448l-145.6-104.747-145.493 104.747 54.613-170.773-144.64-106.133 179.307-0.853 56.213-170.24 56.214 170.347 179.307 0.853-144.64 106.027 54.72 170.773z\" />\n</svg>";
 
 /***/ },
-/* 351 */
+/* 436 */
 /*!***********************************************!*\
   !*** ./~/html-loader!./src/star-outlined.svg ***!
   \***********************************************/
@@ -31119,7 +34313,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-star-outlined\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M259.5,388.2L100,503l59.9-187.2L1.3,199.5l196.6-0.9l61.6-186.7l61.6,186.7l196.6,0.9L359.2,315.8L419.1,503\n            L259.5,388.2z M386.6,458.3l-47.7-149.1l126.2-92.6l-156.6-0.7L259.5,67.2l-49.1,148.7l-156.6,0.7l126.2,92.6l-47.7,149.1\n            l127.1-91.4L386.6,458.3z\"/>\n</svg>";
 
 /***/ },
-/* 352 */
+/* 437 */
 /*!********************************************!*\
   !*** ./~/html-loader!./src/storefront.svg ***!
   \********************************************/
@@ -31128,7 +34322,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-storefront\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <rect x=\"45\" y=\"23\" width=\"160\" height=\"8\"/>\n        <rect x=\"133.8\" y=\"135.3\" transform=\"matrix(0.7012 -0.713 0.713 0.7012 -55.6632 145.7103)\" width=\"24.3\" height=\"8\"/>\n        <rect x=\"136.4\" y=\"147.9\" transform=\"matrix(0.7058 -0.7084 0.7084 0.7058 -59.9895 159.4118)\" width=\"51\" height=\"8\"/>\n        <rect x=\"172.5\" y=\"153.8\" transform=\"matrix(-0.7033 -0.7109 0.7109 -0.7033 182.7199 407.7907)\" width=\"8\" height=\"24\"/>\n        <path d=\"M65,175h20v-39H65V175z M73,144h4v23h-4V144z\"/>\n        <path d=\"M224,117.5c7.1-1.5,18.7-6.7,20.6-24.5h5.9L215.4,7H35.6L0,93h5.5C7.5,111.6,20,116.5,27,117.7V210H5v32h242v-32h-23V117.5 M105,210v-99.8c4.4,4.6,10.5,8,18.6,8c1.9,0,17.6-0.4,23.8-15.8c4.2,7.8,11.9,15.6,24.2,15.6c0,0,0.1,0,0.1,0 c2.2,0,16.8-0.5,23.2-14.6c4,6.9,10.7,13.6,21.1,14.6v92H105z M59.3,93h36.1c-2.2,17.2-16.1,17.2-17.7,17.2l-0.2,0 c-11.3,0-16.6-9.3-18.8-15C59,94.4,59.2,93.7,59.3,93z M104.1,93h37.4c-2.2,17.2-16.1,17.2-17.7,17.2l-0.2,0 C110.7,110.2,105.7,98,104.1,93z M152.1,93h37.4c-2.2,17.2-16.1,17.2-17.7,17.2l-0.2,0C158.7,110.1,153.7,98.1,152.1,93z M218.8,110.2l-0.2,0c-12.9,0-18-12.1-19.5-17.2h37.4C234.3,110.2,220.4,110.2,218.8,110.2z M41,15h169l28.6,70H12L41,15z M13.6,93 h36.1c0.1,0.7,0.3,1.4,0.6,2.2c-2.2,5.7-7.5,15-18.7,15l-0.2,0C30.7,110.2,15.9,110.6,13.6,93z M35,117.9c9.3-1.2,15.6-7,19.5-13.3 c4.4,7.1,11.8,13.6,23,13.6c1.5,0,12.2-0.2,19.5-8.7V210H35V117.9z M239,234H13v-16h226V234z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 353 */
+/* 438 */
 /*!*****************************************!*\
   !*** ./~/html-loader!./src/toolbox.svg ***!
   \*****************************************/
@@ -31137,7 +34331,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-toolbox\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M257.8,206.3c-17.4,0-31.5,14.1-31.5,31.5c0,17.4,14.1,31.5,31.5,31.5c17.4,0,31.5-14.1,31.5-31.5\n            C289.3,220.5,275.2,206.3,257.8,206.3z M257.8,255.3c-9.6,0-17.5-7.9-17.5-17.5s7.9-17.5,17.5-17.5s17.5,7.9,17.5,17.5\n            S267.5,255.3,257.8,255.3z\"/>\n    <path d=\"M378,136.7V84.4l-26.7-33.8h-183l-29,34.2v51.8H1V199v1.7V407h517V200.7V199v-62.3H378z M165.3,94.4l15-17.8\n            h158.3L352,93.5v43.2H165.3V94.4z M504,391.7H15V213h133v62.5l31.2,29.5h156.9l33.4-28.8l0.5-63.2H504V391.7z M356.1,199l-0.5,70.8\n            L330.9,291H184.8L162,269.5V199H15v-48.3h489V199H356.1z\"/>\n</svg>";
 
 /***/ },
-/* 354 */
+/* 439 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/trade-arrow.svg ***!
   \*********************************************/
@@ -31146,7 +34340,7 @@
 	module.exports = "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n\t class=\"dibsvg-svg dibsvg-trade-arrow\" viewBox=\"0 0 250 250\">\n<polygon points=\"154,41.4 147.6,49.1 229.2,117 0,117 0,127 228.4,127 147.5,199.8 154.1,207.2 249.9,121.2 \"/>\n</svg>\n";
 
 /***/ },
-/* 355 */
+/* 440 */
 /*!********************************************!*\
   !*** ./~/html-loader!./src/trade-logo.svg ***!
   \********************************************/
@@ -31155,7 +34349,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-trade-logo\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125.1,250l-2.5-1.5c-1-0.6-24.9-14.8-50.8-47.9c-23.7-30.4-53.6-83.3-60.8-162.4l-0.2-2.5l2.1-1.5\n                C14.8,32.8,60,0.3,125.4,0.3c38.4,0,75.8,11.3,111,33.7l2.1,1.4l0,2.5c0,1.4-0.7,34-14.7,76.4c-12.9,39.2-40.1,94.3-96.3,134.1\n                L125.1,250z M20.3,40c7.4,75.5,35.9,125.9,58.6,155.1c20.1,25.8,39.2,39.7,45.8,44.1c52.6-38.3,78.3-90.5,90.5-127.8\n                c11.4-34.6,13.7-62.9,14.1-71.2c-33.1-20.5-68.1-31-104-31C70.5,9.3,29.7,33.8,20.3,40z\"/>\n        <path d=\"M124.9,209l-1.8-1.1c-0.7-0.4-18.4-10.9-37.4-35.3C68.2,150.3,46.3,111.4,41,53.2l-0.2-1.9l1.5-1.1\n                c1.4-1,34.6-24.9,82.8-24.9c28.3,0,55.8,8.3,81.7,24.8l1.6,1l0,1.9c0,1-0.5,25-10.8,56.2c-9.5,28.8-29.5,69.4-70.9,98.7L124.9,209z\n                 M47.8,54.5c5.4,55.5,26.4,92.6,43.1,114.1c14.8,19,28.9,29.2,33.7,32.5c38.7-28.2,57.6-66.6,66.6-94c8.4-25.4,10.1-46.2,10.4-52.4\n                c-24.4-15.1-50.1-22.8-76.5-22.8C84.7,31.9,54.7,50,47.8,54.5z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 356 */
+/* 441 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/trash-filled.svg ***!
   \**********************************************/
@@ -31164,7 +34358,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-trash-filled\" viewBox=\"-15 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M15,15.25 L77,15.25 L77,0 L139.5,0 L139.5,15.25 L202,15.25 L202,32 L15,32 L15,15.25 Z\"></path>\n        <path d=\"M0,47 L218,47 L218,62 L206,62 L167,250 L50,250 L13.5,62 L0,62 L0,47 Z\"></path>\n    </g>\n</svg>";
 
 /***/ },
-/* 357 */
+/* 442 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/truck-moving.svg ***!
   \**********************************************/
@@ -31173,7 +34367,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-truck-moving\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M467.6,235.5c0.2-1.2,3.5-28.7-23.1-59.3l-2-2.3H390v68h76.8L467.6,235.5z M403.7,227v-38.4h32.8\n                c13.3,16.2,16.7,30.6,17.5,38.4H403.7z\"/>\n        <path d=\"M412.8,355.1c-22.6,0-41.1,18.9-41.1,42.2c0,23.3,18.4,42.2,41.1,42.2c22.6,0,41.1-18.9,41.1-42.2\n                C453.8,374,435.4,355.1,412.8,355.1z M412.8,409.3c-6.5,0-11.7-5.4-11.7-12.1c0-6.7,5.3-12.1,11.7-12.1s11.7,5.4,11.7,12.1\n                C424.5,403.9,419.2,409.3,412.8,409.3z\"/>\n        <path d=\"M120.8,355.1c-22.6,0-41.1,18.9-41.1,42.2c0,23.3,18.4,42.2,41.1,42.2c22.6,0,41.1-18.9,41.1-42.2\n                C161.8,374,143.4,355.1,120.8,355.1z M120.8,409.3c-6.5,0-11.7-5.4-11.7-12.1c0-6.7,5.3-12.1,11.7-12.1c6.5,0,11.7,5.4,11.7,12.1\n                C132.5,403.9,127.3,409.3,120.8,409.3z\"/>\n        <path d=\"M501.9,313.3v-99.8l-15.4-42c-8.6-24.4-31.9-30.2-43.2-29.9h-80.6v14.1h80.7l0.2,0c0.9,0,22.4-0.3,29.7,20.5\n                l14.6,39.8v102.8l2,2c0.1,0.1,9.7,10.4,9.7,23.9v34.2c0,0.1-0.1,6.6-4.5,8.4h-10.4c-1.1-6.4-3.7-16.5-9.6-26.6\n                c-8.8-15.3-26.8-33.6-62.2-33.7c-2.6-0.2-16.2-0.8-31.4,6.1c-24.9,11.4-36.3,34.7-41.5,54.2H193.8c-2.1-6.3-6.5-17.1-14.2-28\n                c-11.8-16.5-27.1-27-44.9-30.8h228V76.6H3.5v251.9h22.3v72.8h36.5l0.9-5.9c8.5-53.4,51.2-54.4,53-54.4l0.2,0\n                c21.1-0.7,38.4,8,51.5,26.1c10.1,14,13.8,28.7,13.8,28.8l1.3,5.4h168.3l1.2-5.5c12.8-58.5,57.5-55,59.4-54.8l0.7,0\n                c55,0,58.8,51.5,58.9,53.7l0.4,6.6h25.1l0.9-0.2c12.4-3.2,15.7-15.9,15.7-22.2v-34.2C513.7,329.7,505.8,318,501.9,313.3z\n                 M17.1,90.7H349v223.8H17.1V90.7z M50.4,387.2H39.8v-58.7h64.6c-5.1,1.2-11.4,3.2-18,6.8C73.4,342.5,56.9,357.3,50.4,387.2z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 358 */
+/* 443 */
 /*!*****************************************!*\
   !*** ./~/html-loader!./src/twitter.svg ***!
   \*****************************************/
@@ -31182,7 +34376,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-twitter\" viewBox=\"0 -40 613 613\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M0,441.8h29.9c60.4,0,113.8-16.8,160.1-50c-53.7-1.2-99.2-39-120.2-91.2c5.8,3.3,13.7,5.2,23.2,5.2c3.9,0,10.4-1,18.9-2.7 c8.2-1.5,14-2.5,17.4-2.5c-60.1-10.1-105-60.7-105-123c17.4,7,22.3,9.4,36.9,12.1c7.3,1.5,15,2.1,22.9,2.1 c-35.1-22-59.8-61.9-59.8-101.3c0-30.2,5.2-48.2,19.9-68.7c60.7,78.5,154.6,127.9,255,134.9c0-3.9-0.4-9.2-0.6-15.6 c-0.4-6.4-0.6-11-0.6-14.3c0-45.5,25.4-87.5,63.5-110.1C380.7,5.5,400.8,0,422.3,0c34.8,0,67.1,13.5,97,40.6 c17-2.1,33-8.2,55.2-18.3c11-5.2,18.9-8.6,23.5-10.4c-9.4,27.1-28.1,46.7-60.1,68.9c29.6-3.1,54.6-10.1,75-20.7 c-13.1,22.9-32.6,45.1-58.6,66.8v15c0,54.9-15.2,112.3-42.4,165.6c-27.1,53.3-71.1,101-122.6,136.1S268.5,500,194.3,500 C123.8,500,58.9,480.5,0,441.8z\" />\n</svg>\n";
 
 /***/ },
-/* 359 */
+/* 444 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/yoga.svg ***!
   \**************************************/
@@ -31191,7 +34385,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-yoga\" viewBox=\"0 50 420 420\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M418.7,181.7l-2.1,0.8l0,0L418.7,181.7c-0.4-0.8-0.4-1.3-0.8-1.7c-0.8-2.1-2.1-3.8-4.2-4.6\n            c-5-2.5-13,0-22.3,3.4l-2.1,0.8c-7.1,2.5-15.1,5.5-20.6,3.4c-1.3-0.4-2.1-0.8-3.4-1.3c-7.6-2.9-17.2-7.1-25.2-2.5\n            c-6.7,3.8-8.4,13-8.8,19.3c-8,1.3-26,4.6-35.7,6.3c-4.2,0.8-7.1,1.3-10.1,2.1c-5.5,1.3-9.7,2.5-19.7,2.9\n            c8.4-7.1,19.7-16.8,26.5-23.9c12.6-12.6,21.8-27.7,26.9-43.7c4.6-15.1,4.6-26.9,0.4-37.4c-3.4-8.4-13.4-19.3-23.5-23.5\n            c-11.3-4.6-39.1-3.4-48.3,2.1c-3.8,2.1-22.7,13.4-33.2,26.5c-5,6.3-19.7,17.6-33.6,28.6c-9.7,7.6-19.7,15.5-27.3,21.8\n            c-4.2,3.8-8.4,7.6-12.6,11.3l-0.4,0.4c-12.6,10.9-23.1,20.2-30.2,29c-3.4,6.3-7.1,11.3-8.4,13c-4.2-1.3-16.4-6.3-20.2-10.1\n            c-2.9-2.9-8.8-6.3-15.1-8.8c-0.4-10.5-9.2-18.5-20.2-18.5s-20.2,8.8-20.2,19.7c0,0.4,0,1.3,0,1.7c-4.6,2.1-8.8,5-12.2,8.8\n            C5,216.6-2.5,233.4,0.4,242.6c0.4,2.1,0.8,3.8,1.3,5.5c0.8,4.6,2.1,10.1,8.4,12.6c1.3,0.4,2.1,2.1,2.9,4.2c1.7,2.5,3.4,6.3,8,7.6\n            c2.1,0.4,3.8,0.4,4.6,0.4c0.8,0,1.3,0,1.3,0s0,0.4,0.4,0.8c0.4,1.7,0.8,3.4,0.8,5.5c0.8,5,1.7,11.8,8,12.6c3.8,0.4,6.3-1.3,8-2.5\n            c3.8,2.5,7.6,4.2,13.4,5.9c7.6,1.7,10.1,2.1,13.9-2.1c2.1-2.1,3.4-5,4.6-8c0.4-1.3,1.3-2.9,2.1-4.6c1.3-2.1,2.1-3.8,14.7-5.5\n            c11.8-1.7,27.7-7.1,30.2-8.4c6.7,6.7,13.9,12.6,13.9,12.6c3.8,2.9,13,7.6,22.3,11.8c5.5,2.5,10.5,5,12.6,6.3\n            c5,3.4,15.5,11.8,20.2,16c1.3,1.3,2.5,2.5,4.6,4.2l0.4,0.4c5,4.6,13.4,12.2,15.1,16c2.1,4.6,2.9,21.4,3.4,31.5c0,2.5,0,4.6,0.4,6.3\n            c0.8,15.1,0.8,30.7,0.4,34.9c-1.3,0-3.4,0-4.6,0c-1.7,0-3.4,0-5.5,0h-0.8c-8.4,0-13.4,0-21.8,5.9c-4.6,3.4-13,5-18.9,6.3\n            c-2.5,0.4-4.6,0.8-6.3,1.7l-0.8,0.4c-4.2,1.3-8.8,2.5-9.7,6.7c-0.8,4.2,2.9,7.6,4.6,8.8c2.9,2.5,9.7,3.4,23.1,3.4\n            c10.1,0,23.1-0.4,43.3-1.7c3.8-0.4,6.7-0.4,7.6-0.4c5.9,0,8-4.2,9.7-7.6c0.8-2.1,2.5-5,5-8.8c8.4-12.2,12.6-107.9,12.6-108.8\n            c-0.4-4.2-6.3-9.7-26.5-25.6l-3.4-2.5c-1.7-1.3-5.5-3.8-11.3-7.6c5.9-1.7,12.2-3.8,17.6-5c11.3-2.9,48.3-14.7,61.3-19.3\n            c13.9-5,48.3-16.4,60.1-19.7c13.4-3.8,23.5-12.2,30.2-17.6c3.8-2.9,8.4-5.5,14.3-8.4c4.6-2.5,9.2-5,14.3-8\n            C418.7,192.6,422.1,188.9,418.7,181.7z M159.2,429.5l1.3-0.4c1.3-0.4,3.4-0.8,5-1.3h0.4c6.7-1.3,16-3.4,22.3-8\n            c5.9-4.2,8.4-4.2,16.8-4.2h0.8c1.7,0,3.4,0,5.5,0c5.9,0,11.3,0.4,13.4-5.5c1.7-5.5,0.4-38.6,0.4-39.1l-0.4-6.3\n            c-0.8-16.4-1.3-29.4-4.2-34.9c-2.5-5.5-10.9-13-17.2-18.9l-0.4-0.4c-1.7-1.7-3.4-2.9-4.2-3.8c-5-5-15.5-13.9-21.4-17.2\n            c-2.5-1.7-8-4.2-14.3-7.1c-7.1-3.4-17.2-8.4-20.2-10.5c-9.7-7.6-21-19.3-21.4-22.3c-0.4-1.3-0.8-2.1-2.1-2.9\n            c-0.8-0.8-2.1-0.8-3.4-0.8c-2.5,0.4-4.2,2.9-3.8,5.5c0.4,2.1,1.7,4.6,4.2,7.6c-5.5,1.7-16.4,5.5-24.8,6.7\n            c-12.2,1.7-18.1,3.8-21.4,10.5c-0.8,2.1-1.7,3.8-2.5,5.5c-0.8,2.1-1.7,3.8-2.1,4.6l-0.4,0.4c-0.4,0-2.5-0.4-5-0.8\n            c-5.5-1.3-8.4-2.9-12.6-5.9c-3.8-2.5-7.1,0-8.4,1.3c-0.4,0-0.4,0.4-0.8,0.8c-0.4-1.3-0.8-3.4-0.8-4.6c-0.4-2.1-0.8-4.2-1.3-6.7\n            c-2.1-7.1-7.1-7.6-10.5-7.6c-0.8,0-2.1,0-2.5-0.4c-0.4-0.4-1.3-1.7-1.7-2.5c-0.8-1.3-1.7-3.4-3.4-5.5c2.9-2.1,7.1-4.6,11.3-4.2\n            c8.4,1.7,17.2,0.8,17.6,0.8H50l-0.8-2.9c-1.3-3.8-2.1-9.2-0.8-10.1l0.8-0.4c2.9-2.5,4.2-3.8,9.2-0.4c8,5.5,18.9,3.4,23.9,0\n            c3.4-2.1,10.5-10.1,15.1-15.5c2.1,0.8,3.8,0.8,4.6,0.8c2.5,0,6.3-1.3,15.1-17.2c3.4-3.8,8-8.8,15.1-15.1c5,2.9,16,10.5,22.3,21\n            c5,8.8,6.7,23.1,7.6,31.9c-3.8-5-5.5-12.2-5.5-12.2c-0.4-2.5-2.9-4.2-5.5-3.8c-1.3,0.4-2.1,0.8-2.9,2.1c-0.8,0.8-0.8,2.1-0.8,3.4\n            c0.4,1.3,2.5,13,10.5,20.2c4.2,3.8,18.9,12.6,32.8,21.4l0.8,0.4c10.9,6.7,21.4,13.4,25.2,16l3.4,2.5l1.3-1.7l0,0l-1.3,1.7\n            c17.2,13.4,22.3,18.1,23.1,19.7c0.4,8-5,94.1-10.9,102.1c-2.9,4.2-4.6,8-5.9,10.1c-0.4,0.4-0.8,1.7-1.3,2.1c-1.3,0-4.2,0-8.4,0.4\n            C175.1,431.2,162.5,430.4,159.2,429.5C158.8,429.5,159.2,429.5,159.2,429.5z M410.3,185.9C410.3,185.9,410.3,186.3,410.3,185.9\n            c0,0.8-1.3,1.7-5,4.2l0,0c-4.6,2.9-9.2,5-13.4,7.6c-5.9,2.9-11.8,5.9-16,9.7c-5.9,5-15.1,12.6-26.9,16\n            c-12.2,3.4-46.6,15.1-60.9,19.7c-13.9,5-50,16.4-60.9,18.9c-9.2,2.5-21.8,6.3-25.6,7.6l-5.5-3.4c-8.8-5.5-18.5-11.3-24.8-15.5\n            l20.6-38.2c6.7-12.6,18.1-30.2,26-41.6c5.9-8,20.2-23.5,29.8-33.6l4.2-4.6c4.2,0.8,12.2,3.8,20.6,15.1c9.7,12.6,14.7,23.5,16.8,28.6\n            c-0.8,1.3-2.1,2.1-2.9,2.9c-10.5,10.5-30.7,27.3-36.1,31.5c-6.7,1.3-10.9,3.8-15.1,5.9c-1.7,0.8-2.9,1.7-5,2.5\n            c-10.9,4.6-19.3,21-19.7,21.8c-0.4,1.3-0.8,2.5-0.4,3.4c0.4,1.3,1.3,2.1,2.1,2.5c2.1,1.3,5,0.4,6.3-2.1c2.5-5,9.2-15.1,15.1-17.6\n            c2.1-0.8,3.8-1.7,5.9-2.9c5.9-2.9,10.1-5,23.5-5.5c13.4-0.4,18.9-1.7,25.6-3.4c2.5-0.8,5.5-1.3,9.2-2.1c12.6-2.1,39.1-6.7,39.5-7.1\n            c2.1-0.4,3.8-2.5,3.8-4.6c0-5,0.8-13,4.2-15.1c3.8-2.5,10.9,0.4,16.8,2.9c1.3,0.4,2.5,0.8,3.4,1.3c8.4,3.4,18.5-0.4,26.9-3.4\n            l2.5,0.4c9.7-3.4,13-3.8,14.7-3.8C409.5,184.7,409.9,185.5,410.3,185.9z M210.8,165.3c-4.6,6.7-10.5,15.1-16,23.9\n            c-2.9-5.5-7.6-12.2-11.3-16c-4.2-4.2-10.9-9.7-15.1-13c5.5-4.6,12.2-9.7,18.1-14.3l0,0c15.1-11.8,29-22.7,34.9-29.8c0,0,0,0,0-0.4\n            c2.9,3.8,7.1,9.7,9.2,13.9c1.7,3.4,2.9,6.3,3.8,8.4C225.5,147.7,215.5,158.6,210.8,165.3z\"/>\n</svg>";
 
 /***/ },
-/* 360 */
+/* 445 */
 /*!**************************!*\
   !*** ./scss/sample.scss ***!
   \**************************/
@@ -31200,10 +34394,10 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../~/css-loader!./../~/sass-loader!./sample.scss */ 361);
+	var content = __webpack_require__(/*! !./../~/css-loader!./../~/sass-loader!./sample.scss */ 446);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(/*! ./../~/style-loader/addStyles.js */ 363)(content, {});
+	var update = __webpack_require__(/*! ./../~/style-loader/addStyles.js */ 448)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -31220,13 +34414,13 @@
 	}
 
 /***/ },
-/* 361 */
+/* 446 */
 /*!*********************************************************!*\
   !*** ./~/css-loader!./~/sass-loader!./scss/sample.scss ***!
   \*********************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(/*! ./../~/css-loader/lib/css-base.js */ 362)();
+	exports = module.exports = __webpack_require__(/*! ./../~/css-loader/lib/css-base.js */ 447)();
 	// imports
 	
 	
@@ -31237,7 +34431,7 @@
 
 
 /***/ },
-/* 362 */
+/* 447 */
 /*!**************************************!*\
   !*** ./~/css-loader/lib/css-base.js ***!
   \**************************************/
@@ -31295,7 +34489,7 @@
 	};
 
 /***/ },
-/* 363 */
+/* 448 */
 /*!*************************************!*\
   !*** ./~/style-loader/addStyles.js ***!
   \*************************************/
