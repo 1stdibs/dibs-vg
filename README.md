@@ -33,7 +33,7 @@ React components are compiled and placed in dist/react, and for users who don't 
 Each pre-compiled React component supports a className prop so that you can specify styling. 
 
 ```js
-const svgComponent = require('dibs-vg/dist/reacat/account-filled.jsx');
+const svgComponent = require('dibs-vg/dist/react/account-filled.jsx');
 const stringSvg = require('dibs-vg/dist/templateString/account-filled.es.js');
 ```
 
