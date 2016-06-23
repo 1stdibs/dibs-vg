@@ -20,18 +20,26 @@ Inline SVGs are great, not only because they're more performant, but they're als
 
 ![](https://cdn.rawgit.com/1stdibs/dibs-vg/master/readme_imgs/do-not-edit-two-color.svg)
 
-## Require pre-compiled modules : 
+# Using inline SVG files :
 
-dibs-vg pre-compiles each SVG file into 2 formats : React component and template string. 
+There are 2 methods for inlining your SVGs - the easiest way (recommended) is to require the pre-compiled version. You can also add logic to webpack to compile SVG files and webpack will convert the files for you. 
+
+## Require pre-compiled modules (recommended) : 
+
+This is our recommended method because you don't have to do any setup to start requiring SVG files. This is particularly important if you plan on running your modules in a node environment (ie. unit tests). Pre-compiled react components are available in any environment that supports JSX. 
+
+React components are compiled and placed in dist/react, and for users who don't code in React we build template strings into the dist/templateString directory. 
+
+Each pre-compiled React component supports a className prop so that you can specify styling. 
 
 ```js
+const svgComponent = require('dibs-vg/dist/react/account-filled.jsx');
 const stringSvg = require('dibs-vg/dist/templateString/account-filled.es.js');
-const svgComponent = require('dibs-vg/dist/templateString/account-filled.jsx');
 ```
 
 Require these files directly in your modules and use just like you would any React component or string for inserting into pages. Pre-compiled React components accept a className prop so you can apply custom styling. 
 
-## Methods for loading with Webpack :
+## Methods for loading with Webpack (not recommended):
 
 You don't have to use pre-compiled modules. If you want to grab the raw SVG files and manipulate them go ahead, or if you want to use webpack to load the SVG files, use the method(s) below.
 
