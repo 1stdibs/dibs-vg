@@ -9,22 +9,11 @@ Dibs VG are broken up into individual SVG files so you can require them to be in
 
 We also provide some basic styling and wrapper modules for React and Backbone. 
 
-
-## Versioning : 
-
-New icons added to the set will be considered a minor version bump. Changes to existing icons will be a major version.  
-
-## Customize it, style it, resize it : 
-
-Inline SVGs are great, not only because they're more performant, but they're also easier for developers to manipulate. Of course you can scale them infinitely in either direction just by changing some CSS, but having different paths inside of your SVG files also allows you to apply colors or other transformations to individual parts of the SVG. Check out this example : 
-
-![](https://cdn.rawgit.com/1stdibs/dibs-vg/master/readme_imgs/do-not-edit-two-color.svg)
-
 # Using inline SVG files :
 
-There are 2 methods for inlining your SVGs - the easiest way (recommended) is to require the pre-compiled version. You can also add logic to webpack to compile SVG files and webpack will convert the files for you. 
+## With REACT / JSX :
 
-## Require pre-compiled modules (recommended) : 
+### Require Precompiled react component (recommended):
 
 This is our recommended method because you don't have to do any setup to start requiring SVG files. This is particularly important if you plan on running your modules in a node environment (ie. unit tests). Pre-compiled react components are available in any environment that supports JSX. 
 
@@ -33,19 +22,17 @@ React components are compiled and placed in dist/react, and for users who don't 
 Each pre-compiled React component supports a className prop so that you can specify styling. 
 
 ```js
-const svgComponent = require('dibs-vg/dist/react/account-filled.jsx');
+const svgComponent = require('dibs-vg/dist/react/account-filled.js');
 const stringSvg = require('dibs-vg/dist/templateString/account-filled.es.js');
 ```
 
 Require these files directly in your modules and use just like you would any React component or string for inserting into pages. Pre-compiled React components accept a className prop so you can apply custom styling. 
 
-## Methods for loading with Webpack (not recommended):
+### loading with Webpack (not recommended):
 
 You don't have to use pre-compiled modules. If you want to grab the raw SVG files and manipulate them go ahead, or if you want to use webpack to load the SVG files, use the method(s) below.
 
-### With React / JSX : 
-
-If you are using Webpack, and want to render your SVG with React we recomment [svg-react-loader](https://github.com/jhamlet/svg-react-loader) which will allow you to require your SVG files direclty in your JS as React components. 
+If you are using Webpack, and want to render your SVG with React we recommend [svg-react-loader](https://github.com/jhamlet/svg-react-loader) which will allow you to require your SVG files direclty in your JS as React components. 
 
 Configuration for svg-react-loader looks like this (see gotcha below, [via their documentation](https://github.com/jhamlet/svg-react-loader)) : 
 
@@ -102,9 +89,18 @@ const Icon = require('dibs-vg/src/bell.svg');
 </IconWrapper>
 ```
 
-### In Backbone : 
+## In Backbone :
 
-If you are using Webpack and want to render your SVG with Backbone we recomment using the [html loader](https://www.npmjs.com/package/html-loader) which returns the SVG file as a string, or the [webpack compile templates loader](https://www.npmjs.com/package/webpack-compile-templates) which will transform the SVG file to an underscore template.
+### Require the precompiled string version directly :
+
+require the string and pass it into the template or append it to the dom using jquery
+
+```js
+const stringSvg = require('dibs-vg/dist/templateString/account-filled.es.js');
+```
+### With webpack:
+
+If you are using Webpack and want to render your SVG with Backbone we recommend using the [html loader](https://www.npmjs.com/package/html-loader) which returns the SVG file as a string, or the [webpack compile templates loader](https://www.npmjs.com/package/webpack-compile-templates) which will transform the SVG file to an underscore template.
 
 ```js
 var SvgWrapper = require('dibs-vg/js/SvgWrapper.es.js');
@@ -117,3 +113,13 @@ $('.place').append(new SvgWrapper({
     title : 'Flerg! I did it!'
 }).render().el);
 ```
+
+## Versioning : 
+
+New icons added to the set will be considered a minor version bump. Changes to existing icons will be a major version.  
+
+## Customize it, style it, resize it : 
+
+Inline SVGs are great, not only because they're more performant, but they're also easier for developers to manipulate. Of course you can scale them infinitely in either direction just by changing some CSS, but having different paths inside of your SVG files also allows you to apply colors or other transformations to individual parts of the SVG. Check out this example : 
+
+![](https://cdn.rawgit.com/1stdibs/dibs-vg/master/readme_imgs/do-not-edit-two-color.svg)
