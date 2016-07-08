@@ -31,6 +31,7 @@ svgs.forEach(file => {
     const stringContents = `module.exports = \`${contents}\`;`;
 
     fs.writeFileSync(`${stringDest}/${name}.es.js`, stringContents, { encoding : 'UTF-8' });
+    fs.writeFileSync(`${stringDest}/${name}.js`, babel.transform(stringContents, { presets: ["es2015", "stage-2", "react"] }).code, { encoding: 'UTF-8' });
 
     // generate react module :
     promises.push( new Promise((resolve, reject) => {
