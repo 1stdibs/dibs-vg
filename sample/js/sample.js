@@ -2,13 +2,13 @@
 
 const React = require('react');
 const ReactDOM = require('react-dom');
-const ReactIcons = require('./ReactIcons.jsx');
+const Wrapper = require('./Wrapper.jsx');  // eslint-disable-line react/require-extension
 const BackboneIcons = require('./BackboneIcons.js');
 
 window.onload = function () {
     // React :
     ReactDOM.render(
-        React.createElement(ReactIcons, {}),
+        React.createElement(Wrapper, {}),
         document.getElementsByClassName('sample-container')[0]
     );
     // Backbone :

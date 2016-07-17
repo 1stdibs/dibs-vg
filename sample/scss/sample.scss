@@ -3,6 +3,10 @@
 $border-color: #eee;
 $text-color: #aaa;
 
+html, body {
+    margin: 0;
+}
+
 .dibsvg-icon {
     width: 50px;
     height: 50px;
@@ -11,12 +15,43 @@ $text-color: #aaa;
 .sample-container {
     box-sizing: border-box;
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
-    margin: 0 10%;
+    font-size: 12px;
+    margin: 20px 10%;
     color: $text-color;
 }
 
 :local(.bb) {
     margin-top: 20px;
+}
+
+:local(.svg) {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+:local(.bbSvg) {
+    composes: svg;
+    margin-bottom: 10px;
+}
+
+:local(.logoWrapper) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+:local(.logo) {
+    composes: svg;
+    height: 40px;
+    margin: 0;
+}
+
+:local(.logoCopy) {
+    font-size: 30px;
+    margin-top: 2px;
+    margin-left: 5px;
 }
 
 :local(.root) {
@@ -33,6 +68,7 @@ $text-color: #aaa;
 :local(.headerWrapper) {
     composes: fullWidth;
     display: flex;
+    margin-bottom: 10px;
 }
 
 :local(.header) {
@@ -66,14 +102,3 @@ $text-color: #aaa;
     border-top: 1px solid $border-color;
 }
 
-:local(.svg) {
-    height: 100px;
-    width: 100px;
-    display: block;
-    margin: 0 auto;
-}
-
-:local(.bbSvg) {
-    composes: svg;
-    margin-bottom: 10px;
-}
