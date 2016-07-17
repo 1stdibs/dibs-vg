@@ -15,6 +15,10 @@ $text-color: #aaa;
     color: $text-color;
 }
 
+:local(.bb) {
+    margin-top: 20px;
+}
+
 :local(.root) {
     clear: both;
     display: flex;
@@ -67,4 +71,9 @@ $text-color: #aaa;
     width: 100px;
     display: block;
     margin: 0 auto;
+}
+
+:local(.bbSvg) {
+    composes: svg;
+    margin-bottom: 10px;
 }

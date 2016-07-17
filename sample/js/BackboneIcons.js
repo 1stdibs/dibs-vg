@@ -4,31 +4,33 @@
 const SvgWrapper = require('../../js/SvgWrapper.js');
 const iconList = require('../../list.json');
 const Backbone = require('backbone');
-const heading = `<br /><br /><div id='bb-icons'><h1>These icons are all rendered by Backbone :</h1><hr /></div>`;
-
+const styles = require('../scss/sample.scss');
+const heading = `<div class="${styles.headerWrapper}">
+    <h1 class="${styles.header}">These icons are all rendered by Backbone:</h1>
+</div>`;
 
 /**
  * Renders each of the icons using the svg wrapper backbone view.
  */
 const BackboneIcons = Backbone.View.extend({
 
-    allIcons() {
-        return iconList.map((icon, idx) => {
+    _allIcons() {
+        return iconList.map(icon => {
             // NOTE* Here we have to use a leading "!" to tell webpack not to use the svg->react loader
             const Icon = require('!html!../../src/' + icon);
             const svgWrapperEl = new SvgWrapper({
-                icon : Icon,
-                width : 130,
-                height : 130
+                icon: Icon,
+                className: styles.bbSvg
             }).render();
             const child = svgWrapperEl.$el.html();
-            return `<span class='icon-container'>${child}</span>`;
+            return `<div class='${styles.container}'>${child}</div>`;
         });
     },
 
     render() {
+        this.$el.addClass(`${styles.root} ${styles.bb}`);
         this.$el.html(heading);
-        this.$('#bb-icons').append(this.allIcons());
+        this.$el.append(this._allIcons());
         return this;
     }
 });
