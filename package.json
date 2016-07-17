@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --port 9090 --content-base=./ --inline --watch --hot",
-    "watch": "webpack -d --progress --watch",
-    "webpack": "webpack -d --progress",
-    "build": "node ./generateList && node ./generateDist && npm run webpack",
+    "compile:webpack": "webpack -d --progress",
+    "compile": "node ./generateList && node ./generateDist",
+    "build": "npm run compile && npm run compile:webpack",
     "gitlint": "node_modules/.bin/dibslint --git --warnings --es6",
     "lint": "dibslint --root=. --es6",
-    "prepublish": "node ./generateList && node ./generateDist"
+    "prepublish": "npm run compile"
   },
   "pre-commit": {
     "run": [
