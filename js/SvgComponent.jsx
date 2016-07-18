@@ -35,7 +35,10 @@ const SvgComponent = ({ children, width, height, title, display = 'inline-block'
 };
 
 SvgComponent.propTypes = {
-    children: PropTypes.element.isRequired,
+    children: PropTypes.oneOfType([
+        PropTypes.element,
+        PropTypes.node
+    ]).isRequired,
     className: PropTypes.string,
     width: PropTypes.number,
     height: PropTypes.number,
