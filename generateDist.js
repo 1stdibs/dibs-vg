@@ -34,10 +34,10 @@ svgs.forEach(file => {
     fs.writeFileSync(`${stringDest}/${name}.js`, babel.transform(stringContents, { presets: ["es2015", "stage-2", "react"] }).code, { encoding: 'UTF-8' });
 
     // generate react module :
-    promises.push( new Promise((resolve, reject) => {
+    promises.push(new Promise((resolve, reject) => {
         htmlToReact(contents).then(result => {
             console.log(`compiling react component for ${name}. ${remaining} files left`);
-            remaining --;
+            remaining--;
 
             const babelResult = babel.transform(result, {presets: ["es2015", "stage-2", "react"]});
             fs.writeFileSync(`${reactDest}/${name}.js`, babelResult.code, { encoding : 'UTF-8' });
@@ -47,8 +47,12 @@ svgs.forEach(file => {
     }));
 });
 
-Promise.all(promises).then(() => { 
-  process.exit(0);
-}, function(reason) {
-  checkError(reason);
-});
+Promise.all(promises)
+    .then(
+        () => {
+            process.exit(0);
+        },
+        function (reason) {
+            checkError(reason);
+        }
+    );
