@@ -6,6 +6,7 @@
 
 const fs = require('fs');
 const htmlToReact = require('./htmlToReact');
+const htmlToReactAttributes = require('./htmlToReactAttributes');
 const babel = require('babel-core');
 const svgs = fs.readdirSync(process.cwd() + '/src');
 const stringDest = `${process.cwd()}/dist/templateString`;
@@ -39,7 +40,10 @@ svgs.forEach(file => {
             console.log(`compiling react component for ${name}. ${remaining} files left`);
             remaining--;
 
-            const babelResult = babel.transform(result, {presets: ["es2015", "stage-2", "react"]});
+            const babelResult = babel.transform(result, {
+                presets: ["es2015", "stage-2", "react"],
+                plugins: [htmlToReactAttributes]
+            });
             fs.writeFileSync(`${reactDest}/${name}.js`, babelResult.code, { encoding : 'UTF-8' });
             fs.writeFileSync(`${reactDest}/${name}.jsx`, result, { encoding : 'UTF-8' });
             resolve();
