@@ -8,7 +8,7 @@ const fs = require('fs');
 const htmlToReact = require('./htmlToReact');
 const htmlToReactAttributes = require('./htmlToReactAttributes');
 const babel = require('babel-core');
-const svgs = fs.readdirSync(process.cwd() + '/src');
+const svgs = fs.readdirSync(process.cwd() + '/src').filter(fileName => fileName.match(/\.svg$/));
 const stringDest = `${process.cwd()}/dist/templateString`;
 const reactDest = `${process.cwd()}/dist/react`;
 // a function to end process to prevent prepublish from completing if an error is encountered :
