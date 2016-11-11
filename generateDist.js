@@ -31,7 +31,7 @@ svgs.forEach(file => {
     // generate template string module :
     const stringContents = `module.exports = \`${contents}\`;`;
 
-    fs.writeFileSync(`${stringDest}/${name}.es.js`, stringContents, { encoding : 'UTF-8' });
+    fs.writeFileSync(`${stringDest}/${name}.es.js`, stringContents, { encoding: 'UTF-8' });
     fs.writeFileSync(`${stringDest}/${name}.js`, babel.transform(stringContents, { presets: ["es2015", "stage-2", "react"] }).code, { encoding: 'UTF-8' });
 
     // generate react module :
@@ -44,10 +44,12 @@ svgs.forEach(file => {
                 presets: ["es2015", "stage-2", "react"],
                 plugins: [htmlToReactAttributes]
             });
-            fs.writeFileSync(`${reactDest}/${name}.js`, babelResult.code, { encoding : 'UTF-8' });
-            fs.writeFileSync(`${reactDest}/${name}.jsx`, result, { encoding : 'UTF-8' });
+            fs.writeFileSync(`${reactDest}/${name}.js`, babelResult.code, { encoding: 'UTF-8' });
+            fs.writeFileSync(`${reactDest}/${name}.jsx`, result, { encoding: 'UTF-8' });
             resolve();
-        }).catch(reject);
+        }).catch((err) => {
+            reject(err);
+        });
     }));
 });
 
