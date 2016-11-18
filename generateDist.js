@@ -9,8 +9,9 @@ const htmlToReact = require('./htmlToReact');
 const htmlToReactAttributes = require('./htmlToReactAttributes');
 const babel = require('babel-core');
 const svgs = fs.readdirSync(process.cwd() + '/src').filter(fileName => fileName.match(/\.svg$/));
-const stringDest = `${process.cwd()}/dist/templateString`;
-const reactDest = `${process.cwd()}/dist/react`;
+const dist = `${process.cwd()}/dist/`;
+const stringDest = `${dist}/templateString`;
+const reactDest = `${dist}/react`;
 // a function to end process to prevent prepublish from completing if an error is encountered :
 const checkError = err => {
     if (err) {
@@ -21,6 +22,16 @@ const checkError = err => {
 let remaining = svgs.length;
 
 const promises = [];
+
+// make the dist directory and child directories if none exist :
+if (!fs.existsSync(dist)) {
+    fs.mkdirSync(dist);
+}
+[stringDest, reactDest].forEach(val => {
+    if (!fs.existsSync(val)) {
+        fs.mkdirSync(val);
+    }
+});
 
 svgs.forEach(file => {
     const leFile = `${process.cwd()}/src/${file}`;
