@@ -9,14 +9,6 @@ const template = function ({className, icon, title, style}) {
 
 /**
  * A very simple wrapper for an SVG icon required from the static repository.
- * NOTE! In v2 the only way to use icons in back-bone ie. without react is to require using a different loader
- * (for webpack) - you *must also use the leaging "!" in your loader so the default SVG->React loader is not used.
- *      Example :
- *
- * new SvgWrapper({
- *      className : 'dibsvg-icon-100',
- *      icon : require('!html!dibs-static/1stdibs/fonts/svg-icons/src/logo-no-reg.svg')
- * });
  *
  * @type {void|*|Object}
  */

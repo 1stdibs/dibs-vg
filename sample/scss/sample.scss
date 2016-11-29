@@ -1,0 +1,104 @@
+@import "../../scss/icons.scss";
+
+$border-color: #eee;
+$text-color: #aaa;
+
+html, body {
+    margin: 0;
+}
+
+.dibsvg-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.sample-container {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    margin: 20px 10%;
+    color: $text-color;
+}
+
+:local(.bb) {
+    margin-top: 20px;
+}
+
+:local(.svg) {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+:local(.bbSvg) {
+    composes: svg;
+    margin-bottom: 10px;
+}
+
+:local(.logoWrapper) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+:local(.logo) {
+    composes: svg;
+    height: 40px;
+    margin: 0;
+}
+
+:local(.logoCopy) {
+    font-size: 30px;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+:local(.root) {
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+:local(.fullWidth) {
+    flex: 0 0 100%;
+}
+
+:local(.headerWrapper) {
+    composes: fullWidth;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+:local(.header) {
+    flex-grow: 2;
+    margin: 0;
+}
+
+:local(.search) {
+    flex-grow: 1;
+    padding: 6px;
+    border: 1px solid $border-color;
+    line-height: 18px;
+    letter-spacing: .5px;
+    color: $text-color;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+:local(.container) {
+    padding: 10px 10px 0;
+    margin: 10px 10px 20px;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    text-align: center;
+}
+
+:local(.name) {
+    display: block;
+    padding: 5px 0;
+    margin: 7px -10px 0;
+    border-top: 1px solid $border-color;
+}
+
