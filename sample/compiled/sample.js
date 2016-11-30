@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "80719532cbea50de984d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ed09eab772e9d0b7287c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/
@@ -584,9 +584,9 @@
   \******************/
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(/*! /Users/cheryl/projects/dibs-vg/sample/js/sample.js */1);
-	__webpack_require__(/*! webpack/hot/dev-server */573);
-	module.exports = __webpack_require__(/*! webpack-dev-server/client?http://localhost:9090/ */575);
+	__webpack_require__(/*! /Users/ronald/projects/dibs-vg/sample/js/sample.js */1);
+	__webpack_require__(/*! webpack/hot/dev-server */575);
+	module.exports = __webpack_require__(/*! webpack-dev-server/client?http://localhost:9090/ */577);
 
 
 /***/ },
@@ -601,7 +601,7 @@
 	var React = __webpack_require__(/*! react */ 2);
 	var ReactDOM = __webpack_require__(/*! react-dom */ 33);
 	var Wrapper = __webpack_require__(/*! ./Wrapper.jsx */ 179); // eslint-disable-line react/require-extension
-	var BackboneIcons = __webpack_require__(/*! ./BackboneIcons.js */ 460);
+	var BackboneIcons = __webpack_require__(/*! ./BackboneIcons.js */ 461);
 	
 	window.onload = function () {
 	    // React :
@@ -22654,15 +22654,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/sample/js/ReactIcons.jsx',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/sample/js/ReactIcons.jsx',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/sample/js/ReactIcons.jsx',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/sample/js/ReactIcons.jsx',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -22670,7 +22670,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -30237,6 +30237,7 @@
 		"star-filled.svg",
 		"star-outlined.svg",
 		"storefront.svg",
+		"tag.svg",
 		"tax-free.svg",
 		"toolbox.svg",
 		"trade-arrow.svg",
@@ -30727,16 +30728,17 @@
 		"./star-filled.svg": 447,
 		"./star-outlined.svg": 448,
 		"./storefront.svg": 449,
-		"./tax-free.svg": 450,
-		"./toolbox.svg": 451,
-		"./trade-arrow.svg": 452,
-		"./trade-logo.svg": 453,
-		"./trash-filled.svg": 454,
-		"./triangle-down.svg": 455,
-		"./truck-moving.svg": 456,
-		"./twitter.svg": 457,
-		"./upload-failed.svg": 458,
-		"./yoga.svg": 459
+		"./tag.svg": 450,
+		"./tax-free.svg": 451,
+		"./toolbox.svg": 452,
+		"./trade-arrow.svg": 453,
+		"./trade-logo.svg": 454,
+		"./trash-filled.svg": 455,
+		"./triangle-down.svg": 456,
+		"./truck-moving.svg": 457,
+		"./twitter.svg": 458,
+		"./upload-failed.svg": 459,
+		"./yoga.svg": 460
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -30785,15 +30787,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/account-filled.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/account-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/account-filled.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/account-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -30801,7 +30803,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31179,15 +31181,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/account-outlined.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/account-outlined.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/account-outlined.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/account-outlined.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31195,7 +31197,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31261,15 +31263,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/add-tags.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/add-tags.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/add-tags.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/add-tags.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31277,7 +31279,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31344,15 +31346,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/app-store.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/app-store.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/app-store.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/app-store.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31360,7 +31362,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31466,15 +31468,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/arrow-down.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/arrow-down.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/arrow-down.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/arrow-down.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31482,7 +31484,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31548,15 +31550,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/arrow-left.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/arrow-left.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/arrow-left.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/arrow-left.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31564,7 +31566,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31630,15 +31632,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/arrow-right.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/arrow-right.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/arrow-right.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/arrow-right.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31646,7 +31648,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31712,15 +31714,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/arrow-up.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/arrow-up.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/arrow-up.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/arrow-up.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31728,7 +31730,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31794,15 +31796,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/baby-bottle.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/baby-bottle.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/baby-bottle.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/baby-bottle.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31810,7 +31812,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31876,15 +31878,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/bell.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/bell.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/bell.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/bell.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31892,7 +31894,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31958,15 +31960,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/benefits-egg.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/benefits-egg.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/benefits-egg.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/benefits-egg.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31974,7 +31976,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32045,15 +32047,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/bookmark.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/bookmark.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/bookmark.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/bookmark.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32061,7 +32063,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32127,15 +32129,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/bookmarked.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/bookmarked.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/bookmarked.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/bookmarked.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32143,7 +32145,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32210,15 +32212,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/bullet-point.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/bullet-point.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/bullet-point.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/bullet-point.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32226,7 +32228,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32297,15 +32299,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/buyer-assurance.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/buyer-assurance.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/buyer-assurance.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/buyer-assurance.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32313,7 +32315,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32388,15 +32390,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/cart-open.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/cart-open.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/cart-open.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/cart-open.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32404,7 +32406,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32476,15 +32478,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/cart.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/cart.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/cart.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/cart.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32492,7 +32494,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32567,15 +32569,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/checkmark-circle.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/checkmark-circle.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/checkmark-circle.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/checkmark-circle.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32583,7 +32585,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32650,15 +32652,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/checkmark-void.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/checkmark-void.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/checkmark-void.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/checkmark-void.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32666,7 +32668,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32735,15 +32737,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/checkmark.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/checkmark.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/checkmark.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/checkmark.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32751,7 +32753,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32817,15 +32819,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/circle-arrow-left.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/circle-arrow-left.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/circle-arrow-left.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/circle-arrow-left.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32833,7 +32835,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32904,15 +32906,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/circle-arrow-right.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/circle-arrow-right.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/circle-arrow-right.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/circle-arrow-right.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32920,7 +32922,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32995,15 +32997,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/circle-question-mark-empty.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/circle-question-mark-empty.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/circle-question-mark-empty.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/circle-question-mark-empty.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33011,7 +33013,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33083,15 +33085,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/circle-question-mark-filled.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/circle-question-mark-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/circle-question-mark-filled.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/circle-question-mark-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33099,7 +33101,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33165,15 +33167,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/clock.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/clock.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/clock.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/clock.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33181,7 +33183,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33252,15 +33254,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/close.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/close.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/close.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/close.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33268,7 +33270,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33334,15 +33336,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/commuter-train.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/commuter-train.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/commuter-train.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/commuter-train.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33350,7 +33352,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33423,15 +33425,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/congratulations.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/congratulations.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/congratulations.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/congratulations.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33439,7 +33441,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33515,15 +33517,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/connection-error.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/connection-error.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/connection-error.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/connection-error.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33531,7 +33533,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33602,15 +33604,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/customer-support.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/customer-support.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/customer-support.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/customer-support.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33618,7 +33620,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33684,15 +33686,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/do-not-edit.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/do-not-edit.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/do-not-edit.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/do-not-edit.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33700,7 +33702,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33776,15 +33778,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/early-access.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/early-access.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/early-access.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/early-access.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33792,7 +33794,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33858,15 +33860,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/email.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/email.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/email.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/email.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33874,7 +33876,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33940,15 +33942,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/empty-project.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/empty-project.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/empty-project.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/empty-project.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33956,7 +33958,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34027,15 +34029,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/envelope.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/envelope.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/envelope.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/envelope.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34043,7 +34045,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34109,15 +34111,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/facebook.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/facebook.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/facebook.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/facebook.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34125,7 +34127,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34191,15 +34193,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/gallery.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/gallery.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/gallery.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/gallery.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34207,7 +34209,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34278,15 +34280,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/gear-filled.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/gear-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/gear-filled.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/gear-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34294,7 +34296,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34360,15 +34362,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/gear.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/gear.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/gear.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/gear.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34376,7 +34378,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34443,15 +34445,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/globe.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/globe.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/globe.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/globe.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34459,7 +34461,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34525,15 +34527,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/grid.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/grid.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/grid.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/grid.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34541,7 +34543,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34607,15 +34609,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/hamburger-menu.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/hamburger-menu.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/hamburger-menu.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/hamburger-menu.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34623,7 +34625,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34689,15 +34691,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/heart-filled.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/heart-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/heart-filled.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/heart-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34705,7 +34707,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34771,15 +34773,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/heart-outlined.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/heart-outlined.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/heart-outlined.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/heart-outlined.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34787,7 +34789,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34853,15 +34855,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/home.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/home.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/home.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/home.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34869,7 +34871,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34935,15 +34937,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/image-upload-multiple.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/image-upload-multiple.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/image-upload-multiple.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/image-upload-multiple.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34951,7 +34953,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35023,15 +35025,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/image-upload.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/image-upload.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/image-upload.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/image-upload.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35039,7 +35041,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35111,15 +35113,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/info-circle.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/info-circle.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/info-circle.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/info-circle.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35127,7 +35129,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35195,15 +35197,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/instagram.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/instagram.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/instagram.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/instagram.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35211,7 +35213,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35277,15 +35279,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/iphone.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/iphone.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/iphone.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/iphone.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35293,7 +35295,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35359,15 +35361,15 @@
 	  }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	  filename: '/Users/cheryl/projects/dibs-vg/src/lightbulb.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	  filename: '/Users/ronald/projects/dibs-vg/src/lightbulb.svg',
 	  components: _components,
 	  locals: [module],
 	  imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	  filename: '/Users/cheryl/projects/dibs-vg/src/lightbulb.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	  filename: '/Users/ronald/projects/dibs-vg/src/lightbulb.svg',
 	  components: _components,
 	  locals: [],
 	  imports: [_react3.default, _index2.default]
@@ -35375,7 +35377,7 @@
 	
 	function _wrapComponent(id) {
 	  return function (Component) {
-	    return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	    return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	  };
 	}
 	
@@ -35452,15 +35454,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/linkedin.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/linkedin.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/linkedin.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/linkedin.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35468,7 +35470,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35534,15 +35536,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/list.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/list.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/list.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/list.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35550,7 +35552,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35625,15 +35627,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/loader.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/loader.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/loader.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/loader.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35641,7 +35643,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35707,15 +35709,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/location-pin.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/location-pin.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/location-pin.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/location-pin.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35723,7 +35725,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35796,15 +35798,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/lock-with-checkmark.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/lock-with-checkmark.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/lock-with-checkmark.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/lock-with-checkmark.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35812,7 +35814,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35883,15 +35885,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/lock.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/lock.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/lock.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/lock.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35899,7 +35901,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35969,15 +35971,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/logo-1st.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/logo-1st.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/logo-1st.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/logo-1st.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35985,7 +35987,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36057,15 +36059,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/logo-introspective.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/logo-introspective.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/logo-introspective.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/logo-introspective.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36073,7 +36075,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36167,15 +36169,15 @@
 	            }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	            filename: '/Users/cheryl/projects/dibs-vg/src/logo-no-reg.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	            filename: '/Users/ronald/projects/dibs-vg/src/logo-no-reg.svg',
 	            components: _components,
 	            locals: [module],
 	            imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	            filename: '/Users/cheryl/projects/dibs-vg/src/logo-no-reg.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	            filename: '/Users/ronald/projects/dibs-vg/src/logo-no-reg.svg',
 	            components: _components,
 	            locals: [],
 	            imports: [_react3.default, _index2.default]
@@ -36183,7 +36185,7 @@
 	
 	function _wrapComponent(id) {
 	            return function (Component) {
-	                        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	                        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	            };
 	}
 	
@@ -36259,15 +36261,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/logo.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/logo.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/logo.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/logo.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36275,7 +36277,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36356,15 +36358,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/luggage.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/luggage.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/luggage.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/luggage.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36372,7 +36374,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36438,15 +36440,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/magnifying-glass.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/magnifying-glass.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/magnifying-glass.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/magnifying-glass.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36454,7 +36456,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36520,15 +36522,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/mask.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/mask.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/mask.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/mask.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36536,7 +36538,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36602,15 +36604,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/message.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/message.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/message.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/message.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36618,7 +36620,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36688,15 +36690,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/minus.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/minus.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/minus.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/minus.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36704,7 +36706,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36770,15 +36772,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/mobile-logo.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/mobile-logo.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/mobile-logo.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/mobile-logo.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36786,7 +36788,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36853,15 +36855,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/net-price.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/net-price.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/net-price.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/net-price.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36869,7 +36871,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36942,15 +36944,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/orange.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/orange.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/orange.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/orange.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36958,7 +36960,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37024,15 +37026,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/payment-american-express.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/payment-american-express.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/payment-american-express.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/payment-american-express.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37040,7 +37042,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37117,15 +37119,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/payment-check.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/payment-check.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/payment-check.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/payment-check.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37133,7 +37135,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37200,15 +37202,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/payment-discover.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/payment-discover.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/payment-discover.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/payment-discover.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37216,7 +37218,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37294,15 +37296,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/payment-mastercard.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/payment-mastercard.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/payment-mastercard.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/payment-mastercard.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37310,7 +37312,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37380,15 +37382,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/payment-paypal.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/payment-paypal.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/payment-paypal.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/payment-paypal.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37396,7 +37398,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37480,15 +37482,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/payment-visa.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/payment-visa.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/payment-visa.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/payment-visa.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37496,7 +37498,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37571,15 +37573,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/payment-wire-transfer.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/payment-wire-transfer.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/payment-wire-transfer.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/payment-wire-transfer.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37587,7 +37589,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37668,15 +37670,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/pen.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/pen.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/pen.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/pen.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37684,7 +37686,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37755,15 +37757,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/person-inside-badge.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/person-inside-badge.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/person-inside-badge.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/person-inside-badge.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37771,7 +37773,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37843,15 +37845,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/person-profile.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/person-profile.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/person-profile.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/person-profile.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37859,7 +37861,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37925,15 +37927,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/pineapple.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/pineapple.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/pineapple.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/pineapple.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37941,7 +37943,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38007,15 +38009,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/pinterest.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/pinterest.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/pinterest.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/pinterest.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38023,7 +38025,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38089,15 +38091,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/plus.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/plus.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/plus.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/plus.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38105,7 +38107,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38171,15 +38173,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/print.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/print.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/print.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/print.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38187,7 +38189,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38253,15 +38255,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/quote.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/quote.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/quote.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/quote.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38269,7 +38271,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38340,15 +38342,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/ramen.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/ramen.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/ramen.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/ramen.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38356,7 +38358,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38422,15 +38424,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/reject.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/reject.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/reject.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/reject.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38438,7 +38440,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38508,15 +38510,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/repost.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/repost.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/repost.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/repost.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38524,7 +38526,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38593,15 +38595,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/return-arrow.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/return-arrow.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/return-arrow.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/return-arrow.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38609,7 +38611,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38675,15 +38677,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/service-person.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/service-person.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/service-person.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/service-person.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38691,7 +38693,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38758,15 +38760,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/share.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/share.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/share.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/share.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38774,7 +38776,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38845,15 +38847,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/shipping-package.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/shipping-package.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/shipping-package.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/shipping-package.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38861,7 +38863,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38931,15 +38933,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/shipping-world.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/shipping-world.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/shipping-world.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/shipping-world.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38947,7 +38949,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39013,15 +39015,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/shipping.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/shipping.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/shipping.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/shipping.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39029,7 +39031,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39095,15 +39097,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/shopping-cart.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/shopping-cart.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/shopping-cart.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/shopping-cart.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39111,7 +39113,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39179,15 +39181,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/star-filled.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/star-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/star-filled.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/star-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39195,7 +39197,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39261,15 +39263,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/star-outlined.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/star-outlined.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/star-outlined.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/star-outlined.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39277,7 +39279,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39343,15 +39345,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/storefront.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/storefront.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/storefront.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/storefront.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39359,7 +39361,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39403,6 +39405,92 @@
 
 /***/ },
 /* 450 */
+/*!*********************!*\
+  !*** ./src/tag.svg ***!
+  \*********************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
+	
+	var _index = __webpack_require__(/*! ./~/redbox-react/lib/index.js */ 182);
+	
+	var _index2 = _interopRequireDefault(_index);
+	
+	var _index3 = __webpack_require__(/*! ./~/react-transform-catch-errors/lib/index.js */ 187);
+	
+	var _index4 = _interopRequireDefault(_index3);
+	
+	var _react2 = __webpack_require__(/*! react */ 2);
+	
+	var _react3 = _interopRequireDefault(_react2);
+	
+	var _index5 = __webpack_require__(/*! ./~/react-transform-hmr/lib/index.js */ 188);
+	
+	var _index6 = _interopRequireDefault(_index5);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var _components = {
+	    Tag: {
+	        displayName: 'Tag'
+	    }
+	};
+	
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/tag.svg',
+	    components: _components,
+	    locals: [module],
+	    imports: [_react3.default]
+	});
+	
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/tag.svg',
+	    components: _components,
+	    locals: [],
+	    imports: [_react3.default, _index2.default]
+	});
+	
+	function _wrapComponent(id) {
+	    return function (Component) {
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	    };
+	}
+	
+	var React = __webpack_require__(/*! react */ 2);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 345)(__webpack_require__(/*! react-dom */ 33));
+	
+	module.exports = _wrapComponent('Tag')(React.createClass({
+	
+	    displayName: "Tag",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-tag", "viewBox": "0 0 16 16", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'g',
+	                { transform: 'translate(-969.000000, -211.000000)' },
+	                React.createElement('path', { d: 'M971.9,215.7l3-4.4l4.4,0l2.8,4.4v10.9l-10.2,0V215.7z M977,215.7c0.8,0,1.5-0.6,1.5-1.5 c0-0.8-0.6-1.5-1.5-1.5c-0.8,0-1.5,0.6-1.5,1.5C975.5,215.1,976.3,215.7,977,215.7z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	}));
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
+
+/***/ },
+/* 451 */
 /*!**************************!*\
   !*** ./src/tax-free.svg ***!
   \**************************/
@@ -39434,15 +39522,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/tax-free.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/tax-free.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/tax-free.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/tax-free.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39450,7 +39538,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39489,7 +39577,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 451 */
+/* 452 */
 /*!*************************!*\
   !*** ./src/toolbox.svg ***!
   \*************************/
@@ -39521,15 +39609,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/toolbox.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/toolbox.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/toolbox.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/toolbox.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39537,7 +39625,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39572,7 +39660,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 452 */
+/* 453 */
 /*!*****************************!*\
   !*** ./src/trade-arrow.svg ***!
   \*****************************/
@@ -39604,15 +39692,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/trade-arrow.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/trade-arrow.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/trade-arrow.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/trade-arrow.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39620,7 +39708,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39654,7 +39742,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 453 */
+/* 454 */
 /*!****************************!*\
   !*** ./src/trade-logo.svg ***!
   \****************************/
@@ -39686,15 +39774,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/trade-logo.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/trade-logo.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/trade-logo.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/trade-logo.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39702,7 +39790,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39741,7 +39829,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 454 */
+/* 455 */
 /*!******************************!*\
   !*** ./src/trash-filled.svg ***!
   \******************************/
@@ -39773,15 +39861,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/trash-filled.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/trash-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/trash-filled.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/trash-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39789,7 +39877,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39828,7 +39916,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 455 */
+/* 456 */
 /*!*******************************!*\
   !*** ./src/triangle-down.svg ***!
   \*******************************/
@@ -39860,15 +39948,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/triangle-down.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/triangle-down.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/triangle-down.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/triangle-down.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39876,7 +39964,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39910,7 +39998,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 456 */
+/* 457 */
 /*!******************************!*\
   !*** ./src/truck-moving.svg ***!
   \******************************/
@@ -39942,15 +40030,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/truck-moving.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/truck-moving.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/truck-moving.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/truck-moving.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39958,7 +40046,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39999,7 +40087,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 457 */
+/* 458 */
 /*!*************************!*\
   !*** ./src/twitter.svg ***!
   \*************************/
@@ -40031,15 +40119,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/twitter.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/twitter.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/twitter.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/twitter.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40047,7 +40135,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40081,7 +40169,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 458 */
+/* 459 */
 /*!*******************************!*\
   !*** ./src/upload-failed.svg ***!
   \*******************************/
@@ -40113,15 +40201,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/upload-failed.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/upload-failed.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/upload-failed.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/upload-failed.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40129,7 +40217,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40172,7 +40260,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 459 */
+/* 460 */
 /*!**********************!*\
   !*** ./src/yoga.svg ***!
   \**********************/
@@ -40204,15 +40292,15 @@
 	    }
 	};
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/yoga.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/yoga.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cheryl/projects/dibs-vg/src/yoga.svg',
+	var _UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/ronald/projects/dibs-vg/src/yoga.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40220,7 +40308,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersCherylProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCherylProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersRonaldProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersRonaldProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40254,7 +40342,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 460 */
+/* 461 */
 /*!************************************!*\
   !*** ./sample/js/BackboneIcons.js ***!
   \************************************/
@@ -40262,9 +40350,9 @@
 
 	"use strict";
 	
-	var SvgWrapper = __webpack_require__(/*! ../../js/SvgWrapper.js */ 461);
+	var SvgWrapper = __webpack_require__(/*! ../../js/SvgWrapper.js */ 462);
 	var iconList = __webpack_require__(/*! ../../list.json */ 338);
-	var Backbone = __webpack_require__(/*! backbone */ 462);
+	var Backbone = __webpack_require__(/*! backbone */ 463);
 	var styles = __webpack_require__(/*! ../scss/sample.scss */ 339);
 	var heading = '<div class="' + styles.headerWrapper + '">\n    <h1 class="' + styles.header + '">These icons are all rendered by Backbone:</h1>\n</div>';
 	
@@ -40275,7 +40363,7 @@
 	    _allIcons: function _allIcons() {
 	        return iconList.map(function (icon) {
 	            // NOTE* Here we have to use a leading "!" to tell webpack not to use the svg->react loader
-	            var Icon = __webpack_require__(/*! html!../../src */ 465)("./" + icon);
+	            var Icon = __webpack_require__(/*! html!../../src */ 466)("./" + icon);
 	            var svgWrapperEl = new SvgWrapper({
 	                icon: Icon,
 	                className: styles.bbSvg
@@ -40295,7 +40383,7 @@
 	module.exports = BackboneIcons;
 
 /***/ },
-/* 461 */
+/* 462 */
 /*!**************************!*\
   !*** ./js/SvgWrapper.js ***!
   \**************************/
@@ -40303,7 +40391,7 @@
 
 	'use strict';
 	
-	var Backbone = __webpack_require__(/*! backbone */ 462);
+	var Backbone = __webpack_require__(/*! backbone */ 463);
 	var template = function template(_ref) {
 	    var className = _ref.className,
 	        icon = _ref.icon,
@@ -40355,7 +40443,7 @@
 	module.exports = SvgWrapper;
 
 /***/ },
-/* 462 */
+/* 463 */
 /*!********************************!*\
   !*** ./~/backbone/backbone.js ***!
   \********************************/
@@ -40380,7 +40468,7 @@
 	
 	  // Set up Backbone appropriately for the environment. Start with AMD.
 	  if (true) {
-	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! underscore */ 463), __webpack_require__(/*! jquery */ 464), exports], __WEBPACK_AMD_DEFINE_RESULT__ = function (_, $, exports) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! underscore */ 464), __webpack_require__(/*! jquery */ 465), exports], __WEBPACK_AMD_DEFINE_RESULT__ = function (_, $, exports) {
 	      // Export global even in AMD case in case this script is loaded with
 	      // others that may still expect a global Backbone.
 	      root.Backbone = factory(root, exports, _, $);
@@ -42316,7 +42404,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 463 */
+/* 464 */
 /*!************************************!*\
   !*** ./~/underscore/underscore.js ***!
   \************************************/
@@ -43896,7 +43984,7 @@
 	}).call(undefined);
 
 /***/ },
-/* 464 */
+/* 465 */
 /*!*********************************!*\
   !*** ./~/jquery/dist/jquery.js ***!
   \*********************************/
@@ -45480,120 +45568,121 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 465 */
+/* 466 */
 /*!**************************************!*\
   !*** ./src ./~/html-loader!^\.\/.*$ ***!
   \**************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./account-filled.svg": 466,
-		"./account-outlined.svg": 467,
-		"./add-tags.svg": 468,
-		"./app-store.svg": 469,
-		"./arrow-down.svg": 470,
-		"./arrow-left.svg": 471,
-		"./arrow-right.svg": 472,
-		"./arrow-up.svg": 473,
-		"./baby-bottle.svg": 474,
-		"./bell.svg": 475,
-		"./benefits-egg.svg": 476,
-		"./bookmark.svg": 477,
-		"./bookmarked.svg": 478,
-		"./bullet-point.svg": 479,
-		"./buyer-assurance.svg": 480,
-		"./cart-open.svg": 481,
-		"./cart.svg": 482,
-		"./checkmark-circle.svg": 483,
-		"./checkmark-void.svg": 484,
-		"./checkmark.svg": 485,
-		"./circle-arrow-left.svg": 486,
-		"./circle-arrow-right.svg": 487,
-		"./circle-question-mark-empty.svg": 488,
-		"./circle-question-mark-filled.svg": 489,
-		"./clock.svg": 490,
-		"./close.svg": 491,
-		"./commuter-train.svg": 492,
-		"./congratulations.svg": 493,
-		"./connection-error.svg": 494,
-		"./customer-support.svg": 495,
-		"./do-not-edit.svg": 496,
-		"./early-access.svg": 497,
-		"./email.svg": 498,
-		"./empty-project.svg": 499,
-		"./envelope.svg": 500,
-		"./facebook.svg": 501,
-		"./gallery.svg": 502,
-		"./gear-filled.svg": 503,
-		"./gear.svg": 504,
-		"./globe.svg": 505,
-		"./grid.svg": 506,
-		"./hamburger-menu.svg": 507,
-		"./heart-filled.svg": 508,
-		"./heart-outlined.svg": 509,
-		"./home.svg": 510,
-		"./image-upload-multiple.svg": 511,
-		"./image-upload.svg": 512,
-		"./info-circle.svg": 513,
-		"./instagram.svg": 514,
-		"./iphone.svg": 515,
-		"./lightbulb.svg": 516,
-		"./linkedin.svg": 517,
-		"./list.svg": 518,
-		"./loader.svg": 519,
-		"./location-pin.svg": 520,
-		"./lock-with-checkmark.svg": 521,
-		"./lock.svg": 522,
-		"./logo-1st.svg": 523,
-		"./logo-introspective.svg": 524,
-		"./logo-no-reg.svg": 525,
-		"./logo.svg": 526,
-		"./luggage.svg": 527,
-		"./magnifying-glass.svg": 528,
-		"./mask.svg": 529,
-		"./message.svg": 530,
-		"./minus.svg": 531,
-		"./mobile-logo.svg": 532,
-		"./net-price.svg": 533,
-		"./orange.svg": 534,
-		"./payment-american-express.svg": 535,
-		"./payment-check.svg": 536,
-		"./payment-discover.svg": 537,
-		"./payment-mastercard.svg": 538,
-		"./payment-paypal.svg": 539,
-		"./payment-visa.svg": 540,
-		"./payment-wire-transfer.svg": 541,
-		"./pen.svg": 542,
-		"./person-inside-badge.svg": 543,
-		"./person-profile.svg": 544,
-		"./pineapple.svg": 545,
-		"./pinterest.svg": 546,
-		"./plus.svg": 547,
-		"./print.svg": 548,
-		"./quote.svg": 549,
-		"./ramen.svg": 550,
-		"./reject.svg": 551,
-		"./repost.svg": 552,
-		"./return-arrow.svg": 553,
-		"./service-person.svg": 554,
-		"./share.svg": 555,
-		"./shipping-package.svg": 556,
-		"./shipping-world.svg": 557,
-		"./shipping.svg": 558,
-		"./shopping-cart.svg": 559,
-		"./star-filled.svg": 560,
-		"./star-outlined.svg": 561,
-		"./storefront.svg": 562,
-		"./tax-free.svg": 563,
-		"./toolbox.svg": 564,
-		"./trade-arrow.svg": 565,
-		"./trade-logo.svg": 566,
-		"./trash-filled.svg": 567,
-		"./triangle-down.svg": 568,
-		"./truck-moving.svg": 569,
-		"./twitter.svg": 570,
-		"./upload-failed.svg": 571,
-		"./yoga.svg": 572
+		"./account-filled.svg": 467,
+		"./account-outlined.svg": 468,
+		"./add-tags.svg": 469,
+		"./app-store.svg": 470,
+		"./arrow-down.svg": 471,
+		"./arrow-left.svg": 472,
+		"./arrow-right.svg": 473,
+		"./arrow-up.svg": 474,
+		"./baby-bottle.svg": 475,
+		"./bell.svg": 476,
+		"./benefits-egg.svg": 477,
+		"./bookmark.svg": 478,
+		"./bookmarked.svg": 479,
+		"./bullet-point.svg": 480,
+		"./buyer-assurance.svg": 481,
+		"./cart-open.svg": 482,
+		"./cart.svg": 483,
+		"./checkmark-circle.svg": 484,
+		"./checkmark-void.svg": 485,
+		"./checkmark.svg": 486,
+		"./circle-arrow-left.svg": 487,
+		"./circle-arrow-right.svg": 488,
+		"./circle-question-mark-empty.svg": 489,
+		"./circle-question-mark-filled.svg": 490,
+		"./clock.svg": 491,
+		"./close.svg": 492,
+		"./commuter-train.svg": 493,
+		"./congratulations.svg": 494,
+		"./connection-error.svg": 495,
+		"./customer-support.svg": 496,
+		"./do-not-edit.svg": 497,
+		"./early-access.svg": 498,
+		"./email.svg": 499,
+		"./empty-project.svg": 500,
+		"./envelope.svg": 501,
+		"./facebook.svg": 502,
+		"./gallery.svg": 503,
+		"./gear-filled.svg": 504,
+		"./gear.svg": 505,
+		"./globe.svg": 506,
+		"./grid.svg": 507,
+		"./hamburger-menu.svg": 508,
+		"./heart-filled.svg": 509,
+		"./heart-outlined.svg": 510,
+		"./home.svg": 511,
+		"./image-upload-multiple.svg": 512,
+		"./image-upload.svg": 513,
+		"./info-circle.svg": 514,
+		"./instagram.svg": 515,
+		"./iphone.svg": 516,
+		"./lightbulb.svg": 517,
+		"./linkedin.svg": 518,
+		"./list.svg": 519,
+		"./loader.svg": 520,
+		"./location-pin.svg": 521,
+		"./lock-with-checkmark.svg": 522,
+		"./lock.svg": 523,
+		"./logo-1st.svg": 524,
+		"./logo-introspective.svg": 525,
+		"./logo-no-reg.svg": 526,
+		"./logo.svg": 527,
+		"./luggage.svg": 528,
+		"./magnifying-glass.svg": 529,
+		"./mask.svg": 530,
+		"./message.svg": 531,
+		"./minus.svg": 532,
+		"./mobile-logo.svg": 533,
+		"./net-price.svg": 534,
+		"./orange.svg": 535,
+		"./payment-american-express.svg": 536,
+		"./payment-check.svg": 537,
+		"./payment-discover.svg": 538,
+		"./payment-mastercard.svg": 539,
+		"./payment-paypal.svg": 540,
+		"./payment-visa.svg": 541,
+		"./payment-wire-transfer.svg": 542,
+		"./pen.svg": 543,
+		"./person-inside-badge.svg": 544,
+		"./person-profile.svg": 545,
+		"./pineapple.svg": 546,
+		"./pinterest.svg": 547,
+		"./plus.svg": 548,
+		"./print.svg": 549,
+		"./quote.svg": 550,
+		"./ramen.svg": 551,
+		"./reject.svg": 552,
+		"./repost.svg": 553,
+		"./return-arrow.svg": 554,
+		"./service-person.svg": 555,
+		"./share.svg": 556,
+		"./shipping-package.svg": 557,
+		"./shipping-world.svg": 558,
+		"./shipping.svg": 559,
+		"./shopping-cart.svg": 560,
+		"./star-filled.svg": 561,
+		"./star-outlined.svg": 562,
+		"./storefront.svg": 563,
+		"./tag.svg": 564,
+		"./tax-free.svg": 565,
+		"./toolbox.svg": 566,
+		"./trade-arrow.svg": 567,
+		"./trade-logo.svg": 568,
+		"./trash-filled.svg": 569,
+		"./triangle-down.svg": 570,
+		"./truck-moving.svg": 571,
+		"./twitter.svg": 572,
+		"./upload-failed.svg": 573,
+		"./yoga.svg": 574
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -45606,11 +45695,11 @@
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 465;
+	webpackContext.id = 466;
 
 
 /***/ },
-/* 466 */
+/* 467 */
 /*!************************************************!*\
   !*** ./~/html-loader!./src/account-filled.svg ***!
   \************************************************/
@@ -45619,7 +45708,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-account-filled\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M278.088764,500 C190.723711,500 100.959616,499.78903 11.3954418,499.367089 L0,499.367089 L0.799680128,487.552743 C1.19952019,480.801688 4.9980008,421.940928 14.3942423,399.78903 C15.9936026,395.780591 26.1895242,370.886076 51.9792083,361.181435 L130.747701,327.637131 L163.934426,312.236287 C164.534186,312.025316 179.128349,305.696203 183.126749,287.341772 C183.526589,284.599156 183.326669,280.801688 182.926829,279.746835 C181.127549,276.160338 181.127549,276.160338 176.729308,270.886076 L176.529388,270.675105 C175.129948,268.987342 143.942423,229.957806 136.745302,173.628692 C136.345462,170.886076 132.546981,144.092827 136.145542,112.447257 C141.143543,67.5105485 158.336665,34.3881857 186.12555,16.6666667 C187.32507,15.8227848 213.714514,0 251.09956,0 C272.890844,0 294.082367,5.48523207 314.07437,16.0337553 C321.271491,19.4092827 381.847261,51.0548523 365.253898,175.316456 C364.854058,179.324895 358.656537,228.691983 325.669732,270.675105 C324.870052,271.518987 324.070372,272.57384 323.070772,273.839662 C321.471411,275.738397 319.272291,278.059072 318.072771,280.168776 C317.872851,281.223629 317.473011,283.966245 318.472611,287.130802 L318.672531,287.763713 L318.872451,288.607595 C319.072371,289.029536 322.271092,304.219409 341.463415,313.080169 L384.446222,333.544304 L447.820872,360.337553 C449.220312,360.970464 487.005198,376.793249 495.001999,429.324895 L495.201919,430.379747 L500,499.578059 L488.604558,499.578059 C487.604958,499.367089 407.836865,500 278.088764,500 L278.088764,500 Z\"></path>\n</svg>";
 
 /***/ },
-/* 467 */
+/* 468 */
 /*!**************************************************!*\
   !*** ./~/html-loader!./src/account-outlined.svg ***!
   \**************************************************/
@@ -45628,7 +45717,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-account-outlined\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M278.088764,500 C190.723711,500 100.959616,499.78903 11.3954418,499.367089 L0,499.367089 L0.799680128,487.552743 C1.19952019,480.801688 4.9980008,421.940928 14.3942423,399.78903 C15.9936026,395.780591 26.1895242,370.886076 51.9792083,361.181435 L130.747701,327.637131 L163.934426,312.236287 C164.534186,312.025316 179.128349,305.696203 183.126749,287.341772 C183.526589,284.599156 183.326669,280.801688 182.926829,279.746835 C181.127549,276.160338 181.127549,276.160338 176.729308,270.886076 L176.529388,270.675105 C175.129948,268.987342 143.942423,229.957806 136.745302,173.628692 C136.345462,170.886076 132.546981,144.092827 136.145542,112.447257 C141.143543,67.5105485 158.336665,34.3881857 186.12555,16.6666667 C187.32507,15.8227848 213.714514,0 251.09956,0 C272.890844,0 294.082367,5.48523207 314.07437,16.0337553 C321.271491,19.4092827 381.847261,51.0548523 365.253898,175.316456 C364.854058,179.324895 358.656537,228.691983 325.669732,270.675105 C324.870052,271.518987 324.070372,272.57384 323.070772,273.839662 C321.471411,275.738397 319.272291,278.059072 318.072771,280.168776 C317.872851,281.223629 317.473011,283.966245 318.472611,287.130802 L318.672531,287.763713 L318.872451,288.607595 C319.072371,289.029536 322.271092,304.219409 341.463415,313.080169 L384.446222,333.544304 L447.820872,360.337553 C449.220312,360.970464 487.005198,376.793249 495.001999,429.324895 L495.201919,430.379747 L500,499.578059 L488.604558,499.578059 C487.604958,499.367089 407.836865,500 278.088764,500 L278.088764,500 L278.088764,500 L278.088764,500 L278.088764,500 Z M22.7908836,476.793249 C108.556577,477.21519 194.322271,477.42616 277.888844,477.42616 C379.448221,477.42616 450.219912,477.004219 476.609356,477.004219 L473.610556,432.278481 C467.612955,393.459916 441.023591,381.64557 439.82407,381.223629 L375.64974,354.219409 L332.666933,333.755274 C305.677729,321.097046 299.080368,298.734177 297.880848,293.670886 C294.482207,282.278481 297.680928,272.78481 298.080768,271.729958 L298.480608,270.675105 C300.879648,265.400844 304.678129,261.392405 307.277089,258.227848 C307.876849,257.383966 308.676529,256.751055 309.076369,256.118143 C338.464614,218.776371 343.862455,172.995781 343.862455,172.362869 L343.862455,172.151899 C358.656537,61.6033755 307.477009,37.5527426 305.277889,36.4978903 L304.478209,36.0759494 C287.485006,27.0042194 269.492203,22.3628692 250.89964,22.3628692 C219.312275,22.3628692 197.121152,35.6540084 196.921232,35.8649789 C143.142743,70.2531646 157.736905,168.987342 157.736905,170.042194 L157.736905,170.464135 C163.734506,218.776371 190.723711,253.586498 192.522991,255.907173 C198.320672,262.658228 198.920432,263.50211 201.919232,269.831224 C205.517793,277.42616 204.518193,287.974684 204.118353,290.92827 L203.918433,291.772152 C197.920832,321.097046 174.930028,331.85654 171.731307,333.333333 L138.544582,348.523207 L59.1763295,382.489451 C41.1835266,389.240506 34.1863255,408.016878 34.1863255,408.227848 L33.7864854,409.07173 C28.3886445,421.308017 24.5901639,455.485232 22.7908836,476.793249 L22.7908836,476.793249 L22.7908836,476.793249 L22.7908836,476.793249 L22.7908836,476.793249 Z\"></path>\n</svg>";
 
 /***/ },
-/* 468 */
+/* 469 */
 /*!******************************************!*\
   !*** ./~/html-loader!./src/add-tags.svg ***!
   \******************************************/
@@ -45637,7 +45726,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-add-tags\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M249.5,122.2c-1.4-43.5-21.1-71-37.4-86.5c-17-16.1-33.6-22.6-35.4-23.2C159.5,5,142,1.2,124.8,1.2\n        C69.5,1.2,34.5,39.5,32.4,42C4.5,71.3-0.6,104.2,0,126.6c0.7,24.2,7.9,41.4,8.2,42.1l0,0.1c34.7,76.2,99.3,80,111.9,80\n        c1.5,0,2.4-0.1,2.4-0.1l1.7-0.1l125.3-124.6L249.5,122.2z M232.9,128c-23.1,2.1-92.6,15.7-105.3,104.7l-7.1,7.1\n        c-11,0.1-71.3-3.1-104-74.7C15.7,163.3-10,99.5,38.9,48.1L39,48c0.3-0.4,34-37.8,85.8-37.8c16,0,32.3,3.6,48.4,10.6l0.3,0.1\n        c0.2,0.1,16.1,5.9,32.4,21.4c21.5,20.3,33.1,46.6,34.5,78.3L232.9,128z\"/>\n    <polygon points=\"131,85 118,85 118,114 89,114 89,127 118,127 118,155 131,155 131,127 159,127 159,114 131,114 \t\"/>\n</svg>";
 
 /***/ },
-/* 469 */
+/* 470 */
 /*!*******************************************!*\
   !*** ./~/html-loader!./src/app-store.svg ***!
   \*******************************************/
@@ -45646,7 +45735,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-app-store\" viewBox=\"0 -47 135 135\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M130.197,40 L4.729,40 C2.122,40 0,37.872 0,35.267 L0,4.726 C0,2.12 2.122,0 4.729,0 L130.197,0 C132.803,0 135,2.12 135,4.726 L135,35.267 C135,37.872 132.803,40 130.197,40 L130.197,40 L130.197,40 Z\" fill=\"#404040\"></path>\n        <path d=\"M134.032,35.268 C134.032,37.384 132.318,39.098 130.198,39.098 L4.729,39.098 C2.61,39.098 0.89,37.384 0.89,35.268 L0.89,4.725 C0.89,2.61 2.61,0.89 4.729,0.89 L130.197,0.89 C132.318,0.89 134.031,2.61 134.031,4.725 L134.032,35.268 L134.032,35.268 L134.032,35.268 Z\" fill=\"#404040\"></path>\n        <g transform=\"translate(12.000000, 6.000000)\" fill=\"#000000\">\n            <path d=\"M18.128,13.784 C18.099,10.561 20.767,8.993 20.889,8.92 C19.378,6.717 17.036,6.416 16.213,6.392 C14.246,6.185 12.338,7.569 11.336,7.569 C10.314,7.569 8.771,6.412 7.108,6.446 C4.968,6.479 2.966,7.718 1.868,9.642 C-0.398,13.565 1.292,19.33 3.463,22.501 C4.549,24.054 5.818,25.788 7.479,25.727 C9.104,25.66 9.711,24.691 11.672,24.691 C13.615,24.691 14.185,25.727 15.879,25.688 C17.623,25.66 18.721,24.128 19.769,22.561 C21.024,20.781 21.528,19.028 21.548,18.938 C21.507,18.924 18.161,17.647 18.128,13.784 L18.128,13.784 Z\"></path>\n            <path d=\"M14.928,4.306 C15.802,3.213 16.4,1.726 16.234,0.217 C14.969,0.273 13.387,1.092 12.476,2.161 C11.67,3.103 10.95,4.647 11.136,6.099 C12.557,6.205 14.016,5.382 14.928,4.306 L14.928,4.306 Z\"></path>\n        </g>\n        <g transform=\"translate(42.000000, 18.000000)\" fill=\"#000000\">\n            <path d=\"M11.645,13.504 L9.374,13.504 L8.13,9.595 L3.806,9.595 L2.621,13.504 L0.41,13.504 L4.694,0.196 L7.34,0.196 L11.645,13.504 L11.645,13.504 Z M7.755,7.955 L6.63,4.48 C6.511,4.125 6.288,3.289 5.959,1.973 L5.919,1.973 C5.788,2.539 5.577,3.375 5.287,4.48 L4.182,7.955 L7.755,7.955 L7.755,7.955 Z\"></path>\n            <path d=\"M22.662,8.588 C22.662,10.22 22.221,11.51 21.339,12.457 C20.549,13.3 19.568,13.721 18.397,13.721 C17.133,13.721 16.225,13.267 15.672,12.359 L15.632,12.359 L15.632,17.414 L13.5,17.414 L13.5,7.067 C13.5,6.041 13.473,4.988 13.421,3.908 L15.296,3.908 L15.415,5.429 L15.455,5.429 C16.166,4.283 17.245,3.711 18.693,3.711 C19.825,3.711 20.77,4.158 21.526,5.053 C22.284,5.949 22.662,7.127 22.662,8.588 L22.662,8.588 Z M20.49,8.666 C20.49,7.732 20.28,6.962 19.858,6.356 C19.397,5.724 18.778,5.408 18.002,5.408 C17.476,5.408 16.998,5.584 16.571,5.931 C16.143,6.281 15.863,6.738 15.732,7.304 C15.666,7.568 15.633,7.784 15.633,7.954 L15.633,9.554 C15.633,10.252 15.847,10.841 16.275,11.322 C16.703,11.803 17.259,12.043 17.943,12.043 C18.746,12.043 19.371,11.733 19.818,11.115 C20.266,10.496 20.49,9.68 20.49,8.666 L20.49,8.666 Z\"></path>\n            <path d=\"M33.699,8.588 C33.699,10.22 33.258,11.51 32.375,12.457 C31.586,13.3 30.605,13.721 29.434,13.721 C28.17,13.721 27.262,13.267 26.71,12.359 L26.67,12.359 L26.67,17.414 L24.538,17.414 L24.538,7.067 C24.538,6.041 24.511,4.988 24.459,3.908 L26.334,3.908 L26.453,5.429 L26.493,5.429 C27.203,4.283 28.282,3.711 29.731,3.711 C30.862,3.711 31.807,4.158 32.565,5.053 C33.32,5.949 33.699,7.127 33.699,8.588 L33.699,8.588 Z M31.527,8.666 C31.527,7.732 31.316,6.962 30.894,6.356 C30.433,5.724 29.816,5.408 29.039,5.408 C28.512,5.408 28.035,5.584 27.607,5.931 C27.179,6.281 26.9,6.738 26.769,7.304 C26.704,7.568 26.67,7.784 26.67,7.954 L26.67,9.554 C26.67,10.252 26.884,10.841 27.31,11.322 C27.738,11.802 28.294,12.043 28.98,12.043 C29.783,12.043 30.408,11.733 30.855,11.115 C31.303,10.496 31.527,9.68 31.527,8.666 L31.527,8.666 Z\"></path>\n            <path d=\"M46.039,9.772 C46.039,10.904 45.646,11.825 44.857,12.536 C43.99,13.313 42.783,13.701 41.232,13.701 C39.8,13.701 38.652,13.425 37.783,12.872 L38.277,11.095 C39.213,11.661 40.24,11.945 41.359,11.945 C42.162,11.945 42.787,11.763 43.236,11.401 C43.683,11.039 43.906,10.553 43.906,9.947 C43.906,9.407 43.722,8.952 43.353,8.583 C42.986,8.214 42.373,7.871 41.517,7.554 C39.187,6.685 38.023,5.412 38.023,3.738 C38.023,2.644 38.431,1.747 39.248,1.049 C40.062,0.35 41.148,0.001 42.506,0.001 C43.717,0.001 44.723,0.212 45.526,0.633 L44.993,2.371 C44.243,1.963 43.395,1.759 42.446,1.759 C41.696,1.759 41.11,1.944 40.69,2.312 C40.335,2.641 40.157,3.042 40.157,3.517 C40.157,4.043 40.36,4.478 40.768,4.82 C41.123,5.136 41.768,5.478 42.704,5.847 C43.849,6.308 44.69,6.847 45.231,7.465 C45.77,8.081 46.039,8.852 46.039,9.772 L46.039,9.772 Z\"></path>\n            <path d=\"M53.088,5.508 L50.738,5.508 L50.738,10.167 C50.738,11.352 51.152,11.944 51.982,11.944 C52.363,11.944 52.679,11.911 52.929,11.845 L52.988,13.464 C52.568,13.621 52.015,13.7 51.33,13.7 C50.488,13.7 49.83,13.443 49.355,12.93 C48.882,12.416 48.644,11.554 48.644,10.343 L48.644,5.506 L47.244,5.506 L47.244,3.906 L48.644,3.906 L48.644,2.149 L50.738,1.517 L50.738,3.906 L53.088,3.906 L53.088,5.508 L53.088,5.508 Z\"></path>\n            <path d=\"M63.691,8.627 C63.691,10.102 63.269,11.313 62.427,12.26 C61.544,13.235 60.372,13.721 58.911,13.721 C57.503,13.721 56.382,13.254 55.546,12.32 C54.71,11.386 54.292,10.207 54.292,8.786 C54.292,7.299 54.722,6.081 55.585,5.134 C56.446,4.186 57.608,3.712 59.069,3.712 C60.477,3.712 61.61,4.179 62.465,5.114 C63.283,6.021 63.691,7.192 63.691,8.627 L63.691,8.627 Z M61.479,8.696 C61.479,7.811 61.29,7.052 60.907,6.419 C60.46,5.653 59.821,5.271 58.993,5.271 C58.136,5.271 57.485,5.654 57.038,6.419 C56.655,7.053 56.466,7.824 56.466,8.736 C56.466,9.621 56.655,10.38 57.038,11.012 C57.499,11.778 58.143,12.16 58.974,12.16 C59.788,12.16 60.427,11.77 60.888,10.992 C61.281,10.347 61.479,9.58 61.479,8.696 L61.479,8.696 Z\"></path>\n            <path d=\"M70.621,5.783 C70.41,5.744 70.185,5.724 69.949,5.724 C69.199,5.724 68.619,6.007 68.211,6.574 C67.856,7.074 67.678,7.706 67.678,8.469 L67.678,13.504 L65.547,13.504 L65.567,6.93 C65.567,5.824 65.54,4.817 65.487,3.909 L67.344,3.909 L67.422,5.745 L67.481,5.745 C67.706,5.114 68.061,4.606 68.547,4.225 C69.022,3.882 69.535,3.711 70.088,3.711 C70.285,3.711 70.463,3.725 70.621,3.75 L70.621,5.783 L70.621,5.783 Z\"></path>\n            <path d=\"M80.156,8.252 C80.156,8.634 80.131,8.956 80.078,9.219 L73.682,9.219 C73.707,10.167 74.016,10.892 74.61,11.392 C75.149,11.839 75.846,12.063 76.702,12.063 C77.649,12.063 78.513,11.912 79.29,11.609 L79.624,13.089 C78.716,13.485 77.644,13.682 76.407,13.682 C74.919,13.682 73.751,13.244 72.901,12.369 C72.053,11.494 71.628,10.319 71.628,8.845 C71.628,7.398 72.023,6.193 72.814,5.232 C73.642,4.206 74.761,3.693 76.169,3.693 C77.552,3.693 78.599,4.206 79.31,5.232 C79.873,6.047 80.156,7.055 80.156,8.252 L80.156,8.252 Z M78.123,7.699 C78.137,7.067 77.998,6.521 77.709,6.06 C77.34,5.467 76.773,5.171 76.01,5.171 C75.313,5.171 74.746,5.46 74.313,6.04 C73.958,6.501 73.747,7.054 73.682,7.698 L78.123,7.698 L78.123,7.699 Z\"></path>\n        </g>\n        <g transform=\"translate(43.000000, 6.000000)\" fill=\"#000000\">\n            <path d=\"M6.05,4.009 C6.05,5.186 5.697,6.072 4.992,6.667 C4.339,7.216 3.411,7.491 2.209,7.491 C1.613,7.491 1.103,7.465 0.676,7.413 L0.676,0.982 C1.233,0.892 1.833,0.846 2.481,0.846 C3.626,0.846 4.489,1.095 5.071,1.593 C5.723,2.156 6.05,2.961 6.05,4.009 L6.05,4.009 Z M4.945,4.038 C4.945,3.275 4.743,2.69 4.339,2.282 C3.935,1.875 3.345,1.671 2.568,1.671 C2.238,1.671 1.957,1.693 1.724,1.739 L1.724,6.628 C1.853,6.648 2.089,6.657 2.432,6.657 C3.234,6.657 3.853,6.434 4.289,5.988 C4.725,5.542 4.945,4.892 4.945,4.038 L4.945,4.038 Z\"></path>\n            <path d=\"M11.909,5.037 C11.909,5.762 11.702,6.356 11.288,6.822 C10.854,7.301 10.279,7.54 9.561,7.54 C8.869,7.54 8.318,7.311 7.907,6.851 C7.497,6.392 7.292,5.813 7.292,5.115 C7.292,4.385 7.503,3.786 7.927,3.321 C8.351,2.856 8.921,2.623 9.639,2.623 C10.331,2.623 10.887,2.852 11.308,3.311 C11.708,3.757 11.909,4.333 11.909,5.037 L11.909,5.037 Z M10.822,5.071 C10.822,4.636 10.728,4.263 10.541,3.952 C10.321,3.576 10.008,3.388 9.601,3.388 C9.18,3.388 8.86,3.576 8.64,3.952 C8.452,4.263 8.359,4.642 8.359,5.09 C8.359,5.525 8.453,5.898 8.64,6.209 C8.867,6.585 9.183,6.773 9.591,6.773 C9.991,6.773 10.305,6.582 10.531,6.199 C10.725,5.882 10.822,5.506 10.822,5.071 L10.822,5.071 Z\"></path>\n            <path d=\"M19.765,2.719 L18.29,7.433 L17.33,7.433 L16.719,5.386 C16.564,4.875 16.438,4.367 16.34,3.863 L16.321,3.863 C16.23,4.381 16.104,4.888 15.942,5.386 L15.293,7.433 L14.322,7.433 L12.935,2.719 L14.012,2.719 L14.545,4.96 C14.674,5.49 14.78,5.995 14.865,6.473 L14.884,6.473 C14.962,6.079 15.091,5.577 15.273,4.97 L15.942,2.72 L16.796,2.72 L17.437,4.922 C17.592,5.459 17.718,5.976 17.815,6.474 L17.844,6.474 C17.915,5.989 18.022,5.472 18.164,4.922 L18.736,2.72 L19.765,2.72 L19.765,2.719 Z\"></path>\n            <path d=\"M25.198,7.433 L24.15,7.433 L24.15,4.733 C24.15,3.901 23.834,3.485 23.2,3.485 C22.889,3.485 22.638,3.599 22.443,3.828 C22.25,4.057 22.152,4.327 22.152,4.636 L22.152,7.432 L21.104,7.432 L21.104,4.066 C21.104,3.652 21.091,3.203 21.066,2.717 L21.987,2.717 L22.036,3.454 L22.065,3.454 C22.187,3.225 22.369,3.036 22.608,2.885 C22.892,2.709 23.21,2.62 23.558,2.62 C23.998,2.62 24.364,2.762 24.655,3.047 C25.017,3.396 25.198,3.917 25.198,4.609 L25.198,7.433 L25.198,7.433 Z\"></path>\n            <path d=\"M28.088,7.433 L27.041,7.433 L27.041,0.556 L28.088,0.556 L28.088,7.433 L28.088,7.433 Z\"></path>\n            <path d=\"M34.258,5.037 C34.258,5.762 34.051,6.356 33.637,6.822 C33.203,7.301 32.627,7.54 31.91,7.54 C31.217,7.54 30.666,7.311 30.256,6.851 C29.846,6.392 29.641,5.813 29.641,5.115 C29.641,4.385 29.852,3.786 30.276,3.321 C30.7,2.856 31.27,2.623 31.987,2.623 C32.68,2.623 33.235,2.852 33.657,3.311 C34.057,3.757 34.258,4.333 34.258,5.037 L34.258,5.037 Z M33.17,5.071 C33.17,4.636 33.076,4.263 32.889,3.952 C32.67,3.576 32.356,3.388 31.95,3.388 C31.528,3.388 31.208,3.576 30.989,3.952 C30.801,4.263 30.708,4.642 30.708,5.09 C30.708,5.525 30.802,5.898 30.989,6.209 C31.216,6.585 31.532,6.773 31.94,6.773 C32.34,6.773 32.653,6.582 32.879,6.199 C33.074,5.882 33.17,5.506 33.17,5.071 L33.17,5.071 Z\"></path>\n            <path d=\"M39.33,7.433 L38.389,7.433 L38.311,6.89 L38.282,6.89 C37.96,7.323 37.501,7.54 36.905,7.54 C36.46,7.54 36.1,7.397 35.829,7.113 C35.583,6.855 35.46,6.534 35.46,6.153 C35.46,5.577 35.7,5.138 36.183,4.834 C36.665,4.53 37.343,4.381 38.216,4.388 L38.216,4.3 C38.216,3.679 37.89,3.369 37.237,3.369 C36.772,3.369 36.362,3.486 36.008,3.718 L35.795,3.03 C36.233,2.759 36.774,2.623 37.412,2.623 C38.644,2.623 39.262,3.273 39.262,4.573 L39.262,6.309 C39.262,6.78 39.285,7.155 39.33,7.433 L39.33,7.433 Z M38.242,5.813 L38.242,5.086 C37.086,5.066 36.508,5.383 36.508,6.036 C36.508,6.282 36.574,6.466 36.709,6.589 C36.844,6.712 37.016,6.773 37.221,6.773 C37.451,6.773 37.666,6.7 37.862,6.555 C38.059,6.409 38.18,6.224 38.225,5.997 C38.236,5.946 38.242,5.884 38.242,5.813 L38.242,5.813 Z\"></path>\n            <path d=\"M45.285,7.433 L44.355,7.433 L44.306,6.676 L44.277,6.676 C43.98,7.252 43.474,7.54 42.763,7.54 C42.195,7.54 41.722,7.317 41.347,6.871 C40.972,6.425 40.785,5.846 40.785,5.135 C40.785,4.372 40.988,3.754 41.396,3.282 C41.791,2.842 42.275,2.622 42.851,2.622 C43.484,2.622 43.927,2.835 44.179,3.262 L44.199,3.262 L44.199,0.556 L45.248,0.556 L45.248,6.163 C45.248,6.622 45.26,7.045 45.285,7.433 L45.285,7.433 Z M44.199,5.445 L44.199,4.659 C44.199,4.523 44.189,4.413 44.17,4.329 C44.111,4.077 43.984,3.865 43.791,3.694 C43.596,3.523 43.361,3.437 43.09,3.437 C42.699,3.437 42.393,3.592 42.168,3.903 C41.945,4.214 41.832,4.611 41.832,5.096 C41.832,5.562 41.939,5.94 42.154,6.231 C42.381,6.541 42.687,6.696 43.07,6.696 C43.414,6.696 43.689,6.567 43.898,6.308 C44.1,6.069 44.199,5.781 44.199,5.445 L44.199,5.445 Z\"></path>\n            <path d=\"M54.248,5.037 C54.248,5.762 54.041,6.356 53.627,6.822 C53.193,7.301 52.619,7.54 51.9,7.54 C51.209,7.54 50.658,7.311 50.246,6.851 C49.836,6.392 49.631,5.813 49.631,5.115 C49.631,4.385 49.842,3.786 50.266,3.321 C50.69,2.856 51.26,2.623 51.979,2.623 C52.67,2.623 53.227,2.852 53.647,3.311 C54.047,3.757 54.248,4.333 54.248,5.037 L54.248,5.037 Z M53.162,5.071 C53.162,4.636 53.068,4.263 52.881,3.952 C52.66,3.576 52.348,3.388 51.94,3.388 C51.52,3.388 51.2,3.576 50.979,3.952 C50.791,4.263 50.698,4.642 50.698,5.09 C50.698,5.525 50.792,5.898 50.979,6.209 C51.206,6.585 51.522,6.773 51.93,6.773 C52.33,6.773 52.645,6.582 52.871,6.199 C53.064,5.882 53.162,5.506 53.162,5.071 L53.162,5.071 Z\"></path>\n            <path d=\"M59.883,7.433 L58.836,7.433 L58.836,4.733 C58.836,3.901 58.52,3.485 57.885,3.485 C57.574,3.485 57.323,3.599 57.129,3.828 C56.935,4.057 56.838,4.327 56.838,4.636 L56.838,7.432 L55.789,7.432 L55.789,4.066 C55.789,3.652 55.777,3.203 55.752,2.717 L56.672,2.717 L56.721,3.454 L56.75,3.454 C56.873,3.225 57.055,3.036 57.293,2.885 C57.578,2.709 57.895,2.62 58.244,2.62 C58.683,2.62 59.049,2.762 59.34,3.047 C59.703,3.396 59.883,3.917 59.883,4.609 L59.883,7.433 L59.883,7.433 Z\"></path>\n            <path d=\"M66.936,3.504 L65.782,3.504 L65.782,5.794 C65.782,6.376 65.987,6.667 66.393,6.667 C66.581,6.667 66.737,6.651 66.86,6.618 L66.887,7.413 C66.68,7.491 66.408,7.53 66.073,7.53 C65.659,7.53 65.337,7.404 65.104,7.152 C64.87,6.9 64.754,6.476 64.754,5.881 L64.754,3.504 L64.065,3.504 L64.065,2.719 L64.754,2.719 L64.754,1.855 L65.781,1.545 L65.781,2.718 L66.935,2.718 L66.935,3.504 L66.936,3.504 Z\"></path>\n            <path d=\"M72.484,7.433 L71.435,7.433 L71.435,4.753 C71.435,3.908 71.119,3.485 70.486,3.485 C70,3.485 69.668,3.73 69.486,4.22 C69.455,4.323 69.437,4.449 69.437,4.597 L69.437,7.432 L68.39,7.432 L68.39,0.556 L69.437,0.556 L69.437,3.397 L69.457,3.397 C69.787,2.88 70.26,2.622 70.873,2.622 C71.307,2.622 71.666,2.764 71.951,3.049 C72.306,3.404 72.484,3.932 72.484,4.63 L72.484,7.433 L72.484,7.433 Z\"></path>\n            <path d=\"M78.207,4.853 C78.207,5.041 78.193,5.199 78.168,5.328 L75.025,5.328 C75.039,5.794 75.189,6.149 75.48,6.395 C75.746,6.615 76.089,6.725 76.509,6.725 C76.974,6.725 77.398,6.651 77.78,6.502 L77.944,7.23 C77.497,7.424 76.971,7.521 76.362,7.521 C75.632,7.521 75.057,7.306 74.641,6.876 C74.223,6.446 74.016,5.869 74.016,5.145 C74.016,4.434 74.209,3.842 74.598,3.37 C75.004,2.866 75.553,2.614 76.246,2.614 C76.924,2.614 77.439,2.866 77.787,3.37 C78.068,3.77 78.207,4.265 78.207,4.853 L78.207,4.853 Z M77.207,4.582 C77.215,4.271 77.146,4.003 77.004,3.777 C76.822,3.486 76.545,3.34 76.17,3.34 C75.828,3.34 75.549,3.482 75.336,3.767 C75.162,3.994 75.059,4.265 75.025,4.582 L77.207,4.582 L77.207,4.582 Z\"></path>\n        </g>\n    </g>\n</svg>\n";
 
 /***/ },
-/* 470 */
+/* 471 */
 /*!********************************************!*\
   !*** ./~/html-loader!./src/arrow-down.svg ***!
   \********************************************/
@@ -45655,7 +45744,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-arrow-down\" viewBox=\"0 -8.5 32 32\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M32,1c0,0.3-0.1,0.6-0.3,0.8l-15,13c-0.4,0.3-0.9,0.3-1.3,0l-15-13c-0.4-0.4-0.5-1-0.1-1.4 c0.4-0.4,1-0.5,1.4-0.1L16,12.6L30.3,0.2c0.4-0.4,1-0.3,1.4,0.1C31.9,0.5,32,0.8,32,1z\" />\n</svg>";
 
 /***/ },
-/* 471 */
+/* 472 */
 /*!********************************************!*\
   !*** ./~/html-loader!./src/arrow-left.svg ***!
   \********************************************/
@@ -45664,7 +45753,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-arrow-left\" viewBox=\"-8.5 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M14,32c-0.3,0-0.6-0.1-0.8-0.3l-13-15c-0.3-0.4-0.3-0.9,0-1.3l13-15c0.4-0.4,1-0.5,1.4-0.1 c0.4,0.4,0.5,1,0.1,1.4L2.3,16l12.4,14.3c0.4,0.4,0.3,1-0.1,1.4C14.4,31.9,14.2,32,14,32z\" />\n</svg>";
 
 /***/ },
-/* 472 */
+/* 473 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/arrow-right.svg ***!
   \*********************************************/
@@ -45673,7 +45762,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-arrow-right\" viewBox=\"-8.5 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M1,0c0.3,0,0.6,0.1,0.8,0.3l13,15c0.3,0.4,0.3,0.9,0,1.3l-13,15c-0.4,0.4-1,0.5-1.4,0.1 c-0.4-0.4-0.5-1-0.1-1.4L12.6,16L0.2,1.7c-0.4-0.4-0.3-1,0.1-1.4C0.5,0.1,0.8,0,1,0z\" />\n</svg>";
 
 /***/ },
-/* 473 */
+/* 474 */
 /*!******************************************!*\
   !*** ./~/html-loader!./src/arrow-up.svg ***!
   \******************************************/
@@ -45682,7 +45771,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-arrow-up\" viewBox=\"0 -8.5 32 32\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M0,14c0-0.3,0.1-0.6,0.3-0.8l15-13c0.4-0.3,0.9-0.3,1.3,0l15,13c0.4,0.4,0.5,1,0.1,1.4 c-0.4,0.4-1,0.5-1.4,0.1L16,2.3L1.7,14.7c-0.4,0.4-1,0.3-1.4-0.1C0.1,14.4,0,14.2,0,14z\" />\n</svg>";
 
 /***/ },
-/* 474 */
+/* 475 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/baby-bottle.svg ***!
   \*********************************************/
@@ -45691,7 +45780,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-baby-bottle\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<path d=\"M84.9,47.5c3.5,1.5,4.4,2.7,8.4-0.5c4.3-4.3,3.1-8.4,0-12.1c3.7-6.1,4.5-12.8,2.1-19.5c0,0,8.4-7.4,2.5-13.3\r\n\tc-5.9-5.9-13,2.8-13,2.8c-6.8-1.7-13.8-1.8-20.4,1.4c-3.7-3.1-7.2-3.1-11,0c-2,1.6-3,5.7-0.6,9c-3.3,0.3-8.5,1.5-11,4.1L4,56.9\r\n\tc-2.8,2.8-4,3.6-4,7.6c0,3.9,1.8,8,4.5,10.8l20.5,20.7c5.7,5.7,12.9,5.3,18.6-0.4l37.2-37.3C83.3,55.6,84.6,50.9,84.9,47.5z\r\n\t M83.7,8.3c1.3,0.6,2.8,0.4,3.8-0.6l3-3c1.3-1.3,3.5-1.3,4.9,0s1.3,3.5,0,4.9l-3,3c-1,1-1.3,2.5-0.6,3.8c2.3,4.7,0.9,11.5-1.3,16.1\r\n\tL67.6,9.5C72.2,7.4,79,6,83.7,8.3z M28.3,94.4L5.5,71.6c-1.5-1.5-2.4-3.5-2.4-5.7c0-2.1,0.8-4.2,2.4-5.7l38.7-38.7\r\n\tc3.1-3.1,10-4.9,13.2-1.8l22.8,22.8c3.1,3.1,1.3,10-1.8,13.1L39.7,94.4C36.6,97.6,31.5,97.6,28.3,94.4z M86.5,44.1L55,12.6\r\n\tc-0.7-1.5-0.6-2.6,0.9-4.1c1.1-1.1,3.5-1.7,4.6-0.6L92,39.5c1.1,1.1,0.5,3.5-0.6,4.6C90.4,45.2,87.6,45.2,86.5,44.1z M45,31l4.1,4.1\r\n\tc1.3,1.3,2.4,2.3,3.7,1c1.3-1.3,0.3-2.4-1-3.7l-4.1-4.1c-1.3-1.3-2.4-2.3-3.7-1C42.7,28.6,43.7,29.7,45,31z M35.8,35.5\r\n\tc-1.3,1.3-0.4,2.5,0.8,3.8l9,9c1.3,1.3,2.5,2.1,3.8,0.8c1.3-1.3,0.4-2.5-0.9-3.8l-9-9C38.3,35.1,37.1,34.2,35.8,35.5z M31.4,44.5\r\n\tc-1.3-1.3-2.5-2.2-3.8-0.9c-1.3,1.3,0,3.4,1.3,4.7l4.1,4.1c1.3,1.3,2.1,1.3,3.4,0c1.3-1.3,0.4-2.5-0.9-3.8L31.4,44.5z\"/>\r\n</svg>";
 
 /***/ },
-/* 475 */
+/* 476 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/bell.svg ***!
   \**************************************/
@@ -45700,7 +45789,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-bell\" viewBox=\"0 -8 45 45\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M45,25.9c0,0,0-0.1,0-0.1c0,0,0,0,0,0c-0.5-2.7-2.5-3.5-4-3.7c-0.7-0.1-2.2-0.6-2.4-1.4c-0.3-3.2-1.1-6-2.3-8.2\n            c-1-1.8-2.4-3.3-4-4.4c-2.8-1.9-5.5-2-6-2c0,0,0,0,0,0H23V2.2h2.7V0H19v2.2h2.6V6h-3.1h0C13.6,6.1,10,8.7,7.8,13.5\n            c-1.3,2.9-1.6,5.8-1.7,6.8l-0.1,0v0c0,0.1-0.2,1.4-2.4,1.8c-1.3,0.3-3.7,1.4-3.6,3.9c0,0.3,0.2,0.6,0.5,0.7c0.1,0,7.8,2.7,17.3,3.2\n            c0.7,0,2.5,0.1,4.3,0.1c1.7,0,3.5,0,4.8-0.1c4.6-0.3,11.4-1.1,17.6-3.2C44.9,26.6,45.1,26.2,45,25.9z M9.2,14.1\n            c1.9-4.3,5-6.6,9.3-6.7h7.7h0c0.3,0,2.7,0,5.2,1.7c3.2,2.1,5.1,5.8,5.6,11c-1.8,0.4-7.5,1.6-14.9,1.6c-5.1,0-10-0.6-14.6-1.6\n            C7.7,19.1,8.1,16.6,9.2,14.1z M26.8,28.5c-2.6,0.2-7.6,0.1-8.9,0c-7.9-0.4-14.5-2.4-16.3-3c0.1-0.5,0.5-1,1.1-1.4\n            c0.6-0.4,1.3-0.6,1.4-0.6c1.9-0.4,2.7-1.3,3.2-2c4.8,1.1,9.8,1.7,15,1.7c7.7,0,13.5-1.2,15.3-1.7c0.9,1.3,3,1.8,3.3,1.8c0,0,0,0,0,0\n            c1.9,0.2,2.5,1.4,2.7,2.1C37.2,27.6,30.3,28.2,26.8,28.5z\"/>\n</svg>";
 
 /***/ },
-/* 476 */
+/* 477 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/benefits-egg.svg ***!
   \**********************************************/
@@ -45709,7 +45798,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-benefits-egg\" viewBox=\"-10 35 440 440\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M310,193.9c-28.1-48.3-63-74.8-98.7-74.8s-70.6,26.5-98.7,74.8c-23.1,39.5-37.8,88.2-37.8,124.7\n            c0,37.8,16,72.2,41.2,96.6c-14.7,5.5-23.1,12.6-23.1,19.7c0,18.5,52.9,33.6,118.4,33.6s118.4-15.1,118.4-33.6\n            c0-7.6-8.8-14.3-23.1-19.7c25.2-24.4,41.2-58.8,41.2-96.6C347.8,282.1,333.1,233.4,310,193.9z M211.7,443.4\n            c-65.9,0-121.8-63-121.8-124.7c0-77.3,57.1-186.5,120.1-186.5c64.3,0,122.2,115.9,122.2,186.5C332.2,387.9,278.5,443.4,211.7,443.4\n            z M216.7,283.8c-7.6-3.4-13-6.3-15.5-8.8c-2.5-2.9-4.2-6.3-4.2-10.9c0-5,1.3-8.8,3.8-11.8c2.5-2.9,6.7-4.6,12.2-4.6\n            s9.7,1.7,12.6,5.5c2.9,3.4,4.6,8.4,4.6,15.1h26v-0.4c0-11.3-2.9-20.2-9.2-27.3c-6.3-7.1-14.7-11.3-25.6-12.6v-19.7h-14.3v19.3\n            c-11.3,1.3-20.2,5-26.9,11.3c-6.7,6.3-10.1,14.7-10.1,24.8c0,10.9,3.4,19.7,10.1,25.6c6.7,5.9,16.8,11.3,30.7,16\n            c7.1,2.9,12.2,5.5,15.1,8.4c2.9,2.9,4.2,7.1,4.2,11.8c0,5-1.7,8.8-4.6,11.8c-2.9,2.9-7.6,4.2-13.4,4.2s-10.9-1.7-14.7-5\n            c-3.8-3.4-5.9-8.8-5.9-16.4h-26l-0.4,0.4c-0.4,13,3.4,22.7,10.9,29.4s17.2,10.5,28.6,11.3v17.6h14.3v-17.6\n            c11.3-1.3,20.6-5,26.9-11.3c6.7-6.3,9.7-14.7,9.7-25.2c0-10.9-3.4-19.7-10.1-26C240.2,293.4,230.2,288,216.7,283.8z\"/>\n    <path d=\"M415.8,309.8h-42.4c-2.5,0-4.2-1.7-4.2-4.2v-10.1c0-2.1,1.7-4.2,4.2-4.2h42.4c2.5,0,4.2,2.1,4.2,4.2v10.1\n            C420,308.1,418.3,309.8,415.8,309.8z\"/>\n    <path d=\"M217.6,53.2v42c0,2.1-1.7,4.2-4.2,4.2h-10.1c-2.1,0-4.2-1.7-4.2-4.2v-42c0-2.1,2.1-4.2,4.2-4.2h10.1\n            C215.9,49,217.6,50.7,217.6,53.2z\"/>\n    <path d=\"M46.6,309.8H4.2c-2.1,0-4.2-1.7-4.2-4.2v-10.1c0-2.1,1.7-4.2,4.2-4.2h42.4c2.1,0,4.2,2.1,4.2,4.2v10.1\n            C50.8,308.1,48.7,309.8,46.6,309.8z\"/>\n    <path d=\"M94.5,169.5l-29.8-29.4c-1.7-1.7-1.7-4.2,0-5.9l7.1-7.1c1.7-1.7,4.2-1.7,5.9,0l29.8,29.4\n            c1.7,1.7,1.7,4.2,0,5.9l-6.7,7.1C99.1,171.2,96.2,171.2,94.5,169.5z\"/>\n    <path d=\"M323.8,169.5l29.8-29.4c1.7-1.7,1.7-4.2,0-5.9l-7.1-7.1c-1.7-1.7-4.2-1.7-5.9,0l-29.8,29.4\n            c-1.7,1.7-1.7,4.2,0,5.9l7.1,7.1C319.6,171.2,322.1,171.2,323.8,169.5z\"/>\n</svg>";
 
 /***/ },
-/* 477 */
+/* 478 */
 /*!******************************************!*\
   !*** ./~/html-loader!./src/bookmark.svg ***!
   \******************************************/
@@ -45718,7 +45807,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-bookmark\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n<path d=\"M52.3,8c41.8,0,83.7,0,125.5,0c5.8,0,11.7,0,17.5,0c-1.7-1.7-3.3-3.3-5-5c0,27.3,0,54.6,0,81.8\n\tc0,43.5,0,87,0,130.4c0,10,0,20,0,30c2.8-1.2,5.7-2.4,8.5-3.5c-20.9-23.2-41.7-46.4-62.6-69.7c-3-3.3-5.9-6.6-8.9-9.9\n\tc-1.7-1.9-5.3-1.9-7.1,0c-20.9,23.2-41.7,46.4-62.6,69.7c-3,3.3-5.9,6.6-8.9,9.9c2.8,1.2,5.7,2.4,8.5,3.5c0-27.3,0-54.6,0-81.8\n\tc0-43.5,0-87,0-130.4c0-10,0-20,0-30c0-6.4-10-6.4-10,0c0,27.3,0,54.6,0,81.8c0,43.5,0,87,0,130.4c0,10,0,20,0,30\n\tc0,4.2,5.6,6.8,8.5,3.5c20.9-23.2,41.7-46.4,62.6-69.7c3-3.3,5.9-6.6,8.9-9.9c-2.4,0-4.7,0-7.1,0c20.9,23.2,41.7,46.4,62.6,69.7\n\tc3,3.3,5.9,6.6,8.9,9.9c3,3.3,8.5,0.6,8.5-3.5c0-27.3,0-54.6,0-81.8c0-43.5,0-87,0-130.4c0-10,0-20,0-30c0-2.7-2.3-5-5-5\n\tc-41.8,0-83.7,0-125.5,0C64-2,58.1-2,52.3-2C45.8-2,45.8,8,52.3,8z\"/>\n</svg>\n";
 
 /***/ },
-/* 478 */
+/* 479 */
 /*!********************************************!*\
   !*** ./~/html-loader!./src/bookmarked.svg ***!
   \********************************************/
@@ -45727,7 +45816,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-bookmarked\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <polygon points=\"52.3,5 195.4,5 195.4,246.5 123.8,167.2 52.3,246.5 \t\"/>\n    <path d=\"M52.3,10c41.9,0,83.7,0,125.6,0c5.8,0,11.7,0,17.5,0c-1.7-1.7-3.3-3.3-5-5c0,27.3,0,54.6,0,82\n\t\t\tc0,43.2,0,86.4,0,129.5c0,10,0,20,0,30c2.8-1.2,5.7-2.4,8.5-3.5c-20.9-23.2-41.8-46.3-62.6-69.5c-3-3.3-5.9-6.6-8.9-9.9\n\t\t\tc-1.7-1.9-5.3-1.9-7.1,0c-20.9,23.2-41.8,46.3-62.6,69.5c-3,3.3-5.9,6.6-8.9,9.9c2.8,1.2,5.7,2.4,8.5,3.5c0-27.3,0-54.6,0-82\n\t\t\tc0-43.2,0-86.4,0-129.5c0-10,0-20,0-30c0-6.4-10-6.4-10,0c0,27.3,0,54.6,0,82c0,43.2,0,86.4,0,129.5c0,10,0,20,0,30\n\t\t\tc0,4.2,5.6,6.8,8.5,3.5c20.9-23.2,41.8-46.3,62.6-69.5c3-3.3,5.9-6.6,8.9-9.9c-2.4,0-4.7,0-7.1,0c20.9,23.2,41.8,46.3,62.6,69.5\n\t\t\tc3,3.3,5.9,6.6,8.9,9.9c3,3.3,8.5,0.6,8.5-3.5c0-27.3,0-54.6,0-82c0-43.2,0-86.4,0-129.5c0-10,0-20,0-30c0-2.7-2.3-5-5-5\n\t\t\tc-41.9,0-83.7,0-125.6,0C64,0,58.1,0,52.3,0C45.8,0,45.8,10,52.3,10z\"/>\n</svg>\n";
 
 /***/ },
-/* 479 */
+/* 480 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/bullet-point.svg ***!
   \**********************************************/
@@ -45736,7 +45825,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-bullet-point\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125,249.3C56.4,249.3,0.7,193.6,0.7,125S56.4,0.7,125,0.7S249.3,56.4,249.3,125S193.6,249.3,125,249.3z\n                 M125,10.7C62,10.7,10.7,62,10.7,125c0,63,51.3,114.3,114.3,114.3c63,0,114.3-51.3,114.3-114.3C239.3,62,188,10.7,125,10.7z\"/>\n        <circle cx=\"124.3\" cy=\"123.7\" r=\"78.3\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 480 */
+/* 481 */
 /*!*************************************************!*\
   !*** ./~/html-loader!./src/buyer-assurance.svg ***!
   \*************************************************/
@@ -45745,7 +45834,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-buyer-assurance\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M48.7-360.7C48.7-360.7,48.7-360.7,48.7-360.7l0,77.3c0,4.1,2.8,8,6.7,9.3l73.5,23.9c0,0,0,0,0,0l45.4,62.6\n                c1.8,2.5,4.9,4,8,4c1,0,2-0.2,2.9-0.5l73.5-23.9c0,0,0,0,0,0l73.5,23.9c0.9,0.3,1.9,0.5,2.9,0.5c3.1,0,6.2-1.5,8-4l45.5-62.6\n                c0,0,0,0,0,0l73.5-23.9c3.9-1.3,6.7-5.2,6.7-9.3v-77.3c0,0,0,0,0,0l45.5-62.6c2.4-3.3,2.4-8.1,0-11.5l-45.4-62.6c0,0,0,0,0,0v-77.3\n                c0-4.1-2.8-8-6.7-9.3l-73.5-23.9c0,0,0,0,0,0l-45.5-62.6c-1.8-2.5-4.9-4-8-4c-1,0-2,0.2-2.9,0.5L258.9-650c0,0,0,0,0,0l-73.5-23.9\n                c-0.9-0.3-1.9-0.5-2.9-0.5c-3.1,0-6.2,1.5-8,4L129-607.8c0,0,0,0,0,0l-73.5,23.9c-3.9,1.3-6.7,5.2-6.7,9.3v77.3c0,0,0,0,0,0\n                L3.3-434.7c-2.4,3.3-2.4,8.1,0,11.5L48.7-360.7z M60.2-489.3c1.5-2.1,2.5-5.1,2.5-7.7v-74.5l70.9-23c2.5-0.8,5.1-2.7,6.6-4.8\n                l43.8-60.3l70.9,23c1.5,0.5,3,0.6,4.1,0.6c1,0,2.5-0.1,4.1-0.6l70.9-23l43.8,60.3c1.5,2.1,4.1,4,6.6,4.8l70.9,23v74.5\n                c0,2.6,1,5.6,2.5,7.7l43.8,60.3l-43.8,60.3c-1.5,2.1-2.5,5.1-2.5,7.7v74.5l-70.9,23c-2.5,0.8-5.1,2.7-6.6,4.8l-43.8,60.3l-70.9-23\n                c-1.5-0.5-3-0.6-4.1-0.6c-1,0-2.5,0.1-4.1,0.6l-70.9,23l-43.8-60.3c-1.5-2.1-4.1-4-6.6-4.8l-70.9-23V-361c0-2.6-1-5.6-2.5-7.7\n                L16.4-429L60.2-489.3z\"/>\n        <path d=\"M207.8-379.3c-7.2-0.4-11.6-0.9-13-1.4c-1.4-0.5-2.8-1.6-4-3.3c-1.2-1.7-1.9-3.4-1.9-5c0-1.6,0.9-5.4,2.6-11.4l34-114.1\n                h-4.3l-51.5,12.3l0.9,3.8c5-0.5,8.3-0.8,10-0.8c3.4,0,6.1,0.9,7.9,2.6c1.8,1.8,2.8,4.1,2.8,7.1c0,1.5-0.2,3.2-0.6,4.9\n                c-0.1,0.6-1.8,6.1-4.9,16.4l-20,67.8c-2.1,7.3-4.1,12.1-5.8,14.4c-1.7,2.3-3.9,3.9-6.6,4.9c-2.7,1-7.4,1.6-14.3,1.7l-1.1,3.6h68.7\n                L207.8-379.3z\"/>\n        <path d=\"M253.2-377.6c-3.1,0-6.4-1-9.8-3.1c-3.4-2.1-6.1-4.8-8.2-8.3c-2-3.5-4.2-9.3-6.6-17.4h-3.3l-5,33.4h3.8\n                c1.1-1.5,2.2-2.6,3.1-3c0.9-0.5,2.2-0.7,3.9-0.7c1.9,0,4.7,0.5,8.4,1.5c5.7,1.5,10.5,2.2,14.4,2.2c5.8,0,11.3-1.4,16.6-4.2\n                c5.3-2.8,9.3-6.6,12-11.3c2.7-4.7,4-9.7,4-14.9c0-4.9-1.1-9.4-3.4-13.7c-2.3-4.3-8.7-12.1-19.3-23.4c-3-3.2-5-5.7-5.8-7.6\n                c-0.9-1.9-1.3-3.9-1.3-6c0-2.5,1-4.7,3-6.5c2-1.8,4.5-2.7,7.6-2.7c5,0,9.7,2.3,14.1,6.9c4.4,4.6,6.8,10.9,7.4,18.8h3.8l4.5-31h-3.6\n                c-1.6,2.3-3.7,3.4-6.3,3.4c-1.8,0-4.2-0.4-7.2-1.1c-6-1.5-11.1-2.3-15.3-2.3c-9.5,0-16.9,2.4-22.2,7.3c-5.3,4.8-7.9,10.9-7.9,18.1\n                c0,4.3,0.9,8.1,2.6,11.5c2.5,4.6,7.6,11.2,15.5,19.7c5.7,6.2,9.3,10.8,10.9,13.7c1.6,2.9,2.4,6,2.4,9.1c0,3.2-1.2,6-3.6,8.3\n                C259.9-378.7,256.9-377.6,253.2-377.6z\"/>\n        <path d=\"M318.9-372.9c5.4,0,10.8-1.9,16.4-5.6c5.6-3.8,10.7-9.6,15.3-17.7l-3.6-2.2c-4.1,5.8-7.6,9.9-10.7,12.3\n                c-1.2,0.9-2.4,1.4-3.5,1.4c-0.7,0-1.4-0.2-2-0.7c-0.6-0.5-0.9-1-0.9-1.7c0-1.9,0.6-4.7,1.7-8.3l18.2-59h11.4l3.5-11.5h-11.2\n                l8.4-27.2h-5.4c-8.5,9.3-15.7,16.1-21.8,20.3c-6,4.2-13.1,7.9-21.3,11l-1.9,7.4h12.9l-17.1,54.4c-1.9,6.1-2.8,11.1-2.8,15\n                c0,3.5,1.3,6.4,3.8,8.7C310.8-374.1,314.3-372.9,318.9-372.9z\"/>\n        <polygon points=\"221.6,315.6 168.3,252.2 139.2,276.7 220.6,373.4 375.8,201.2 347.6,175.8    \"/>\n        <path d=\"M488,205.8c-7-9.7-13-28-13-40v-34.8c0-16.8-12.5-34.1-28.5-39.3l-33.1-10.7c-11.4-3.7-27-15-34-24.7l-20.4-28.1\n                c-7.4-10.2-21-16.8-34.6-16.8c-4.1,0-7.9,0.6-11.5,1.8L279.7,24c-5.4,1.8-13.1,2.8-21,2.8c-8,0-15.6-1-21-2.8l-33.1-10.7\n                c-3.6-1.2-7.5-1.8-11.5-1.8c-13.6,0-27.2,6.6-34.6,16.8l-20.4,28.1c-7,9.7-22.6,21-34,24.7L71,91.8c-16,5.2-28.5,22.4-28.5,39.3\n                v34.8c0,12-5.9,30.3-13,40L9,233.9c-9.9,13.6-9.9,34.9,0,48.5l20.4,28.1c7,9.7,13,28,13,40v34.8c0,16.8,12.5,34.1,28.5,39.3\n                l33.1,10.7c11.4,3.7,27,15,34,24.7l20.4,28.1c7.4,10.2,21,16.8,34.6,16.8c4.1,0,7.9-0.6,11.5-1.8l33.1-10.7\n                c5.4-1.8,13.1-2.8,21-2.8c8,0,15.6,1,21,2.8l33.1,10.7c3.6,1.2,7.5,1.8,11.5,1.8c13.6,0,27.2-6.6,34.6-16.8l20.4-28.1\n                c7-9.7,22.6-21,34-24.7l33.1-10.7c16-5.2,28.5-22.4,28.5-39.3v-34.8c0-12,6-30.3,13-40l20.4-28.1c9.9-13.6,9.9-34.9,0-48.5\n                L488,205.8z M496.2,273.7l-20.4,28.1c-8.9,12.2-15.9,33.7-15.9,48.8v34.8c0,10.2-8.5,21.8-18.2,25l-33.1,10.7\n                c-14.4,4.7-32.6,17.9-41.5,30.2l-20.4,28.1c-4.5,6.2-13.8,10.6-22.5,10.6c-2.5,0-4.8-0.3-6.9-1l-33.1-10.7\n                c-6.9-2.3-16-3.5-25.7-3.5c-9.6,0-18.7,1.2-25.7,3.5L200,488.9c-2.1,0.7-4.4,1-6.9,1c-8.7,0-18-4.3-22.5-10.6l-20.4-28.1\n                c-8.9-12.2-27.1-25.5-41.5-30.2l-33.1-10.7c-9.7-3.1-18.2-14.8-18.2-25v-34.8c0-15.1-7-36.6-15.9-48.8l-20.4-28.1\n                c-6-8.2-6-22.7,0-30.9l20.4-28.1c8.9-12.2,15.9-33.7,15.9-48.8v-34.8c0-10.2,8.5-21.8,18.2-25l33.1-10.7\n                c14.4-4.7,32.6-17.9,41.5-30.2l20.4-28.1c4.5-6.2,13.8-10.6,22.5-10.6c2.5,0,4.8,0.3,6.9,1l33.1,10.7c6.9,2.3,16,3.5,25.7,3.5\n                c9.6,0,18.7-1.2,25.7-3.5l33.1-10.7c2.1-0.7,4.4-1,6.9-1c8.7,0,18,4.3,22.5,10.6l20.4,28.1c8.9,12.2,27.1,25.5,41.5,30.2l33.1,10.7\n                c9.7,3.1,18.2,14.8,18.2,25v34.8c0,15.1,7,36.6,15.9,48.8l20.4,28.1C502.2,251,502.2,265.4,496.2,273.7z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 481 */
+/* 482 */
 /*!*******************************************!*\
   !*** ./~/html-loader!./src/cart-open.svg ***!
   \*******************************************/
@@ -45754,7 +45843,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-cart-open\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <polygon points=\"239.5,73.2 216.5,163 83.2,163 51.8,37 1,37 1,47 44,47 75.4,173 224.3,173 250.3,73.2\"/>\n        <circle cx=\"107.3\" cy=\"201.7\" r=\"11.7\"/>\n        <circle cx=\"193.3\" cy=\"201.7\" r=\"11.7\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 482 */
+/* 483 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/cart.svg ***!
   \**************************************/
@@ -45763,7 +45852,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-cart\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path fill=\"none\" d=\"M193.6,211.8c-4.7,0-8.6,3.9-8.6,8.7s3.9,8.7,8.6,8.7s8.6-3.9,8.6-8.7S198.3,211.8,193.6,211.8z\"/>\n        <path fill=\"none\" d=\"M100.4,211.8c-4.7,0-8.6,3.9-8.6,8.7s3.9,8.7,8.6,8.7c4.7,0,8.6-3.9,8.6-8.7S105.1,211.8,100.4,211.8z\"/>\n        <polygon fill=\"none\" points=\"63.7,64 83.1,170 214.7,170 235.5,64    \"/>\n        <path d=\"M61.6,53L50.8,7H0v11h42.2l9.5,40.4L74.1,181h149.5l25.1-128H61.6z M214.7,170H83.1L63.7,64h171.7L214.7,170z\"/>\n        <path d=\"M100.4,199.8c-11.3,0-20.4,9.3-20.4,20.7s9.2,20.7,20.4,20.7s20.4-9.3,20.4-20.7S111.7,199.8,100.4,199.8z M100.4,229.1\n                c-4.7,0-8.6-3.9-8.6-8.7s3.9-8.7,8.6-8.7c4.7,0,8.6,3.9,8.6,8.7S105.1,229.1,100.4,229.1z\"/>\n        <path d=\"M193.6,199.8c-11.3,0-20.4,9.3-20.4,20.7s9.2,20.7,20.4,20.7s20.4-9.3,20.4-20.7S204.9,199.8,193.6,199.8z M193.6,229.1\n                c-4.7,0-8.6-3.9-8.6-8.7s3.9-8.7,8.6-8.7s8.6,3.9,8.6,8.7S198.3,229.1,193.6,229.1z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 483 */
+/* 484 */
 /*!**************************************************!*\
   !*** ./~/html-loader!./src/checkmark-circle.svg ***!
   \**************************************************/
@@ -45772,7 +45861,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-checkmark-circle\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<circle class=\"dibsvg-checkmark-circle-background\" cx=\"125\" cy=\"125\" r=\"97.5\"/>\r\n<path class=\"dibsvg-checkmark-circle-foreground\" d=\"M250,125c0,69-56,125-125,125S0,194,0,125S56,0,125,0S250,56,250,125z M170.7,62l-63.1,82.4L82.9,109\r\n    l-20.5,14.3l44.3,63.5l83.9-109.6L170.7,62z\"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 484 */
+/* 485 */
 /*!************************************************!*\
   !*** ./~/html-loader!./src/checkmark-void.svg ***!
   \************************************************/
@@ -45781,7 +45870,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-checkmark-void\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<circle class=\"dibsvg-checkmark-void-background\" cx=\"125.5\" cy=\"124\" r=\"112.5\"/>\r\n<polygon class=\"dibsvg-checkmark-void-check\" points=\"111.5,199.4 58.5,123.6 78.9,109.2 112.9,157.8 190.3,61.9 209.7,77.5 \"/>\r\n<path class=\"dibsvg-checkmark-void-void\" d=\"M214,212.7c22.3-22.6,36-53.6,36-87.7C250,56.1,193.9,0,125,0S0,56.1,0,125s56.1,125,125,125\r\n    c34.1,0,65.1-13.8,87.7-36c0.2-0.2,0.4-0.4,0.7-0.6C213.6,213.2,213.8,212.9,214,212.7z M230,125c0,25.4-9,48.6-24.1,66.8L58.2,44.1\r\n    C76.4,29,99.6,20,125,20C182.9,20,230,67.1,230,125z M20,125c0-25.4,9-48.6,24.1-66.8L191.9,206c-18.3,15-41.5,24-66.9,24\r\n    C67.1,230,20,182.9,20,125z\"/>\r\n<rect x=\"58.4\" y=\"-727.5\" fill=\"none\" width=\"986.1\" height=\"925\"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 485 */
+/* 486 */
 /*!*******************************************!*\
   !*** ./~/html-loader!./src/checkmark.svg ***!
   \*******************************************/
@@ -45790,7 +45879,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-checkmark\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<polygon points=\"86.1,218.4 2.2,140.1 28.8,112 86.1,165.5 222.7,37.9 248.8,65.4 \"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 486 */
+/* 487 */
 /*!***************************************************!*\
   !*** ./~/html-loader!./src/circle-arrow-left.svg ***!
   \***************************************************/
@@ -45799,7 +45888,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-circle-arrow-left\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M0,125 C0,56.0810811 56.0810811,0 125,0 C193.918919,0 250,56.0810811 250,125 C250,193.918919 193.918919,250 125,250 C56.0810811,250 0,193.918919 0,125 L0,125 Z M9.99034749,125 C9.99034749,188.416988 61.5830116,240.009653 125,240.009653 C188.416988,240.009653 240.009653,188.416988 240.009653,125 C240.009653,61.5830116 188.416988,9.99034749 125,9.99034749 C61.5830116,9.99034749 9.99034749,61.5830116 9.99034749,125 L9.99034749,125 Z\"></path>\n        <path d=\"M134.266409,179.440154 L144.88417,168.870656 L103.861004,127.702703 L145.849421,91.9401544 L136.148649,80.5501931 L81.8050193,126.833977 L134.266409,179.440154 Z\"></path>\n    </g>\n</svg>";
 
 /***/ },
-/* 487 */
+/* 488 */
 /*!****************************************************!*\
   !*** ./~/html-loader!./src/circle-arrow-right.svg ***!
   \****************************************************/
@@ -45808,7 +45897,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-circle-arrow-right\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M259,518C116.2,518,0,401.8,0,259S116.2,0,259,0s259,116.2,259,259S401.8,518,259,518z M259,20.7\n                C127.6,20.7,20.7,127.6,20.7,259S127.6,497.3,259,497.3S497.3,390.4,497.3,259S390.4,20.7,259,20.7z\"/>\n    </g>\n    <g>\n        <polygon points=\"239.8,371.8 217.8,349.9 302.8,264.6 215.8,190.5 235.9,166.9 348.5,262.8\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 488 */
+/* 489 */
 /*!************************************************************!*\
   !*** ./~/html-loader!./src/circle-question-mark-empty.svg ***!
   \************************************************************/
@@ -45817,7 +45906,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-circle-question-mark-empty\" viewBox=\"0 0 518 507\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M258.6,0.4 C116,0.4 0,114.2 0,253.7 C0,393.2 116,507 258.6,507 C401.2,507 517.2,393.2 517.2,253.7 C517.2,114.2 401.2,0.4 258.6,0.4 L258.6,0.4 L258.6,0.4 L258.6,0.4 Z M258.6,467.9 C137.6,467.9 39.8,372 39.8,253.7 C39.8,135.4 137.6,39.5 258.6,39.5 C379.6,39.5 477.4,135.4 477.4,253.7 C477.4,372 379.6,467.9 258.6,467.9 L258.6,467.9 L258.6,467.9 L258.6,467.9 Z\"></path>\n        <path d=\"M255.6,349.3 C250.3,349.3 245.7,351.2 241.9,355.4 C238.1,359.6 236.2,364.1 236.2,369.8 C236.2,375.5 238.1,380 241.9,384.2 C245.7,388.4 250.2,390.3 255.6,390.3 C260.9,390.3 265.5,388.4 269.3,384.2 C273.1,380 275,375.5 275,369.8 C275,364.1 273.1,359.6 269.3,355.4 C265.4,351.5 260.9,349.3 255.6,349.3 L255.6,349.3 L255.6,349.3 Z\"></path>\n        <path d=\"M303.7,134.3 C299.1,129.4 293.1,125.6 285.5,122.2 C277.9,119.2 268.1,117.6 256.3,117.6 C247.2,117.6 239.2,118.7 232.4,121 C225.6,123.3 219.9,126.7 215.3,130.9 C210.7,135.1 207.3,140.4 205.1,146.1 C202.8,151.8 201.7,157.9 201.3,164.7 L226.3,164.7 L226.3,162.4 C226.3,157.8 227.1,153.7 229,149.9 C230.9,146.1 233.2,142.7 236.2,140 C239.2,137.3 242.6,135.1 246.4,133.6 C250.2,132.1 254.4,131.3 258.2,131.3 C262,131.3 265.8,132.1 270,133.6 C273.8,135.1 277.6,137 280.6,139.7 C283.6,142.4 286.3,145.4 288.2,149.2 C290.1,153 291.2,156.8 291.2,161.3 C291.2,169.3 289.3,176.1 285.9,182.5 C282.5,188.9 277.9,195 273,200.7 C267.7,206.4 262.4,212.1 256.3,217.8 C250.2,223.5 244.5,229.2 239.2,235.2 C233.9,241.3 229.3,247.7 225.5,254.5 C221.7,261.3 219.8,268.9 219.1,277.6 L219.1,281.4 C219.1,287.1 219.9,292.8 221.8,297.7 C223.3,303 226,307.2 229.4,311.4 C232.8,315.2 237,318.2 241.9,320.5 C246.8,322.8 252.9,323.9 259.7,323.9 C265.8,323.9 272.2,322 279.4,317.8 C286.6,313.6 292.7,308.3 298.4,301.1 L281.3,288.6 C277.5,293.5 273.3,298.1 268.8,302.3 C264.2,306.5 259.3,308.4 253.6,308.4 C250.9,308.4 247.9,306.9 244.9,304.2 C241.9,301.2 240.3,297.4 240.3,292.4 C240.3,285.6 242.2,279.1 246,272.7 C249.8,266.3 254.3,260.2 259.7,254.1 C265.1,248 271.1,242 277.9,235.5 C284.3,229.4 290.4,223 296.1,216.2 C301.4,209.4 306.3,202.2 309.8,194.6 C313.6,187 315.5,178.7 315.5,170 C315.5,163.6 314.7,157.5 312.8,151 C311.3,144.5 308.3,139.2 303.7,134.3 L303.7,134.3 L303.7,134.3 Z\"></path>\n    </g>\n</svg>\n";
 
 /***/ },
-/* 489 */
+/* 490 */
 /*!*************************************************************!*\
   !*** ./~/html-loader!./src/circle-question-mark-filled.svg ***!
   \*************************************************************/
@@ -45826,7 +45915,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-circle-question-mark-filled\" viewBox=\"0 0 518 507\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M259,0.329237288 C116.55,0.329237288 0.548728814,114.025847 0.548728814,253.512712 C0.548728814,392.999576 116.55,506.696186 259,506.696186 C401.45,506.696186 517.451271,392.999576 517.451271,253.512712 C517.451271,114.025847 401.45,0.329237288 259,0.329237288 L259,0.329237288 L259,0.329237288 Z M269.645339,383.890678 C265.804237,388.061017 261.304661,389.926695 256.036864,389.926695 C250.769068,389.926695 246.159746,388.061017 242.42839,383.890678 C238.697034,379.720339 236.72161,375.220763 236.72161,369.513983 C236.72161,363.807203 238.587288,359.307627 242.42839,355.137288 C246.269492,350.966949 250.769068,349.101271 256.036864,349.101271 C261.304661,349.101271 265.913983,351.405932 269.645339,355.137288 C273.486441,359.307627 275.352119,363.807203 275.352119,369.513983 C275.352119,375.220763 273.376695,379.720339 269.645339,383.890678 L269.645339,383.890678 L269.645339,383.890678 Z M310.141525,194.359746 C306.739407,201.932203 301.800847,209.175424 296.533051,215.979661 C290.826271,222.783898 284.790254,229.258898 278.315254,235.294915 C271.511017,241.769915 265.475,247.805932 260.097458,253.841949 C254.829661,259.877966 250.220339,266.023729 246.488983,272.388983 C242.647881,278.863983 240.782203,285.229237 240.782203,292.14322 C240.782203,297.08178 242.318644,300.813136 245.28178,303.886017 C248.354661,306.519915 251.317797,308.056356 253.951695,308.056356 C259.658475,308.056356 264.597034,306.190678 269.09661,302.020339 C273.596186,297.85 277.766525,293.350424 281.607627,288.411864 L298.61822,300.922881 C292.911441,308.166102 286.875424,313.433898 279.632203,317.604237 C272.388983,321.774576 266.023729,323.640254 259.877966,323.640254 C253.073729,323.640254 247.037712,322.542797 242.099153,320.238136 C237.160593,317.933475 232.990254,314.970339 229.588136,311.129237 C226.186017,306.958898 223.552119,302.788559 222.015678,297.520763 C220.15,292.582203 219.38178,286.875424 219.38178,281.27839 L219.38178,277.437288 C220.15,268.767373 222.015678,261.194915 225.85678,254.280932 C229.697881,247.476695 234.197458,241.001695 239.465254,234.965678 C244.733051,228.929661 250.439831,223.222881 256.475847,217.516102 C262.511864,211.809322 267.889407,206.102542 273.157203,200.505508 C278.095763,194.798729 282.595339,188.762712 285.997458,182.287712 C289.399576,175.812712 291.265254,169.008475 291.265254,161.10678 C291.265254,156.607203 290.167797,152.766102 288.192373,148.925 C286.326695,145.083898 283.692797,142.120763 280.619915,139.486864 C277.547034,136.852966 273.815678,134.987288 269.974576,133.450847 C265.804237,131.914407 261.963136,131.146186 258.23178,131.146186 C254.390678,131.146186 250.220339,131.914407 246.488983,133.450847 C242.647881,134.987288 239.245763,137.291949 236.282627,139.925847 C233.209746,142.559746 231.014831,145.961864 229.039407,149.802966 C227.173729,153.644068 226.405508,157.814407 226.405508,162.313983 L226.405508,164.618644 L201.383475,164.618644 C201.712712,157.814407 202.919915,151.77839 205.224576,146.07161 C207.529237,140.364831 210.931356,135.097034 215.430932,130.926695 C219.930508,126.756356 225.637288,123.354237 232.441525,121.049576 C239.245763,118.744915 247.257203,117.647458 256.366102,117.647458 C268.108898,117.647458 277.986017,119.183898 285.558475,122.147034 C293.130932,125.549153 299.166949,129.390254 303.776271,134.328814 C308.275847,139.267373 311.348729,144.535169 312.885169,151.010169 C314.750847,157.485169 315.519068,163.521186 315.519068,169.996186 C315.848305,178.44661 313.982627,186.787288 310.141525,194.359746 L310.141525,194.359746 L310.141525,194.359746 Z\"></path>\n</svg>";
 
 /***/ },
-/* 490 */
+/* 491 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/clock.svg ***!
   \***************************************/
@@ -45835,7 +45924,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-clock\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125,0.7C56.4,0.7,0.7,56.4,0.7,125S56.4,249.3,125,249.3S249.3,193.6,249.3,125S193.6,0.7,125,0.7z M125,239.3\n                     C62,239.3,10.7,188,10.7,125C10.7,62,62,10.7,125,10.7c63,0,114.3,51.3,114.3,114.3C239.3,188,188,239.3,125,239.3z\"/>\n        <polygon points=\"87.1,48.8 78,53.2 120.9,139 190,139 190,129 127.2,129\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 491 */
+/* 492 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/close.svg ***!
   \***************************************/
@@ -45844,7 +45933,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-close\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M274.1,250L495,470.9c6.7,6.7,6.7,17.5,0,24.1s-17.5,6.7-24.1,0L250,274.1L29.1,495 c-6.7,6.7-17.5,6.7-24.1,0s-6.7-17.5,0-24.1L225.9,250L5,29.1C-1.7,22.4-1.7,11.6,5,5s17.5-6.7,24.1,0L250,225.9L470.9,5 c6.7-6.7,17.5-6.7,24.1,0s6.7,17.5,0,24.1L274.1,250z\"/>\n</svg>";
 
 /***/ },
-/* 492 */
+/* 493 */
 /*!************************************************!*\
   !*** ./~/html-loader!./src/commuter-train.svg ***!
   \************************************************/
@@ -45853,7 +45942,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-commuter-train\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<g>\r\n\t<path d=\"M67.3,156.8c-1.5,1.5-2.2,3.5-2.2,5.5c0,2,0.7,4,2.2,5.5c1.5,1.5,3.5,2.2,5.5,2.2s4-0.7,5.5-2.2c1.5-1.5,2.2-3.5,2.2-5.5\r\n\t\ts-0.7-4-2.2-5.5C75.5,153.8,70.3,153.8,67.3,156.8z\"/>\r\n\t<path d=\"M172.7,156.8c-1.5,1.5-2.2,3.5-2.2,5.5c0,2,0.7,4,2.5,5.5c1.5,1.5,3.5,2.2,5.5,2.2c2,0,4-0.7,5.5-2.2\r\n\t\tc1.5-1.5,2.2-3.5,2.2-5.5s-0.7-4-2.2-5.5C180.7,153.8,175.5,153.8,172.7,156.8z\"/>\r\n\t<path d=\"M226.9,176.2V46.4c0-22.4-19.1-38.3-36.8-38.3h-49.2c-1-4.5-5-8-9.4-8h-14.9c-4.5,0-8.2,3.5-9.4,8H60.9\r\n\t\tc-22.4,0-37.5,15.9-37.5,38.3v129.8c0,14.2,12.4,32.3,31.3,35.8l-30.8,30.6c-1,1-1,2.7,0,4l1.5,1.5c1,1,2.7,1,4,0l35.5-35.5h120.3\r\n\t\tl35.5,35.5c1,1,2.7,1,4,0l1.5-1.5c1-1,1-2.7,0-4l-31.1-30.3C212.8,209.8,226.9,194.8,226.9,176.2z M190.1,204.5h-2.7\r\n\t\tc-0.7-0.2-1.5-0.2-2.2,0H64.3c-0.7-0.2-1.5-0.2-2.2,0h-1.2c-13.7,0-29.8-14.9-29.8-28.6V46.4c0-19.1,13.4-30.6,29.8-30.6h47\r\n\t\tc1.5,3.5,5,6,8.7,6h14.9c3.7,0,7.2-2.5,8.7-6h50.2c13.7,0,29.1,16.9,29.1,30.6v129.8C219.2,189.6,203.8,204.5,190.1,204.5z\"/>\r\n\t<path d=\"M169.7,35.7H81.5c-16.7,0-30.1,13.4-30.1,30.1v52.9c0,4.2,3.5,7.2,7.7,7.2h132.7c4.2,0,7.7-3,7.7-7.2V65.8\r\n\t\tC199.8,49.2,186.2,35.7,169.7,35.7z M191.4,117.3H59.9V65.8c0-8,9.9-20.9,17.9-20.9H173c8,0,18.4,12.9,18.4,20.9L191.4,117.3\r\n\t\tL191.4,117.3z\"/>\r\n</g>\r\n</svg>\r\n";
 
 /***/ },
-/* 493 */
+/* 494 */
 /*!*************************************************!*\
   !*** ./~/html-loader!./src/congratulations.svg ***!
   \*************************************************/
@@ -45862,7 +45951,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-congratulations\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n    <g>\r\n        <circle cx=\"60.8\" cy=\"95.6\" r=\"4.1\"/>\r\n        <circle cx=\"54.8\" cy=\"110.9\" r=\"4.1\"/>\r\n        <circle cx=\"78.4\" cy=\"147.1\" r=\"4.1\"/>\r\n        <circle cx=\"192.8\" cy=\"91.9\" r=\"4.1\"/>\r\n        <circle cx=\"153.4\" cy=\"75.8\" r=\"4.1\"/>\r\n        <circle cx=\"194.5\" cy=\"111.7\" r=\"4.1\"/>\r\n        <path d=\"M235.6,198.5l-22.7,6.9l-16.9-55.6c0.9-0.4,1.6-0.7,2.1-1c24.5-13.3,23.5-37.3,19.6-48.2l-36.7-100L118,19.9l5.6,23.4\r\n            L62.1,26.9l-32.8,98.2l-0.1,0.2c-8.9,32.2,11.6,46,20.8,50.4c0.4,0.2,0.8,0.4,1.2,0.5l-14.9,56l-22.9-6.1l-2.3,8.7l54.5,14.5\r\n            l2.3-8.7l-22.9-6.1l15-56.1c0.9,0.2,1.8,0.2,2.3,0.3c1,0.1,2,0.1,3,0.1c25.7,0,36.8-20.1,39-30.7l20.6-99.6l17.1,72l0.1,0.2\r\n            c8.2,28,28.1,32.1,39.2,32.1c1.6,0,3.3-0.1,5-0.3c0.4,0,0.9-0.1,1.3-0.2l16.8,55.5l-22.7,6.9l2.6,8.6l54-16.4L235.6,198.5z\r\n             M95.4,146.4c-0.2,1-5.3,23.5-30.2,23.5c-0.8,0-1.6,0-2.5-0.1c-1.5-0.1-6.6-1.1-8.9-2.2c-20.7-9.9-18.9-29.1-16-39.8l17.4-52\r\n            c2.5-0.7,9.2-1.7,16.5,5.3c0.2,0.1,11.8,10.8,26,10.8c3,0,6.1-0.5,9.2-1.6L95.4,146.4z M108.5,83.2c-6.4,3.7-13.7,3.9-21.6,0.6\r\n            c-6.5-2.7-11-6.9-11-6.9c-7-6.8-13.9-7.8-18.5-7.4L68,37.8l47.3,12.6L108.5,83.2z M175.5,11.8l11.5,31.5c-3.5,6.5-9.6,10.5-18,11.9\r\n            c-7,1.1-13,0-13,0c-9.5-2-15.9,0.7-19.7,3.5L128.7,26L175.5,11.8z M185.2,143.8c-1.3,0.1-2.7,0.2-4,0.2c-19,0-27.1-13.9-30.6-25.6\r\n            L138,65.1c1.7-1.9,6.9-6.3,16.9-4.2c0.2,0.1,22.9,4.4,34.8-10.7l19.6,53.5c0.4,1,8.4,24.2-15.4,37.2\r\n            C192.6,141.7,187.7,143.5,185.2,143.8z\"/>\r\n    </g>\r\n</svg>\r\n";
 
 /***/ },
-/* 494 */
+/* 495 */
 /*!**************************************************!*\
   !*** ./~/html-loader!./src/connection-error.svg ***!
   \**************************************************/
@@ -45871,7 +45960,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-connection-error\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<g>\r\n\t<path d=\"M247.3,73.2c-13.8-8-27.9-14.6-42.3-19.8l43.5-43.5c2.1-2.1,2.1-5.6,0-7.8c-2.1-2.1-5.6-2.1-7.8,0l-47.4,47.4\r\n\t\tc-12.9-3.9-26-6.7-39.3-8.3c-25.7-3.1-51.9-1.8-77.8,3.9C32,54.8,4.1,73.6,2.9,74.4c-2.5,1.7-3.2,5.1-1.4,7.6\r\n\t\tc1.1,1.6,2.8,2.4,4.6,2.4c1.1,0,2.2-0.3,3.1-1C9.4,83.3,36.8,64.9,79,55.8c24.7-5.4,49.6-6.6,74-3.6c10.6,1.3,21,3.4,31.4,6.2\r\n\t\tl-39.8,39.8c-21-2.4-39.7-0.4-54.3,2.9c-31.5,7.1-51.4,20.8-52.2,21.4c-2.5,1.7-3.1,5.2-1.3,7.7c1.1,1.5,2.8,2.3,4.5,2.3\r\n\t\tc1.1,0,2.2-0.3,3.2-1c0.2-0.1,19.3-13.2,48.7-19.7c14-3.1,27.8-4.2,41.4-3.5L1.6,241.1c-2.1,2.1-2.1,5.6,0,7.8\r\n\t\tc1.1,1.1,2.5,1.6,3.9,1.6s2.8-0.5,3.9-1.6l65.5-65.5c0.4,0.1,0.7,0.1,1.1,0.1c1.1,0,2.1-0.3,3.1-0.9c0.1-0.1,11.3-7.4,28.3-11\r\n\t\tc22.5-4.8,44-1.2,64,10.7c2.6,1.6,6,0.7,7.6-1.9c1.6-2.6,0.7-6-1.9-7.5c-28.2-16.7-54.9-15.7-72.4-11.9c-3.6,0.8-6.9,1.7-10,2.7\r\n\t\tl54-54c19.8,3,39.1,10.1,57.8,21.3c2.6,1.6,6,0.7,7.6-1.9c1.6-2.6,0.7-6-1.9-7.5c-18.8-11.2-37.1-17.8-54.2-21.2L196.3,62\r\n\t\tc15.4,5.2,30.6,12,45.4,20.7c2.6,1.5,6,0.7,7.6-2C250.8,78.1,249.9,74.7,247.3,73.2z\"/>\r\n\t<ellipse cx=\"124.2\" cy=\"225\" rx=\"10.1\" ry=\"10\"/>\r\n</g>\r\n</svg>\r\n";
 
 /***/ },
-/* 495 */
+/* 496 */
 /*!**************************************************!*\
   !*** ./~/html-loader!./src/customer-support.svg ***!
   \**************************************************/
@@ -45880,7 +45969,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-customer-support\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M518.6,270.8h-44.4c-1.4-9.6-5.4-26-16.1-40.4c-0.5-0.6-11-14.2-27.5-20.2c13.1-8.4,21.8-23.1,21.8-39.8\n            c0-26.1-21.2-47.3-47.3-47.3s-47.3,21.2-47.3,47.3c0,16.5,8.5,31,21.3,39.5c-9.9,3.1-20.9,9-29.7,20.5\n            c-9.2-19.3-22.4-31.7-33.9-39.4c-8.1-5.4-16.2-9-23-11.4c20.8-11.7,34.9-33.9,34.9-59.4c0-37.5-30.5-68.1-68.1-68.1\n            c-37.5,0-68.1,30.5-68.1,68.1c0,25.1,13.7,47.1,34,58.9c-24.1,7.3-42.9,24.2-55.2,49.8c-0.2,0.4-0.3,0.7-0.5,1.1\n            c-8.7-11.2-19.6-17.1-29.4-20.1c12.8-8.5,21.3-23,21.3-39.5c0-26.1-21.2-47.3-47.3-47.3c-26.1,0-47.3,21.2-47.3,47.3\n            c0,16.7,8.7,31.5,21.9,39.9c-17.2,6.1-26.1,17.9-27.7,20.2c-10,12.5-14.2,30.2-15.8,40.3H0v14.4h31.2v170.4H487V285.2h31.5V270.8z\n             M405,137.6c18.1,0,32.9,14.8,32.9,32.9s-14.8,32.9-32.9,32.9s-32.9-14.8-32.9-32.9S386.9,137.6,405,137.6z M389,222.3\n            c7.6-1.5,27-0.8,32,0.2c15,3,25.5,16.5,25.6,16.6c8.1,10.9,11.5,23.5,13,31.7h-99.2c-0.9-8.6-2.5-16.4-4.5-23.5\n            C364.3,230.4,378.4,224.4,389,222.3z M205.7,120.3c0-29.6,24.1-53.7,53.7-53.7c29.6,0,53.7,24.1,53.7,53.7S288.9,174,259.3,174\n            C229.7,174,205.7,149.9,205.7,120.3z M249.2,189.5l0.8-0.1c0,0,4.8-0.8,11.3-0.8c3.8,0,7.5,0.3,10.9,0.8l0.4,0.1\n            c0.2,0,17.7,2,35.5,13.9c21.7,14.6,34.4,37.3,37.9,67.4H172.1c1.3-8.3,4.3-21.9,10.9-35.6C196.8,206.5,219,191.2,249.2,189.5z\n             M114.2,137.6c18.1,0,32.9,14.8,32.9,32.9s-14.8,32.9-32.9,32.9s-32.9-14.8-32.9-32.9S96,137.6,114.2,137.6z M72.5,239.3l0.4-0.6\n            c0.3-0.5,8.4-12.3,25.6-16.3c4.4-1,23.7-1.7,31.8-0.1c10.4,2,24.3,8,32.8,24.4c-3.1,9.8-4.7,18.4-5.5,24.1H59.9\n            C61.5,261.9,65.1,248.4,72.5,239.3z M472.6,441.2h-427V285.9h427V441.2z\"/>\n</svg>";
 
 /***/ },
-/* 496 */
+/* 497 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/do-not-edit.svg ***!
   \*********************************************/
@@ -45889,7 +45978,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-do-not-edit\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <rect x=\"67.9\" y=\"97.3\" transform=\"matrix(0.7071 -0.7071 0.7071 0.7071 -44.1474 128.0603)\" class=\"do-not-edit-pencil\" width=\"129.1\" height=\"40.1\"/>\n        <polygon class=\"do-not-edit-pencil\" points=\"79.8,170.1 92.6,182.9 75.1,187.6 57.5,192.3 62.2,174.8 66.9,157.2\"/>\n    </g>\n    <g>\n        <path class=\"do-not-edit-circle\" d=\"M124.9,249.8C56,249.8,0,193.8,0,124.9S56,0,124.9,0s124.9,56,124.9,124.9S193.8,249.8,124.9,249.8z M42.7,52\n            c-17.3,19.4-27.8,45-27.8,73c0,60.6,49.3,109.9,109.9,109.9c28,0,53.5-10.5,73-27.8L42.7,52z M53.4,41.5l155,155\n            c16.5-19.2,26.5-44.2,26.5-71.5C234.9,64.3,185.5,15,124.9,15C97.6,15,72.6,25,53.4,41.5z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 497 */
+/* 498 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/early-access.svg ***!
   \**********************************************/
@@ -45898,7 +45987,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-early-access\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M56,238.7c-30.6,0-55.5-24.9-55.5-55.5s24.9-55.5,55.5-55.5c12.5,0,24.3,4.1,34.1,11.8l0.7,0.6L221,9.1l7.6,7.6l-16.4,16.5\n            L250,71.6l-7.7,7.5l-37.7-38.4l-19.3,19.5L223,98.7l-7.7,7.5l-37.6-38.3l-79.2,79.6l0.6,0.7c8,9.9,12.4,22.3,12.4,34.9\n            C111.5,213.8,86.6,238.7,56,238.7z M56,138.4c-24.7,0-44.7,20.1-44.7,44.7s20.1,44.7,44.7,44.7s44.7-20.1,44.7-44.7\n            S80.6,138.4,56,138.4z\"/>\n</svg>";
 
 /***/ },
-/* 498 */
+/* 499 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/email.svg ***!
   \***************************************/
@@ -45907,7 +45996,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-email\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M0,224V26h250v198H0z M239,213V37h-8.4L126.3,160.9L19.6,37H11v176H239z M126.1,144.3L216.4,37H34L126.1,144.3z\"/>\n</svg>\n";
 
 /***/ },
-/* 499 */
+/* 500 */
 /*!***********************************************!*\
   !*** ./~/html-loader!./src/empty-project.svg ***!
   \***********************************************/
@@ -45916,7 +46005,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-empty-project\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<g>\r\n\t<polygon points=\"175,80 175,90 201,90 201,141 130,141 130,151 201,151 201,240 111,240 111,215 101,215 101,240 51,240 51,172\r\n\t\t101,172 101,191 111,191 111,145 101,145 101,162 51,162 51,90 101,90 101,114 111,114 111,90 148,90 148,80 41,80 41,250 211,250\r\n\t\t211,80 \t\"/>\r\n\t<polygon points=\"119,18.9 119,66 130,66 130,18.5 151,36 158,27.5 124.6,-0.4 92.1,27.3 99.2,35.7 \t\"/>\r\n</g>\r\n</svg>\r\n";
 
 /***/ },
-/* 500 */
+/* 501 */
 /*!******************************************!*\
   !*** ./~/html-loader!./src/envelope.svg ***!
   \******************************************/
@@ -45925,7 +46014,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-envelope\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M3,444.9V77.8h512v367.1H3z M498,427.9V107.4L259.5,315.5L20,106.3v321.6H498z M259.5,292.9l227-198.1H32.7\n            L259.5,292.9z\"/>\n</svg>";
 
 /***/ },
-/* 501 */
+/* 502 */
 /*!******************************************!*\
   !*** ./~/html-loader!./src/facebook.svg ***!
   \******************************************/
@@ -45934,7 +46023,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-facebook\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M141.7,250V135.8H180l5.7-44.3h-44.2V63.2c0-13,3.6-21.5,21.9-21.5H187v-40C183,1.1,169.1,0,152.8,0\n            c-34,0-57.2,20.8-57.2,58.7v32.8H57.6v44.3h38.3V250H141.7L141.7,250z\"/>\n</svg>\n";
 
 /***/ },
-/* 502 */
+/* 503 */
 /*!*****************************************!*\
   !*** ./~/html-loader!./src/gallery.svg ***!
   \*****************************************/
@@ -45943,7 +46032,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-gallery\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M83,41v20H48v28H0v146h201v-37h27v-33h22V41H83z M193,97v103.3L127.5,140l-47.8,45.8l-14.2-13.6L8,221.8V97H193z M15.6,227 l49.6-42.8L79.7,198l48-45.9l65.3,60.1V227H15.6z M221,191h-20V89H55V68h166V191z M244,159h-16V61H89V47h155V159z\"/>\n        <path d=\"M43.3,157.5c13,0,23.6-10.3,23.6-23c0-12.7-10.6-23-23.6-23c-13,0-23.6,10.3-23.6,23C19.7,147.2,30.3,157.5,43.3,157.5z M43.3,120.3c8.1,0,14.7,6.3,14.7,14.1c0,7.8-6.6,14.1-14.7,14.1s-14.7-6.3-14.7-14.1C28.5,126.7,35.1,120.3,43.3,120.3z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 503 */
+/* 504 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/gear-filled.svg ***!
   \*********************************************/
@@ -45952,7 +46041,7 @@
 	module.exports = "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"\r\n\t viewBox=\"0 0 250 250\" class=\"dibsvg-svg dibsvg-gear-filled\">\r\n<path d=\"M101.8,4.6c0,0,23.5,49.9,51.5,4.5l1.5-3.1c0,0,2.7-6.5,8.7-4.6L190,14.2c0,0,6.7,2.9,3.1,10.2c0,0-8.1,16.8-2,25.5\r\n\tc0,0,7.7,16.8,26,15.3l9.2-2.1c0,0,10.3-3.6,13.8,4.1l9.2,22.2c0,0,3.3,8.5-4.4,11.3l-11.4,5.3c0,0-15.8,10.2-11.2,27\r\n\tc0,0-0.9,6.9,17.9,19.9l5.6,4.1c0,0,6.1,4.1,1,12.2l-9.7,19.4c0,0-2.1,6.5-10.8,3.7l-15.7-4.1c0,0-4.1-0.3-6.5,0.4\r\n\tc-4.4,1.2-11.2,3.7-13.8,7.7c0,0-10.2,8.2-6.6,21.4l2.1,9.7c0,0,3,9.8-2,12.2l-23.9,8.7c0,0-6.1,2.6-10.7-4.1l-10.7-16.3\r\n\tc0,0-6.1-9.2-20.4-6.6c0,0-11.7,1.5-17.3,12.8l-7.3,10.1c0,0-2.8,5.5-9.9,2.9l-23.7-12.6c0,0-7.4-3.6-1.8-12.5\r\n\tc0,0,12.1-19.5-5.2-33.7c0,0-11.7-7.1-29.6-3c0,0-9.2,4.3-13.3-2.5l-9.7-24.5c0,0-1.7-6.5,3.9-9.5c0.5-0.3,1-0.5,1.7-0.7\r\n\tc7.6-2.6,22.4-7.7,22.4-26.5c0,0,1-13.3-15.3-22.9l-6.6-4.1c0,0-7.1-4.6-3.1-13.8l9.5-19.9c0,0,2.8-7,11.4-3.6l14.3,3.5\r\n\tc0,0,25.5,2.5,28-18.4l-0.4-11.3c0,0-0.8-5.4-1.4-8.4c-1-5-1-12.3,4-13.8L87,1.1C87,1.1,97.7-3,101.8,4.6z M123.8,65\r\n\tc-33.4,0.1-60.4,27.1-60.3,60.5c0.1,33.4,27.1,60.4,60.5,60.3s60.4-27.1,60.3-60.5S157.2,65,123.8,65z\"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 504 */
+/* 505 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/gear.svg ***!
   \**************************************/
@@ -45961,7 +46050,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-gear\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M464.8,195.9H459c-6.9,0-13.1-4.6-15.4-11.3c-2.8-8.2-6.2-16.4-10.1-24.3c-3.2-6.5-2.1-14.1,2.8-19l4.2-4.2 c14.1-14.1,14.1-37.1,0-51.2l-25.3-25.4c-14.1-14.1-37.1-14.1-51.2,0l-4.5,4.5c-4.8,4.8-12.6,6-19,2.9c-7.9-3.8-15.9-7.2-24-9.9 c-6.8-2.3-11.4-8.5-11.4-15.4v-6.3c0-20-16.2-36.2-36.2-36.2h-35.9c-20,0-36.2,16.2-36.2,36.2v7c0,6.9-4.5,13.1-11.3,15.4 c-8,2.8-15.8,6.1-23.4,9.8c-6.4,3.2-14.3,2-19.1-2.8l-5-5c-14.1-14.1-37.1-14.1-51.2,0L61.5,85.9c-14.1,14.1-14.1,37.1,0,51.2 l5.3,5.3c4.9,4.9,6,12.5,2.9,19c-3.7,7.5-6.9,15.3-9.6,23.1c-2.3,6.8-8.5,11.4-15.5,11.4h-7.5c-20,0-36.2,16.2-36.2,36.2v35.8 c0,20,16.2,36.2,36.2,36.2h7.5c6.9,0,13.1,4.6,15.4,11.4c2.7,7.8,5.9,15.6,9.6,23.1c3.2,6.5,2,14.1-2.9,19l-5.3,5.3 c-14.1,14.1-14.1,37.1,0,51.2l25.4,25.3c6.5,6.5,15.9,10.3,25.6,10.3c0,0,0,0,0,0c9.7,0,19-3.8,25.6-10.3l5-5 c4.9-4.8,12.7-6,19.1-2.8c7.6,3.7,15.4,7,23.4,9.8c6.8,2.3,11.3,8.5,11.3,15.4v7c0,20,16.2,36.2,36.2,36.2h35.9 c20,0,36.2-16.2,36.2-36.2v-6.3c0-6.9,4.6-13.1,11.4-15.4c8.1-2.7,16.1-6.1,23.9-9.9c6.4-3.1,14.2-1.9,19,2.9l4.5,4.5 c13.6,13.6,37.5,13.6,51.2,0l25.3-25.3c14.1-14.1,14.1-37.1,0-51.2l-4.2-4.2c-4.9-4.9-6-12.6-2.8-19.1c3.9-7.9,7.3-16.1,10.1-24.3 c2.3-6.8,8.5-11.3,15.4-11.3h5.8c20,0,36.2-16.2,36.2-36.2v-35.8C501,212.1,484.8,195.9,464.8,195.9z M415.1,305.7 c-2.4,7-5.3,13.9-8.6,20.6c-9,18.1-5.6,39.7,8.5,53.8l4.2,4.2c1.1,1.1,1.8,2.6,1.8,4.2c0,1.6-0.6,3.1-1.8,4.3l-25.3,25.3 c-1.1,1.1-2.6,1.7-4.3,1.7c0,0,0,0,0,0c-1.6,0-3.2-0.6-4.2-1.7l-4.5-4.5c-13.8-13.8-35.8-17.3-53.6-8.6c-6.7,3.3-13.6,6.1-20.4,8.4 c-19.1,6.5-31.9,24.1-31.9,44v6.3c0,3.3-2.7,6-6,6h-35.9c-3.3,0-6-2.7-6-6v-7c0-19.7-12.7-37.4-31.6-43.9 c-6.8-2.3-13.5-5.1-19.9-8.3c-6.6-3.2-13.9-5-21.1-5c-12.4,0-24,4.8-32.7,13.5l-5,5c-2.2,2.2-6.3,2.2-8.5,0l-25.4-25.3 c-2.3-2.3-2.3-6.2,0-8.5l5.3-5.3c14-14,17.5-35.5,8.6-53.6c-3.1-6.3-5.8-12.9-8.2-19.6c-6.5-19-24.2-31.7-44-31.7h-7.5 c-3.3,0-6-2.7-6-6v-35.8c0-3.3,2.7-6,6-6h7.5c19.8,0,37.5-12.8,44-31.7c2.3-6.7,5.1-13.3,8.2-19.7c8.8-18.1,5.4-39.6-8.6-53.6 l-5.3-5.3c-2.3-2.3-2.3-6.2,0-8.5l25.4-25.3c2.2-2.2,6.3-2.2,8.5,0l5,5c13.9,13.8,36,17.4,53.8,8.5c6.4-3.2,13.1-6,19.9-8.3 c18.9-6.6,31.6-24.2,31.6-43.9v-7c0-3.3,2.7-6,6-6h35.9c3.3,0,6,2.7,6,6v6.3c0,19.9,12.8,37.6,31.9,44c6.8,2.3,13.7,5.1,20.4,8.4 c17.8,8.7,39.8,5.2,53.6-8.6l4.5-4.5c2.2-2.2,6.3-2.2,8.5,0l25.3,25.3c1.1,1.1,1.8,2.7,1.8,4.3c0,1.6-0.6,3.1-1.8,4.3l-4.2,4.2 c-14.1,14.1-17.5,35.7-8.5,53.8c3.3,6.7,6.2,13.7,8.6,20.6c6.5,19,24.1,31.7,43.9,31.7h5.8c3.3,0,6,2.7,6,6v35.8c0,3.3-2.7,6-6,6 H459C439.2,273.9,421.5,286.7,415.1,305.7z\"/>\n    <path d=\"M296.8,121.3c-24.3-8.4-50.6-9.9-76-4.3c-50.7,11.2-90.7,51.3-102,102c-9.2,41.5,0.5,83.9,26.5,116.4 c26.1,32.5,64.9,51.1,106.5,51.1c10.3,0,20.7-1.2,31-3.4c50.7-11.3,90.7-51.3,102-102c9.2-41.5-0.5-83.9-26.6-116.4 C342.3,144.7,321,129.8,296.8,121.3z M355.4,274.5c-8.6,38.7-40.3,70.5-79,79c-40.7,9-81.8-5.2-107.4-37.1 c-20.3-25.3-27.8-58.5-20.6-91c8.6-38.7,40.3-70.5,79-79c8.1-1.8,16.4-2.7,24.5-2.7c32.4,0,62.6,14.5,82.9,39.8 C355.1,208.8,362.6,242,355.4,274.5z\"/>\n</svg>";
 
 /***/ },
-/* 505 */
+/* 506 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/globe.svg ***!
   \***************************************/
@@ -45970,7 +46059,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-globe\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M125,0C56.3,0,0.3,55.9,0.3,124.7c0,68.7,55.9,124.7,124.7,124.7s124.7-55.9,124.7-124.7C249.7,55.9,193.7,0,125,0z\n         M8.3,124.7C8.3,60.3,60.7,8,125,8s116.7,52.3,116.7,116.7c0,23.1-6.7,44.6-18.4,62.8c-4-9-16.6-12.7-24.8-14.4\n        c-0.1-0.3-11.3-1.6-24-1.5c-9,0.1-9.6,0.9-19,1.5c-1.9,0.1-6.9-1.6-16.3-2c-2.5-0.1-6.6-4.2-6.6-4.2s-2.6-2.8-5.2-6.1\n        c-2.6-3.3-5.2-2.5-5.2-5.7s-3.5-7.4-7.8-9c-4.3-1.6-6.1,4.9-13,4.9c-6.9,0-5.1-10.2-1.7-19.6c2.6-7.4,14.7-2.5,14.7-2.5\n        c3.7,1.4,6.1,3.3,10.4,2.5c5.7-1.1,6.9,5.7,6.9,5.7c6.1,16.4,8.7-2.5,8.7-2.5l0.9-11.4c0,0,0.9-4.9,2.6-9s2.6-4.1,6.9-9\n        s2.6-5.7,6.1-10.6s14.7-4.9,14.7-4.9c13-1.6,2.6-13.1,2.6-13.1c-4.3-4.1-18.2-9.8-18.2-9.8C144.8,65,147.4,56,147.4,56\n        c0-5.7,12.1,0.8,12.1,0.8c18.2,0.8,7.8-10.6,7.8-10.6c-5.5-4.1-12-6.5-16.4-7.7c-3.1-0.9-9-2.8-10.6-3.2c-8.9-2.3-12,1.9-12,1.9\n        c-9.2,6.7-21.7,7.4-21.7,7.4c-5.2,0-20,1.6-20,1.6c-9.5,0-15.6,10.6-16.5,17.2s-6.9,27-6.9,27c-6.1,10.6-3.5,13.1-1.7,19.6\n        c1.7,6.5,2.6,9,3.5,17.2c0.4,4.1,3.5,7.8,6.4,10.4c2.9,2.7,5.8,8.6,6.3,10.5c2.3,7.3,9.5,11.2,9.5,11.2l6.6,2.8\n        c20.6,4.4,21.4,9.3,21.5,9.2c4.3,7.4,17.8,9.6,17.8,9.6c9.4,2.8,6.4,7.6,6.4,7.6c-6.6,11.6-8.5,16.7-4.6,28.1\n        c4.5,13,7.7,20,9.3,23.2c-6.3,1-12.7,1.6-19.3,1.6C60.7,241.3,8.3,189,8.3,124.7z M135.2,65c3.5,9.8,3.5,12.3,3.5,12.3\n        s-6.1-1.6-19.1-2.5c-13-0.8-9.5-7.4-9.5-7.4l5.2-4.1c0,0,7.8-4.9,16.5-8.2C140.4,51.9,131.8,55.2,135.2,65z\"/>\n</svg>";
 
 /***/ },
-/* 506 */
+/* 507 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/grid.svg ***!
   \**************************************/
@@ -45979,7 +46068,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-grid\" viewBox=\"0 0 420 420\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M420,179.6H240.1V0H420V179.6z M420,420H240.1V240.1H420V420z M179.9,179.6H0V0h179.9V179.6z M179.9,420H0V240.1h179.9V420z\"/>\n</svg>\n";
 
 /***/ },
-/* 507 */
+/* 508 */
 /*!************************************************!*\
   !*** ./~/html-loader!./src/hamburger-menu.svg ***!
   \************************************************/
@@ -45988,7 +46077,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-hamburger-menu\" viewBox=\"-220.7 -160.7 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M260.8,107.7h-463c-10.2,0-18.5-8.2-18.5-18.4s8.3-18.4,18.5-18.4h463 c10.2,0,18.5,8.2,18.5,18.4S271,107.7,260.8,107.7z M260.8-30h-463c-10.2,0-18.5-8.2-18.5-18.4s8.3-18.4,18.5-18.4h463 c10.2,0,18.5,8.2,18.5,18.4S271-30,260.8-30z M-202.2,208.6h463c10.2,0,18.5,8.2,18.5,18.4c0,10.1-8.3,18.4-18.5,18.4h-463 c-10.2,0-18.5-8.2-18.5-18.4C-220.7,216.8-212.4,208.6-202.2,208.6z\"/>\n</svg>";
 
 /***/ },
-/* 508 */
+/* 509 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/heart-filled.svg ***!
   \**********************************************/
@@ -45997,7 +46086,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-heart-filled\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M29.3,129.8c-6.5-8.5-27.7-37.7-28.9-57.4C-0.8,52.3,4.1,36.2,15,24.6C30.1,8.5,51.4,6.8,59.9,6.8c1.3,0,2.2,0,2.8,0.1 c16.2,0.4,39.5,7.6,58.9,39.4l3.4,5.6l3.6-5.5c16.8-25.7,37.1-39,60.3-39.5c3,0,28.9-0.9,48,20.6c7.2,8.1,15.1,22.5,12.5,45.6 c-1.9,16.9-16.2,39.3-24.3,50.4c-11.8,16.1-88.5,108.3-100.2,122L29.3,129.8z\"/>\n</svg>";
 
 /***/ },
-/* 509 */
+/* 510 */
 /*!************************************************!*\
   !*** ./~/html-loader!./src/heart-outlined.svg ***!
   \************************************************/
@@ -46006,7 +46095,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-heart-outlined\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M29.2,129.3c-6.5-8.5-27.7-37.7-28.9-57.4C-0.9,51.8,4,35.7,15,24.1C30,8.1,51.4,6.3,59.8,6.3c1.3,0,2.2,0,2.8,0.1 c16.2,0.4,39.5,7.6,58.9,39.4l3.4,5.6l3.6-5.5c16.8-25.7,37.1-39,60.3-39.5c3,0,28.9-0.9,48,20.6c7.2,8.1,15.3,21.4,12.5,45.6 c-1.9,16.9-12.5,34.8-22.5,48.4c-11.8,16.1-90.2,110.3-101.9,124L29.2,129.3z M59.8,16c-7.2,0-25.6,1.2-37.8,14.7 C12.6,41.2,8.5,54,10,71.3C10.7,80.2,15,90,23.6,104c6.4,10.4,12.6,18.7,13.3,19.6l88,106.4l83.8-101c0,0,11.1-13.7,18.1-25.5 c6.2-10.5,12-22.5,13-31.3c1.7-15.7-1.6-29.1-10.2-38.6c-17.9-19.8-40-17.3-41-17.3C163,16.6,141.4,36,124.4,73.8 c-2.3-6.2-5.9-14.6-11-22.9C99.8,28.5,82.1,16.4,62.1,16.1l0,0C61.4,16,60.6,16,59.8,16z\"/>\n</svg>";
 
 /***/ },
-/* 510 */
+/* 511 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/home.svg ***!
   \**************************************/
@@ -46015,7 +46104,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-home\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M245.1,120.7l-122-114L0.3,120l7.5,8.1l16.3-15V245h70v-73h57v73h70V113.2l16.6,15.5L245.1,120.7z M210,103v131h-48v-73H83 v73H35V102.9l88-81.2L210,103L210,103z\"/>\n</svg>";
 
 /***/ },
-/* 511 */
+/* 512 */
 /*!*******************************************************!*\
   !*** ./~/html-loader!./src/image-upload-multiple.svg ***!
   \*******************************************************/
@@ -46024,7 +46113,7 @@
 	module.exports = "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"\r\n\t viewBox=\"0 0 250 250\" class=\"dibsvg-svg dibsvg-img-upload-multiple\">\r\n<g>\r\n\t<polygon points=\"131,17.2 131,137 140,137 140,16.6 186.6,58.8 192.6,52.1 135.4,0.3 82.2,52.2 88.5,58.7 \t\"/>\r\n\t<path d=\"M155,94v9h65v97.2l-63.9-49.7l-46.9,38.8L97,178.7L52,212V103h64v-9H43v34H22v122h166v-21h41V94H155z M179,241H31V137h12\r\n\t\tv92h136V241z M220,220H56.3l40.3-29.8l12.5,10.9l47.2-39l63.7,49.5V220z\"/>\r\n\t<path d=\"M65.8,138.7c0,11.5,9.3,20.8,20.8,20.8s20.8-9.3,20.8-20.8s-9.3-20.8-20.8-20.8S65.8,127.2,65.8,138.7z M98.4,138.7\r\n\t\tc0,6.5-5.3,11.8-11.8,11.8s-11.8-5.3-11.8-11.8s5.3-11.8,11.8-11.8C93.1,126.9,98.4,132.2,98.4,138.7z\"/>\r\n</g>\r\n</svg>\r\n";
 
 /***/ },
-/* 512 */
+/* 513 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/image-upload.svg ***!
   \**********************************************/
@@ -46033,7 +46122,7 @@
 	module.exports = "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"\r\n\t viewBox=\"0 0 250 250\" class=\"dibsvg-svg dibsvg-img-upload\">\r\n<g>\r\n\t<polygon points=\"120,17.2 120,137 129,137 129,16.6 175.6,58.8 181.6,52.1 124.4,0.3 71.2,52.2 77.5,58.7 \t\"/>\r\n\t<path d=\"M148,94v9h76v115.7l-75.3-58.5L94,205.4l-14.3-12.5L27,232V103h75v-9H18v144.6l-0.1,0.1l0.1,0.2V250h215V94H148z M224,241\r\n\t\tH29.9l49.4-36.6l14.6,12.7l55-45.5l75.1,58.4V241z\"/>\r\n\t<path d=\"M44.2,144.3c0,13,10.5,23.5,23.5,23.5s23.5-10.5,23.5-23.5s-10.5-23.5-23.5-23.5S44.2,131.4,44.2,144.3z M82.2,144.3\r\n\t\tc0,8-6.5,14.5-14.5,14.5s-14.5-6.5-14.5-14.5s6.5-14.5,14.5-14.5S82.2,136.3,82.2,144.3z\"/>\r\n</g>\r\n</svg>\r\n";
 
 /***/ },
-/* 513 */
+/* 514 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/info-circle.svg ***!
   \*********************************************/
@@ -46042,7 +46131,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-info-circle\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M125.7,0.5C57.1,0.5,1.2,56.4,1.2,125s55.9,124.5,124.5,124.5S250.2,193.6,250.2,125S194.4,0.5,125.7,0.5z M125.7,239.5 c-63.1,0-114.5-51.4-114.5-114.5S62.6,10.5,125.7,10.5S240.2,61.9,240.2,125S188.8,239.5,125.7,239.5z\"/>\n    <path d=\"M134.8,187.9c-3.6,0-6.3-0.7-7.9-2c-1.6-1.3-2.4-3.8-2.4-7.5c0-1.5,0.2-3.5,0.7-5.9c0.5-2.4,1-4.9,1.7-7.4l10.2-40.8 c0.5-2,0.9-4,1.2-6s0.4-3.6,0.4-4.7c0-4.2-1.2-7.6-3.6-10.1c-2.4-2.5-6.2-3.7-11.4-3.7c-2.3,0-5.4,0.5-9.4,1.6 c-4,1.1-8.4,2.8-13.4,5l-1.4,6.1c1.2-0.3,3-0.7,5.3-1.2c2.3-0.4,4.2-0.7,5.6-0.7c3.6,0,6.1,0.6,7.2,1.8c1.2,1.2,1.8,3.6,1.8,7.2 c0,1.8-0.2,4-0.7,6.5c-0.5,2.6-1,5-1.5,7.2l-10.1,40.8c-0.6,2.4-1,4.5-1.2,6.1c-0.3,1.6-0.4,3.1-0.4,4.6c0,3.9,1.3,7.2,3.8,9.8 c2.6,2.7,6.4,4,11.5,4c2.5,0,5.5-0.5,9-1.4c3.5-0.9,8.2-2.6,14.1-4.9l1.4-6.1c-1.2,0.4-3,0.8-5.2,1.2 C137.8,187.8,136,187.9,134.8,187.9z\"/>\n    <path d=\"M139.7,51.2c-3.3,0-6.1,1.3-8.4,3.9c-2.4,2.6-3.6,5.7-3.6,9.2c0,3.3,1.2,6.3,3.6,8.9c2.4,2.6,5.2,3.9,8.4,3.9 c3.5,0,6.5-1.4,8.8-4.1c2.4-2.7,3.6-5.9,3.6-9.6c0-3.3-1.2-6.1-3.5-8.6C146.3,52.5,143.3,51.2,139.7,51.2z\"/>\n</svg>";
 
 /***/ },
-/* 514 */
+/* 515 */
 /*!*******************************************!*\
   !*** ./~/html-loader!./src/instagram.svg ***!
   \*******************************************/
@@ -46051,7 +46140,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-instagram\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path  d=\"M32.2,0h186c17.6,0,32.1,14.5,32.1,32.2v186c0,17.7-14.5,32.1-32.1,32.1h-186\n            C14.5,250.2,0,235.7,0,218.1v-186C0,14.5,14.5,0,32.2,0 M182.3,27.9c-6.2,0-11.3,5.1-11.3,11.3v27c0,6.2,5.1,11.3,11.3,11.3h28.3\n            c6.2,0,11.3-5.1,11.3-11.3v-27c0-6.2-5.1-11.3-11.3-11.3H182.3z M221.9,105.8h-22c2.1,6.8,3.2,14,3.2,21.5\n            c0,41.7-34.8,75.3-77.8,75.3s-77.8-33.7-77.8-75.3c0-7.5,1.1-14.7,3.2-21.5H27.7v105.7c0,5.5,4.5,10,10,10h174.2\n            c5.5,0,10-4.5,10-10V105.8z M125.3,75.9c-27.8,0-50.2,21.8-50.2,48.6s22.4,48.7,50.2,48.7s50.2-21.8,50.2-48.7\n            S153.1,75.9,125.3,75.9\"/>\n</svg>\n";
 
 /***/ },
-/* 515 */
+/* 516 */
 /*!****************************************!*\
   !*** ./~/html-loader!./src/iphone.svg ***!
   \****************************************/
@@ -46060,7 +46149,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-iphone\" viewBox=\"-110 0 425 425\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<path d=\"M176.7-0.5h-150C11.9-0.5,0,10.9,0,24.9v369.6c0,14,11.9,25.4,26.6,25.4h150c14.7,0,26.6-11.4,26.6-25.4V24.9\r\n\tC203.3,10.9,191.4-0.5,176.7-0.5z M101.5,17.8c3.3,0,5.9,2.6,5.9,5.9s-2.6,5.9-5.9,5.9c-3.3,0-5.9-2.6-5.9-5.9S98.3,17.8,101.5,17.8\r\n\tz M80.6,41.3h41.8c1.9,0,3.5,1.9,3.5,4.2c0,2.3-1.6,4.2-3.5,4.2H80.6c-1.9,0-3.5-1.9-3.5-4.2C77.1,43.2,78.7,41.3,80.6,41.3z\r\n\t M100.5,399.9c-11.3,0-20.5-9.2-20.5-20.5c0-11.3,9.2-20.5,20.5-20.5c11.3,0,20.5,9.2,20.5,20.5C121,390.7,111.9,399.9,100.5,399.9z\r\n\t M180.7,339.2H22.1v-271h158.6V339.2z\"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 516 */
+/* 517 */
 /*!*******************************************!*\
   !*** ./~/html-loader!./src/lightbulb.svg ***!
   \*******************************************/
@@ -46069,7 +46158,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-lightbulb\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<g>\r\n\t<path d=\"M166.3,45.8c-14.1-9.9-27.9-12.1-29.2-12.3c-6.3-1.1-11.1-1.1-13.1-1.1v0c0,0-8.1,0-14.2,1.1c-1.3,0.2-15.1,2.5-28.9,12.4\r\n\t\tC67.7,55.2,52,73.5,51.7,107.2c-0.2,2.6-0.9,22.8,18.4,48c0.4,0.6,1.2,1.4,2.7,3c1.1,1.1,2.2,2.4,3.2,3.5\r\n\t\tc11.4,13.1,13.2,22.4,12.8,28l0,9c-0.1,1.3-0.1,7.1,3.8,11.3c0.5,0.6,1.2,1.1,2,1.7c-0.3,2-0.3,5.6,1.7,8.9c-0.6,3-1.5,9.5,1.8,14\r\n\t\tc1.1,1.4,3,3.1,6.1,3.8c0.3,2.4,1,5.3,3,7.5c1.8,2,4.4,3.1,7.3,3.1h18c0,0,0,0,0.1,0c0.8,0,4.1-0.2,6.7-3c1.7-1.9,2.6-4.4,2.8-7.5\r\n\t\tc1.7-0.4,4.1-1.3,6.1-3.6c2.7-3.1,3.6-7.6,2.8-13.4c1.3-1.8,2.6-4.7,1.9-9.2c0.8-0.5,1.7-1.1,2.4-1.8c4.3-4.3,4.6-11.1,4.6-11.8\r\n\t\tV190l-0.2-0.4c-0.9-10.9,7.3-22.2,12.3-28c1.9-2.2,4.6-5.5,5.4-6.5c19.3-25.2,18.6-45.4,18.4-48C195.7,73.5,179.7,55.2,166.3,45.8z\r\n\t\t M132.8,242.8l-18.2,0c-1.6,0-2.3-0.5-2.7-0.9c-0.7-0.8-1.1-1.9-1.3-2.9h25.6c-0.2,1-0.5,2.2-1.1,2.9\r\n\t\tC134,242.9,132.7,242.8,132.8,242.8z M140.3,233h-32.8c-3.1,0-4.1-1.5-4.4-1.9c-1.1-1.4-1.3-3.8-1.2-5.8c1.5,0.6,3.3,0.8,5.3,0.9\r\n\t\tl33.1-0.2c0,0,0,0,0.1,0c0.5,0,2.6,0.1,4.9-0.6c0,2.3-0.5,4.4-1.5,5.6C142.4,232.6,140.4,233,140.3,233z M146.1,217.9\r\n\t\tc-1.5,1.8-4.7,2.1-5.8,2.1h-32.7c-2.8,0-4.8-1-5.8-2.5c-0.8-1.2-1.1-2.6-1.1-3.7c0.7,0.1,1.5,0.2,2.3,0.2h20.8h1h21.9\r\n\t\tc0.1,0,0.2,0,0.4,0C147.2,215.6,146.9,216.9,146.1,217.9z M185.3,119.8c-1.7,6.8-5.7,17.6-15.1,29.8c-0.6,0.7-3.3,3.7-5.3,6.1\r\n\t\tc-7.2,8.4-15.9,21.1-14.9,34.6v8.6c0,0.9-0.2,4-1.5,5.4c-0.4,0.4-0.7,0.8-1.9,0.8h-21.9h-1H103c-2.4,0-3.2-0.9-3.5-1.2\r\n\t\tc-1.3-1.3-1.4-3.9-1.4-4.6l0-8.9c0.8-10.5-4.3-22.2-15-34.6c-1-1.2-2.3-2.6-3.4-3.7c-0.8-0.9-1.9-2-2.1-2.4\r\n\t\tc-9.4-12.2-13.4-22.9-15.1-29.8c-1.9-7.4-1.5-12-1.5-12l0-0.4c0.3-56.7,48-64.5,50-64.8l0.1,0c3.7-0.6,8.3-0.9,10.7-0.9\r\n\t\tc0.4,0,0.8,0,1.3,0c2,0,6.3,0,12.3,1l0.1,0c2.1,0.3,50.9,8,51.2,64.7l0,0.4C186.7,107.8,187.1,112.4,185.3,119.8z\"/>\r\n\t<path d=\"M122.7,25C122.7,25,122.7,25,122.7,25c1.4,0,2.6-0.9,2.6-2.4l-0.1-20.1c0-1.4-1.2-2.5-2.6-2.5c0,0,0,0,0,0\r\n\t\tc-1.4,0-2.6,1.1-2.6,2.5l0.1,19.9C120.2,23.8,121.3,25,122.7,25z\"/>\r\n\t<path d=\"M228.6,79.9c-0.5-1.3-2-1.9-3.3-1.4l-19.3,7.9c-1.3,0.5-1.9,2-1.4,3.3c0.4,1,1.4,1.6,2.4,1.6c0.3,0,0.7-0.1,1-0.2l19.3-7.9\r\n\t\tC228.5,82.7,229.1,81.2,228.6,79.9z\"/>\r\n\t<path d=\"M42.1,90.3c1,0,2-0.6,2.4-1.6c0.5-1.3-0.1-2.8-1.4-3.3l-19.5-7.7c-1.3-0.5-2.8,0.1-3.3,1.4c-0.5,1.3,0.1,2.8,1.4,3.3\r\n\t\tl19.5,7.7C41.4,90.3,41.8,90.3,42.1,90.3z\"/>\r\n\t<path d=\"M193.1,24.2l-14.8,15.6c-1,1-0.9,2.7,0.1,3.6c0.5,0.5,1.1,0.7,1.8,0.7c0.7,0,1.4-0.3,1.9-0.8l14.8-15.6\r\n\t\tc1-1,0.9-2.7-0.1-3.6C195.7,23.1,194.1,23.1,193.1,24.2z\"/>\r\n\t<path d=\"M220.2,146.2l-18.7-8.5c-1.3-0.6-2.8,0-3.4,1.3c-0.6,1.3,0,2.8,1.3,3.4l18.7,8.5c0.3,0.2,0.7,0.2,1.1,0.2\r\n\t\tc1,0,1.9-0.6,2.3-1.5C222,148.3,221.5,146.8,220.2,146.2z\"/>\r\n\t<path d=\"M46.4,138.6l-20.5,6.8c-1.3,0.4-2.1,1.9-1.6,3.2c0.4,1.1,1.4,1.8,2.4,1.8c0.3,0,0.5,0,0.8-0.1l20.5-6.8\r\n\t\tc1.3-0.4,2.1-1.9,1.6-3.2C49.2,138.9,47.7,138.2,46.4,138.6z\"/>\r\n\t<path d=\"M67.6,43.7c0.6,0,1.3-0.2,1.8-0.7c1-1,1.1-2.6,0.1-3.6L54.7,24.1c-1-1-2.6-1.1-3.6-0.1c-1,1-1.1,2.6-0.1,3.6l14.7,15.3\r\n\t\tC66.2,43.5,66.9,43.7,67.6,43.7z\"/>\r\n</g>\r\n</svg>\r\n";
 
 /***/ },
-/* 517 */
+/* 518 */
 /*!******************************************!*\
   !*** ./~/html-loader!./src/linkedin.svg ***!
   \******************************************/
@@ -46078,7 +46167,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-linkedin\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M463,0H36.9C16.5,0,0,16.2,0,36.1v427.9C0,483.8,16.5,500,36.9,500H463c20.4,0,37-16.2,37-36.1V36.1C500,16.2,483.3,0,463,0 z M148.3,426.1H74.2V187.5h74.2V426.1z M111.2,154.9c-23.8,0-43-19.3-43-43s19.3-43,43-43s43,19.3,43,43S134.9,154.9,111.2,154.9z M426.1,426.1h-74.2V310c0-27.6-0.5-63.2-38.6-63.2c-38.6,0-44.5,30.1-44.5,61.3v118.1h-74V187.5h71.1v32.6h1 c9.9-18.8,34-38.6,70.1-38.6c75.1,0,88.9,49.4,88.9,113.7v130.8H426.1z\" />\n</svg>\n";
 
 /***/ },
-/* 518 */
+/* 519 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/list.svg ***!
   \**************************************/
@@ -46087,7 +46176,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-list\" viewBox=\"0 0 420 420\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <ellipse cx=\"36.1\" cy=\"42.2\" rx=\"35.6\" ry=\"36.2\"></ellipse>\n        <ellipse cx=\"36.1\" cy=\"210.3\" rx=\"35.6\" ry=\"36.2\"></ellipse>\n        <ellipse cx=\"36.1\" cy=\"377.3\" rx=\"35.6\" ry=\"36.2\"></ellipse>\n        <rect x=\"140.8\" y=\"0.4\" width=\"278.7\" height=\"85.4\"></rect>\n        <rect x=\"140.8\" y=\"167.2\" width=\"278.7\" height=\"85.4\"></rect>\n        <rect x=\"140.8\" y=\"334\" width=\"278.7\" height=\"85.4\"></rect>\n    </g>\n</svg>\n";
 
 /***/ },
-/* 519 */
+/* 520 */
 /*!****************************************!*\
   !*** ./~/html-loader!./src/loader.svg ***!
   \****************************************/
@@ -46096,7 +46185,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-loader\" viewBox=\"0 0 1000 1000\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M867.5,10v165.9C777.7,74.1,646.4,10,500,10C229.4,10,10,229.4,10,500s219.4,490,490,490s490-219.4,490-490H867.5c0,98.2-38.3,190.4-107.6,259.9S598.2,867.5,500,867.5c-98.2,0-190.4-38.3-259.9-107.6C170.8,690.4,132.5,598.2,132.5,500c0-98.2,38.3-190.4,107.6-259.9c69.5-69.3,161.7-107.6,259.9-107.6c98.2,0,190.4,38.3,259.9,107.6c4.8,4.8,9.6,9.8,14,14.9H622.5v122.5H990V10H867.5z\"/>\n</svg>\n";
 
 /***/ },
-/* 520 */
+/* 521 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/location-pin.svg ***!
   \**********************************************/
@@ -46105,7 +46194,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-location-pin\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path fill=\"none\" d=\"M124.1,10.8C103.5,10.8,82.7,21,67,38.6c-18.1,20.4-26.7,48-23.4,75.5c6.2,52.4,66,108.3,80.5,121.1\n                c15.4-13.4,77-69.9,80.5-120.9c2-29.6-7.8-58.2-26.8-78.5C162.6,19.7,143.6,10.8,124.1,10.8z M123.8,141.5\n                c-22.2,0-40.3-18.1-40.3-40.3s18.1-40.3,40.3-40.3s40.3,18.1,40.3,40.3S146.1,141.5,123.8,141.5z\"/>\n        <path fill=\"none\" d=\"M123.8,71.8c-16.2,0-29.3,13.2-29.3,29.3s13.2,29.3,29.3,29.3s29.3-13.2,29.3-29.3S140,71.8,123.8,71.8z\"/>\n        <path d=\"M185.8,28.4C168.6,10,146.6-0.2,124.1-0.2c-23.8,0-47.6,11.5-65.3,31.5C38.5,54.1,29,84.7,32.7,115.4\n                c3.2,26.8,18.9,57.1,46.8,90c10.8,12.8,21.3,23.3,28.2,29.8C121.1,248,122,248,124.1,248c1.3,0,2.5-0.4,3.5-1.2\n                c3.4-2.8,83.8-68.8,88-131.6C217.7,82.6,206.9,50.9,185.8,28.4z M204.5,114.4c-3.4,51-65,107.5-80.5,120.9\n                c-14.5-12.9-74.3-68.7-80.5-121.1C40.3,86.6,48.8,59,67,38.6c15.7-17.6,36.5-27.8,57.1-27.8c19.5,0,38.5,8.9,53.7,25.1\n                C196.8,56.2,206.5,84.9,204.5,114.4z\"/>\n        <path d=\"M123.8,60.8c-22.2,0-40.3,18.1-40.3,40.3s18.1,40.3,40.3,40.3s40.3-18.1,40.3-40.3S146.1,60.8,123.8,60.8z M123.8,130.5\n                c-16.2,0-29.3-13.2-29.3-29.3s13.2-29.3,29.3-29.3s29.3,13.2,29.3,29.3S140,130.5,123.8,130.5z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 521 */
+/* 522 */
 /*!*****************************************************!*\
   !*** ./~/html-loader!./src/lock-with-checkmark.svg ***!
   \*****************************************************/
@@ -46114,7 +46203,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-lock-with-checkmark\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M423.3,241v-70.8l0-0.4c-0.1-1.9-2.5-47.3-15.4-71.1c-7.9-14.6-20.8-36.1-41.3-54.7\n                C344.7,24.3,317.6,11,286,4.7c-5.3-1.1-17.8-2.2-30.6-2.2c-10.4,0-19.2,0.7-26.3,2.1c-30.7,6.2-87,26.1-119,90.5\n                c-16.6,33.5-16,81.1-16,81.6c0.3,14.7,0.1,21.4,0,31.6c-0.1,7.6-0.3,16.9-0.3,32.7H43.5v274.3l427.5,0.2V241H423.3z M108.2,176.5\n                c-0.2-12.3,2-49.9,14.5-75.1c29.3-59,81-77.3,109.2-83c6.1-1.2,14.2-1.9,23.5-1.9c12.5,0,24,1.1,27.8,1.9\n                c64.8,13,94.1,53.4,112.3,87c11,20.4,13.6,62,13.8,65v71.2h-60.9L348,171l0-0.6c-4.8-48.2-27.3-71.3-45.4-82.1\n                c-19.2-11.5-37.3-12-39.1-12c-48.9-1.3-72.4,25.5-83.5,47.9c-11.5,23.1-12.1,46-12.1,47l0,70.5h-60.1c0-16,0.2-25.3,0.3-33\n                C108.4,198.7,108.5,191.5,108.2,176.5z M181.9,241v-69.7c0-1.2,0.9-21.6,10.8-41.4c13.2-26.4,35.9-39.7,67.4-39.7c1,0,2,0,3,0\n                l0.2,0c0.2,0,15.5,0.1,32,10c22.3,13.3,35.3,37.3,38.7,71.2l0.4,69.6H181.9z M57.5,501.3V255.6h399.5l-0.3,245.6L57.5,501.3z\"/>\n        <polygon points=\"229.5,404.3 196.4,368.5 174.3,388.8 229,448 338.8,334.5 317.2,313.6    \"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 522 */
+/* 523 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/lock.svg ***!
   \**************************************/
@@ -46123,7 +46212,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-lock\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M423.3,241v-70.8l0-0.4c-0.1-1.9-2.5-47.3-15.4-71.1c-7.9-14.6-20.8-36.1-41.3-54.7\n                C344.7,24.3,317.6,11,286,4.7c-5.3-1.1-17.8-2.2-30.6-2.2c-10.4,0-19.2,0.7-26.3,2.1c-30.7,6.2-87,26.1-119,90.5\n                c-16.6,33.5-16,81.1-16,81.6c0.3,14.7,0.1,21.4,0,31.6c-0.1,7.6-0.3,16.9-0.3,32.7H43.5v274.3l427.5,0.2V241H423.3z M108.2,176.5\n                c-0.2-12.3,2-49.9,14.5-75.1c29.3-59,81-77.3,109.2-83c6.1-1.2,14.2-1.9,23.5-1.9c12.5,0,24,1.1,27.8,1.9\n                c64.8,13,94.1,53.4,112.3,87c11,20.4,13.6,62,13.8,65v71.2h-60.9L348,171l0-0.6c-4.8-48.2-27.3-71.3-45.4-82.1\n                c-19.2-11.5-37.3-12-39.1-12c-48.9-1.3-72.4,25.5-83.5,47.9c-11.5,23.1-12.1,46-12.1,47l0,70.5h-60.1c0-16,0.2-25.3,0.3-33\n                C108.4,198.7,108.5,191.5,108.2,176.5z M181.9,241v-69.7c0-1.2,0.9-21.6,10.8-41.4c13.2-26.4,35.9-39.7,67.4-39.7c1,0,2,0,3,0\n                l0.2,0c0.2,0,15.5,0.1,32,10c22.3,13.3,35.3,37.3,38.7,71.2l0.4,69.6H181.9z M57.5,501.3V255.6h399.5l-0.3,245.6L57.5,501.3z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 523 */
+/* 524 */
 /*!******************************************!*\
   !*** ./~/html-loader!./src/logo-1st.svg ***!
   \******************************************/
@@ -46132,7 +46221,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-logo-1st\" viewBox=\"0 0 517 323\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M120.4,297.7 C117.6,293.8 116.2,290 116.2,286.3 C116.2,282.6 118.2,274 122.2,260.3 L199.7,0 L190,0 L72.4,28.1 L74.4,36.7 C85.7,35.5 93.3,34.9 97.2,34.9 C105,34.9 111,36.9 115.2,40.9 C119.4,44.9 121.5,50.3 121.5,57.1 C121.5,60.6 121,64.3 120.1,68.3 C119.8,69.7 116,82.1 108.8,105.6 L63.2,260.3 C58.3,277 53.9,288 50,293.2 C46.1,298.4 41.1,302.2 35,304.5 C28.9,306.8 18.1,308.1 2.5,308.4 L0,316.6 L156.7,316.6 L159.2,308.4 C142.7,307.5 132.8,306.4 129.5,305.3 C126.3,304.1 123.2,301.6 120.4,297.7 L120.4,297.7 Z\"></path>\n        <path d=\"M340.2,112.2 C336.1,112.2 330.6,111.3 323.7,109.6 C309.9,106.1 298.3,104.4 288.8,104.4 C267.1,104.4 250.2,109.9 238.2,120.9 C226.2,131.9 220.2,145.7 220.2,162.3 C220.2,172.1 222.2,180.8 226.2,188.5 C231.9,199.1 243.6,214 261.5,233.4 C274.5,247.6 282.8,258 286.3,264.7 C289.9,271.4 291.7,278.3 291.7,285.5 C291.7,292.8 289,299.1 283.5,304.4 C278,309.7 271.1,312.3 262.7,312.3 C255.5,312.3 248,310 240.3,305.3 C232.5,300.6 226.3,294.3 221.6,286.4 C216.9,278.5 211.9,265.2 206.6,246.7 L199.2,246.7 L187.9,322.9 L196.5,322.9 C199.1,319.4 201.5,317.1 203.6,316 C205.7,314.9 208.7,314.4 212.5,314.4 C216.8,314.4 223.2,315.6 231.8,317.9 C244.8,321.3 255.7,323 264.6,323 C277.7,323 290.4,319.8 302.6,313.3 C314.8,306.8 323.9,298.3 330,287.6 C336.1,276.9 339.2,265.5 339.2,253.5 C339.2,242.4 336.6,232 331.4,222.3 C326.2,212.6 311.5,194.8 287.4,168.8 C280.5,161.5 276.1,155.7 274.1,151.4 C272.1,147.1 271.1,142.6 271.1,137.7 C271.1,131.9 273.4,127 278,122.8 C282.6,118.7 288.4,116.6 295.4,116.6 C306.8,116.6 317.5,121.8 327.5,132.3 C337.5,142.8 343.1,157.1 344.3,175.2 L352.9,175.2 L363.1,104.5 L354.9,104.5 C350.9,109.6 346.1,112.2 340.2,112.2 L340.2,112.2 Z\"></path>\n        <path d=\"M482.9,136.8 L508.9,136.8 L516.9,110.6 L491.3,110.6 L510.5,48.5 L498.1,48.5 C478.7,69.8 462.2,85.2 448.5,94.8 C434.8,104.4 418.6,112.8 400,119.9 L395.7,136.8 L425,136.8 L386,260.9 C381.7,274.8 379.6,286.2 379.6,295.1 C379.6,303.1 382.5,309.8 388.2,315 C393.9,320.2 402,322.9 412.4,322.9 C424.6,322.9 437.1,318.6 449.8,310.1 C462.5,301.5 474.1,288.1 484.6,269.7 L476.4,264.7 C467.1,278 459,287.3 451.9,292.7 C449.2,294.8 446.5,295.9 443.9,295.9 C442.2,295.9 440.7,295.4 439.3,294.3 C437.9,293.2 437.2,292 437.2,290.5 C437.2,286.2 438.5,279.8 441.2,271.5 L482.9,136.8 L482.9,136.8 Z\"></path>\n    </g>\n</svg>";
 
 /***/ },
-/* 524 */
+/* 525 */
 /*!****************************************************!*\
   !*** ./~/html-loader!./src/logo-introspective.svg ***!
   \****************************************************/
@@ -46141,7 +46230,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-logo-introspective\" viewBox=\"0 0 2612 208\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <polygon points=\"19.5 203.7 0 203.7 0 3.9 19.5 3.9\"></polygon>\n        <polygon points=\"185.8 206.9 62.8 40.5 62.8 203.9 56.8 203.9 56.8 0.7 179.7 165.5 179.7 3.9 185.7 3.9 185.7 206.9\"></polygon>\n        <polygon points=\"336.5 9.9 284.1 9.9 284.1 203.9 264.6 203.9 264.6 9.9 211.6 9.9 211.6 3.8 336.5 3.8\"></polygon>\n        <path d=\"M476.8,204 L455.6,204 L391.6,92.8 C394.7,93 397.7,93.1 400.6,93.1 C429.1,93.1 443.3,79.7 443.3,53 C443.3,23.5 425.4,9 389.6,9.5 L376.6,9.5 L376.6,204 L357.3,204 L357.3,4.1 C360.3,3.9 372,3.8 392.3,3.8 C439.2,3.4 462.7,19.5 462.7,52.3 C462.7,65.2 458.5,75.7 450.2,83.9 C441.8,92.1 430.5,97.1 416.1,98.8 L476.8,204 L476.8,204 Z\"></path>\n        <path d=\"M685.2,103.8 C685.2,132.6 676,156.6 657.5,175.9 C638.7,195.9 614.7,205.8 585.5,205.8 C556.3,205.8 532.2,195.8 513.3,175.9 C494.9,156.6 485.8,132.5 485.8,103.8 C485.8,75.1 495,51.1 513.3,31.7 C532.2,11.7 556.3,1.8 585.5,1.8 C614.7,1.8 638.7,11.8 657.5,31.7 C675.9,51.1 685.2,75.1 685.2,103.8 L685.2,103.8 L685.2,103.8 Z M663.7,103.8 C663.7,76.2 656.7,53.3 642.6,35.1 C627.9,16.1 608.8,6.6 585.4,6.6 C561.9,6.6 542.8,16.1 528,35.1 C514,53.3 507,76.2 507,103.8 C507,131.4 514,154.3 528.1,172.5 C542.8,191.5 561.9,201 585.5,201 C608.9,201 628,191.5 642.7,172.5 C656.7,154.2 663.7,131.3 663.7,103.8 L663.7,103.8 L663.7,103.8 Z\"></path>\n        <path d=\"M806.8,154.7 C806.8,170.5 800.8,183.2 788.9,192.8 C778.2,201.5 765.5,205.8 751,205.8 C732.4,205.8 716,200.3 701.7,189.3 L707.8,180.2 C720.7,192.4 735.1,198.6 751,198.6 C762.8,198.6 772.5,195.1 779.9,188.1 C787.4,181.1 791.1,171.4 791.1,159.1 C791.1,138.1 777.5,120 750.2,104.9 C719.6,87.9 704.9,67.2 706.2,42.8 C706.8,30.5 712.1,20.6 721.8,13 C731.3,5.8 742.9,2.2 756.8,2.2 C762.8,2.5 768.4,3.4 773.6,4.8 C786.1,8 795.2,13.7 801.1,21.8 L793.9,29.2 C790.7,24.5 786.3,20.4 780.7,16.7 C773.1,11.6 765,9 756.5,9 C746.8,9 738.6,11.7 731.8,17.1 C725,22.5 721.3,29.5 720.7,37.9 C719.5,54.5 731.2,70.1 755.7,84.5 C775.7,96.2 789.6,108.1 797.4,120.4 C803.7,130.2 806.8,141.6 806.8,154.7 L806.8,154.7 Z\"></path>\n        <path d=\"M955.5,58.1 C955.5,73.4 949,86.3 936.1,96.9 C923.2,107.5 907.8,112.7 889.9,112.4 C885.9,112.4 882.6,112.3 879.9,112.2 L879.9,106.2 L885.7,106.2 C901.7,106.2 914.3,101.4 923.4,91.7 C931.9,82.9 936.1,71.6 936.1,57.7 C936.1,25.2 917.5,9.1 880.2,9.5 L860.4,9.5 L860.4,203.8 L841.2,203.8 L841.2,4.1 C850.8,3.9 865.7,3.8 886,3.8 C932.4,3.5 955.5,21.6 955.5,58.1 L955.5,58.1 Z\"></path>\n        <polygon points=\"1076.3 203.9 983.2 203.9 983.2 3.8 1072.9 3.8 1072.9 9.9 1002.7 9.9 1002.7 90.8 1066 90.8 1066 96.9 1002.7 96.9 1002.7 197.8 1076.3 197.8 1076.3 203.9\"></polygon>\n        <path d=\"M1246.2,176.1 C1231.2,195.9 1210.8,205.8 1185.1,205.8 C1160.7,205.8 1139.4,195.6 1121.1,175.2 C1102.8,154.8 1093.6,131 1093.6,103.7 C1093.6,76 1101.9,52.2 1118.4,32.2 C1135.3,11.8 1155.7,1.6 1179.8,1.6 C1203.3,1.6 1222.8,8.3 1238.3,21.6 L1230.7,30.6 C1216.6,15.4 1199.7,7.7 1179.8,7.7 C1160.4,7.7 1144.7,17.1 1132.9,35.9 C1121.6,53.7 1116,76.3 1116,103.6 C1116,130.4 1122.5,152.9 1135.7,171.3 C1148.9,190.1 1165.4,199.5 1185.2,199.5 C1208.1,199.5 1225.6,189.5 1237.9,169.4 L1246.2,176.1 L1246.2,176.1 Z\"></path>\n        <polygon points=\"1384.7 9.9 1332.3 9.9 1332.3 203.9 1312.8 203.9 1312.8 9.9 1259.8 9.9 1259.8 3.8 1384.7 3.8\"></polygon>\n        <polygon points=\"1425 203.7 1405.5 203.7 1405.5 3.9 1425 3.9\"></polygon>\n        <polygon points=\"1609.1 4.1 1530.2 207.3 1450.8 4.1 1473.5 4.1 1538 170.4 1602.3 4.1\"></polygon>\n        <polygon points=\"1726.4 203.9 1633.3 203.9 1633.3 3.8 1723 3.8 1723 9.9 1652.8 9.9 1652.8 90.8 1716.1 90.8 1716.1 96.9 1652.8 96.9 1652.8 197.8 1726.4 197.8\"></polygon>\n    </g>\n    <g transform=\"translate(1865.000000, 67.000000)\">\n        <path d=\"M0.8,0.7 C7.9,9.9 15,19.1 22.1,28.3 C29.1,37.5 36.2,46.7 43.4,55.9 C50.5,46.7 57.6,37.5 64.7,28.3 C71.8,19.1 78.8,9.9 86,0.7 L86,85.7 L78.8,85.7 L78.8,32.5 L78.8,25.1 C78.8,24.3 78.8,23.6 78.9,23 C78.9,22.3 79,21.7 79.1,21 C73.5,29 67.7,36.8 61.6,44.5 C55.5,52.2 49.5,59.9 43.5,67.7 C38.2,60.8 33,54 27.8,47.2 C22.6,40.4 17.4,33.6 12.1,26.7 L9.7,23.6 C9.4,23.2 9.1,22.8 8.8,22.3 C8.5,21.8 8.2,21.4 7.9,21 C8,21.7 8,22.4 8.1,23 C8.1,23.7 8.2,24.4 8.2,25.1 L8.2,85.7 L1,85.7 L1,0.7 L0.8,0.7 Z\"></path>\n        <path d=\"M195.7,85.8 L188.4,85.8 C186,80.2 183.6,74.6 181.3,69 C179,63.4 176.6,57.8 174.2,52.2 L145,52.2 C142.7,57.8 140.3,63.4 138,69 C135.6,74.6 133.3,80.2 130.9,85.8 L123.7,85.8 C129.7,71.5 135.7,57.4 141.7,43.3 C147.7,29.2 153.7,15 159.7,0.8 C165.7,15.1 171.7,29.2 177.7,43.3 C183.7,57.4 189.7,71.5 195.7,85.8 L195.7,85.8 L195.7,85.8 Z M160.8,20.4 C160.6,19.8 160.5,19.2 160.3,18.6 C160.1,18 159.9,17.4 159.8,16.8 C158.3,21.7 156.4,26.5 154.3,31.2 C152.2,35.9 150.2,40.7 148.1,45.4 L171.2,45.4 C169.4,41.2 167.7,37.1 166,32.9 C164.3,28.7 162.6,24.5 160.8,20.4 L160.8,20.4 L160.8,20.4 Z\"></path>\n        <path d=\"M269.4,57.9 L269.4,50.9 L285.1,50.9 C287.3,50.9 288.9,51.4 289.7,52.3 C290.5,53.3 291,55 291,57.4 L291,80.9 C287.9,82.7 284.6,84.1 281.1,85.1 C277.6,86.1 273.8,86.7 269.9,86.7 C264.2,86.7 258.8,85.6 253.7,83.4 C248.7,81.2 244.3,78.3 240.5,74.5 C236.7,70.7 233.8,66.3 231.6,61.3 C229.4,56.3 228.3,50.9 228.3,45.1 C228.3,39.4 229.4,34 231.6,28.9 C233.8,23.8 236.7,19.4 240.5,15.7 C244.3,11.9 248.7,9 253.7,6.8 C258.7,4.6 264.1,3.5 269.9,3.5 C273.8,3.5 277.6,4 281.1,5 C284.6,6 288,7.4 291.2,9.3 C290.6,10.3 289.9,11.3 289.2,12.3 C288.5,13.3 287.8,14.3 287.1,15.3 C281.9,12.1 276.2,10.5 269.9,10.5 C265.2,10.5 260.7,11.4 256.6,13.2 C252.5,15 248.8,17.5 245.7,20.7 C242.6,23.9 240.1,27.6 238.3,31.8 C236.5,36 235.6,40.5 235.6,45.2 C235.6,50 236.5,54.5 238.3,58.7 C240.1,62.9 242.5,66.5 245.6,69.7 C248.7,72.8 252.3,75.3 256.5,77.1 C260.6,78.9 265.1,79.8 269.8,79.8 C274.8,79.8 279.5,78.8 283.9,76.7 L283.9,63.6 L283.9,61 C283.9,59.9 283.7,59.1 283.4,58.6 C283.1,58.1 282.3,57.8 281,57.8 L269.4,57.8 L269.4,57.9 Z\"></path>\n        <path d=\"M398.7,85.8 L391.4,85.8 C389,80.2 386.6,74.6 384.3,69 C382,63.4 379.6,57.8 377.2,52.2 L348,52.2 C345.7,57.8 343.3,63.4 341,69 C338.6,74.6 336.3,80.2 333.9,85.8 L326.7,85.8 C332.7,71.5 338.7,57.4 344.7,43.3 C350.7,29.2 356.7,15 362.7,0.8 C368.7,15.1 374.7,29.2 380.7,43.3 C386.7,57.4 392.7,71.5 398.7,85.8 L398.7,85.8 L398.7,85.8 Z M363.8,20.4 C363.6,19.8 363.5,19.2 363.3,18.6 C363.1,18 362.9,17.4 362.8,16.8 C361.3,21.7 359.4,26.5 357.3,31.2 C355.2,35.9 353.2,40.7 351.1,45.4 L374.2,45.4 C372.4,41.2 370.7,37.1 369,32.9 C367.3,28.7 365.5,24.5 363.8,20.4 L363.8,20.4 L363.8,20.4 Z\"></path>\n        <path d=\"M433.6,4.4 L495.2,4.4 L495.2,11.4 C486.4,22.7 477.6,33.9 468.9,45.1 C460.2,56.3 451.4,67.5 442.6,78.8 L498.6,78.8 L498.6,85.8 L433.7,85.8 L433.7,78.8 C442.5,67.5 451.3,56.3 460,45.1 C468.7,33.9 477.5,22.7 486.4,11.4 L433.8,11.4\"></path>\n        <polygon points=\"535.8 4.4 543.1 4.4 543.1 85.7 535.8 85.7\"></polygon>\n        <path d=\"M655.8,4.4 L655.8,89.4 C645.4,77.9 635.1,66.4 624.8,55.1 C614.5,43.8 604.2,32.3 593.8,20.8 C593.4,20.3 593,19.8 592.7,19.3 C592.4,18.8 592,18.3 591.6,17.8 C591.7,18.4 591.7,19 591.8,19.7 C591.8,20.3 591.9,20.9 592,21.6 L592,85.9 L584.8,85.9 L584.8,0.9 C595.2,12.6 605.5,24.2 615.8,35.8 C626.1,47.3 636.4,59 646.8,70.7 C647.2,71.2 647.6,71.7 647.9,72.2 C648.2,72.7 648.6,73.2 649,73.7 C648.9,73.1 648.9,72.5 648.8,71.8 C648.8,71.2 648.7,70.6 648.6,69.9 L648.6,4.6 L655.8,4.6 L655.8,4.4 Z\"></path>\n        <polygon points=\"695.2 85.8 695.2 4.5 744.4 4.5 744.4 11.5 702.5 11.5 702.5 41.5 739.9 41.5 739.9 48.4 702.5 48.4 702.5 79.1 746.1 79.1 746.1 86 695.2 86\"></polygon>\n    </g>\n</svg>\n";
 
 /***/ },
-/* 525 */
+/* 526 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/logo-no-reg.svg ***!
   \*********************************************/
@@ -46150,7 +46239,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-logo-no-reg\" viewBox=\"0 0 100 25\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M15.7,0L9.6,20.2c-0.3,1.1-0.5,1.7-0.5,2c0,0.3,0.1,0.6,0.3,0.9c0.2,0.3,0.5,0.5,0.7,0.6\n                c0.3,0.1,1,0.2,2.3,0.2l-0.2,0.6H0l0.2-0.6c1.2,0,2.1-0.1,2.6-0.3c0.5-0.2,0.9-0.5,1.2-0.9c0.3-0.4,0.6-1.2,1-2.5L8.5,8.2\n                c0.6-1.8,0.9-2.8,0.9-2.9C9.5,5,9.5,4.7,9.5,4.5C9.5,4,9.4,3.5,9,3.2C8.7,2.9,8.2,2.8,7.6,2.8c-0.3,0-0.9,0-1.8,0.1L5.7,2.2\n                L14.9,0H15.7z\"/>\n        <path d=\"M28.5,8.1l-0.8,5.5H27c-0.1-1.4-0.5-2.5-1.3-3.3c-0.8-0.8-1.6-1.2-2.5-1.2c-0.5,0-1,0.2-1.4,0.5\n                c-0.4,0.3-0.5,0.7-0.5,1.1c0,0.4,0.1,0.7,0.2,1.1c0.2,0.3,0.5,0.8,1,1.3c1.9,2,3,3.4,3.4,4.1c0.4,0.8,0.6,1.6,0.6,2.4\n                c0,0.9-0.2,1.8-0.7,2.6c-0.5,0.8-1.2,1.5-2.1,2c-1,0.5-1.9,0.7-3,0.7c-0.7,0-1.6-0.1-2.6-0.4c-0.7-0.2-1.2-0.3-1.5-0.3\n                c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.3-0.6,0.5h-0.7l0.9-5.9h0.6c0.4,1.4,0.8,2.5,1.2,3.1c0.4,0.6,0.9,1.1,1.5,1.5\n                c0.6,0.4,1.2,0.5,1.8,0.5c0.7,0,1.2-0.2,1.6-0.6c0.4-0.4,0.6-0.9,0.6-1.5c0-0.6-0.1-1.1-0.4-1.6c-0.3-0.5-0.9-1.3-1.9-2.4\n                c-1.4-1.5-2.3-2.7-2.8-3.5c-0.3-0.6-0.5-1.3-0.5-2c0-1.3,0.5-2.3,1.4-3.2c0.9-0.9,2.3-1.3,4-1.3c0.7,0,1.7,0.1,2.7,0.4\n                c0.5,0.1,1,0.2,1.3,0.2c0.5,0,0.8-0.2,1.1-0.6H28.5z\"/>\n        <path d=\"M40,3.8l-1.5,4.8h2l-0.6,2h-2L34.6,21c-0.2,0.6-0.3,1.1-0.3,1.5c0,0.1,0.1,0.2,0.2,0.3\n                c0.1,0.1,0.2,0.1,0.4,0.1c0.2,0,0.4-0.1,0.6-0.2c0.5-0.4,1.2-1.1,1.9-2.2l0.6,0.4c-0.8,1.4-1.7,2.5-2.7,3.1c-1,0.7-2,1-2.9,1\n                c-0.8,0-1.4-0.2-1.9-0.6c-0.4-0.4-0.7-0.9-0.7-1.5c0-0.7,0.2-1.6,0.5-2.6l3.1-9.6H31l0.3-1.3c1.5-0.6,2.7-1.2,3.8-1.9\n                c1.1-0.7,2.4-1.9,3.9-3.6H40z\"/>\n        <path d=\"M59.6,0l-6.1,19.8C53.2,21,53,21.7,53,22c0,0.1,0,0.2,0.1,0.3c0.1,0.1,0.2,0.1,0.3,0.1c0.2,0,0.4-0.1,0.7-0.3\n                c0.4-0.3,1-1,1.6-1.9l0.6,0.3c-1.7,2.9-3.5,4.4-5.6,4.4c-0.7,0-1.3-0.2-1.7-0.6c-0.4-0.4-0.6-0.8-0.6-1.4c0-0.6,0.2-1.3,0.5-2.4\n                l0.6-1.8c-1.5,2.6-2.8,4.3-3.9,5.2c-0.8,0.6-1.7,1-2.4,1c-0.9,0-1.7-0.4-2.3-1.1S40,22.2,40,20.8c0-1.8,0.4-3.5,1.2-5.2\n                c0.8-1.7,1.7-3.1,2.8-4.3c1-1.1,2-2,3-2.4c0.9-0.5,1.9-0.7,2.8-0.7c0.5,0,0.9,0.1,1.3,0.3c0.4,0.2,0.8,0.6,1.3,1.1l1.4-4.4\n                c0.4-1.1,0.5-1.9,0.5-2.4c0-0.3-0.1-0.5-0.4-0.7c-0.2-0.2-0.6-0.3-1-0.3c-0.2,0-0.4,0-0.7,0.1l0.2-0.7L58.5,0H59.6z M51.6,11.2\n                c0-0.7-0.1-1.2-0.4-1.6c-0.3-0.3-0.6-0.5-1-0.5c-0.4,0-0.8,0.2-1.3,0.6c-0.9,0.8-1.8,2.3-2.7,4.6c-0.9,2.3-1.4,4.2-1.4,5.8\n                c0,0.6,0.1,1,0.3,1.3c0.2,0.3,0.4,0.4,0.7,0.4c0.4,0,0.9-0.2,1.3-0.6c1-0.9,2.1-2.4,3.1-4.6C51.1,14.3,51.6,12.5,51.6,11.2z\"/>\n        <path d=\"M66,0c0.7,0,1.4,0.3,1.9,0.8c0.5,0.5,0.8,1.1,0.8,1.8c0,0.7-0.3,1.3-0.8,1.8C67.4,5,66.8,5.2,66,5.2\n                c-0.7,0-1.3-0.3-1.9-0.8c-0.5-0.5-0.8-1.1-0.8-1.8c0-0.7,0.3-1.3,0.8-1.8C64.7,0.3,65.3,0,66,0z M67.5,8.1l-4,12.5\n                c-0.2,0.7-0.3,1.2-0.3,1.4c0,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.2,0.2,0.3,0.2c0.2,0,0.4-0.1,0.6-0.3c0.5-0.5,1.2-1.3,1.9-2.5l0.6,0.4\n                C65,23.4,63,25,61,25c-0.8,0-1.4-0.2-1.9-0.6c-0.5-0.4-0.7-1-0.7-1.6c0-0.4,0.1-1,0.3-1.7l2.8-8.5c0.3-0.8,0.4-1.4,0.4-1.8\n                c0-0.3-0.1-0.5-0.4-0.7c-0.2-0.2-0.6-0.3-1-0.3c-0.2,0-0.4,0-0.7,0l0.2-0.7l6.3-1H67.5z\"/>\n        <path d=\"M80,0l-3.2,10.6c0.9-1,1.7-1.7,2.3-2c0.6-0.3,1.3-0.5,2-0.5c1.4,0,2.4,0.5,3.1,1.5c0.7,1,1,2.2,1,3.5\n                c0,3.2-1.1,6-3.4,8.5c-2,2.2-4.4,3.3-7,3.3c-1.9,0-4-0.6-6.1-1.7l5.6-18.6c0.3-0.9,0.4-1.5,0.4-1.9c0-0.3-0.1-0.5-0.4-0.7\n                c-0.4-0.3-0.9-0.4-1.6-0.3l0.2-0.7L78.9,0H80z M73,23.5c0.5,0.4,1,0.5,1.5,0.5c0.6,0,1.1-0.1,1.5-0.4c0.7-0.4,1.3-1.1,2.1-2.2\n                c0.7-1.1,1.3-2.3,1.8-3.8c0.5-1.5,0.7-3,0.7-4.4c0-0.8-0.2-1.5-0.5-1.9c-0.4-0.4-0.8-0.7-1.2-0.7c-0.8,0-1.5,0.4-2,1.2\n                c-0.4,0.5-0.8,1.7-1.3,3.4L73,23.5z\"/>\n        <path d=\"M100,8.1l-0.8,5.5h-0.7c-0.1-1.4-0.5-2.5-1.3-3.3c-0.8-0.8-1.6-1.2-2.5-1.2c-0.5,0-1,0.2-1.4,0.5\n                c-0.4,0.3-0.5,0.7-0.5,1.1c0,0.4,0.1,0.7,0.2,1.1c0.2,0.3,0.5,0.8,1,1.3c1.9,2,3,3.4,3.4,4.1c0.4,0.8,0.6,1.6,0.6,2.4\n                c0,0.9-0.2,1.8-0.7,2.6c-0.5,0.8-1.2,1.5-2.1,2c-1,0.5-1.9,0.7-3,0.7c-0.7,0-1.6-0.1-2.6-0.4c-0.7-0.2-1.2-0.3-1.5-0.3\n                c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.3-0.6,0.5h-0.7l0.9-5.9h0.6c0.4,1.4,0.8,2.5,1.2,3.1c0.4,0.6,0.9,1.1,1.5,1.5\n                c0.6,0.4,1.2,0.5,1.8,0.5c0.7,0,1.2-0.2,1.6-0.6c0.4-0.4,0.6-0.9,0.6-1.5c0-0.6-0.1-1.1-0.4-1.6c-0.3-0.5-0.9-1.3-1.9-2.4\n                c-1.4-1.5-2.3-2.7-2.8-3.5c-0.3-0.6-0.5-1.3-0.5-2c0-1.3,0.5-2.3,1.4-3.2c0.9-0.9,2.3-1.3,4-1.3c0.7,0,1.7,0.1,2.7,0.4\n                c0.5,0.1,1,0.2,1.3,0.2c0.5,0,0.8-0.2,1.1-0.6H100z\"/>\n    </g>\n</svg>\n";
 
 /***/ },
-/* 526 */
+/* 527 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/logo.svg ***!
   \**************************************/
@@ -46159,7 +46248,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-logo\" title=\"1stdibs.com\" viewBox=\"543 138 2021.4 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M843.7,139.2L726.9,531c-6,20.5-9,33.6-9,39.1c0,5.5,2.1,11.3,6.4,17.1c4.2,5.9,8.8,9.7,13.8,11.4 c4.9,1.7,19.8,3.3,44.6,4.7l-3.8,12.4H543l3.8-12.4c23.4-0.5,39.8-2.4,48.9-5.9c9.2-3.5,16.7-9.1,22.6-17 c5.9-7.9,12.5-24.4,19.8-49.5l68.7-232.7c10.8-35.4,16.5-54.1,17-56.2c1.4-6,2.2-11.6,2.2-16.9c0-10.3-3.2-18.4-9.5-24.5 c-6.3-6-15.4-9.1-27.2-9.1c-5.8,0-17.2,0.9-34.3,2.8l-2.9-12.9l177-42.4H843.7z\" />\n        <path d=\"M1089.2,296.3l-15.3,106.5h-12.9c-1.8-27.4-10.3-48.9-25.3-64.6c-15-15.7-31.1-23.6-48.3-23.6 c-10.5,0-19.2,3.1-26.1,9.3c-6.9,6.2-10.3,13.7-10.3,22.4c0,7.3,1.5,14.2,4.5,20.7c3,6.4,9.6,15.2,20,26.2 c36.3,39,58.3,65.9,66.2,80.5c7.8,14.6,11.7,30.3,11.7,47c0,18.1-4.6,35.2-13.8,51.3c-9.2,16.1-23,29-41.3,38.8 c-18.3,9.7-37.3,14.6-57.1,14.6c-13.3,0-29.8-2.5-49.4-7.6c-12.9-3.5-22.6-5.3-29-5.3c-5.8,0-10.2,0.8-13.5,2.5 c-3.2,1.7-6.8,5.1-10.7,10.4h-12.9l17.1-114.7h11.2c8,28,15.6,47.9,22.6,59.8c7,11.9,16.4,21.4,28.1,28.4 c11.7,7.1,23,10.6,33.8,10.6c12.6,0,23.1-4,31.4-11.9c8.3-7.9,12.4-17.4,12.4-28.4c0-10.8-2.7-21.2-8.1-31.3 c-5.4-10.1-17.9-25.8-37.4-47.2c-26.9-29.1-44.6-51.7-53.1-67.6c-6-11.5-9-24.7-9-39.4c0-24.9,9-45.7,27.1-62.3 c18.1-16.6,43.5-24.9,76.1-24.9c14.3,0,31.8,2.6,52.5,7.9c10.4,2.6,18.7,3.9,24.9,3.9c9,0,16.2-3.9,21.8-11.8H1089.2z\" />\n        <path d=\"M1311.5,212.1l-28.9,93.5h38.6l-12.1,39.4H1270l-62.6,202.6c-4,12.6-6,22.1-6,28.6c0,2.2,1,4.1,3.1,5.7 c2.1,1.6,4.4,2.4,6.9,2.4c3.9,0,7.9-1.6,12-4.8c10.6-8.1,22.8-22.1,36.8-42.1l12.4,7.6c-15.9,27.6-33.4,47.9-52.5,60.7 c-19.1,12.9-37.9,19.3-56.3,19.3c-15.6,0-27.8-3.9-36.4-11.8c-8.6-7.9-12.9-17.9-12.9-30c0-13.3,3.2-30.5,9.7-51.4l58.6-186.8 h-44.2l6.5-25.4c28-10.8,52.3-23.4,73-37.8c20.7-14.4,45.6-37.7,74.7-69.7H1311.5z\" />\n        <path d=\"M1687.6,138l-116.8,384.9c-7.4,24.1-11.1,38.6-11.1,43.7c0,2.5,0.9,4.7,2.7,6.6c1.8,1.8,3.8,2.8,5.8,2.8 c3.9,0,8.3-2,13.4-5.9c8.5-6.5,18.7-18.7,30.9-36.7l12.4,6.6c-32.4,56.8-68,85.2-106.8,85.2c-13.8,0-24.4-3.6-31.9-10.8 c-7.5-7.2-11.2-16.4-11.2-27.7c0-10.8,3-26.1,9-46.1l10.9-35.2c-28.8,50.7-53.8,84.4-75,101.2c-16.1,12.4-31.8,18.6-47,18.6 c-17.3,0-31.9-7-43.7-21c-11.9-14-17.8-34.4-17.8-61.3c0-34.2,7.7-67.9,23-101.2c15.3-33.3,33-61.1,53.1-83.3 c20.1-22.3,39.2-38.2,57.5-47.7c18.2-9.5,36.2-14.3,53.8-14.3c9.1,0,17.1,1.9,24.2,5.6c7.1,3.8,15.1,10.8,24.2,21.1l27-85.4 c6.9-21.5,10.3-36.9,10.3-46.2c0-5.6-2.4-10.4-7-14.3c-4.7-4-11-5.9-18.8-5.9c-3.7,0-8.2,0.3-13.7,1l2.9-13.5L1666,138H1687.6z M1532.8,356c0-14-2.8-24.2-8.4-30.7c-5.6-6.4-12.2-9.7-19.7-9.7c-7.5,0-15.6,3.8-24.2,11.4c-16.6,14.7-34,44.3-52.1,88.8 c-18.1,44.5-27.2,81.9-27.2,112.2c0,11,2,19.2,6,24.5c4,5.3,8.4,7.9,13.3,7.9c8.2,0,16.4-3.7,24.6-11 c19.9-17.5,39.5-47.5,58.8-90.1C1523.1,416.6,1532.8,382.2,1532.8,356z\" />\n        <path d=\"M1810.2,138c14.4,0,26.5,5,36.3,14.9c9.8,9.9,14.8,21.9,14.8,36c0,14.1-5,26.1-14.9,36 c-10,9.9-22,14.9-36.1,14.9c-13.9,0-25.8-5-35.8-14.9c-10-9.9-14.9-21.9-14.9-36c0-14.1,4.9-26.1,14.8-36 C1784.1,143,1796.1,138,1810.2,138z M1838.2,296.3l-76.7,242.9c-4.2,13.9-6.4,23-6.4,27.3c0,2.6,1,5.1,3.1,7.3 c2.1,2.3,4.2,3.4,6.5,3.4c3.9,0,7.7-1.8,11.6-5.4c10.2-8.8,22.5-24.8,36.9-47.9l11.8,7.2c-35,62.7-72.1,94-111.5,94 c-15,0-27-4.2-35.9-12.5c-8.9-8.3-13.4-18.9-13.4-31.7c0-8.5,2.2-19.3,6.5-32.4l52.8-165c5.1-15.9,7.6-27.8,7.6-35.9 c0-5.1-2.3-9.5-7-13.5c-4.7-3.9-11-5.9-19.1-5.9c-3.7,0-8.1,0.1-13.2,0.3l4.7-13.5l120.4-18.8H1838.2z\" />\n        <path d=\"M2078.5,138l-61.1,207c17.3-19.5,31.8-32.5,43.4-39c11.6-6.5,24.2-9.7,37.9-9.7c26.3,0,46,9.9,59.1,29.8 c13.1,19.9,19.6,42.8,19.6,68.7c0,62-22,117.3-66.1,166c-39.1,42.9-83.6,64.4-133.5,64.4c-37.1,0-76.3-11.1-117.7-33.2l106.8-363.3 c5-17.3,7.8-29.3,8.5-36.2c0-5.9-2.5-10.6-7.4-14c-6.9-4.9-17.5-7-31.6-6.3l2.9-13.5l118.2-20.6H2078.5z M1943.6,595.3 c10.3,6.9,19.7,10.4,28,10.4c11.6,0,21.4-2.4,29.3-7.3c12.5-7.8,25.6-22,39.4-42.5c13.7-20.5,25.2-45.2,34.4-74.2 c9.2-29,13.8-57.9,13.8-86.6c0-16.3-3.4-28.8-10.3-37.3c-6.9-8.5-14.8-12.8-23.8-12.8c-15,0-28.1,8-39.2,24.1 c-7.5,10.4-15.7,32.5-24.4,66.3L1943.6,595.3z\" />\n        <path d=\"M2462.1,296.3l-15.3,106.5h-12.9c-1.8-27.4-10.3-48.9-25.3-64.6c-15-15.7-31.1-23.6-48.3-23.6 c-10.5,0-19.2,3.1-26.1,9.3c-6.9,6.2-10.3,13.7-10.3,22.4c0,7.3,1.5,14.2,4.5,20.7c3,6.4,9.6,15.2,20,26.2 c36.3,39,58.3,65.9,66.2,80.5c7.8,14.6,11.7,30.3,11.7,47c0,18.1-4.6,35.2-13.8,51.3c-9.2,16.1-23,29-41.3,38.8 c-18.3,9.7-37.3,14.6-57.1,14.6c-13.3,0-29.8-2.5-49.4-7.6c-12.9-3.5-22.6-5.3-29-5.3c-5.8,0-10.2,0.8-13.5,2.5 c-3.2,1.7-6.8,5.1-10.7,10.4h-12.9l17.1-114.7h11.2c8,28,15.6,47.9,22.6,59.8c7,11.9,16.4,21.4,28.1,28.4 c11.7,7.1,23,10.6,33.8,10.6c12.6,0,23.1-4,31.4-11.9c8.3-7.9,12.4-17.4,12.4-28.4c0-10.8-2.7-21.2-8.1-31.3 c-5.4-10.1-17.9-25.8-37.4-47.2c-26.9-29.1-44.6-51.7-53.1-67.6c-6-11.5-9-24.7-9-39.4c0-24.9,9-45.7,27.1-62.3 c18.1-16.6,43.5-24.9,76.1-24.9c14.3,0,31.8,2.6,52.5,7.9c10.4,2.6,18.7,3.9,24.9,3.9c9,0,16.2-3.9,21.8-11.8H2462.1z\" />\n    </g>\n    <g>\n        <path d=\"M2471.2,591.3V591c0-25.4,20.6-47,46.7-47c26.1,0,46.5,21.4,46.5,46.7v0.3c0,25.4-20.6,47-46.7,47 C2491.5,638,2471.2,616.6,2471.2,591.3z M2559,591v-0.3c0-22.8-17.6-41.6-41.1-41.6c-23.6,0-41.3,19.1-41.3,41.8v0.3 c0,22.8,17.6,41.6,41.1,41.6C2541.2,632.9,2559,613.8,2559,591z M2496,564.9h24.2c8.8,0,14.4,2.2,17.9,5.7c3,3,4.5,6.7,4.5,11.8 v0.3c0,7.1-3.7,12.1-9.8,14.9l11.6,16.9h-18.8l-9.5-14.2h-0.3h-3.2v14.2H2496V564.9z M2519.7,588.4c4,0,6.4-1.7,6.4-4.8v-0.3 c0-3.1-2.6-4.6-6.3-4.6h-7.2v9.7H2519.7z\" />\n    </g>\n</svg>\n";
 
 /***/ },
-/* 527 */
+/* 528 */
 /*!*****************************************!*\
   !*** ./~/html-loader!./src/luggage.svg ***!
   \*****************************************/
@@ -46168,7 +46257,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-luggage\" viewBox=\"0 100 612 612\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<path d=\"M553.2,222.2H376.4v-29.4c0-16.5-12.9-29.4-29.4-29.4h-82c-16.5,0-29.4,12.9-29.4,29.4v29.4H58.8c-33,0-58.8,25.7-58.8,58.8\r\n\tv282.7c0,33,25.7,58.8,58.8,58.8h494.5c33,0,58.8-25.7,58.8-58.8V280.9C612,247.9,586.3,222.2,553.2,222.2z M258.9,192.8\r\n\tc0-3.7,2.4-6.1,6.1-6.1h82.6c3.7,0,6.1,2.4,6.1,6.1v29.4h-94.9V192.8z M58.8,599.2c-20.2,0-35.5-15.3-35.5-35.5V280.9\r\n\tc0-20.2,15.3-35.5,35.5-35.5h70.4v129.7h-23.3v82.6h23.3v141.4L58.8,599.2L58.8,599.2z M129.7,433.9v-35.5H153v35.5H129.7z\r\n\t M153,599.2V457.8h23.3v-82.6H153V246.1h82.6h23.3h94.2h23.3H459v129.7h-23.3v82.6H459v141.4H153V599.2z M459,433.9v-35.5h23.3v35.5\r\n\tH459z M588.7,563.7c0,20.2-15.3,35.5-35.5,35.5h-71V457.8h23.3v-82.6h-23.3V246.1h70.4c20.2,0,35.5,15.3,35.5,35.5v282.1H588.7z\"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 528 */
+/* 529 */
 /*!**************************************************!*\
   !*** ./~/html-loader!./src/magnifying-glass.svg ***!
   \**************************************************/
@@ -46177,7 +46266,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-magnifying-glass\"  viewBox=\"0 0 518 518\">\n    <path d=\"M494.2,470.1l-158-160.6c25.1-32.4,40.1-73.2,40.1-117.7C376.4,86.4,292.3,1,188.7,1\n            C85,1,0.9,86.4,0.9,191.8s84,190.8,187.7,190.8c47.9,0,91.5-18.4,124.7-48.4L470.6,494c6.5,6.6,17.1,6.6,23.6,0\n            C500.7,487.4,500.7,476.7,494.2,470.1z M188.8,348.8c-88.7,0-156.4-68.4-156.4-158c0-89.6,67.7-158,156.4-158s156.4,68.5,156.4,158\n            S277.5,348.8,188.8,348.8z\"/>\n</svg>";
 
 /***/ },
-/* 529 */
+/* 530 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/mask.svg ***!
   \**************************************/
@@ -46186,7 +46275,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-mask\" viewBox=\"0 -300 1060 1060\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M1044.6,5c-47,44.5-253.2,94.9-330,115.2C637.2,140.8,572,176.4,530,216.9c-42-40.5-107.2-76.1-184.6-96.6 C268.5,99.9,62.3,49.6,15.3,5c-40-37.8,9.4,148.4,21.3,186.3C98.8,388.4,142.1,389.4,268.5,411c70.6,12.1,146.6,12.3,206-1.6 c26.6-15.4,23.3-89.8,55.5-89.8c32.3,0,28.9,74.4,55.5,89.8c59.4,13.9,135.4,13.7,206,1.6c126.3-21.7,169.7-22.6,231.8-219.7 C1035.3,153.5,1084.6-32.8,1044.6,5z M441.6,306.6c-11.7,44.2-89,62.1-172.8,39.7c-83.5-22.1-142-75.9-130.3-120.2 c11.7-44.1,89.2-61.9,172.8-39.7C395.1,208.6,453.3,262.4,441.6,306.6z M793,346.3c-83.7,22.5-161,4.5-172.7-39.7 c-11.7-44.2,46.6-98,130.3-120.2c83.6-22.2,161-4.4,172.7,39.7C935,270.3,876.5,324.2,793,346.3z\"/>\n</svg>";
 
 /***/ },
-/* 530 */
+/* 531 */
 /*!*****************************************!*\
   !*** ./~/html-loader!./src/message.svg ***!
   \*****************************************/
@@ -46195,7 +46284,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-message\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M189,249.6L119.6,183H0V11h250v172h-61V249.6z M8,175h114.8l58.2,55.8V175h61V19H8V175z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 531 */
+/* 532 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/minus.svg ***!
   \***************************************/
@@ -46204,7 +46293,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-minus\" viewBox=\"0 -120 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <rect width=\"250\" height=\"15\" rx=\"10\"></rect>\n</svg>";
 
 /***/ },
-/* 532 */
+/* 533 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/mobile-logo.svg ***!
   \*********************************************/
@@ -46213,7 +46302,7 @@
 	module.exports = "<svg class=\"dibsvg-svg dibsvg-logo-mobile\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 250 250\">\n    <rect x=\"14\" y=\"41\" class=\"dibsvg-mobile-logo-1st\" width=\"219\" height=\"159\"/>\n    <path class=\"dibsvg-mobile-logo-bg\" d=\"M206.5,1c23.7,0,43,19.1,43,42.6v162.2c0,23.5-19.3,42.6-43,42.6H42.8c-23.7,0-43-19.1-43-42.6V43.6\n        C-0.1,20.1,19.1,1,42.8,1 M67.1,171c-1.1-1.5-1.7-3-1.7-4.5c0-1.5,0.8-4.9,2.4-10.3l30.7-103h-3.8L48.2,64.4l0.8,3.4\n        c4.5-0.5,7.5-0.7,9-0.7c3.1,0,5.5,0.8,7.1,2.4c1.7,1.6,2.5,3.7,2.5,6.4c0,1.4-0.2,2.9-0.6,4.4c-0.1,0.5-1.6,5.5-4.5,14.8l-18,61.1\n        c-1.9,6.6-3.7,10.9-5.2,13c-1.5,2.1-3.5,3.5-5.9,4.5c-2.4,0.9-6.7,1.5-12.9,1.7l-1,3.4h62l1-3.4c-6.5-0.4-10.4-0.8-11.7-1.3\n        C69.5,173.6,68.3,172.6,67.1,171z M154,97.6c-1.6,0-3.8-0.3-6.5-1c-5.4-1.4-10-2.1-13.8-2.1c-8.6,0-15.3,2.2-20,6.6\n        c-4.7,4.4-7.1,9.8-7.1,16.4c0,3.9,0.8,7.3,2.4,10.4c2.2,4.2,6.9,10.1,14,17.8c5.1,5.6,8.4,9.7,9.8,12.4c1.4,2.7,2.1,5.4,2.1,8.2\n        c0,2.9-1.1,5.4-3.3,7.5c-2.2,2.1-4.9,3.1-8.2,3.1c-2.8,0-5.8-0.9-8.9-2.8c-3.1-1.9-5.5-4.4-7.4-7.6c-1.8-3.1-3.8-8-5.9-15.8h-2.9\n        l-4.5,30.5h3.4c1-1.8,2-2.4,2.8-2.8c0.8-0.4,2-0.7,3.5-0.7c1.7,0,4.2,0.4,7.6,1.4c5.1,1.3,9.5,2,13,2c5.2,0,10.2-1.3,15-3.8\n        c4.8-2.6,8.4-5.9,10.8-10.2c2.4-4.2,3.6-8.7,3.6-13.5c0-4.4-1-8.5-3.1-12.3c-2.1-3.8-7.9-10.9-17.4-21.1c-2.7-2.9-4.5-5.2-5.2-6.9\n        c-0.8-1.7-1.2-3.5-1.2-5.4c0-2.3,0.9-4.2,2.7-5.9c1.8-1.6,4.1-2.4,6.9-2.4c4.5,0,8.7,2.1,12.7,6.2c3.9,4.1,6.2,9.8,6.6,17h3.4\n        l4-28.1h-3.2C158.3,96.8,156.4,97.6,154,97.6z M210.5,107.6h10.3l3.2-10.8h-10.1l7.6-24.5h-4.9c-7.7,8.4-14.2,14.6-19.6,18.4\n        c-5.4,3.8-11.8,7.2-19.2,10.1l-1.7,6.8h11.6l-15.4,49c-1.7,5.5-2.5,10-2.5,13.5c0,3.2,1.1,5.8,3.4,7.9c2.3,2.1,5.5,3.1,9.6,3.1\n        c4.8,0,9.8-1.7,14.8-5.1c5-3.4,9.6-8.7,13.8-16l-3.2-2c-3.7,5.3-6.9,8.9-9.7,11.1c-1.1,0.8-2.1,1.3-3.2,1.3c-0.7,0-1.3-0.2-1.8-0.6\n        c-0.5-0.4-0.8-0.9-0.8-1.5c0-1.7,0.5-4.1,1.6-7.4L210.5,107.6z\"/>\n</svg>\n";
 
 /***/ },
-/* 533 */
+/* 534 */
 /*!*******************************************!*\
   !*** ./~/html-loader!./src/net-price.svg ***!
   \*******************************************/
@@ -46222,7 +46311,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-net-price\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M0,0v250h250V0H0z M241,241H9V9h232V241z\"/>\n        <polygon points=\"53,111 53,111 70.4,161 87,161 87,90 74,90 74,138 73.4,138 56.1,90 40,90 40,161 53,161  \"/>\n        <polygon points=\"147,149 121,149 121,130 145,130 145,118 121,118 121,102 146,102 146,90 107,90 107,161 147,161  \"/>\n        <polygon points=\"180,161 195,161 195,102 210,102 210,90 165,90 165,102 180,102  \"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 534 */
+/* 535 */
 /*!****************************************!*\
   !*** ./~/html-loader!./src/orange.svg ***!
   \****************************************/
@@ -46231,7 +46320,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-orange\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<path d=\"M99.9,7.3L99.9,7.3c-0.1-0.2-0.1-0.4-0.2-0.5c-0.2-0.3-0.4-0.5-0.7-0.6c0,0-0.1,0-0.1-0.1\r\n\tc-1.1-0.5-28.2-11.2-42.1-3c-4,2.4-6.6,6.1-7.6,11.1c-4.2,2.1-7.1,4.2-9,5.7c-1.7-8.6-8.5-11.1-8.6-11.1c-0.9-0.3-1.9,0.2-2.2,1.1\r\n\tc-0.1,0.5-0.1,0.9,0.1,1.4c0.2,0.4,0.6,0.7,1,0.9c0.1,0,8.8,3.3,6,17.1C16,30,0,45.5,0,64.6C0,84.1,17,100,37.9,100\r\n\ts37.9-15.9,37.9-35.4c0-18.8-15.7-34.2-35.8-35.3c0.3-1.8,0.5-3.5,0.5-5.1c1.2-1.1,4.3-3.8,9.9-6.6c4.7,3.7,21.1,13.4,48.8-8.4\r\n\tc0.2-0.2,0.4-0.3,0.5-0.6c0.1-0.1,0.1-0.3,0.2-0.4C100,7.9,100,7.6,99.9,7.3z M53.4,12.3c1-2.6,2.7-4.6,5.2-6.1\r\n\tc2.9-1.7,6.9-2.6,11.8-2.6c4.5,0,9.8,0.8,15.6,2.2C73.7,6.1,62.8,8.3,53.4,12.3z M93.2,9.3c-20.8,14.6-33.8,9.8-39,6.6\r\n\tC65.2,11.1,78.3,8.9,93.2,9.3z M72.4,64.6c0,17.5-15.5,31.8-34.5,31.8c-19,0-34.5-14.3-34.5-31.8c0-17.5,15.5-31.8,34.5-31.8\r\n\tC56.9,32.8,72.4,47.1,72.4,64.6z\"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 535 */
+/* 536 */
 /*!**********************************************************!*\
   !*** ./~/html-loader!./src/payment-american-express.svg ***!
   \**********************************************************/
@@ -46240,7 +46329,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-american-express\" viewBox=\"0 0 500 312\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <rect class=\"dibsvg-color-holder\" width=\"500\" height=\"312\" fill=\"#F8F8F8\"/>\n    <g class=\"dibsvg-color-letters\" fill=\"#2E77BC\" transform=\"translate(7.028 73.293)\">\n        <path d=\"M430.17905 123.410308C433.3166 126.547858 434.36245 129.685408 434.36245 134.914659 434.36245 147.464859 427.041499 152.69411 413.445448 152.69411L387.299197 152.69411 387.299197 141.189759 413.445448 141.189759C415.537149 141.189759 417.628849 141.189759 418.674699 140.143909 419.720549 139.098059 420.766399 138.052209 420.766399 137.006359 420.766399 134.914659 419.720549 133.868809 418.674699 132.822959 417.628849 131.777108 416.582999 131.777108 413.445448 131.777108 400.895248 131.777108 385.207497 131.777108 385.207497 113.997657 385.207497 105.630857 390.436747 97.2640562 405.078648 97.2640562L432.27075 97.2640562 432.27075 108.768407 407.170348 108.768407C405.078648 108.768407 402.986948 108.768407 401.941098 109.814257 399.849398 110.860107 399.849398 112.951807 399.849398 113.997657 399.849398 116.089357 400.895248 117.135207 402.986948 118.181058 404.032798 118.181058 406.124498 119.226908 408.216198 119.226908L415.537149 119.226908C422.858099 119.226908 427.041499 120.272758 430.17905 123.410308L430.17905 123.410308 430.17905 123.410308zM482.471553 123.410308C485.609103 126.547858 486.654953 129.685408 486.654953 134.914659 486.654953 147.464859 479.334003 152.69411 465.737952 152.69411L439.5917 152.69411 439.5917 141.189759 465.737952 141.189759C467.829652 141.189759 469.921352 141.189759 470.967202 140.143909 472.013052 139.098059 473.058902 138.052209 473.058902 137.006359 473.058902 134.914659 472.013052 133.868809 470.967202 132.822959 469.921352 131.777108 468.875502 131.777108 465.737952 131.777108 453.187751 131.777108 437.5 131.777108 437.5 113.997657 437.5 105.630857 442.72925 97.2640562 457.371151 97.2640562L483.517403 97.2640562 483.517403 108.768407 458.417001 108.768407C456.325301 108.768407 454.233601 108.768407 453.187751 109.814257 452.141901 110.860107 451.096051 111.905957 451.096051 113.997657 451.096051 116.089357 452.141901 117.135207 454.233601 118.181058 455.279451 118.181058 457.371151 119.226908 459.462851 119.226908L466.783802 119.226908C474.104752 119.226908 479.334003 120.272758 482.471553 123.410308L482.471553 123.410308 482.471553 123.410308z\"/>\n        <polygon points=\"332.915 97.264 378.932 97.264 378.932 108.768 346.511 108.768 346.511 119.227 377.887 119.227 377.887 130.731 346.511 130.731 346.511 141.19 378.932 141.19 378.932 153.74 332.915 153.74\"/>\n        <path d=\"M316.181392 127.593708C319.318942 126.547858 325.594043 121.318608 325.594043 112.951807 325.594043 106.676707 322.456493 103.539157 318.273092 100.401606 314.089692 98.3099063 308.860442 97.2640562 301.539491 97.2640562L270.163989 97.2640562 270.163989 153.73996 284.80589 153.73996 284.80589 132.822959 299.447791 132.822959C304.677041 132.822959 307.814592 132.822959 309.906292 134.914659 311.997992 137.006359 311.997992 142.235609 311.997992 145.373159L311.997992 152.69411 325.594043 152.69411 325.594043 141.189759C325.594043 135.960509 325.594043 133.868809 323.502343 130.731258 321.410643 130.731258 319.318942 128.639558 316.181392 127.593708L316.181392 127.593708zM307.814592 120.272758C305.722892 121.318608 303.631191 121.318608 301.539491 121.318608L284.80589 121.318608 284.80589 108.768407 301.539491 108.768407C303.631191 108.768407 306.768742 108.768407 307.814592 109.814257 309.906292 110.860107 310.952142 112.951807 310.952142 115.043507 310.952142 117.135207 309.906292 119.226908 307.814592 120.272758L307.814592 120.272758zM241.926037 97.2640562L198.000335 97.2640562 180.220884 116.089357 163.487282 97.2640562 109.103079 97.2640562 109.103079 153.73996 163.487282 153.73996 181.266734 134.914659 198.000335 153.73996 224.146586 153.73996 224.146586 134.914659 240.880187 134.914659C252.384538 134.914659 264.934739 131.777108 264.934739 116.089357 264.934739 100.401606 252.384538 97.2640562 241.926037 97.2640562L241.926037 97.2640562zM156.166332 141.189759L122.69913 141.189759 122.69913 129.685408 153.028782 129.685408 153.028782 118.181058 122.69913 118.181058 122.69913 107.722557 157.212182 107.722557 171.854083 124.456158 156.166332 141.189759 156.166332 141.189759zM210.550535 148.51071L189.633534 125.502008 210.550535 103.539157 210.550535 148.51071 210.550535 148.51071zM241.926037 123.410308L224.146586 123.410308 224.146586 108.768407 241.926037 108.768407C247.155288 108.768407 250.292838 110.860107 250.292838 116.089357 250.292838 120.272758 247.155288 123.410308 241.926037 123.410308L241.926037 123.410308zM450.050201 56.4759036L431.2249 56.4759036 405.078648 14.6419009 405.078648 56.4759036 377.886546 56.4759036 372.657296 43.9257028 344.419344 43.9257028 339.190094 56.4759036 323.502343 56.4759036C317.227242 56.4759036 308.860442 55.4300535 303.631191 50.2008032 298.401941 46.0174029 295.264391 39.7423025 295.264391 29.2838019 295.264391 20.9170013 296.310241 13.5960509 302.585341 7.32095047 306.768742 3.1375502 314.089692 1.04585007 323.502343 1.04585007L337.098394 1.04585007 337.098394 12.5502008 324.548193 12.5502008C319.318942 12.5502008 317.227242 13.5960509 314.089692 15.687751 310.952142 18.8253012 309.906292 23.0087015 309.906292 29.2838019 309.906292 35.5589023 310.952142 39.7423025 314.089692 42.8798527 316.181392 44.9715529 320.364793 46.0174029 323.502343 46.0174029L329.777443 46.0174029 347.556894 1.04585007 368.473896 1.04585007 391.482597 54.3842035 391.482597 1.04585007 412.399598 1.04585007 436.45415 39.7423025 436.45415 1.04585007 450.050201 1.04585007 450.050201 56.4759036 450.050201 56.4759036zM366.382195 32.4213521L356.969545 10.4585007 347.556894 32.4213521 366.382195 32.4213521 366.382195 32.4213521z\"/>\n        <polygon points=\"275.393 1.046 288.989 1.046 288.989 56.476 275.393 56.476\"/>\n        <path d=\"M257.613788,30.3296519 C260.751339,29.2838019 267.026439,24.0545515 267.026439,15.687751 C267.026439,9.4126506 264.934739,6.2751004 259.705489,3.1375502 C255.522088,1.04585007 250.292838,3.90798505e-14 242.971888,3.90798505e-14 L211.596386,3.90798505e-14 L211.596386,56.4759036 L225.192436,56.4759036 L225.192436,35.5589023 L239.834337,35.5589023 C245.063588,35.5589023 248.201138,35.5589023 249.246988,37.6506024 C251.338688,40.7881526 251.338688,44.9715529 251.338688,48.1091031 L251.338688,55.4300535 L264.934739,55.4300535 L264.934739,43.9257028 C264.934739,38.6964525 264.934739,36.6047523 262.843039,33.4672021 C262.843039,33.4672021 260.751339,32.4213521 257.613788,30.3296519 L257.613788,30.3296519 Z M249.246988,24.0545515 C247.155288,25.1004016 245.063588,25.1004016 242.971888,25.1004016 L226.238286,25.1004016 L226.238286,12.5502008 L242.971888,12.5502008 C245.063588,12.5502008 248.201138,12.5502008 249.246988,13.5960509 C251.338688,14.6419009 252.384538,15.687751 252.384538,18.8253012 C252.384538,20.9170013 251.338688,23.0087015 249.246988,24.0545515 L249.246988,24.0545515 Z\"/>\n        <polygon points=\"203.23 56.476 157.212 56.476 157.212 1.046 203.23 1.046 203.23 12.55 170.808 12.55 170.808 23.009 202.184 23.009 202.184 34.513 170.808 34.513 170.808 44.972 203.23 44.972\"/>\n        <path d=\"M147.799531,56.4759036 L134.203481,56.4759036 L134.203481,12.5502008 L114.332329,56.4759036 L102.827979,56.4759036 L81.9109772,12.5502008 L81.9109772,56.4759036 L54.7188755,56.4759036 L49.4896252,43.9257028 L21.2516734,43.9257028 L16.022423,56.4759036 L0.334672021,56.4759036 L24.3892236,3.90798505e-14 L44.2603748,3.90798505e-14 L67.2690763,53.3383534 L67.2690763,1.04585007 L89.2319277,1.04585007 L107.011379,38.6964525 L123.74498,1.04585007 L146.753681,1.04585007 L147.799531,56.4759036 L147.799531,56.4759036 L147.799531,56.4759036 Z M44.2603748,32.4213521 L34.8477242,10.4585007 L25.4350736,32.4213521 L44.2603748,32.4213521 L44.2603748,32.4213521 Z\"/>\n    </g>\n</svg>\n";
 
 /***/ },
-/* 536 */
+/* 537 */
 /*!***********************************************!*\
   !*** ./~/html-loader!./src/payment-check.svg ***!
   \***********************************************/
@@ -46249,7 +46338,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-check\" viewBox=\"0 0 500 312\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <rect class=\"dibsvg-color-holder\" width=\"500\" height=\"312\" fill=\"#F8F8F8\"/>\n    <path d=\"M446.339807,190.42907 L420.193555,155.916018 L412.872605,164.282819 L412.872605,190.42907 L399.276554,190.42907 L399.276554,107.806915 L412.872605,107.806915 L412.872605,147.549218 L444.248107,107.806915 L460.981708,107.806915 L429.606206,146.503368 L464.119258,190.42907 L446.339807,190.42907 Z M303.058348,149.640918 C303.058348,124.540516 320.837799,106.761065 344.892351,106.761065 C360.580102,106.761065 371.038602,115.127866 376.267853,125.586366 L364.763502,131.861467 C360.580102,125.586366 353.259151,120.357116 344.892351,120.357116 C329.2046,120.357116 317.700249,132.907317 317.700249,149.640918 C317.700249,166.374519 329.2046,178.92472 344.892351,178.92472 C353.259151,178.92472 360.580102,173.695469 364.763502,167.420369 L376.267853,173.695469 C369.992752,183.10812 360.580102,192.520771 344.892351,192.520771 C320.837799,191.474921 303.058348,174.741319 303.058348,149.640918 Z M226.711293,190.42907 L226.711293,107.806915 L281.095497,107.806915 L281.095497,120.357116 L240.307344,120.357116 L240.307344,142.319967 L280.049647,142.319967 L280.049647,154.870168 L240.307344,154.870168 L240.307344,177.87887 L281.095497,177.87887 L281.095497,190.42907 L226.711293,190.42907 Z M33.2290307,149.640918 C33.2290307,124.540516 51.0084818,106.761065 75.0630334,106.761065 C90.7507844,106.761065 101.209285,115.127866 106.438535,125.586366 L94.9341847,131.861467 C90.7507844,124.540516 83.4298339,119.311266 75.0630334,119.311266 C59.3752824,119.311266 47.8709316,131.861467 47.8709316,148.595068 C47.8709316,165.328669 59.3752824,178.92472 75.0630334,178.92472 C83.4298339,178.92472 90.7507844,173.695469 94.9341847,167.420369 L106.438535,173.695469 C100.163435,183.10812 90.7507844,192.520771 75.0630334,192.520771 C51.0084818,191.474921 33.2290307,174.741319 33.2290307,149.640918 Z M183.83144,190.42907 L183.83144,154.870168 L143.043288,154.870168 L143.043288,190.42907 L129.447237,190.42907 L129.447237,107.806915 L143.043288,107.806915 L143.043288,142.319967 L183.83144,142.319967 L183.83144,107.806915 L198.473341,107.806915 L198.473341,190.42907 L183.83144,190.42907 Z\"/>\n</svg>\n";
 
 /***/ },
-/* 537 */
+/* 538 */
 /*!**************************************************!*\
   !*** ./~/html-loader!./src/payment-discover.svg ***!
   \**************************************************/
@@ -46258,7 +46347,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-discover\" viewBox=\"0 0 500 312\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <rect class=\"dibsvg-color-holder\" width=\"500\" height=\"312\" fill=\"#F8F8F8\"/>\n    <path class=\"dibsvg-color-triangle\" fill=\"#F6821F\" d=\"M500,311.122244 L500,178.565464 C466.599866,199.440548 341.349365,271.459586 136.773547,311.122244 L500,311.122244 L500,311.122244 Z\"/>\n    <g class=\"dibsvg-color-letters\" fill=\"#202020\" transform=\"translate(81.162 115.23)\">\n        <path d=\"M332.206079 2.79726119C330.11857 2.79726119 328.031062 4.88476954 328.031062 6.97227789 328.031062 9.05978624 330.11857 11.1472946 332.206079 11.1472946 334.293587 11.1472946 336.381096 9.05978624 336.381096 6.97227789 336.381096 4.88476954 334.293587 2.79726119 332.206079 2.79726119L332.206079 2.79726119 332.206079 2.79726119zM332.206079 10.1035404C330.11857 10.1035404 329.074816 9.05978624 329.074816 6.97227789 329.074816 4.88476954 330.11857 3.84101536 332.206079 3.84101536 334.293587 3.84101536 335.337341 5.92852371 335.337341 6.97227789 335.337341 9.05978624 334.293587 10.1035404 332.206079 10.1035404L332.206079 10.1035404 332.206079 10.1035404zM326.987308 18.4535738C326.987308 8.01603206 319.681029 1.75350701 308.199733 1.75350701L292.54342 1.75350701 292.54342 57.0724783 302.980962 57.0724783 302.980962 35.1536406 304.024716 35.1536406 318.637275 57.0724783 331.162325 57.0724783 314.462258 34.1098864C322.812291 32.0223781 326.987308 26.8036072 326.987308 18.4535738L326.987308 18.4535738 326.987308 18.4535738zM306.112224 27.8473614L302.980962 27.8473614 302.980962 11.1472946 306.112224 11.1472946C312.374749 11.1472946 315.506012 14.2785571 315.506012 19.497328 316.549766 24.7160989 312.374749 27.8473614 306.112224 27.8473614L306.112224 27.8473614 306.112224 27.8473614z\"/>\n        <polyline points=\"257.056 57.072 286.281 57.072 286.281 47.679 267.493 47.679 267.493 33.066 285.237 33.066 285.237 23.672 267.493 23.672 267.493 11.147 286.281 11.147 286.281 1.754 257.056 1.754 257.056 57.072\"/>\n        <polyline points=\"226.787 39.329 212.174 1.754 201.737 1.754 223.656 58.116 228.874 58.116 251.837 1.754 240.356 1.754 226.787 39.329\"/>\n        <path d=\"M102.58016 29.9348697C102.58016 46.6349365 115.10521 59.1599866 130.761523 59.1599866 134.93654 59.1599866 139.111556 58.1162325 143.286573 56.0287241L143.286573 43.503674C139.111556 47.6786907 135.980294 49.7661991 130.761523 49.7661991 120.323981 49.7661991 113.017702 41.4161657 113.017702 30.9786239 113.017702 20.5410822 120.323981 12.1910488 130.761523 12.1910488 135.980294 12.1910488 139.111556 14.2785571 143.286573 18.4535738L143.286573 5.92852371C139.111556 3.84101536 134.93654 2.79726119 130.761523 2.79726119 115.10521.709752839 102.58016 13.2348029 102.58016 29.9348697M83.7925852 23.6723447C77.5300601 21.5848363 75.4425518 19.497328 75.4425518 16.3660655 75.4425518 13.2348029 78.5738143 10.1035404 82.748831 10.1035404 85.8800935 10.1035404 87.9676019 11.1472946 91.0988644 14.2785571L96.3176353 6.97227789C92.1426186 2.79726119 86.9238477.709752839 80.6613226.709752839 71.2675351.709752839 63.9612558 6.97227789 63.9612558 16.3660655 63.9612558 23.6723447 67.0925184 27.8473614 76.4863059 30.9786239 80.6613226 32.0223781 82.748831 33.0661323 83.7925852 34.1098864 85.8800935 35.1536406 86.9238477 37.241149 86.9238477 39.3286573 86.9238477 43.503674 83.7925852 46.6349365 78.5738143 46.6349365 73.3550434 46.6349365 70.2237809 44.5474282 67.0925184 39.3286573L60.8299933 45.5911824C66.0487642 52.8974616 71.2675351 56.0287241 79.6175685 56.0287241 90.0551102 56.0287241 97.3613894 48.7224449 97.3613894 38.2849031 99.4488978 32.0223781 95.2738811 27.8473614 83.7925852 23.6723447\"/>\n        <polygon points=\"48.305 1.754 58.742 1.754 58.742 57.072 48.305 57.072\"/>\n        <path d=\"M14.9048096,1.75350701 L0.292251169,1.75350701 L0.292251169,57.0724783 L14.9048096,57.0724783 C23.254843,57.0724783 28.4736139,54.9849699 33.6923848,50.8099532 C39.9549098,45.5911824 43.0861723,37.241149 43.0861723,29.9348697 C44.1299265,13.2348029 31.6048764,1.75350701 14.9048096,1.75350701 L14.9048096,1.75350701 L14.9048096,1.75350701 Z M27.4298597,43.503674 C24.2985972,46.6349365 20.1235805,47.6786907 12.8173013,47.6786907 L10.7297929,47.6786907 L10.7297929,11.1472946 L13.8610554,11.1472946 C20.1235805,11.1472946 24.2985972,12.1910488 28.4736139,15.3223113 C31.6048764,18.4535738 33.6923848,23.6723447 33.6923848,28.8911156 C32.6486306,35.1536406 30.5611222,40.3724115 27.4298597,43.503674 L27.4298597,43.503674 L27.4298597,43.503674 Z\"/>\n    </g>\n    <path class=\"dibsvg-color-circle\" fill=\"#F6821F\" d=\"M0,31.3126253 C0,48.0126921 12.5250501,60.5377422 28.1813627,60.5377422 C43.8376754,60.5377422 56.3627255,48.0126921 56.3627255,31.3126253 C56.3627255,15.6563126 43.8376754,3.13126253 28.1813627,3.13126253 C12.5250501,3.13126253 0,15.6563126 0,31.3126253 L0,31.3126253 Z\" transform=\"translate(228.624 112.809)\"/>\n</svg>\n";
 
 /***/ },
-/* 538 */
+/* 539 */
 /*!****************************************************!*\
   !*** ./~/html-loader!./src/payment-mastercard.svg ***!
   \****************************************************/
@@ -46267,7 +46356,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-mastercard\" viewBox=\"0 0 500 312\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <rect class=\"dibsvg-color-holder\" width=\"500\" height=\"312\" fill=\"#F8F8F8\"/>\n    <path class=\"dibsvg-color-letter\" fill=\"#000000\" d=\"M139.705882,289.433112 L139.705882,271.643738 C139.705882,264.824478 135.555028,260.377135 128.735769,260.377135 C125.177894,260.377135 121.323529,261.563093 118.655123,265.417457 C116.579696,262.156072 113.614801,260.377135 109.167457,260.377135 C106.202562,260.377135 102.941176,261.266603 100.56926,264.527989 L100.56926,260.970114 L94.9359583,260.970114 L94.9359583,289.433112 L100.56926,289.433112 L100.56926,273.126186 C100.56926,268.085863 103.534156,265.713947 107.685009,265.713947 C111.835863,265.713947 114.20778,268.382353 114.20778,273.126186 L114.20778,289.433112 L119.841082,289.433112 L119.841082,273.126186 C119.841082,268.085863 122.805977,265.713947 126.956831,265.713947 C131.107685,265.713947 133.479602,268.382353 133.479602,273.126186 L133.479602,289.433112 L139.705882,289.433112 Z M232.210626,261.266603 L221.833491,261.266603 L221.833491,252.668406 L216.20019,252.668406 L216.20019,261.266603 L210.270398,261.266603 L210.270398,266.306926 L216.20019,266.306926 L216.20019,279.648956 C216.20019,286.171727 218.572106,290.026091 225.687856,290.026091 C228.356262,290.026091 231.321157,289.136622 233.396584,287.950664 L231.617647,282.910342 C229.83871,284.0963 227.763283,284.392789 226.280835,284.392789 C223.315939,284.392789 221.833491,282.613852 221.833491,279.648956 L221.833491,266.010436 L232.210626,266.010436 L232.210626,261.266603 Z M284.985769,260.377135 C281.427894,260.377135 278.759488,262.156072 277.27704,264.527989 L277.27704,260.970114 L271.643738,260.970114 L271.643738,289.433112 L277.27704,289.433112 L277.27704,273.422676 C277.27704,268.678843 279.648956,265.713947 283.503321,265.713947 C284.689279,265.713947 286.171727,266.010436 287.357685,266.306926 L289.136622,260.970114 C287.950664,260.673624 286.171727,260.377135 284.985769,260.377135 L284.985769,260.377135 Z M205.230076,263.34203 C202.26518,261.266603 198.114326,260.377135 193.666983,260.377135 C186.551233,260.377135 182.10389,263.63852 182.10389,269.271822 C182.10389,274.015655 185.365275,276.684061 191.591556,277.573529 L194.556452,277.870019 C197.817837,278.462998 199.893264,279.648956 199.893264,281.131404 C199.893264,283.206831 197.521347,284.689279 193.074004,284.689279 C188.62666,284.689279 185.661765,283.206831 183.586338,281.724383 L180.621442,286.171727 C184.772296,289.136622 189.812619,289.729602 192.777514,289.729602 C201.079222,289.729602 205.526565,285.875237 205.526565,280.538425 C205.526565,275.498102 201.968691,273.126186 195.74241,272.236717 L192.777514,271.940228 C190.109108,271.643738 187.737192,270.754269 187.737192,268.975332 C187.737192,266.899905 190.109108,265.417457 193.370493,265.417457 C196.928368,265.417457 200.486243,266.899905 202.26518,267.789374 L205.230076,263.34203 Z M291.212049,275.201613 C291.212049,283.79981 296.845351,290.026091 306.036528,290.026091 C310.187381,290.026091 313.152277,289.136622 316.117173,286.764706 L313.152277,282.317362 C310.780361,284.0963 308.408444,284.985769 305.740038,284.985769 C300.699715,284.985769 296.845351,281.131404 296.845351,275.498102 C296.845351,269.864801 300.699715,266.010436 305.740038,266.010436 C308.408444,266.010436 310.780361,266.899905 313.152277,268.678843 L316.117173,264.231499 C313.152277,261.859583 310.187381,260.970114 306.036528,260.970114 C297.141841,260.377135 291.212049,266.603416 291.212049,275.201613 L291.212049,275.201613 Z M251.482448,260.377135 C243.18074,260.377135 237.547438,266.306926 237.547438,275.201613 C237.547438,284.0963 243.47723,290.026091 252.075427,290.026091 C256.226281,290.026091 260.377135,288.840133 263.63852,286.171727 L260.673624,282.020873 C258.301708,283.79981 255.336812,284.985769 252.371917,284.985769 C248.517552,284.985769 244.366698,282.613852 243.773719,277.573529 L264.824478,277.573529 L264.824478,275.201613 C264.824478,266.306926 259.487666,260.377135 251.482448,260.377135 L251.482448,260.377135 Z M251.185958,265.713947 C255.336812,265.713947 258.301708,268.382353 258.598197,272.829696 L243.18074,272.829696 C244.070209,268.678843 246.738615,265.713947 251.185958,265.713947 L251.185958,265.713947 Z M174.395161,275.201613 L174.395161,260.970114 L168.76186,260.970114 L168.76186,264.527989 C166.686433,261.859583 163.721537,260.377135 159.570683,260.377135 C151.565465,260.377135 145.635674,266.603416 145.635674,275.201613 C145.635674,283.79981 151.565465,290.026091 159.570683,290.026091 C163.721537,290.026091 166.686433,288.543643 168.76186,285.875237 L168.76186,289.433112 L174.395161,289.433112 L174.395161,275.201613 Z M151.565465,275.201613 C151.565465,269.864801 154.82685,265.713947 160.460152,265.713947 C165.796964,265.713947 169.058349,269.864801 169.058349,275.201613 C169.058349,280.834915 165.500474,284.689279 160.460152,284.689279 C154.82685,284.985769 151.565465,280.538425 151.565465,275.201613 L151.565465,275.201613 Z M370.671252,260.377135 C367.113378,260.377135 364.444972,262.156072 362.962524,264.527989 L362.962524,260.970114 L357.329222,260.970114 L357.329222,289.433112 L362.962524,289.433112 L362.962524,273.422676 C362.962524,268.678843 365.33444,265.713947 369.188805,265.713947 C370.374763,265.713947 371.857211,266.010436 373.043169,266.306926 L374.822106,260.970114 C373.636148,260.673624 371.857211,260.377135 370.671252,260.377135 L370.671252,260.377135 Z M348.731025,275.201613 L348.731025,260.970114 L343.097723,260.970114 L343.097723,264.527989 C341.022296,261.859583 338.0574,260.377135 333.906546,260.377135 C325.901328,260.377135 319.971537,266.603416 319.971537,275.201613 C319.971537,283.79981 325.901328,290.026091 333.906546,290.026091 C338.0574,290.026091 341.022296,288.543643 343.097723,285.875237 L343.097723,289.433112 L348.731025,289.433112 L348.731025,275.201613 Z M325.901328,275.201613 C325.901328,269.864801 329.162713,265.713947 334.796015,265.713947 C340.132827,265.713947 343.394213,269.864801 343.394213,275.201613 C343.394213,280.834915 339.836338,284.689279 334.796015,284.689279 C329.162713,284.985769 325.901328,280.538425 325.901328,275.201613 L325.901328,275.201613 Z M405.95351,275.201613 L405.95351,249.70351 L400.320209,249.70351 L400.320209,264.527989 C398.244782,261.859583 395.279886,260.377135 391.129032,260.377135 C383.123814,260.377135 377.194023,266.603416 377.194023,275.201613 C377.194023,283.79981 383.123814,290.026091 391.129032,290.026091 C395.279886,290.026091 398.244782,288.543643 400.320209,285.875237 L400.320209,289.433112 L405.95351,289.433112 L405.95351,275.201613 Z M383.123814,275.201613 C383.123814,269.864801 386.385199,265.713947 392.018501,265.713947 C397.355313,265.713947 400.616698,269.864801 400.616698,275.201613 C400.616698,280.834915 397.058824,284.689279 392.018501,284.689279 C386.385199,284.985769 383.123814,280.538425 383.123814,275.201613 Z\"/>\n    <rect class=\"dibsvg-color-middle\" fill=\"#FF5F00\" width=\"102.882\" height=\"167.813\" x=\"198.707\" y=\"45.126\"/>\n    <path class=\"dibsvg-color-left\" fill=\"#EB001B\" d=\"M209.08444,129.032258 C209.08444,94.9359583 225.094877,64.6940228 249.70351,45.1257116 C231.617647,30.8942125 208.787951,22.2960152 183.882827,22.2960152 C124.881404,22.2960152 77.1465844,70.0308349 77.1465844,129.032258 C77.1465844,188.033681 124.881404,235.768501 183.882827,235.768501 C208.787951,235.768501 231.617647,227.170304 249.70351,212.938805 C225.094877,193.370493 209.08444,163.128558 209.08444,129.032258 Z\"/>\n    <path class=\"dibsvg-color-right\" fill=\"#F79E1B\" d=\"M422.556926,129.032258 C422.556926,188.033681 374.822106,235.768501 315.820683,235.768501 C290.91556,235.768501 268.085863,227.170304 250,212.938805 C274.905123,193.370493 290.61907,163.128558 290.61907,129.032258 C290.61907,94.9359583 274.608634,64.6940228 250,45.1257116 C268.085863,30.8942125 290.91556,22.2960152 315.820683,22.2960152 C374.822106,22.2960152 422.556926,70.0308349 422.556926,129.032258 Z\"/>\n</svg>\n";
 
 /***/ },
-/* 539 */
+/* 540 */
 /*!************************************************!*\
   !*** ./~/html-loader!./src/payment-paypal.svg ***!
   \************************************************/
@@ -46276,7 +46365,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-paypal\" viewBox=\"0 0 500 312\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <rect class=\"dibsvg-color-holder\" width=\"500\" height=\"312\" fill=\"#F8F8F8\"/>\n    <g class=\"dibsvg-color-left\" fill=\"#1C3664\" transform=\"translate(0 33)\">\n      <path d=\"M240.529883,117.064558 C237.813712,117.064558 234.251136,114.876105 232.564722,112.231283 C232.564722,112.231283 214.395797,81.2193602 212.611311,78.1202906 C211.64125,76.4540101 210.658396,77.5132126 210.494232,78.1330265 C210.362048,78.8865674 204.863614,112.027508 204.863614,112.027508 C204.245333,114.69568 201.446014,116.986019 197.945266,116.975406 L186.615804,116.958425 C183.884709,116.958425 182.181239,114.780586 182.78886,112.148499 C182.78886,112.148499 191.449054,63.2765964 193.1376,51.7824445 C193.979741,45.4251065 193.050188,44.2979791 193.050188,44.2979791 L181.823063,24.8078032 C180.179289,22.1651034 181.078994,20 183.797297,20 L196.926168,20.0106133 C199.644472,20.0106133 203.245424,22.1651034 204.863614,24.8120485 L255.370752,109.860282 C255.370752,109.860282 260.20187,117.126114 255.745985,117.064558 C252.707881,117.022105 240.529883,117.064558 240.529883,117.064558\" transform=\"matrix(1 0 0 -1 0 137.065)\"/>\n      <path d=\"M145.313762,37.8366313 C143.740345,36.8495989 142.079515,36.0090293 140.337669,35.2873282 C137.99673,34.3512394 135.766655,33.8545392 133.719933,33.8545392 C130.577361,33.8545392 128.14901,34.3002958 126.5095,35.2448752 C124.872123,36.1470016 124.008662,37.7113949 124.036378,39.9529138 C124.036378,42.531934 124.641866,44.5442066 125.88056,46.1149679 C127.132045,47.6305403 128.980491,48.8510643 131.283054,49.757436 C133.579221,50.534326 136.404124,51.1626305 139.644768,51.6190004 C142.535763,51.9819736 148.258058,52.6357499 148.987203,52.6463632 C149.712083,52.6484858 150.200312,53.053912 149.874116,51.1138096 C149.733403,50.2711174 148.081102,43.5210891 147.324241,40.4559819 C147.096116,39.532629 145.868083,38.1932366 145.313762,37.8366313 Z M167.746692,85.2502733 C162.932631,87.9248128 155.40453,89.2748185 145.100562,89.2748185 C140.002944,89.2748185 134.884006,88.8715149 129.743748,88.075521 C125.96584,87.5045281 125.586343,87.4068861 123.241141,86.8995727 C118.418551,85.8509834 117.676614,81.0495482 117.676614,81.0495482 L116.12878,74.7070688 C115.252527,70.6549292 117.574278,70.8226186 118.604035,71.1367708 C120.704058,71.7693206 121.851075,72.3955025 126.144928,73.3676764 C130.242637,74.2910293 134.585526,74.9830133 138.041502,74.9596642 C143.119932,74.9596642 146.974592,74.4077751 149.539391,73.3422046 C152.108454,72.2278131 153.372732,70.3259184 153.372732,67.6131711 C153.389788,66.9678854 153.40258,66.3565621 153.174455,65.8280222 C152.959123,65.3270767 152.549779,64.8494803 151.336669,64.6881589 C144.102785,64.2530156 138.907095,63.5971166 132.636876,62.6886222 C126.460464,61.8225809 121.05797,60.3388482 116.538125,58.2862453 C111.721931,56.1593496 108.123111,53.3086301 105.643592,49.7043697 C103.217373,46.0831281 102.004264,41.6956097 102,36.5248334 C102,31.6427374 103.765298,27.6564 107.172238,24.565821 C110.626082,21.5134497 115.111815,20 120.544158,20 C123.940438,20.0233492 126.594781,20.2716993 128.505055,20.740805 C130.387613,21.2184013 132.444995,21.8870362 134.606846,22.823125 C136.235696,23.4981279 137.981806,24.4787923 139.832384,25.701439 C141.678698,26.9283309 142.966428,27.8007402 144.616598,28.8726787 L144.667766,28.7729141 L144.205121,26.7436603 C144.200857,26.7245565 144.175273,26.7118206 144.175273,26.6884714 L144.194461,26.6566317 C143.665724,24.2028478 145.138938,22.1693487 147.575817,21.9337345 L147.605665,21.8870362 L147.818865,21.8870362 L147.825261,21.8721777 C149.445583,21.8721777 154.995186,21.8806683 157.581305,21.8870362 L159.393507,21.8870362 C159.515031,21.8870362 159.532087,21.9273666 159.570463,21.9528384 C162.062774,22.264868 164.437825,24.2771406 165.004937,26.6884714 L174.264224,66.4817985 C174.47316,67.4157647 174.64372,68.4961937 174.737529,69.7379442 C174.861185,71.0009212 174.995501,72.0304066 174.959257,72.7754569 C174.980577,78.4110937 172.54583,82.5736112 167.746692,85.2502733 L167.746692,85.2502733 Z\" transform=\"matrix(1 0 0 -1 0 109.275)\"/>\n      <path d=\"M107.440926,74.250311 C105.865376,77.3111729 103.503118,79.7967965 100.488466,81.6732195 C97.3608185,83.5942181 93.7236223,84.9187519 89.4830694,85.7168685 C85.2169324,86.4789 80.2344426,86.8524865 74.518544,86.9034301 L48.0518652,86.8843262 C45.301582,86.8524865 42.6067309,84.7043643 41.9713941,82.0722778 L24.1244014,4.82690701 C23.5103847,2.18420726 25.2287787,1.42108547e-14 27.9684019,1.42108547e-14 L40.6474206,1.42108547e-14 C43.3891758,1.42108547e-14 46.1053469,2.1268957 46.7214957,4.82690701 L51.0899687,23.5720327 C51.6741374,26.1935059 54.3839126,28.3628547 57.1320638,28.3628547 L60.756468,28.3628547 C76.262522,28.3777132 88.289148,31.536217 96.932286,37.8574699 C105.562632,44.1659869 109.879937,52.5292295 109.858617,62.8707822 C109.879937,67.4132541 109.088964,71.214921 107.440926,74.250311 M80.0638824,49.0119978 C76.241202,46.2292031 70.9431758,44.8346218 64.0653358,44.8346218 L60.9568762,44.8346218 C58.217253,44.8346218 56.488199,46.9976025 57.0915557,49.6551608 L60.9078402,66.029286 C61.4898768,68.6677405 64.223104,70.856193 66.9627272,70.8307212 L71.111604,70.856193 C75.9576456,70.856193 79.6417459,70.030482 82.1276608,68.3875506 C84.5773317,66.7891949 85.8224211,64.2653635 85.7797811,60.8712456 C85.8522691,55.7599034 83.9057509,51.803283 80.0638824,49.0119978\" transform=\"matrix(1 0 0 -1 0 86.903)\"/>\n      <path d=\"M0,151 L231.996754,151 C235.312255,151 238,153.683013 238,156.994641 L238,238.005359 C238,241.316108 235.31937,244 231.996754,244 L0,244 L0,151 Z\" ></path>\n    </g>\n    <g class=\"dibsvg-color-right\" fill=\"#336699\" transform=\"translate(255 33)\">\n      <path d=\"M83.4576541,74.2525089 C81.8778402,77.3133708 79.4921295,79.7777679 76.475346,81.6966439 C73.3818104,83.6112745 69.7062381,84.9464216 65.4507611,85.7254343 C61.2421882,86.4598714 56.2383784,86.8801561 50.5374038,86.892892 L24.011029,86.8801561 C21.2799338,86.8334578 18.6000067,84.6980715 17.968934,82.0681077 L0.134733226,4.79938778 C-0.51552753,2.17366923 1.25829853,-0.0147833333 3.94035765,7.52194814e-05 L16.6684124,0.0234243739 C19.3675276,7.52194814e-05 22.1178108,2.17366923 22.7552795,4.79938778 L27.0576605,23.5508814 C27.6610172,26.1787226 30.4049044,28.3799111 33.1487916,28.3417034 L36.7667998,28.3417034 C52.2920418,28.3417034 64.3293278,31.5171884 72.9490139,37.8384413 C81.5473798,44.1915339 85.8753449,52.5250594 85.8753449,62.8899613 C85.8476288,67.415452 85.0737119,71.2277321 83.4576541,74.2525089 M56.0912703,48.9802332 C52.2920418,46.2292783 46.9599036,44.8495555 40.0991197,44.8495555 L36.943756,44.8495555 C34.2147928,44.8177158 32.4516268,47.014659 33.0997555,49.6488681 L36.903248,66.0484651 C37.4703606,68.6423439 40.2398318,70.8499003 42.930419,70.8286738 L47.0984838,70.8499003 C51.9637135,70.8286738 55.6030417,70.0178213 58.1166726,68.4067297 C60.5876635,66.7765342 61.7858489,64.2484576 61.8050369,60.8798114 C61.8156969,55.7451201 59.9075547,51.7948677 56.0912703,48.9802332\" transform=\"matrix(1 0 0 -1 0 86.893)\"/>\n      <path d=\"M186.516786,87.1817289 L175.172401,87.1817289 C175.166005,87.1817289 175.159609,87.1796063 175.155345,87.1796063 L175.148949,87.1817289 C172.55217,87.1817289 169.917015,85.2012961 169.181474,82.6817101 C169.151626,82.5798229 169.100458,82.4821809 169.077006,82.3760484 C169.077006,82.3760484 168.806242,81.1470338 168.337201,79.0222608 L152.754395,8.698853 C152.394087,7.10898785 152.15317,6.07313446 152.080682,5.80355786 L152.11053,5.76535015 C151.571134,3.30732099 153.055007,1.2738219 155.491886,1.04669831 L155.523866,1 L167.298916,1 C169.878639,1 172.496738,2.96132897 173.255731,5.44907524 C173.291975,5.57006631 173.349539,5.68256678 173.377255,5.80355786 L190.375711,82.3802937 L190.350127,82.3887843 C190.927899,85.0081349 189.232957,87.1817289 186.516786,87.1817289\" transform=\"matrix(1 0 0 -1 0 88.182)\"/>\n      <path d=\"M122.313762,37.2366252 C120.740345,36.2495928 119.077383,35.4047779 117.335537,34.6851994 C114.994598,33.7448653 112.775183,33.2524104 110.722065,33.2524104 C107.570965,33.2524104 105.14901,33.6960443 103.511632,34.6448691 C101.872123,35.5448728 101.012926,37.1092662 101.040642,39.3486624 C101.040642,41.9340506 101.639734,43.9399552 102.88056,45.5128391 C104.129913,47.0262889 105.986887,48.2446902 108.28945,49.1531846 C110.579221,49.9258293 113.395596,50.5626244 116.6469,51.0189943 C119.537895,51.3819675 125.253794,52.0378665 125.985071,52.0421118 C126.716347,52.0484797 127.202444,52.4496606 126.876248,50.5095582 C126.731271,49.666866 125.081102,42.921083 124.324241,39.8538532 C124.104644,38.9347455 122.876611,37.5953531 122.313762,37.2366252 Z M144.746692,84.6481446 C139.932631,87.3226841 132.402398,88.6748124 122.09843,88.6748124 C117.002944,88.6748124 111.881874,88.2672635 106.743748,87.4733923 C102.972236,86.898154 102.584211,86.8026347 100.241141,86.2953213 C95.4206831,85.2509773 94.6766142,80.4452968 94.6766142,80.4452968 L93.1287804,74.1070627 C92.2503954,70.0528004 94.5700141,70.2204898 95.6040353,70.5346421 C97.7083217,71.1671919 98.8489431,71.7954964 103.142796,72.763425 C107.246901,73.6910232 111.583394,74.3851299 115.043634,74.3575354 C120.1178,74.3575354 123.976724,73.8035237 126.541523,72.7379532 C129.108454,71.6235617 130.379128,69.7259123 130.379128,67.0110424 C130.387656,66.3657567 130.404712,65.756556 130.170191,65.2237708 C129.959123,64.7270706 129.554043,64.2473516 128.340933,64.0839075 C121.098521,63.6551321 115.900699,62.9971105 109.64114,62.0886161 C103.464728,61.2225747 98.0601022,59.7388421 93.5423889,57.6841165 C88.7261953,55.5572208 85.1231111,52.7107466 82.6393282,49.1043636 C80.2216374,45.4809994 79.006396,41.093481 79,35.9248273 C79,31.0406087 80.763166,27.0563939 84.17437,23.9636923 C87.626082,20.911321 92.1160792,19.3999939 97.5484216,19.3999939 C100.94257,19.4233431 103.599045,19.6674478 105.502923,20.1407989 C107.387613,20.6141499 109.442863,21.2870301 111.613242,22.2231189 C113.235696,22.8981218 114.98607,23.8745409 116.834516,25.0993102 C118.685094,26.3283248 119.966428,27.2007341 121.610202,28.2726726 L121.669898,28.1707854 L121.207253,26.1394089 C121.205121,26.1203051 121.177405,26.1096918 121.177405,26.090588 L121.192329,26.0523803 C120.663592,23.6049643 122.14107,21.5693426 124.575817,21.3294831 L124.605665,21.2870301 L124.820997,21.2870301 L124.829525,21.2764169 C126.445583,21.2764169 131.993054,21.2785395 134.585569,21.2870301 L136.395639,21.2870301 C136.515031,21.2870301 136.527823,21.3231152 136.574727,21.3507096 C139.060642,21.6542486 141.444221,23.6707665 142.004937,26.090588 L151.264224,65.8796697 C151.477424,66.8157586 151.645852,67.8961876 151.746057,69.1400607 C151.861185,70.3966698 151.997633,71.4304005 151.957125,72.1775735 C151.978445,77.808965 149.547962,81.9714824 144.746692,84.6481446 L144.746692,84.6481446 Z\" transform=\"matrix(1 0 0 -1 0 108.075)\"/>\n      <path d=\"M208.49408,0.799761517 C208.033567,0.736082005 207.619959,0.699996948 207.263914,0.699996948 C205.997505,0.699996948 205.042368,1.03962101 204.387843,1.71250119 C203.731186,2.38750402 203.40499,3.47005572 203.40499,4.95803365 L203.40499,11.4894289 L202,11.4894289 L202,13.2300023 L203.40499,13.2300023 L203.40499,16.7599699 L205.479428,16.7599699 L205.479428,13.2300023 L209.764753,13.2300023 L209.764753,11.4894289 L205.479428,11.4894289 L205.479428,5.89199983 C205.479428,5.24883676 205.498616,4.74364596 205.5242,4.38067274 C205.55618,4.01557687 205.658516,3.67807546 205.835472,3.3639232 C205.995373,3.0688748 206.217101,2.85660976 206.502789,2.72076013 C206.788478,2.58278785 207.221274,2.51486304 207.803311,2.51486304 C208.140167,2.51486304 208.49408,2.56580665 208.865048,2.66557122 C209.22962,2.76321314 209.496121,2.8459965 209.658153,2.91179867 L209.764753,2.91179867 L209.764753,1.05235691 C209.378861,0.950469696 208.956724,0.86556368 208.49408,0.799761517 Z\" transform=\"matrix(1 0 0 -1 0 17.46)\"/>\n      <path d=\"M230.011157,3.8999939 L227.936719,3.8999939 L227.936719,10.8962496 C227.936719,11.4226669 227.911134,11.9342257 227.862098,12.4245579 C227.813062,12.9170128 227.708594,13.3075805 227.557222,13.6026289 C227.386662,13.9167811 227.145746,14.1566406 226.828077,14.3158394 C226.510409,14.4771608 226.056292,14.5578216 225.459332,14.5578216 C224.875163,14.5578216 224.29739,14.4134813 223.713222,14.1226782 C223.131185,13.8339978 222.55128,13.4667793 221.969244,13.0189 C221.990564,12.849088 222.00762,12.6538042 222.022544,12.4288032 C222.0396,12.2059249 222.045996,11.9851693 222.045996,11.7644136 L222.045996,3.8999939 L219.971557,3.8999939 L219.971557,10.8962496 C219.971557,11.4396481 219.943841,11.9533295 219.896937,12.4415391 C219.850033,12.9297487 219.745565,13.3181937 219.594193,13.6111195 C219.421501,13.9273944 219.178452,14.1630086 218.860784,14.3222074 C218.545248,14.4792835 218.088999,14.5578216 217.492038,14.5578216 C216.924926,14.5578216 216.359945,14.4177266 215.786436,14.1396594 C215.21506,13.8615922 214.647947,13.5071096 214.078702,13.0740889 L214.078702,3.8999939 L212,3.8999939 L212,16.1858944 L214.078702,16.1858944 L214.078702,14.8231529 C214.728963,15.3580608 215.37496,15.7762229 216.018825,16.0776392 C216.666953,16.3748103 217.347062,16.5276411 218.078339,16.5276411 C218.916216,16.5276411 219.630437,16.3514611 220.216738,16.0012238 C220.800906,15.6467412 221.237967,15.1606543 221.525787,14.5365951 C222.363664,15.241315 223.131185,15.7507511 223.824086,16.060658 C224.514855,16.370565 225.254659,16.5276411 226.0435,16.5276411 C227.399454,16.5276411 228.399363,16.1179696 229.043228,15.3028719 C229.687093,14.4835288 230.011157,13.3415429 230.011157,11.8747915 L230.011157,3.8999939\" transform=\"matrix(1 0 0 -1 0 20.428)\"/>\n      <rect width=\"188\" height=\"93\" x=\"2\" y=\"151\" rx=\"6\"/>\n    </g>\n</svg>\n";
 
 /***/ },
-/* 540 */
+/* 541 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/payment-visa.svg ***!
   \**********************************************/
@@ -46285,7 +46374,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-visa\" viewBox=\"0 0 500 312\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <rect class=\"dibsvg-color-holder\" width=\"500\" height=\"312\" fill=\"#F8F8F8\"/>\n    <g class=\"dibsvg-color-letters\" fill=\"#0066B2\" transform=\"translate(53 93)\">\n        <path d=\"M5.20833333,6.25 C5.20833333,3.125 8.33333333,0 11.4583333,0 C14.5833333,0 17.7083333,3.125 17.7083333,6.25 C17.7083333,9.375 14.5833333,12.5 11.4583333,12.5 C8.33333333,12.5 5.20833333,9.375 5.20833333,6.25 L5.20833333,6.25 L5.20833333,6.25 Z M11.4583333,10.4166667 C14.5833333,10.4166667 16.6666667,8.33333333 16.6666667,5.20833333 C16.6666667,2.08333333 14.5833333,0 11.4583333,0 C8.33333333,0 6.25,2.08333333 6.25,5.20833333 C6.25,8.33333333 8.33333333,10.4166667 11.4583333,10.4166667 L11.4583333,10.4166667 L11.4583333,10.4166667 Z M10.4166667,8.33333333 L9.375,8.33333333 L9.375,3.125 L11.4583333,3.125 L12.5,3.125 L13.5416667,4.16666667 C13.5416667,5.20833333 13.5416667,5.20833333 12.5,5.20833333 L13.5416667,7.29166667 L12.5,7.29166667 L11.4583333,6.25 L10.4166667,6.25 L10.4166667,8.33333333 L10.4166667,8.33333333 L10.4166667,8.33333333 Z M10.4166667,5.20833333 L10.4166667,5.20833333 L11.4583333,5.20833333 C11.4583333,5.20833333 11.4583333,5.20833333 11.4583333,4.16666667 C11.4583333,4.16666667 11.4583333,4.16666667 11.4583333,3.125 L10.4166667,3.125 L10.4166667,3.125 L10.4166667,5.20833333 L10.4166667,5.20833333 L10.4166667,5.20833333 Z\" transform=\"translate(384.578 107.562)\"/>\n        <path d=\"M357.458333 120.625L386.625 120.625 361.625 1.875 336.625 1.875C325.166667 1.875 322.041667 10.2083333 322.041667 10.2083333L275.166667 119.583333 308.5 119.583333 314.75 101.875 354.333333 101.875 357.458333 120.625 357.458333 120.625zM323.083333 78.9583333L339.75 35.2083333 349.125 78.9583333 323.083333 78.9583333 323.083333 78.9583333zM277.25 31.0416667L281.416667 6.04166667C281.416667 6.04166667 267.875.833333333 253.291667.833333333 237.666667.833333333 200.166667 7.08333333 200.166667 39.375 200.166667 69.5833333 243.916667 70.625 243.916667 86.25 243.916667 101.875 204.333333 99.7916667 191.833333 89.375L187.666667 115.416667C187.666667 115.416667 201.208333 121.666667 223.083333 121.666667 244.958333 121.666667 277.25 111.25 277.25 81.0416667 277.25 50.8333333 233.5 47.7083333 233.5 34.1666667 232.458333 21.6666667 263.708333 23.75 277.25 31.0416667\"/>\n        <polyline points=\"167.875 120.625 136.625 120.625 155.375 1.875 187.667 1.875 167.875 120.625\"/>\n        <path d=\"M65.7916667,13.3333333 L76.2083333,66.4583333 L76.2083333,66.4583333 L76.2083333,66.4583333 L65.7916667,13.3333333 C65.7916667,13.3333333 64.75,2.91666667 51.2083333,2.91666667 L26.2083333,2.91666667 L61.625,27.9166667 L76.2083333,66.4583333 L76.2083333,66.4583333 L79.3333333,84.1666667 L109.541667,2.91666667 L143.916667,2.91666667 L93.9166667,120.625 L60.5833333,120.625 L33.5,18.5416667 C15.7916667,8.125 0.166666667,5 0.166666667,5 L1.20833333,2.91666667 L26.2083333,2.91666667\"/>\n    </g>\n    <path class=\"dibsvg-color-letters-top\" fill=\"#F9A533\" d=\"M129.208333,159.458333 L118.791667,106.333333 C118.791667,106.333333 117.75,95.9166667 104.208333,95.9166667 L54.2083333,95.9166667 L53.1666667,96.9583333 C53.1666667,96.9583333 77.125,102.166667 100.041667,119.875 C121.916667,137.583333 129.208333,159.458333 129.208333,159.458333\"/>\n</svg>\n";
 
 /***/ },
-/* 541 */
+/* 542 */
 /*!*******************************************************!*\
   !*** ./~/html-loader!./src/payment-wire-transfer.svg ***!
   \*******************************************************/
@@ -46294,7 +46383,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-wire-transfer\" viewBox=\"0 0 500 312\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <rect class=\"dibsvg-color-holder\" width=\"500\" height=\"312\" fill=\"#F8F8F8\"/>\n    <g class=\"dibsvg-color-letters\" transform=\"translate(31 68)\">\n        <polygon points=\"146.083 .75 131.5 63.25 114.833 .75 104.417 .75 87.75 63.25 73.167 .75 57.542 .75 79.417 82 94 82 109.625 22.625 125.25 82 139.833 82 161.708 .75\"/>\n        <polygon points=\"182.542 82 197.125 82 197.125 .75 182.542 .75\"/>\n        <path d=\"M271.083333,26.7916667 C271.083333,18.4583333 265.875,14.2916667 257.541667,14.2916667 L238.791667,14.2916667 L238.791667,40.3333333 L257.541667,40.3333333 C265.875,39.2916667 271.083333,34.0833333 271.083333,26.7916667 L271.083333,26.7916667 L271.083333,26.7916667 Z M270.041667,82 L252.333333,51.7916667 L238.791667,51.7916667 L238.791667,82 L225.25,82 L225.25,0.75 L259.625,0.75 C275.25,0.75 285.666667,11.1666667 285.666667,25.75 C285.666667,40.3333333 276.291667,47.625 266.916667,49.7083333 L285.666667,80.9583333 L270.041667,82 L270.041667,82 L270.041667,82 Z\"/>\n        <polygon points=\"310.667 82 310.667 .75 364.833 .75 364.833 13.25 325.25 13.25 325.25 35.125 363.792 35.125 363.792 47.625 325.25 47.625 325.25 69.5 364.833 69.5 364.833 82\"/>\n        <polygon points=\"15.875 172.625 15.875 127.833 .25 127.833 .25 119.5 40.875 119.5 40.875 127.833 25.25 127.833 25.25 172.625\"/>\n        <path d=\"M86.7083333 136.166667C86.7083333 130.958333 82.5416667 127.833333 78.375 127.833333L65.875 127.833333 65.875 144.5 78.375 144.5C83.5833333 144.5 86.7083333 141.375 86.7083333 136.166667L86.7083333 136.166667 86.7083333 136.166667zM85.6666667 172.625L74.2083333 152.833333 65.875 152.833333 65.875 172.625 56.5 172.625 56.5 119.5 79.4166667 119.5C89.8333333 119.5 96.0833333 126.791667 96.0833333 136.166667 96.0833333 145.541667 89.8333333 150.75 83.5833333 151.791667L96.0833333 172.625 85.6666667 172.625 85.6666667 172.625zM133.583333 128.875L124.208333 153.875 142.958333 153.875 133.583333 128.875 133.583333 128.875zM149.208333 172.625L145.041667 162.208333 121.083333 162.208333 116.916667 172.625 106.5 172.625 127.333333 119.5 138.791667 119.5 159.625 172.625 149.208333 172.625 149.208333 172.625z\"/>\n        <polygon points=\"209.625 172.625 182.542 135.125 182.542 172.625 173.167 172.625 173.167 119.5 182.542 119.5 208.583 157 208.583 119.5 217.958 119.5 217.958 172.625\"/>\n        <path d=\"M233.583333,165.333333 L238.791667,158.041667 C241.916667,162.208333 248.166667,165.333333 255.458333,165.333333 C262.75,165.333333 265.875,161.166667 265.875,158.041667 C265.875,146.583333 235.666667,153.875 235.666667,134.083333 C235.666667,124.708333 242.958333,118.458333 254.416667,118.458333 C262.75,118.458333 269,121.583333 274.208333,125.75 L269,133.041667 C264.833333,128.875 259.625,126.791667 254.416667,126.791667 C249.208333,126.791667 246.083333,129.916667 246.083333,133.041667 C246.083333,143.458333 276.291667,137.208333 276.291667,157 C276.291667,166.375 270.041667,173.666667 256.5,173.666667 C245.041667,173.666667 238.791667,170.541667 233.583333,165.333333\"/>\n        <polygon points=\"290.875 172.625 290.875 119.5 327.333 119.5 327.333 127.833 300.25 127.833 300.25 141.375 326.292 141.375 326.292 149.708 300.25 149.708 300.25 172.625\"/>\n        <polygon points=\"342.958 172.625 342.958 119.5 378.375 119.5 378.375 127.833 352.333 127.833 352.333 141.375 378.375 141.375 378.375 149.708 352.333 149.708 352.333 164.292 378.375 164.292 378.375 172.625\"/>\n        <path d=\"M426.291667,136.166667 C426.291667,130.958333 422.125,127.833333 417.958333,127.833333 L405.458333,127.833333 L405.458333,144.5 L416.916667,144.5 C422.125,144.5 426.291667,141.375 426.291667,136.166667 L426.291667,136.166667 L426.291667,136.166667 Z M425.25,172.625 L413.791667,152.833333 L404.416667,152.833333 L404.416667,172.625 L396.083333,172.625 L396.083333,119.5 L419,119.5 C429.416667,119.5 435.666667,126.791667 435.666667,136.166667 C435.666667,145.541667 429.416667,150.75 423.166667,151.791667 L435.666667,172.625 L425.25,172.625 L425.25,172.625 Z\"/>\n    </g>\n</svg>\n";
 
 /***/ },
-/* 542 */
+/* 543 */
 /*!*************************************!*\
   !*** ./~/html-loader!./src/pen.svg ***!
   \*************************************/
@@ -46303,7 +46392,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-pen\" viewBox=\"-30 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <polygon points=\"45.5,354.7 0,518 165.4,455.2 408,156.5 285.3,61.6\"/>\n        <path d=\"M443.8,55.3c-9.4-8.9-54.8-44.4-61.3-48.2c-31-17.8-49.6,3.1-49.6,3.1l-23.8,27.2l117.8,91.1l25.2-30C452.1,98.6,465.2,75.6,443.8,55.3z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 543 */
+/* 544 */
 /*!*****************************************************!*\
   !*** ./~/html-loader!./src/person-inside-badge.svg ***!
   \*****************************************************/
@@ -46312,7 +46401,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-person-inside-badge\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g fill-rule=\"evenodd\">\n        <path d=\"M124.203187,5.77689243 L136.354582,9.86055777 L149.103586,8.36653386 L160.159363,14.8406375 L172.908367,15.936255 L182.270916,24.6015936 L194.521912,28.2868526 L201.89243,38.6454183 L213.047809,44.8207171 L218.12749,56.4741036 L227.788845,64.8406375 L230.278884,77.2908367 L237.948207,87.4501992 L237.848606,100.199203 L243.227092,111.752988 L240.438247,124.203187 L243.326693,136.653386 L237.948207,148.207171 L238.14741,160.956175 L230.478088,171.215139 L227.988048,183.665339 L218.426295,192.031873 L213.446215,203.784861 L202.290837,210.059761 L194.920319,220.517928 L182.669323,224.302789 L173.306773,232.968127 L160.557769,234.163347 L149.601594,240.737052 L136.85259,239.243028 L124.800797,243.326693 L112.649402,239.243028 L99.9003984,240.737052 L88.8446215,234.262948 L76.1952191,233.067729 L66.8326693,224.40239 L54.5816733,220.717131 L47.2111554,210.358566 L36.0557769,204.183267 L30.9760956,192.52988 L21.314741,184.163347 L18.8247012,171.713147 L11.1553785,161.553785 L11.2549801,148.804781 L5.87649402,137.250996 L8.66533865,124.800797 L5.77689243,112.350598 L11.1553785,100.796813 L10.9561753,88.0478088 L18.625498,77.7888446 L21.1155378,65.3386454 L30.6772908,56.9721116 L35.6573705,45.2191235 L46.812749,38.9442231 L54.1832669,28.4860558 L66.4342629,24.7011952 L75.7968127,16.0358566 L88.4462151,14.940239 L99.4023904,8.36653386 L112.151394,9.86055777 L124.203187,5.77689243 L124.203187,5.77689243 L124.203187,5.77689243 L124.203187,5.77689243 Z M124.203187,0 L136.952191,4.28286853 L150.298805,2.68924303 L161.85259,9.46215139 L175.199203,10.6573705 L185.059761,19.7211155 L197.908367,23.6055777 L205.677291,34.4621514 L217.430279,40.936255 L222.709163,53.187251 L232.868526,61.9521912 L235.557769,75 L243.625498,85.6573705 L243.426295,99.0039841 L249.103586,111.055777 L246.215139,124.103586 L249.203187,137.151394 L243.625498,149.302789 L243.824701,162.649402 L235.856574,173.406375 L233.266932,186.553785 L223.207171,195.418327 L217.928287,207.669323 L206.2749,214.243028 L198.605578,225.199203 L185.756972,229.183267 L175.896414,238.247012 L162.549801,239.442231 L150.996016,246.314741 L137.649402,244.721116 L125,249.103586 L112.250996,244.820717 L98.9043825,246.414343 L87.3505976,239.641434 L74.0039841,238.446215 L64.1434263,229.38247 L51.2948207,225.498008 L43.5258964,214.641434 L31.7729084,208.167331 L26.4940239,195.916335 L16.3346614,187.151394 L13.6454183,174.103586 L5.57768924,163.446215 L5.77689243,150.099602 L0.0996015936,138.047809 L2.98804781,124.800797 L0,111.752988 L5.57768924,99.6015936 L5.37848606,86.3545817 L13.3466135,75.5976096 L15.936255,62.5498008 L25.9960159,53.685259 L31.2749004,41.4342629 L42.9282869,34.8605578 L50.5976096,23.9043825 L63.4462151,19.9203187 L73.3067729,10.8565737 L86.6533865,9.66135458 L98.2071713,2.78884462 L111.553785,4.38247012 L124.203187,0 L124.203187,0 L124.203187,0 L124.203187,0 Z\"></path>\n        <path d=\"M124.501992,226.394422 C68.0278884,226.394422 22.1115538,180.677291 22.1115538,124.501992 C22.1115538,98.3067729 32.0717131,74.4023904 48.5059761,56.2749004 C67.2310757,35.6573705 94.3227092,22.6095618 124.501992,22.6095618 C180.976096,22.6095618 226.89243,68.3266932 226.89243,124.501992 C226.89243,180.677291 180.976096,226.394422 124.501992,226.394422 L124.501992,226.394422 L124.501992,226.394422 Z M124.501992,24.501992 C69.0239044,24.501992 24.0039841,69.3227092 24.0039841,124.501992 C24.0039841,179.681275 69.123506,224.501992 124.501992,224.501992 C179.880478,224.501992 225,179.681275 225,124.501992 C225,69.3227092 179.98008,24.501992 124.501992,24.501992 L124.501992,24.501992 L124.501992,24.501992 Z\"></path>\n        <path d=\"M190.537849,182.270916 L189.243028,165.338645 L189.243028,165.239044 C187.151394,152.191235 177.191235,148.306773 176.792829,148.207171 L160.059761,141.633466 L148.705179,136.553785 C143.625498,134.262948 142.729084,130.577689 142.729084,130.478088 L142.729084,130.278884 L142.629482,130.079681 C142.330677,129.282869 142.430279,128.585657 142.52988,128.386454 C142.828685,127.888446 143.426295,127.290837 143.824701,126.792829 C144.123506,126.494024 144.322709,126.294821 144.521912,125.996016 C153.187251,115.537849 154.880478,103.286853 154.98008,102.290837 C159.36255,71.4143426 143.326693,63.4462151 141.434263,62.6494024 C136.155378,59.9601594 130.577689,58.6653386 124.800797,58.6653386 C114.940239,58.6653386 107.968127,62.6494024 107.669323,62.8486056 C100.398406,67.2310757 95.9163347,75.498008 94.6215139,86.6533865 C93.7250996,94.5219124 94.7211155,101.195219 94.8207171,101.89243 C96.7131474,115.936255 104.98008,125.59761 105.278884,125.996016 L105.378486,126.095618 C106.573705,127.390438 106.573705,127.390438 106.972112,128.286853 C107.071713,128.585657 107.071713,129.482072 107.071713,130.179283 C106.075697,134.760956 102.191235,136.354582 101.992032,136.354582 L93.2270916,140.139442 L72.5099602,148.505976 C65.7370518,150.896414 62.9482072,157.171315 62.5498008,158.067729 C60.059761,163.545817 59.063745,178.187251 58.9641434,179.880478 L58.7649402,182.868526 L64.4422311,182.768924 C64.5418327,182.868526 64.7410359,180.378486 64.7410359,178.784861 L64.8406375,176.195219 C65.3386454,170.517928 66.2350598,163.545817 67.7290837,160.557769 L67.8286853,160.258964 C67.8286853,160.258964 69.7211155,155.478088 74.4023904,153.784861 L95.3187251,145.318725 L104.083665,141.533865 C104.98008,141.23506 110.956175,138.545817 112.549801,131.175299 L112.549801,130.976096 C112.649402,130.179283 112.948207,127.589641 111.952191,125.697211 C111.155378,124.103586 110.956175,123.904382 109.462151,122.211155 C108.964143,121.613546 101.89243,112.948207 100.298805,100.996016 L100.298805,100.896414 C100.298805,100.697211 96.4143426,76.0956175 110.657371,67.5298805 C110.756972,67.5298805 116.533865,64.1434263 124.900398,64.1434263 C129.780876,64.1434263 134.561753,65.3386454 139.043825,67.5298805 L139.243028,67.6294821 C139.840637,67.8286853 153.386454,73.8047809 149.40239,101.394422 L149.40239,101.494024 C149.40239,101.593625 148.007968,113.047809 140.239044,122.310757 C140.139442,122.50996 139.940239,122.609562 139.741036,122.808765 C139.043825,123.605578 138.047809,124.601594 137.450199,125.896414 L137.350598,126.095618 C137.250996,126.394422 136.354582,128.685259 137.350598,131.573705 C137.649402,132.768924 139.342629,138.346614 146.513944,141.533865 L157.868526,146.613546 L174.800797,153.286853 C175.099602,153.386454 182.071713,156.2749 183.76494,165.936255 L184.561753,176.992032 L184.561753,176.992032 C184.561753,176.992032 184.760956,181.972112 184.960159,181.972112 L190.537849,181.972112 L190.537849,182.270916 Z\"></path>\n    </g>\n</svg>";
 
 /***/ },
-/* 544 */
+/* 545 */
 /*!************************************************!*\
   !*** ./~/html-loader!./src/person-profile.svg ***!
   \************************************************/
@@ -46321,7 +46410,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-person-profile\" viewBox=\"0 0 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M28.1,475v-48.4c0-15.9,25.7-29.1,34.9-32.6c4.6-1.5,60.5-19.6,105.3-36.5c19-7.2,32.1-18.7,39-34.1 c10.5-23.3,2.3-46.1,1.4-48.7l-0.8-2.1l-1.4-1.8c-10.8-13.2-25.3-34.2-27.3-37.1c-25.7-43.2-10.6-99.2-10.4-99.8l0.2-0.8l0.1-0.8 c5.8-36.4,21.4-60.7,46.3-72.3c19-8.8,36.9-7,37-6.9l0.7,0.1l0.7,0c30.3,0.7,53.3,14.5,68.2,41c11.9,21.1,14.3,42.6,14.3,42.7l0.1,1 l0.2,0.9c11.9,49-5.4,84.3-5.6,84.6l-0.4,0.8c-7,15.9-25.8,38.7-32.5,46.1l-1.2,1.3l-0.8,1.6c-10.1,19.5-9.4,39.2,1.9,55.6 c8.1,11.7,18.8,17.7,20,18.4l0.9,0.5L426,387.2l0.6,0.2c42.3,13.4,45.2,34.9,45.4,36.8V475H500v-51.1c0-2.1-0.4-13-9.3-26.2 c-10.9-16.3-29.5-28.7-55.3-36.9l-104.7-38.5c-1.6-1-6.2-4.3-9.6-9.2c-5.2-7.5-5.5-15.6-0.8-25.4c5.6-6.3,26.8-31.2,35.9-51.8 c2.5-5.1,21.3-46.2,7.8-102.7c-0.7-5.2-4.2-28.3-17.1-51.7c-19.7-35.6-51.5-55-92-56.1c-4.5-0.4-26.4-1.7-50,8.8 c-42.9,19.1-58.2,61.1-63.5,93.2c-2.2,8.3-16.9,70.2,13.8,121.3l0.4,0.7c0.6,0.9,15.2,22.2,27.2,37.2c1.1,4.2,3.3,15.3-1.3,25.5 c-3.8,8.4-11.6,14.9-23.4,19.4c-45.8,17.4-103.6,35.9-104.2,36.1l-0.5,0.2c-5.5,2-53.6,20.6-53.6,59V475H28.1z\"/>\n</svg>";
 
 /***/ },
-/* 545 */
+/* 546 */
 /*!*******************************************!*\
   !*** ./~/html-loader!./src/pineapple.svg ***!
   \*******************************************/
@@ -46330,7 +46419,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-pineapple\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 250\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n    <path d=\"M188.5,105.1c-5-12.8-15.7-29.2-38-37.2l30.6-35.6l-26.8,8.3L170.3,11l-25.9,16l9-26L125,29.8L95.2-0.4l8.9,25.6L79.3,8.1\r\n        l17,33.5l-27.6-8.4l29.1,34.6c-4.2,1.6-12.4,5.3-20.7,12.4c-10.7,9.3-23.6,26.3-24.1,55.1V182l0,0.1c0,1.4,0.4,13.4,2,18.7\r\n        c4.2,14.4,19.1,47.9,67.2,48c0.5,0,2,0.1,4.2,0.1c0,0,0,0,0,0c7.2,0,21.4-1,35-7.6c17.3-8.4,28-22.7,31.7-42.6\r\n        c0.4-2.2,0.8-11.2,1-13.9l0-51.8C194,131.9,194.1,119.3,188.5,105.1z M179.8,191.8l5.1-5.1c-0.2,3.9-0.4,7.9-0.6,9.7L179.8,191.8z\r\n         M123.5,239.4l-21.1-21.1l21.2-21.2l21,21.2L123.5,239.4z M115.2,239.5c-10.8-0.9-19.4-3.7-26.3-7.7l9.3-9.3L115.2,239.5z M63,195.4\r\n        c-0.4-2.6-0.7-5.9-0.9-9l4.9,4.9L63,195.4z M62,134.9l4.5,4.5l-4.5,4.5v-8.5C62,135.3,62,135.1,62,134.9z M171.9,140.5l-21.6,21.6\r\n        l-22.9-23l21.7-21.9L171.9,140.5z M153.3,113l18.8-19c9.4,12.1,12,26.2,12.7,33.7l-8.6,8.6L153.3,113z M146,166.4l-22.3,22.2\r\n        l-22.8-22.9l22.1-22.3L146,166.4z M123.1,134.8l-21.6-21.7l22.1-21.9l21.3,21.7L123.1,134.8z M118.8,139.1l-22.1,22.3L75,139.5\r\n        l22.3-22.1L118.8,139.1z M70.8,135.2l-8.2-8.2c1.7-13.9,6.7-24.2,12.6-31.8L93,113.1L70.8,135.2z M62,177.8v-25.4l8.7-8.7l21.8,21.9\r\n        L71.3,187L62,177.8z M96.7,169.9l22.7,22.9L98.2,214l-22.7-22.8L96.7,169.9z M127.9,192.8l22.3-22.2l21.1,21.2L149,214L127.9,192.8z\r\n         M154.5,166.4l21.6-21.6l8.9,9.1v24.2l-9.5,9.4L154.5,166.4z M185,145.3l-4.7-4.8l4.7-4.7V145.3z M168.1,89.4l-19.1,19.2L127.8,87\r\n        l12.9-12.8c1.3,0.4,2.1,0.6,2.1,0.6l0.3,0.1C154.1,78.1,162.2,83.3,168.1,89.4z M123.6,82.7l-9.7-9.9c3.2-0.5,6.5-0.8,9.8-0.8\r\n        c3.7,0,7.1,0.3,9.9,0.7L123.6,82.7z M104.8,15L125,35.5l18.9-19.2l-4.8,13.9l-14.7,9l-14.8-10.2L104.8,15z M95.4,26.5l28.9,19.9\r\n        l30.1-18.6L146,43.2L124,50l-19.7-6L95.4,26.5z M124,57.3l25-7.8l0.3,0.2l0.2-0.3l10.4-3.2l-16.7,19.4c-3.6-1-10.7-2.6-19.5-2.6\r\n        c-6.4,0-12.7,0.8-18.7,2.5L89.3,46.8L124,57.3z M103.1,75.5l0.3-0.1c1.2-0.4,2.4-0.8,3.6-1.1L119.4,87l-22.1,21.9L79.1,90.7\r\n        C90,79.3,102.2,75.8,103.1,75.5z M64.8,202.1l6.5-6.5L94,218.3l-10.2,10.2C73.4,220.8,67.8,210.5,64.8,202.1z M131.6,239.8\r\n        l17.3-17.3l10,10c-0.5,0.3-1,0.5-1.5,0.8C148.1,237.8,138.5,239.3,131.6,239.8z M164.2,229.4l-11-11.1l22.3-22.3l7.2,7.3\r\n        C179.5,214.5,173.3,223.2,164.2,229.4z\"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 546 */
+/* 547 */
 /*!*******************************************!*\
   !*** ./~/html-loader!./src/pinterest.svg ***!
   \*******************************************/
@@ -46339,7 +46428,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-pinterest\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M130.7,2C63.6,2,29.9,50,29.9,90c0,24.3,9.2,45.8,28.9,53.7c3.3,1.3,6.2,0,7.1-3.5c0.8-2.5,2.1-8.9,2.9-11.4\n            c1-3.5,0.8-4.8-2.1-7.7c-5.6-6.7-9.4-15.4-9.4-27.7c0-35.6,26.6-67.6,69.5-67.6c37.9,0,58.7,23.1,58.7,53.9\n            c0,40.8-17.9,74.9-44.9,74.9c-14.6,0-25.8-12.1-22.1-27c4.2-17.9,12.5-37,12.5-50.1c0-11.7-6.2-21.2-19.1-21.2\n            c-15,0-27.2,15.8-27.2,36.6c0,13.3,4.6,22.3,4.6,22.3s-15.6,65.5-18.1,76.8c-5.2,22.7-0.8,50.7-0.6,53.5c0.2,1.7,2.3,2.1,3.3,0.8\n            c1.3-1.9,19.5-24.1,25.6-46.2c1.7-6.2,9.8-38.9,9.8-38.9c4.8,9.4,19.3,17.5,34.5,17.5c45.3,0,76.1-41.2,76.1-96.7\n            C220,40.7,184.6,2,130.7,2z\"/>\n</svg>\n";
 
 /***/ },
-/* 547 */
+/* 548 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/plus.svg ***!
   \**************************************/
@@ -46348,7 +46437,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-plus\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M117,118 L7.4990045,118 C3.35670226,118 0,121.357864 0,125.5 C0,129.633707 3.35741867,133 7.4990045,133 L117,133 L117,242.500996 C117,246.643298 120.357864,250 124.5,250 C128.633707,250 132,246.642581 132,242.500996 L132,133 L242.500996,133 C246.643298,133 250,129.642136 250,125.5 C250,121.366293 246.642581,118 242.500996,118 L132,118 L132,7.4990045 C132,3.35670226 128.642136,0 124.5,0 C120.366293,0 117,3.35741867 117,7.4990045 L117,118 Z\"></path>\n</svg>";
 
 /***/ },
-/* 548 */
+/* 549 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/print.svg ***!
   \***************************************/
@@ -46357,7 +46446,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-print\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M63,250v-40H35.1c-3,0-12.9-0.7-20.5-7.8C9.2,197,6,189.6,7,180.5v-107c0-1.3,0-13.4,8.6-21.3c4.8-4.6,11.1-6.9,19.1-6.9\n            c0.6,0,1.4,0,2.1,0l12.2,0V32.6l-0.2-0.1c0.5-7.1,6.3-9.7,9.4-10.1l0,0l4.8-0.1V0h124v22.1l5.3,0.1l0.1,0c3.1,0.4,9,3,9.6,10.1\n            l0,0.1V46h10.8c0.6,0,1.3-0.5,1.9-0.5c7.9,0,14.5,2.1,19.3,6.7c8.8,8.3,9,20.6,9,21.1v107.1c0,9.3-2.6,16.5-8.4,21.9\n            c-7.3,7-17.8,7.8-20.8,7.8H187v40H63z M177,239v-57H74v57H177z M34.4,55.2c-5,0-9,1.3-11.8,4c-5.5,5.1-5.6,14-5.6,14.1v80.5\n            c8-8.6,21.5-9.8,27.2-9.8c1.2,0,2-0.1,2.3-0.1h159.1c14.2,0,22.4,4.7,27.4,9.5V73.3c0-0.4-0.3-8.9-5.9-14.1c-2.8-2.7-6.9-4-11.9-4\n            c-0.6,0-1.2,0-1.8,0.1l-177.1,0C35.6,55.3,35,55.2,34.4,55.2z M177,44V10H74v34H177z\"/>\n</svg>\n";
 
 /***/ },
-/* 549 */
+/* 550 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/quote.svg ***!
   \***************************************/
@@ -46366,7 +46455,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-quote\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M193.2,142h-25.1c3.3-47,40.9-82.6,81.9-106.9l-7.5-12.5c-65.2,32.6-100.3,88.6-100.3,131.2c0,46.8,14.2,75.2,59.3,75.2 c20,0,40.1-21,40.1-42.7C241.6,163.8,227.4,142,193.2,142z\"/>\n        <path d=\"M108,35.1l-7.5-12.5C35.3,55.2,0.2,111.2,0.2,153.8c0,46.8,14.2,75.2,59.3,75.2c20.1,0,40.1-21,40.1-42.7 c0-22.6-14.2-44.4-48.5-44.4H26.1C29.4,95,67,59.4,108,35.1z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 550 */
+/* 551 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/ramen.svg ***!
   \***************************************/
@@ -46375,7 +46464,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-ramen\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n    <path d=\"M98.2,17l-44,2.4c-0.2-1.4-0.5-2.6-0.9-3.6l42.2-7.3c1-0.2,1.6-1.1,1.4-2c-0.2-1-1.1-1.6-2-1.4l-43.4,7.5\r\n        c-0.5-0.3-1.1-0.3-1.7,0c-0.2,0.1-0.3,0.2-0.4,0.4l-3.6,0.6c-0.1-0.2-0.2-0.3-0.2-0.3c-0.5-0.8-1.5-1.1-2.4-0.7\r\n        c-0.6,0.3-0.9,1-0.9,1.6l-2.7,0.5c-0.3-0.8-0.6-1.3-0.7-1.4c-0.5-0.8-1.5-1.1-2.4-0.7c-0.8,0.5-1.1,1.5-0.7,2.4c0,0,0.1,0.1,0.2,0.3\r\n        l-9.2,1.6c-0.9,0.2-1.6,1.1-1.4,2c0.1,0.9,0.9,1.5,1.7,1.5c0.1,0,0.2,0,0.3,0l9.7-1.7c0.1,0.5,0.2,1.1,0.3,1.7l-3.6,0.2\r\n        c-1,0.1-1.7,0.9-1.7,1.8c0.1,0.9,0.8,1.7,1.7,1.7c0,0,0.1,0,0.1,0l3.5-0.2c-0.1,1.5-0.5,3.1-1.1,4.8C23.9,29.1,0,30.8,0,37.7\r\n        c0,0.2,0,0.4,0.1,0.6C0,41.1-0.8,63.7,12.6,77.9c2,2.1,4.2,3.8,6.3,5.3V93c0,1,1.2,2,2.2,2h45.5c1,0,0.9-1,0.9-2V82.6\r\n        c3-1.9,6.4-4.3,8.9-7.1c12-13.5,11.6-32.7,11.2-37.7c0-0.1-0.1-0.8-0.2-1c0,0-0.2-0.8-0.5-1.3c-4.3-4.7-22.1-6.3-33.4-6.8\r\n        c0.7-2.1,1-4,1-5.8l44-2.4c1-0.1,1.7-0.9,1.7-1.8C99.9,17.7,99.1,16.9,98.2,17z M49.8,16.4c0.3,0.8,0.6,1.9,0.8,3.2l-3.1,0.2\r\n        c-0.1-1.1-0.3-2-0.6-2.9L49.8,16.4z M40.7,18l2.9-0.5c0.2,0.7,0.4,1.5,0.5,2.5L41,20.1C40.9,19.4,40.8,18.6,40.7,18z M41.1,23.6\r\n        l3.1-0.2c-0.1,1.6-0.4,3.3-1.1,5.1c-0.6,0-1.6,0-2.9,0C40.7,26.8,41,25.2,41.1,23.6z M84.2,37.7c-1.3,1.8-12.1,4.7-30.8,5.5\r\n        c-1-1.1-4-5.1-1.4-11C71.5,32.8,82.8,35.8,84.2,37.7C84.2,37.7,84.2,37.7,84.2,37.7z M49.2,43.3c-0.7,0-1.5,0-2.3,0\r\n        c-0.7-0.8-4.3-4.9-1.5-11.3c1,0,1.9,0,2.8,0C46.7,36.7,47.7,40.7,49.2,43.3z M40.3,43.4c-0.8-0.8-4.3-4.9-1.5-11.3\r\n        c0.9,0,1.9,0,2.9,0c-1.6,4.7-0.6,8.7,0.9,11.3C41.8,43.4,41.1,43.4,40.3,43.4z M35,32.2c-1.5,4.6-0.5,8.4,0.9,11.1\r\n        c-19.7-0.7-31.1-3.7-32.4-5.6C4.8,35.9,15.8,32.9,35,32.2z M64.4,91H21.9v-5.8c6.1,2.6,11.9,4,18.9,4c9,0,18.5-1.6,23.5-4.7V91z\r\n         M74.1,73.2c-7.3,8.2-18.3,12.4-32.6,12.4c-11,0-19.7-3.4-26.1-10.2C5.4,64.9,3.8,48.9,3.6,41.8c10.2,5.1,38.8,5.1,40.3,5.1\r\n        c1.5,0,30.4-0.1,40.5-5.2C84.4,48.8,83.1,63,74.1,73.2z M49.7,28.6c-1.1,0-2.1-0.1-2.9-0.1c0.6-1.9,0.9-3.6,0.9-5.3l3.1-0.2\r\n        C50.8,24.8,50.5,26.6,49.7,28.6z\"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 551 */
+/* 552 */
 /*!****************************************!*\
   !*** ./~/html-loader!./src/reject.svg ***!
   \****************************************/
@@ -46384,7 +46473,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-reject\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 250 250\">\n<g>\n\t<path class=\"st0\" d=\"M155.3,196.1V250h-55v-53.9H155.3z M139.9,175.1H115L101.7,67.2V0h51.8v67.2L139.9,175.1z\"/>\n</g>\n</svg>\n";
 
 /***/ },
-/* 552 */
+/* 553 */
 /*!****************************************!*\
   !*** ./~/html-loader!./src/repost.svg ***!
   \****************************************/
@@ -46393,7 +46482,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-repost\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 250 250\">\n<path class=\"st0\" d=\"M130.9,232c-30.6-0.4-61-15.9-90.5-46.3l20.8-20.6c26.6,27.4,52.9,39.9,78.2,37.1c41.3-4.6,68.8-48.5,69.1-49\n\tl24.8,15.4c-1.4,2.3-34.9,56.5-90.5,62.8C138.9,231.8,134.9,232,130.9,232z\"/>\n<polygon class=\"st0\" points=\"104,142.2 1.6,79.8 5,210.2 \"/>\n<path class=\"st0\" d=\"M44.1,79.9L19.1,64.7c1.4-2.4,35.3-57.9,91.1-64.2c34.5-3.9,68.6,11.6,101.5,46.1l-21,20.4\n\tc-26.3-27.6-52.3-40.1-77.3-37.3c-21.4,2.4-39.1,15.8-50.1,26.6C51.2,68.3,44.1,79.8,44.1,79.9z\"/>\n<polygon class=\"st0\" points=\"148.1,90.8 250,153.8 247.1,21.3 \"/>\n</svg>\n";
 
 /***/ },
-/* 553 */
+/* 554 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/return-arrow.svg ***!
   \**********************************************/
@@ -46402,7 +46491,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-return-arrow\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M230.7,21C218.3,7.3,194.3,7.3,188.8,7H69v10h120l0.4,0c0.2,0,21.6-0.3,33.5,10.5c6.8,6.2,10.2,15.4,10.2,27V158l0,0.1\n         c0,0.1,0.1,7.6-5.1,15.3c-7.2,10.7-21.2,16.8-40.5,17.5H20.1l32.9-41.4l-7.8-6.2L4.1,195l40.6,51.8l7.9-6.2l-31-39.6h166l0.1,0\n         c15.8-0.6,37.1-4.9,48.5-22c6.7-10,6.8-19.9,6.8-21.1V54.5C242.3,37.7,238,29.2,230.7,21z\"/>\n</svg>";
 
 /***/ },
-/* 554 */
+/* 555 */
 /*!************************************************!*\
   !*** ./~/html-loader!./src/service-person.svg ***!
   \************************************************/
@@ -46411,7 +46500,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-service-person\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M-30.3,45\"/>\n    <path d=\"M454,498.6c-2.5-41.3-12.8-77.3-30.5-107.2c-14.3-24-33.3-44.1-56.6-59.6c-1.1-0.7-2.2-1.5-3.4-2.2\n            c32.3-22.8,45-45.5,46.9-49.1c42.3-64.5,23.5-134.5,22.7-137.4c-19.7-70.4-63.9-103.9-97.5-119.5c-35.3-16.5-66-17.2-69-17.2\n            c-76.6-4-126.4,44.9-130.4,48.9C93.8,93.4,84,144.1,82.3,154.9c-1,2.8-1.7,6.1-2,10.1L79,216.3c0,0-0.7,13.3,14.3,14.7h46.4\n            c0,0-0.3-1-0.8-2.8c12.5,34.8,39.7,62.7,74.2,76.2c-27.2,5-51.3,15.7-72,32.1c-21.4,16.9-39.1,39.7-52.5,67.8\n            c-22.8,47.4-25.6,93.1-25.8,95l-0.4,7.4l392.2-0.7L454,498.6z M99.9,140.9c5.5-19.2,18.2-50.6,45.8-75.4l0.4-0.3\n            c0.5-0.5,48-48.7,119.9-44.9l0.3,0c0.3,0,29.7,0.3,63.3,15.9c19.7,9.2,36.9,21.8,51,37.5c17.8,19.6,30.9,44.3,38.9,73.2\n            c0.2,0.7,17.9,67.1-21.1,126.3l-0.4,0.7c-0.2,0.3-12.7,24.6-48.1,47.9c-17.5-9.2-33.6-14.4-45.1-17.2\n            c48.1-18.4,82.4-65.1,82.4-119.6c0-70.6-57.4-128-128-128c-55.1,0-102.2,35-120.2,84h-37.6C101.5,141,100.9,140.9,99.9,140.9z\n             M145.3,185c0-62.9,51.1-114,114-114s114,51.1,114,114s-51.1,114-114,114S145.3,247.9,145.3,185z M77.4,492.7\n            c1.7-14.5,7.3-48.3,23.7-82.4c12.6-26.2,28.9-47.3,48.6-62.9c24.5-19.4,54.5-30.2,89.1-32.1l0.8-0.1c0.1,0,10-1.7,23.6-1.7\n            c8,0,15.7,0.6,22.8,1.7l0.4,0.1c0.3,0,22.3,2.4,49.5,15.1c-7.4,4.1-15.7,8.1-24.8,11.8V337c0-2.2-1.8-4-4-4h-60.7c-2.2,0-4,1.8-4,4\n            v34c0,2.2,1.8,4,4,4H307c2.2,0,4-1.8,4-4v-13.8c15.2-5.8,28.3-12.3,39.5-19.1c3,1.8,6.1,3.7,9.1,5.7c21.4,14.3,39,32.9,52,55\n            c15.4,26.1,24.7,57.4,27.8,93.1L77.4,492.7z\"/>\n</svg>";
 
 /***/ },
-/* 555 */
+/* 556 */
 /*!***************************************!*\
   !*** ./~/html-loader!./src/share.svg ***!
   \***************************************/
@@ -46420,7 +46509,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-share\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <polygon points=\"153,81 153,92 199,92 199,239 49,239 49,92 99,92 99,81 38,81 38,250 210,250 210,81  \"/>\n        <polygon points=\"120,21 120,180 131,180 131,21.7 161.9,55 169.8,47.6 125.8,0 81,45.9 88.6,53.5  \"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 556 */
+/* 557 */
 /*!**************************************************!*\
   !*** ./~/html-loader!./src/shipping-package.svg ***!
   \**************************************************/
@@ -46429,7 +46518,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-shipping-package\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125.5,1.1L2.1,41l10.4,145.6L125,248.1l113.1-60.6l10-145.1L125.5,1.1z M121,236.7L20.2,181.6l-9.3-131L59,74.2V108\n            l26,13.5l-0.1-34.6l36.1,17.7V236.7z M124.7,97.4L87.2,79l85.9-37.4l-27.3-8.9L60.5,65.9L17.1,44.7L125.5,9.5l107.9,36.4L124.7,97.4\n            z M230.5,182.4L129,236.8V104.3L239.4,52L230.5,182.4z\"/>\n    </g>\n</svg>\n";
 
 /***/ },
-/* 557 */
+/* 558 */
 /*!************************************************!*\
   !*** ./~/html-loader!./src/shipping-world.svg ***!
   \************************************************/
@@ -46438,7 +46527,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-shipping-world\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n\t<path d=\"M232,183.8 C233,181.1 236.4,176.7 239.1,174.4 L241.1,172.7 L241.1,170 L244.5,172.7 L247.9,172.7 L249.2,171.4 L251.2,169.4 C252.2,167.4 253.9,165.7 256.3,164.7 C257,168.7 258.7,174.1 261.7,180.6 C263.4,184 264.7,188 265.7,193.1 C265.4,192.8 264.4,192.4 262.7,192.1 C261,191.8 259.7,191.4 259,191.1 C243.8,188.5 234.7,186.2 232,183.8 L232,183.8 L232,183.8 Z M162.2,234.4 C163.9,238.1 164.6,240.8 164.9,241.8 C168.3,249.6 169.6,256.6 169.3,263.4 L169.3,264.7 L170,265.4 C173.7,269.1 176.4,271.5 177.4,272.1 C183.5,278.2 186.5,284.6 186.5,291.7 L186.5,292.4 L187.8,293.7 C192.9,298.8 203.7,305.2 220.8,312.9 C226.5,314.2 232.3,316.3 238.3,319.3 C243,329.1 250.8,333.8 261.6,333.8 L265,333.8 C266,336.8 265,340.9 261.6,345.3 C256.9,349 254.9,355.1 255.5,362.8 L256.8,364.1 C262.2,372.5 266.6,377.9 270,380 C272.4,381.3 275.1,382.4 278.1,382.7 C278.1,384 277.8,385.1 276.8,385.4 C275.1,388.4 275.1,391.1 276.8,393.2 L278.1,395.2 L279.4,395.2 C289.9,395.2 303.3,388.8 308.7,385.8 C311.1,384.1 315.8,381.1 322.2,376.7 L330,371 L334.7,366.3 C350.6,352.1 359.3,338.6 361,326.2 L361.7,325.5 L360.4,324.2 C359.4,323.9 358,323.5 355.7,323.5 C353.3,323.5 351.7,323.8 350.6,324.2 C349.6,324.2 348.9,324.2 348.2,324.5 L347.2,324.8 C343.8,321.4 337.8,318.7 329.3,316.4 C322.9,315.4 318.8,314 316.8,313 L316.8,311.7 L314.8,313 L305.7,313 C293.2,313 288.8,313 280.1,316 C275.7,317.7 271.7,320 268.6,323.4 L261.5,323.4 C258.5,323.4 256.8,322.7 256.8,321.4 C256.5,321.1 256.1,318.7 256.1,315 L256.1,308.9 C255.1,305.9 252.1,304.2 246.3,303.2 C243.9,303.2 242.6,302.9 242.3,301.9 C242.3,301.6 242.3,300.9 242.6,300.2 C242.9,299.5 242.9,298.9 242.9,298.5 C244.6,292.8 244.2,289.1 241.6,286.7 L241.6,286 L240.9,286 C240.6,286 239.9,286 239.2,285.7 C238.2,285.4 237.9,285.4 237.5,285.4 C234.8,285.4 231.4,286.7 227.7,289.8 C226.4,291.1 224.3,291.8 222,291.8 C217.6,291.8 215.3,289.4 215.3,284.7 C214,276.6 217,268.2 220.7,266.8 C223.4,267.1 226.8,267.5 230.5,267.5 L236.6,267.5 C239.6,267.5 242.7,268.5 246.4,270.2 C249.8,275.9 254.5,279.3 260.9,280 L262.2,280 L263.5,279.3 C265.9,276.3 266.5,272.2 265.5,266.8 L265.5,261.4 C265.8,260.1 267.5,257.4 270.6,253 C272.3,252 273.6,250.6 275.3,248.3 L275.3,245.9 C276.6,228.7 278.7,226.3 291.2,219.3 L292.5,218.6 L292.5,214.9 C292.5,213.9 293.8,211.9 296.2,208.8 L299.6,208.8 C301.3,209.1 303.3,209.5 305.7,209.5 C311.4,209.5 315.1,208.2 317.5,205.5 L318.2,204.8 L317.5,203.5 C314.1,194.4 303.7,186 286.5,178.5 L276.7,172.8 L276.7,166.1 L276.7,162.1 L276.7,161.4 C285.8,164.4 292.9,166.1 298.3,166.1 C300,166.1 301.7,165.8 303,165.4 L304.3,165.4 L305,164.1 C308,150.9 301,147.2 288.5,144.5 C279.1,141.5 273,138.8 270,136.4 L269.3,137.1 L261.5,137.1 L260.8,136.4 C255.7,140.4 251.7,142.8 244.3,144.2 C240.6,145.2 237.9,145.5 236.9,145.5 C234.5,145.8 224.1,147.2 213.3,150.2 C207.9,148.5 204.5,147.5 203.5,147.5 C196.1,147.5 186.6,153.2 175.2,164.7 L175.2,165.4 L173.9,166.1 C173.6,167.8 174.6,169.5 175.2,170.5 C175.5,170.8 175.9,171.5 176.5,171.8 C177.2,172.1 177.5,172.5 177.8,172.8 C178.1,173.1 178.5,174.1 178.5,175.8 C178.2,181.5 177.2,185.9 173.8,194 C172.1,198 170.8,200.7 170.4,201.8 C164.9,215.5 162.2,226.6 162.2,234.4 L162.2,234.4 L162.2,234.4 Z M104.9,266.1 C104.9,182.8 170.7,117 254.3,117 C336.6,117 402,182.8 402,266.1 C402,348.4 336.6,414.5 254.3,414.5 C170.6,414.5 104.9,348.4 104.9,266.1 L104.9,266.1 L104.9,266.1 Z M0,265.4 L0,258.3 C0,144.7 66.4,66.4 140.6,28.3 C177.4,9.4 216.5,0 257.7,0 C310.3,0 357.9,14.5 400.7,43.5 L411.2,50.6 L444.2,5.7 L481.3,127.1 L354.5,129.1 L386.9,84.2 L375.8,76.8 C339.7,53.5 300.3,42.1 257.8,42.1 C189.3,42.1 123.9,75.8 83.1,132.1 C55.1,172.2 41.6,214 43,258.2 C43,269 43.7,280.5 45,292.3 L45,295 C46,296.3 46.3,298.4 46.3,301.1 C47.3,304.8 47.6,307.5 47.6,309.5 L48.9,313.5 C49.2,315.2 49.6,317.2 50.6,319.6 C51.3,322 51.6,323.6 51.9,324.7 C63,358.8 80.9,387.8 105.5,412.4 C145,453.2 200,475.2 259,475.2 C316.7,475.2 371,454 410.4,414.5 C415.5,409.4 418.8,405.4 421.2,402 C426.3,396.6 443.8,373.3 448.2,366.3 C452.6,366.3 456,367.3 458.7,369 L477.9,382.2 C480.6,383.9 482.6,386.6 483,388.6 C483.3,389.6 483.3,390.3 483,390.6 C478.3,398.4 468.5,411.5 454,430.4 L445.6,438.8 L433,450.6 C385.8,494.7 324.1,518 259,518 C188.9,518 124.1,491.7 75.9,443.5 C42.5,409.4 20.3,369.6 9.1,324.1 L8.4,321.4 L7.7,319.4 C5,308.6 3.7,302.2 3.3,300.5 C3.3,299.5 3.3,297.8 3,295.8 C2.7,293.8 2.7,292.1 2.7,291.1 C1.4,286.4 0.7,281.3 0.7,275.9 C0.7,274.9 0.7,272.9 0.4,270.5 C0,268.1 0,266.4 0,265.4 L0,265.4 L0,265.4 Z\"></path>\n</svg>\n";
 
 /***/ },
-/* 558 */
+/* 559 */
 /*!******************************************!*\
   !*** ./~/html-loader!./src/shipping.svg ***!
   \******************************************/
@@ -46447,7 +46536,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-shipping\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<path d=\"M125.5,1.1L2.1,41l10.4,145.6L125,248.1l113.1-60.6l10-145.1L125.5,1.1z M121,236.7L20.2,181.6l-9.3-131L59,74.2V108\r\n\tl26,13.5l-0.1-34.6l36.1,17.7V236.7z M124.7,97.4L87.2,79l85.9-37.4l-27.3-8.9L60.5,65.9L17.1,44.7L125.5,9.5l107.9,36.4L124.7,97.4\r\n\tz M230.5,182.4L129,236.8V104.3L239.4,52L230.5,182.4z\"/>\r\n</svg>\r\n";
 
 /***/ },
-/* 559 */
+/* 560 */
 /*!***********************************************!*\
   !*** ./~/html-loader!./src/shopping-cart.svg ***!
   \***********************************************/
@@ -46456,7 +46545,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-shopping-cart\" viewBox=\"-220.7 -160.7 500 500\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M263.2-67.5H-71.5c-8.9,0-16.1,7.6-16.1,16.9c0,0.1-17.9-92.8-17.9-92.8c-2.1-10.6-8.4-17.4-21.9-17.4h-77.1 c-8.9,0-16.1,7.6-16.1,16.9c0,9.4,7.2,16.9,16.1,16.9h70.4l58.8,307.5c2.3,10.6,11.4,14.6,19.5,14.6c0,0,248.3,0,248.8,0 c8.4,0,17-3.7,19.2-12.8l63.8-219c1.1-3.3,3.3-8.2,3.3-14C279.3-59.9,272.1-67.5,263.2-67.5z M185.4,161.4c-0.1,0-0.2,0-0.3,0 H-47.3L-86.8-45.4c2.1,6.8,8.1,11.8,15.3,11.8h314.1L185.4,161.4z\"/>\n    <path d=\"M-22.9,254.6c-23,0-41.6,19-41.6,42.4c0,23.4,18.6,42.4,41.6,42.4s41.6-19,41.6-42.4S0.1,254.6-22.9,254.6z M-22.6,312.5c-8.7,0-15.7-7-15.7-15.5c0-8.6,7-15.5,15.7-15.5s15.7,7,15.7,15.5C-6.9,305.5-13.9,312.5-22.6,312.5z\"/>\n    <path d=\"M167.7,254.6c-22.7,0-41,19-41,42.4c0,23.4,18.4,42.4,41,42.4s41-19,41-42.4S190.4,254.6,167.7,254.6z M167.8,312.5c-8.6,0-15.5-7-15.5-15.5c0-8.6,7-15.5,15.5-15.5c8.6,0,15.5,7,15.5,15.5C183.3,305.5,176.4,312.5,167.8,312.5z\"/>\n</svg>";
 
 /***/ },
-/* 560 */
+/* 561 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/star-filled.svg ***!
   \*********************************************/
@@ -46465,7 +46554,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-star-filled\" viewBox=\"0 -8 471 471\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M381.12 448l-145.6-104.747-145.493 104.747 54.613-170.773-144.64-106.133 179.307-0.853 56.213-170.24 56.214 170.347 179.307 0.853-144.64 106.027 54.72 170.773z\" />\n</svg>";
 
 /***/ },
-/* 561 */
+/* 562 */
 /*!***********************************************!*\
   !*** ./~/html-loader!./src/star-outlined.svg ***!
   \***********************************************/
@@ -46474,7 +46563,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-star-outlined\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M259.5,388.2L100,503l59.9-187.2L1.3,199.5l196.6-0.9l61.6-186.7l61.6,186.7l196.6,0.9L359.2,315.8L419.1,503\n            L259.5,388.2z M386.6,458.3l-47.7-149.1l126.2-92.6l-156.6-0.7L259.5,67.2l-49.1,148.7l-156.6,0.7l126.2,92.6l-47.7,149.1\n            l127.1-91.4L386.6,458.3z\"/>\n</svg>";
 
 /***/ },
-/* 562 */
+/* 563 */
 /*!********************************************!*\
   !*** ./~/html-loader!./src/storefront.svg ***!
   \********************************************/
@@ -46483,7 +46572,16 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-storefront\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <rect x=\"45\" y=\"23\" width=\"160\" height=\"8\"/>\n        <rect x=\"133.8\" y=\"135.3\" transform=\"matrix(0.7012 -0.713 0.713 0.7012 -55.6632 145.7103)\" width=\"24.3\" height=\"8\"/>\n        <rect x=\"136.4\" y=\"147.9\" transform=\"matrix(0.7058 -0.7084 0.7084 0.7058 -59.9895 159.4118)\" width=\"51\" height=\"8\"/>\n        <rect x=\"172.5\" y=\"153.8\" transform=\"matrix(-0.7033 -0.7109 0.7109 -0.7033 182.7199 407.7907)\" width=\"8\" height=\"24\"/>\n        <path d=\"M65,175h20v-39H65V175z M73,144h4v23h-4V144z\"/>\n        <path d=\"M224,117.5c7.1-1.5,18.7-6.7,20.6-24.5h5.9L215.4,7H35.6L0,93h5.5C7.5,111.6,20,116.5,27,117.7V210H5v32h242v-32h-23V117.5 M105,210v-99.8c4.4,4.6,10.5,8,18.6,8c1.9,0,17.6-0.4,23.8-15.8c4.2,7.8,11.9,15.6,24.2,15.6c0,0,0.1,0,0.1,0 c2.2,0,16.8-0.5,23.2-14.6c4,6.9,10.7,13.6,21.1,14.6v92H105z M59.3,93h36.1c-2.2,17.2-16.1,17.2-17.7,17.2l-0.2,0 c-11.3,0-16.6-9.3-18.8-15C59,94.4,59.2,93.7,59.3,93z M104.1,93h37.4c-2.2,17.2-16.1,17.2-17.7,17.2l-0.2,0 C110.7,110.2,105.7,98,104.1,93z M152.1,93h37.4c-2.2,17.2-16.1,17.2-17.7,17.2l-0.2,0C158.7,110.1,153.7,98.1,152.1,93z M218.8,110.2l-0.2,0c-12.9,0-18-12.1-19.5-17.2h37.4C234.3,110.2,220.4,110.2,218.8,110.2z M41,15h169l28.6,70H12L41,15z M13.6,93 h36.1c0.1,0.7,0.3,1.4,0.6,2.2c-2.2,5.7-7.5,15-18.7,15l-0.2,0C30.7,110.2,15.9,110.6,13.6,93z M35,117.9c9.3-1.2,15.6-7,19.5-13.3 c4.4,7.1,11.8,13.6,23,13.6c1.5,0,12.2-0.2,19.5-8.7V210H35V117.9z M239,234H13v-16h226V234z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 563 */
+/* 564 */
+/*!*************************************!*\
+  !*** ./~/html-loader!./src/tag.svg ***!
+  \*************************************/
+/***/ function(module, exports) {
+
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-tag\" viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g transform=\"translate(-969.000000, -211.000000)\">\n        <path d=\"M971.9,215.7l3-4.4l4.4,0l2.8,4.4v10.9l-10.2,0V215.7z M977,215.7c0.8,0,1.5-0.6,1.5-1.5 c0-0.8-0.6-1.5-1.5-1.5c-0.8,0-1.5,0.6-1.5,1.5C975.5,215.1,976.3,215.7,977,215.7z\"/>\n    </g>\n</svg>";
+
+/***/ },
+/* 565 */
 /*!******************************************!*\
   !*** ./~/html-loader!./src/tax-free.svg ***!
   \******************************************/
@@ -46492,7 +46590,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-tax-free\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125.1,0.2C56.3,0.2,0.4,56.2,0.4,124.9s55.9,124.7,124.7,124.7c68.7,0,124.7-55.9,124.7-124.7S193.8,0.2,125.1,0.2z\n            M125.1,10.2c32.2,0,61.3,13.3,82.1,34.7l-78.9,66.2L122.1,95h-9.7L96,138.3L32.1,192c-13.7-18.9-21.7-42-21.7-67.1\n            C10.4,61.7,61.8,10.2,125.1,10.2z M127.3,133h-9.4l7.2-6L127.3,133z M109.6,126.9l7.8-20.7l4,10.8L109.6,126.9z M125.1,239.6\n            c-34.6,0-65.7-15.4-86.7-39.8L92.9,154h7l3.1-8.5l5.4-4.5H130l4.8,13h9.8l-12.5-32.9l29.3-24.6l19.4,27.3L159.1,154h10.6l16.7-23.5\n            L203,154h10.5l-21.6-30.3L212.3,95h-10.6l-15.4,22l-15.5-22h-7.8l50.7-42.6c16.2,19.8,25.9,45,25.9,72.5\n            C239.7,188.1,188.3,239.6,125.1,239.6z\"/>\n        <polygon points=\"53,104 53,154 61,154 61,104 78,104 78,95 35,95 35,104 \t\"/>\n    </g>\n</svg>\n";
 
 /***/ },
-/* 564 */
+/* 566 */
 /*!*****************************************!*\
   !*** ./~/html-loader!./src/toolbox.svg ***!
   \*****************************************/
@@ -46501,7 +46599,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-toolbox\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M257.8,206.3c-17.4,0-31.5,14.1-31.5,31.5c0,17.4,14.1,31.5,31.5,31.5c17.4,0,31.5-14.1,31.5-31.5\n            C289.3,220.5,275.2,206.3,257.8,206.3z M257.8,255.3c-9.6,0-17.5-7.9-17.5-17.5s7.9-17.5,17.5-17.5s17.5,7.9,17.5,17.5\n            S267.5,255.3,257.8,255.3z\"/>\n    <path d=\"M378,136.7V84.4l-26.7-33.8h-183l-29,34.2v51.8H1V199v1.7V407h517V200.7V199v-62.3H378z M165.3,94.4l15-17.8\n            h158.3L352,93.5v43.2H165.3V94.4z M504,391.7H15V213h133v62.5l31.2,29.5h156.9l33.4-28.8l0.5-63.2H504V391.7z M356.1,199l-0.5,70.8\n            L330.9,291H184.8L162,269.5V199H15v-48.3h489V199H356.1z\"/>\n</svg>";
 
 /***/ },
-/* 565 */
+/* 567 */
 /*!*********************************************!*\
   !*** ./~/html-loader!./src/trade-arrow.svg ***!
   \*********************************************/
@@ -46510,7 +46608,7 @@
 	module.exports = "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n\t class=\"dibsvg-svg dibsvg-trade-arrow\" viewBox=\"0 0 250 250\">\n<polygon points=\"154,41.4 147.6,49.1 229.2,117 0,117 0,127 228.4,127 147.5,199.8 154.1,207.2 249.9,121.2 \"/>\n</svg>\n";
 
 /***/ },
-/* 566 */
+/* 568 */
 /*!********************************************!*\
   !*** ./~/html-loader!./src/trade-logo.svg ***!
   \********************************************/
@@ -46519,7 +46617,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-trade-logo\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M125.1,250l-2.5-1.5c-1-0.6-24.9-14.8-50.8-47.9c-23.7-30.4-53.6-83.3-60.8-162.4l-0.2-2.5l2.1-1.5\n                C14.8,32.8,60,0.3,125.4,0.3c38.4,0,75.8,11.3,111,33.7l2.1,1.4l0,2.5c0,1.4-0.7,34-14.7,76.4c-12.9,39.2-40.1,94.3-96.3,134.1\n                L125.1,250z M20.3,40c7.4,75.5,35.9,125.9,58.6,155.1c20.1,25.8,39.2,39.7,45.8,44.1c52.6-38.3,78.3-90.5,90.5-127.8\n                c11.4-34.6,13.7-62.9,14.1-71.2c-33.1-20.5-68.1-31-104-31C70.5,9.3,29.7,33.8,20.3,40z\"/>\n        <path d=\"M124.9,209l-1.8-1.1c-0.7-0.4-18.4-10.9-37.4-35.3C68.2,150.3,46.3,111.4,41,53.2l-0.2-1.9l1.5-1.1\n                c1.4-1,34.6-24.9,82.8-24.9c28.3,0,55.8,8.3,81.7,24.8l1.6,1l0,1.9c0,1-0.5,25-10.8,56.2c-9.5,28.8-29.5,69.4-70.9,98.7L124.9,209z\n                 M47.8,54.5c5.4,55.5,26.4,92.6,43.1,114.1c14.8,19,28.9,29.2,33.7,32.5c38.7-28.2,57.6-66.6,66.6-94c8.4-25.4,10.1-46.2,10.4-52.4\n                c-24.4-15.1-50.1-22.8-76.5-22.8C84.7,31.9,54.7,50,47.8,54.5z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 567 */
+/* 569 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/trash-filled.svg ***!
   \**********************************************/
@@ -46528,7 +46626,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-trash-filled\" viewBox=\"-15 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M15,15.25 L77,15.25 L77,0 L139.5,0 L139.5,15.25 L202,15.25 L202,32 L15,32 L15,15.25 Z\"></path>\n        <path d=\"M0,47 L218,47 L218,62 L206,62 L167,250 L50,250 L13.5,62 L0,62 L0,47 Z\"></path>\n    </g>\n</svg>";
 
 /***/ },
-/* 568 */
+/* 570 */
 /*!***********************************************!*\
   !*** ./~/html-loader!./src/triangle-down.svg ***!
   \***********************************************/
@@ -46537,7 +46635,7 @@
 	module.exports = "<svg version=\"1.1\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <polygon points=\"125,34 250,34 187.5,142.3 125,250.5 62.5,142.3 0,34 \"/>\n</svg>\n";
 
 /***/ },
-/* 569 */
+/* 571 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/truck-moving.svg ***!
   \**********************************************/
@@ -46546,7 +46644,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-truck-moving\" viewBox=\"0 0 518 518\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M467.6,235.5c0.2-1.2,3.5-28.7-23.1-59.3l-2-2.3H390v68h76.8L467.6,235.5z M403.7,227v-38.4h32.8\n                c13.3,16.2,16.7,30.6,17.5,38.4H403.7z\"/>\n        <path d=\"M412.8,355.1c-22.6,0-41.1,18.9-41.1,42.2c0,23.3,18.4,42.2,41.1,42.2c22.6,0,41.1-18.9,41.1-42.2\n                C453.8,374,435.4,355.1,412.8,355.1z M412.8,409.3c-6.5,0-11.7-5.4-11.7-12.1c0-6.7,5.3-12.1,11.7-12.1s11.7,5.4,11.7,12.1\n                C424.5,403.9,419.2,409.3,412.8,409.3z\"/>\n        <path d=\"M120.8,355.1c-22.6,0-41.1,18.9-41.1,42.2c0,23.3,18.4,42.2,41.1,42.2c22.6,0,41.1-18.9,41.1-42.2\n                C161.8,374,143.4,355.1,120.8,355.1z M120.8,409.3c-6.5,0-11.7-5.4-11.7-12.1c0-6.7,5.3-12.1,11.7-12.1c6.5,0,11.7,5.4,11.7,12.1\n                C132.5,403.9,127.3,409.3,120.8,409.3z\"/>\n        <path d=\"M501.9,313.3v-99.8l-15.4-42c-8.6-24.4-31.9-30.2-43.2-29.9h-80.6v14.1h80.7l0.2,0c0.9,0,22.4-0.3,29.7,20.5\n                l14.6,39.8v102.8l2,2c0.1,0.1,9.7,10.4,9.7,23.9v34.2c0,0.1-0.1,6.6-4.5,8.4h-10.4c-1.1-6.4-3.7-16.5-9.6-26.6\n                c-8.8-15.3-26.8-33.6-62.2-33.7c-2.6-0.2-16.2-0.8-31.4,6.1c-24.9,11.4-36.3,34.7-41.5,54.2H193.8c-2.1-6.3-6.5-17.1-14.2-28\n                c-11.8-16.5-27.1-27-44.9-30.8h228V76.6H3.5v251.9h22.3v72.8h36.5l0.9-5.9c8.5-53.4,51.2-54.4,53-54.4l0.2,0\n                c21.1-0.7,38.4,8,51.5,26.1c10.1,14,13.8,28.7,13.8,28.8l1.3,5.4h168.3l1.2-5.5c12.8-58.5,57.5-55,59.4-54.8l0.7,0\n                c55,0,58.8,51.5,58.9,53.7l0.4,6.6h25.1l0.9-0.2c12.4-3.2,15.7-15.9,15.7-22.2v-34.2C513.7,329.7,505.8,318,501.9,313.3z\n                 M17.1,90.7H349v223.8H17.1V90.7z M50.4,387.2H39.8v-58.7h64.6c-5.1,1.2-11.4,3.2-18,6.8C73.4,342.5,56.9,357.3,50.4,387.2z\"/>\n    </g>\n</svg>";
 
 /***/ },
-/* 570 */
+/* 572 */
 /*!*****************************************!*\
   !*** ./~/html-loader!./src/twitter.svg ***!
   \*****************************************/
@@ -46555,7 +46653,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-twitter\" viewBox=\"0 -40 613 613\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M0,441.8h29.9c60.4,0,113.8-16.8,160.1-50c-53.7-1.2-99.2-39-120.2-91.2c5.8,3.3,13.7,5.2,23.2,5.2c3.9,0,10.4-1,18.9-2.7 c8.2-1.5,14-2.5,17.4-2.5c-60.1-10.1-105-60.7-105-123c17.4,7,22.3,9.4,36.9,12.1c7.3,1.5,15,2.1,22.9,2.1 c-35.1-22-59.8-61.9-59.8-101.3c0-30.2,5.2-48.2,19.9-68.7c60.7,78.5,154.6,127.9,255,134.9c0-3.9-0.4-9.2-0.6-15.6 c-0.4-6.4-0.6-11-0.6-14.3c0-45.5,25.4-87.5,63.5-110.1C380.7,5.5,400.8,0,422.3,0c34.8,0,67.1,13.5,97,40.6 c17-2.1,33-8.2,55.2-18.3c11-5.2,18.9-8.6,23.5-10.4c-9.4,27.1-28.1,46.7-60.1,68.9c29.6-3.1,54.6-10.1,75-20.7 c-13.1,22.9-32.6,45.1-58.6,66.8v15c0,54.9-15.2,112.3-42.4,165.6c-27.1,53.3-71.1,101-122.6,136.1S268.5,500,194.3,500 C123.8,500,58.9,480.5,0,441.8z\" />\n</svg>\n";
 
 /***/ },
-/* 571 */
+/* 573 */
 /*!***********************************************!*\
   !*** ./~/html-loader!./src/upload-failed.svg ***!
   \***********************************************/
@@ -46564,7 +46662,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-upload-failed\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n<g>\r\n\t<path d=\"M124.5,249.3c-68.8,0-124.8-56-124.8-124.8S55.7-0.3,124.5-0.3s124.8,56,124.8,124.8S193.3,249.3,124.5,249.3z M124.5,9.7\r\n\t\tC61.2,9.7,9.7,61.2,9.7,124.5c0,63.3,51.5,114.8,114.8,114.8c63.3,0,114.8-51.5,114.8-114.8C239.3,61.2,187.8,9.7,124.5,9.7z\"/>\r\n\t<g>\r\n\t\t<path d=\"M125.1,197.2c-6.2,0-11.1-4.9-11.1-11.1c0-6.2,4.9-11.3,11.1-11.3s11.3,5.1,11.3,11.3\r\n\t\t\tC136.5,192.3,131.4,197.2,125.1,197.2z M126.7,155.5h-3.1c-1.4-34-8.4-77.7-8.4-84.7c0-6.2,4.1-11.9,10.1-11.9\r\n\t\t\tc6.1,0,10.1,5.7,10.1,11.9C135.5,77.6,128.8,121.1,126.7,155.5z\"/>\r\n\t</g>\r\n</g>\r\n</svg>\r\n";
 
 /***/ },
-/* 572 */
+/* 574 */
 /*!**************************************!*\
   !*** ./~/html-loader!./src/yoga.svg ***!
   \**************************************/
@@ -46573,7 +46671,7 @@
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-yoga\" viewBox=\"0 50 420 420\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M418.7,181.7l-2.1,0.8l0,0L418.7,181.7c-0.4-0.8-0.4-1.3-0.8-1.7c-0.8-2.1-2.1-3.8-4.2-4.6\n            c-5-2.5-13,0-22.3,3.4l-2.1,0.8c-7.1,2.5-15.1,5.5-20.6,3.4c-1.3-0.4-2.1-0.8-3.4-1.3c-7.6-2.9-17.2-7.1-25.2-2.5\n            c-6.7,3.8-8.4,13-8.8,19.3c-8,1.3-26,4.6-35.7,6.3c-4.2,0.8-7.1,1.3-10.1,2.1c-5.5,1.3-9.7,2.5-19.7,2.9\n            c8.4-7.1,19.7-16.8,26.5-23.9c12.6-12.6,21.8-27.7,26.9-43.7c4.6-15.1,4.6-26.9,0.4-37.4c-3.4-8.4-13.4-19.3-23.5-23.5\n            c-11.3-4.6-39.1-3.4-48.3,2.1c-3.8,2.1-22.7,13.4-33.2,26.5c-5,6.3-19.7,17.6-33.6,28.6c-9.7,7.6-19.7,15.5-27.3,21.8\n            c-4.2,3.8-8.4,7.6-12.6,11.3l-0.4,0.4c-12.6,10.9-23.1,20.2-30.2,29c-3.4,6.3-7.1,11.3-8.4,13c-4.2-1.3-16.4-6.3-20.2-10.1\n            c-2.9-2.9-8.8-6.3-15.1-8.8c-0.4-10.5-9.2-18.5-20.2-18.5s-20.2,8.8-20.2,19.7c0,0.4,0,1.3,0,1.7c-4.6,2.1-8.8,5-12.2,8.8\n            C5,216.6-2.5,233.4,0.4,242.6c0.4,2.1,0.8,3.8,1.3,5.5c0.8,4.6,2.1,10.1,8.4,12.6c1.3,0.4,2.1,2.1,2.9,4.2c1.7,2.5,3.4,6.3,8,7.6\n            c2.1,0.4,3.8,0.4,4.6,0.4c0.8,0,1.3,0,1.3,0s0,0.4,0.4,0.8c0.4,1.7,0.8,3.4,0.8,5.5c0.8,5,1.7,11.8,8,12.6c3.8,0.4,6.3-1.3,8-2.5\n            c3.8,2.5,7.6,4.2,13.4,5.9c7.6,1.7,10.1,2.1,13.9-2.1c2.1-2.1,3.4-5,4.6-8c0.4-1.3,1.3-2.9,2.1-4.6c1.3-2.1,2.1-3.8,14.7-5.5\n            c11.8-1.7,27.7-7.1,30.2-8.4c6.7,6.7,13.9,12.6,13.9,12.6c3.8,2.9,13,7.6,22.3,11.8c5.5,2.5,10.5,5,12.6,6.3\n            c5,3.4,15.5,11.8,20.2,16c1.3,1.3,2.5,2.5,4.6,4.2l0.4,0.4c5,4.6,13.4,12.2,15.1,16c2.1,4.6,2.9,21.4,3.4,31.5c0,2.5,0,4.6,0.4,6.3\n            c0.8,15.1,0.8,30.7,0.4,34.9c-1.3,0-3.4,0-4.6,0c-1.7,0-3.4,0-5.5,0h-0.8c-8.4,0-13.4,0-21.8,5.9c-4.6,3.4-13,5-18.9,6.3\n            c-2.5,0.4-4.6,0.8-6.3,1.7l-0.8,0.4c-4.2,1.3-8.8,2.5-9.7,6.7c-0.8,4.2,2.9,7.6,4.6,8.8c2.9,2.5,9.7,3.4,23.1,3.4\n            c10.1,0,23.1-0.4,43.3-1.7c3.8-0.4,6.7-0.4,7.6-0.4c5.9,0,8-4.2,9.7-7.6c0.8-2.1,2.5-5,5-8.8c8.4-12.2,12.6-107.9,12.6-108.8\n            c-0.4-4.2-6.3-9.7-26.5-25.6l-3.4-2.5c-1.7-1.3-5.5-3.8-11.3-7.6c5.9-1.7,12.2-3.8,17.6-5c11.3-2.9,48.3-14.7,61.3-19.3\n            c13.9-5,48.3-16.4,60.1-19.7c13.4-3.8,23.5-12.2,30.2-17.6c3.8-2.9,8.4-5.5,14.3-8.4c4.6-2.5,9.2-5,14.3-8\n            C418.7,192.6,422.1,188.9,418.7,181.7z M159.2,429.5l1.3-0.4c1.3-0.4,3.4-0.8,5-1.3h0.4c6.7-1.3,16-3.4,22.3-8\n            c5.9-4.2,8.4-4.2,16.8-4.2h0.8c1.7,0,3.4,0,5.5,0c5.9,0,11.3,0.4,13.4-5.5c1.7-5.5,0.4-38.6,0.4-39.1l-0.4-6.3\n            c-0.8-16.4-1.3-29.4-4.2-34.9c-2.5-5.5-10.9-13-17.2-18.9l-0.4-0.4c-1.7-1.7-3.4-2.9-4.2-3.8c-5-5-15.5-13.9-21.4-17.2\n            c-2.5-1.7-8-4.2-14.3-7.1c-7.1-3.4-17.2-8.4-20.2-10.5c-9.7-7.6-21-19.3-21.4-22.3c-0.4-1.3-0.8-2.1-2.1-2.9\n            c-0.8-0.8-2.1-0.8-3.4-0.8c-2.5,0.4-4.2,2.9-3.8,5.5c0.4,2.1,1.7,4.6,4.2,7.6c-5.5,1.7-16.4,5.5-24.8,6.7\n            c-12.2,1.7-18.1,3.8-21.4,10.5c-0.8,2.1-1.7,3.8-2.5,5.5c-0.8,2.1-1.7,3.8-2.1,4.6l-0.4,0.4c-0.4,0-2.5-0.4-5-0.8\n            c-5.5-1.3-8.4-2.9-12.6-5.9c-3.8-2.5-7.1,0-8.4,1.3c-0.4,0-0.4,0.4-0.8,0.8c-0.4-1.3-0.8-3.4-0.8-4.6c-0.4-2.1-0.8-4.2-1.3-6.7\n            c-2.1-7.1-7.1-7.6-10.5-7.6c-0.8,0-2.1,0-2.5-0.4c-0.4-0.4-1.3-1.7-1.7-2.5c-0.8-1.3-1.7-3.4-3.4-5.5c2.9-2.1,7.1-4.6,11.3-4.2\n            c8.4,1.7,17.2,0.8,17.6,0.8H50l-0.8-2.9c-1.3-3.8-2.1-9.2-0.8-10.1l0.8-0.4c2.9-2.5,4.2-3.8,9.2-0.4c8,5.5,18.9,3.4,23.9,0\n            c3.4-2.1,10.5-10.1,15.1-15.5c2.1,0.8,3.8,0.8,4.6,0.8c2.5,0,6.3-1.3,15.1-17.2c3.4-3.8,8-8.8,15.1-15.1c5,2.9,16,10.5,22.3,21\n            c5,8.8,6.7,23.1,7.6,31.9c-3.8-5-5.5-12.2-5.5-12.2c-0.4-2.5-2.9-4.2-5.5-3.8c-1.3,0.4-2.1,0.8-2.9,2.1c-0.8,0.8-0.8,2.1-0.8,3.4\n            c0.4,1.3,2.5,13,10.5,20.2c4.2,3.8,18.9,12.6,32.8,21.4l0.8,0.4c10.9,6.7,21.4,13.4,25.2,16l3.4,2.5l1.3-1.7l0,0l-1.3,1.7\n            c17.2,13.4,22.3,18.1,23.1,19.7c0.4,8-5,94.1-10.9,102.1c-2.9,4.2-4.6,8-5.9,10.1c-0.4,0.4-0.8,1.7-1.3,2.1c-1.3,0-4.2,0-8.4,0.4\n            C175.1,431.2,162.5,430.4,159.2,429.5C158.8,429.5,159.2,429.5,159.2,429.5z M410.3,185.9C410.3,185.9,410.3,186.3,410.3,185.9\n            c0,0.8-1.3,1.7-5,4.2l0,0c-4.6,2.9-9.2,5-13.4,7.6c-5.9,2.9-11.8,5.9-16,9.7c-5.9,5-15.1,12.6-26.9,16\n            c-12.2,3.4-46.6,15.1-60.9,19.7c-13.9,5-50,16.4-60.9,18.9c-9.2,2.5-21.8,6.3-25.6,7.6l-5.5-3.4c-8.8-5.5-18.5-11.3-24.8-15.5\n            l20.6-38.2c6.7-12.6,18.1-30.2,26-41.6c5.9-8,20.2-23.5,29.8-33.6l4.2-4.6c4.2,0.8,12.2,3.8,20.6,15.1c9.7,12.6,14.7,23.5,16.8,28.6\n            c-0.8,1.3-2.1,2.1-2.9,2.9c-10.5,10.5-30.7,27.3-36.1,31.5c-6.7,1.3-10.9,3.8-15.1,5.9c-1.7,0.8-2.9,1.7-5,2.5\n            c-10.9,4.6-19.3,21-19.7,21.8c-0.4,1.3-0.8,2.5-0.4,3.4c0.4,1.3,1.3,2.1,2.1,2.5c2.1,1.3,5,0.4,6.3-2.1c2.5-5,9.2-15.1,15.1-17.6\n            c2.1-0.8,3.8-1.7,5.9-2.9c5.9-2.9,10.1-5,23.5-5.5c13.4-0.4,18.9-1.7,25.6-3.4c2.5-0.8,5.5-1.3,9.2-2.1c12.6-2.1,39.1-6.7,39.5-7.1\n            c2.1-0.4,3.8-2.5,3.8-4.6c0-5,0.8-13,4.2-15.1c3.8-2.5,10.9,0.4,16.8,2.9c1.3,0.4,2.5,0.8,3.4,1.3c8.4,3.4,18.5-0.4,26.9-3.4\n            l2.5,0.4c9.7-3.4,13-3.8,14.7-3.8C409.5,184.7,409.9,185.5,410.3,185.9z M210.8,165.3c-4.6,6.7-10.5,15.1-16,23.9\n            c-2.9-5.5-7.6-12.2-11.3-16c-4.2-4.2-10.9-9.7-15.1-13c5.5-4.6,12.2-9.7,18.1-14.3l0,0c15.1-11.8,29-22.7,34.9-29.8c0,0,0,0,0-0.4\n            c2.9,3.8,7.1,9.7,9.2,13.9c1.7,3.4,2.9,6.3,3.8,8.4C225.5,147.7,215.5,158.6,210.8,165.3z\"/>\n</svg>";
 
 /***/ },
-/* 573 */
+/* 575 */
 /*!***********************************!*\
   !*** (webpack)/hot/dev-server.js ***!
   \***********************************/
@@ -46618,7 +46716,7 @@
 					check();
 				}
 	
-				__webpack_require__(/*! ./log-apply-result */ 574)(updatedModules, updatedModules);
+				__webpack_require__(/*! ./log-apply-result */ 576)(updatedModules, updatedModules);
 	
 				if (upToDate()) {
 					console.log("[HMR] App is up to date.");
@@ -46645,7 +46743,7 @@
 	}
 
 /***/ },
-/* 574 */
+/* 576 */
 /*!*****************************************!*\
   !*** (webpack)/hot/log-apply-result.js ***!
   \*****************************************/
@@ -46680,15 +46778,15 @@
 	};
 
 /***/ },
-/* 575 */
+/* 577 */
 /*!**********************************************************!*\
   !*** (webpack)-dev-server/client?http://localhost:9090/ ***!
   \**********************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__resourceQuery) {var url = __webpack_require__(/*! url */ 576);
-	var stripAnsi = __webpack_require__(/*! strip-ansi */ 582);
-	var socket = __webpack_require__(/*! ./socket */ 584);
+	/* WEBPACK VAR INJECTION */(function(__resourceQuery) {var url = __webpack_require__(/*! url */ 578);
+	var stripAnsi = __webpack_require__(/*! strip-ansi */ 584);
+	var socket = __webpack_require__(/*! ./socket */ 586);
 	
 	function getCurrentScriptSource() {
 		// `document.currentScript` is the most accurate way to find the current script,
@@ -46818,7 +46916,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, "?http://localhost:9090/"))
 
 /***/ },
-/* 576 */
+/* 578 */
 /*!**********************!*\
   !*** ./~/url/url.js ***!
   \**********************/
@@ -46849,7 +46947,7 @@
 	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 	// USE OR OTHER DEALINGS IN THE SOFTWARE.
 	
-	var punycode = __webpack_require__(/*! punycode */ 577);
+	var punycode = __webpack_require__(/*! punycode */ 579);
 	
 	exports.parse = urlParse;
 	exports.resolve = urlResolve;
@@ -46928,7 +47026,7 @@
 	  'gopher:': true,
 	  'file:': true
 	},
-	    querystring = __webpack_require__(/*! querystring */ 579);
+	    querystring = __webpack_require__(/*! querystring */ 581);
 	
 	function urlParse(url, parseQueryString, slashesDenoteHost) {
 	  if (url && isObject(url) && url instanceof Url) return url;
@@ -47512,7 +47610,7 @@
 	}
 
 /***/ },
-/* 577 */
+/* 579 */
 /*!**************************************!*\
   !*** ./~/url/~/punycode/punycode.js ***!
   \**************************************/
@@ -48028,7 +48126,7 @@
 		/** Expose `punycode` */
 		// Some AMD build optimizers, like r.js, check for specific condition patterns
 		// like the following:
-		if ("function" == 'function' && _typeof(__webpack_require__(/*! !webpack amd options */ 578)) == 'object' && __webpack_require__(/*! !webpack amd options */ 578)) {
+		if ("function" == 'function' && _typeof(__webpack_require__(/*! !webpack amd options */ 580)) == 'object' && __webpack_require__(/*! !webpack amd options */ 580)) {
 			!(__WEBPACK_AMD_DEFINE_RESULT__ = function () {
 				return punycode;
 			}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -48050,7 +48148,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../webpack/buildin/module.js */ 181)(module), (function() { return this; }())))
 
 /***/ },
-/* 578 */
+/* 580 */
 /*!****************************************!*\
   !*** (webpack)/buildin/amd-options.js ***!
   \****************************************/
@@ -48061,7 +48159,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ },
-/* 579 */
+/* 581 */
 /*!********************************!*\
   !*** ./~/querystring/index.js ***!
   \********************************/
@@ -48069,11 +48167,11 @@
 
 	'use strict';
 	
-	exports.decode = exports.parse = __webpack_require__(/*! ./decode */ 580);
-	exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ 581);
+	exports.decode = exports.parse = __webpack_require__(/*! ./decode */ 582);
+	exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ 583);
 
 /***/ },
-/* 580 */
+/* 582 */
 /*!*********************************!*\
   !*** ./~/querystring/decode.js ***!
   \*********************************/
@@ -48165,7 +48263,7 @@
 	};
 
 /***/ },
-/* 581 */
+/* 583 */
 /*!*********************************!*\
   !*** ./~/querystring/encode.js ***!
   \*********************************/
@@ -48237,7 +48335,7 @@
 	};
 
 /***/ },
-/* 582 */
+/* 584 */
 /*!*******************************!*\
   !*** ./~/strip-ansi/index.js ***!
   \*******************************/
@@ -48245,14 +48343,14 @@
 
 	'use strict';
 	
-	var ansiRegex = __webpack_require__(/*! ansi-regex */ 583)();
+	var ansiRegex = __webpack_require__(/*! ansi-regex */ 585)();
 	
 	module.exports = function (str) {
 		return typeof str === 'string' ? str.replace(ansiRegex, '') : str;
 	};
 
 /***/ },
-/* 583 */
+/* 585 */
 /*!*******************************!*\
   !*** ./~/ansi-regex/index.js ***!
   \*******************************/
@@ -48266,7 +48364,7 @@
 	};
 
 /***/ },
-/* 584 */
+/* 586 */
 /*!*********************************************!*\
   !*** (webpack)-dev-server/client/socket.js ***!
   \*********************************************/
@@ -48274,7 +48372,7 @@
 
 	"use strict";
 	
-	var SockJS = __webpack_require__(/*! sockjs-client */ 585);
+	var SockJS = __webpack_require__(/*! sockjs-client */ 587);
 	
 	var retries = 0;
 	var sock = null;
@@ -48315,7 +48413,7 @@
 	module.exports = socket;
 
 /***/ },
-/* 585 */
+/* 587 */
 /*!**************************************!*\
   !*** ./~/sockjs-client/lib/entry.js ***!
   \**************************************/
@@ -48323,9 +48421,9 @@
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
 	
-	var transportList = __webpack_require__(/*! ./transport-list */ 586);
+	var transportList = __webpack_require__(/*! ./transport-list */ 588);
 	
-	module.exports = __webpack_require__(/*! ./main */ 631)(transportList);
+	module.exports = __webpack_require__(/*! ./main */ 633)(transportList);
 	
 	// TODO can't get rid of this until all servers do
 	if ('_sockjs_onload' in global) {
@@ -48334,7 +48432,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 586 */
+/* 588 */
 /*!***********************************************!*\
   !*** ./~/sockjs-client/lib/transport-list.js ***!
   \***********************************************/
@@ -48344,13 +48442,13 @@
 	
 	module.exports = [
 	// streaming transports
-	__webpack_require__(/*! ./transport/websocket */ 587), __webpack_require__(/*! ./transport/xhr-streaming */ 603), __webpack_require__(/*! ./transport/xdr-streaming */ 613), __webpack_require__(/*! ./transport/eventsource */ 615), __webpack_require__(/*! ./transport/lib/iframe-wrap */ 618)(__webpack_require__(/*! ./transport/eventsource */ 615))
+	__webpack_require__(/*! ./transport/websocket */ 589), __webpack_require__(/*! ./transport/xhr-streaming */ 605), __webpack_require__(/*! ./transport/xdr-streaming */ 615), __webpack_require__(/*! ./transport/eventsource */ 617), __webpack_require__(/*! ./transport/lib/iframe-wrap */ 620)(__webpack_require__(/*! ./transport/eventsource */ 617))
 	
 	// polling transports
-	, __webpack_require__(/*! ./transport/htmlfile */ 624), __webpack_require__(/*! ./transport/lib/iframe-wrap */ 618)(__webpack_require__(/*! ./transport/htmlfile */ 624)), __webpack_require__(/*! ./transport/xhr-polling */ 626), __webpack_require__(/*! ./transport/xdr-polling */ 627), __webpack_require__(/*! ./transport/lib/iframe-wrap */ 618)(__webpack_require__(/*! ./transport/xhr-polling */ 626)), __webpack_require__(/*! ./transport/jsonp-polling */ 628)];
+	, __webpack_require__(/*! ./transport/htmlfile */ 626), __webpack_require__(/*! ./transport/lib/iframe-wrap */ 620)(__webpack_require__(/*! ./transport/htmlfile */ 626)), __webpack_require__(/*! ./transport/xhr-polling */ 628), __webpack_require__(/*! ./transport/xdr-polling */ 629), __webpack_require__(/*! ./transport/lib/iframe-wrap */ 620)(__webpack_require__(/*! ./transport/xhr-polling */ 628)), __webpack_require__(/*! ./transport/jsonp-polling */ 630)];
 
 /***/ },
-/* 587 */
+/* 589 */
 /*!****************************************************!*\
   !*** ./~/sockjs-client/lib/transport/websocket.js ***!
   \****************************************************/
@@ -48358,15 +48456,15 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var utils = __webpack_require__(/*! ../utils/event */ 588),
-	    urlUtils = __webpack_require__(/*! ../utils/url */ 591),
-	    inherits = __webpack_require__(/*! inherits */ 599),
-	    EventEmitter = __webpack_require__(/*! events */ 600).EventEmitter,
-	    WebsocketDriver = __webpack_require__(/*! ./driver/websocket */ 602);
+	var utils = __webpack_require__(/*! ../utils/event */ 590),
+	    urlUtils = __webpack_require__(/*! ../utils/url */ 593),
+	    inherits = __webpack_require__(/*! inherits */ 601),
+	    EventEmitter = __webpack_require__(/*! events */ 602).EventEmitter,
+	    WebsocketDriver = __webpack_require__(/*! ./driver/websocket */ 604);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:websocket');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:websocket');
 	}
 	
 	function WebSocketTransport(transUrl, ignore, options) {
@@ -48456,7 +48554,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 588 */
+/* 590 */
 /*!********************************************!*\
   !*** ./~/sockjs-client/lib/utils/event.js ***!
   \********************************************/
@@ -48464,7 +48562,7 @@
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
 	
-	var random = __webpack_require__(/*! ./random */ 589);
+	var random = __webpack_require__(/*! ./random */ 591);
 	
 	var onUnload = {},
 	    afterUnload = false
@@ -48538,7 +48636,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 589 */
+/* 591 */
 /*!*********************************************!*\
   !*** ./~/sockjs-client/lib/utils/random.js ***!
   \*********************************************/
@@ -48548,7 +48646,7 @@
 	
 	/* global crypto:true */
 	
-	var crypto = __webpack_require__(/*! crypto */ 590);
+	var crypto = __webpack_require__(/*! crypto */ 592);
 	
 	// This string has length 32, a power of 2, so the modulus doesn't introduce a
 	// bias.
@@ -48576,7 +48674,7 @@
 	};
 
 /***/ },
-/* 590 */
+/* 592 */
 /*!*****************************************************!*\
   !*** ./~/sockjs-client/lib/utils/browser-crypto.js ***!
   \*****************************************************/
@@ -48602,7 +48700,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 591 */
+/* 593 */
 /*!******************************************!*\
   !*** ./~/sockjs-client/lib/utils/url.js ***!
   \******************************************/
@@ -48610,11 +48708,11 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var URL = __webpack_require__(/*! url-parse */ 592);
+	var URL = __webpack_require__(/*! url-parse */ 594);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:utils:url');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:utils:url');
 	}
 	
 	module.exports = {
@@ -48658,7 +48756,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 592 */
+/* 594 */
 /*!******************************!*\
   !*** ./~/url-parse/index.js ***!
   \******************************/
@@ -48668,9 +48766,9 @@
 	
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 	
-	var required = __webpack_require__(/*! requires-port */ 593),
-	    lolcation = __webpack_require__(/*! ./lolcation */ 594),
-	    qs = __webpack_require__(/*! querystringify */ 595),
+	var required = __webpack_require__(/*! requires-port */ 595),
+	    lolcation = __webpack_require__(/*! ./lolcation */ 596),
+	    qs = __webpack_require__(/*! querystringify */ 597),
 	    protocolre = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\S\s]*)/i;
 	
 	/**
@@ -49018,7 +49116,7 @@
 	module.exports = URL;
 
 /***/ },
-/* 593 */
+/* 595 */
 /*!**********************************!*\
   !*** ./~/requires-port/index.js ***!
   \**********************************/
@@ -49065,7 +49163,7 @@
 	};
 
 /***/ },
-/* 594 */
+/* 596 */
 /*!**********************************!*\
   !*** ./~/url-parse/lolcation.js ***!
   \**********************************/
@@ -49102,7 +49200,7 @@
 	 */
 	module.exports = function lolcation(loc) {
 	  loc = loc || global.location || {};
-	  URL = URL || __webpack_require__(/*! ./ */ 592);
+	  URL = URL || __webpack_require__(/*! ./ */ 594);
 	
 	  var finaldestination = {},
 	      type = typeof loc === 'undefined' ? 'undefined' : _typeof(loc),
@@ -49131,7 +49229,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 595 */
+/* 597 */
 /*!***********************************!*\
   !*** ./~/querystringify/index.js ***!
   \***********************************/
@@ -49197,7 +49295,7 @@
 	exports.parse = querystring;
 
 /***/ },
-/* 596 */
+/* 598 */
 /*!****************************!*\
   !*** ./~/debug/browser.js ***!
   \****************************/
@@ -49213,7 +49311,7 @@
 	 * Expose `debug()` as the module.
 	 */
 	
-	exports = module.exports = __webpack_require__(/*! ./debug */ 597);
+	exports = module.exports = __webpack_require__(/*! ./debug */ 599);
 	exports.log = log;
 	exports.formatArgs = formatArgs;
 	exports.save = save;
@@ -49366,7 +49464,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 597 */
+/* 599 */
 /*!**************************!*\
   !*** ./~/debug/debug.js ***!
   \**************************/
@@ -49386,7 +49484,7 @@
 	exports.disable = disable;
 	exports.enable = enable;
 	exports.enabled = enabled;
-	exports.humanize = __webpack_require__(/*! ms */ 598);
+	exports.humanize = __webpack_require__(/*! ms */ 600);
 	
 	/**
 	 * The currently active debug mode names, and names to skip.
@@ -49574,7 +49672,7 @@
 	}
 
 /***/ },
-/* 598 */
+/* 600 */
 /*!***********************!*\
   !*** ./~/ms/index.js ***!
   \***********************/
@@ -49729,7 +49827,7 @@
 	}
 
 /***/ },
-/* 599 */
+/* 601 */
 /*!****************************************!*\
   !*** ./~/inherits/inherits_browser.js ***!
   \****************************************/
@@ -49762,7 +49860,7 @@
 	}
 
 /***/ },
-/* 600 */
+/* 602 */
 /*!**********************************************!*\
   !*** ./~/sockjs-client/lib/event/emitter.js ***!
   \**********************************************/
@@ -49770,8 +49868,8 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    EventTarget = __webpack_require__(/*! ./eventtarget */ 601);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    EventTarget = __webpack_require__(/*! ./eventtarget */ 603);
 	
 	function EventEmitter() {
 	  EventTarget.call(this);
@@ -49826,7 +49924,7 @@
 	module.exports.EventEmitter = EventEmitter;
 
 /***/ },
-/* 601 */
+/* 603 */
 /*!**************************************************!*\
   !*** ./~/sockjs-client/lib/event/eventtarget.js ***!
   \**************************************************/
@@ -49896,7 +49994,7 @@
 	module.exports = EventTarget;
 
 /***/ },
-/* 602 */
+/* 604 */
 /*!************************************************************!*\
   !*** ./~/sockjs-client/lib/transport/browser/websocket.js ***!
   \************************************************************/
@@ -49913,7 +50011,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 603 */
+/* 605 */
 /*!********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/xhr-streaming.js ***!
   \********************************************************/
@@ -49921,12 +50019,12 @@
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 604),
-	    XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ 608),
-	    XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ 609),
-	    XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ 611),
-	    browser = __webpack_require__(/*! ../utils/browser */ 612);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 606),
+	    XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ 610),
+	    XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ 611),
+	    XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ 613),
+	    browser = __webpack_require__(/*! ../utils/browser */ 614);
 	
 	function XhrStreamingTransport(transUrl) {
 	  if (!XHRLocalObject.enabled && !XHRCorsObject.enabled) {
@@ -49962,7 +50060,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 604 */
+/* 606 */
 /*!*********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/lib/ajax-based.js ***!
   \*********************************************************/
@@ -49970,13 +50068,13 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    urlUtils = __webpack_require__(/*! ../../utils/url */ 591),
-	    SenderReceiver = __webpack_require__(/*! ./sender-receiver */ 605);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    urlUtils = __webpack_require__(/*! ../../utils/url */ 593),
+	    SenderReceiver = __webpack_require__(/*! ./sender-receiver */ 607);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:ajax-based');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:ajax-based');
 	}
 	
 	function createAjaxSender(AjaxObject) {
@@ -50019,7 +50117,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 605 */
+/* 607 */
 /*!**************************************************************!*\
   !*** ./~/sockjs-client/lib/transport/lib/sender-receiver.js ***!
   \**************************************************************/
@@ -50027,14 +50125,14 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    urlUtils = __webpack_require__(/*! ../../utils/url */ 591),
-	    BufferedSender = __webpack_require__(/*! ./buffered-sender */ 606),
-	    Polling = __webpack_require__(/*! ./polling */ 607);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    urlUtils = __webpack_require__(/*! ../../utils/url */ 593),
+	    BufferedSender = __webpack_require__(/*! ./buffered-sender */ 608),
+	    Polling = __webpack_require__(/*! ./polling */ 609);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:sender-receiver');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:sender-receiver');
 	}
 	
 	function SenderReceiver(transUrl, urlSuffix, senderFunc, Receiver, AjaxObject) {
@@ -50072,7 +50170,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 606 */
+/* 608 */
 /*!**************************************************************!*\
   !*** ./~/sockjs-client/lib/transport/lib/buffered-sender.js ***!
   \**************************************************************/
@@ -50080,12 +50178,12 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    EventEmitter = __webpack_require__(/*! events */ 600).EventEmitter;
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    EventEmitter = __webpack_require__(/*! events */ 602).EventEmitter;
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:buffered-sender');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:buffered-sender');
 	}
 	
 	function BufferedSender(url, sender) {
@@ -50167,7 +50265,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 607 */
+/* 609 */
 /*!******************************************************!*\
   !*** ./~/sockjs-client/lib/transport/lib/polling.js ***!
   \******************************************************/
@@ -50175,12 +50273,12 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    EventEmitter = __webpack_require__(/*! events */ 600).EventEmitter;
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    EventEmitter = __webpack_require__(/*! events */ 602).EventEmitter;
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:polling');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:polling');
 	}
 	
 	function Polling(Receiver, receiveUrl, AjaxObject) {
@@ -50232,7 +50330,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 608 */
+/* 610 */
 /*!*******************************************************!*\
   !*** ./~/sockjs-client/lib/transport/receiver/xhr.js ***!
   \*******************************************************/
@@ -50240,12 +50338,12 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    EventEmitter = __webpack_require__(/*! events */ 600).EventEmitter;
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    EventEmitter = __webpack_require__(/*! events */ 602).EventEmitter;
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:receiver:xhr');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:receiver:xhr');
 	}
 	
 	function XhrReceiver(url, AjaxObject) {
@@ -50310,7 +50408,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 609 */
+/* 611 */
 /*!**********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/sender/xhr-cors.js ***!
   \**********************************************************/
@@ -50318,8 +50416,8 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    XhrDriver = __webpack_require__(/*! ../driver/xhr */ 610);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    XhrDriver = __webpack_require__(/*! ../driver/xhr */ 612);
 	
 	function XHRCorsObject(method, url, payload, opts) {
 	  XhrDriver.call(this, method, url, payload, opts);
@@ -50332,7 +50430,7 @@
 	module.exports = XHRCorsObject;
 
 /***/ },
-/* 610 */
+/* 612 */
 /*!***************************************************************!*\
   !*** ./~/sockjs-client/lib/transport/browser/abstract-xhr.js ***!
   \***************************************************************/
@@ -50340,15 +50438,15 @@
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {'use strict';
 	
-	var EventEmitter = __webpack_require__(/*! events */ 600).EventEmitter,
-	    inherits = __webpack_require__(/*! inherits */ 599),
-	    utils = __webpack_require__(/*! ../../utils/event */ 588),
-	    urlUtils = __webpack_require__(/*! ../../utils/url */ 591),
+	var EventEmitter = __webpack_require__(/*! events */ 602).EventEmitter,
+	    inherits = __webpack_require__(/*! inherits */ 601),
+	    utils = __webpack_require__(/*! ../../utils/event */ 590),
+	    urlUtils = __webpack_require__(/*! ../../utils/url */ 593),
 	    XHR = global.XMLHttpRequest;
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:browser:xhr');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:browser:xhr');
 	}
 	
 	function AbstractXHRObject(method, url, payload, opts) {
@@ -50533,7 +50631,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 611 */
+/* 613 */
 /*!***********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/sender/xhr-local.js ***!
   \***********************************************************/
@@ -50541,8 +50639,8 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    XhrDriver = __webpack_require__(/*! ../driver/xhr */ 610);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    XhrDriver = __webpack_require__(/*! ../driver/xhr */ 612);
 	
 	function XHRLocalObject(method, url, payload /*, opts */) {
 	  XhrDriver.call(this, method, url, payload, {
@@ -50557,7 +50655,7 @@
 	module.exports = XHRLocalObject;
 
 /***/ },
-/* 612 */
+/* 614 */
 /*!**********************************************!*\
   !*** ./~/sockjs-client/lib/utils/browser.js ***!
   \**********************************************/
@@ -50591,7 +50689,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 613 */
+/* 615 */
 /*!********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/xdr-streaming.js ***!
   \********************************************************/
@@ -50599,10 +50697,10 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 604),
-	    XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ 608),
-	    XDRObject = __webpack_require__(/*! ./sender/xdr */ 614);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 606),
+	    XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ 610),
+	    XDRObject = __webpack_require__(/*! ./sender/xdr */ 616);
 	
 	// According to:
 	//   http://stackoverflow.com/questions/1641507/detect-browser-support-for-cross-domain-xmlhttprequests
@@ -50630,7 +50728,7 @@
 	module.exports = XdrStreamingTransport;
 
 /***/ },
-/* 614 */
+/* 616 */
 /*!*****************************************************!*\
   !*** ./~/sockjs-client/lib/transport/sender/xdr.js ***!
   \*****************************************************/
@@ -50638,15 +50736,15 @@
 
 	/* WEBPACK VAR INJECTION */(function(process, global) {'use strict';
 	
-	var EventEmitter = __webpack_require__(/*! events */ 600).EventEmitter,
-	    inherits = __webpack_require__(/*! inherits */ 599),
-	    eventUtils = __webpack_require__(/*! ../../utils/event */ 588),
-	    browser = __webpack_require__(/*! ../../utils/browser */ 612),
-	    urlUtils = __webpack_require__(/*! ../../utils/url */ 591);
+	var EventEmitter = __webpack_require__(/*! events */ 602).EventEmitter,
+	    inherits = __webpack_require__(/*! inherits */ 601),
+	    eventUtils = __webpack_require__(/*! ../../utils/event */ 590),
+	    browser = __webpack_require__(/*! ../../utils/browser */ 614),
+	    urlUtils = __webpack_require__(/*! ../../utils/url */ 593);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:sender:xdr');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:sender:xdr');
 	}
 	
 	// References:
@@ -50741,7 +50839,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4), (function() { return this; }())))
 
 /***/ },
-/* 615 */
+/* 617 */
 /*!******************************************************!*\
   !*** ./~/sockjs-client/lib/transport/eventsource.js ***!
   \******************************************************/
@@ -50749,11 +50847,11 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 604),
-	    EventSourceReceiver = __webpack_require__(/*! ./receiver/eventsource */ 616),
-	    XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ 609),
-	    EventSourceDriver = __webpack_require__(/*! eventsource */ 617);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 606),
+	    EventSourceReceiver = __webpack_require__(/*! ./receiver/eventsource */ 618),
+	    XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ 611),
+	    EventSourceDriver = __webpack_require__(/*! eventsource */ 619);
 	
 	function EventSourceTransport(transUrl) {
 	  if (!EventSourceTransport.enabled()) {
@@ -50775,7 +50873,7 @@
 	module.exports = EventSourceTransport;
 
 /***/ },
-/* 616 */
+/* 618 */
 /*!***************************************************************!*\
   !*** ./~/sockjs-client/lib/transport/receiver/eventsource.js ***!
   \***************************************************************/
@@ -50783,13 +50881,13 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    EventEmitter = __webpack_require__(/*! events */ 600).EventEmitter,
-	    EventSourceDriver = __webpack_require__(/*! eventsource */ 617);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    EventEmitter = __webpack_require__(/*! events */ 602).EventEmitter,
+	    EventSourceDriver = __webpack_require__(/*! eventsource */ 619);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:receiver:eventsource');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:receiver:eventsource');
 	}
 	
 	function EventSourceReceiver(url) {
@@ -50846,7 +50944,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 617 */
+/* 619 */
 /*!**************************************************************!*\
   !*** ./~/sockjs-client/lib/transport/browser/eventsource.js ***!
   \**************************************************************/
@@ -50858,7 +50956,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 618 */
+/* 620 */
 /*!**********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/lib/iframe-wrap.js ***!
   \**********************************************************/
@@ -50866,9 +50964,9 @@
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    IframeTransport = __webpack_require__(/*! ../iframe */ 619),
-	    objectUtils = __webpack_require__(/*! ../../utils/object */ 623);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    IframeTransport = __webpack_require__(/*! ../iframe */ 621),
+	    objectUtils = __webpack_require__(/*! ../../utils/object */ 625);
 	
 	module.exports = function (transport) {
 	
@@ -50899,7 +50997,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 619 */
+/* 621 */
 /*!*************************************************!*\
   !*** ./~/sockjs-client/lib/transport/iframe.js ***!
   \*************************************************/
@@ -50915,18 +51013,18 @@
 	//    http://msdn.microsoft.com/en-us/library/cc197015(v=VS.85).aspx
 	//    http://stevesouders.com/misc/test-postmessage.php
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    JSON3 = __webpack_require__(/*! json3 */ 620),
-	    EventEmitter = __webpack_require__(/*! events */ 600).EventEmitter,
-	    version = __webpack_require__(/*! ../version */ 621),
-	    urlUtils = __webpack_require__(/*! ../utils/url */ 591),
-	    iframeUtils = __webpack_require__(/*! ../utils/iframe */ 622),
-	    eventUtils = __webpack_require__(/*! ../utils/event */ 588),
-	    random = __webpack_require__(/*! ../utils/random */ 589);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    JSON3 = __webpack_require__(/*! json3 */ 622),
+	    EventEmitter = __webpack_require__(/*! events */ 602).EventEmitter,
+	    version = __webpack_require__(/*! ../version */ 623),
+	    urlUtils = __webpack_require__(/*! ../utils/url */ 593),
+	    iframeUtils = __webpack_require__(/*! ../utils/iframe */ 624),
+	    eventUtils = __webpack_require__(/*! ../utils/event */ 590),
+	    random = __webpack_require__(/*! ../utils/random */ 591);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:transport:iframe');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:transport:iframe');
 	}
 	
 	function IframeTransport(transport, transUrl, baseUrl) {
@@ -51043,7 +51141,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 620 */
+/* 622 */
 /*!******************************!*\
   !*** ./~/json3/lib/json3.js ***!
   \******************************/
@@ -51057,7 +51155,7 @@
 	;(function () {
 	  // Detect the `define` function exposed by asynchronous module loaders. The
 	  // strict `define` check is necessary for compatibility with `r.js`.
-	  var isLoader = "function" === "function" && __webpack_require__(/*! !webpack amd options */ 578);
+	  var isLoader = "function" === "function" && __webpack_require__(/*! !webpack amd options */ 580);
 	
 	  // A set of types used to distinguish objects from primitives.
 	  var objectTypes = {
@@ -51979,7 +52077,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../webpack/buildin/module.js */ 181)(module), (function() { return this; }())))
 
 /***/ },
-/* 621 */
+/* 623 */
 /*!****************************************!*\
   !*** ./~/sockjs-client/lib/version.js ***!
   \****************************************/
@@ -51990,7 +52088,7 @@
 	module.exports = '1.1.1';
 
 /***/ },
-/* 622 */
+/* 624 */
 /*!*********************************************!*\
   !*** ./~/sockjs-client/lib/utils/iframe.js ***!
   \*********************************************/
@@ -52000,13 +52098,13 @@
 	
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 	
-	var eventUtils = __webpack_require__(/*! ./event */ 588),
-	    JSON3 = __webpack_require__(/*! json3 */ 620),
-	    browser = __webpack_require__(/*! ./browser */ 612);
+	var eventUtils = __webpack_require__(/*! ./event */ 590),
+	    JSON3 = __webpack_require__(/*! json3 */ 622),
+	    browser = __webpack_require__(/*! ./browser */ 614);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:utils:iframe');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:utils:iframe');
 	}
 	
 	module.exports = {
@@ -52184,7 +52282,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4), (function() { return this; }())))
 
 /***/ },
-/* 623 */
+/* 625 */
 /*!*********************************************!*\
   !*** ./~/sockjs-client/lib/utils/object.js ***!
   \*********************************************/
@@ -52218,7 +52316,7 @@
 	};
 
 /***/ },
-/* 624 */
+/* 626 */
 /*!***************************************************!*\
   !*** ./~/sockjs-client/lib/transport/htmlfile.js ***!
   \***************************************************/
@@ -52226,10 +52324,10 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    HtmlfileReceiver = __webpack_require__(/*! ./receiver/htmlfile */ 625),
-	    XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ 611),
-	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 604);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    HtmlfileReceiver = __webpack_require__(/*! ./receiver/htmlfile */ 627),
+	    XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ 613),
+	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 606);
 	
 	function HtmlFileTransport(transUrl) {
 	  if (!HtmlfileReceiver.enabled) {
@@ -52250,7 +52348,7 @@
 	module.exports = HtmlFileTransport;
 
 /***/ },
-/* 625 */
+/* 627 */
 /*!************************************************************!*\
   !*** ./~/sockjs-client/lib/transport/receiver/htmlfile.js ***!
   \************************************************************/
@@ -52258,15 +52356,15 @@
 
 	/* WEBPACK VAR INJECTION */(function(process, global) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    iframeUtils = __webpack_require__(/*! ../../utils/iframe */ 622),
-	    urlUtils = __webpack_require__(/*! ../../utils/url */ 591),
-	    EventEmitter = __webpack_require__(/*! events */ 600).EventEmitter,
-	    random = __webpack_require__(/*! ../../utils/random */ 589);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    iframeUtils = __webpack_require__(/*! ../../utils/iframe */ 624),
+	    urlUtils = __webpack_require__(/*! ../../utils/url */ 593),
+	    EventEmitter = __webpack_require__(/*! events */ 602).EventEmitter,
+	    random = __webpack_require__(/*! ../../utils/random */ 591);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:receiver:htmlfile');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:receiver:htmlfile');
 	}
 	
 	function HtmlfileReceiver(url) {
@@ -52344,7 +52442,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4), (function() { return this; }())))
 
 /***/ },
-/* 626 */
+/* 628 */
 /*!******************************************************!*\
   !*** ./~/sockjs-client/lib/transport/xhr-polling.js ***!
   \******************************************************/
@@ -52352,11 +52450,11 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 604),
-	    XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ 608),
-	    XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ 609),
-	    XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ 611);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 606),
+	    XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ 610),
+	    XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ 611),
+	    XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ 613);
 	
 	function XhrPollingTransport(transUrl) {
 	  if (!XHRLocalObject.enabled && !XHRCorsObject.enabled) {
@@ -52384,7 +52482,7 @@
 	module.exports = XhrPollingTransport;
 
 /***/ },
-/* 627 */
+/* 629 */
 /*!******************************************************!*\
   !*** ./~/sockjs-client/lib/transport/xdr-polling.js ***!
   \******************************************************/
@@ -52392,11 +52490,11 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 604),
-	    XdrStreamingTransport = __webpack_require__(/*! ./xdr-streaming */ 613),
-	    XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ 608),
-	    XDRObject = __webpack_require__(/*! ./sender/xdr */ 614);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 606),
+	    XdrStreamingTransport = __webpack_require__(/*! ./xdr-streaming */ 615),
+	    XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ 610),
+	    XDRObject = __webpack_require__(/*! ./sender/xdr */ 616);
 	
 	function XdrPollingTransport(transUrl) {
 	  if (!XDRObject.enabled) {
@@ -52414,7 +52512,7 @@
 	module.exports = XdrPollingTransport;
 
 /***/ },
-/* 628 */
+/* 630 */
 /*!********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/jsonp-polling.js ***!
   \********************************************************/
@@ -52430,10 +52528,10 @@
 	//   o you will get a spinning cursor
 	//   o for Konqueror a dumb timer is needed to detect errors
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    SenderReceiver = __webpack_require__(/*! ./lib/sender-receiver */ 605),
-	    JsonpReceiver = __webpack_require__(/*! ./receiver/jsonp */ 629),
-	    jsonpSender = __webpack_require__(/*! ./sender/jsonp */ 630);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    SenderReceiver = __webpack_require__(/*! ./lib/sender-receiver */ 607),
+	    JsonpReceiver = __webpack_require__(/*! ./receiver/jsonp */ 631),
+	    jsonpSender = __webpack_require__(/*! ./sender/jsonp */ 632);
 	
 	function JsonPTransport(transUrl) {
 	  if (!JsonPTransport.enabled()) {
@@ -52456,7 +52554,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 629 */
+/* 631 */
 /*!*********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/receiver/jsonp.js ***!
   \*********************************************************/
@@ -52464,16 +52562,16 @@
 
 	/* WEBPACK VAR INJECTION */(function(process, global) {'use strict';
 	
-	var utils = __webpack_require__(/*! ../../utils/iframe */ 622),
-	    random = __webpack_require__(/*! ../../utils/random */ 589),
-	    browser = __webpack_require__(/*! ../../utils/browser */ 612),
-	    urlUtils = __webpack_require__(/*! ../../utils/url */ 591),
-	    inherits = __webpack_require__(/*! inherits */ 599),
-	    EventEmitter = __webpack_require__(/*! events */ 600).EventEmitter;
+	var utils = __webpack_require__(/*! ../../utils/iframe */ 624),
+	    random = __webpack_require__(/*! ../../utils/random */ 591),
+	    browser = __webpack_require__(/*! ../../utils/browser */ 614),
+	    urlUtils = __webpack_require__(/*! ../../utils/url */ 593),
+	    inherits = __webpack_require__(/*! inherits */ 601),
+	    EventEmitter = __webpack_require__(/*! events */ 602).EventEmitter;
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:receiver:jsonp');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:receiver:jsonp');
 	}
 	
 	function JsonpReceiver(url) {
@@ -52646,7 +52744,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4), (function() { return this; }())))
 
 /***/ },
-/* 630 */
+/* 632 */
 /*!*******************************************************!*\
   !*** ./~/sockjs-client/lib/transport/sender/jsonp.js ***!
   \*******************************************************/
@@ -52654,12 +52752,12 @@
 
 	/* WEBPACK VAR INJECTION */(function(process, global) {'use strict';
 	
-	var random = __webpack_require__(/*! ../../utils/random */ 589),
-	    urlUtils = __webpack_require__(/*! ../../utils/url */ 591);
+	var random = __webpack_require__(/*! ../../utils/random */ 591),
+	    urlUtils = __webpack_require__(/*! ../../utils/url */ 593);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:sender:jsonp');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:sender:jsonp');
 	}
 	
 	var form, area;
@@ -52753,7 +52851,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4), (function() { return this; }())))
 
 /***/ },
-/* 631 */
+/* 633 */
 /*!*************************************!*\
   !*** ./~/sockjs-client/lib/main.js ***!
   \*************************************/
@@ -52761,29 +52859,29 @@
 
 	/* WEBPACK VAR INJECTION */(function(process, global) {'use strict';
 	
-	__webpack_require__(/*! ./shims */ 632);
+	__webpack_require__(/*! ./shims */ 634);
 	
-	var URL = __webpack_require__(/*! url-parse */ 592),
-	    inherits = __webpack_require__(/*! inherits */ 599),
-	    JSON3 = __webpack_require__(/*! json3 */ 620),
-	    random = __webpack_require__(/*! ./utils/random */ 589),
-	    escape = __webpack_require__(/*! ./utils/escape */ 633),
-	    urlUtils = __webpack_require__(/*! ./utils/url */ 591),
-	    eventUtils = __webpack_require__(/*! ./utils/event */ 588),
-	    transport = __webpack_require__(/*! ./utils/transport */ 634),
-	    objectUtils = __webpack_require__(/*! ./utils/object */ 623),
-	    browser = __webpack_require__(/*! ./utils/browser */ 612),
-	    log = __webpack_require__(/*! ./utils/log */ 635),
-	    Event = __webpack_require__(/*! ./event/event */ 636),
-	    EventTarget = __webpack_require__(/*! ./event/eventtarget */ 601),
-	    loc = __webpack_require__(/*! ./location */ 637),
-	    CloseEvent = __webpack_require__(/*! ./event/close */ 638),
-	    TransportMessageEvent = __webpack_require__(/*! ./event/trans-message */ 639),
-	    InfoReceiver = __webpack_require__(/*! ./info-receiver */ 640);
+	var URL = __webpack_require__(/*! url-parse */ 594),
+	    inherits = __webpack_require__(/*! inherits */ 601),
+	    JSON3 = __webpack_require__(/*! json3 */ 622),
+	    random = __webpack_require__(/*! ./utils/random */ 591),
+	    escape = __webpack_require__(/*! ./utils/escape */ 635),
+	    urlUtils = __webpack_require__(/*! ./utils/url */ 593),
+	    eventUtils = __webpack_require__(/*! ./utils/event */ 590),
+	    transport = __webpack_require__(/*! ./utils/transport */ 636),
+	    objectUtils = __webpack_require__(/*! ./utils/object */ 625),
+	    browser = __webpack_require__(/*! ./utils/browser */ 614),
+	    log = __webpack_require__(/*! ./utils/log */ 637),
+	    Event = __webpack_require__(/*! ./event/event */ 638),
+	    EventTarget = __webpack_require__(/*! ./event/eventtarget */ 603),
+	    loc = __webpack_require__(/*! ./location */ 639),
+	    CloseEvent = __webpack_require__(/*! ./event/close */ 640),
+	    TransportMessageEvent = __webpack_require__(/*! ./event/trans-message */ 641),
+	    InfoReceiver = __webpack_require__(/*! ./info-receiver */ 642);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:main');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:main');
 	}
 	
 	var transports;
@@ -52923,7 +53021,7 @@
 	  this._transport.send(escape.quote(data));
 	};
 	
-	SockJS.version = __webpack_require__(/*! ./version */ 621);
+	SockJS.version = __webpack_require__(/*! ./version */ 623);
 	
 	SockJS.CONNECTING = 0;
 	SockJS.OPEN = 1;
@@ -53132,13 +53230,13 @@
 	
 	module.exports = function (availableTransports) {
 	  transports = transport(availableTransports);
-	  __webpack_require__(/*! ./iframe-bootstrap */ 645)(SockJS, availableTransports);
+	  __webpack_require__(/*! ./iframe-bootstrap */ 647)(SockJS, availableTransports);
 	  return SockJS;
 	};
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4), (function() { return this; }())))
 
 /***/ },
-/* 632 */
+/* 634 */
 /*!**************************************!*\
   !*** ./~/sockjs-client/lib/shims.js ***!
   \**************************************/
@@ -53613,7 +53711,7 @@
 	}, hasNegativeSubstrBug);
 
 /***/ },
-/* 633 */
+/* 635 */
 /*!*********************************************!*\
   !*** ./~/sockjs-client/lib/utils/escape.js ***!
   \*********************************************/
@@ -53621,7 +53719,7 @@
 
 	'use strict';
 	
-	var JSON3 = __webpack_require__(/*! json3 */ 620);
+	var JSON3 = __webpack_require__(/*! json3 */ 622);
 	
 	// Some extra characters that Chrome gets wrong, and substitutes with
 	// something else on the wire.
@@ -53670,7 +53768,7 @@
 	};
 
 /***/ },
-/* 634 */
+/* 636 */
 /*!************************************************!*\
   !*** ./~/sockjs-client/lib/utils/transport.js ***!
   \************************************************/
@@ -53680,7 +53778,7 @@
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:utils:transport');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:utils:transport');
 	}
 	
 	module.exports = function (availableTransports) {
@@ -53728,7 +53826,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 635 */
+/* 637 */
 /*!******************************************!*\
   !*** ./~/sockjs-client/lib/utils/log.js ***!
   \******************************************/
@@ -53755,7 +53853,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 636 */
+/* 638 */
 /*!********************************************!*\
   !*** ./~/sockjs-client/lib/event/event.js ***!
   \********************************************/
@@ -53785,7 +53883,7 @@
 	module.exports = Event;
 
 /***/ },
-/* 637 */
+/* 639 */
 /*!*****************************************!*\
   !*** ./~/sockjs-client/lib/location.js ***!
   \*****************************************/
@@ -53804,7 +53902,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 638 */
+/* 640 */
 /*!********************************************!*\
   !*** ./~/sockjs-client/lib/event/close.js ***!
   \********************************************/
@@ -53812,8 +53910,8 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    Event = __webpack_require__(/*! ./event */ 636);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    Event = __webpack_require__(/*! ./event */ 638);
 	
 	function CloseEvent() {
 	  Event.call(this);
@@ -53828,7 +53926,7 @@
 	module.exports = CloseEvent;
 
 /***/ },
-/* 639 */
+/* 641 */
 /*!****************************************************!*\
   !*** ./~/sockjs-client/lib/event/trans-message.js ***!
   \****************************************************/
@@ -53836,8 +53934,8 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    Event = __webpack_require__(/*! ./event */ 636);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    Event = __webpack_require__(/*! ./event */ 638);
 	
 	function TransportMessageEvent(data) {
 	  Event.call(this);
@@ -53850,7 +53948,7 @@
 	module.exports = TransportMessageEvent;
 
 /***/ },
-/* 640 */
+/* 642 */
 /*!**********************************************!*\
   !*** ./~/sockjs-client/lib/info-receiver.js ***!
   \**********************************************/
@@ -53858,19 +53956,19 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var EventEmitter = __webpack_require__(/*! events */ 600).EventEmitter,
-	    inherits = __webpack_require__(/*! inherits */ 599),
-	    urlUtils = __webpack_require__(/*! ./utils/url */ 591),
-	    XDR = __webpack_require__(/*! ./transport/sender/xdr */ 614),
-	    XHRCors = __webpack_require__(/*! ./transport/sender/xhr-cors */ 609),
-	    XHRLocal = __webpack_require__(/*! ./transport/sender/xhr-local */ 611),
-	    XHRFake = __webpack_require__(/*! ./transport/sender/xhr-fake */ 641),
-	    InfoIframe = __webpack_require__(/*! ./info-iframe */ 642),
-	    InfoAjax = __webpack_require__(/*! ./info-ajax */ 644);
+	var EventEmitter = __webpack_require__(/*! events */ 602).EventEmitter,
+	    inherits = __webpack_require__(/*! inherits */ 601),
+	    urlUtils = __webpack_require__(/*! ./utils/url */ 593),
+	    XDR = __webpack_require__(/*! ./transport/sender/xdr */ 616),
+	    XHRCors = __webpack_require__(/*! ./transport/sender/xhr-cors */ 611),
+	    XHRLocal = __webpack_require__(/*! ./transport/sender/xhr-local */ 613),
+	    XHRFake = __webpack_require__(/*! ./transport/sender/xhr-fake */ 643),
+	    InfoIframe = __webpack_require__(/*! ./info-iframe */ 644),
+	    InfoAjax = __webpack_require__(/*! ./info-ajax */ 646);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:info-receiver');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:info-receiver');
 	}
 	
 	function InfoReceiver(baseUrl, urlInfo) {
@@ -53946,7 +54044,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 641 */
+/* 643 */
 /*!**********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/sender/xhr-fake.js ***!
   \**********************************************************/
@@ -53954,8 +54052,8 @@
 
 	'use strict';
 	
-	var EventEmitter = __webpack_require__(/*! events */ 600).EventEmitter,
-	    inherits = __webpack_require__(/*! inherits */ 599);
+	var EventEmitter = __webpack_require__(/*! events */ 602).EventEmitter,
+	    inherits = __webpack_require__(/*! inherits */ 601);
 	
 	function XHRFake() /* method, url, payload, opts */{
 	  var self = this;
@@ -53977,7 +54075,7 @@
 	module.exports = XHRFake;
 
 /***/ },
-/* 642 */
+/* 644 */
 /*!********************************************!*\
   !*** ./~/sockjs-client/lib/info-iframe.js ***!
   \********************************************/
@@ -53985,16 +54083,16 @@
 
 	/* WEBPACK VAR INJECTION */(function(process, global) {'use strict';
 	
-	var EventEmitter = __webpack_require__(/*! events */ 600).EventEmitter,
-	    inherits = __webpack_require__(/*! inherits */ 599),
-	    JSON3 = __webpack_require__(/*! json3 */ 620),
-	    utils = __webpack_require__(/*! ./utils/event */ 588),
-	    IframeTransport = __webpack_require__(/*! ./transport/iframe */ 619),
-	    InfoReceiverIframe = __webpack_require__(/*! ./info-iframe-receiver */ 643);
+	var EventEmitter = __webpack_require__(/*! events */ 602).EventEmitter,
+	    inherits = __webpack_require__(/*! inherits */ 601),
+	    JSON3 = __webpack_require__(/*! json3 */ 622),
+	    utils = __webpack_require__(/*! ./utils/event */ 590),
+	    IframeTransport = __webpack_require__(/*! ./transport/iframe */ 621),
+	    InfoReceiverIframe = __webpack_require__(/*! ./info-iframe-receiver */ 645);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:info-iframe');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:info-iframe');
 	}
 	
 	function InfoIframe(baseUrl, url) {
@@ -54055,7 +54153,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4), (function() { return this; }())))
 
 /***/ },
-/* 643 */
+/* 645 */
 /*!*****************************************************!*\
   !*** ./~/sockjs-client/lib/info-iframe-receiver.js ***!
   \*****************************************************/
@@ -54063,11 +54161,11 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 599),
-	    EventEmitter = __webpack_require__(/*! events */ 600).EventEmitter,
-	    JSON3 = __webpack_require__(/*! json3 */ 620),
-	    XHRLocalObject = __webpack_require__(/*! ./transport/sender/xhr-local */ 611),
-	    InfoAjax = __webpack_require__(/*! ./info-ajax */ 644);
+	var inherits = __webpack_require__(/*! inherits */ 601),
+	    EventEmitter = __webpack_require__(/*! events */ 602).EventEmitter,
+	    JSON3 = __webpack_require__(/*! json3 */ 622),
+	    XHRLocalObject = __webpack_require__(/*! ./transport/sender/xhr-local */ 613),
+	    InfoAjax = __webpack_require__(/*! ./info-ajax */ 646);
 	
 	function InfoReceiverIframe(transUrl) {
 	  var self = this;
@@ -54095,7 +54193,7 @@
 	module.exports = InfoReceiverIframe;
 
 /***/ },
-/* 644 */
+/* 646 */
 /*!******************************************!*\
   !*** ./~/sockjs-client/lib/info-ajax.js ***!
   \******************************************/
@@ -54103,14 +54201,14 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var EventEmitter = __webpack_require__(/*! events */ 600).EventEmitter,
-	    inherits = __webpack_require__(/*! inherits */ 599),
-	    JSON3 = __webpack_require__(/*! json3 */ 620),
-	    objectUtils = __webpack_require__(/*! ./utils/object */ 623);
+	var EventEmitter = __webpack_require__(/*! events */ 602).EventEmitter,
+	    inherits = __webpack_require__(/*! inherits */ 601),
+	    JSON3 = __webpack_require__(/*! json3 */ 622),
+	    objectUtils = __webpack_require__(/*! ./utils/object */ 625);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:info-ajax');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:info-ajax');
 	}
 	
 	function InfoAjax(url, AjaxObject) {
@@ -54152,7 +54250,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 645 */
+/* 647 */
 /*!*************************************************!*\
   !*** ./~/sockjs-client/lib/iframe-bootstrap.js ***!
   \*************************************************/
@@ -54160,17 +54258,17 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var urlUtils = __webpack_require__(/*! ./utils/url */ 591),
-	    eventUtils = __webpack_require__(/*! ./utils/event */ 588),
-	    JSON3 = __webpack_require__(/*! json3 */ 620),
-	    FacadeJS = __webpack_require__(/*! ./facade */ 646),
-	    InfoIframeReceiver = __webpack_require__(/*! ./info-iframe-receiver */ 643),
-	    iframeUtils = __webpack_require__(/*! ./utils/iframe */ 622),
-	    loc = __webpack_require__(/*! ./location */ 637);
+	var urlUtils = __webpack_require__(/*! ./utils/url */ 593),
+	    eventUtils = __webpack_require__(/*! ./utils/event */ 590),
+	    JSON3 = __webpack_require__(/*! json3 */ 622),
+	    FacadeJS = __webpack_require__(/*! ./facade */ 648),
+	    InfoIframeReceiver = __webpack_require__(/*! ./info-iframe-receiver */ 645),
+	    iframeUtils = __webpack_require__(/*! ./utils/iframe */ 624),
+	    loc = __webpack_require__(/*! ./location */ 639);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 596)('sockjs-client:iframe-bootstrap');
+	  debug = __webpack_require__(/*! debug */ 598)('sockjs-client:iframe-bootstrap');
 	}
 	
 	module.exports = function (SockJS, availableTransports) {
@@ -54258,7 +54356,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 646 */
+/* 648 */
 /*!***************************************!*\
   !*** ./~/sockjs-client/lib/facade.js ***!
   \***************************************/
@@ -54266,8 +54364,8 @@
 
 	'use strict';
 	
-	var JSON3 = __webpack_require__(/*! json3 */ 620),
-	    iframeUtils = __webpack_require__(/*! ./utils/iframe */ 622);
+	var JSON3 = __webpack_require__(/*! json3 */ 622),
+	    iframeUtils = __webpack_require__(/*! ./utils/iframe */ 624);
 	
 	function FacadeJS(transport) {
 	  this._transport = transport;
