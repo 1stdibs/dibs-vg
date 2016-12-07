@@ -8,9 +8,9 @@ const port = process.env.NODE_PORT || '9090';
 const babelLoader = {
     test: /\.(js|jsx|svg)$/,
     loader: 'babel',
-    query: {
-        "presets": ["es2015", "stage-2", "react"]
-    }
+    // can't require this file since it does not have a `.json` extension
+    // otherwise `SyntaxError: Unexpected token :` gets thrown
+    query: JSON.parse(require('fs').readFileSync('./.babelrc'), 'utf8')
 };
 
 if (process.env.NODE_ENV !== 'production') {

@@ -22,8 +22,8 @@ React components are compiled and placed in dist/react, and for users who don't 
 Each pre-compiled React component supports a className prop so that you can specify styling. 
 
 ```js
-const svgComponent = require('dibs-vg/dist/react/account-filled.js');
-const stringSvg = require('dibs-vg/dist/templateString/account-filled.es.js');
+const svgComponent = require('dibs-vg/dist/react/account-filled');
+const stringSvg = require('dibs-vg/dist/templateString/account-filled');
 ```
 
 Require these files directly in your modules and use just like you would any React component or string for inserting into pages. Pre-compiled React components accept a className prop so you can apply custom styling. 
@@ -96,14 +96,14 @@ const Icon = require('dibs-vg/src/bell.svg');
 require the string and pass it into the template or append it to the dom using jquery
 
 ```js
-const stringSvg = require('dibs-vg/dist/templateString/account-filled.es.js');
+const stringSvg = require('dibs-vg/dist/templateString/account-filled');
 ```
 ### With webpack:
 
 If you are using Webpack and want to render your SVG with Backbone we recommend using the [html loader](https://www.npmjs.com/package/html-loader) which returns the SVG file as a string, or the [webpack compile templates loader](https://www.npmjs.com/package/webpack-compile-templates) which will transform the SVG file to an underscore template.
 
 ```js
-var SvgWrapper = require('dibs-vg/js/SvgWrapper.es.js');
+var SvgWrapper = require('dibs-vg/js/SvgWrapper');
 const icon = require('!html!dibs-vg/src/bell.svg');
 
 $('.place').append(new SvgWrapper({
