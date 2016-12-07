@@ -4,7 +4,7 @@
  * Builds the raw_modules directory - each file will be a JS module that uses back ticks to export a multi line string.
  */
 
-const fs = require('fs');
+const fs = require('fs-extra');
 const htmlToReact = require('./htmlToReact');
 const htmlToReactAttributes = require('./htmlToReactAttributes');
 const babel = require('babel-core');
@@ -27,7 +27,9 @@ let remaining = svgs.length;
 const promises = [];
 
 // start with a fresh dist dir every time
-fs.rmdirSync(dist);
+// `removeSync` is a fs-extra method otherwise
+// `fs.rmdirSync` will throw a "folder not empty" error
+fs.removeSync(dist);
 fs.mkdirSync(dist);
 
 [stringDest, reactDest].forEach(val => {
