@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --port 9090 --content-base=./ --inline --watch --hot",
     "compile:webpack": "webpack -d --progress",
-    "compile": "node ./generateList && node ./generateDist",
+    "compile": "node ./scripts/generateList && node ./scripts/generateDist",
     "build": "yarn compile && yarn compile:webpack",
     "gitlint": "node_modules/.bin/dibslint --git --warnings --es6",
     "lint": "dibslint --root=. --es6",

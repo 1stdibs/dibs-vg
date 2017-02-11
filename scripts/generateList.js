@@ -1,6 +1,7 @@
 "use strict";
 
 const fs = require('fs');
+const path = require('path');
 const checkError = err => {
     if (err) {
         throw err;
@@ -12,12 +13,16 @@ const checkError = err => {
  * list of all the icons ie. you want to render all of them.
  */
 const buildList = () => {
-    fs.readdir(`${__dirname}/src`, (err, ls) => {
-        checkError(err);
+    const rootPath = path.resolve(__dirname, '../');
+    fs.readdir(`${rootPath}/src`, (error, ls) => {
+        checkError(error);
         const svgs = ls.filter(fileName => fileName.match(/\.svg$/));
-        fs.writeFile(`${__dirname}/list.json`, JSON.stringify(svgs), { encoding : "UTF-8" }, err => {
-            checkError(err);
-        });
+        fs.writeFile(
+            `${rootPath}/list.json`,
+            JSON.stringify(svgs, null, 2),
+            { encoding: "UTF-8" },
+            err => checkError(err)
+        );
     });
 };
 
