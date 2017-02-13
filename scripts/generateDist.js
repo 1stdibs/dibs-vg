@@ -5,11 +5,13 @@
  */
 
 const fs = require('fs');
+const path = require('path');
 const htmlToReact = require('./htmlToReact');
 const htmlToReactAttributes = require('./htmlToReactAttributes');
 const babel = require('babel-core');
-const svgs = fs.readdirSync(process.cwd() + '/src').filter(fileName => fileName.match(/\.svg$/));
-const dist = `${process.cwd()}/dist/`;
+const rootPath = path.resolve(__dirname, '../');
+const svgs = fs.readdirSync(`${rootPath}/src`).filter(fileName => fileName.match(/\.svg$/));
+const dist = `${rootPath}/dist/`;
 const stringDest = `${dist}/templateString`;
 const reactDest = `${dist}/react`;
 // a function to end process to prevent prepublish from completing if an error is encountered :
@@ -34,7 +36,7 @@ if (!fs.existsSync(dist)) {
 });
 
 svgs.forEach(file => {
-    const leFile = `${process.cwd()}/src/${file}`;
+    const leFile = `${rootPath}/src/${file}`;
     const name = file.split('.')[0];
 
     const contents = fs.readFileSync(leFile, {encoding: 'UTF-8'});
