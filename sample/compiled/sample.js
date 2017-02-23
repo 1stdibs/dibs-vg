@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "46ccafc5b5f490a919ae"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ceaa0d34dfa3f1b69cab"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/
@@ -30210,8 +30210,8 @@
 		"toolbox.svg",
 		"trade-arrow.svg",
 		"trade-logo.svg",
+		"trash-can.svg",
 		"trash-filled.svg",
-		"trashcan.svg",
 		"triangle-down.svg",
 		"truck-moving.svg",
 		"twitter.svg",
@@ -30712,8 +30712,8 @@
 		"./toolbox.svg": 455,
 		"./trade-arrow.svg": 456,
 		"./trade-logo.svg": 457,
-		"./trash-filled.svg": 458,
-		"./trashcan.svg": 459,
+		"./trash-can.svg": 458,
+		"./trash-filled.svg": 459,
 		"./triangle-down.svg": 460,
 		"./truck-moving.svg": 461,
 		"./twitter.svg": 462,
@@ -40600,6 +40600,92 @@
 
 /***/ },
 /* 458 */
+/*!***************************!*\
+  !*** ./src/trash-can.svg ***!
+  \***************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
+	
+	var _index = __webpack_require__(/*! ./~/redbox-react/lib/index.js */ 176);
+	
+	var _index2 = _interopRequireDefault(_index);
+	
+	var _index3 = __webpack_require__(/*! ./~/react-transform-catch-errors/lib/index.js */ 181);
+	
+	var _index4 = _interopRequireDefault(_index3);
+	
+	var _react2 = __webpack_require__(/*! react */ 2);
+	
+	var _react3 = _interopRequireDefault(_react2);
+	
+	var _index5 = __webpack_require__(/*! ./~/react-transform-hmr/lib/index.js */ 182);
+	
+	var _index6 = _interopRequireDefault(_index5);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var _components = {
+	    TrashCan: {
+	        displayName: 'TrashCan'
+	    }
+	};
+	
+	var _UsersCormickProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/cormick/projects/dibs-vg/src/trash-can.svg',
+	    components: _components,
+	    locals: [module],
+	    imports: [_react3.default]
+	});
+	
+	var _UsersCormickProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/cormick/projects/dibs-vg/src/trash-can.svg',
+	    components: _components,
+	    locals: [],
+	    imports: [_react3.default, _index2.default]
+	});
+	
+	function _wrapComponent(id) {
+	    return function (Component) {
+	        return _UsersCormickProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCormickProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	    };
+	}
+	
+	var React = __webpack_require__(/*! react */ 2);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 339)(__webpack_require__(/*! react-dom */ 35));
+	
+	module.exports = _wrapComponent('TrashCan')(React.createClass({
+	
+	    displayName: "TrashCan",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-trash-can", "viewBox": "0 0 100 100", "xmlns": "http://www.w3.org/2000/svg" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement(
+	                'g',
+	                null,
+	                React.createElement('path', { d: 'M85.2711396,13.0885776 L68.0392956,13.0885776 L68.0392956,3.06284968 C68.0392956,1.37011475 66.8167661,0 65.3104352,0 L35.6877456,0 C34.1795954,0 32.9588852,1.37011475 32.9588852,3.06284968 L32.9588852,13.0885776 L15.7288604,13.0885776 C14.2207102,13.0885776 13,14.4586924 13,16.1514273 L13,29.2400049 C13,30.9327398 14.2207102,32.3028546 15.7288604,32.3028546 L18.14845,32.3028546 L18.14845,96.9371503 C18.14845,98.6278433 19.3691602,100 20.8773104,100 L80.1226896,100 C81.6290205,100 82.85155,98.6278433 82.85155,96.9371503 L82.85155,32.3028546 L85.2711396,32.3028546 C86.7774705,32.3028546 88,30.9327398 88,29.2400049 L88,16.1514273 C88,14.4607343 86.7774705,13.0885776 85.2711396,13.0885776 Z M38.416606,6.12569935 L62.5815747,6.12569935 L62.5815747,13.0885776 L38.416606,13.0885776 L38.416606,6.12569935 Z M18.4577209,19.214277 L82.5422791,19.214277 L82.5422791,26.1771552 L18.4577209,26.1771552 L18.4577209,19.214277 Z M77.3938291,93.8743006 L23.6061709,93.8743006 L23.6061709,32.3028546 L32.9588852,32.3028546 L32.9588852,73.4675542 C32.9588852,75.1582472 34.1795954,76.5304039 35.6877456,76.5304039 C37.1958958,76.5304039 38.416606,75.1582472 38.416606,73.4675542 L38.416606,32.3028546 L47.7711396,32.3028546 L47.7711396,73.4675542 C47.7711396,75.1582472 48.9918498,76.5304039 50.5,76.5304039 C52.006331,76.5304039 53.2288604,75.1582472 53.2288604,73.4675542 L53.2288604,32.3028546 L62.583394,32.3028546 L62.583394,73.4675542 C62.583394,75.1582472 63.8059234,76.5304039 65.3122544,76.5304039 C66.8185854,76.5304039 68.0411148,75.1582472 68.0411148,73.4675542 L68.0411148,32.3028546 L77.3956484,32.3028546 L77.3956484,93.8743006 L77.3938291,93.8743006 Z' })
+	            ),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	}));
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 175)(module)))
+
+/***/ },
+/* 459 */
 /*!******************************!*\
   !*** ./src/trash-filled.svg ***!
   \******************************/
@@ -40676,92 +40762,6 @@
 	                null,
 	                React.createElement('path', { d: 'M15,15.25 L77,15.25 L77,0 L139.5,0 L139.5,15.25 L202,15.25 L202,32 L15,32 L15,15.25 Z' }),
 	                React.createElement('path', { d: 'M0,47 L218,47 L218,62 L206,62 L167,250 L50,250 L13.5,62 L0,62 L0,47 Z' })
-	            ),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	}));
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 175)(module)))
-
-/***/ },
-/* 459 */
-/*!**************************!*\
-  !*** ./src/trashcan.svg ***!
-  \**************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
-	
-	var _index = __webpack_require__(/*! ./~/redbox-react/lib/index.js */ 176);
-	
-	var _index2 = _interopRequireDefault(_index);
-	
-	var _index3 = __webpack_require__(/*! ./~/react-transform-catch-errors/lib/index.js */ 181);
-	
-	var _index4 = _interopRequireDefault(_index3);
-	
-	var _react2 = __webpack_require__(/*! react */ 2);
-	
-	var _react3 = _interopRequireDefault(_react2);
-	
-	var _index5 = __webpack_require__(/*! ./~/react-transform-hmr/lib/index.js */ 182);
-	
-	var _index6 = _interopRequireDefault(_index5);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var _components = {
-	    Trashcan: {
-	        displayName: 'Trashcan'
-	    }
-	};
-	
-	var _UsersCormickProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/cormick/projects/dibs-vg/src/trashcan.svg',
-	    components: _components,
-	    locals: [module],
-	    imports: [_react3.default]
-	});
-	
-	var _UsersCormickProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/cormick/projects/dibs-vg/src/trashcan.svg',
-	    components: _components,
-	    locals: [],
-	    imports: [_react3.default, _index2.default]
-	});
-	
-	function _wrapComponent(id) {
-	    return function (Component) {
-	        return _UsersCormickProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersCormickProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
-	    };
-	}
-	
-	var React = __webpack_require__(/*! react */ 2);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 339)(__webpack_require__(/*! react-dom */ 35));
-	
-	module.exports = _wrapComponent('Trashcan')(React.createClass({
-	
-	    displayName: "Trashcan",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-trashcan", "viewBox": "0 0 100 100", "xmlns": "http://www.w3.org/2000/svg" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M85.2711396,13.0885776 L68.0392956,13.0885776 L68.0392956,3.06284968 C68.0392956,1.37011475 66.8167661,0 65.3104352,0 L35.6877456,0 C34.1795954,0 32.9588852,1.37011475 32.9588852,3.06284968 L32.9588852,13.0885776 L15.7288604,13.0885776 C14.2207102,13.0885776 13,14.4586924 13,16.1514273 L13,29.2400049 C13,30.9327398 14.2207102,32.3028546 15.7288604,32.3028546 L18.14845,32.3028546 L18.14845,96.9371503 C18.14845,98.6278433 19.3691602,100 20.8773104,100 L80.1226896,100 C81.6290205,100 82.85155,98.6278433 82.85155,96.9371503 L82.85155,32.3028546 L85.2711396,32.3028546 C86.7774705,32.3028546 88,30.9327398 88,29.2400049 L88,16.1514273 C88,14.4607343 86.7774705,13.0885776 85.2711396,13.0885776 Z M38.416606,6.12569935 L62.5815747,6.12569935 L62.5815747,13.0885776 L38.416606,13.0885776 L38.416606,6.12569935 Z M18.4577209,19.214277 L82.5422791,19.214277 L82.5422791,26.1771552 L18.4577209,26.1771552 L18.4577209,19.214277 Z M77.3938291,93.8743006 L23.6061709,93.8743006 L23.6061709,32.3028546 L32.9588852,32.3028546 L32.9588852,73.4675542 C32.9588852,75.1582472 34.1795954,76.5304039 35.6877456,76.5304039 C37.1958958,76.5304039 38.416606,75.1582472 38.416606,73.4675542 L38.416606,32.3028546 L47.7711396,32.3028546 L47.7711396,73.4675542 C47.7711396,75.1582472 48.9918498,76.5304039 50.5,76.5304039 C52.006331,76.5304039 53.2288604,75.1582472 53.2288604,73.4675542 L53.2288604,32.3028546 L62.583394,32.3028546 L62.583394,73.4675542 C62.583394,75.1582472 63.8059234,76.5304039 65.3122544,76.5304039 C66.8185854,76.5304039 68.0411148,75.1582472 68.0411148,73.4675542 L68.0411148,32.3028546 L77.3956484,32.3028546 L77.3956484,93.8743006 L77.3938291,93.8743006 Z' })
 	            ),
 	            React.Children.map(children, function (c) {
 	                return c;
@@ -46628,8 +46628,8 @@
 		"./toolbox.svg": 580,
 		"./trade-arrow.svg": 581,
 		"./trade-logo.svg": 582,
-		"./trash-filled.svg": 583,
-		"./trashcan.svg": 584,
+		"./trash-can.svg": 583,
+		"./trash-filled.svg": 584,
 		"./triangle-down.svg": 585,
 		"./truck-moving.svg": 586,
 		"./twitter.svg": 587,
@@ -47652,21 +47652,21 @@
 
 /***/ },
 /* 583 */
+/*!*******************************************!*\
+  !*** ./~/html-loader!./src/trash-can.svg ***!
+  \*******************************************/
+/***/ function(module, exports) {
+
+	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-trash-can\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\">\n    <g>\n        <path d=\"M85.2711396,13.0885776 L68.0392956,13.0885776 L68.0392956,3.06284968 C68.0392956,1.37011475 66.8167661,0 65.3104352,0 L35.6877456,0 C34.1795954,0 32.9588852,1.37011475 32.9588852,3.06284968 L32.9588852,13.0885776 L15.7288604,13.0885776 C14.2207102,13.0885776 13,14.4586924 13,16.1514273 L13,29.2400049 C13,30.9327398 14.2207102,32.3028546 15.7288604,32.3028546 L18.14845,32.3028546 L18.14845,96.9371503 C18.14845,98.6278433 19.3691602,100 20.8773104,100 L80.1226896,100 C81.6290205,100 82.85155,98.6278433 82.85155,96.9371503 L82.85155,32.3028546 L85.2711396,32.3028546 C86.7774705,32.3028546 88,30.9327398 88,29.2400049 L88,16.1514273 C88,14.4607343 86.7774705,13.0885776 85.2711396,13.0885776 Z M38.416606,6.12569935 L62.5815747,6.12569935 L62.5815747,13.0885776 L38.416606,13.0885776 L38.416606,6.12569935 Z M18.4577209,19.214277 L82.5422791,19.214277 L82.5422791,26.1771552 L18.4577209,26.1771552 L18.4577209,19.214277 Z M77.3938291,93.8743006 L23.6061709,93.8743006 L23.6061709,32.3028546 L32.9588852,32.3028546 L32.9588852,73.4675542 C32.9588852,75.1582472 34.1795954,76.5304039 35.6877456,76.5304039 C37.1958958,76.5304039 38.416606,75.1582472 38.416606,73.4675542 L38.416606,32.3028546 L47.7711396,32.3028546 L47.7711396,73.4675542 C47.7711396,75.1582472 48.9918498,76.5304039 50.5,76.5304039 C52.006331,76.5304039 53.2288604,75.1582472 53.2288604,73.4675542 L53.2288604,32.3028546 L62.583394,32.3028546 L62.583394,73.4675542 C62.583394,75.1582472 63.8059234,76.5304039 65.3122544,76.5304039 C66.8185854,76.5304039 68.0411148,75.1582472 68.0411148,73.4675542 L68.0411148,32.3028546 L77.3956484,32.3028546 L77.3956484,93.8743006 L77.3938291,93.8743006 Z\"></path>\n    </g>\n</svg>\n";
+
+/***/ },
+/* 584 */
 /*!**********************************************!*\
   !*** ./~/html-loader!./src/trash-filled.svg ***!
   \**********************************************/
 /***/ function(module, exports) {
 
 	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-trash-filled\" viewBox=\"-15 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g>\n        <path d=\"M15,15.25 L77,15.25 L77,0 L139.5,0 L139.5,15.25 L202,15.25 L202,32 L15,32 L15,15.25 Z\"></path>\n        <path d=\"M0,47 L218,47 L218,62 L206,62 L167,250 L50,250 L13.5,62 L0,62 L0,47 Z\"></path>\n    </g>\n</svg>";
-
-/***/ },
-/* 584 */
-/*!******************************************!*\
-  !*** ./~/html-loader!./src/trashcan.svg ***!
-  \******************************************/
-/***/ function(module, exports) {
-
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-trashcan\" viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\">\n    <g>\n        <path d=\"M85.2711396,13.0885776 L68.0392956,13.0885776 L68.0392956,3.06284968 C68.0392956,1.37011475 66.8167661,0 65.3104352,0 L35.6877456,0 C34.1795954,0 32.9588852,1.37011475 32.9588852,3.06284968 L32.9588852,13.0885776 L15.7288604,13.0885776 C14.2207102,13.0885776 13,14.4586924 13,16.1514273 L13,29.2400049 C13,30.9327398 14.2207102,32.3028546 15.7288604,32.3028546 L18.14845,32.3028546 L18.14845,96.9371503 C18.14845,98.6278433 19.3691602,100 20.8773104,100 L80.1226896,100 C81.6290205,100 82.85155,98.6278433 82.85155,96.9371503 L82.85155,32.3028546 L85.2711396,32.3028546 C86.7774705,32.3028546 88,30.9327398 88,29.2400049 L88,16.1514273 C88,14.4607343 86.7774705,13.0885776 85.2711396,13.0885776 Z M38.416606,6.12569935 L62.5815747,6.12569935 L62.5815747,13.0885776 L38.416606,13.0885776 L38.416606,6.12569935 Z M18.4577209,19.214277 L82.5422791,19.214277 L82.5422791,26.1771552 L18.4577209,26.1771552 L18.4577209,19.214277 Z M77.3938291,93.8743006 L23.6061709,93.8743006 L23.6061709,32.3028546 L32.9588852,32.3028546 L32.9588852,73.4675542 C32.9588852,75.1582472 34.1795954,76.5304039 35.6877456,76.5304039 C37.1958958,76.5304039 38.416606,75.1582472 38.416606,73.4675542 L38.416606,32.3028546 L47.7711396,32.3028546 L47.7711396,73.4675542 C47.7711396,75.1582472 48.9918498,76.5304039 50.5,76.5304039 C52.006331,76.5304039 53.2288604,75.1582472 53.2288604,73.4675542 L53.2288604,32.3028546 L62.583394,32.3028546 L62.583394,73.4675542 C62.583394,75.1582472 63.8059234,76.5304039 65.3122544,76.5304039 C66.8185854,76.5304039 68.0411148,75.1582472 68.0411148,73.4675542 L68.0411148,32.3028546 L77.3956484,32.3028546 L77.3956484,93.8743006 L77.3938291,93.8743006 Z\"></path>\n    </g>\n</svg>\n";
 
 /***/ },
 /* 585 */
