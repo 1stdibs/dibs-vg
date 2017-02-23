@@ -43,6 +43,7 @@
   "globe.svg",
   "grid.svg",
   "hamburger-menu.svg",
+  "headshot.svg",
   "heart-filled.svg",
   "heart-outlined.svg",
   "home.svg",
@@ -73,6 +74,7 @@
   "minus.svg",
   "mobile-logo.svg",
   "net-price.svg",
+  "note.svg",
   "orange.svg",
   "payment-american-express.svg",
   "payment-check.svg",
@@ -108,10 +110,12 @@
   "toolbox.svg",
   "trade-arrow.svg",
   "trade-logo.svg",
+  "trash-can.svg",
   "trash-filled.svg",
   "triangle-down.svg",
   "truck-moving.svg",
   "twitter.svg",
   "upload-failed.svg",
+  "video.svg",
   "yoga.svg"
 ]
