@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "85ee3b6646925d396bac"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "e0e87db0b3242636b5fa"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/
@@ -30266,7 +30266,7 @@
 		"twitter.svg",
 		"upload-failed.svg",
 		"video.svg",
-		"x.svg",
+		"x-mark.svg",
 		"yoga.svg"
 	];
 
@@ -30777,7 +30777,7 @@
 		"./twitter.svg": 476,
 		"./upload-failed.svg": 477,
 		"./video.svg": 478,
-		"./x.svg": 479,
+		"./x-mark.svg": 479,
 		"./yoga.svg": 480
 	};
 	function webpackContext(req) {
@@ -41918,9 +41918,9 @@
 
 /***/ },
 /* 479 */
-/*!*******************!*\
-  !*** ./src/x.svg ***!
-  \*******************/
+/*!************************!*\
+  !*** ./src/x-mark.svg ***!
+  \************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
@@ -41944,20 +41944,20 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var _components = {
-	    X: {
-	        displayName: 'X'
+	    Xmark: {
+	        displayName: 'Xmark'
 	    }
 	};
 	
 	var _UsersAaronblackProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaronblack/projects/dibs-vg/src/x.svg',
+	    filename: '/Users/aaronblack/projects/dibs-vg/src/x-mark.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
 	var _UsersAaronblackProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaronblack/projects/dibs-vg/src/x.svg',
+	    filename: '/Users/aaronblack/projects/dibs-vg/src/x-mark.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41972,12 +41972,12 @@
 	var React = __webpack_require__(/*! react */ 2);
 	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 345)(__webpack_require__(/*! react-dom */ 33));
 	
-	module.exports = _wrapComponent('X')(React.createClass({
+	module.exports = _wrapComponent('Xmark')(React.createClass({
 	
-	    displayName: "X",
+	    displayName: "Xmark",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "className": "dibsvg dibsvg-x", "viewBox": "0 0 22 22", "version": "1.1", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "className": "dibsvg dibsvg-x-mark", "viewBox": "0 0 16 16", "version": "1.1", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -41989,15 +41989,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                { stroke: 'none', strokeWidth: '1', fill: 'none', fillRule: 'evenodd' },
-	                React.createElement(
-	                    'g',
-	                    { transform: 'translate(-970.000000, -1212.000000)', fillRule: 'nonzero', fill: '#000000' },
-	                    React.createElement('polygon', { id: 'x-svg', points: '989.20662 1212.58501 991.384268 1214.74245 983.170654 1223.05623 991.414462 1231.2063 989.250218 1233.39232 981.008033 1225.23682 972.930866 1233.41534 970.745029 1231.2496 978.828544 1223.07998 970.588585 1214.9343 972.739508 1212.7414 980.985104 1220.89382' })
-	                )
-	            ),
+	            React.createElement('path', { d: 'M9.41421356,8 L15.7781746,1.63603897 L14.363961,0.221825407 L8,6.58578644 L1.63603897,0.221825407 L0.221825407,1.63603897 L6.58578644,8 L0.221825407,14.363961 L1.63603897,15.7781746 L8,9.41421356 L14.363961,15.7781746 L15.7781746,14.363961 L9.41421356,8 Z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -47448,7 +47440,7 @@
 		"./twitter.svg": 610,
 		"./upload-failed.svg": 611,
 		"./video.svg": 612,
-		"./x.svg": 613,
+		"./x-mark.svg": 613,
 		"./yoga.svg": 614
 	};
 	function webpackContext(req) {
@@ -48601,12 +48593,12 @@
 
 /***/ },
 /* 613 */
-/*!***********************************!*\
-  !*** ./~/html-loader!./src/x.svg ***!
-  \***********************************/
+/*!****************************************!*\
+  !*** ./~/html-loader!./src/x-mark.svg ***!
+  \****************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg class=\"dibsvg dibsvg-x\" viewBox=\"0 0 22 22\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g transform=\"translate(-970.000000, -1212.000000)\" fill-rule=\"nonzero\" fill=\"#000000\">\n            <polygon id=\"x-svg\" points=\"989.20662 1212.58501 991.384268 1214.74245 983.170654 1223.05623 991.414462 1231.2063 989.250218 1233.39232 981.008033 1225.23682 972.930866 1233.41534 970.745029 1231.2496 978.828544 1223.07998 970.588585 1214.9343 972.739508 1212.7414 980.985104 1220.89382\"></polygon>\n        </g>\n    </g>\n</svg>\n";
+	module.exports = "<svg class=\"dibsvg dibsvg-x-mark\" viewBox=\"0 0 16 16\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <path d=\"M9.41421356,8 L15.7781746,1.63603897 L14.363961,0.221825407 L8,6.58578644 L1.63603897,0.221825407 L0.221825407,1.63603897 L6.58578644,8 L0.221825407,14.363961 L1.63603897,15.7781746 L8,9.41421356 L14.363961,15.7781746 L15.7781746,14.363961 L9.41421356,8 Z\"></path>\n</svg>\n";
 
 /***/ },
 /* 614 */
