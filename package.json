@@ -1,6 +1,6 @@
 {
   "name": "dibs-vg",
-  "version": "1.30.0",
+  "version": "1.31.0",
   "description": "1stdibs's in-house vector graphics.",
   "main": "index.js",
   "scripts": {
