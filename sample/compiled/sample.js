@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a5e57b06291d1edb04d1"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "c55f49d8f95b9b627354"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/
@@ -34234,7 +34234,7 @@
 	    displayName: "Eye",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-eye", "viewBox": "0 -65 350 350", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "version": "1.1", "viewBox": "0 0 250 250", "className": "dibsvg-svg dibsvg-eye", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -34246,7 +34246,12 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M175,220 C78.3501688,220 0,110 0,110 C0,110 78.3501688,0 175,0 C271.649831,0 350,110 350,110 C350,110 271.649831,220 175,220 Z M174.5,203.685714 C256.514285,203.685714 323,110.342857 323,110.342857 C323,110.342857 256.514285,17 174.5,17 C92.4857147,17 26,110.342857 26,110.342857 C26,110.342857 92.4857147,203.685714 174.5,203.685714 Z M175,160 C147.385763,160 125,137.614237 125,110 C125,82.3857625 147.385763,60 175,60 C202.614237,60 225,82.3857625 225,110 C225,137.614237 202.614237,160 175,160 Z' }),
+	            React.createElement(
+	                'g',
+	                null,
+	                React.createElement('path', { d: 'M248.1,131.2c-40.4-53.9-83.3-80.4-127.4-78.8c-29,1.1-58.7,14.8-85.9,39.7c-15.4,14.1-25.8,27.8-30.2,34 l-2.2,1.5l0.6,0.9c-0.4,0.6-0.7,1-0.7,1.1l-1.8,2.9l2.3,2.5c38.2,43.1,79.2,64.9,121.9,64.9c0.9,0,1.9,0,2.8,0 c36.7-0.8,67.5-17.9,87-32.2c21-15.3,33.2-30.3,33.7-30.9l2.2-2.7L248.1,131.2z M127.1,190.9c-40.1,0.9-78.9-19-115.4-59.2 C21,118.5,63.4,63.5,121,61.4c40.3-1.5,79.8,22.9,117.7,72.3C228.5,145.1,184.8,189.6,127.1,190.9z' }),
+	                React.createElement('circle', { cx: '124.3', cy: '126.5', r: '42.5' })
+	            ),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -47770,7 +47775,7 @@
   \*************************************/
 /***/ function(module, exports) {
 
-	module.exports = "<svg version=\"1.1\" class=\"dibsvg-svg dibsvg-eye\" viewBox=\"0 -65 350 350\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n\t<path d=\"M175,220 C78.3501688,220 0,110 0,110 C0,110 78.3501688,0 175,0 C271.649831,0 350,110 350,110\n\t\t     C350,110 271.649831,220 175,220 Z M174.5,203.685714 C256.514285,203.685714 323,110.342857\n\t\t     323,110.342857 C323,110.342857 256.514285,17 174.5,17 C92.4857147,17 26,110.342857 26,110.342857\n\t\t     C26,110.342857 92.4857147,203.685714 174.5,203.685714 Z M175,160 C147.385763,160 125,137.614237\n\t\t     125,110 C125,82.3857625 147.385763,60 175,60 C202.614237,60 225,82.3857625 225,110 C225,137.614237\n\t\t     202.614237,160 175,160 Z\"\n\t/>\n</svg>\n";
+	module.exports = "<svg version=\"1.1\" viewBox=\"0 0 250 250\"  class=\"dibsvg-svg dibsvg-eye\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n<g>\n\t<path d=\"M248.1,131.2c-40.4-53.9-83.3-80.4-127.4-78.8c-29,1.1-58.7,14.8-85.9,39.7c-15.4,14.1-25.8,27.8-30.2,34\n\t\tl-2.2,1.5l0.6,0.9c-0.4,0.6-0.7,1-0.7,1.1l-1.8,2.9l2.3,2.5c38.2,43.1,79.2,64.9,121.9,64.9c0.9,0,1.9,0,2.8,0\n\t\tc36.7-0.8,67.5-17.9,87-32.2c21-15.3,33.2-30.3,33.7-30.9l2.2-2.7L248.1,131.2z M127.1,190.9c-40.1,0.9-78.9-19-115.4-59.2\n\t\tC21,118.5,63.4,63.5,121,61.4c40.3-1.5,79.8,22.9,117.7,72.3C228.5,145.1,184.8,189.6,127.1,190.9z\"/>\n\t<circle cx=\"124.3\" cy=\"126.5\" r=\"42.5\"/>\n</g>\n</svg>\n";
 
 /***/ },
 /* 517 */
