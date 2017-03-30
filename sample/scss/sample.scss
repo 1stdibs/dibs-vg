@@ -102,3 +102,10 @@ html, body {
     border-top: 1px solid $border-color;
 }
 
+:local(.nav) {
+    float: right;
+    font-size: 14px;
+    a {
+        color: #0066B2;
+    }
+}

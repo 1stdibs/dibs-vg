@@ -1,3 +1,4 @@
+
 ![](https://cdn.rawgit.com/1stdibs/dibs-vg/master/src/logo-no-reg.svg)
 
 # dibs-vg 
@@ -8,6 +9,13 @@
 Dibs VG are broken up into individual SVG files so you can require them to be inlined in your HTML, or required directly in your client side JS for easy use. Instructions on how to do the latter follow.
 
 We also provide some basic styling and wrapper modules for React and Backbone. 
+
+
+# Contributing :
+
+Please view the guide on contributing here : 
+
+	[https://github.com/1stdibs/dibs-vg/blob/master/CONTRIBUTING.md](https://github.com/1stdibs/dibs-vg/blob/master/CONTRIBUTING.md)
 
 # Using inline SVG files :
 

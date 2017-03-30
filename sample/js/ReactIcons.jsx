@@ -49,7 +49,7 @@ class IconContainer extends React.Component {
         return (
             <div className={styles.root}>
                 <div className={styles.headerWrapper}>
-                    <h1 className={styles.header}>These icons are all rendered by React:</h1>
+                    <h1 className={styles.header}>These icons are built with React:</h1>
                     <input type="text" className={styles.search} placeholder="Find icon" onChange={this._matchIcons} />
                 </div>
                 {this._renderIcons()}
