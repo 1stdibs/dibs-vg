@@ -16,7 +16,7 @@
 
 5. When saving as an SVG, you can follow these settings- but you'll only have to do this once since Illustrator will default to it next time around.
 
-Inline image 1
+![Instructions](./images/Instructions-on-creating-an-icon.png)
 
 6. Handing the icon over to dev- Whichever dev you're working with on the project should be adding the new icon file to the dev icon library. If you aren't working with a particular dev on the project, then you can always ask Dale or Ron to add it. 
 
