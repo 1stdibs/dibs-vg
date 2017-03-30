@@ -15,8 +15,21 @@
 5. Copy and paste the outlined/merged icon into the new document, and save that as an SVG. (the reason for copying and pasting it as a new file is because something weird seems to happen with the original document size unless you do this!) 
 
 5. When saving as an SVG, you can follow these settings- but you'll only have to do this once since Illustrator will default to it next time around.
-
-![Instructions](./images/Instructions-on-creating-an-icon.png)
+  1. Save an Illustrator copy (.ai extension)
+  2. "Save As..." -> "SVG" dropdown
+  3. A "SVG Options" window should pop up. The following are the SVG export settings (if a checkbox is not mentioned, leave unchecked)
+      - SVG Profiles: 1.1
+          - Type: SVG
+          - Subsetting: Only Glyphs Used
+      - Image Location: Link
+      - "More Options" button
+          - CSS Properties: Style Elements
+          - Decimal Places: 1 (This reduces SVG number output from a decimal number like 47.644043 down to just 47.6 which will obviously reduce the SVG size)
+          - Encoding: Unicode (UTF-8)
+          - Checkbox:
+              - Output fewer <tspan> elements
+              - Use <textPath> element for Text on Path
+              - TODO: look into new "responsive" option
 
 6. Handing the icon over to dev- Whichever dev you're working with on the project should be adding the new icon file to the dev icon library. If you aren't working with a particular dev on the project, then you can always ask Dale or Ron to add it. 
 
