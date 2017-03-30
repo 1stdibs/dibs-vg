@@ -13,7 +13,9 @@ const styles = require('../scss/sample.scss');
 const Wrapper = () => {
     return (
         <div>
-            <a href="https://github.com/1stdibs/dibs-vg/blob/master/CONTRIBUTING.md">Contributing</a>
+            <div className={styles.nav}>
+                <a href="https://github.com/1stdibs/dibs-vg/blob/master/CONTRIBUTING.md">Guide To Contributing</a>
+            </div>
             <div className={styles.logoWrapper}>
                 <Logo className={styles.logo} />
                 <span className={styles.logoCopy}>Icons</span>

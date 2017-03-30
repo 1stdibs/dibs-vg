@@ -102,14 +102,9 @@ html, body {
     border-top: 1px solid $border-color;
 }
 
-:local(.contributing) {
-    color: #444;
+:local(.nav) {
+    float: right;
     font-size: 14px;
-    pre {
-        background-color: #f9f9f9;
-        border: 1px solid #ccc;
-        padding: 10px
-    }
     a {
         color: #0066B2;
     }
