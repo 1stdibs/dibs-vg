@@ -9,20 +9,16 @@ const React = require('react');
 const ReactIcons = require('./ReactIcons.jsx'); // eslint-disable-line react/require-extension
 const Logo = require('../../src/logo-no-reg.svg');
 const styles = require('../scss/sample.scss');
-const contributingHtml = require("./contributing.js");
 
 const Wrapper = () => {
     return (
         <div>
+            <a href="https://github.com/1stdibs/dibs-vg/blob/master/CONTRIBUTING.md">Contributing</a>
             <div className={styles.logoWrapper}>
                 <Logo className={styles.logo} />
                 <span className={styles.logoCopy}>Icons</span>
             </div>
             <ReactIcons />
-            <hr />
-            <div className={styles.contributing}>
-                <div dangerouslySetInnerHTML={{__html: contributingHtml}} />
-            </div>
         </div>
     );
 };
