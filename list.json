@@ -14,6 +14,7 @@
   "bookmarked.svg",
   "bullet-point.svg",
   "buyer-assurance.svg",
+  "cancel-circle.svg",
   "cart-open.svg",
   "cart.svg",
   "chair-outlined.svg",
@@ -31,11 +32,13 @@
   "connection-error.svg",
   "customer-support.svg",
   "do-not-edit.svg",
+  "dots-spinner.svg",
   "download.svg",
   "early-access.svg",
   "email.svg",
   "empty-project.svg",
   "envelope.svg",
+  "exclamation-circle.svg",
   "eye.svg",
   "facebook.svg",
   "gallery.svg",
@@ -74,6 +77,7 @@
   "magnifying-glass.svg",
   "mask.svg",
   "message.svg",
+  "minus-circle-filled.svg",
   "minus.svg",
   "mobile-logo.svg",
   "net-price.svg",
@@ -127,5 +131,7 @@
   "upload-failed.svg",
   "video.svg",
   "x-mark.svg",
-  "yoga.svg"
+  "yoga.svg",
+  "zoom-in.svg",
+  "zoom-out.svg"
 ]
