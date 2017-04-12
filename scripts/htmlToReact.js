@@ -11,16 +11,13 @@ const parser = new Xml.Parser({attrkey: attrKey});
 const builder = new Xml.Builder({attrkey: attrKey, headless: true});
 const template = xml => {
     return `const React = require('react');
-const Component = React.createClass({
-    render: function() {
+class Component extends React.Component {
+    render() {
         return (
             ${xml}
         );
     }
-});
-Component.propTypes = {
-    className : React.PropTypes.string
-};
+}
 module.exports = Component;
 `;
 };
