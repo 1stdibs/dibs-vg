@@ -13,9 +13,7 @@ We also provide some basic styling and wrapper modules for React and Backbone.
 
 # Contributing :
 
-Please view the guide on contributing here : 
-
-	[https://github.com/1stdibs/dibs-vg/blob/master/CONTRIBUTING.md](https://github.com/1stdibs/dibs-vg/blob/master/CONTRIBUTING.md)
+Please view the guide on [contributing here](https://github.com/1stdibs/dibs-vg/blob/master/CONTRIBUTING.md).
 
 # Using inline SVG files :
 
