@@ -46,9 +46,25 @@ This folder includes a master illustrator file, and a folder for each icon indiv
 
 3. Add class names to your icon using the format "dibsvg-svg dibsvg-{FILE_NAME}", where FILE_NAME is the name of the file you created.
 
-4. Clean up the SVG file by removing other auto generated properties on the SVG element. The only allowed properties at this time are : class, viewBox, xmlns, xmlns:xlink, and version. 
-	- The xmlns and xmlns:xlink attributes are for XML name spacning and aren't strictly necessary, but they are useful for displaying SVGs outside of the context of HTML documents, so we like to include them. [Reference](http://stackoverflow.com/a/18468348/4002508), [Explanation](https://developer.mozilla.org/en/docs/Web/SVG/Namespaces_Crash_Course)
-	- Version is not required, and is ignored by browsers but we currently don't force developers to delete it. 
+4. Clean up the SVG file by removing other unnecessary, auto-generated attributes:
+	- `<svg />` element
+		- The only allowed attributes on the `<svg />` element at this time are : `class`, `viewBox`, `xmlns`, `xmlns:xlink`, and `version`.
+			- The `xmlns` and `xmlns:xlink` attributes are for XML name spacing and aren't strictly necessary, but they are useful for displaying SVGs outside of the context of HTML documents, so we like to include them. [Reference](http://stackoverflow.com/a/18468348/4002508), [Explanation](https://developer.mozilla.org/en/docs/Web/SVG/Namespaces_Crash_Course)
+			- `version` is not required, and is ignored by browsers but we currently don't force developers to delete it.
+	- interior elements (e.g. `<path />`, `<polygon />`, etc.)
+		- remove the `fill` attribute if the element's fill color is intended to be black (e.g. `#000000`, `#010101`). The default value for `fill` is black (`#000000`) so this attribute is unnecessary in these cases.
+        - remove `<g />` elements that have no attributes and aren't actually being used for grouping separate parts of the SVG.
+            - SVGs generated from illustrator sometimes look like this:
+                ```
+                <svg ... >
+                    <g>
+                        <path ... />
+                        <polygon ... />
+                        etc....
+                    </g>
+                </svg>
+                ```
+                the `<g>` tags are unnecessary and can be removed.
 
 5. Remove any classes or IDs illustrator added to the SVG elements. For example, sometimes you will see markup that looks like this : 
 ```
