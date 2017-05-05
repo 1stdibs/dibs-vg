@@ -52,7 +52,19 @@ This folder includes a master illustrator file, and a folder for each icon indiv
 			- The `xmlns` and `xmlns:xlink` attributes are for XML name spacing and aren't strictly necessary, but they are useful for displaying SVGs outside of the context of HTML documents, so we like to include them. [Reference](http://stackoverflow.com/a/18468348/4002508), [Explanation](https://developer.mozilla.org/en/docs/Web/SVG/Namespaces_Crash_Course)
 			- `version` is not required, and is ignored by browsers but we currently don't force developers to delete it.
 	- interior elements (e.g. `<path />`, `<polygon />`, etc.)
-		- remove the `fill` attribute if the element's fill color is intended to be black (e.g. `#000000`, `#010101`). The default value for `fill` is black so this attribute is unnecessary in these cases.
+		- remove the `fill` attribute if the element's fill color is intended to be black (e.g. `#000000`, `#010101`). The default value for `fill` is black (`#000000`) so this attribute is unnecessary in these cases.
+        - remove `<g />` elements that have no attributes and aren't actually being used for grouping separate parts of the SVG.
+            - SVGs generated from illustrator sometimes look like this:
+                ```
+                <svg ... >
+                    <g>
+                        <path ... />
+                        <polygon ... />
+                        etc....
+                    </g>
+                </svg>
+                ```
+                the `<g>` tags are unnecessary and can be removed.
 
 5. Remove any classes or IDs illustrator added to the SVG elements. For example, sometimes you will see markup that looks like this : 
 ```
