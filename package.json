@@ -10,7 +10,8 @@
     "build": "yarn compile && yarn compile:webpack",
     "gitlint": "node_modules/.bin/dibslint --git --warnings --es6",
     "lint": "dibslint --root=. --es6",
-    "prepublish": "yarn compile"
+    "prepublish": "yarn compile",
+    "postversion": "git push upstream master && git push --tags"
   },
   "pre-commit": {
     "run": [
