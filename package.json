@@ -11,8 +11,8 @@
     "gitlint": "node_modules/.bin/dibslint --git --warnings --es6",
     "lint": "dibslint --root=. --es6",
     "prepublish": "yarn compile",
-    "preversion": "BRANCH=$(git rev-parse --abbrev-ref HEAD); if [ \"$BRANCH\" != \"master\" ] ; then exit 1 ; else echo \"on branch master\" ; fi",
-    "postversion": "git push upstream && git push --tags"
+    "preversion": "BRANCH=$(git rev-parse --abbrev-ref HEAD); if [ \"$BRANCH\" != \"master\" ] ; then echo \"you must be on master to version\";  exit 1 ; else echo \"on branch master\" ; fi",
+    "postversion": "git push upstream master && git push --tags"
   },
   "pre-commit": {
     "run": [
