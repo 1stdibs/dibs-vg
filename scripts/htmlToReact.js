@@ -22,7 +22,7 @@ module.exports = Component;
 `;
 };
 
-const convertToJsx = (html) => {
+const convertToJsx = (fileName, html) => {
     return new Promise((fulfill, reject) => {
         parser.parseString(html, (err, obj) => {
 
@@ -31,7 +31,7 @@ const convertToJsx = (html) => {
             }
 
             const attr = obj.svg[attrKey];
-            const openingTagWithClass = `<svg className={ [this.props.className, '${attr.class}'].join(' ')} `;
+            const openingTagWithClass = `<svg className={ [this.props.className, '${attr.class}'].join(' ')} data-tn={'${fileName}'}`;
 
             ['version', 'class', 'xmlns', 'xmlns:xlink'].forEach(str => {
                 delete attr[str];
