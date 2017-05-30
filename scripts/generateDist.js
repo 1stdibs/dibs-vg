@@ -49,7 +49,7 @@ svgs.forEach(file => {
 
     // generate react module :
     promises.push(new Promise((resolve, reject) => {
-        htmlToReact(contents).then(result => {
+        htmlToReact(name, contents).then(result => {
             console.log(`compiling react component for ${name}. ${remaining} files left`);
             remaining--;
 
