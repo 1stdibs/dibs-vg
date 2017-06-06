@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "7bedc2851d572dd65310"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ac34dfc8517ad756663f"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/
@@ -584,9 +584,9 @@
   \******************/
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(/*! /Users/aaron.hill/projects/dibs-vg/sample/js/sample.js */1);
-	__webpack_require__(/*! webpack/hot/dev-server */507);
-	module.exports = __webpack_require__(/*! webpack-dev-server/client?http://localhost:9090/ */509);
+	__webpack_require__(/*! /Users/Teddy/projects/dibs-vg/sample/js/sample.js */1);
+	__webpack_require__(/*! webpack/hot/dev-server */508);
+	module.exports = __webpack_require__(/*! webpack-dev-server/client?http://localhost:9090/ */510);
 
 
 /***/ },
@@ -22586,7 +22586,7 @@
 	
 	var React = __webpack_require__(/*! react */ 2);
 	var ReactIcons = __webpack_require__(/*! ./ReactIcons.jsx */ 180); // eslint-disable-line react/require-extension
-	var Logo = __webpack_require__(/*! ../../src/logo-no-reg.svg */ 438);
+	var Logo = __webpack_require__(/*! ../../src/logo-no-reg.svg */ 439);
 	var styles = __webpack_require__(/*! ../scss/sample.scss */ 339);
 	
 	var Wrapper = function Wrapper() {
@@ -22659,15 +22659,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/sample/js/ReactIcons.jsx',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/sample/js/ReactIcons.jsx',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/sample/js/ReactIcons.jsx',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/sample/js/ReactIcons.jsx',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -22675,7 +22675,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -30200,6 +30200,7 @@
 		"file-doc.svg",
 		"file-excel.svg",
 		"file-pdf.svg",
+		"flag.svg",
 		"folder.svg",
 		"gallery.svg",
 		"gear-filled.svg",
@@ -30738,105 +30739,106 @@
 		"./file-doc.svg": 405,
 		"./file-excel.svg": 406,
 		"./file-pdf.svg": 407,
-		"./folder.svg": 408,
-		"./gallery.svg": 409,
-		"./gear-filled.svg": 410,
-		"./gear.svg": 411,
-		"./globe.svg": 412,
-		"./grid.svg": 413,
-		"./hamburger-menu.svg": 414,
-		"./headshot.svg": 415,
-		"./heart-filled.svg": 416,
-		"./heart-outlined.svg": 417,
-		"./home.svg": 418,
-		"./image-upload-drag.svg": 419,
-		"./image-upload-multiple.svg": 420,
-		"./image-upload.svg": 421,
-		"./image.svg": 422,
-		"./info-circle-filled.svg": 423,
-		"./info-circle.svg": 424,
-		"./inquiries.svg": 425,
-		"./instagram.svg": 426,
-		"./iphone.svg": 427,
-		"./lightbulb.svg": 428,
-		"./linkedin.svg": 429,
-		"./list.svg": 430,
-		"./listing-views.svg": 431,
-		"./loader.svg": 432,
-		"./location-pin.svg": 433,
-		"./lock-with-checkmark.svg": 434,
-		"./lock.svg": 435,
-		"./logo-1st.svg": 436,
-		"./logo-introspective.svg": 437,
-		"./logo-no-reg.svg": 438,
-		"./logo-trade-mobile.svg": 439,
-		"./logo-trade.svg": 440,
-		"./logo.svg": 441,
-		"./luggage.svg": 442,
-		"./magnifying-glass.svg": 443,
-		"./mask.svg": 444,
-		"./message.svg": 445,
-		"./minus-circle-filled.svg": 446,
-		"./minus.svg": 447,
-		"./mobile-logo.svg": 448,
-		"./net-price.svg": 449,
-		"./note-blank.svg": 450,
-		"./note-edit.svg": 451,
-		"./note.svg": 452,
-		"./orange.svg": 453,
-		"./order-count.svg": 454,
-		"./payment-american-express.svg": 455,
-		"./payment-check.svg": 456,
-		"./payment-discover.svg": 457,
-		"./payment-mastercard.svg": 458,
-		"./payment-paypal.svg": 459,
-		"./payment-visa.svg": 460,
-		"./payment-wire-transfer.svg": 461,
-		"./pdf.svg": 462,
-		"./pen.svg": 463,
-		"./person-inside-badge.svg": 464,
-		"./person-profile.svg": 465,
-		"./phone.svg": 466,
-		"./pineapple.svg": 467,
-		"./pinterest.svg": 468,
-		"./play-button.svg": 469,
-		"./plus.svg": 470,
-		"./print.svg": 471,
-		"./quote.svg": 472,
-		"./ramen.svg": 473,
-		"./reject.svg": 474,
-		"./repost.svg": 475,
-		"./return-arrow.svg": 476,
-		"./ruler.svg": 477,
-		"./sales.svg": 478,
-		"./service-person.svg": 479,
-		"./share.svg": 480,
-		"./shipping-package.svg": 481,
-		"./shipping-world.svg": 482,
-		"./shipping.svg": 483,
-		"./shopping-cart.svg": 484,
-		"./star-filled.svg": 485,
-		"./star-outlined.svg": 486,
-		"./storefront-views.svg": 487,
-		"./storefront.svg": 488,
-		"./tag.svg": 489,
-		"./tax-free.svg": 490,
-		"./toolbox.svg": 491,
-		"./top-views.svg": 492,
-		"./trade-arrow.svg": 493,
-		"./trade-logo.svg": 494,
-		"./trash-can.svg": 495,
-		"./trash-filled.svg": 496,
-		"./trash-outlined.svg": 497,
-		"./triangle-down.svg": 498,
-		"./truck-moving.svg": 499,
-		"./twitter.svg": 500,
-		"./upload-failed.svg": 501,
-		"./video.svg": 502,
-		"./x-mark.svg": 503,
-		"./yoga.svg": 504,
-		"./zoom-in.svg": 505,
-		"./zoom-out.svg": 506
+		"./flag.svg": 408,
+		"./folder.svg": 409,
+		"./gallery.svg": 410,
+		"./gear-filled.svg": 411,
+		"./gear.svg": 412,
+		"./globe.svg": 413,
+		"./grid.svg": 414,
+		"./hamburger-menu.svg": 415,
+		"./headshot.svg": 416,
+		"./heart-filled.svg": 417,
+		"./heart-outlined.svg": 418,
+		"./home.svg": 419,
+		"./image-upload-drag.svg": 420,
+		"./image-upload-multiple.svg": 421,
+		"./image-upload.svg": 422,
+		"./image.svg": 423,
+		"./info-circle-filled.svg": 424,
+		"./info-circle.svg": 425,
+		"./inquiries.svg": 426,
+		"./instagram.svg": 427,
+		"./iphone.svg": 428,
+		"./lightbulb.svg": 429,
+		"./linkedin.svg": 430,
+		"./list.svg": 431,
+		"./listing-views.svg": 432,
+		"./loader.svg": 433,
+		"./location-pin.svg": 434,
+		"./lock-with-checkmark.svg": 435,
+		"./lock.svg": 436,
+		"./logo-1st.svg": 437,
+		"./logo-introspective.svg": 438,
+		"./logo-no-reg.svg": 439,
+		"./logo-trade-mobile.svg": 440,
+		"./logo-trade.svg": 441,
+		"./logo.svg": 442,
+		"./luggage.svg": 443,
+		"./magnifying-glass.svg": 444,
+		"./mask.svg": 445,
+		"./message.svg": 446,
+		"./minus-circle-filled.svg": 447,
+		"./minus.svg": 448,
+		"./mobile-logo.svg": 449,
+		"./net-price.svg": 450,
+		"./note-blank.svg": 451,
+		"./note-edit.svg": 452,
+		"./note.svg": 453,
+		"./orange.svg": 454,
+		"./order-count.svg": 455,
+		"./payment-american-express.svg": 456,
+		"./payment-check.svg": 457,
+		"./payment-discover.svg": 458,
+		"./payment-mastercard.svg": 459,
+		"./payment-paypal.svg": 460,
+		"./payment-visa.svg": 461,
+		"./payment-wire-transfer.svg": 462,
+		"./pdf.svg": 463,
+		"./pen.svg": 464,
+		"./person-inside-badge.svg": 465,
+		"./person-profile.svg": 466,
+		"./phone.svg": 467,
+		"./pineapple.svg": 468,
+		"./pinterest.svg": 469,
+		"./play-button.svg": 470,
+		"./plus.svg": 471,
+		"./print.svg": 472,
+		"./quote.svg": 473,
+		"./ramen.svg": 474,
+		"./reject.svg": 475,
+		"./repost.svg": 476,
+		"./return-arrow.svg": 477,
+		"./ruler.svg": 478,
+		"./sales.svg": 479,
+		"./service-person.svg": 480,
+		"./share.svg": 481,
+		"./shipping-package.svg": 482,
+		"./shipping-world.svg": 483,
+		"./shipping.svg": 484,
+		"./shopping-cart.svg": 485,
+		"./star-filled.svg": 486,
+		"./star-outlined.svg": 487,
+		"./storefront-views.svg": 488,
+		"./storefront.svg": 489,
+		"./tag.svg": 490,
+		"./tax-free.svg": 491,
+		"./toolbox.svg": 492,
+		"./top-views.svg": 493,
+		"./trade-arrow.svg": 494,
+		"./trade-logo.svg": 495,
+		"./trash-can.svg": 496,
+		"./trash-filled.svg": 497,
+		"./trash-outlined.svg": 498,
+		"./triangle-down.svg": 499,
+		"./truck-moving.svg": 500,
+		"./twitter.svg": 501,
+		"./upload-failed.svg": 502,
+		"./video.svg": 503,
+		"./x-mark.svg": 504,
+		"./yoga.svg": 505,
+		"./zoom-in.svg": 506,
+		"./zoom-out.svg": 507
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -30885,15 +30887,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/account-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/account-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/account-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/account-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -30901,7 +30903,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31279,15 +31281,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/account-outlined.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/account-outlined.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/account-outlined.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/account-outlined.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31295,7 +31297,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31361,15 +31363,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/add-tags.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/add-tags.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/add-tags.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/add-tags.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31377,7 +31379,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31444,15 +31446,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/app-store.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/app-store.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/app-store.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/app-store.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31460,7 +31462,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31566,15 +31568,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/arrow-clockwise.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-clockwise.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/arrow-clockwise.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-clockwise.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31582,7 +31584,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31648,15 +31650,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/arrow-down.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-down.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/arrow-down.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-down.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31664,7 +31666,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31730,15 +31732,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/arrow-left.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-left.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/arrow-left.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-left.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31746,7 +31748,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31812,15 +31814,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/arrow-right.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-right.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/arrow-right.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-right.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31828,7 +31830,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31894,15 +31896,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/arrow-up.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-up.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/arrow-up.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-up.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31910,7 +31912,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31976,15 +31978,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/baby-bottle.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/baby-bottle.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/baby-bottle.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/baby-bottle.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31992,7 +31994,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32058,15 +32060,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/bell.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/bell.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/bell.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/bell.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32074,7 +32076,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32140,15 +32142,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/benefits-egg.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/benefits-egg.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/benefits-egg.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/benefits-egg.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32156,7 +32158,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32227,15 +32229,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/bookmark.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/bookmark.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/bookmark.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/bookmark.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32243,7 +32245,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32309,15 +32311,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/bookmarked.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/bookmarked.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/bookmarked.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/bookmarked.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32325,7 +32327,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32392,15 +32394,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/bullet-point.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/bullet-point.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/bullet-point.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/bullet-point.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32408,7 +32410,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32479,15 +32481,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/buyer-assurance.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/buyer-assurance.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/buyer-assurance.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/buyer-assurance.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32495,7 +32497,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32566,15 +32568,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/cancel-circle.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/cancel-circle.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/cancel-circle.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/cancel-circle.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32582,7 +32584,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32649,15 +32651,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/cart-open.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/cart-open.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/cart-open.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/cart-open.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32665,7 +32667,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32737,15 +32739,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/cart.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/cart.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/cart.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/cart.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32753,7 +32755,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32828,15 +32830,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/chair-outlined.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/chair-outlined.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/chair-outlined.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/chair-outlined.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32844,7 +32846,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32910,15 +32912,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/checkmark-circle.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/checkmark-circle.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/checkmark-circle.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/checkmark-circle.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32926,7 +32928,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32993,15 +32995,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/checkmark-void.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/checkmark-void.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/checkmark-void.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/checkmark-void.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33009,7 +33011,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33078,15 +33080,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/checkmark.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/checkmark.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/checkmark.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/checkmark.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33094,7 +33096,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33160,15 +33162,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-arrow-left.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-arrow-left.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-arrow-left.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-arrow-left.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33176,7 +33178,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33247,15 +33249,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-arrow-right.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-arrow-right.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-arrow-right.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-arrow-right.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33263,7 +33265,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33338,15 +33340,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-cancel.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-cancel.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-cancel.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-cancel.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33354,7 +33356,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33421,15 +33423,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-check.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-check.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-check.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-check.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33437,7 +33439,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33504,15 +33506,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-contact-info.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-contact-info.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-contact-info.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-contact-info.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33520,7 +33522,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33590,15 +33592,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-dollar.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-dollar.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-dollar.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-dollar.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33606,7 +33608,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33673,15 +33675,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-eraser.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-eraser.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-eraser.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-eraser.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33689,7 +33691,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33757,15 +33759,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-percent.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-percent.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-percent.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-percent.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33773,7 +33775,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33842,15 +33844,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-plus-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-plus-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-plus-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-plus-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33858,7 +33860,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33924,15 +33926,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-plus.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-plus.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-plus.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-plus.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33940,7 +33942,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34007,15 +34009,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-question-mark-empty.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-question-mark-empty.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-question-mark-empty.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-question-mark-empty.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34023,7 +34025,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34095,15 +34097,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-question-mark-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-question-mark-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/circle-question-mark-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-question-mark-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34111,7 +34113,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34177,15 +34179,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/clock.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/clock.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/clock.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/clock.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34193,7 +34195,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34264,15 +34266,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/close.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/close.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/close.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/close.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34280,7 +34282,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34346,15 +34348,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/commuter-train.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/commuter-train.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/commuter-train.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/commuter-train.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34362,7 +34364,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34435,15 +34437,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/congratulations.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/congratulations.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/congratulations.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/congratulations.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34451,7 +34453,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34527,15 +34529,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/connection-error.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/connection-error.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/connection-error.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/connection-error.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34543,7 +34545,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34614,15 +34616,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/customer-support.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/customer-support.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/customer-support.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/customer-support.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34630,7 +34632,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34696,15 +34698,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/do-not-edit.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/do-not-edit.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/do-not-edit.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/do-not-edit.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34712,7 +34714,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34788,15 +34790,15 @@
 	      }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	      filename: '/Users/aaron.hill/projects/dibs-vg/src/dots-spinner.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	      filename: '/Users/Teddy/projects/dibs-vg/src/dots-spinner.svg',
 	      components: _components,
 	      locals: [module],
 	      imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	      filename: '/Users/aaron.hill/projects/dibs-vg/src/dots-spinner.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	      filename: '/Users/Teddy/projects/dibs-vg/src/dots-spinner.svg',
 	      components: _components,
 	      locals: [],
 	      imports: [_react3.default, _index2.default]
@@ -34804,7 +34806,7 @@
 	
 	function _wrapComponent(id) {
 	      return function (Component) {
-	            return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	            return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	      };
 	}
 	
@@ -34877,15 +34879,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/download.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/download.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/download.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/download.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34893,7 +34895,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34964,15 +34966,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/early-access.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/early-access.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/early-access.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/early-access.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34980,7 +34982,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35046,15 +35048,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/email.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/email.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/email.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/email.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35062,7 +35064,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35128,15 +35130,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/empty-project.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/empty-project.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/empty-project.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/empty-project.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35144,7 +35146,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35215,15 +35217,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/envelope.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/envelope.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/envelope.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/envelope.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35231,7 +35233,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35297,15 +35299,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/exclamation-circle.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/exclamation-circle.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/exclamation-circle.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/exclamation-circle.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35313,7 +35315,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35381,15 +35383,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/exclamation-triangle.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/exclamation-triangle.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/exclamation-triangle.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/exclamation-triangle.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35397,7 +35399,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35463,15 +35465,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/eye.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/eye.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/eye.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/eye.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35479,7 +35481,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35546,15 +35548,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/facebook.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/facebook.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/facebook.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/facebook.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35562,7 +35564,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35628,15 +35630,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/file-doc.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/file-doc.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/file-doc.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/file-doc.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35644,7 +35646,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35711,15 +35713,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/file-excel.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/file-excel.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/file-excel.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/file-excel.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35727,7 +35729,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35794,15 +35796,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/file-pdf.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/file-pdf.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/file-pdf.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/file-pdf.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35810,7 +35812,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35846,6 +35848,88 @@
 
 /***/ },
 /* 408 */
+/*!**********************!*\
+  !*** ./src/flag.svg ***!
+  \**********************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
+	
+	var _index = __webpack_require__(/*! ./~/redbox-react/lib/index.js */ 182);
+	
+	var _index2 = _interopRequireDefault(_index);
+	
+	var _index3 = __webpack_require__(/*! ./~/react-transform-catch-errors/lib/index.js */ 187);
+	
+	var _index4 = _interopRequireDefault(_index3);
+	
+	var _react2 = __webpack_require__(/*! react */ 2);
+	
+	var _react3 = _interopRequireDefault(_react2);
+	
+	var _index5 = __webpack_require__(/*! ./~/react-transform-hmr/lib/index.js */ 188);
+	
+	var _index6 = _interopRequireDefault(_index5);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var _components = {
+	    Flag: {
+	        displayName: 'Flag'
+	    }
+	};
+	
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/flag.svg',
+	    components: _components,
+	    locals: [module],
+	    imports: [_react3.default]
+	});
+	
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/flag.svg',
+	    components: _components,
+	    locals: [],
+	    imports: [_react3.default, _index2.default]
+	});
+	
+	function _wrapComponent(id) {
+	    return function (Component) {
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	    };
+	}
+	
+	var React = __webpack_require__(/*! react */ 2);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 345)(__webpack_require__(/*! react-dom */ 33));
+	
+	module.exports = _wrapComponent('Flag')(React.createClass({
+	
+	    displayName: "Flag",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-flag", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]", "viewBox": "0 0 250 250" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement('path', { d: 'M219.6,24c-36,25.2-84.2-8.4-84.6-8.7C115.1,0.8,89.4,1.4,86.7,1.5C63.6,0.8,44.1,13.3,33.4,22V0h-9v250h9V147.8\r c8.9-5.7,24.5-14.7,25.8-15.4c28-14.4,51.7-7.2,63.4-1.6c4.8,2.3,13.5,7.3,15.3,8.6c16.5,11.5,31.9,15.8,32.6,15.9\r c8.7,2.4,16.2,3.3,22.5,3.3c24.1,0,32.6-13.5,33-14.2l0.7-1.1V19L219.6,24z M217.7,140.6c-2.8,3.3-14.7,14.2-44.8,6\r c-0.1,0-14.6-4-29.8-14.6c-2.3-1.6-11.4-6.9-16.6-9.4c-13.1-6.3-39.9-14.4-71.5,1.8l-0.2,0.1c-0.6,0.3-12.2,7-21.4,12.7V34\r c6.7-6.4,28.1-24.4,53.2-23.5l0.2,0l0.2,0c0.2,0,24.7-1.1,42.8,12.1c0.5,0.4,13.5,9.5,31.5,15.3c21.1,6.8,40.5,6,56.5-2.2V140.6z' }),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	}));
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
+
+/***/ },
+/* 409 */
 /*!************************!*\
   !*** ./src/folder.svg ***!
   \************************/
@@ -35877,15 +35961,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/folder.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/folder.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/folder.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/folder.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35893,7 +35977,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35927,7 +36011,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 409 */
+/* 410 */
 /*!*************************!*\
   !*** ./src/gallery.svg ***!
   \*************************/
@@ -35959,15 +36043,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/gallery.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/gallery.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/gallery.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/gallery.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35975,7 +36059,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36014,7 +36098,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 410 */
+/* 411 */
 /*!*****************************!*\
   !*** ./src/gear-filled.svg ***!
   \*****************************/
@@ -36046,15 +36130,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/gear-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/gear-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/gear-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/gear-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36062,7 +36146,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36096,7 +36180,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 411 */
+/* 412 */
 /*!**********************!*\
   !*** ./src/gear.svg ***!
   \**********************/
@@ -36128,15 +36212,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/gear.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/gear.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/gear.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/gear.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36144,7 +36228,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36179,7 +36263,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 412 */
+/* 413 */
 /*!***********************!*\
   !*** ./src/globe.svg ***!
   \***********************/
@@ -36211,15 +36295,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/globe.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/globe.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/globe.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/globe.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36227,7 +36311,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36261,7 +36345,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 413 */
+/* 414 */
 /*!**********************!*\
   !*** ./src/grid.svg ***!
   \**********************/
@@ -36293,15 +36377,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/grid.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/grid.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/grid.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/grid.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36309,7 +36393,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36343,7 +36427,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 414 */
+/* 415 */
 /*!********************************!*\
   !*** ./src/hamburger-menu.svg ***!
   \********************************/
@@ -36375,15 +36459,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/hamburger-menu.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/hamburger-menu.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/hamburger-menu.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/hamburger-menu.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36391,7 +36475,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36425,7 +36509,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 415 */
+/* 416 */
 /*!**************************!*\
   !*** ./src/headshot.svg ***!
   \**************************/
@@ -36457,15 +36541,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/headshot.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/headshot.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/headshot.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/headshot.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36473,7 +36557,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36512,7 +36596,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 416 */
+/* 417 */
 /*!******************************!*\
   !*** ./src/heart-filled.svg ***!
   \******************************/
@@ -36544,15 +36628,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/heart-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/heart-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/heart-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/heart-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36560,7 +36644,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36594,7 +36678,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 417 */
+/* 418 */
 /*!********************************!*\
   !*** ./src/heart-outlined.svg ***!
   \********************************/
@@ -36626,15 +36710,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/heart-outlined.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/heart-outlined.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/heart-outlined.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/heart-outlined.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36642,7 +36726,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36676,7 +36760,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 418 */
+/* 419 */
 /*!**********************!*\
   !*** ./src/home.svg ***!
   \**********************/
@@ -36708,15 +36792,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/home.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/home.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/home.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/home.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36724,7 +36808,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36758,7 +36842,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 419 */
+/* 420 */
 /*!***********************************!*\
   !*** ./src/image-upload-drag.svg ***!
   \***********************************/
@@ -36790,15 +36874,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/image-upload-drag.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/image-upload-drag.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/image-upload-drag.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/image-upload-drag.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36806,7 +36890,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36847,7 +36931,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 420 */
+/* 421 */
 /*!***************************************!*\
   !*** ./src/image-upload-multiple.svg ***!
   \***************************************/
@@ -36879,15 +36963,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/image-upload-multiple.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/image-upload-multiple.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/image-upload-multiple.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/image-upload-multiple.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36895,7 +36979,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36935,7 +37019,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 421 */
+/* 422 */
 /*!******************************!*\
   !*** ./src/image-upload.svg ***!
   \******************************/
@@ -36967,15 +37051,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/image-upload.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/image-upload.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/image-upload.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/image-upload.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36983,7 +37067,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37023,7 +37107,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 422 */
+/* 423 */
 /*!***********************!*\
   !*** ./src/image.svg ***!
   \***********************/
@@ -37055,15 +37139,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/image.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/image.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/image.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/image.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37071,7 +37155,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37106,7 +37190,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 423 */
+/* 424 */
 /*!************************************!*\
   !*** ./src/info-circle-filled.svg ***!
   \************************************/
@@ -37138,15 +37222,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/info-circle-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/info-circle-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/info-circle-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/info-circle-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37154,7 +37238,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37188,7 +37272,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 424 */
+/* 425 */
 /*!*****************************!*\
   !*** ./src/info-circle.svg ***!
   \*****************************/
@@ -37220,15 +37304,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/info-circle.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/info-circle.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/info-circle.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/info-circle.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37236,7 +37320,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37272,7 +37356,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 425 */
+/* 426 */
 /*!***************************!*\
   !*** ./src/inquiries.svg ***!
   \***************************/
@@ -37304,15 +37388,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/inquiries.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/inquiries.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/inquiries.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/inquiries.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37320,7 +37404,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37354,7 +37438,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 426 */
+/* 427 */
 /*!***************************!*\
   !*** ./src/instagram.svg ***!
   \***************************/
@@ -37386,15 +37470,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/instagram.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/instagram.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/instagram.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/instagram.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37402,7 +37486,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37436,7 +37520,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 427 */
+/* 428 */
 /*!************************!*\
   !*** ./src/iphone.svg ***!
   \************************/
@@ -37468,15 +37552,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/iphone.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/iphone.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/iphone.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/iphone.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37484,7 +37568,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37518,7 +37602,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 428 */
+/* 429 */
 /*!***************************!*\
   !*** ./src/lightbulb.svg ***!
   \***************************/
@@ -37550,15 +37634,15 @@
 	  }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	  filename: '/Users/aaron.hill/projects/dibs-vg/src/lightbulb.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	  filename: '/Users/Teddy/projects/dibs-vg/src/lightbulb.svg',
 	  components: _components,
 	  locals: [module],
 	  imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	  filename: '/Users/aaron.hill/projects/dibs-vg/src/lightbulb.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	  filename: '/Users/Teddy/projects/dibs-vg/src/lightbulb.svg',
 	  components: _components,
 	  locals: [],
 	  imports: [_react3.default, _index2.default]
@@ -37566,7 +37650,7 @@
 	
 	function _wrapComponent(id) {
 	  return function (Component) {
-	    return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	    return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	  };
 	}
 	
@@ -37611,7 +37695,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 429 */
+/* 430 */
 /*!**************************!*\
   !*** ./src/linkedin.svg ***!
   \**************************/
@@ -37643,15 +37727,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/linkedin.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/linkedin.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/linkedin.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/linkedin.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37659,7 +37743,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37693,7 +37777,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 430 */
+/* 431 */
 /*!**********************!*\
   !*** ./src/list.svg ***!
   \**********************/
@@ -37725,15 +37809,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/list.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/list.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/list.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/list.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37741,7 +37825,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37784,7 +37868,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 431 */
+/* 432 */
 /*!*******************************!*\
   !*** ./src/listing-views.svg ***!
   \*******************************/
@@ -37816,15 +37900,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/listing-views.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/listing-views.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/listing-views.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/listing-views.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37832,7 +37916,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37866,7 +37950,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 432 */
+/* 433 */
 /*!************************!*\
   !*** ./src/loader.svg ***!
   \************************/
@@ -37898,15 +37982,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/loader.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/loader.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/loader.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/loader.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37914,7 +37998,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37948,7 +38032,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 433 */
+/* 434 */
 /*!******************************!*\
   !*** ./src/location-pin.svg ***!
   \******************************/
@@ -37980,15 +38064,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/location-pin.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/location-pin.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/location-pin.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/location-pin.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37996,7 +38080,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38037,7 +38121,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 434 */
+/* 435 */
 /*!*************************************!*\
   !*** ./src/lock-with-checkmark.svg ***!
   \*************************************/
@@ -38069,15 +38153,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/lock-with-checkmark.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/lock-with-checkmark.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/lock-with-checkmark.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/lock-with-checkmark.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38085,7 +38169,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38124,7 +38208,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 435 */
+/* 436 */
 /*!**********************!*\
   !*** ./src/lock.svg ***!
   \**********************/
@@ -38156,15 +38240,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/lock.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/lock.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/lock.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/lock.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38172,7 +38256,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38210,7 +38294,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 436 */
+/* 437 */
 /*!**************************!*\
   !*** ./src/logo-1st.svg ***!
   \**************************/
@@ -38242,15 +38326,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/logo-1st.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/logo-1st.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/logo-1st.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/logo-1st.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38258,7 +38342,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38298,7 +38382,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 437 */
+/* 438 */
 /*!************************************!*\
   !*** ./src/logo-introspective.svg ***!
   \************************************/
@@ -38330,15 +38414,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/logo-introspective.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/logo-introspective.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/logo-introspective.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/logo-introspective.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38346,7 +38430,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38408,7 +38492,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 438 */
+/* 439 */
 /*!*****************************!*\
   !*** ./src/logo-no-reg.svg ***!
   \*****************************/
@@ -38440,15 +38524,15 @@
 	            }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	            filename: '/Users/aaron.hill/projects/dibs-vg/src/logo-no-reg.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	            filename: '/Users/Teddy/projects/dibs-vg/src/logo-no-reg.svg',
 	            components: _components,
 	            locals: [module],
 	            imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	            filename: '/Users/aaron.hill/projects/dibs-vg/src/logo-no-reg.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	            filename: '/Users/Teddy/projects/dibs-vg/src/logo-no-reg.svg',
 	            components: _components,
 	            locals: [],
 	            imports: [_react3.default, _index2.default]
@@ -38456,7 +38540,7 @@
 	
 	function _wrapComponent(id) {
 	            return function (Component) {
-	                        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	                        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	            };
 	}
 	
@@ -38500,7 +38584,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 439 */
+/* 440 */
 /*!***********************************!*\
   !*** ./src/logo-trade-mobile.svg ***!
   \***********************************/
@@ -38532,15 +38616,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/logo-trade-mobile.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/logo-trade-mobile.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/logo-trade-mobile.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/logo-trade-mobile.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38548,7 +38632,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38598,7 +38682,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 440 */
+/* 441 */
 /*!****************************!*\
   !*** ./src/logo-trade.svg ***!
   \****************************/
@@ -38630,15 +38714,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/logo-trade.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/logo-trade.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/logo-trade.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/logo-trade.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38646,7 +38730,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38698,7 +38782,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 441 */
+/* 442 */
 /*!**********************!*\
   !*** ./src/logo.svg ***!
   \**********************/
@@ -38730,15 +38814,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/logo.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/logo.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/logo.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/logo.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38746,7 +38830,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38795,7 +38879,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 442 */
+/* 443 */
 /*!*************************!*\
   !*** ./src/luggage.svg ***!
   \*************************/
@@ -38827,15 +38911,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/luggage.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/luggage.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/luggage.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/luggage.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38843,7 +38927,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38877,7 +38961,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 443 */
+/* 444 */
 /*!**********************************!*\
   !*** ./src/magnifying-glass.svg ***!
   \**********************************/
@@ -38909,15 +38993,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/magnifying-glass.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/magnifying-glass.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/magnifying-glass.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/magnifying-glass.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38925,7 +39009,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38959,7 +39043,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 444 */
+/* 445 */
 /*!**********************!*\
   !*** ./src/mask.svg ***!
   \**********************/
@@ -38991,15 +39075,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/mask.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/mask.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/mask.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/mask.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39007,7 +39091,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39041,7 +39125,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 445 */
+/* 446 */
 /*!*************************!*\
   !*** ./src/message.svg ***!
   \*************************/
@@ -39073,15 +39157,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/message.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/message.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/message.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/message.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39089,7 +39173,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39127,7 +39211,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 446 */
+/* 447 */
 /*!*************************************!*\
   !*** ./src/minus-circle-filled.svg ***!
   \*************************************/
@@ -39159,15 +39243,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/minus-circle-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/minus-circle-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/minus-circle-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/minus-circle-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39175,7 +39259,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39209,7 +39293,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 447 */
+/* 448 */
 /*!***********************!*\
   !*** ./src/minus.svg ***!
   \***********************/
@@ -39241,15 +39325,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/minus.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/minus.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/minus.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/minus.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39257,7 +39341,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39291,7 +39375,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 448 */
+/* 449 */
 /*!*****************************!*\
   !*** ./src/mobile-logo.svg ***!
   \*****************************/
@@ -39323,15 +39407,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/mobile-logo.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/mobile-logo.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/mobile-logo.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/mobile-logo.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39339,7 +39423,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39374,7 +39458,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 449 */
+/* 450 */
 /*!***************************!*\
   !*** ./src/net-price.svg ***!
   \***************************/
@@ -39406,15 +39490,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/net-price.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/net-price.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/net-price.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/net-price.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39422,7 +39506,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39463,7 +39547,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 450 */
+/* 451 */
 /*!****************************!*\
   !*** ./src/note-blank.svg ***!
   \****************************/
@@ -39495,15 +39579,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/note-blank.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/note-blank.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/note-blank.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/note-blank.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39511,7 +39595,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39545,7 +39629,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 451 */
+/* 452 */
 /*!***************************!*\
   !*** ./src/note-edit.svg ***!
   \***************************/
@@ -39577,15 +39661,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/note-edit.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/note-edit.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/note-edit.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/note-edit.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39593,7 +39677,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39627,7 +39711,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 452 */
+/* 453 */
 /*!**********************!*\
   !*** ./src/note.svg ***!
   \**********************/
@@ -39659,15 +39743,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/note.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/note.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/note.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/note.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39675,7 +39759,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39713,7 +39797,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 453 */
+/* 454 */
 /*!************************!*\
   !*** ./src/orange.svg ***!
   \************************/
@@ -39745,15 +39829,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/orange.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/orange.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/orange.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/orange.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39761,7 +39845,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39795,7 +39879,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 454 */
+/* 455 */
 /*!*****************************!*\
   !*** ./src/order-count.svg ***!
   \*****************************/
@@ -39827,15 +39911,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/order-count.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/order-count.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/order-count.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/order-count.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39843,7 +39927,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39877,7 +39961,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 455 */
+/* 456 */
 /*!******************************************!*\
   !*** ./src/payment-american-express.svg ***!
   \******************************************/
@@ -39909,15 +39993,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/payment-american-express.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-american-express.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/payment-american-express.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-american-express.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39925,7 +40009,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39970,7 +40054,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 456 */
+/* 457 */
 /*!*******************************!*\
   !*** ./src/payment-check.svg ***!
   \*******************************/
@@ -40002,15 +40086,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/payment-check.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-check.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/payment-check.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-check.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40018,7 +40102,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40053,7 +40137,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 457 */
+/* 458 */
 /*!**********************************!*\
   !*** ./src/payment-discover.svg ***!
   \**********************************/
@@ -40085,15 +40169,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/payment-discover.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-discover.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/payment-discover.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-discover.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40101,7 +40185,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40147,7 +40231,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 458 */
+/* 459 */
 /*!************************************!*\
   !*** ./src/payment-mastercard.svg ***!
   \************************************/
@@ -40179,15 +40263,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/payment-mastercard.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-mastercard.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/payment-mastercard.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-mastercard.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40195,7 +40279,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40233,7 +40317,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 459 */
+/* 460 */
 /*!********************************!*\
   !*** ./src/payment-paypal.svg ***!
   \********************************/
@@ -40265,15 +40349,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/payment-paypal.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-paypal.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/payment-paypal.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-paypal.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40281,7 +40365,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40333,7 +40417,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 460 */
+/* 461 */
 /*!******************************!*\
   !*** ./src/payment-visa.svg ***!
   \******************************/
@@ -40365,15 +40449,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/payment-visa.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-visa.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/payment-visa.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-visa.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40381,7 +40465,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40424,7 +40508,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 461 */
+/* 462 */
 /*!***************************************!*\
   !*** ./src/payment-wire-transfer.svg ***!
   \***************************************/
@@ -40456,15 +40540,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/payment-wire-transfer.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-wire-transfer.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/payment-wire-transfer.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-wire-transfer.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40472,7 +40556,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40521,7 +40605,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 462 */
+/* 463 */
 /*!*********************!*\
   !*** ./src/pdf.svg ***!
   \*********************/
@@ -40553,15 +40637,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/pdf.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/pdf.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/pdf.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/pdf.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40569,7 +40653,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40607,7 +40691,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 463 */
+/* 464 */
 /*!*********************!*\
   !*** ./src/pen.svg ***!
   \*********************/
@@ -40639,15 +40723,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/pen.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/pen.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/pen.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/pen.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40655,7 +40739,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40694,7 +40778,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 464 */
+/* 465 */
 /*!*************************************!*\
   !*** ./src/person-inside-badge.svg ***!
   \*************************************/
@@ -40726,15 +40810,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/person-inside-badge.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/person-inside-badge.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/person-inside-badge.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/person-inside-badge.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40742,7 +40826,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40782,7 +40866,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 465 */
+/* 466 */
 /*!********************************!*\
   !*** ./src/person-profile.svg ***!
   \********************************/
@@ -40814,15 +40898,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/person-profile.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/person-profile.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/person-profile.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/person-profile.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40830,7 +40914,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40864,7 +40948,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 466 */
+/* 467 */
 /*!***********************!*\
   !*** ./src/phone.svg ***!
   \***********************/
@@ -40896,15 +40980,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/phone.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/phone.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/phone.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/phone.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40912,7 +40996,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40946,7 +41030,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 467 */
+/* 468 */
 /*!***************************!*\
   !*** ./src/pineapple.svg ***!
   \***************************/
@@ -40978,15 +41062,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/pineapple.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/pineapple.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/pineapple.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/pineapple.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40994,7 +41078,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41028,7 +41112,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 468 */
+/* 469 */
 /*!***************************!*\
   !*** ./src/pinterest.svg ***!
   \***************************/
@@ -41060,15 +41144,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/pinterest.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/pinterest.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/pinterest.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/pinterest.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41076,7 +41160,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41110,7 +41194,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 469 */
+/* 470 */
 /*!*****************************!*\
   !*** ./src/play-button.svg ***!
   \*****************************/
@@ -41142,15 +41226,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/play-button.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/play-button.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/play-button.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/play-button.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41158,7 +41242,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41192,7 +41276,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 470 */
+/* 471 */
 /*!**********************!*\
   !*** ./src/plus.svg ***!
   \**********************/
@@ -41224,15 +41308,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/plus.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/plus.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/plus.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/plus.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41240,7 +41324,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41274,7 +41358,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 471 */
+/* 472 */
 /*!***********************!*\
   !*** ./src/print.svg ***!
   \***********************/
@@ -41306,15 +41390,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/print.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/print.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/print.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/print.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41322,7 +41406,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41356,7 +41440,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 472 */
+/* 473 */
 /*!***********************!*\
   !*** ./src/quote.svg ***!
   \***********************/
@@ -41388,15 +41472,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/quote.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/quote.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/quote.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/quote.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41404,7 +41488,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41443,7 +41527,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 473 */
+/* 474 */
 /*!***********************!*\
   !*** ./src/ramen.svg ***!
   \***********************/
@@ -41475,15 +41559,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/ramen.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/ramen.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/ramen.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/ramen.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41491,7 +41575,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41525,7 +41609,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 474 */
+/* 475 */
 /*!************************!*\
   !*** ./src/reject.svg ***!
   \************************/
@@ -41557,15 +41641,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/reject.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/reject.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/reject.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/reject.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41573,7 +41657,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41611,7 +41695,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 475 */
+/* 476 */
 /*!************************!*\
   !*** ./src/repost.svg ***!
   \************************/
@@ -41643,15 +41727,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/repost.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/repost.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/repost.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/repost.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41659,7 +41743,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41696,7 +41780,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 476 */
+/* 477 */
 /*!******************************!*\
   !*** ./src/return-arrow.svg ***!
   \******************************/
@@ -41728,15 +41812,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/return-arrow.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/return-arrow.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/return-arrow.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/return-arrow.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41744,7 +41828,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41778,7 +41862,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 477 */
+/* 478 */
 /*!***********************!*\
   !*** ./src/ruler.svg ***!
   \***********************/
@@ -41810,15 +41894,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/ruler.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/ruler.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/ruler.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/ruler.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41826,7 +41910,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41860,7 +41944,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 478 */
+/* 479 */
 /*!***********************!*\
   !*** ./src/sales.svg ***!
   \***********************/
@@ -41892,15 +41976,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/sales.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/sales.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/sales.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/sales.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41908,7 +41992,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41942,7 +42026,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 479 */
+/* 480 */
 /*!********************************!*\
   !*** ./src/service-person.svg ***!
   \********************************/
@@ -41974,15 +42058,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/service-person.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/service-person.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/service-person.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/service-person.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41990,7 +42074,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42025,7 +42109,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 480 */
+/* 481 */
 /*!***********************!*\
   !*** ./src/share.svg ***!
   \***********************/
@@ -42057,15 +42141,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/share.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/share.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/share.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/share.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42073,7 +42157,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42112,7 +42196,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 481 */
+/* 482 */
 /*!**********************************!*\
   !*** ./src/shipping-package.svg ***!
   \**********************************/
@@ -42144,15 +42228,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/shipping-package.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/shipping-package.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/shipping-package.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/shipping-package.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42160,7 +42244,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42198,7 +42282,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 482 */
+/* 483 */
 /*!********************************!*\
   !*** ./src/shipping-world.svg ***!
   \********************************/
@@ -42230,15 +42314,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/shipping-world.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/shipping-world.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/shipping-world.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/shipping-world.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42246,7 +42330,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42280,7 +42364,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 483 */
+/* 484 */
 /*!**************************!*\
   !*** ./src/shipping.svg ***!
   \**************************/
@@ -42312,15 +42396,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/shipping.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/shipping.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/shipping.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/shipping.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42328,7 +42412,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42362,7 +42446,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 484 */
+/* 485 */
 /*!*******************************!*\
   !*** ./src/shopping-cart.svg ***!
   \*******************************/
@@ -42394,15 +42478,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/shopping-cart.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/shopping-cart.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/shopping-cart.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/shopping-cart.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42410,7 +42494,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42446,7 +42530,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 485 */
+/* 486 */
 /*!*****************************!*\
   !*** ./src/star-filled.svg ***!
   \*****************************/
@@ -42478,15 +42562,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/star-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/star-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/star-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/star-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42494,7 +42578,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42528,7 +42612,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 486 */
+/* 487 */
 /*!*******************************!*\
   !*** ./src/star-outlined.svg ***!
   \*******************************/
@@ -42560,15 +42644,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/star-outlined.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/star-outlined.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/star-outlined.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/star-outlined.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42576,7 +42660,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42610,7 +42694,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 487 */
+/* 488 */
 /*!**********************************!*\
   !*** ./src/storefront-views.svg ***!
   \**********************************/
@@ -42642,15 +42726,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/storefront-views.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/storefront-views.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/storefront-views.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/storefront-views.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42658,7 +42742,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42692,7 +42776,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 488 */
+/* 489 */
 /*!****************************!*\
   !*** ./src/storefront.svg ***!
   \****************************/
@@ -42724,15 +42808,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/storefront.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/storefront.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/storefront.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/storefront.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42740,7 +42824,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42783,7 +42867,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 489 */
+/* 490 */
 /*!*********************!*\
   !*** ./src/tag.svg ***!
   \*********************/
@@ -42815,15 +42899,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/tag.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/tag.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/tag.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/tag.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42831,7 +42915,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42869,7 +42953,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 490 */
+/* 491 */
 /*!**************************!*\
   !*** ./src/tax-free.svg ***!
   \**************************/
@@ -42901,15 +42985,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/tax-free.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/tax-free.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/tax-free.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/tax-free.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42917,7 +43001,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42956,7 +43040,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 491 */
+/* 492 */
 /*!*************************!*\
   !*** ./src/toolbox.svg ***!
   \*************************/
@@ -42988,15 +43072,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/toolbox.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/toolbox.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/toolbox.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/toolbox.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43004,7 +43088,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43039,7 +43123,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 492 */
+/* 493 */
 /*!***************************!*\
   !*** ./src/top-views.svg ***!
   \***************************/
@@ -43071,15 +43155,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/top-views.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/top-views.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/top-views.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/top-views.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43087,7 +43171,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43121,7 +43205,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 493 */
+/* 494 */
 /*!*****************************!*\
   !*** ./src/trade-arrow.svg ***!
   \*****************************/
@@ -43153,15 +43237,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/trade-arrow.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/trade-arrow.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/trade-arrow.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/trade-arrow.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43169,7 +43253,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43203,7 +43287,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 494 */
+/* 495 */
 /*!****************************!*\
   !*** ./src/trade-logo.svg ***!
   \****************************/
@@ -43235,15 +43319,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/trade-logo.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/trade-logo.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/trade-logo.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/trade-logo.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43251,7 +43335,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43290,7 +43374,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 495 */
+/* 496 */
 /*!***************************!*\
   !*** ./src/trash-can.svg ***!
   \***************************/
@@ -43322,15 +43406,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/trash-can.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/trash-can.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/trash-can.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/trash-can.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43338,7 +43422,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43376,7 +43460,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 496 */
+/* 497 */
 /*!******************************!*\
   !*** ./src/trash-filled.svg ***!
   \******************************/
@@ -43408,15 +43492,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/trash-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/trash-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/trash-filled.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/trash-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43424,7 +43508,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43463,7 +43547,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 497 */
+/* 498 */
 /*!********************************!*\
   !*** ./src/trash-outlined.svg ***!
   \********************************/
@@ -43495,15 +43579,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/trash-outlined.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/trash-outlined.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/trash-outlined.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/trash-outlined.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43511,7 +43595,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43545,7 +43629,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 498 */
+/* 499 */
 /*!*******************************!*\
   !*** ./src/triangle-down.svg ***!
   \*******************************/
@@ -43577,15 +43661,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/triangle-down.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/triangle-down.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/triangle-down.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/triangle-down.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43593,7 +43677,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43627,7 +43711,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 499 */
+/* 500 */
 /*!******************************!*\
   !*** ./src/truck-moving.svg ***!
   \******************************/
@@ -43659,15 +43743,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/truck-moving.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/truck-moving.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/truck-moving.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/truck-moving.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43675,7 +43759,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43716,7 +43800,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 500 */
+/* 501 */
 /*!*************************!*\
   !*** ./src/twitter.svg ***!
   \*************************/
@@ -43748,15 +43832,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/twitter.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/twitter.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/twitter.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/twitter.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43764,7 +43848,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43798,7 +43882,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 501 */
+/* 502 */
 /*!*******************************!*\
   !*** ./src/upload-failed.svg ***!
   \*******************************/
@@ -43830,15 +43914,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/upload-failed.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/upload-failed.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/upload-failed.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/upload-failed.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43846,7 +43930,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43889,7 +43973,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 502 */
+/* 503 */
 /*!***********************!*\
   !*** ./src/video.svg ***!
   \***********************/
@@ -43921,15 +44005,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/video.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/video.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/video.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/video.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43937,7 +44021,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43975,7 +44059,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 503 */
+/* 504 */
 /*!************************!*\
   !*** ./src/x-mark.svg ***!
   \************************/
@@ -44007,15 +44091,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/x-mark.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/x-mark.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/x-mark.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/x-mark.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -44023,7 +44107,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -44057,7 +44141,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 504 */
+/* 505 */
 /*!**********************!*\
   !*** ./src/yoga.svg ***!
   \**********************/
@@ -44089,15 +44173,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/yoga.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/yoga.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/yoga.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/yoga.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -44105,7 +44189,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -44139,7 +44223,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 505 */
+/* 506 */
 /*!*************************!*\
   !*** ./src/zoom-in.svg ***!
   \*************************/
@@ -44171,15 +44255,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/zoom-in.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/zoom-in.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/zoom-in.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/zoom-in.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -44187,7 +44271,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -44222,7 +44306,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 506 */
+/* 507 */
 /*!**************************!*\
   !*** ./src/zoom-out.svg ***!
   \**************************/
@@ -44254,15 +44338,15 @@
 	    }
 	};
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/zoom-out.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/zoom-out.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/aaron.hill/projects/dibs-vg/src/zoom-out.svg',
+	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/Teddy/projects/dibs-vg/src/zoom-out.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -44270,7 +44354,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersAaronHillProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAaronHillProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -44305,7 +44389,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
 /***/ },
-/* 507 */
+/* 508 */
 /*!***********************************!*\
   !*** (webpack)/hot/dev-server.js ***!
   \***********************************/
@@ -44350,7 +44434,7 @@
 					check();
 				}
 	
-				__webpack_require__(/*! ./log-apply-result */ 508)(updatedModules, updatedModules);
+				__webpack_require__(/*! ./log-apply-result */ 509)(updatedModules, updatedModules);
 	
 				if (upToDate()) {
 					console.log("[HMR] App is up to date.");
@@ -44377,7 +44461,7 @@
 	}
 
 /***/ },
-/* 508 */
+/* 509 */
 /*!*****************************************!*\
   !*** (webpack)/hot/log-apply-result.js ***!
   \*****************************************/
@@ -44412,15 +44496,15 @@
 	};
 
 /***/ },
-/* 509 */
+/* 510 */
 /*!**********************************************************!*\
   !*** (webpack)-dev-server/client?http://localhost:9090/ ***!
   \**********************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(__resourceQuery) {var url = __webpack_require__(/*! url */ 510);
-	var stripAnsi = __webpack_require__(/*! strip-ansi */ 516);
-	var socket = __webpack_require__(/*! ./socket */ 518);
+	/* WEBPACK VAR INJECTION */(function(__resourceQuery) {var url = __webpack_require__(/*! url */ 511);
+	var stripAnsi = __webpack_require__(/*! strip-ansi */ 517);
+	var socket = __webpack_require__(/*! ./socket */ 519);
 	
 	function getCurrentScriptSource() {
 		// `document.currentScript` is the most accurate way to find the current script,
@@ -44550,7 +44634,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, "?http://localhost:9090/"))
 
 /***/ },
-/* 510 */
+/* 511 */
 /*!**********************!*\
   !*** ./~/url/url.js ***!
   \**********************/
@@ -44581,7 +44665,7 @@
 	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 	// USE OR OTHER DEALINGS IN THE SOFTWARE.
 	
-	var punycode = __webpack_require__(/*! punycode */ 511);
+	var punycode = __webpack_require__(/*! punycode */ 512);
 	
 	exports.parse = urlParse;
 	exports.resolve = urlResolve;
@@ -44660,7 +44744,7 @@
 	  'gopher:': true,
 	  'file:': true
 	},
-	    querystring = __webpack_require__(/*! querystring */ 513);
+	    querystring = __webpack_require__(/*! querystring */ 514);
 	
 	function urlParse(url, parseQueryString, slashesDenoteHost) {
 	  if (url && isObject(url) && url instanceof Url) return url;
@@ -45244,7 +45328,7 @@
 	}
 
 /***/ },
-/* 511 */
+/* 512 */
 /*!**************************************!*\
   !*** ./~/url/~/punycode/punycode.js ***!
   \**************************************/
@@ -45760,7 +45844,7 @@
 		/** Expose `punycode` */
 		// Some AMD build optimizers, like r.js, check for specific condition patterns
 		// like the following:
-		if ("function" == 'function' && _typeof(__webpack_require__(/*! !webpack amd options */ 512)) == 'object' && __webpack_require__(/*! !webpack amd options */ 512)) {
+		if ("function" == 'function' && _typeof(__webpack_require__(/*! !webpack amd options */ 513)) == 'object' && __webpack_require__(/*! !webpack amd options */ 513)) {
 			!(__WEBPACK_AMD_DEFINE_RESULT__ = function () {
 				return punycode;
 			}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -45782,7 +45866,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../webpack/buildin/module.js */ 181)(module), (function() { return this; }())))
 
 /***/ },
-/* 512 */
+/* 513 */
 /*!****************************************!*\
   !*** (webpack)/buildin/amd-options.js ***!
   \****************************************/
@@ -45793,7 +45877,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ },
-/* 513 */
+/* 514 */
 /*!********************************!*\
   !*** ./~/querystring/index.js ***!
   \********************************/
@@ -45801,11 +45885,11 @@
 
 	'use strict';
 	
-	exports.decode = exports.parse = __webpack_require__(/*! ./decode */ 514);
-	exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ 515);
+	exports.decode = exports.parse = __webpack_require__(/*! ./decode */ 515);
+	exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ 516);
 
 /***/ },
-/* 514 */
+/* 515 */
 /*!*********************************!*\
   !*** ./~/querystring/decode.js ***!
   \*********************************/
@@ -45897,7 +45981,7 @@
 	};
 
 /***/ },
-/* 515 */
+/* 516 */
 /*!*********************************!*\
   !*** ./~/querystring/encode.js ***!
   \*********************************/
@@ -45969,7 +46053,7 @@
 	};
 
 /***/ },
-/* 516 */
+/* 517 */
 /*!*******************************!*\
   !*** ./~/strip-ansi/index.js ***!
   \*******************************/
@@ -45977,14 +46061,14 @@
 
 	'use strict';
 	
-	var ansiRegex = __webpack_require__(/*! ansi-regex */ 517)();
+	var ansiRegex = __webpack_require__(/*! ansi-regex */ 518)();
 	
 	module.exports = function (str) {
 		return typeof str === 'string' ? str.replace(ansiRegex, '') : str;
 	};
 
 /***/ },
-/* 517 */
+/* 518 */
 /*!*******************************!*\
   !*** ./~/ansi-regex/index.js ***!
   \*******************************/
@@ -45998,7 +46082,7 @@
 	};
 
 /***/ },
-/* 518 */
+/* 519 */
 /*!*********************************************!*\
   !*** (webpack)-dev-server/client/socket.js ***!
   \*********************************************/
@@ -46006,7 +46090,7 @@
 
 	"use strict";
 	
-	var SockJS = __webpack_require__(/*! sockjs-client */ 519);
+	var SockJS = __webpack_require__(/*! sockjs-client */ 520);
 	
 	var retries = 0;
 	var sock = null;
@@ -46047,7 +46131,7 @@
 	module.exports = socket;
 
 /***/ },
-/* 519 */
+/* 520 */
 /*!**************************************!*\
   !*** ./~/sockjs-client/lib/entry.js ***!
   \**************************************/
@@ -46055,9 +46139,9 @@
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
 	
-	var transportList = __webpack_require__(/*! ./transport-list */ 520);
+	var transportList = __webpack_require__(/*! ./transport-list */ 521);
 	
-	module.exports = __webpack_require__(/*! ./main */ 565)(transportList);
+	module.exports = __webpack_require__(/*! ./main */ 566)(transportList);
 	
 	// TODO can't get rid of this until all servers do
 	if ('_sockjs_onload' in global) {
@@ -46066,7 +46150,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 520 */
+/* 521 */
 /*!***********************************************!*\
   !*** ./~/sockjs-client/lib/transport-list.js ***!
   \***********************************************/
@@ -46076,13 +46160,13 @@
 	
 	module.exports = [
 	// streaming transports
-	__webpack_require__(/*! ./transport/websocket */ 521), __webpack_require__(/*! ./transport/xhr-streaming */ 537), __webpack_require__(/*! ./transport/xdr-streaming */ 547), __webpack_require__(/*! ./transport/eventsource */ 549), __webpack_require__(/*! ./transport/lib/iframe-wrap */ 552)(__webpack_require__(/*! ./transport/eventsource */ 549))
+	__webpack_require__(/*! ./transport/websocket */ 522), __webpack_require__(/*! ./transport/xhr-streaming */ 538), __webpack_require__(/*! ./transport/xdr-streaming */ 548), __webpack_require__(/*! ./transport/eventsource */ 550), __webpack_require__(/*! ./transport/lib/iframe-wrap */ 553)(__webpack_require__(/*! ./transport/eventsource */ 550))
 	
 	// polling transports
-	, __webpack_require__(/*! ./transport/htmlfile */ 558), __webpack_require__(/*! ./transport/lib/iframe-wrap */ 552)(__webpack_require__(/*! ./transport/htmlfile */ 558)), __webpack_require__(/*! ./transport/xhr-polling */ 560), __webpack_require__(/*! ./transport/xdr-polling */ 561), __webpack_require__(/*! ./transport/lib/iframe-wrap */ 552)(__webpack_require__(/*! ./transport/xhr-polling */ 560)), __webpack_require__(/*! ./transport/jsonp-polling */ 562)];
+	, __webpack_require__(/*! ./transport/htmlfile */ 559), __webpack_require__(/*! ./transport/lib/iframe-wrap */ 553)(__webpack_require__(/*! ./transport/htmlfile */ 559)), __webpack_require__(/*! ./transport/xhr-polling */ 561), __webpack_require__(/*! ./transport/xdr-polling */ 562), __webpack_require__(/*! ./transport/lib/iframe-wrap */ 553)(__webpack_require__(/*! ./transport/xhr-polling */ 561)), __webpack_require__(/*! ./transport/jsonp-polling */ 563)];
 
 /***/ },
-/* 521 */
+/* 522 */
 /*!****************************************************!*\
   !*** ./~/sockjs-client/lib/transport/websocket.js ***!
   \****************************************************/
@@ -46090,15 +46174,15 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var utils = __webpack_require__(/*! ../utils/event */ 522),
-	    urlUtils = __webpack_require__(/*! ../utils/url */ 525),
-	    inherits = __webpack_require__(/*! inherits */ 533),
-	    EventEmitter = __webpack_require__(/*! events */ 534).EventEmitter,
-	    WebsocketDriver = __webpack_require__(/*! ./driver/websocket */ 536);
+	var utils = __webpack_require__(/*! ../utils/event */ 523),
+	    urlUtils = __webpack_require__(/*! ../utils/url */ 526),
+	    inherits = __webpack_require__(/*! inherits */ 534),
+	    EventEmitter = __webpack_require__(/*! events */ 535).EventEmitter,
+	    WebsocketDriver = __webpack_require__(/*! ./driver/websocket */ 537);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:websocket');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:websocket');
 	}
 	
 	function WebSocketTransport(transUrl, ignore, options) {
@@ -46188,7 +46272,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 522 */
+/* 523 */
 /*!********************************************!*\
   !*** ./~/sockjs-client/lib/utils/event.js ***!
   \********************************************/
@@ -46196,7 +46280,7 @@
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
 	
-	var random = __webpack_require__(/*! ./random */ 523);
+	var random = __webpack_require__(/*! ./random */ 524);
 	
 	var onUnload = {},
 	    afterUnload = false
@@ -46270,7 +46354,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 523 */
+/* 524 */
 /*!*********************************************!*\
   !*** ./~/sockjs-client/lib/utils/random.js ***!
   \*********************************************/
@@ -46280,7 +46364,7 @@
 	
 	/* global crypto:true */
 	
-	var crypto = __webpack_require__(/*! crypto */ 524);
+	var crypto = __webpack_require__(/*! crypto */ 525);
 	
 	// This string has length 32, a power of 2, so the modulus doesn't introduce a
 	// bias.
@@ -46308,7 +46392,7 @@
 	};
 
 /***/ },
-/* 524 */
+/* 525 */
 /*!*****************************************************!*\
   !*** ./~/sockjs-client/lib/utils/browser-crypto.js ***!
   \*****************************************************/
@@ -46334,7 +46418,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 525 */
+/* 526 */
 /*!******************************************!*\
   !*** ./~/sockjs-client/lib/utils/url.js ***!
   \******************************************/
@@ -46342,11 +46426,11 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var URL = __webpack_require__(/*! url-parse */ 526);
+	var URL = __webpack_require__(/*! url-parse */ 527);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:utils:url');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:utils:url');
 	}
 	
 	module.exports = {
@@ -46390,7 +46474,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 526 */
+/* 527 */
 /*!******************************!*\
   !*** ./~/url-parse/index.js ***!
   \******************************/
@@ -46400,9 +46484,9 @@
 	
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 	
-	var required = __webpack_require__(/*! requires-port */ 527),
-	    lolcation = __webpack_require__(/*! ./lolcation */ 528),
-	    qs = __webpack_require__(/*! querystringify */ 529),
+	var required = __webpack_require__(/*! requires-port */ 528),
+	    lolcation = __webpack_require__(/*! ./lolcation */ 529),
+	    qs = __webpack_require__(/*! querystringify */ 530),
 	    protocolre = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\S\s]*)/i;
 	
 	/**
@@ -46750,7 +46834,7 @@
 	module.exports = URL;
 
 /***/ },
-/* 527 */
+/* 528 */
 /*!**********************************!*\
   !*** ./~/requires-port/index.js ***!
   \**********************************/
@@ -46797,7 +46881,7 @@
 	};
 
 /***/ },
-/* 528 */
+/* 529 */
 /*!**********************************!*\
   !*** ./~/url-parse/lolcation.js ***!
   \**********************************/
@@ -46834,7 +46918,7 @@
 	 */
 	module.exports = function lolcation(loc) {
 	  loc = loc || global.location || {};
-	  URL = URL || __webpack_require__(/*! ./ */ 526);
+	  URL = URL || __webpack_require__(/*! ./ */ 527);
 	
 	  var finaldestination = {},
 	      type = typeof loc === 'undefined' ? 'undefined' : _typeof(loc),
@@ -46863,7 +46947,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 529 */
+/* 530 */
 /*!***********************************!*\
   !*** ./~/querystringify/index.js ***!
   \***********************************/
@@ -46929,10 +47013,10 @@
 	exports.parse = querystring;
 
 /***/ },
-/* 530 */
-/*!********************************************!*\
-  !*** ./~/sockjs-client/~/debug/browser.js ***!
-  \********************************************/
+/* 531 */
+/*!****************************!*\
+  !*** ./~/debug/browser.js ***!
+  \****************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -46945,7 +47029,7 @@
 	 * Expose `debug()` as the module.
 	 */
 	
-	exports = module.exports = __webpack_require__(/*! ./debug */ 531);
+	exports = module.exports = __webpack_require__(/*! ./debug */ 532);
 	exports.log = log;
 	exports.formatArgs = formatArgs;
 	exports.save = save;
@@ -47098,10 +47182,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 531 */
-/*!******************************************!*\
-  !*** ./~/sockjs-client/~/debug/debug.js ***!
-  \******************************************/
+/* 532 */
+/*!**************************!*\
+  !*** ./~/debug/debug.js ***!
+  \**************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -47118,7 +47202,7 @@
 	exports.disable = disable;
 	exports.enable = enable;
 	exports.enabled = enabled;
-	exports.humanize = __webpack_require__(/*! ms */ 532);
+	exports.humanize = __webpack_require__(/*! ms */ 533);
 	
 	/**
 	 * The currently active debug mode names, and names to skip.
@@ -47306,10 +47390,10 @@
 	}
 
 /***/ },
-/* 532 */
-/*!***************************************!*\
-  !*** ./~/sockjs-client/~/ms/index.js ***!
-  \***************************************/
+/* 533 */
+/*!***********************!*\
+  !*** ./~/ms/index.js ***!
+  \***********************/
 /***/ function(module, exports) {
 
 	'use strict';
@@ -47461,7 +47545,7 @@
 	}
 
 /***/ },
-/* 533 */
+/* 534 */
 /*!****************************************!*\
   !*** ./~/inherits/inherits_browser.js ***!
   \****************************************/
@@ -47494,7 +47578,7 @@
 	}
 
 /***/ },
-/* 534 */
+/* 535 */
 /*!**********************************************!*\
   !*** ./~/sockjs-client/lib/event/emitter.js ***!
   \**********************************************/
@@ -47502,8 +47586,8 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    EventTarget = __webpack_require__(/*! ./eventtarget */ 535);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    EventTarget = __webpack_require__(/*! ./eventtarget */ 536);
 	
 	function EventEmitter() {
 	  EventTarget.call(this);
@@ -47558,7 +47642,7 @@
 	module.exports.EventEmitter = EventEmitter;
 
 /***/ },
-/* 535 */
+/* 536 */
 /*!**************************************************!*\
   !*** ./~/sockjs-client/lib/event/eventtarget.js ***!
   \**************************************************/
@@ -47628,7 +47712,7 @@
 	module.exports = EventTarget;
 
 /***/ },
-/* 536 */
+/* 537 */
 /*!************************************************************!*\
   !*** ./~/sockjs-client/lib/transport/browser/websocket.js ***!
   \************************************************************/
@@ -47645,7 +47729,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 537 */
+/* 538 */
 /*!********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/xhr-streaming.js ***!
   \********************************************************/
@@ -47653,12 +47737,12 @@
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 538),
-	    XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ 542),
-	    XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ 543),
-	    XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ 545),
-	    browser = __webpack_require__(/*! ../utils/browser */ 546);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 539),
+	    XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ 543),
+	    XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ 544),
+	    XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ 546),
+	    browser = __webpack_require__(/*! ../utils/browser */ 547);
 	
 	function XhrStreamingTransport(transUrl) {
 	  if (!XHRLocalObject.enabled && !XHRCorsObject.enabled) {
@@ -47694,7 +47778,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 538 */
+/* 539 */
 /*!*********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/lib/ajax-based.js ***!
   \*********************************************************/
@@ -47702,13 +47786,13 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    urlUtils = __webpack_require__(/*! ../../utils/url */ 525),
-	    SenderReceiver = __webpack_require__(/*! ./sender-receiver */ 539);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    urlUtils = __webpack_require__(/*! ../../utils/url */ 526),
+	    SenderReceiver = __webpack_require__(/*! ./sender-receiver */ 540);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:ajax-based');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:ajax-based');
 	}
 	
 	function createAjaxSender(AjaxObject) {
@@ -47751,7 +47835,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 539 */
+/* 540 */
 /*!**************************************************************!*\
   !*** ./~/sockjs-client/lib/transport/lib/sender-receiver.js ***!
   \**************************************************************/
@@ -47759,14 +47843,14 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    urlUtils = __webpack_require__(/*! ../../utils/url */ 525),
-	    BufferedSender = __webpack_require__(/*! ./buffered-sender */ 540),
-	    Polling = __webpack_require__(/*! ./polling */ 541);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    urlUtils = __webpack_require__(/*! ../../utils/url */ 526),
+	    BufferedSender = __webpack_require__(/*! ./buffered-sender */ 541),
+	    Polling = __webpack_require__(/*! ./polling */ 542);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:sender-receiver');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:sender-receiver');
 	}
 	
 	function SenderReceiver(transUrl, urlSuffix, senderFunc, Receiver, AjaxObject) {
@@ -47804,7 +47888,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 540 */
+/* 541 */
 /*!**************************************************************!*\
   !*** ./~/sockjs-client/lib/transport/lib/buffered-sender.js ***!
   \**************************************************************/
@@ -47812,12 +47896,12 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    EventEmitter = __webpack_require__(/*! events */ 534).EventEmitter;
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    EventEmitter = __webpack_require__(/*! events */ 535).EventEmitter;
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:buffered-sender');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:buffered-sender');
 	}
 	
 	function BufferedSender(url, sender) {
@@ -47899,7 +47983,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 541 */
+/* 542 */
 /*!******************************************************!*\
   !*** ./~/sockjs-client/lib/transport/lib/polling.js ***!
   \******************************************************/
@@ -47907,12 +47991,12 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    EventEmitter = __webpack_require__(/*! events */ 534).EventEmitter;
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    EventEmitter = __webpack_require__(/*! events */ 535).EventEmitter;
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:polling');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:polling');
 	}
 	
 	function Polling(Receiver, receiveUrl, AjaxObject) {
@@ -47964,7 +48048,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 542 */
+/* 543 */
 /*!*******************************************************!*\
   !*** ./~/sockjs-client/lib/transport/receiver/xhr.js ***!
   \*******************************************************/
@@ -47972,12 +48056,12 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    EventEmitter = __webpack_require__(/*! events */ 534).EventEmitter;
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    EventEmitter = __webpack_require__(/*! events */ 535).EventEmitter;
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:receiver:xhr');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:receiver:xhr');
 	}
 	
 	function XhrReceiver(url, AjaxObject) {
@@ -48042,7 +48126,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 543 */
+/* 544 */
 /*!**********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/sender/xhr-cors.js ***!
   \**********************************************************/
@@ -48050,8 +48134,8 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    XhrDriver = __webpack_require__(/*! ../driver/xhr */ 544);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    XhrDriver = __webpack_require__(/*! ../driver/xhr */ 545);
 	
 	function XHRCorsObject(method, url, payload, opts) {
 	  XhrDriver.call(this, method, url, payload, opts);
@@ -48064,7 +48148,7 @@
 	module.exports = XHRCorsObject;
 
 /***/ },
-/* 544 */
+/* 545 */
 /*!***************************************************************!*\
   !*** ./~/sockjs-client/lib/transport/browser/abstract-xhr.js ***!
   \***************************************************************/
@@ -48072,15 +48156,15 @@
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {'use strict';
 	
-	var EventEmitter = __webpack_require__(/*! events */ 534).EventEmitter,
-	    inherits = __webpack_require__(/*! inherits */ 533),
-	    utils = __webpack_require__(/*! ../../utils/event */ 522),
-	    urlUtils = __webpack_require__(/*! ../../utils/url */ 525),
+	var EventEmitter = __webpack_require__(/*! events */ 535).EventEmitter,
+	    inherits = __webpack_require__(/*! inherits */ 534),
+	    utils = __webpack_require__(/*! ../../utils/event */ 523),
+	    urlUtils = __webpack_require__(/*! ../../utils/url */ 526),
 	    XHR = global.XMLHttpRequest;
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:browser:xhr');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:browser:xhr');
 	}
 	
 	function AbstractXHRObject(method, url, payload, opts) {
@@ -48265,7 +48349,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 545 */
+/* 546 */
 /*!***********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/sender/xhr-local.js ***!
   \***********************************************************/
@@ -48273,8 +48357,8 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    XhrDriver = __webpack_require__(/*! ../driver/xhr */ 544);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    XhrDriver = __webpack_require__(/*! ../driver/xhr */ 545);
 	
 	function XHRLocalObject(method, url, payload /*, opts */) {
 	  XhrDriver.call(this, method, url, payload, {
@@ -48289,7 +48373,7 @@
 	module.exports = XHRLocalObject;
 
 /***/ },
-/* 546 */
+/* 547 */
 /*!**********************************************!*\
   !*** ./~/sockjs-client/lib/utils/browser.js ***!
   \**********************************************/
@@ -48323,7 +48407,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 547 */
+/* 548 */
 /*!********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/xdr-streaming.js ***!
   \********************************************************/
@@ -48331,10 +48415,10 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 538),
-	    XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ 542),
-	    XDRObject = __webpack_require__(/*! ./sender/xdr */ 548);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 539),
+	    XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ 543),
+	    XDRObject = __webpack_require__(/*! ./sender/xdr */ 549);
 	
 	// According to:
 	//   http://stackoverflow.com/questions/1641507/detect-browser-support-for-cross-domain-xmlhttprequests
@@ -48362,7 +48446,7 @@
 	module.exports = XdrStreamingTransport;
 
 /***/ },
-/* 548 */
+/* 549 */
 /*!*****************************************************!*\
   !*** ./~/sockjs-client/lib/transport/sender/xdr.js ***!
   \*****************************************************/
@@ -48370,15 +48454,15 @@
 
 	/* WEBPACK VAR INJECTION */(function(process, global) {'use strict';
 	
-	var EventEmitter = __webpack_require__(/*! events */ 534).EventEmitter,
-	    inherits = __webpack_require__(/*! inherits */ 533),
-	    eventUtils = __webpack_require__(/*! ../../utils/event */ 522),
-	    browser = __webpack_require__(/*! ../../utils/browser */ 546),
-	    urlUtils = __webpack_require__(/*! ../../utils/url */ 525);
+	var EventEmitter = __webpack_require__(/*! events */ 535).EventEmitter,
+	    inherits = __webpack_require__(/*! inherits */ 534),
+	    eventUtils = __webpack_require__(/*! ../../utils/event */ 523),
+	    browser = __webpack_require__(/*! ../../utils/browser */ 547),
+	    urlUtils = __webpack_require__(/*! ../../utils/url */ 526);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:sender:xdr');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:sender:xdr');
 	}
 	
 	// References:
@@ -48473,7 +48557,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4), (function() { return this; }())))
 
 /***/ },
-/* 549 */
+/* 550 */
 /*!******************************************************!*\
   !*** ./~/sockjs-client/lib/transport/eventsource.js ***!
   \******************************************************/
@@ -48481,11 +48565,11 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 538),
-	    EventSourceReceiver = __webpack_require__(/*! ./receiver/eventsource */ 550),
-	    XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ 543),
-	    EventSourceDriver = __webpack_require__(/*! eventsource */ 551);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 539),
+	    EventSourceReceiver = __webpack_require__(/*! ./receiver/eventsource */ 551),
+	    XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ 544),
+	    EventSourceDriver = __webpack_require__(/*! eventsource */ 552);
 	
 	function EventSourceTransport(transUrl) {
 	  if (!EventSourceTransport.enabled()) {
@@ -48507,7 +48591,7 @@
 	module.exports = EventSourceTransport;
 
 /***/ },
-/* 550 */
+/* 551 */
 /*!***************************************************************!*\
   !*** ./~/sockjs-client/lib/transport/receiver/eventsource.js ***!
   \***************************************************************/
@@ -48515,13 +48599,13 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    EventEmitter = __webpack_require__(/*! events */ 534).EventEmitter,
-	    EventSourceDriver = __webpack_require__(/*! eventsource */ 551);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    EventEmitter = __webpack_require__(/*! events */ 535).EventEmitter,
+	    EventSourceDriver = __webpack_require__(/*! eventsource */ 552);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:receiver:eventsource');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:receiver:eventsource');
 	}
 	
 	function EventSourceReceiver(url) {
@@ -48578,7 +48662,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 551 */
+/* 552 */
 /*!**************************************************************!*\
   !*** ./~/sockjs-client/lib/transport/browser/eventsource.js ***!
   \**************************************************************/
@@ -48590,7 +48674,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 552 */
+/* 553 */
 /*!**********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/lib/iframe-wrap.js ***!
   \**********************************************************/
@@ -48598,9 +48682,9 @@
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    IframeTransport = __webpack_require__(/*! ../iframe */ 553),
-	    objectUtils = __webpack_require__(/*! ../../utils/object */ 557);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    IframeTransport = __webpack_require__(/*! ../iframe */ 554),
+	    objectUtils = __webpack_require__(/*! ../../utils/object */ 558);
 	
 	module.exports = function (transport) {
 	
@@ -48631,7 +48715,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 553 */
+/* 554 */
 /*!*************************************************!*\
   !*** ./~/sockjs-client/lib/transport/iframe.js ***!
   \*************************************************/
@@ -48647,18 +48731,18 @@
 	//    http://msdn.microsoft.com/en-us/library/cc197015(v=VS.85).aspx
 	//    http://stevesouders.com/misc/test-postmessage.php
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    JSON3 = __webpack_require__(/*! json3 */ 554),
-	    EventEmitter = __webpack_require__(/*! events */ 534).EventEmitter,
-	    version = __webpack_require__(/*! ../version */ 555),
-	    urlUtils = __webpack_require__(/*! ../utils/url */ 525),
-	    iframeUtils = __webpack_require__(/*! ../utils/iframe */ 556),
-	    eventUtils = __webpack_require__(/*! ../utils/event */ 522),
-	    random = __webpack_require__(/*! ../utils/random */ 523);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    JSON3 = __webpack_require__(/*! json3 */ 555),
+	    EventEmitter = __webpack_require__(/*! events */ 535).EventEmitter,
+	    version = __webpack_require__(/*! ../version */ 556),
+	    urlUtils = __webpack_require__(/*! ../utils/url */ 526),
+	    iframeUtils = __webpack_require__(/*! ../utils/iframe */ 557),
+	    eventUtils = __webpack_require__(/*! ../utils/event */ 523),
+	    random = __webpack_require__(/*! ../utils/random */ 524);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:transport:iframe');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:transport:iframe');
 	}
 	
 	function IframeTransport(transport, transUrl, baseUrl) {
@@ -48775,7 +48859,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 554 */
+/* 555 */
 /*!******************************!*\
   !*** ./~/json3/lib/json3.js ***!
   \******************************/
@@ -48789,7 +48873,7 @@
 	;(function () {
 	  // Detect the `define` function exposed by asynchronous module loaders. The
 	  // strict `define` check is necessary for compatibility with `r.js`.
-	  var isLoader = "function" === "function" && __webpack_require__(/*! !webpack amd options */ 512);
+	  var isLoader = "function" === "function" && __webpack_require__(/*! !webpack amd options */ 513);
 	
 	  // A set of types used to distinguish objects from primitives.
 	  var objectTypes = {
@@ -49711,7 +49795,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../webpack/buildin/module.js */ 181)(module), (function() { return this; }())))
 
 /***/ },
-/* 555 */
+/* 556 */
 /*!****************************************!*\
   !*** ./~/sockjs-client/lib/version.js ***!
   \****************************************/
@@ -49722,7 +49806,7 @@
 	module.exports = '1.1.1';
 
 /***/ },
-/* 556 */
+/* 557 */
 /*!*********************************************!*\
   !*** ./~/sockjs-client/lib/utils/iframe.js ***!
   \*********************************************/
@@ -49732,13 +49816,13 @@
 	
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 	
-	var eventUtils = __webpack_require__(/*! ./event */ 522),
-	    JSON3 = __webpack_require__(/*! json3 */ 554),
-	    browser = __webpack_require__(/*! ./browser */ 546);
+	var eventUtils = __webpack_require__(/*! ./event */ 523),
+	    JSON3 = __webpack_require__(/*! json3 */ 555),
+	    browser = __webpack_require__(/*! ./browser */ 547);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:utils:iframe');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:utils:iframe');
 	}
 	
 	module.exports = {
@@ -49916,7 +50000,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4), (function() { return this; }())))
 
 /***/ },
-/* 557 */
+/* 558 */
 /*!*********************************************!*\
   !*** ./~/sockjs-client/lib/utils/object.js ***!
   \*********************************************/
@@ -49950,7 +50034,7 @@
 	};
 
 /***/ },
-/* 558 */
+/* 559 */
 /*!***************************************************!*\
   !*** ./~/sockjs-client/lib/transport/htmlfile.js ***!
   \***************************************************/
@@ -49958,10 +50042,10 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    HtmlfileReceiver = __webpack_require__(/*! ./receiver/htmlfile */ 559),
-	    XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ 545),
-	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 538);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    HtmlfileReceiver = __webpack_require__(/*! ./receiver/htmlfile */ 560),
+	    XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ 546),
+	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 539);
 	
 	function HtmlFileTransport(transUrl) {
 	  if (!HtmlfileReceiver.enabled) {
@@ -49982,7 +50066,7 @@
 	module.exports = HtmlFileTransport;
 
 /***/ },
-/* 559 */
+/* 560 */
 /*!************************************************************!*\
   !*** ./~/sockjs-client/lib/transport/receiver/htmlfile.js ***!
   \************************************************************/
@@ -49990,15 +50074,15 @@
 
 	/* WEBPACK VAR INJECTION */(function(process, global) {'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    iframeUtils = __webpack_require__(/*! ../../utils/iframe */ 556),
-	    urlUtils = __webpack_require__(/*! ../../utils/url */ 525),
-	    EventEmitter = __webpack_require__(/*! events */ 534).EventEmitter,
-	    random = __webpack_require__(/*! ../../utils/random */ 523);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    iframeUtils = __webpack_require__(/*! ../../utils/iframe */ 557),
+	    urlUtils = __webpack_require__(/*! ../../utils/url */ 526),
+	    EventEmitter = __webpack_require__(/*! events */ 535).EventEmitter,
+	    random = __webpack_require__(/*! ../../utils/random */ 524);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:receiver:htmlfile');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:receiver:htmlfile');
 	}
 	
 	function HtmlfileReceiver(url) {
@@ -50076,7 +50160,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4), (function() { return this; }())))
 
 /***/ },
-/* 560 */
+/* 561 */
 /*!******************************************************!*\
   !*** ./~/sockjs-client/lib/transport/xhr-polling.js ***!
   \******************************************************/
@@ -50084,11 +50168,11 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 538),
-	    XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ 542),
-	    XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ 543),
-	    XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ 545);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 539),
+	    XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ 543),
+	    XHRCorsObject = __webpack_require__(/*! ./sender/xhr-cors */ 544),
+	    XHRLocalObject = __webpack_require__(/*! ./sender/xhr-local */ 546);
 	
 	function XhrPollingTransport(transUrl) {
 	  if (!XHRLocalObject.enabled && !XHRCorsObject.enabled) {
@@ -50116,7 +50200,7 @@
 	module.exports = XhrPollingTransport;
 
 /***/ },
-/* 561 */
+/* 562 */
 /*!******************************************************!*\
   !*** ./~/sockjs-client/lib/transport/xdr-polling.js ***!
   \******************************************************/
@@ -50124,11 +50208,11 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 538),
-	    XdrStreamingTransport = __webpack_require__(/*! ./xdr-streaming */ 547),
-	    XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ 542),
-	    XDRObject = __webpack_require__(/*! ./sender/xdr */ 548);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    AjaxBasedTransport = __webpack_require__(/*! ./lib/ajax-based */ 539),
+	    XdrStreamingTransport = __webpack_require__(/*! ./xdr-streaming */ 548),
+	    XhrReceiver = __webpack_require__(/*! ./receiver/xhr */ 543),
+	    XDRObject = __webpack_require__(/*! ./sender/xdr */ 549);
 	
 	function XdrPollingTransport(transUrl) {
 	  if (!XDRObject.enabled) {
@@ -50146,7 +50230,7 @@
 	module.exports = XdrPollingTransport;
 
 /***/ },
-/* 562 */
+/* 563 */
 /*!********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/jsonp-polling.js ***!
   \********************************************************/
@@ -50162,10 +50246,10 @@
 	//   o you will get a spinning cursor
 	//   o for Konqueror a dumb timer is needed to detect errors
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    SenderReceiver = __webpack_require__(/*! ./lib/sender-receiver */ 539),
-	    JsonpReceiver = __webpack_require__(/*! ./receiver/jsonp */ 563),
-	    jsonpSender = __webpack_require__(/*! ./sender/jsonp */ 564);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    SenderReceiver = __webpack_require__(/*! ./lib/sender-receiver */ 540),
+	    JsonpReceiver = __webpack_require__(/*! ./receiver/jsonp */ 564),
+	    jsonpSender = __webpack_require__(/*! ./sender/jsonp */ 565);
 	
 	function JsonPTransport(transUrl) {
 	  if (!JsonPTransport.enabled()) {
@@ -50188,7 +50272,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 563 */
+/* 564 */
 /*!*********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/receiver/jsonp.js ***!
   \*********************************************************/
@@ -50196,16 +50280,16 @@
 
 	/* WEBPACK VAR INJECTION */(function(process, global) {'use strict';
 	
-	var utils = __webpack_require__(/*! ../../utils/iframe */ 556),
-	    random = __webpack_require__(/*! ../../utils/random */ 523),
-	    browser = __webpack_require__(/*! ../../utils/browser */ 546),
-	    urlUtils = __webpack_require__(/*! ../../utils/url */ 525),
-	    inherits = __webpack_require__(/*! inherits */ 533),
-	    EventEmitter = __webpack_require__(/*! events */ 534).EventEmitter;
+	var utils = __webpack_require__(/*! ../../utils/iframe */ 557),
+	    random = __webpack_require__(/*! ../../utils/random */ 524),
+	    browser = __webpack_require__(/*! ../../utils/browser */ 547),
+	    urlUtils = __webpack_require__(/*! ../../utils/url */ 526),
+	    inherits = __webpack_require__(/*! inherits */ 534),
+	    EventEmitter = __webpack_require__(/*! events */ 535).EventEmitter;
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:receiver:jsonp');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:receiver:jsonp');
 	}
 	
 	function JsonpReceiver(url) {
@@ -50378,7 +50462,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4), (function() { return this; }())))
 
 /***/ },
-/* 564 */
+/* 565 */
 /*!*******************************************************!*\
   !*** ./~/sockjs-client/lib/transport/sender/jsonp.js ***!
   \*******************************************************/
@@ -50386,12 +50470,12 @@
 
 	/* WEBPACK VAR INJECTION */(function(process, global) {'use strict';
 	
-	var random = __webpack_require__(/*! ../../utils/random */ 523),
-	    urlUtils = __webpack_require__(/*! ../../utils/url */ 525);
+	var random = __webpack_require__(/*! ../../utils/random */ 524),
+	    urlUtils = __webpack_require__(/*! ../../utils/url */ 526);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:sender:jsonp');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:sender:jsonp');
 	}
 	
 	var form, area;
@@ -50485,7 +50569,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4), (function() { return this; }())))
 
 /***/ },
-/* 565 */
+/* 566 */
 /*!*************************************!*\
   !*** ./~/sockjs-client/lib/main.js ***!
   \*************************************/
@@ -50493,29 +50577,29 @@
 
 	/* WEBPACK VAR INJECTION */(function(process, global) {'use strict';
 	
-	__webpack_require__(/*! ./shims */ 566);
+	__webpack_require__(/*! ./shims */ 567);
 	
-	var URL = __webpack_require__(/*! url-parse */ 526),
-	    inherits = __webpack_require__(/*! inherits */ 533),
-	    JSON3 = __webpack_require__(/*! json3 */ 554),
-	    random = __webpack_require__(/*! ./utils/random */ 523),
-	    escape = __webpack_require__(/*! ./utils/escape */ 567),
-	    urlUtils = __webpack_require__(/*! ./utils/url */ 525),
-	    eventUtils = __webpack_require__(/*! ./utils/event */ 522),
-	    transport = __webpack_require__(/*! ./utils/transport */ 568),
-	    objectUtils = __webpack_require__(/*! ./utils/object */ 557),
-	    browser = __webpack_require__(/*! ./utils/browser */ 546),
-	    log = __webpack_require__(/*! ./utils/log */ 569),
-	    Event = __webpack_require__(/*! ./event/event */ 570),
-	    EventTarget = __webpack_require__(/*! ./event/eventtarget */ 535),
-	    loc = __webpack_require__(/*! ./location */ 571),
-	    CloseEvent = __webpack_require__(/*! ./event/close */ 572),
-	    TransportMessageEvent = __webpack_require__(/*! ./event/trans-message */ 573),
-	    InfoReceiver = __webpack_require__(/*! ./info-receiver */ 574);
+	var URL = __webpack_require__(/*! url-parse */ 527),
+	    inherits = __webpack_require__(/*! inherits */ 534),
+	    JSON3 = __webpack_require__(/*! json3 */ 555),
+	    random = __webpack_require__(/*! ./utils/random */ 524),
+	    escape = __webpack_require__(/*! ./utils/escape */ 568),
+	    urlUtils = __webpack_require__(/*! ./utils/url */ 526),
+	    eventUtils = __webpack_require__(/*! ./utils/event */ 523),
+	    transport = __webpack_require__(/*! ./utils/transport */ 569),
+	    objectUtils = __webpack_require__(/*! ./utils/object */ 558),
+	    browser = __webpack_require__(/*! ./utils/browser */ 547),
+	    log = __webpack_require__(/*! ./utils/log */ 570),
+	    Event = __webpack_require__(/*! ./event/event */ 571),
+	    EventTarget = __webpack_require__(/*! ./event/eventtarget */ 536),
+	    loc = __webpack_require__(/*! ./location */ 572),
+	    CloseEvent = __webpack_require__(/*! ./event/close */ 573),
+	    TransportMessageEvent = __webpack_require__(/*! ./event/trans-message */ 574),
+	    InfoReceiver = __webpack_require__(/*! ./info-receiver */ 575);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:main');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:main');
 	}
 	
 	var transports;
@@ -50655,7 +50739,7 @@
 	  this._transport.send(escape.quote(data));
 	};
 	
-	SockJS.version = __webpack_require__(/*! ./version */ 555);
+	SockJS.version = __webpack_require__(/*! ./version */ 556);
 	
 	SockJS.CONNECTING = 0;
 	SockJS.OPEN = 1;
@@ -50864,13 +50948,13 @@
 	
 	module.exports = function (availableTransports) {
 	  transports = transport(availableTransports);
-	  __webpack_require__(/*! ./iframe-bootstrap */ 579)(SockJS, availableTransports);
+	  __webpack_require__(/*! ./iframe-bootstrap */ 580)(SockJS, availableTransports);
 	  return SockJS;
 	};
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4), (function() { return this; }())))
 
 /***/ },
-/* 566 */
+/* 567 */
 /*!**************************************!*\
   !*** ./~/sockjs-client/lib/shims.js ***!
   \**************************************/
@@ -51345,7 +51429,7 @@
 	}, hasNegativeSubstrBug);
 
 /***/ },
-/* 567 */
+/* 568 */
 /*!*********************************************!*\
   !*** ./~/sockjs-client/lib/utils/escape.js ***!
   \*********************************************/
@@ -51353,7 +51437,7 @@
 
 	'use strict';
 	
-	var JSON3 = __webpack_require__(/*! json3 */ 554);
+	var JSON3 = __webpack_require__(/*! json3 */ 555);
 	
 	// Some extra characters that Chrome gets wrong, and substitutes with
 	// something else on the wire.
@@ -51402,7 +51486,7 @@
 	};
 
 /***/ },
-/* 568 */
+/* 569 */
 /*!************************************************!*\
   !*** ./~/sockjs-client/lib/utils/transport.js ***!
   \************************************************/
@@ -51412,7 +51496,7 @@
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:utils:transport');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:utils:transport');
 	}
 	
 	module.exports = function (availableTransports) {
@@ -51460,7 +51544,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 569 */
+/* 570 */
 /*!******************************************!*\
   !*** ./~/sockjs-client/lib/utils/log.js ***!
   \******************************************/
@@ -51487,7 +51571,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 570 */
+/* 571 */
 /*!********************************************!*\
   !*** ./~/sockjs-client/lib/event/event.js ***!
   \********************************************/
@@ -51517,7 +51601,7 @@
 	module.exports = Event;
 
 /***/ },
-/* 571 */
+/* 572 */
 /*!*****************************************!*\
   !*** ./~/sockjs-client/lib/location.js ***!
   \*****************************************/
@@ -51536,7 +51620,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 572 */
+/* 573 */
 /*!********************************************!*\
   !*** ./~/sockjs-client/lib/event/close.js ***!
   \********************************************/
@@ -51544,8 +51628,8 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    Event = __webpack_require__(/*! ./event */ 570);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    Event = __webpack_require__(/*! ./event */ 571);
 	
 	function CloseEvent() {
 	  Event.call(this);
@@ -51560,7 +51644,7 @@
 	module.exports = CloseEvent;
 
 /***/ },
-/* 573 */
+/* 574 */
 /*!****************************************************!*\
   !*** ./~/sockjs-client/lib/event/trans-message.js ***!
   \****************************************************/
@@ -51568,8 +51652,8 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    Event = __webpack_require__(/*! ./event */ 570);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    Event = __webpack_require__(/*! ./event */ 571);
 	
 	function TransportMessageEvent(data) {
 	  Event.call(this);
@@ -51582,7 +51666,7 @@
 	module.exports = TransportMessageEvent;
 
 /***/ },
-/* 574 */
+/* 575 */
 /*!**********************************************!*\
   !*** ./~/sockjs-client/lib/info-receiver.js ***!
   \**********************************************/
@@ -51590,19 +51674,19 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var EventEmitter = __webpack_require__(/*! events */ 534).EventEmitter,
-	    inherits = __webpack_require__(/*! inherits */ 533),
-	    urlUtils = __webpack_require__(/*! ./utils/url */ 525),
-	    XDR = __webpack_require__(/*! ./transport/sender/xdr */ 548),
-	    XHRCors = __webpack_require__(/*! ./transport/sender/xhr-cors */ 543),
-	    XHRLocal = __webpack_require__(/*! ./transport/sender/xhr-local */ 545),
-	    XHRFake = __webpack_require__(/*! ./transport/sender/xhr-fake */ 575),
-	    InfoIframe = __webpack_require__(/*! ./info-iframe */ 576),
-	    InfoAjax = __webpack_require__(/*! ./info-ajax */ 578);
+	var EventEmitter = __webpack_require__(/*! events */ 535).EventEmitter,
+	    inherits = __webpack_require__(/*! inherits */ 534),
+	    urlUtils = __webpack_require__(/*! ./utils/url */ 526),
+	    XDR = __webpack_require__(/*! ./transport/sender/xdr */ 549),
+	    XHRCors = __webpack_require__(/*! ./transport/sender/xhr-cors */ 544),
+	    XHRLocal = __webpack_require__(/*! ./transport/sender/xhr-local */ 546),
+	    XHRFake = __webpack_require__(/*! ./transport/sender/xhr-fake */ 576),
+	    InfoIframe = __webpack_require__(/*! ./info-iframe */ 577),
+	    InfoAjax = __webpack_require__(/*! ./info-ajax */ 579);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:info-receiver');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:info-receiver');
 	}
 	
 	function InfoReceiver(baseUrl, urlInfo) {
@@ -51678,7 +51762,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 575 */
+/* 576 */
 /*!**********************************************************!*\
   !*** ./~/sockjs-client/lib/transport/sender/xhr-fake.js ***!
   \**********************************************************/
@@ -51686,8 +51770,8 @@
 
 	'use strict';
 	
-	var EventEmitter = __webpack_require__(/*! events */ 534).EventEmitter,
-	    inherits = __webpack_require__(/*! inherits */ 533);
+	var EventEmitter = __webpack_require__(/*! events */ 535).EventEmitter,
+	    inherits = __webpack_require__(/*! inherits */ 534);
 	
 	function XHRFake() /* method, url, payload, opts */{
 	  var self = this;
@@ -51709,7 +51793,7 @@
 	module.exports = XHRFake;
 
 /***/ },
-/* 576 */
+/* 577 */
 /*!********************************************!*\
   !*** ./~/sockjs-client/lib/info-iframe.js ***!
   \********************************************/
@@ -51717,16 +51801,16 @@
 
 	/* WEBPACK VAR INJECTION */(function(process, global) {'use strict';
 	
-	var EventEmitter = __webpack_require__(/*! events */ 534).EventEmitter,
-	    inherits = __webpack_require__(/*! inherits */ 533),
-	    JSON3 = __webpack_require__(/*! json3 */ 554),
-	    utils = __webpack_require__(/*! ./utils/event */ 522),
-	    IframeTransport = __webpack_require__(/*! ./transport/iframe */ 553),
-	    InfoReceiverIframe = __webpack_require__(/*! ./info-iframe-receiver */ 577);
+	var EventEmitter = __webpack_require__(/*! events */ 535).EventEmitter,
+	    inherits = __webpack_require__(/*! inherits */ 534),
+	    JSON3 = __webpack_require__(/*! json3 */ 555),
+	    utils = __webpack_require__(/*! ./utils/event */ 523),
+	    IframeTransport = __webpack_require__(/*! ./transport/iframe */ 554),
+	    InfoReceiverIframe = __webpack_require__(/*! ./info-iframe-receiver */ 578);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:info-iframe');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:info-iframe');
 	}
 	
 	function InfoIframe(baseUrl, url) {
@@ -51787,7 +51871,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4), (function() { return this; }())))
 
 /***/ },
-/* 577 */
+/* 578 */
 /*!*****************************************************!*\
   !*** ./~/sockjs-client/lib/info-iframe-receiver.js ***!
   \*****************************************************/
@@ -51795,11 +51879,11 @@
 
 	'use strict';
 	
-	var inherits = __webpack_require__(/*! inherits */ 533),
-	    EventEmitter = __webpack_require__(/*! events */ 534).EventEmitter,
-	    JSON3 = __webpack_require__(/*! json3 */ 554),
-	    XHRLocalObject = __webpack_require__(/*! ./transport/sender/xhr-local */ 545),
-	    InfoAjax = __webpack_require__(/*! ./info-ajax */ 578);
+	var inherits = __webpack_require__(/*! inherits */ 534),
+	    EventEmitter = __webpack_require__(/*! events */ 535).EventEmitter,
+	    JSON3 = __webpack_require__(/*! json3 */ 555),
+	    XHRLocalObject = __webpack_require__(/*! ./transport/sender/xhr-local */ 546),
+	    InfoAjax = __webpack_require__(/*! ./info-ajax */ 579);
 	
 	function InfoReceiverIframe(transUrl) {
 	  var self = this;
@@ -51827,7 +51911,7 @@
 	module.exports = InfoReceiverIframe;
 
 /***/ },
-/* 578 */
+/* 579 */
 /*!******************************************!*\
   !*** ./~/sockjs-client/lib/info-ajax.js ***!
   \******************************************/
@@ -51835,14 +51919,14 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var EventEmitter = __webpack_require__(/*! events */ 534).EventEmitter,
-	    inherits = __webpack_require__(/*! inherits */ 533),
-	    JSON3 = __webpack_require__(/*! json3 */ 554),
-	    objectUtils = __webpack_require__(/*! ./utils/object */ 557);
+	var EventEmitter = __webpack_require__(/*! events */ 535).EventEmitter,
+	    inherits = __webpack_require__(/*! inherits */ 534),
+	    JSON3 = __webpack_require__(/*! json3 */ 555),
+	    objectUtils = __webpack_require__(/*! ./utils/object */ 558);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:info-ajax');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:info-ajax');
 	}
 	
 	function InfoAjax(url, AjaxObject) {
@@ -51884,7 +51968,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 579 */
+/* 580 */
 /*!*************************************************!*\
   !*** ./~/sockjs-client/lib/iframe-bootstrap.js ***!
   \*************************************************/
@@ -51892,17 +51976,17 @@
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var urlUtils = __webpack_require__(/*! ./utils/url */ 525),
-	    eventUtils = __webpack_require__(/*! ./utils/event */ 522),
-	    JSON3 = __webpack_require__(/*! json3 */ 554),
-	    FacadeJS = __webpack_require__(/*! ./facade */ 580),
-	    InfoIframeReceiver = __webpack_require__(/*! ./info-iframe-receiver */ 577),
-	    iframeUtils = __webpack_require__(/*! ./utils/iframe */ 556),
-	    loc = __webpack_require__(/*! ./location */ 571);
+	var urlUtils = __webpack_require__(/*! ./utils/url */ 526),
+	    eventUtils = __webpack_require__(/*! ./utils/event */ 523),
+	    JSON3 = __webpack_require__(/*! json3 */ 555),
+	    FacadeJS = __webpack_require__(/*! ./facade */ 581),
+	    InfoIframeReceiver = __webpack_require__(/*! ./info-iframe-receiver */ 578),
+	    iframeUtils = __webpack_require__(/*! ./utils/iframe */ 557),
+	    loc = __webpack_require__(/*! ./location */ 572);
 	
 	var debug = function debug() {};
 	if (process.env.NODE_ENV !== 'production') {
-	  debug = __webpack_require__(/*! debug */ 530)('sockjs-client:iframe-bootstrap');
+	  debug = __webpack_require__(/*! debug */ 531)('sockjs-client:iframe-bootstrap');
 	}
 	
 	module.exports = function (SockJS, availableTransports) {
@@ -51990,7 +52074,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 4)))
 
 /***/ },
-/* 580 */
+/* 581 */
 /*!***************************************!*\
   !*** ./~/sockjs-client/lib/facade.js ***!
   \***************************************/
@@ -51998,8 +52082,8 @@
 
 	'use strict';
 	
-	var JSON3 = __webpack_require__(/*! json3 */ 554),
-	    iframeUtils = __webpack_require__(/*! ./utils/iframe */ 556);
+	var JSON3 = __webpack_require__(/*! json3 */ 555),
+	    iframeUtils = __webpack_require__(/*! ./utils/iframe */ 557);
 	
 	function FacadeJS(transport) {
 	  this._transport = transport;
