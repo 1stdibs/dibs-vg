@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "ac34dfc8517ad756663f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "e1b10fe3482018ed9618"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/
@@ -584,7 +584,7 @@
   \******************/
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(/*! /Users/Teddy/projects/dibs-vg/sample/js/sample.js */1);
+	__webpack_require__(/*! /Users/shanie/projects/dibs-vg/sample/js/sample.js */1);
 	__webpack_require__(/*! webpack/hot/dev-server */508);
 	module.exports = __webpack_require__(/*! webpack-dev-server/client?http://localhost:9090/ */510);
 
@@ -22659,15 +22659,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/sample/js/ReactIcons.jsx',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/sample/js/ReactIcons.jsx',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/sample/js/ReactIcons.jsx',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/sample/js/ReactIcons.jsx',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -22675,7 +22675,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -30887,15 +30887,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/account-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/account-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/account-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/account-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -30903,7 +30903,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31281,15 +31281,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/account-outlined.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/account-outlined.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/account-outlined.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/account-outlined.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31297,7 +31297,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31363,15 +31363,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/add-tags.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/add-tags.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/add-tags.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/add-tags.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31379,7 +31379,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31403,8 +31403,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M249.5,122.2c-1.4-43.5-21.1-71-37.4-86.5c-17-16.1-33.6-22.6-35.4-23.2C159.5,5,142,1.2,124.8,1.2 C69.5,1.2,34.5,39.5,32.4,42C4.5,71.3-0.6,104.2,0,126.6c0.7,24.2,7.9,41.4,8.2,42.1l0,0.1c34.7,76.2,99.3,80,111.9,80 c1.5,0,2.4-0.1,2.4-0.1l1.7-0.1l125.3-124.6L249.5,122.2z M232.9,128c-23.1,2.1-92.6,15.7-105.3,104.7l-7.1,7.1 c-11,0.1-71.3-3.1-104-74.7C15.7,163.3-10,99.5,38.9,48.1L39,48c0.3-0.4,34-37.8,85.8-37.8c16,0,32.3,3.6,48.4,10.6l0.3,0.1 c0.2,0.1,16.1,5.9,32.4,21.4c21.5,20.3,33.1,46.6,34.5,78.3L232.9,128z' }),
-	            React.createElement('polygon', { points: '131,85 118,85 118,114 89,114 89,127 118,127 118,155 131,155 131,127 159,127 159,114 131,114 \t' }),
+	            React.createElement('path', { d: 'M249.5,122.2c-1.4-43.5-21.1-71-37.4-86.5c-17-16.1-33.6-22.6-35.4-23.2C159.5,5,142,1.2,124.8,1.2 C69.5,1.2,34.5,39.5,32.4,42C4.5,71.3-0.6,104.2,0,126.6c0.7,24.2,7.9,41.4,8.2,42.1l0,0.1c34.7,76.2,99.3,80,111.9,80c1.5,0,2.4-0.1,2.4-0.1l1.7-0.1l125.3-124.6L249.5,122.2z M232.9,128c-23.1,2.1-92.6,15.7-105.3,104.7l-7.1,7.1c-11,0.1-71.3-3.1-104-74.7C15.7,163.3-10,99.5,38.9,48.1L39,48c0.3-0.4,34-37.8,85.8-37.8c16,0,32.3,3.6,48.4,10.6l0.3,0.1c0.2,0.1,16.1,5.9,32.4,21.4c21.5,20.3,33.1,46.6,34.5,78.3L232.9,128z' }),
+	            React.createElement('polygon', { points: '131,85 118,85 118,114 89,114 89,127 118,127 118,155 131,155 131,127 159,127 159,114 131,114' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -31446,15 +31446,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/app-store.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/app-store.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/app-store.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/app-store.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31462,7 +31462,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31568,15 +31568,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-clockwise.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/arrow-clockwise.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-clockwise.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/arrow-clockwise.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31584,7 +31584,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31608,7 +31608,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M121.3,0C54.4,0,0,56.1,0,125c0,68.9,54.3,124.9,121.2,125c3.2,0,6.2-1.7,7.8-4.5c1.6-2.8,1.6-6.4,0-9.2 c-1.6-2.8-4.6-4.6-7.8-4.5C63.9,231.7,17.7,184,17.7,125C17.7,66,64,18.3,121.3,18.3c43.7,0,81,27.8,96.3,67.1l-18.2-11 c-2.7-1.8-6.3-2-9.1-0.3c-2.9,1.6-4.6,4.8-4.6,8.2c0.1,3.4,1.9,6.5,4.8,8l35.4,21.3c2.1,1.2,4.6,1.6,6.9,0.9 c2.3-0.7,4.3-2.3,5.4-4.5l20.7-39.6c1.6-2.9,1.5-6.4-0.1-9.2c-1.6-2.8-4.6-4.5-7.8-4.4c-3.3,0-6.3,2-7.8,5l-9.5,18.2 C215.6,32.1,172,0,121.3,0z' }),
+	            React.createElement('path', { d: 'M121.3,0C54.4,0,0,56.1,0,125c0,68.9,54.3,124.9,121.2,125c3.2,0,6.2-1.7,7.8-4.5c1.6-2.8,1.6-6.4,0-9.2c-1.6-2.8-4.6-4.6-7.8-4.5C63.9,231.7,17.7,184,17.7,125C17.7,66,64,18.3,121.3,18.3c43.7,0,81,27.8,96.3,67.1l-18.2-11c-2.7-1.8-6.3-2-9.1-0.3c-2.9,1.6-4.6,4.8-4.6,8.2c0.1,3.4,1.9,6.5,4.8,8l35.4,21.3c2.1,1.2,4.6,1.6,6.9,0.9c2.3-0.7,4.3-2.3,5.4-4.5l20.7-39.6c1.6-2.9,1.5-6.4-0.1-9.2c-1.6-2.8-4.6-4.5-7.8-4.4c-3.3,0-6.3,2-7.8,5l-9.5,18.2C215.6,32.1,172,0,121.3,0z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -31650,15 +31650,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-down.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/arrow-down.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-down.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/arrow-down.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31666,7 +31666,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31732,15 +31732,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-left.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/arrow-left.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-left.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/arrow-left.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31748,7 +31748,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31814,15 +31814,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-right.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/arrow-right.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-right.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/arrow-right.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31830,7 +31830,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31896,15 +31896,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-up.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/arrow-up.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/arrow-up.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/arrow-up.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31912,7 +31912,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -31978,15 +31978,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/baby-bottle.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/baby-bottle.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/baby-bottle.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/baby-bottle.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -31994,7 +31994,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32018,7 +32018,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M84.9,47.5c3.5,1.5,4.4,2.7,8.4-0.5c4.3-4.3,3.1-8.4,0-12.1c3.7-6.1,4.5-12.8,2.1-19.5c0,0,8.4-7.4,2.5-13.3\r c-5.9-5.9-13,2.8-13,2.8c-6.8-1.7-13.8-1.8-20.4,1.4c-3.7-3.1-7.2-3.1-11,0c-2,1.6-3,5.7-0.6,9c-3.3,0.3-8.5,1.5-11,4.1L4,56.9\r c-2.8,2.8-4,3.6-4,7.6c0,3.9,1.8,8,4.5,10.8l20.5,20.7c5.7,5.7,12.9,5.3,18.6-0.4l37.2-37.3C83.3,55.6,84.6,50.9,84.9,47.5z\r M83.7,8.3c1.3,0.6,2.8,0.4,3.8-0.6l3-3c1.3-1.3,3.5-1.3,4.9,0s1.3,3.5,0,4.9l-3,3c-1,1-1.3,2.5-0.6,3.8c2.3,4.7,0.9,11.5-1.3,16.1\r L67.6,9.5C72.2,7.4,79,6,83.7,8.3z M28.3,94.4L5.5,71.6c-1.5-1.5-2.4-3.5-2.4-5.7c0-2.1,0.8-4.2,2.4-5.7l38.7-38.7\r c3.1-3.1,10-4.9,13.2-1.8l22.8,22.8c3.1,3.1,1.3,10-1.8,13.1L39.7,94.4C36.6,97.6,31.5,97.6,28.3,94.4z M86.5,44.1L55,12.6\r c-0.7-1.5-0.6-2.6,0.9-4.1c1.1-1.1,3.5-1.7,4.6-0.6L92,39.5c1.1,1.1,0.5,3.5-0.6,4.6C90.4,45.2,87.6,45.2,86.5,44.1z M45,31l4.1,4.1\r c1.3,1.3,2.4,2.3,3.7,1c1.3-1.3,0.3-2.4-1-3.7l-4.1-4.1c-1.3-1.3-2.4-2.3-3.7-1C42.7,28.6,43.7,29.7,45,31z M35.8,35.5\r c-1.3,1.3-0.4,2.5,0.8,3.8l9,9c1.3,1.3,2.5,2.1,3.8,0.8c1.3-1.3,0.4-2.5-0.9-3.8l-9-9C38.3,35.1,37.1,34.2,35.8,35.5z M31.4,44.5\r c-1.3-1.3-2.5-2.2-3.8-0.9c-1.3,1.3,0,3.4,1.3,4.7l4.1,4.1c1.3,1.3,2.1,1.3,3.4,0c1.3-1.3,0.4-2.5-0.9-3.8L31.4,44.5z' }),
+	            React.createElement('path', { d: 'M84.9,47.5c3.5,1.5,4.4,2.7,8.4-0.5c4.3-4.3,3.1-8.4,0-12.1c3.7-6.1,4.5-12.8,2.1-19.5c0,0,8.4-7.4,2.5-13.3c-5.9-5.9-13,2.8-13,2.8c-6.8-1.7-13.8-1.8-20.4,1.4c-3.7-3.1-7.2-3.1-11,0c-2,1.6-3,5.7-0.6,9c-3.3,0.3-8.5,1.5-11,4.1L4,56.9c-2.8,2.8-4,3.6-4,7.6c0,3.9,1.8,8,4.5,10.8l20.5,20.7c5.7,5.7,12.9,5.3,18.6-0.4l37.2-37.3C83.3,55.6,84.6,50.9,84.9,47.5zM83.7,8.3c1.3,0.6,2.8,0.4,3.8-0.6l3-3c1.3-1.3,3.5-1.3,4.9,0s1.3,3.5,0,4.9l-3,3c-1,1-1.3,2.5-0.6,3.8c2.3,4.7,0.9,11.5-1.3,16.1L67.6,9.5C72.2,7.4,79,6,83.7,8.3z M28.3,94.4L5.5,71.6c-1.5-1.5-2.4-3.5-2.4-5.7c0-2.1,0.8-4.2,2.4-5.7l38.7-38.7c3.1-3.1,10-4.9,13.2-1.8l22.8,22.8c3.1,3.1,1.3,10-1.8,13.1L39.7,94.4C36.6,97.6,31.5,97.6,28.3,94.4z M86.5,44.1L55,12.6c-0.7-1.5-0.6-2.6,0.9-4.1c1.1-1.1,3.5-1.7,4.6-0.6L92,39.5c1.1,1.1,0.5,3.5-0.6,4.6C90.4,45.2,87.6,45.2,86.5,44.1z M45,31l4.1,4.1c1.3,1.3,2.4,2.3,3.7,1c1.3-1.3,0.3-2.4-1-3.7l-4.1-4.1c-1.3-1.3-2.4-2.3-3.7-1C42.7,28.6,43.7,29.7,45,31z M35.8,35.5c-1.3,1.3-0.4,2.5,0.8,3.8l9,9c1.3,1.3,2.5,2.1,3.8,0.8c1.3-1.3,0.4-2.5-0.9-3.8l-9-9C38.3,35.1,37.1,34.2,35.8,35.5z M31.4,44.5c-1.3-1.3-2.5-2.2-3.8-0.9c-1.3,1.3,0,3.4,1.3,4.7l4.1,4.1c1.3,1.3,2.1,1.3,3.4,0c1.3-1.3,0.4-2.5-0.9-3.8L31.4,44.5z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -32060,15 +32060,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/bell.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/bell.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/bell.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/bell.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32076,7 +32076,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32100,7 +32100,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M45,25.9c0,0,0-0.1,0-0.1c0,0,0,0,0,0c-0.5-2.7-2.5-3.5-4-3.7c-0.7-0.1-2.2-0.6-2.4-1.4c-0.3-3.2-1.1-6-2.3-8.2 c-1-1.8-2.4-3.3-4-4.4c-2.8-1.9-5.5-2-6-2c0,0,0,0,0,0H23V2.2h2.7V0H19v2.2h2.6V6h-3.1h0C13.6,6.1,10,8.7,7.8,13.5 c-1.3,2.9-1.6,5.8-1.7,6.8l-0.1,0v0c0,0.1-0.2,1.4-2.4,1.8c-1.3,0.3-3.7,1.4-3.6,3.9c0,0.3,0.2,0.6,0.5,0.7c0.1,0,7.8,2.7,17.3,3.2 c0.7,0,2.5,0.1,4.3,0.1c1.7,0,3.5,0,4.8-0.1c4.6-0.3,11.4-1.1,17.6-3.2C44.9,26.6,45.1,26.2,45,25.9z M9.2,14.1 c1.9-4.3,5-6.6,9.3-6.7h7.7h0c0.3,0,2.7,0,5.2,1.7c3.2,2.1,5.1,5.8,5.6,11c-1.8,0.4-7.5,1.6-14.9,1.6c-5.1,0-10-0.6-14.6-1.6 C7.7,19.1,8.1,16.6,9.2,14.1z M26.8,28.5c-2.6,0.2-7.6,0.1-8.9,0c-7.9-0.4-14.5-2.4-16.3-3c0.1-0.5,0.5-1,1.1-1.4 c0.6-0.4,1.3-0.6,1.4-0.6c1.9-0.4,2.7-1.3,3.2-2c4.8,1.1,9.8,1.7,15,1.7c7.7,0,13.5-1.2,15.3-1.7c0.9,1.3,3,1.8,3.3,1.8c0,0,0,0,0,0 c1.9,0.2,2.5,1.4,2.7,2.1C37.2,27.6,30.3,28.2,26.8,28.5z' }),
+	            React.createElement('path', { d: 'M45,25.9c0,0,0-0.1,0-0.1c0,0,0,0,0,0c-0.5-2.7-2.5-3.5-4-3.7c-0.7-0.1-2.2-0.6-2.4-1.4c-0.3-3.2-1.1-6-2.3-8.2c-1-1.8-2.4-3.3-4-4.4c-2.8-1.9-5.5-2-6-2c0,0,0,0,0,0H23V2.2h2.7V0H19v2.2h2.6V6h-3.1h0C13.6,6.1,10,8.7,7.8,13.5c-1.3,2.9-1.6,5.8-1.7,6.8l-0.1,0v0c0,0.1-0.2,1.4-2.4,1.8c-1.3,0.3-3.7,1.4-3.6,3.9c0,0.3,0.2,0.6,0.5,0.7c0.1,0,7.8,2.7,17.3,3.2c0.7,0,2.5,0.1,4.3,0.1c1.7,0,3.5,0,4.8-0.1c4.6-0.3,11.4-1.1,17.6-3.2C44.9,26.6,45.1,26.2,45,25.9z M9.2,14.1c1.9-4.3,5-6.6,9.3-6.7h7.7h0c0.3,0,2.7,0,5.2,1.7c3.2,2.1,5.1,5.8,5.6,11c-1.8,0.4-7.5,1.6-14.9,1.6c-5.1,0-10-0.6-14.6-1.6C7.7,19.1,8.1,16.6,9.2,14.1z M26.8,28.5c-2.6,0.2-7.6,0.1-8.9,0c-7.9-0.4-14.5-2.4-16.3-3c0.1-0.5,0.5-1,1.1-1.4c0.6-0.4,1.3-0.6,1.4-0.6c1.9-0.4,2.7-1.3,3.2-2c4.8,1.1,9.8,1.7,15,1.7c7.7,0,13.5-1.2,15.3-1.7c0.9,1.3,3,1.8,3.3,1.8c0,0,0,0,0,0c1.9,0.2,2.5,1.4,2.7,2.1C37.2,27.6,30.3,28.2,26.8,28.5z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -32142,15 +32142,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/benefits-egg.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/benefits-egg.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/benefits-egg.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/benefits-egg.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32158,7 +32158,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32182,12 +32182,12 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M310,193.9c-28.1-48.3-63-74.8-98.7-74.8s-70.6,26.5-98.7,74.8c-23.1,39.5-37.8,88.2-37.8,124.7 c0,37.8,16,72.2,41.2,96.6c-14.7,5.5-23.1,12.6-23.1,19.7c0,18.5,52.9,33.6,118.4,33.6s118.4-15.1,118.4-33.6 c0-7.6-8.8-14.3-23.1-19.7c25.2-24.4,41.2-58.8,41.2-96.6C347.8,282.1,333.1,233.4,310,193.9z M211.7,443.4 c-65.9,0-121.8-63-121.8-124.7c0-77.3,57.1-186.5,120.1-186.5c64.3,0,122.2,115.9,122.2,186.5C332.2,387.9,278.5,443.4,211.7,443.4 z M216.7,283.8c-7.6-3.4-13-6.3-15.5-8.8c-2.5-2.9-4.2-6.3-4.2-10.9c0-5,1.3-8.8,3.8-11.8c2.5-2.9,6.7-4.6,12.2-4.6 s9.7,1.7,12.6,5.5c2.9,3.4,4.6,8.4,4.6,15.1h26v-0.4c0-11.3-2.9-20.2-9.2-27.3c-6.3-7.1-14.7-11.3-25.6-12.6v-19.7h-14.3v19.3 c-11.3,1.3-20.2,5-26.9,11.3c-6.7,6.3-10.1,14.7-10.1,24.8c0,10.9,3.4,19.7,10.1,25.6c6.7,5.9,16.8,11.3,30.7,16 c7.1,2.9,12.2,5.5,15.1,8.4c2.9,2.9,4.2,7.1,4.2,11.8c0,5-1.7,8.8-4.6,11.8c-2.9,2.9-7.6,4.2-13.4,4.2s-10.9-1.7-14.7-5 c-3.8-3.4-5.9-8.8-5.9-16.4h-26l-0.4,0.4c-0.4,13,3.4,22.7,10.9,29.4s17.2,10.5,28.6,11.3v17.6h14.3v-17.6 c11.3-1.3,20.6-5,26.9-11.3c6.7-6.3,9.7-14.7,9.7-25.2c0-10.9-3.4-19.7-10.1-26C240.2,293.4,230.2,288,216.7,283.8z' }),
-	            React.createElement('path', { d: 'M415.8,309.8h-42.4c-2.5,0-4.2-1.7-4.2-4.2v-10.1c0-2.1,1.7-4.2,4.2-4.2h42.4c2.5,0,4.2,2.1,4.2,4.2v10.1 C420,308.1,418.3,309.8,415.8,309.8z' }),
-	            React.createElement('path', { d: 'M217.6,53.2v42c0,2.1-1.7,4.2-4.2,4.2h-10.1c-2.1,0-4.2-1.7-4.2-4.2v-42c0-2.1,2.1-4.2,4.2-4.2h10.1 C215.9,49,217.6,50.7,217.6,53.2z' }),
-	            React.createElement('path', { d: 'M46.6,309.8H4.2c-2.1,0-4.2-1.7-4.2-4.2v-10.1c0-2.1,1.7-4.2,4.2-4.2h42.4c2.1,0,4.2,2.1,4.2,4.2v10.1 C50.8,308.1,48.7,309.8,46.6,309.8z' }),
-	            React.createElement('path', { d: 'M94.5,169.5l-29.8-29.4c-1.7-1.7-1.7-4.2,0-5.9l7.1-7.1c1.7-1.7,4.2-1.7,5.9,0l29.8,29.4 c1.7,1.7,1.7,4.2,0,5.9l-6.7,7.1C99.1,171.2,96.2,171.2,94.5,169.5z' }),
-	            React.createElement('path', { d: 'M323.8,169.5l29.8-29.4c1.7-1.7,1.7-4.2,0-5.9l-7.1-7.1c-1.7-1.7-4.2-1.7-5.9,0l-29.8,29.4 c-1.7,1.7-1.7,4.2,0,5.9l7.1,7.1C319.6,171.2,322.1,171.2,323.8,169.5z' }),
+	            React.createElement('path', { d: 'M310,193.9c-28.1-48.3-63-74.8-98.7-74.8s-70.6,26.5-98.7,74.8c-23.1,39.5-37.8,88.2-37.8,124.7c0,37.8,16,72.2,41.2,96.6c-14.7,5.5-23.1,12.6-23.1,19.7c0,18.5,52.9,33.6,118.4,33.6s118.4-15.1,118.4-33.6c0-7.6-8.8-14.3-23.1-19.7c25.2-24.4,41.2-58.8,41.2-96.6C347.8,282.1,333.1,233.4,310,193.9z M211.7,443.4c-65.9,0-121.8-63-121.8-124.7c0-77.3,57.1-186.5,120.1-186.5c64.3,0,122.2,115.9,122.2,186.5C332.2,387.9,278.5,443.4,211.7,443.4z M216.7,283.8c-7.6-3.4-13-6.3-15.5-8.8c-2.5-2.9-4.2-6.3-4.2-10.9c0-5,1.3-8.8,3.8-11.8c2.5-2.9,6.7-4.6,12.2-4.6s9.7,1.7,12.6,5.5c2.9,3.4,4.6,8.4,4.6,15.1h26v-0.4c0-11.3-2.9-20.2-9.2-27.3c-6.3-7.1-14.7-11.3-25.6-12.6v-19.7h-14.3v19.3c-11.3,1.3-20.2,5-26.9,11.3c-6.7,6.3-10.1,14.7-10.1,24.8c0,10.9,3.4,19.7,10.1,25.6c6.7,5.9,16.8,11.3,30.7,16c7.1,2.9,12.2,5.5,15.1,8.4c2.9,2.9,4.2,7.1,4.2,11.8c0,5-1.7,8.8-4.6,11.8c-2.9,2.9-7.6,4.2-13.4,4.2s-10.9-1.7-14.7-5c-3.8-3.4-5.9-8.8-5.9-16.4h-26l-0.4,0.4c-0.4,13,3.4,22.7,10.9,29.4s17.2,10.5,28.6,11.3v17.6h14.3v-17.6c11.3-1.3,20.6-5,26.9-11.3c6.7-6.3,9.7-14.7,9.7-25.2c0-10.9-3.4-19.7-10.1-26C240.2,293.4,230.2,288,216.7,283.8z' }),
+	            React.createElement('path', { d: 'M415.8,309.8h-42.4c-2.5,0-4.2-1.7-4.2-4.2v-10.1c0-2.1,1.7-4.2,4.2-4.2h42.4c2.5,0,4.2,2.1,4.2,4.2v10.1C420,308.1,418.3,309.8,415.8,309.8z' }),
+	            React.createElement('path', { d: 'M217.6,53.2v42c0,2.1-1.7,4.2-4.2,4.2h-10.1c-2.1,0-4.2-1.7-4.2-4.2v-42c0-2.1,2.1-4.2,4.2-4.2h10.1C215.9,49,217.6,50.7,217.6,53.2z' }),
+	            React.createElement('path', { d: 'M46.6,309.8H4.2c-2.1,0-4.2-1.7-4.2-4.2v-10.1c0-2.1,1.7-4.2,4.2-4.2h42.4c2.1,0,4.2,2.1,4.2,4.2v10.1C50.8,308.1,48.7,309.8,46.6,309.8z' }),
+	            React.createElement('path', { d: 'M94.5,169.5l-29.8-29.4c-1.7-1.7-1.7-4.2,0-5.9l7.1-7.1c1.7-1.7,4.2-1.7,5.9,0l29.8,29.4c1.7,1.7,1.7,4.2,0,5.9l-6.7,7.1C99.1,171.2,96.2,171.2,94.5,169.5z' }),
+	            React.createElement('path', { d: 'M323.8,169.5l29.8-29.4c1.7-1.7,1.7-4.2,0-5.9l-7.1-7.1c-1.7-1.7-4.2-1.7-5.9,0l-29.8,29.4c-1.7,1.7-1.7,4.2,0,5.9l7.1,7.1C319.6,171.2,322.1,171.2,323.8,169.5z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -32229,15 +32229,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/bookmark.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/bookmark.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/bookmark.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/bookmark.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32245,7 +32245,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32269,7 +32269,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M52.3,8c41.8,0,83.7,0,125.5,0c5.8,0,11.7,0,17.5,0c-1.7-1.7-3.3-3.3-5-5c0,27.3,0,54.6,0,81.8 c0,43.5,0,87,0,130.4c0,10,0,20,0,30c2.8-1.2,5.7-2.4,8.5-3.5c-20.9-23.2-41.7-46.4-62.6-69.7c-3-3.3-5.9-6.6-8.9-9.9 c-1.7-1.9-5.3-1.9-7.1,0c-20.9,23.2-41.7,46.4-62.6,69.7c-3,3.3-5.9,6.6-8.9,9.9c2.8,1.2,5.7,2.4,8.5,3.5c0-27.3,0-54.6,0-81.8 c0-43.5,0-87,0-130.4c0-10,0-20,0-30c0-6.4-10-6.4-10,0c0,27.3,0,54.6,0,81.8c0,43.5,0,87,0,130.4c0,10,0,20,0,30 c0,4.2,5.6,6.8,8.5,3.5c20.9-23.2,41.7-46.4,62.6-69.7c3-3.3,5.9-6.6,8.9-9.9c-2.4,0-4.7,0-7.1,0c20.9,23.2,41.7,46.4,62.6,69.7 c3,3.3,5.9,6.6,8.9,9.9c3,3.3,8.5,0.6,8.5-3.5c0-27.3,0-54.6,0-81.8c0-43.5,0-87,0-130.4c0-10,0-20,0-30c0-2.7-2.3-5-5-5 c-41.8,0-83.7,0-125.5,0C64-2,58.1-2,52.3-2C45.8-2,45.8,8,52.3,8z' }),
+	            React.createElement('path', { d: 'M52.3,8c41.8,0,83.7,0,125.5,0c5.8,0,11.7,0,17.5,0c-1.7-1.7-3.3-3.3-5-5c0,27.3,0,54.6,0,81.8c0,43.5,0,87,0,130.4c0,10,0,20,0,30c2.8-1.2,5.7-2.4,8.5-3.5c-20.9-23.2-41.7-46.4-62.6-69.7c-3-3.3-5.9-6.6-8.9-9.9c-1.7-1.9-5.3-1.9-7.1,0c-20.9,23.2-41.7,46.4-62.6,69.7c-3,3.3-5.9,6.6-8.9,9.9c2.8,1.2,5.7,2.4,8.5,3.5c0-27.3,0-54.6,0-81.8c0-43.5,0-87,0-130.4c0-10,0-20,0-30c0-6.4-10-6.4-10,0c0,27.3,0,54.6,0,81.8c0,43.5,0,87,0,130.4c0,10,0,20,0,30c0,4.2,5.6,6.8,8.5,3.5c20.9-23.2,41.7-46.4,62.6-69.7c3-3.3,5.9-6.6,8.9-9.9c-2.4,0-4.7,0-7.1,0c20.9,23.2,41.7,46.4,62.6,69.7c3,3.3,5.9,6.6,8.9,9.9c3,3.3,8.5,0.6,8.5-3.5c0-27.3,0-54.6,0-81.8c0-43.5,0-87,0-130.4c0-10,0-20,0-30c0-2.7-2.3-5-5-5c-41.8,0-83.7,0-125.5,0C64-2,58.1-2,52.3-2C45.8-2,45.8,8,52.3,8z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -32311,15 +32311,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/bookmarked.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/bookmarked.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/bookmarked.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/bookmarked.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32327,7 +32327,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32352,7 +32352,7 @@
 	            'svg',
 	            this.props,
 	            React.createElement('polygon', { points: '52.3,5 195.4,5 195.4,246.5 123.8,167.2 52.3,246.5 \t' }),
-	            React.createElement('path', { d: 'M52.3,10c41.9,0,83.7,0,125.6,0c5.8,0,11.7,0,17.5,0c-1.7-1.7-3.3-3.3-5-5c0,27.3,0,54.6,0,82 c0,43.2,0,86.4,0,129.5c0,10,0,20,0,30c2.8-1.2,5.7-2.4,8.5-3.5c-20.9-23.2-41.8-46.3-62.6-69.5c-3-3.3-5.9-6.6-8.9-9.9 c-1.7-1.9-5.3-1.9-7.1,0c-20.9,23.2-41.8,46.3-62.6,69.5c-3,3.3-5.9,6.6-8.9,9.9c2.8,1.2,5.7,2.4,8.5,3.5c0-27.3,0-54.6,0-82 c0-43.2,0-86.4,0-129.5c0-10,0-20,0-30c0-6.4-10-6.4-10,0c0,27.3,0,54.6,0,82c0,43.2,0,86.4,0,129.5c0,10,0,20,0,30 c0,4.2,5.6,6.8,8.5,3.5c20.9-23.2,41.8-46.3,62.6-69.5c3-3.3,5.9-6.6,8.9-9.9c-2.4,0-4.7,0-7.1,0c20.9,23.2,41.8,46.3,62.6,69.5 c3,3.3,5.9,6.6,8.9,9.9c3,3.3,8.5,0.6,8.5-3.5c0-27.3,0-54.6,0-82c0-43.2,0-86.4,0-129.5c0-10,0-20,0-30c0-2.7-2.3-5-5-5 c-41.9,0-83.7,0-125.6,0C64,0,58.1,0,52.3,0C45.8,0,45.8,10,52.3,10z' }),
+	            React.createElement('path', { d: 'M52.3,10c41.9,0,83.7,0,125.6,0c5.8,0,11.7,0,17.5,0c-1.7-1.7-3.3-3.3-5-5c0,27.3,0,54.6,0,82c0,43.2,0,86.4,0,129.5c0,10,0,20,0,30c2.8-1.2,5.7-2.4,8.5-3.5c-20.9-23.2-41.8-46.3-62.6-69.5c-3-3.3-5.9-6.6-8.9-9.9c-1.7-1.9-5.3-1.9-7.1,0c-20.9,23.2-41.8,46.3-62.6,69.5c-3,3.3-5.9,6.6-8.9,9.9c2.8,1.2,5.7,2.4,8.5,3.5c0-27.3,0-54.6,0-82c0-43.2,0-86.4,0-129.5c0-10,0-20,0-30c0-6.4-10-6.4-10,0c0,27.3,0,54.6,0,82c0,43.2,0,86.4,0,129.5c0,10,0,20,0,30c0,4.2,5.6,6.8,8.5,3.5c20.9-23.2,41.8-46.3,62.6-69.5c3-3.3,5.9-6.6,8.9-9.9c-2.4,0-4.7,0-7.1,0c20.9,23.2,41.8,46.3,62.6,69.5c3,3.3,5.9,6.6,8.9,9.9c3,3.3,8.5,0.6,8.5-3.5c0-27.3,0-54.6,0-82c0-43.2,0-86.4,0-129.5c0-10,0-20,0-30c0-2.7-2.3-5-5-5c-41.9,0-83.7,0-125.6,0C64,0,58.1,0,52.3,0C45.8,0,45.8,10,52.3,10z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -32394,15 +32394,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/bullet-point.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/bullet-point.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/bullet-point.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/bullet-point.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32410,7 +32410,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32434,12 +32434,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M125,249.3C56.4,249.3,0.7,193.6,0.7,125S56.4,0.7,125,0.7S249.3,56.4,249.3,125S193.6,249.3,125,249.3z M125,10.7C62,10.7,10.7,62,10.7,125c0,63,51.3,114.3,114.3,114.3c63,0,114.3-51.3,114.3-114.3C239.3,62,188,10.7,125,10.7z' }),
-	                React.createElement('circle', { cx: '124.3', cy: '123.7', r: '78.3' })
-	            ),
+	            React.createElement('path', { d: 'M125,249.3C56.4,249.3,0.7,193.6,0.7,125S56.4,0.7,125,0.7S249.3,56.4,249.3,125S193.6,249.3,125,249.3zM125,10.7C62,10.7,10.7,62,10.7,125c0,63,51.3,114.3,114.3,114.3c63,0,114.3-51.3,114.3-114.3C239.3,62,188,10.7,125,10.7z' }),
+	            React.createElement('circle', { cx: '124.3', cy: '123.7', r: '78.3' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -32481,15 +32477,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/buyer-assurance.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/buyer-assurance.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/buyer-assurance.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/buyer-assurance.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32497,7 +32493,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32521,12 +32517,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('polygon', { points: '221.6,315.6 168.3,252.2 139.2,276.7 220.6,373.4 375.8,201.2 347.6,175.8    ' }),
-	                React.createElement('path', { d: 'M488,205.8c-7-9.7-13-28-13-40v-34.8c0-16.8-12.5-34.1-28.5-39.3l-33.1-10.7c-11.4-3.7-27-15-34-24.7l-20.4-28.1 c-7.4-10.2-21-16.8-34.6-16.8c-4.1,0-7.9,0.6-11.5,1.8L279.7,24c-5.4,1.8-13.1,2.8-21,2.8c-8,0-15.6-1-21-2.8l-33.1-10.7 c-3.6-1.2-7.5-1.8-11.5-1.8c-13.6,0-27.2,6.6-34.6,16.8l-20.4,28.1c-7,9.7-22.6,21-34,24.7L71,91.8c-16,5.2-28.5,22.4-28.5,39.3 v34.8c0,12-5.9,30.3-13,40L9,233.9c-9.9,13.6-9.9,34.9,0,48.5l20.4,28.1c7,9.7,13,28,13,40v34.8c0,16.8,12.5,34.1,28.5,39.3 l33.1,10.7c11.4,3.7,27,15,34,24.7l20.4,28.1c7.4,10.2,21,16.8,34.6,16.8c4.1,0,7.9-0.6,11.5-1.8l33.1-10.7 c5.4-1.8,13.1-2.8,21-2.8c8,0,15.6,1,21,2.8l33.1,10.7c3.6,1.2,7.5,1.8,11.5,1.8c13.6,0,27.2-6.6,34.6-16.8l20.4-28.1 c7-9.7,22.6-21,34-24.7l33.1-10.7c16-5.2,28.5-22.4,28.5-39.3v-34.8c0-12,6-30.3,13-40l20.4-28.1c9.9-13.6,9.9-34.9,0-48.5 L488,205.8z M496.2,273.7l-20.4,28.1c-8.9,12.2-15.9,33.7-15.9,48.8v34.8c0,10.2-8.5,21.8-18.2,25l-33.1,10.7 c-14.4,4.7-32.6,17.9-41.5,30.2l-20.4,28.1c-4.5,6.2-13.8,10.6-22.5,10.6c-2.5,0-4.8-0.3-6.9-1l-33.1-10.7 c-6.9-2.3-16-3.5-25.7-3.5c-9.6,0-18.7,1.2-25.7,3.5L200,488.9c-2.1,0.7-4.4,1-6.9,1c-8.7,0-18-4.3-22.5-10.6l-20.4-28.1 c-8.9-12.2-27.1-25.5-41.5-30.2l-33.1-10.7c-9.7-3.1-18.2-14.8-18.2-25v-34.8c0-15.1-7-36.6-15.9-48.8l-20.4-28.1 c-6-8.2-6-22.7,0-30.9l20.4-28.1c8.9-12.2,15.9-33.7,15.9-48.8v-34.8c0-10.2,8.5-21.8,18.2-25l33.1-10.7 c14.4-4.7,32.6-17.9,41.5-30.2l20.4-28.1c4.5-6.2,13.8-10.6,22.5-10.6c2.5,0,4.8,0.3,6.9,1l33.1,10.7c6.9,2.3,16,3.5,25.7,3.5 c9.6,0,18.7-1.2,25.7-3.5l33.1-10.7c2.1-0.7,4.4-1,6.9-1c8.7,0,18,4.3,22.5,10.6l20.4,28.1c8.9,12.2,27.1,25.5,41.5,30.2l33.1,10.7 c9.7,3.1,18.2,14.8,18.2,25v34.8c0,15.1,7,36.6,15.9,48.8l20.4,28.1C502.2,251,502.2,265.4,496.2,273.7z' })
-	            ),
+	            React.createElement('polygon', { points: '221.6,315.6 168.3,252.2 139.2,276.7 220.6,373.4 375.8,201.2 347.6,175.8    ' }),
+	            React.createElement('path', { d: 'M488,205.8c-7-9.7-13-28-13-40v-34.8c0-16.8-12.5-34.1-28.5-39.3l-33.1-10.7c-11.4-3.7-27-15-34-24.7l-20.4-28.1c-7.4-10.2-21-16.8-34.6-16.8c-4.1,0-7.9,0.6-11.5,1.8L279.7,24c-5.4,1.8-13.1,2.8-21,2.8c-8,0-15.6-1-21-2.8l-33.1-10.7c-3.6-1.2-7.5-1.8-11.5-1.8c-13.6,0-27.2,6.6-34.6,16.8l-20.4,28.1c-7,9.7-22.6,21-34,24.7L71,91.8c-16,5.2-28.5,22.4-28.5,39.3v34.8c0,12-5.9,30.3-13,40L9,233.9c-9.9,13.6-9.9,34.9,0,48.5l20.4,28.1c7,9.7,13,28,13,40v34.8c0,16.8,12.5,34.1,28.5,39.3l33.1,10.7c11.4,3.7,27,15,34,24.7l20.4,28.1c7.4,10.2,21,16.8,34.6,16.8c4.1,0,7.9-0.6,11.5-1.8l33.1-10.7c5.4-1.8,13.1-2.8,21-2.8c8,0,15.6,1,21,2.8l33.1,10.7c3.6,1.2,7.5,1.8,11.5,1.8c13.6,0,27.2-6.6,34.6-16.8l20.4-28.1c7-9.7,22.6-21,34-24.7l33.1-10.7c16-5.2,28.5-22.4,28.5-39.3v-34.8c0-12,6-30.3,13-40l20.4-28.1c9.9-13.6,9.9-34.9,0-48.5L488,205.8z M496.2,273.7l-20.4,28.1c-8.9,12.2-15.9,33.7-15.9,48.8v34.8c0,10.2-8.5,21.8-18.2,25l-33.1,10.7c-14.4,4.7-32.6,17.9-41.5,30.2l-20.4,28.1c-4.5,6.2-13.8,10.6-22.5,10.6c-2.5,0-4.8-0.3-6.9-1l-33.1-10.7c-6.9-2.3-16-3.5-25.7-3.5c-9.6,0-18.7,1.2-25.7,3.5L200,488.9c-2.1,0.7-4.4,1-6.9,1c-8.7,0-18-4.3-22.5-10.6l-20.4-28.1c-8.9-12.2-27.1-25.5-41.5-30.2l-33.1-10.7c-9.7-3.1-18.2-14.8-18.2-25v-34.8c0-15.1-7-36.6-15.9-48.8l-20.4-28.1c-6-8.2-6-22.7,0-30.9l20.4-28.1c8.9-12.2,15.9-33.7,15.9-48.8v-34.8c0-10.2,8.5-21.8,18.2-25l33.1-10.7c14.4-4.7,32.6-17.9,41.5-30.2l20.4-28.1c4.5-6.2,13.8-10.6,22.5-10.6c2.5,0,4.8,0.3,6.9,1l33.1,10.7c6.9,2.3,16,3.5,25.7,3.5c9.6,0,18.7-1.2,25.7-3.5l33.1-10.7c2.1-0.7,4.4-1,6.9-1c8.7,0,18,4.3,22.5,10.6l20.4,28.1c8.9,12.2,27.1,25.5,41.5,30.2l33.1,10.7c9.7,3.1,18.2,14.8,18.2,25v34.8c0,15.1,7,36.6,15.9,48.8l20.4,28.1C502.2,251,502.2,265.4,496.2,273.7z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -32568,15 +32560,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/cancel-circle.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/cancel-circle.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/cancel-circle.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/cancel-circle.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32584,7 +32576,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32608,8 +32600,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { fill: '#010101', d: 'M125.2-0.2C56.2-0.2,0,56,0,125s56.2,125.2,125.2,125.2c69.1,0,125.2-56.1,125.2-125.1S194.2-0.2,125.2-0.2\r z M125.3,241.1C61.2,241.1,9.1,189,9.1,125S61.2,8.8,125.2,8.8c64.1,0,116.3,52,116.3,116.1S189.4,241.1,125.3,241.1z' }),
-	            React.createElement('polygon', { fill: '#010101', points: '162.9,100.5 150.2,87.8 124.8,113.3 98.2,86.8 85.5,99.5 112,126 85,153 97.7,165.7 124.8,138.7 \r 150.7,164.7 163.4,152 137.5,126' }),
+	            React.createElement('path', { fill: '#010101', d: 'M125.2-0.2C56.2-0.2,0,56,0,125s56.2,125.2,125.2,125.2c69.1,0,125.2-56.1,125.2-125.1S194.2-0.2,125.2-0.2z M125.3,241.1C61.2,241.1,9.1,189,9.1,125S61.2,8.8,125.2,8.8c64.1,0,116.3,52,116.3,116.1S189.4,241.1,125.3,241.1z' }),
+	            React.createElement('polygon', { fill: '#010101', points: '162.9,100.5 150.2,87.8 124.8,113.3 98.2,86.8 85.5,99.5 112,126 85,153 97.7,165.7 124.8,138.7 150.7,164.7 163.4,152 137.5,126' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -32651,15 +32643,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/cart-open.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/cart-open.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/cart-open.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/cart-open.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32667,7 +32659,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32691,13 +32683,9 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('polygon', { points: '239.5,73.2 216.5,163 83.2,163 51.8,37 1,37 1,47 44,47 75.4,173 224.3,173 250.3,73.2' }),
-	                React.createElement('circle', { cx: '107.3', cy: '201.7', r: '11.7' }),
-	                React.createElement('circle', { cx: '193.3', cy: '201.7', r: '11.7' })
-	            ),
+	            React.createElement('polygon', { points: '239.5,73.2 216.5,163 83.2,163 51.8,37 1,37 1,47 44,47 75.4,173 224.3,173 250.3,73.2' }),
+	            React.createElement('circle', { cx: '107.3', cy: '201.7', r: '11.7' }),
+	            React.createElement('circle', { cx: '193.3', cy: '201.7', r: '11.7' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -32739,15 +32727,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/cart.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/cart.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/cart.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/cart.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32755,7 +32743,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32779,16 +32767,12 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { fill: 'none', d: 'M193.6,211.8c-4.7,0-8.6,3.9-8.6,8.7s3.9,8.7,8.6,8.7s8.6-3.9,8.6-8.7S198.3,211.8,193.6,211.8z' }),
-	                React.createElement('path', { fill: 'none', d: 'M100.4,211.8c-4.7,0-8.6,3.9-8.6,8.7s3.9,8.7,8.6,8.7c4.7,0,8.6-3.9,8.6-8.7S105.1,211.8,100.4,211.8z' }),
-	                React.createElement('path', { d: 'M61.6,53L50.8,7H0v11h42.2l9.5,40.4L74.1,181h149.5l25.1-128H61.6z M214.7,170H83.1L63.7,64h171.7L214.7,170z' }),
-	                React.createElement('path', { d: 'M100.4,199.8c-11.3,0-20.4,9.3-20.4,20.7s9.2,20.7,20.4,20.7s20.4-9.3,20.4-20.7S111.7,199.8,100.4,199.8z M100.4,229.1 c-4.7,0-8.6-3.9-8.6-8.7s3.9-8.7,8.6-8.7c4.7,0,8.6,3.9,8.6,8.7S105.1,229.1,100.4,229.1z' }),
-	                React.createElement('path', { d: 'M193.6,199.8c-11.3,0-20.4,9.3-20.4,20.7s9.2,20.7,20.4,20.7s20.4-9.3,20.4-20.7S204.9,199.8,193.6,199.8z M193.6,229.1 c-4.7,0-8.6-3.9-8.6-8.7s3.9-8.7,8.6-8.7s8.6,3.9,8.6,8.7S198.3,229.1,193.6,229.1z' }),
-	                React.createElement('polygon', { fill: 'none', points: '63.7,64 83.1,170 214.7,170 235.5,64    ' })
-	            ),
+	            React.createElement('path', { fill: 'none', d: 'M193.6,211.8c-4.7,0-8.6,3.9-8.6,8.7s3.9,8.7,8.6,8.7s8.6-3.9,8.6-8.7S198.3,211.8,193.6,211.8z' }),
+	            React.createElement('path', { fill: 'none', d: 'M100.4,211.8c-4.7,0-8.6,3.9-8.6,8.7s3.9,8.7,8.6,8.7c4.7,0,8.6-3.9,8.6-8.7S105.1,211.8,100.4,211.8z' }),
+	            React.createElement('path', { d: 'M61.6,53L50.8,7H0v11h42.2l9.5,40.4L74.1,181h149.5l25.1-128H61.6z M214.7,170H83.1L63.7,64h171.7L214.7,170z' }),
+	            React.createElement('path', { d: 'M100.4,199.8c-11.3,0-20.4,9.3-20.4,20.7s9.2,20.7,20.4,20.7s20.4-9.3,20.4-20.7S111.7,199.8,100.4,199.8z M100.4,229.1c-4.7,0-8.6-3.9-8.6-8.7s3.9-8.7,8.6-8.7c4.7,0,8.6,3.9,8.6,8.7S105.1,229.1,100.4,229.1z' }),
+	            React.createElement('path', { d: 'M193.6,199.8c-11.3,0-20.4,9.3-20.4,20.7s9.2,20.7,20.4,20.7s20.4-9.3,20.4-20.7S204.9,199.8,193.6,199.8z M193.6,229.1c-4.7,0-8.6-3.9-8.6-8.7s3.9-8.7,8.6-8.7s8.6,3.9,8.6,8.7S198.3,229.1,193.6,229.1z' }),
+	            React.createElement('polygon', { fill: 'none', points: '63.7,64 83.1,170 214.7,170 235.5,64' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -32830,15 +32814,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/chair-outlined.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/chair-outlined.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/chair-outlined.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/chair-outlined.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32846,7 +32830,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32912,15 +32896,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/checkmark-circle.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/checkmark-circle.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/checkmark-circle.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/checkmark-circle.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -32928,7 +32912,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -32953,7 +32937,7 @@
 	            'svg',
 	            this.props,
 	            React.createElement('circle', { className: 'dibsvg-checkmark-circle-background', fill: '#ffffff', cx: '125', cy: '125', r: '97.5' }),
-	            React.createElement('path', { className: 'dibsvg-checkmark-circle-foreground', d: 'M250,125c0,69-56,125-125,125S0,194,0,125S56,0,125,0S250,56,250,125z M170.7,62l-63.1,82.4L82.9,109\r l-20.5,14.3l44.3,63.5l83.9-109.6L170.7,62z' }),
+	            React.createElement('path', { className: 'dibsvg-checkmark-circle-foreground', d: 'M250,125c0,69-56,125-125,125S0,194,0,125S56,0,125,0S250,56,250,125z M170.7,62l-63.1,82.4L82.9,109l-20.5,14.3l44.3,63.5l83.9-109.6L170.7,62z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -32995,15 +32979,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/checkmark-void.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/checkmark-void.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/checkmark-void.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/checkmark-void.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33011,7 +32995,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33037,7 +33021,7 @@
 	            this.props,
 	            React.createElement('circle', { className: 'dibsvg-checkmark-void-background', fill: '#ffffff', cx: '125.5', cy: '124', r: '112.5' }),
 	            React.createElement('polygon', { className: 'dibsvg-checkmark-void-check', points: '111.5,199.4 58.5,123.6 78.9,109.2 112.9,157.8 190.3,61.9 209.7,77.5 ' }),
-	            React.createElement('path', { className: 'dibsvg-checkmark-void-void', d: 'M214,212.7c22.3-22.6,36-53.6,36-87.7C250,56.1,193.9,0,125,0S0,56.1,0,125s56.1,125,125,125\r c34.1,0,65.1-13.8,87.7-36c0.2-0.2,0.4-0.4,0.7-0.6C213.6,213.2,213.8,212.9,214,212.7z M230,125c0,25.4-9,48.6-24.1,66.8L58.2,44.1\r C76.4,29,99.6,20,125,20C182.9,20,230,67.1,230,125z M20,125c0-25.4,9-48.6,24.1-66.8L191.9,206c-18.3,15-41.5,24-66.9,24\r C67.1,230,20,182.9,20,125z' }),
+	            React.createElement('path', { className: 'dibsvg-checkmark-void-void', d: 'M214,212.7c22.3-22.6,36-53.6,36-87.7C250,56.1,193.9,0,125,0S0,56.1,0,125s56.1,125,125,125c34.1,0,65.1-13.8,87.7-36c0.2-0.2,0.4-0.4,0.7-0.6C213.6,213.2,213.8,212.9,214,212.7z M230,125c0,25.4-9,48.6-24.1,66.8L58.2,44.1C76.4,29,99.6,20,125,20C182.9,20,230,67.1,230,125z M20,125c0-25.4,9-48.6,24.1-66.8L191.9,206c-18.3,15-41.5,24-66.9,24C67.1,230,20,182.9,20,125z' }),
 	            React.createElement('rect', { x: '58.4', y: '-727.5', fill: 'none', width: '986.1', height: '925' }),
 	            React.Children.map(children, function (c) {
 	                return c;
@@ -33080,15 +33064,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/checkmark.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/checkmark.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/checkmark.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/checkmark.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33096,7 +33080,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33162,15 +33146,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-arrow-left.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-arrow-left.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-arrow-left.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-arrow-left.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33178,7 +33162,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33202,12 +33186,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M0,125 C0,56.0810811 56.0810811,0 125,0 C193.918919,0 250,56.0810811 250,125 C250,193.918919 193.918919,250 125,250 C56.0810811,250 0,193.918919 0,125 L0,125 Z M9.99034749,125 C9.99034749,188.416988 61.5830116,240.009653 125,240.009653 C188.416988,240.009653 240.009653,188.416988 240.009653,125 C240.009653,61.5830116 188.416988,9.99034749 125,9.99034749 C61.5830116,9.99034749 9.99034749,61.5830116 9.99034749,125 L9.99034749,125 Z' }),
-	                React.createElement('path', { d: 'M134.266409,179.440154 L144.88417,168.870656 L103.861004,127.702703 L145.849421,91.9401544 L136.148649,80.5501931 L81.8050193,126.833977 L134.266409,179.440154 Z' })
-	            ),
+	            React.createElement('path', { d: 'M0,125 C0,56.0810811 56.0810811,0 125,0 C193.918919,0 250,56.0810811 250,125 C250,193.918919 193.918919,250 125,250 C56.0810811,250 0,193.918919 0,125 L0,125 Z M9.99034749,125 C9.99034749,188.416988 61.5830116,240.009653 125,240.009653 C188.416988,240.009653 240.009653,188.416988 240.009653,125 C240.009653,61.5830116 188.416988,9.99034749 125,9.99034749 C61.5830116,9.99034749 9.99034749,61.5830116 9.99034749,125 L9.99034749,125 Z' }),
+	            React.createElement('path', { d: 'M134.266409,179.440154 L144.88417,168.870656 L103.861004,127.702703 L145.849421,91.9401544 L136.148649,80.5501931 L81.8050193,126.833977 L134.266409,179.440154 Z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -33249,15 +33229,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-arrow-right.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-arrow-right.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-arrow-right.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-arrow-right.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33265,7 +33245,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33289,16 +33269,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M259,518C116.2,518,0,401.8,0,259S116.2,0,259,0s259,116.2,259,259S401.8,518,259,518z M259,20.7 C127.6,20.7,20.7,127.6,20.7,259S127.6,497.3,259,497.3S497.3,390.4,497.3,259S390.4,20.7,259,20.7z' })
-	            ),
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('polygon', { points: '239.8,371.8 217.8,349.9 302.8,264.6 215.8,190.5 235.9,166.9 348.5,262.8' })
-	            ),
+	            React.createElement('path', { d: 'M259,518C116.2,518,0,401.8,0,259S116.2,0,259,0s259,116.2,259,259S401.8,518,259,518z M259,20.7C127.6,20.7,20.7,127.6,20.7,259S127.6,497.3,259,497.3S497.3,390.4,497.3,259S390.4,20.7,259,20.7z' }),
+	            React.createElement('polygon', { points: '239.8,371.8 217.8,349.9 302.8,264.6 215.8,190.5 235.9,166.9 348.5,262.8' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -33340,15 +33312,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-cancel.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-cancel.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-cancel.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-cancel.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33356,7 +33328,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33380,7 +33352,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M125.2-0.2C56.2-0.2,0,56,0,125s56.2,125.2,125.2,125.2c69.1,0,125.2-56.1,125.2-125.1S194.2-0.2,125.2-0.2 z M125.3,241.1C61.2,241.1,9.1,189,9.1,125S61.2,8.8,125.2,8.8c64.1,0,116.3,52,116.3,116.1S189.4,241.1,125.3,241.1z' }),
+	            React.createElement('path', { d: 'M125.2-0.2C56.2-0.2,0,56,0,125s56.2,125.2,125.2,125.2c69.1,0,125.2-56.1,125.2-125.1S194.2-0.2,125.2-0.2z M125.3,241.1C61.2,241.1,9.1,189,9.1,125S61.2,8.8,125.2,8.8c64.1,0,116.3,52,116.3,116.1S189.4,241.1,125.3,241.1z' }),
 	            React.createElement('polygon', { points: '162.9,100.5 150.2,87.8 124.8,113.3 98.2,86.8 85.5,99.5 112,126 85,153 97.7,165.7 124.8,138.7 150.7,164.7 163.4,152 137.5,126' }),
 	            React.Children.map(children, function (c) {
 	                return c;
@@ -33423,15 +33395,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-check.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-check.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-check.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-check.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33439,7 +33411,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33463,7 +33435,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M125.3-0.8C56.3-0.8,0.2,55.3,0.2,124.3s56.2,125.2,125.2,125.2s125.2-56.2,125.2-125.2S194.4-0.8,125.3-0.8z M125.3,240.5 c-64.1,0-116.2-52.1-116.2-116.2S61.3,8.2,125.3,8.2s116.2,52.1,116.2,116.2S189.4,240.5,125.3,240.5z' }),
+	            React.createElement('path', { d: 'M125.3-0.8C56.3-0.8,0.2,55.3,0.2,124.3s56.2,125.2,125.2,125.2s125.2-56.2,125.2-125.2S194.4-0.8,125.3-0.8z M125.3,240.5c-64.1,0-116.2-52.1-116.2-116.2S61.3,8.2,125.3,8.2s116.2,52.1,116.2,116.2S189.4,240.5,125.3,240.5z' }),
 	            React.createElement('polygon', { points: '106.2,145.1 74.6,113.8 62,126.6 105.8,169.9 195.1,88.1 182.9,74.9' }),
 	            React.Children.map(children, function (c) {
 	                return c;
@@ -33506,15 +33478,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-contact-info.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-contact-info.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-contact-info.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-contact-info.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33522,7 +33494,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33546,8 +33518,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M124.7-0.3C55.8-0.3-0.2,55.8-0.2,124.6s56,124.9,124.9,124.9c68.9,0,124.9-56,124.9-124.8 C249.6,55.8,193.5-0.3,124.7-0.3z M124.7,240.5c-63.9,0-115.9-52-115.9-115.9S60.8,8.7,124.7,8.7c63.9,0,115.9,52,115.9,116 C240.6,188.6,188.6,240.5,124.7,240.5z' }),
-	            React.createElement('path', { d: 'M129.4,154.8c-1.3-8.2-6.9-12.4-10-13.6l-11.2-4.5l-7.6-3.4c-1.8-0.8-2.4-1.9-2.5-2.3l0-0.1l0,0 c0,0,0.1-0.1,0.1-0.1c0.2-0.2,0.4-0.4,0.6-0.6c6.2-7.5,7.5-16.4,7.6-17.4c3.1-22-8.4-28.5-10.5-29.5c-3.9-2-8.1-3-12.3-3 c-7.2,0-12.3,2.8-12.9,3.2c-13,7.9-10.2,27.4-10,29c1.4,10.2,7.4,17.4,7.7,17.7l0.1,0.1c0.2,0.2,0.4,0.4,0.5,0.5c0,0,0,0,0,0 c-0.4,1.4-1.5,2.1-1.8,2.2l-6,2.6l-13.9,5.6c-5.5,2-7.7,6.8-8.1,7.9c-1.8,4-2.4,12.9-2.6,15.6l-0.3,4.8l4.8,0 c15.9,0.1,31.9,0.1,47.4,0.1c23,0,37.2-0.1,37.4-0.1l4.8,0l-1.1-14.4L129.4,154.8z M88.3,160.8c-13.9,0-28.2,0-42.5-0.1 c0.4-3.4,0.9-6.7,1.4-7.8l0.1-0.3c0,0,0.9-2.1,2.9-2.8l14.2-5.7l5.9-2.6c1.1-0.4,5.9-2.7,7.3-8.8l0.1-0.3c0.1-0.9,0.3-3.2-0.6-5.1 c-0.7-1.3-1-1.7-2-2.9c-0.4-0.5-4.6-5.8-5.5-13l0-0.1c0-0.1-2.2-15.1,5.7-19.9c0.4-0.2,3.7-1.9,8.3-1.9c2.9,0,5.7,0.7,8.3,2 l0.4,0.2c0.1,0,7.5,3.7,5.2,20l0,0.1c0,0.1-0.9,7.1-5.6,12.7c-0.1,0.1-0.1,0.2-0.2,0.2c-0.5,0.6-1.4,1.5-2,2.7l-0.2,0.4 c-0.2,0.6-0.9,2.7-0.1,5.3c0.4,1.4,1.9,5.9,7.6,8.4l7.6,3.5l11.5,4.6c0,0,3.5,1.5,4.3,6.5l0.3,4.6 C114.8,160.7,103.5,160.8,88.3,160.8z' }),
+	            React.createElement('path', { d: 'M124.7-0.3C55.8-0.3-0.2,55.8-0.2,124.6s56,124.9,124.9,124.9c68.9,0,124.9-56,124.9-124.8C249.6,55.8,193.5-0.3,124.7-0.3z M124.7,240.5c-63.9,0-115.9-52-115.9-115.9S60.8,8.7,124.7,8.7c63.9,0,115.9,52,115.9,116C240.6,188.6,188.6,240.5,124.7,240.5z' }),
+	            React.createElement('path', { d: 'M129.4,154.8c-1.3-8.2-6.9-12.4-10-13.6l-11.2-4.5l-7.6-3.4c-1.8-0.8-2.4-1.9-2.5-2.3l0-0.1l0,0c0,0,0.1-0.1,0.1-0.1c0.2-0.2,0.4-0.4,0.6-0.6c6.2-7.5,7.5-16.4,7.6-17.4c3.1-22-8.4-28.5-10.5-29.5c-3.9-2-8.1-3-12.3-3c-7.2,0-12.3,2.8-12.9,3.2c-13,7.9-10.2,27.4-10,29c1.4,10.2,7.4,17.4,7.7,17.7l0.1,0.1c0.2,0.2,0.4,0.4,0.5,0.5c0,0,0,0,0,0c-0.4,1.4-1.5,2.1-1.8,2.2l-6,2.6l-13.9,5.6c-5.5,2-7.7,6.8-8.1,7.9c-1.8,4-2.4,12.9-2.6,15.6l-0.3,4.8l4.8,0c15.9,0.1,31.9,0.1,47.4,0.1c23,0,37.2-0.1,37.4-0.1l4.8,0l-1.1-14.4L129.4,154.8z M88.3,160.8c-13.9,0-28.2,0-42.5-0.1c0.4-3.4,0.9-6.7,1.4-7.8l0.1-0.3c0,0,0.9-2.1,2.9-2.8l14.2-5.7l5.9-2.6c1.1-0.4,5.9-2.7,7.3-8.8l0.1-0.3c0.1-0.9,0.3-3.2-0.6-5.1c-0.7-1.3-1-1.7-2-2.9c-0.4-0.5-4.6-5.8-5.5-13l0-0.1c0-0.1-2.2-15.1,5.7-19.9c0.4-0.2,3.7-1.9,8.3-1.9c2.9,0,5.7,0.7,8.3,2l0.4,0.2c0.1,0,7.5,3.7,5.2,20l0,0.1c0,0.1-0.9,7.1-5.6,12.7c-0.1,0.1-0.1,0.2-0.2,0.2c-0.5,0.6-1.4,1.5-2,2.7l-0.2,0.4c-0.2,0.6-0.9,2.7-0.1,5.3c0.4,1.4,1.9,5.9,7.6,8.4l7.6,3.5l11.5,4.6c0,0,3.5,1.5,4.3,6.5l0.3,4.6C114.8,160.7,103.5,160.8,88.3,160.8z' }),
 	            React.createElement('rect', { x: '144.3', y: '97.9', width: '66.7', height: '9' }),
 	            React.createElement('rect', { x: '144.3', y: '121.6', width: '66.7', height: '9' }),
 	            React.createElement('rect', { x: '144.3', y: '145.3', width: '66.7', height: '9' }),
@@ -33592,15 +33564,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-dollar.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-dollar.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-dollar.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-dollar.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33608,7 +33580,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33632,8 +33604,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M125.4,0C56.3,0,0.2,56.1,0.2,125.2c0,69.1,56.2,125.2,125.2,125.2c69.1,0,125.2-56.1,125.2-125.1 C250.6,56.2,194.5,0,125.4,0z M125.4,241.4c-64.1,0-116.2-52.1-116.2-116.2C9.2,61.1,61.3,9,125.4,9s116.2,52.2,116.2,116.3 C241.6,189.3,189.5,241.4,125.4,241.4z' }),
-	            React.createElement('path', { d: 'M148.2,123.9c-3.7-2.3-7.7-4.2-12.1-5.8c-4.3-1.6-8.3-3.1-12.1-4.6s-6.8-3-9.3-4.7c-2.5-1.6-3.7-3.7-3.7-6.2 c0-3.3,1.3-5.8,3.9-7.7c2.6-1.9,6.2-2.8,10.7-2.8c5,0,9.3,0.8,12.7,2.3c3.4,1.5,7.1,3.7,10.9,6.6l9.5-11c-3.4-3.4-7.1-6.2-11.2-8.5 c-4.1-2.3-9-3.8-14.8-4.4V55.7h-13.1v21.5c-8.2,1.1-14.7,3.9-19.5,8.4c-4.8,4.5-7.2,10.3-7.2,17.4c0,4.9,1.2,9,3.7,12.2 c2.5,3.2,5.5,6,9.3,8.3s7.7,4.2,12,5.8c4.3,1.6,8.3,3.2,12,4.8c3.7,1.6,6.8,3.3,9.3,5.2c2.5,1.9,3.7,4.2,3.7,7.1 c0,3.3-1.3,5.9-4,7.9c-2.7,2-6.6,3-11.9,3c-5.7,0-10.9-1-15.7-3c-4.8-2-9.6-4.5-14.3-7.7l-8.5,13c4,3.4,8.9,6.3,14.4,8.6 c5.6,2.4,11.2,3.8,16.9,4.3v23.8h13.1V172c9-1.3,15.9-4.4,20.9-9.3c5-4.9,7.5-10.8,7.5-17.8c0-5-1.2-9.2-3.7-12.5 C155,129,151.9,126.2,148.2,123.9z' }),
+	            React.createElement('path', { d: 'M125.4,0C56.3,0,0.2,56.1,0.2,125.2c0,69.1,56.2,125.2,125.2,125.2c69.1,0,125.2-56.1,125.2-125.1C250.6,56.2,194.5,0,125.4,0z M125.4,241.4c-64.1,0-116.2-52.1-116.2-116.2C9.2,61.1,61.3,9,125.4,9s116.2,52.2,116.2,116.3C241.6,189.3,189.5,241.4,125.4,241.4z' }),
+	            React.createElement('path', { d: 'M148.2,123.9c-3.7-2.3-7.7-4.2-12.1-5.8c-4.3-1.6-8.3-3.1-12.1-4.6s-6.8-3-9.3-4.7c-2.5-1.6-3.7-3.7-3.7-6.2c0-3.3,1.3-5.8,3.9-7.7c2.6-1.9,6.2-2.8,10.7-2.8c5,0,9.3,0.8,12.7,2.3c3.4,1.5,7.1,3.7,10.9,6.6l9.5-11c-3.4-3.4-7.1-6.2-11.2-8.5c-4.1-2.3-9-3.8-14.8-4.4V55.7h-13.1v21.5c-8.2,1.1-14.7,3.9-19.5,8.4c-4.8,4.5-7.2,10.3-7.2,17.4c0,4.9,1.2,9,3.7,12.2c2.5,3.2,5.5,6,9.3,8.3s7.7,4.2,12,5.8c4.3,1.6,8.3,3.2,12,4.8c3.7,1.6,6.8,3.3,9.3,5.2c2.5,1.9,3.7,4.2,3.7,7.1c0,3.3-1.3,5.9-4,7.9c-2.7,2-6.6,3-11.9,3c-5.7,0-10.9-1-15.7-3c-4.8-2-9.6-4.5-14.3-7.7l-8.5,13c4,3.4,8.9,6.3,14.4,8.6c5.6,2.4,11.2,3.8,16.9,4.3v23.8h13.1V172c9-1.3,15.9-4.4,20.9-9.3c5-4.9,7.5-10.8,7.5-17.8c0-5-1.2-9.2-3.7-12.5C155,129,151.9,126.2,148.2,123.9z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -33675,15 +33647,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-eraser.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-eraser.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-eraser.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-eraser.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33691,7 +33663,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33715,7 +33687,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M125.2-0.2C56.2-0.2,0,56,0,125s56.2,125.2,125.2,125.2c69.1,0,125.2-56.1,125.2-125.1S194.2-0.2,125.2-0.2z M123.1,119.8 l45.8,17.4l-8.4,20.7c-5,9.7-15.6,6-16.8,5.6l-23.1-8.8c-9.3-6-6.7-12.9-6.4-13.6L123.1,119.8z M172.3,128.8l-45.6-17.3l1.5-3.7 l45.7,16.9L172.3,128.8z M177.3,116.4l-45.6-16.8l35.2-83.1c15.2,5.8,28.9,14.8,40.3,26.1L177.3,116.4z M125.3,241.1 C61.2,241.1,9.1,189,9.1,125S61.2,8.8,125.2,8.8c11.5,0,22.6,1.7,33.1,4.8l-52.4,123.8c-2.3,5.1-3.1,16.9,10.3,25.2l0.4,0.2 l23.9,9.1c2.3,0.9,5.6,1.6,9.1,1.6c6.7,0,14.5-2.6,19.1-11.7l0.1-0.2l45.2-111.8c17.2,20.2,27.6,46.4,27.6,75.1 C241.5,189,189.4,241.1,125.3,241.1z' }),
+	            React.createElement('path', { d: 'M125.2-0.2C56.2-0.2,0,56,0,125s56.2,125.2,125.2,125.2c69.1,0,125.2-56.1,125.2-125.1S194.2-0.2,125.2-0.2z M123.1,119.8l45.8,17.4l-8.4,20.7c-5,9.7-15.6,6-16.8,5.6l-23.1-8.8c-9.3-6-6.7-12.9-6.4-13.6L123.1,119.8z M172.3,128.8l-45.6-17.3l1.5-3.7l45.7,16.9L172.3,128.8z M177.3,116.4l-45.6-16.8l35.2-83.1c15.2,5.8,28.9,14.8,40.3,26.1L177.3,116.4z M125.3,241.1C61.2,241.1,9.1,189,9.1,125S61.2,8.8,125.2,8.8c11.5,0,22.6,1.7,33.1,4.8l-52.4,123.8c-2.3,5.1-3.1,16.9,10.3,25.2l0.4,0.2l23.9,9.1c2.3,0.9,5.6,1.6,9.1,1.6c6.7,0,14.5-2.6,19.1-11.7l0.1-0.2l45.2-111.8c17.2,20.2,27.6,46.4,27.6,75.1C241.5,189,189.4,241.1,125.3,241.1z' }),
 	            React.createElement('path', { d: 'M63.3,150.2H92c2.5,0,4.5-2,4.5-4.5s-2-4.5-4.5-4.5H63.3c-2.5,0-4.5,2-4.5,4.5S60.8,150.2,63.3,150.2z' }),
 	            React.createElement('path', { d: 'M103,164.5H41.7c-2.5,0-4.5,2-4.5,4.5s2,4.5,4.5,4.5H103c2.5,0,4.5-2,4.5-4.5S105.5,164.5,103,164.5z' }),
 	            React.Children.map(children, function (c) {
@@ -33759,15 +33731,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-percent.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-percent.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-percent.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-percent.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33775,7 +33747,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33799,9 +33771,9 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M125-0.5C55.9-0.5-0.4,55.8-0.4,124.9c0,69.1,56.2,125.4,125.4,125.4c69.1,0,125.4-56.2,125.4-125.3 C250.4,55.8,194.1-0.5,125-0.5z M125,241.3c-64.2,0-116.4-52.2-116.4-116.4C8.6,60.7,60.8,8.5,125,8.5 c64.2,0,116.4,52.2,116.4,116.5C241.4,189.1,189.2,241.3,125,241.3z' }),
-	            React.createElement('path', { d: 'M156.9,127.3c-17.7,0-29.4,13-29.4,29.8c0,16.6,11.8,29.3,29.4,29.3c17.7,0,29.6-12.7,29.6-29.3 C186.5,140.3,174.6,127.3,156.9,127.3z M156.9,174.6c-9.3,0-15.7-7.1-15.7-17.5c0-10.7,6.4-17.8,15.7-17.8 c9.3,0,15.9,7.1,15.9,17.8C172.8,167.5,166.2,174.6,156.9,174.6z' }),
-	            React.createElement('path', { d: 'M122.7,93.2c0-16.8-12-29.8-29.8-29.8c-17.7,0-29.4,13-29.4,29.8c0,16.6,11.8,29.3,29.4,29.3 C110.7,122.5,122.7,109.8,122.7,93.2z M77.2,93.2c0-10.7,6.6-17.8,15.7-17.8c9.3,0,15.9,7.1,15.9,17.8c0,10.2-6.6,17.5-15.9,17.5 C83.8,110.7,77.2,103.4,77.2,93.2z' }),
+	            React.createElement('path', { d: 'M125-0.5C55.9-0.5-0.4,55.8-0.4,124.9c0,69.1,56.2,125.4,125.4,125.4c69.1,0,125.4-56.2,125.4-125.3C250.4,55.8,194.1-0.5,125-0.5z M125,241.3c-64.2,0-116.4-52.2-116.4-116.4C8.6,60.7,60.8,8.5,125,8.5c64.2,0,116.4,52.2,116.4,116.5C241.4,189.1,189.2,241.3,125,241.3z' }),
+	            React.createElement('path', { d: 'M156.9,127.3c-17.7,0-29.4,13-29.4,29.8c0,16.6,11.8,29.3,29.4,29.3c17.7,0,29.6-12.7,29.6-29.3C186.5,140.3,174.6,127.3,156.9,127.3z M156.9,174.6c-9.3,0-15.7-7.1-15.7-17.5c0-10.7,6.4-17.8,15.7-17.8c9.3,0,15.9,7.1,15.9,17.8C172.8,167.5,166.2,174.6,156.9,174.6z' }),
+	            React.createElement('path', { d: 'M122.7,93.2c0-16.8-12-29.8-29.8-29.8c-17.7,0-29.4,13-29.4,29.8c0,16.6,11.8,29.3,29.4,29.3C110.7,122.5,122.7,109.8,122.7,93.2z M77.2,93.2c0-10.7,6.6-17.8,15.7-17.8c9.3,0,15.9,7.1,15.9,17.8c0,10.2-6.6,17.5-15.9,17.5C83.8,110.7,77.2,103.4,77.2,93.2z' }),
 	            React.createElement('polygon', { points: '157.5,65.2 81.5,184.2 93.2,184.2 169.4,65.2' }),
 	            React.Children.map(children, function (c) {
 	                return c;
@@ -33844,15 +33816,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-plus-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-plus-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-plus-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-plus-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33860,7 +33832,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33926,15 +33898,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-plus.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-plus.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-plus.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-plus.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -33942,7 +33914,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -33966,7 +33938,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M125.2-1.2C56.2-1.2,0,55,0,124s56.2,125.2,125.2,125.2c69.1,0,125.2-56.1,125.2-125.1S194.2-1.2,125.2-1.2z M125.3,240.1 C61.2,240.1,9.1,188,9.1,124S61.2,7.8,125.2,7.8c64.1,0,116.3,52,116.3,116.1S189.4,240.1,125.3,240.1z' }),
+	            React.createElement('path', { d: 'M125.2-1.2C56.2-1.2,0,55,0,124s56.2,125.2,125.2,125.2c69.1,0,125.2-56.1,125.2-125.1S194.2-1.2,125.2-1.2z M125.3,240.1C61.2,240.1,9.1,188,9.1,124S61.2,7.8,125.2,7.8c64.1,0,116.3,52,116.3,116.1S189.4,240.1,125.3,240.1z' }),
 	            React.createElement('polygon', { points: '133.1,79.4 115.1,79.4 115.1,115.4 77.6,115.4 77.6,133.4 115.1,133.4 115.1,171.6 133.1,171.6 133.1,133.4 169.8,133.4 169.8,115.4 133.1,115.4' }),
 	            React.Children.map(children, function (c) {
 	                return c;
@@ -34009,15 +33981,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-question-mark-empty.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-question-mark-empty.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-question-mark-empty.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-question-mark-empty.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34025,7 +33997,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34049,13 +34021,9 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M258.6,0.4 C116,0.4 0,114.2 0,253.7 C0,393.2 116,507 258.6,507 C401.2,507 517.2,393.2 517.2,253.7 C517.2,114.2 401.2,0.4 258.6,0.4 L258.6,0.4 L258.6,0.4 L258.6,0.4 Z M258.6,467.9 C137.6,467.9 39.8,372 39.8,253.7 C39.8,135.4 137.6,39.5 258.6,39.5 C379.6,39.5 477.4,135.4 477.4,253.7 C477.4,372 379.6,467.9 258.6,467.9 L258.6,467.9 L258.6,467.9 L258.6,467.9 Z' }),
-	                React.createElement('path', { d: 'M255.6,349.3 C250.3,349.3 245.7,351.2 241.9,355.4 C238.1,359.6 236.2,364.1 236.2,369.8 C236.2,375.5 238.1,380 241.9,384.2 C245.7,388.4 250.2,390.3 255.6,390.3 C260.9,390.3 265.5,388.4 269.3,384.2 C273.1,380 275,375.5 275,369.8 C275,364.1 273.1,359.6 269.3,355.4 C265.4,351.5 260.9,349.3 255.6,349.3 L255.6,349.3 L255.6,349.3 Z' }),
-	                React.createElement('path', { d: 'M303.7,134.3 C299.1,129.4 293.1,125.6 285.5,122.2 C277.9,119.2 268.1,117.6 256.3,117.6 C247.2,117.6 239.2,118.7 232.4,121 C225.6,123.3 219.9,126.7 215.3,130.9 C210.7,135.1 207.3,140.4 205.1,146.1 C202.8,151.8 201.7,157.9 201.3,164.7 L226.3,164.7 L226.3,162.4 C226.3,157.8 227.1,153.7 229,149.9 C230.9,146.1 233.2,142.7 236.2,140 C239.2,137.3 242.6,135.1 246.4,133.6 C250.2,132.1 254.4,131.3 258.2,131.3 C262,131.3 265.8,132.1 270,133.6 C273.8,135.1 277.6,137 280.6,139.7 C283.6,142.4 286.3,145.4 288.2,149.2 C290.1,153 291.2,156.8 291.2,161.3 C291.2,169.3 289.3,176.1 285.9,182.5 C282.5,188.9 277.9,195 273,200.7 C267.7,206.4 262.4,212.1 256.3,217.8 C250.2,223.5 244.5,229.2 239.2,235.2 C233.9,241.3 229.3,247.7 225.5,254.5 C221.7,261.3 219.8,268.9 219.1,277.6 L219.1,281.4 C219.1,287.1 219.9,292.8 221.8,297.7 C223.3,303 226,307.2 229.4,311.4 C232.8,315.2 237,318.2 241.9,320.5 C246.8,322.8 252.9,323.9 259.7,323.9 C265.8,323.9 272.2,322 279.4,317.8 C286.6,313.6 292.7,308.3 298.4,301.1 L281.3,288.6 C277.5,293.5 273.3,298.1 268.8,302.3 C264.2,306.5 259.3,308.4 253.6,308.4 C250.9,308.4 247.9,306.9 244.9,304.2 C241.9,301.2 240.3,297.4 240.3,292.4 C240.3,285.6 242.2,279.1 246,272.7 C249.8,266.3 254.3,260.2 259.7,254.1 C265.1,248 271.1,242 277.9,235.5 C284.3,229.4 290.4,223 296.1,216.2 C301.4,209.4 306.3,202.2 309.8,194.6 C313.6,187 315.5,178.7 315.5,170 C315.5,163.6 314.7,157.5 312.8,151 C311.3,144.5 308.3,139.2 303.7,134.3 L303.7,134.3 L303.7,134.3 Z' })
-	            ),
+	            React.createElement('path', { d: 'M258.6,0.4 C116,0.4 0,114.2 0,253.7 C0,393.2 116,507 258.6,507 C401.2,507 517.2,393.2 517.2,253.7 C517.2,114.2 401.2,0.4 258.6,0.4 L258.6,0.4 L258.6,0.4 L258.6,0.4 Z M258.6,467.9 C137.6,467.9 39.8,372 39.8,253.7 C39.8,135.4 137.6,39.5 258.6,39.5 C379.6,39.5 477.4,135.4 477.4,253.7 C477.4,372 379.6,467.9 258.6,467.9 L258.6,467.9 L258.6,467.9 L258.6,467.9 Z' }),
+	            React.createElement('path', { d: 'M255.6,349.3 C250.3,349.3 245.7,351.2 241.9,355.4 C238.1,359.6 236.2,364.1 236.2,369.8 C236.2,375.5 238.1,380 241.9,384.2 C245.7,388.4 250.2,390.3 255.6,390.3 C260.9,390.3 265.5,388.4 269.3,384.2 C273.1,380 275,375.5 275,369.8 C275,364.1 273.1,359.6 269.3,355.4 C265.4,351.5 260.9,349.3 255.6,349.3 L255.6,349.3 L255.6,349.3 Z' }),
+	            React.createElement('path', { d: 'M303.7,134.3 C299.1,129.4 293.1,125.6 285.5,122.2 C277.9,119.2 268.1,117.6 256.3,117.6 C247.2,117.6 239.2,118.7 232.4,121 C225.6,123.3 219.9,126.7 215.3,130.9 C210.7,135.1 207.3,140.4 205.1,146.1 C202.8,151.8 201.7,157.9 201.3,164.7 L226.3,164.7 L226.3,162.4 C226.3,157.8 227.1,153.7 229,149.9 C230.9,146.1 233.2,142.7 236.2,140 C239.2,137.3 242.6,135.1 246.4,133.6 C250.2,132.1 254.4,131.3 258.2,131.3 C262,131.3 265.8,132.1 270,133.6 C273.8,135.1 277.6,137 280.6,139.7 C283.6,142.4 286.3,145.4 288.2,149.2 C290.1,153 291.2,156.8 291.2,161.3 C291.2,169.3 289.3,176.1 285.9,182.5 C282.5,188.9 277.9,195 273,200.7 C267.7,206.4 262.4,212.1 256.3,217.8 C250.2,223.5 244.5,229.2 239.2,235.2 C233.9,241.3 229.3,247.7 225.5,254.5 C221.7,261.3 219.8,268.9 219.1,277.6 L219.1,281.4 C219.1,287.1 219.9,292.8 221.8,297.7 C223.3,303 226,307.2 229.4,311.4 C232.8,315.2 237,318.2 241.9,320.5 C246.8,322.8 252.9,323.9 259.7,323.9 C265.8,323.9 272.2,322 279.4,317.8 C286.6,313.6 292.7,308.3 298.4,301.1 L281.3,288.6 C277.5,293.5 273.3,298.1 268.8,302.3 C264.2,306.5 259.3,308.4 253.6,308.4 C250.9,308.4 247.9,306.9 244.9,304.2 C241.9,301.2 240.3,297.4 240.3,292.4 C240.3,285.6 242.2,279.1 246,272.7 C249.8,266.3 254.3,260.2 259.7,254.1 C265.1,248 271.1,242 277.9,235.5 C284.3,229.4 290.4,223 296.1,216.2 C301.4,209.4 306.3,202.2 309.8,194.6 C313.6,187 315.5,178.7 315.5,170 C315.5,163.6 314.7,157.5 312.8,151 C311.3,144.5 308.3,139.2 303.7,134.3 L303.7,134.3 L303.7,134.3 Z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -34097,15 +34065,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-question-mark-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-question-mark-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/circle-question-mark-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/circle-question-mark-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34113,7 +34081,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34179,15 +34147,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/clock.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/clock.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/clock.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/clock.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34195,7 +34163,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34219,12 +34187,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M125,0.7C56.4,0.7,0.7,56.4,0.7,125S56.4,249.3,125,249.3S249.3,193.6,249.3,125S193.6,0.7,125,0.7z M125,239.3 C62,239.3,10.7,188,10.7,125C10.7,62,62,10.7,125,10.7c63,0,114.3,51.3,114.3,114.3C239.3,188,188,239.3,125,239.3z' }),
-	                React.createElement('polygon', { points: '87.1,48.8 78,53.2 120.9,139 190,139 190,129 127.2,129' })
-	            ),
+	            React.createElement('path', { d: 'M125,0.7C56.4,0.7,0.7,56.4,0.7,125S56.4,249.3,125,249.3S249.3,193.6,249.3,125S193.6,0.7,125,0.7z M125,239.3C62,239.3,10.7,188,10.7,125C10.7,62,62,10.7,125,10.7c63,0,114.3,51.3,114.3,114.3C239.3,188,188,239.3,125,239.3z' }),
+	            React.createElement('polygon', { points: '87.1,48.8 78,53.2 120.9,139 190,139 190,129 127.2,129' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -34266,15 +34230,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/close.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/close.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/close.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/close.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34282,7 +34246,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34348,15 +34312,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/commuter-train.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/commuter-train.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/commuter-train.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/commuter-train.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34364,7 +34328,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34388,14 +34352,10 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M67.3,156.8c-1.5,1.5-2.2,3.5-2.2,5.5c0,2,0.7,4,2.2,5.5c1.5,1.5,3.5,2.2,5.5,2.2s4-0.7,5.5-2.2c1.5-1.5,2.2-3.5,2.2-5.5\r s-0.7-4-2.2-5.5C75.5,153.8,70.3,153.8,67.3,156.8z' }),
-	                React.createElement('path', { d: 'M172.7,156.8c-1.5,1.5-2.2,3.5-2.2,5.5c0,2,0.7,4,2.5,5.5c1.5,1.5,3.5,2.2,5.5,2.2c2,0,4-0.7,5.5-2.2\r c1.5-1.5,2.2-3.5,2.2-5.5s-0.7-4-2.2-5.5C180.7,153.8,175.5,153.8,172.7,156.8z' }),
-	                React.createElement('path', { d: 'M226.9,176.2V46.4c0-22.4-19.1-38.3-36.8-38.3h-49.2c-1-4.5-5-8-9.4-8h-14.9c-4.5,0-8.2,3.5-9.4,8H60.9\r c-22.4,0-37.5,15.9-37.5,38.3v129.8c0,14.2,12.4,32.3,31.3,35.8l-30.8,30.6c-1,1-1,2.7,0,4l1.5,1.5c1,1,2.7,1,4,0l35.5-35.5h120.3\r l35.5,35.5c1,1,2.7,1,4,0l1.5-1.5c1-1,1-2.7,0-4l-31.1-30.3C212.8,209.8,226.9,194.8,226.9,176.2z M190.1,204.5h-2.7\r c-0.7-0.2-1.5-0.2-2.2,0H64.3c-0.7-0.2-1.5-0.2-2.2,0h-1.2c-13.7,0-29.8-14.9-29.8-28.6V46.4c0-19.1,13.4-30.6,29.8-30.6h47\r c1.5,3.5,5,6,8.7,6h14.9c3.7,0,7.2-2.5,8.7-6h50.2c13.7,0,29.1,16.9,29.1,30.6v129.8C219.2,189.6,203.8,204.5,190.1,204.5z' }),
-	                React.createElement('path', { d: 'M169.7,35.7H81.5c-16.7,0-30.1,13.4-30.1,30.1v52.9c0,4.2,3.5,7.2,7.7,7.2h132.7c4.2,0,7.7-3,7.7-7.2V65.8\r C199.8,49.2,186.2,35.7,169.7,35.7z M191.4,117.3H59.9V65.8c0-8,9.9-20.9,17.9-20.9H173c8,0,18.4,12.9,18.4,20.9L191.4,117.3\r L191.4,117.3z' })
-	            ),
+	            React.createElement('path', { d: 'M67.3,156.8c-1.5,1.5-2.2,3.5-2.2,5.5c0,2,0.7,4,2.2,5.5c1.5,1.5,3.5,2.2,5.5,2.2s4-0.7,5.5-2.2c1.5-1.5,2.2-3.5,2.2-5.5s-0.7-4-2.2-5.5C75.5,153.8,70.3,153.8,67.3,156.8z' }),
+	            React.createElement('path', { d: 'M172.7,156.8c-1.5,1.5-2.2,3.5-2.2,5.5c0,2,0.7,4,2.5,5.5c1.5,1.5,3.5,2.2,5.5,2.2c2,0,4-0.7,5.5-2.2c1.5-1.5,2.2-3.5,2.2-5.5s-0.7-4-2.2-5.5C180.7,153.8,175.5,153.8,172.7,156.8z' }),
+	            React.createElement('path', { d: 'M226.9,176.2V46.4c0-22.4-19.1-38.3-36.8-38.3h-49.2c-1-4.5-5-8-9.4-8h-14.9c-4.5,0-8.2,3.5-9.4,8H60.9c-22.4,0-37.5,15.9-37.5,38.3v129.8c0,14.2,12.4,32.3,31.3,35.8l-30.8,30.6c-1,1-1,2.7,0,4l1.5,1.5c1,1,2.7,1,4,0l35.5-35.5h120.3l35.5,35.5c1,1,2.7,1,4,0l1.5-1.5c1-1,1-2.7,0-4l-31.1-30.3C212.8,209.8,226.9,194.8,226.9,176.2z M190.1,204.5h-2.7c-0.7-0.2-1.5-0.2-2.2,0H64.3c-0.7-0.2-1.5-0.2-2.2,0h-1.2c-13.7,0-29.8-14.9-29.8-28.6V46.4c0-19.1,13.4-30.6,29.8-30.6h47c1.5,3.5,5,6,8.7,6h14.9c3.7,0,7.2-2.5,8.7-6h50.2c13.7,0,29.1,16.9,29.1,30.6v129.8C219.2,189.6,203.8,204.5,190.1,204.5z' }),
+	            React.createElement('path', { d: 'M169.7,35.7H81.5c-16.7,0-30.1,13.4-30.1,30.1v52.9c0,4.2,3.5,7.2,7.7,7.2h132.7c4.2,0,7.7-3,7.7-7.2V65.8C199.8,49.2,186.2,35.7,169.7,35.7z M191.4,117.3H59.9V65.8c0-8,9.9-20.9,17.9-20.9H173c8,0,18.4,12.9,18.4,20.9L191.4,117.3L191.4,117.3z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -34437,15 +34397,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/congratulations.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/congratulations.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/congratulations.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/congratulations.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34453,7 +34413,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34477,17 +34437,13 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('circle', { cx: '60.8', cy: '95.6', r: '4.1' }),
-	                React.createElement('circle', { cx: '54.8', cy: '110.9', r: '4.1' }),
-	                React.createElement('circle', { cx: '78.4', cy: '147.1', r: '4.1' }),
-	                React.createElement('circle', { cx: '192.8', cy: '91.9', r: '4.1' }),
-	                React.createElement('circle', { cx: '153.4', cy: '75.8', r: '4.1' }),
-	                React.createElement('circle', { cx: '194.5', cy: '111.7', r: '4.1' }),
-	                React.createElement('path', { d: 'M235.6,198.5l-22.7,6.9l-16.9-55.6c0.9-0.4,1.6-0.7,2.1-1c24.5-13.3,23.5-37.3,19.6-48.2l-36.7-100L118,19.9l5.6,23.4\r L62.1,26.9l-32.8,98.2l-0.1,0.2c-8.9,32.2,11.6,46,20.8,50.4c0.4,0.2,0.8,0.4,1.2,0.5l-14.9,56l-22.9-6.1l-2.3,8.7l54.5,14.5\r l2.3-8.7l-22.9-6.1l15-56.1c0.9,0.2,1.8,0.2,2.3,0.3c1,0.1,2,0.1,3,0.1c25.7,0,36.8-20.1,39-30.7l20.6-99.6l17.1,72l0.1,0.2\r c8.2,28,28.1,32.1,39.2,32.1c1.6,0,3.3-0.1,5-0.3c0.4,0,0.9-0.1,1.3-0.2l16.8,55.5l-22.7,6.9l2.6,8.6l54-16.4L235.6,198.5z\r M95.4,146.4c-0.2,1-5.3,23.5-30.2,23.5c-0.8,0-1.6,0-2.5-0.1c-1.5-0.1-6.6-1.1-8.9-2.2c-20.7-9.9-18.9-29.1-16-39.8l17.4-52\r c2.5-0.7,9.2-1.7,16.5,5.3c0.2,0.1,11.8,10.8,26,10.8c3,0,6.1-0.5,9.2-1.6L95.4,146.4z M108.5,83.2c-6.4,3.7-13.7,3.9-21.6,0.6\r c-6.5-2.7-11-6.9-11-6.9c-7-6.8-13.9-7.8-18.5-7.4L68,37.8l47.3,12.6L108.5,83.2z M175.5,11.8l11.5,31.5c-3.5,6.5-9.6,10.5-18,11.9\r c-7,1.1-13,0-13,0c-9.5-2-15.9,0.7-19.7,3.5L128.7,26L175.5,11.8z M185.2,143.8c-1.3,0.1-2.7,0.2-4,0.2c-19,0-27.1-13.9-30.6-25.6\r L138,65.1c1.7-1.9,6.9-6.3,16.9-4.2c0.2,0.1,22.9,4.4,34.8-10.7l19.6,53.5c0.4,1,8.4,24.2-15.4,37.2\r C192.6,141.7,187.7,143.5,185.2,143.8z' })
-	            ),
+	            React.createElement('circle', { cx: '60.8', cy: '95.6', r: '4.1' }),
+	            React.createElement('circle', { cx: '54.8', cy: '110.9', r: '4.1' }),
+	            React.createElement('circle', { cx: '78.4', cy: '147.1', r: '4.1' }),
+	            React.createElement('circle', { cx: '192.8', cy: '91.9', r: '4.1' }),
+	            React.createElement('circle', { cx: '153.4', cy: '75.8', r: '4.1' }),
+	            React.createElement('circle', { cx: '194.5', cy: '111.7', r: '4.1' }),
+	            React.createElement('path', { d: 'M235.6,198.5l-22.7,6.9l-16.9-55.6c0.9-0.4,1.6-0.7,2.1-1c24.5-13.3,23.5-37.3,19.6-48.2l-36.7-100L118,19.9l5.6,23.4L62.1,26.9l-32.8,98.2l-0.1,0.2c-8.9,32.2,11.6,46,20.8,50.4c0.4,0.2,0.8,0.4,1.2,0.5l-14.9,56l-22.9-6.1l-2.3,8.7l54.5,14.5l2.3-8.7l-22.9-6.1l15-56.1c0.9,0.2,1.8,0.2,2.3,0.3c1,0.1,2,0.1,3,0.1c25.7,0,36.8-20.1,39-30.7l20.6-99.6l17.1,72l0.1,0.2c8.2,28,28.1,32.1,39.2,32.1c1.6,0,3.3-0.1,5-0.3c0.4,0,0.9-0.1,1.3-0.2l16.8,55.5l-22.7,6.9l2.6,8.6l54-16.4L235.6,198.5zM95.4,146.4c-0.2,1-5.3,23.5-30.2,23.5c-0.8,0-1.6,0-2.5-0.1c-1.5-0.1-6.6-1.1-8.9-2.2c-20.7-9.9-18.9-29.1-16-39.8l17.4-52c2.5-0.7,9.2-1.7,16.5,5.3c0.2,0.1,11.8,10.8,26,10.8c3,0,6.1-0.5,9.2-1.6L95.4,146.4z M108.5,83.2c-6.4,3.7-13.7,3.9-21.6,0.6c-6.5-2.7-11-6.9-11-6.9c-7-6.8-13.9-7.8-18.5-7.4L68,37.8l47.3,12.6L108.5,83.2z M175.5,11.8l11.5,31.5c-3.5,6.5-9.6,10.5-18,11.9c-7,1.1-13,0-13,0c-9.5-2-15.9,0.7-19.7,3.5L128.7,26L175.5,11.8z M185.2,143.8c-1.3,0.1-2.7,0.2-4,0.2c-19,0-27.1-13.9-30.6-25.6L138,65.1c1.7-1.9,6.9-6.3,16.9-4.2c0.2,0.1,22.9,4.4,34.8-10.7l19.6,53.5c0.4,1,8.4,24.2-15.4,37.2C192.6,141.7,187.7,143.5,185.2,143.8z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -34529,15 +34485,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/connection-error.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/connection-error.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/connection-error.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/connection-error.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34545,7 +34501,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34569,12 +34525,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M247.3,73.2c-13.8-8-27.9-14.6-42.3-19.8l43.5-43.5c2.1-2.1,2.1-5.6,0-7.8c-2.1-2.1-5.6-2.1-7.8,0l-47.4,47.4\r c-12.9-3.9-26-6.7-39.3-8.3c-25.7-3.1-51.9-1.8-77.8,3.9C32,54.8,4.1,73.6,2.9,74.4c-2.5,1.7-3.2,5.1-1.4,7.6\r c1.1,1.6,2.8,2.4,4.6,2.4c1.1,0,2.2-0.3,3.1-1C9.4,83.3,36.8,64.9,79,55.8c24.7-5.4,49.6-6.6,74-3.6c10.6,1.3,21,3.4,31.4,6.2\r l-39.8,39.8c-21-2.4-39.7-0.4-54.3,2.9c-31.5,7.1-51.4,20.8-52.2,21.4c-2.5,1.7-3.1,5.2-1.3,7.7c1.1,1.5,2.8,2.3,4.5,2.3\r c1.1,0,2.2-0.3,3.2-1c0.2-0.1,19.3-13.2,48.7-19.7c14-3.1,27.8-4.2,41.4-3.5L1.6,241.1c-2.1,2.1-2.1,5.6,0,7.8\r c1.1,1.1,2.5,1.6,3.9,1.6s2.8-0.5,3.9-1.6l65.5-65.5c0.4,0.1,0.7,0.1,1.1,0.1c1.1,0,2.1-0.3,3.1-0.9c0.1-0.1,11.3-7.4,28.3-11\r c22.5-4.8,44-1.2,64,10.7c2.6,1.6,6,0.7,7.6-1.9c1.6-2.6,0.7-6-1.9-7.5c-28.2-16.7-54.9-15.7-72.4-11.9c-3.6,0.8-6.9,1.7-10,2.7\r l54-54c19.8,3,39.1,10.1,57.8,21.3c2.6,1.6,6,0.7,7.6-1.9c1.6-2.6,0.7-6-1.9-7.5c-18.8-11.2-37.1-17.8-54.2-21.2L196.3,62\r c15.4,5.2,30.6,12,45.4,20.7c2.6,1.5,6,0.7,7.6-2C250.8,78.1,249.9,74.7,247.3,73.2z' }),
-	                React.createElement('ellipse', { cx: '124.2', cy: '225', rx: '10.1', ry: '10' })
-	            ),
+	            React.createElement('path', { d: 'M247.3,73.2c-13.8-8-27.9-14.6-42.3-19.8l43.5-43.5c2.1-2.1,2.1-5.6,0-7.8c-2.1-2.1-5.6-2.1-7.8,0l-47.4,47.4c-12.9-3.9-26-6.7-39.3-8.3c-25.7-3.1-51.9-1.8-77.8,3.9C32,54.8,4.1,73.6,2.9,74.4c-2.5,1.7-3.2,5.1-1.4,7.6c1.1,1.6,2.8,2.4,4.6,2.4c1.1,0,2.2-0.3,3.1-1C9.4,83.3,36.8,64.9,79,55.8c24.7-5.4,49.6-6.6,74-3.6c10.6,1.3,21,3.4,31.4,6.2l-39.8,39.8c-21-2.4-39.7-0.4-54.3,2.9c-31.5,7.1-51.4,20.8-52.2,21.4c-2.5,1.7-3.1,5.2-1.3,7.7c1.1,1.5,2.8,2.3,4.5,2.3c1.1,0,2.2-0.3,3.2-1c0.2-0.1,19.3-13.2,48.7-19.7c14-3.1,27.8-4.2,41.4-3.5L1.6,241.1c-2.1,2.1-2.1,5.6,0,7.8c1.1,1.1,2.5,1.6,3.9,1.6s2.8-0.5,3.9-1.6l65.5-65.5c0.4,0.1,0.7,0.1,1.1,0.1c1.1,0,2.1-0.3,3.1-0.9c0.1-0.1,11.3-7.4,28.3-11c22.5-4.8,44-1.2,64,10.7c2.6,1.6,6,0.7,7.6-1.9c1.6-2.6,0.7-6-1.9-7.5c-28.2-16.7-54.9-15.7-72.4-11.9c-3.6,0.8-6.9,1.7-10,2.7l54-54c19.8,3,39.1,10.1,57.8,21.3c2.6,1.6,6,0.7,7.6-1.9c1.6-2.6,0.7-6-1.9-7.5c-18.8-11.2-37.1-17.8-54.2-21.2L196.3,62c15.4,5.2,30.6,12,45.4,20.7c2.6,1.5,6,0.7,7.6-2C250.8,78.1,249.9,74.7,247.3,73.2z' }),
+	            React.createElement('ellipse', { cx: '124.2', cy: '225', rx: '10.1', ry: '10' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -34616,15 +34568,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/customer-support.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/customer-support.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/customer-support.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/customer-support.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34632,7 +34584,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34656,7 +34608,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M518.6,270.8h-44.4c-1.4-9.6-5.4-26-16.1-40.4c-0.5-0.6-11-14.2-27.5-20.2c13.1-8.4,21.8-23.1,21.8-39.8 c0-26.1-21.2-47.3-47.3-47.3s-47.3,21.2-47.3,47.3c0,16.5,8.5,31,21.3,39.5c-9.9,3.1-20.9,9-29.7,20.5 c-9.2-19.3-22.4-31.7-33.9-39.4c-8.1-5.4-16.2-9-23-11.4c20.8-11.7,34.9-33.9,34.9-59.4c0-37.5-30.5-68.1-68.1-68.1 c-37.5,0-68.1,30.5-68.1,68.1c0,25.1,13.7,47.1,34,58.9c-24.1,7.3-42.9,24.2-55.2,49.8c-0.2,0.4-0.3,0.7-0.5,1.1 c-8.7-11.2-19.6-17.1-29.4-20.1c12.8-8.5,21.3-23,21.3-39.5c0-26.1-21.2-47.3-47.3-47.3c-26.1,0-47.3,21.2-47.3,47.3 c0,16.7,8.7,31.5,21.9,39.9c-17.2,6.1-26.1,17.9-27.7,20.2c-10,12.5-14.2,30.2-15.8,40.3H0v14.4h31.2v170.4H487V285.2h31.5V270.8z M405,137.6c18.1,0,32.9,14.8,32.9,32.9s-14.8,32.9-32.9,32.9s-32.9-14.8-32.9-32.9S386.9,137.6,405,137.6z M389,222.3 c7.6-1.5,27-0.8,32,0.2c15,3,25.5,16.5,25.6,16.6c8.1,10.9,11.5,23.5,13,31.7h-99.2c-0.9-8.6-2.5-16.4-4.5-23.5 C364.3,230.4,378.4,224.4,389,222.3z M205.7,120.3c0-29.6,24.1-53.7,53.7-53.7c29.6,0,53.7,24.1,53.7,53.7S288.9,174,259.3,174 C229.7,174,205.7,149.9,205.7,120.3z M249.2,189.5l0.8-0.1c0,0,4.8-0.8,11.3-0.8c3.8,0,7.5,0.3,10.9,0.8l0.4,0.1 c0.2,0,17.7,2,35.5,13.9c21.7,14.6,34.4,37.3,37.9,67.4H172.1c1.3-8.3,4.3-21.9,10.9-35.6C196.8,206.5,219,191.2,249.2,189.5z M114.2,137.6c18.1,0,32.9,14.8,32.9,32.9s-14.8,32.9-32.9,32.9s-32.9-14.8-32.9-32.9S96,137.6,114.2,137.6z M72.5,239.3l0.4-0.6 c0.3-0.5,8.4-12.3,25.6-16.3c4.4-1,23.7-1.7,31.8-0.1c10.4,2,24.3,8,32.8,24.4c-3.1,9.8-4.7,18.4-5.5,24.1H59.9 C61.5,261.9,65.1,248.4,72.5,239.3z M472.6,441.2h-427V285.9h427V441.2z' }),
+	            React.createElement('path', { d: 'M518.6,270.8h-44.4c-1.4-9.6-5.4-26-16.1-40.4c-0.5-0.6-11-14.2-27.5-20.2c13.1-8.4,21.8-23.1,21.8-39.8c0-26.1-21.2-47.3-47.3-47.3s-47.3,21.2-47.3,47.3c0,16.5,8.5,31,21.3,39.5c-9.9,3.1-20.9,9-29.7,20.5c-9.2-19.3-22.4-31.7-33.9-39.4c-8.1-5.4-16.2-9-23-11.4c20.8-11.7,34.9-33.9,34.9-59.4c0-37.5-30.5-68.1-68.1-68.1c-37.5,0-68.1,30.5-68.1,68.1c0,25.1,13.7,47.1,34,58.9c-24.1,7.3-42.9,24.2-55.2,49.8c-0.2,0.4-0.3,0.7-0.5,1.1c-8.7-11.2-19.6-17.1-29.4-20.1c12.8-8.5,21.3-23,21.3-39.5c0-26.1-21.2-47.3-47.3-47.3c-26.1,0-47.3,21.2-47.3,47.3c0,16.7,8.7,31.5,21.9,39.9c-17.2,6.1-26.1,17.9-27.7,20.2c-10,12.5-14.2,30.2-15.8,40.3H0v14.4h31.2v170.4H487V285.2h31.5V270.8zM405,137.6c18.1,0,32.9,14.8,32.9,32.9s-14.8,32.9-32.9,32.9s-32.9-14.8-32.9-32.9S386.9,137.6,405,137.6z M389,222.3c7.6-1.5,27-0.8,32,0.2c15,3,25.5,16.5,25.6,16.6c8.1,10.9,11.5,23.5,13,31.7h-99.2c-0.9-8.6-2.5-16.4-4.5-23.5C364.3,230.4,378.4,224.4,389,222.3z M205.7,120.3c0-29.6,24.1-53.7,53.7-53.7c29.6,0,53.7,24.1,53.7,53.7S288.9,174,259.3,174C229.7,174,205.7,149.9,205.7,120.3z M249.2,189.5l0.8-0.1c0,0,4.8-0.8,11.3-0.8c3.8,0,7.5,0.3,10.9,0.8l0.4,0.1c0.2,0,17.7,2,35.5,13.9c21.7,14.6,34.4,37.3,37.9,67.4H172.1c1.3-8.3,4.3-21.9,10.9-35.6C196.8,206.5,219,191.2,249.2,189.5zM114.2,137.6c18.1,0,32.9,14.8,32.9,32.9s-14.8,32.9-32.9,32.9s-32.9-14.8-32.9-32.9S96,137.6,114.2,137.6z M72.5,239.3l0.4-0.6c0.3-0.5,8.4-12.3,25.6-16.3c4.4-1,23.7-1.7,31.8-0.1c10.4,2,24.3,8,32.8,24.4c-3.1,9.8-4.7,18.4-5.5,24.1H59.9C61.5,261.9,65.1,248.4,72.5,239.3z M472.6,441.2h-427V285.9h427V441.2z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -34698,15 +34650,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/do-not-edit.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/do-not-edit.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/do-not-edit.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/do-not-edit.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34714,7 +34666,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34738,17 +34690,9 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('rect', { x: '67.9', y: '97.3', transform: 'matrix(0.7071 -0.7071 0.7071 0.7071 -44.1474 128.0603)', className: 'do-not-edit-pencil', width: '129.1', height: '40.1' }),
-	                React.createElement('polygon', { className: 'do-not-edit-pencil', points: '79.8,170.1 92.6,182.9 75.1,187.6 57.5,192.3 62.2,174.8 66.9,157.2' })
-	            ),
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { className: 'do-not-edit-circle', d: 'M124.9,249.8C56,249.8,0,193.8,0,124.9S56,0,124.9,0s124.9,56,124.9,124.9S193.8,249.8,124.9,249.8z M42.7,52 c-17.3,19.4-27.8,45-27.8,73c0,60.6,49.3,109.9,109.9,109.9c28,0,53.5-10.5,73-27.8L42.7,52z M53.4,41.5l155,155 c16.5-19.2,26.5-44.2,26.5-71.5C234.9,64.3,185.5,15,124.9,15C97.6,15,72.6,25,53.4,41.5z' })
-	            ),
+	            React.createElement('rect', { x: '67.9', y: '97.3', transform: 'matrix(0.7071 -0.7071 0.7071 0.7071 -44.1474 128.0603)', className: 'do-not-edit-pencil', width: '129.1', height: '40.1' }),
+	            React.createElement('polygon', { className: 'do-not-edit-pencil', points: '79.8,170.1 92.6,182.9 75.1,187.6 57.5,192.3 62.2,174.8 66.9,157.2' }),
+	            React.createElement('path', { className: 'do-not-edit-circle', d: 'M124.9,249.8C56,249.8,0,193.8,0,124.9S56,0,124.9,0s124.9,56,124.9,124.9S193.8,249.8,124.9,249.8z M42.7,52c-17.3,19.4-27.8,45-27.8,73c0,60.6,49.3,109.9,109.9,109.9c28,0,53.5-10.5,73-27.8L42.7,52z M53.4,41.5l155,155c16.5-19.2,26.5-44.2,26.5-71.5C234.9,64.3,185.5,15,124.9,15C97.6,15,72.6,25,53.4,41.5z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -34785,29 +34729,29 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var _components = {
-	      DotsSpinner: {
-	            displayName: 'DotsSpinner'
-	      }
+	    DotsSpinner: {
+	        displayName: 'DotsSpinner'
+	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	      filename: '/Users/Teddy/projects/dibs-vg/src/dots-spinner.svg',
-	      components: _components,
-	      locals: [module],
-	      imports: [_react3.default]
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/dots-spinner.svg',
+	    components: _components,
+	    locals: [module],
+	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	      filename: '/Users/Teddy/projects/dibs-vg/src/dots-spinner.svg',
-	      components: _components,
-	      locals: [],
-	      imports: [_react3.default, _index2.default]
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/dots-spinner.svg',
+	    components: _components,
+	    locals: [],
+	    imports: [_react3.default, _index2.default]
 	});
 	
 	function _wrapComponent(id) {
-	      return function (Component) {
-	            return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
-	      };
+	    return function (Component) {
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	    };
 	}
 	
 	var React = __webpack_require__(/*! react */ 2);
@@ -34815,34 +34759,34 @@
 	
 	module.exports = _wrapComponent('DotsSpinner')(React.createClass({
 	
-	      displayName: "DotsSpinner",
+	    displayName: "DotsSpinner",
 	
-	      getDefaultProps: function getDefaultProps() {
-	            return { "version": "1.1", "className": "dibsvg-svg dibsvg-spinner", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]", "viewBox": "0 0 456.817 456.817" };
-	      },
-	      componentDidMount: function componentDidMount() {
-	            helpers.applyXmlAttributes(this);
-	      },
-	      render: function render() {
-	            var props = this.props;
-	            var children = props.children;
+	    getDefaultProps: function getDefaultProps() {
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-spinner", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]", "viewBox": "0 0 456.817 456.817" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
 	
-	            return React.createElement(
-	                  'svg',
-	                  this.props,
-	                  React.createElement('path', { d: 'M109.641,324.332c-11.423,0-21.13,3.997-29.125,11.991c-7.992,8.001-11.991,17.706-11.991,29.129\r c0,11.424,3.996,21.129,11.991,29.13c7.998,7.994,17.705,11.991,29.125,11.991c11.231,0,20.889-3.997,28.98-11.991\r c8.088-7.991,12.132-17.706,12.132-29.13c0-11.423-4.043-21.121-12.132-29.129C130.529,328.336,120.872,324.332,109.641,324.332z' }),
-	                  React.createElement('path', { d: 'M100.505,237.542c0-12.562-4.471-23.313-13.418-32.267c-8.946-8.946-19.702-13.418-32.264-13.418\r c-12.563,0-23.317,4.473-32.264,13.418c-8.945,8.947-13.417,19.701-13.417,32.267c0,12.56,4.471,23.309,13.417,32.258\r c8.947,8.949,19.701,13.422,32.264,13.422c12.562,0,23.318-4.473,32.264-13.422C96.034,260.857,100.505,250.102,100.505,237.542z' }),
-	                  React.createElement('path', { d: 'M365.454,132.48c6.276,0,11.662-2.24,16.129-6.711c4.473-4.475,6.714-9.854,6.714-16.134\r c0-6.283-2.241-11.658-6.714-16.13c-4.47-4.475-9.853-6.711-16.129-6.711c-6.283,0-11.663,2.24-16.136,6.711\r c-4.47,4.473-6.707,9.847-6.707,16.13s2.237,11.659,6.707,16.134C353.791,130.244,359.171,132.48,365.454,132.48z' }),
-	                  React.createElement('path', { d: 'M109.644,59.388c-13.897,0-25.745,4.902-35.548,14.703c-9.804,9.801-14.703,21.65-14.703,35.544\r c0,13.899,4.899,25.743,14.703,35.548c9.806,9.804,21.654,14.705,35.548,14.705s25.743-4.904,35.544-14.705\r c9.801-9.805,14.703-21.652,14.703-35.548c0-13.894-4.902-25.743-14.703-35.544C135.387,64.29,123.538,59.388,109.644,59.388z' }),
-	                  React.createElement('path', { d: 'M439.684,218.125c-5.328-5.33-11.799-7.992-19.41-7.992c-7.618,0-14.089,2.662-19.417,7.992\r c-5.325,5.33-7.987,11.803-7.987,19.421c0,7.61,2.662,14.092,7.987,19.41c5.331,5.332,11.799,7.994,19.417,7.994\r c7.611,0,14.086-2.662,19.41-7.994c5.332-5.324,7.991-11.8,7.991-19.41C447.675,229.932,445.02,223.458,439.684,218.125z' }),
-	                  React.createElement('path', { d: 'M365.454,333.473c-8.761,0-16.279,3.138-22.562,9.421c-6.276,6.276-9.418,13.798-9.418,22.559\r c0,8.754,3.142,16.276,9.418,22.56c6.283,6.282,13.802,9.417,22.562,9.417c8.754,0,16.272-3.141,22.555-9.417\r c6.283-6.283,9.422-13.802,9.422-22.56c0-8.761-3.139-16.275-9.422-22.559C381.727,336.61,374.208,333.473,365.454,333.473z' }),
-	                  React.createElement('path', { d: 'M237.547,383.717c-10.088,0-18.702,3.576-25.844,10.715c-7.135,7.139-10.705,15.748-10.705,25.837\r s3.566,18.699,10.705,25.837c7.142,7.139,15.752,10.712,25.844,10.712c10.089,0,18.699-3.573,25.838-10.712\r c7.139-7.138,10.708-15.748,10.708-25.837s-3.569-18.698-10.708-25.837S247.636,383.717,237.547,383.717z' }),
-	                  React.createElement('path', { d: 'M237.547,0c-15.225,0-28.174,5.327-38.834,15.986c-10.657,10.66-15.986,23.606-15.986,38.832\r c0,15.227,5.327,28.167,15.986,38.828c10.66,10.657,23.606,15.987,38.834,15.987c15.232,0,28.172-5.327,38.828-15.987\r c10.656-10.656,15.985-23.601,15.985-38.828c0-15.225-5.329-28.168-15.985-38.832C265.719,5.33,252.779,0,237.547,0z' }),
-	                  React.Children.map(children, function (c) {
-	                        return c;
-	                  })
-	            );
-	      }
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement('path', { d: 'M109.641,324.332c-11.423,0-21.13,3.997-29.125,11.991c-7.992,8.001-11.991,17.706-11.991,29.129c0,11.424,3.996,21.129,11.991,29.13c7.998,7.994,17.705,11.991,29.125,11.991c11.231,0,20.889-3.997,28.98-11.991c8.088-7.991,12.132-17.706,12.132-29.13c0-11.423-4.043-21.121-12.132-29.129C130.529,328.336,120.872,324.332,109.641,324.332z' }),
+	            React.createElement('path', { d: 'M100.505,237.542c0-12.562-4.471-23.313-13.418-32.267c-8.946-8.946-19.702-13.418-32.264-13.418c-12.563,0-23.317,4.473-32.264,13.418c-8.945,8.947-13.417,19.701-13.417,32.267c0,12.56,4.471,23.309,13.417,32.258c8.947,8.949,19.701,13.422,32.264,13.422c12.562,0,23.318-4.473,32.264-13.422C96.034,260.857,100.505,250.102,100.505,237.542z' }),
+	            React.createElement('path', { d: 'M365.454,132.48c6.276,0,11.662-2.24,16.129-6.711c4.473-4.475,6.714-9.854,6.714-16.134c0-6.283-2.241-11.658-6.714-16.13c-4.47-4.475-9.853-6.711-16.129-6.711c-6.283,0-11.663,2.24-16.136,6.711c-4.47,4.473-6.707,9.847-6.707,16.13s2.237,11.659,6.707,16.134C353.791,130.244,359.171,132.48,365.454,132.48z' }),
+	            React.createElement('path', { d: 'M109.644,59.388c-13.897,0-25.745,4.902-35.548,14.703c-9.804,9.801-14.703,21.65-14.703,35.544c0,13.899,4.899,25.743,14.703,35.548c9.806,9.804,21.654,14.705,35.548,14.705s25.743-4.904,35.544-14.705c9.801-9.805,14.703-21.652,14.703-35.548c0-13.894-4.902-25.743-14.703-35.544C135.387,64.29,123.538,59.388,109.644,59.388z' }),
+	            React.createElement('path', { d: 'M439.684,218.125c-5.328-5.33-11.799-7.992-19.41-7.992c-7.618,0-14.089,2.662-19.417,7.992c-5.325,5.33-7.987,11.803-7.987,19.421c0,7.61,2.662,14.092,7.987,19.41c5.331,5.332,11.799,7.994,19.417,7.994c7.611,0,14.086-2.662,19.41-7.994c5.332-5.324,7.991-11.8,7.991-19.41C447.675,229.932,445.02,223.458,439.684,218.125z' }),
+	            React.createElement('path', { d: 'M365.454,333.473c-8.761,0-16.279,3.138-22.562,9.421c-6.276,6.276-9.418,13.798-9.418,22.559c0,8.754,3.142,16.276,9.418,22.56c6.283,6.282,13.802,9.417,22.562,9.417c8.754,0,16.272-3.141,22.555-9.417c6.283-6.283,9.422-13.802,9.422-22.56c0-8.761-3.139-16.275-9.422-22.559C381.727,336.61,374.208,333.473,365.454,333.473z' }),
+	            React.createElement('path', { d: 'M237.547,383.717c-10.088,0-18.702,3.576-25.844,10.715c-7.135,7.139-10.705,15.748-10.705,25.837s3.566,18.699,10.705,25.837c7.142,7.139,15.752,10.712,25.844,10.712c10.089,0,18.699-3.573,25.838-10.712c7.139-7.138,10.708-15.748,10.708-25.837s-3.569-18.698-10.708-25.837S247.636,383.717,237.547,383.717z' }),
+	            React.createElement('path', { d: 'M237.547,0c-15.225,0-28.174,5.327-38.834,15.986c-10.657,10.66-15.986,23.606-15.986,38.832c0,15.227,5.327,28.167,15.986,38.828c10.66,10.657,23.606,15.987,38.834,15.987c15.232,0,28.172-5.327,38.828-15.987c10.656-10.656,15.985-23.601,15.985-38.828c0-15.225-5.329-28.168-15.985-38.832C265.719,5.33,252.779,0,237.547,0z' }),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
 	}));
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
@@ -34879,15 +34823,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/download.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/download.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/download.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/download.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34895,7 +34839,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -34919,12 +34863,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('polygon', { points: '65 65 65 70 95 70 95 95 5 95 5 70 35 70 35 65 0 65 0 100 100 100 100 65 65 65' }),
-	                React.createElement('polygon', { points: '67.68 43.79 52.5 58.97 52.5 0 47.5 0 47.5 58.96 32.32 43.79 28.79 47.32 50 68.53 71.21 47.32 67.68 43.79' })
-	            ),
+	            React.createElement('polygon', { points: '65 65 65 70 95 70 95 95 5 95 5 70 35 70 35 65 0 65 0 100 100 100 100 65 65 65' }),
+	            React.createElement('polygon', { points: '67.68 43.79 52.5 58.97 52.5 0 47.5 0 47.5 58.96 32.32 43.79 28.79 47.32 50 68.53 71.21 47.32 67.68 43.79' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -34966,15 +34906,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/early-access.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/early-access.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/early-access.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/early-access.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -34982,7 +34922,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35006,7 +34946,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M56,238.7c-30.6,0-55.5-24.9-55.5-55.5s24.9-55.5,55.5-55.5c12.5,0,24.3,4.1,34.1,11.8l0.7,0.6L221,9.1l7.6,7.6l-16.4,16.5 L250,71.6l-7.7,7.5l-37.7-38.4l-19.3,19.5L223,98.7l-7.7,7.5l-37.6-38.3l-79.2,79.6l0.6,0.7c8,9.9,12.4,22.3,12.4,34.9 C111.5,213.8,86.6,238.7,56,238.7z M56,138.4c-24.7,0-44.7,20.1-44.7,44.7s20.1,44.7,44.7,44.7s44.7-20.1,44.7-44.7 S80.6,138.4,56,138.4z' }),
+	            React.createElement('path', { d: 'M56,238.7c-30.6,0-55.5-24.9-55.5-55.5s24.9-55.5,55.5-55.5c12.5,0,24.3,4.1,34.1,11.8l0.7,0.6L221,9.1l7.6,7.6l-16.4,16.5L250,71.6l-7.7,7.5l-37.7-38.4l-19.3,19.5L223,98.7l-7.7,7.5l-37.6-38.3l-79.2,79.6l0.6,0.7c8,9.9,12.4,22.3,12.4,34.9C111.5,213.8,86.6,238.7,56,238.7z M56,138.4c-24.7,0-44.7,20.1-44.7,44.7s20.1,44.7,44.7,44.7s44.7-20.1,44.7-44.7S80.6,138.4,56,138.4z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -35048,15 +34988,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/email.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/email.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/email.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/email.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35064,7 +35004,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35130,15 +35070,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/empty-project.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/empty-project.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/empty-project.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/empty-project.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35146,7 +35086,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35170,12 +35110,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('polygon', { points: '175,80 175,90 201,90 201,141 130,141 130,151 201,151 201,240 111,240 111,215 101,215 101,240 51,240 51,172\r 101,172 101,191 111,191 111,145 101,145 101,162 51,162 51,90 101,90 101,114 111,114 111,90 148,90 148,80 41,80 41,250 211,250\r 211,80 \t' }),
-	                React.createElement('polygon', { points: '119,18.9 119,66 130,66 130,18.5 151,36 158,27.5 124.6,-0.4 92.1,27.3 99.2,35.7 \t' })
-	            ),
+	            React.createElement('polygon', { points: '175,80 175,90 201,90 201,141 130,141 130,151 201,151 201,240 111,240 111,215 101,215 101,240 51,240 51,172 101,172 101,191 111,191 111,145 101,145 101,162 51,162 51,90 101,90 101,114 111,114 111,90 148,90 148,80 41,80 41,250 211,250 211,80' }),
+	            React.createElement('polygon', { points: '119,18.9 119,66 130,66 130,18.5 151,36 158,27.5 124.6,-0.4 92.1,27.3 99.2,35.7' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -35217,15 +35153,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/envelope.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/envelope.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/envelope.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/envelope.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35233,7 +35169,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35257,7 +35193,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M3,444.9V77.8h512v367.1H3z M498,427.9V107.4L259.5,315.5L20,106.3v321.6H498z M259.5,292.9l227-198.1H32.7 L259.5,292.9z' }),
+	            React.createElement('path', { d: 'M3,444.9V77.8h512v367.1H3z M498,427.9V107.4L259.5,315.5L20,106.3v321.6H498z M259.5,292.9l227-198.1H32.7L259.5,292.9z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -35299,15 +35235,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/exclamation-circle.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/exclamation-circle.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/exclamation-circle.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/exclamation-circle.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35315,7 +35251,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35339,9 +35275,9 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M125.2-0.2C56.2-0.2,0,56,0,125s56.2,125.2,125.2,125.2c69.1,0,125.2-56.1,125.2-125.1S194.2-0.2,125.2-0.2z M125.3,241.1\r C61.2,241.1,9.1,189,9.1,125S61.2,8.8,125.2,8.8c64.1,0,116.3,52,116.3,116.1S189.4,241.1,125.3,241.1z' }),
+	            React.createElement('path', { d: 'M125.2-0.2C56.2-0.2,0,56,0,125s56.2,125.2,125.2,125.2c69.1,0,125.2-56.1,125.2-125.1S194.2-0.2,125.2-0.2z M125.3,241.1C61.2,241.1,9.1,189,9.1,125S61.2,8.8,125.2,8.8c64.1,0,116.3,52,116.3,116.1S189.4,241.1,125.3,241.1z' }),
 	            React.createElement('path', { d: 'M125.1,171c-8.6,0-15.6,7.1-15.6,15.8c0,8.7,6.9,15.6,15.6,15.6c8.7,0,15.8-7,15.8-15.6C140.9,178.1,133.8,171,125.1,171z' }),
-	            React.createElement('path', { d: 'M119.3,156.9l0.2,3l11.1,0.2l0.2-3c1.3-21.5,4.4-47.7,6.6-66c1.5-12.1,2.5-20.1,2.5-23.1c0-9.2-6.4-16.3-14.6-16.3\r c-8.2,0-14.6,7.4-14.6,16.6c0,2.8,0.9,10.2,2.2,20.9C115.1,106.9,118.4,134.5,119.3,156.9z' }),
+	            React.createElement('path', { d: 'M119.3,156.9l0.2,3l11.1,0.2l0.2-3c1.3-21.5,4.4-47.7,6.6-66c1.5-12.1,2.5-20.1,2.5-23.1c0-9.2-6.4-16.3-14.6-16.3c-8.2,0-14.6,7.4-14.6,16.6c0,2.8,0.9,10.2,2.2,20.9C115.1,106.9,118.4,134.5,119.3,156.9z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -35383,15 +35319,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/exclamation-triangle.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/exclamation-triangle.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/exclamation-triangle.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/exclamation-triangle.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35399,7 +35335,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35465,15 +35401,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/eye.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/eye.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/eye.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/eye.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35481,7 +35417,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35505,7 +35441,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M248.1,131.2c-40.4-53.9-83.3-80.4-127.4-78.8c-29,1.1-58.7,14.8-85.9,39.7c-15.4,14.1-25.8,27.8-30.2,34 l-2.2,1.5l0.6,0.9c-0.4,0.6-0.7,1-0.7,1.1l-1.8,2.9l2.3,2.5c38.2,43.1,79.2,64.9,121.9,64.9c0.9,0,1.9,0,2.8,0 c36.7-0.8,67.5-17.9,87-32.2c21-15.3,33.2-30.3,33.7-30.9l2.2-2.7L248.1,131.2z M127.1,190.9c-40.1,0.9-78.9-19-115.4-59.2 C21,118.5,63.4,63.5,121,61.4c40.3-1.5,79.8,22.9,117.7,72.3C228.5,145.1,184.8,189.6,127.1,190.9z' }),
+	            React.createElement('path', { d: 'M248.1,131.2c-40.4-53.9-83.3-80.4-127.4-78.8c-29,1.1-58.7,14.8-85.9,39.7c-15.4,14.1-25.8,27.8-30.2,34l-2.2,1.5l0.6,0.9c-0.4,0.6-0.7,1-0.7,1.1l-1.8,2.9l2.3,2.5c38.2,43.1,79.2,64.9,121.9,64.9c0.9,0,1.9,0,2.8,0c36.7-0.8,67.5-17.9,87-32.2c21-15.3,33.2-30.3,33.7-30.9l2.2-2.7L248.1,131.2z M127.1,190.9c-40.1,0.9-78.9-19-115.4-59.2C21,118.5,63.4,63.5,121,61.4c40.3-1.5,79.8,22.9,117.7,72.3C228.5,145.1,184.8,189.6,127.1,190.9z' }),
 	            React.createElement('circle', { cx: '124.3', cy: '126.5', r: '42.5' }),
 	            React.Children.map(children, function (c) {
 	                return c;
@@ -35548,15 +35484,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/facebook.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/facebook.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/facebook.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/facebook.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35564,7 +35500,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35588,7 +35524,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M141.7,250V135.8H180l5.7-44.3h-44.2V63.2c0-13,3.6-21.5,21.9-21.5H187v-40C183,1.1,169.1,0,152.8,0 c-34,0-57.2,20.8-57.2,58.7v32.8H57.6v44.3h38.3V250H141.7L141.7,250z' }),
+	            React.createElement('path', { d: 'M141.7,250V135.8H180l5.7-44.3h-44.2V63.2c0-13,3.6-21.5,21.9-21.5H187v-40C183,1.1,169.1,0,152.8,0c-34,0-57.2,20.8-57.2,58.7v32.8H57.6v44.3h38.3V250H141.7L141.7,250z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -35630,15 +35566,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/file-doc.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/file-doc.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/file-doc.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/file-doc.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35646,7 +35582,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35671,7 +35607,7 @@
 	            'svg',
 	            this.props,
 	            React.createElement('path', { d: 'M148.2,0H30v250h189V73.7L148.2,0z M148,12.8L203,70h-55V12.8z M210,241H39V9h100v70h71V241z' }),
-	            React.createElement('polygon', { points: '114.7,117 101.3,173.1 99.6,173.2 87.7,117 71,117 90.4,206 108.1,206 122.1,153.3 123.8,153.3 \r 134.8,206 151.9,206 174.9,117 146,117 146,132 154.6,132 145.1,173.5 143.4,173.1 130.9,117' }),
+	            React.createElement('polygon', { points: '114.7,117 101.3,173.1 99.6,173.2 87.7,117 71,117 90.4,206 108.1,206 122.1,153.3 123.8,153.3 134.8,206 151.9,206 174.9,117 146,117 146,132 154.6,132 145.1,173.5 143.4,173.1 130.9,117' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -35713,15 +35649,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/file-excel.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/file-excel.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/file-excel.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/file-excel.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35729,7 +35665,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35754,7 +35690,7 @@
 	            'svg',
 	            this.props,
 	            React.createElement('path', { d: 'M150.2,0H32v250h189V73.7L150.2,0z M150,12.8L205,70h-55V12.8z M212,241H41V9h100v70h71V241z' }),
-	            React.createElement('polygon', { points: '100.5,104.5 78.2,104.5 113.9,160.3 78.2,216.1 100.5,216.1 125.1,173.7 149.7,216.1 172,216.1 \r 136.3,160.3 172,104.5 149.7,104.5 125.1,146.9' }),
+	            React.createElement('polygon', { points: '100.5,104.5 78.2,104.5 113.9,160.3 78.2,216.1 100.5,216.1 125.1,173.7 149.7,216.1 172,216.1 136.3,160.3 172,104.5 149.7,104.5 125.1,146.9' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -35796,15 +35732,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/file-pdf.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/file-pdf.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/file-pdf.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/file-pdf.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35812,7 +35748,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35837,7 +35773,7 @@
 	            'svg',
 	            this.props,
 	            React.createElement('path', { d: 'M148.2,0H30v250h189V73.7L148.2,0z M148,12.8L203,70h-55V12.8z M210,241H39V9h100v70h71V241z' }),
-	            React.createElement('path', { d: 'M123.4,124c0,0,4.3-24.2,3.1-32.4c-0.2-1.1-0.3-1.4-0.6-2.3l-0.4-0.9c-1.2-2.7-3.4-5.5-7-5.3l-2.1-0.1\r l-0.1,0c-4,0-7.2,2-8.1,5.1c-2.6,9.5,0.1,23.8,4.9,42.2l-1.2,3c-3.5,8.4-7.8,16.9-11.6,24.4l-0.5,1c-4,7.9-7.7,14.5-11,20.2\r l-3.4,1.8c-0.2,0.1-6.1,3.2-7.5,4.1c-11.6,7-19.4,14.8-20.6,21.1c-0.4,2-0.1,4.6,2,5.7l3.3,1.7c1.4,0.7,2.9,1.1,4.5,1.1\r c8.3,0,17.9-10.3,31.2-33.5c15.3-5,32.7-9.1,48-11.4c11.6,6.6,26,11.1,35,11.1c1.6,0,3-0.2,4.1-0.5c1.7-0.5,3.2-1.4,4.1-2.8\r c1.8-2.6,2.1-6.3,1.6-10c-0.1-1.1-1-2.5-2-3.4c-2.7-2.6-8.6-4-17.7-4.2c-6.1-0.1-13.5,0.5-21.3,1.6c-3.5-2-7.1-4.2-9.9-6.8\r c-7.6-7.1-13.9-16.9-17.8-27.6C123,125.7,123.2,124.9,123.4,124z M65.5,207.9c1.5-4.1,7.5-12.3,16.3-19.6c0.6-0.5,1.9-1.7,3.2-2.9\r C75.8,200.2,69.6,206.1,65.5,207.9z M171.7,167.1c4.9,0,6.3,0,11.1,1.2c4.8,1.2,4.8,3.7,4,4.2c-0.8,0.5-3.2,0.8-4.7,0.8\r c-4.9,0-10.9-2.2-19.3-5.8C166.1,167.2,169,167.1,171.7,167.1z M117.9,87.2c2.7,0,4.2,6.7,4.3,13c0.1,6.3-1.3,10.7-3.2,14\r c-1.5-4.8-2.2-12.5-2.2-17.5C116.8,96.7,116.7,87.2,117.9,87.2z M134.9,161.3c0.8,0.7,1.7,1.4,2.6,2.1c-13.4,2.7-25,5.9-35.2,9.8\r c1.9-3.3,3.8-6.8,5.8-10.5c4.8-9.1,7.9-16.2,10.1-22.1C122.7,148.8,128.3,155.8,134.9,161.3z' }),
+	            React.createElement('path', { d: 'M123.4,124c0,0,4.3-24.2,3.1-32.4c-0.2-1.1-0.3-1.4-0.6-2.3l-0.4-0.9c-1.2-2.7-3.4-5.5-7-5.3l-2.1-0.1l-0.1,0c-4,0-7.2,2-8.1,5.1c-2.6,9.5,0.1,23.8,4.9,42.2l-1.2,3c-3.5,8.4-7.8,16.9-11.6,24.4l-0.5,1c-4,7.9-7.7,14.5-11,20.2l-3.4,1.8c-0.2,0.1-6.1,3.2-7.5,4.1c-11.6,7-19.4,14.8-20.6,21.1c-0.4,2-0.1,4.6,2,5.7l3.3,1.7c1.4,0.7,2.9,1.1,4.5,1.1c8.3,0,17.9-10.3,31.2-33.5c15.3-5,32.7-9.1,48-11.4c11.6,6.6,26,11.1,35,11.1c1.6,0,3-0.2,4.1-0.5c1.7-0.5,3.2-1.4,4.1-2.8c1.8-2.6,2.1-6.3,1.6-10c-0.1-1.1-1-2.5-2-3.4c-2.7-2.6-8.6-4-17.7-4.2c-6.1-0.1-13.5,0.5-21.3,1.6c-3.5-2-7.1-4.2-9.9-6.8c-7.6-7.1-13.9-16.9-17.8-27.6C123,125.7,123.2,124.9,123.4,124z M65.5,207.9c1.5-4.1,7.5-12.3,16.3-19.6c0.6-0.5,1.9-1.7,3.2-2.9C75.8,200.2,69.6,206.1,65.5,207.9z M171.7,167.1c4.9,0,6.3,0,11.1,1.2c4.8,1.2,4.8,3.7,4,4.2c-0.8,0.5-3.2,0.8-4.7,0.8c-4.9,0-10.9-2.2-19.3-5.8C166.1,167.2,169,167.1,171.7,167.1z M117.9,87.2c2.7,0,4.2,6.7,4.3,13c0.1,6.3-1.3,10.7-3.2,14c-1.5-4.8-2.2-12.5-2.2-17.5C116.8,96.7,116.7,87.2,117.9,87.2z M134.9,161.3c0.8,0.7,1.7,1.4,2.6,2.1c-13.4,2.7-25,5.9-35.2,9.8c1.9-3.3,3.8-6.8,5.8-10.5c4.8-9.1,7.9-16.2,10.1-22.1C122.7,148.8,128.3,155.8,134.9,161.3z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -35879,15 +35815,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/flag.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/flag.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/flag.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/flag.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35895,7 +35831,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -35919,7 +35855,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M219.6,24c-36,25.2-84.2-8.4-84.6-8.7C115.1,0.8,89.4,1.4,86.7,1.5C63.6,0.8,44.1,13.3,33.4,22V0h-9v250h9V147.8\r c8.9-5.7,24.5-14.7,25.8-15.4c28-14.4,51.7-7.2,63.4-1.6c4.8,2.3,13.5,7.3,15.3,8.6c16.5,11.5,31.9,15.8,32.6,15.9\r c8.7,2.4,16.2,3.3,22.5,3.3c24.1,0,32.6-13.5,33-14.2l0.7-1.1V19L219.6,24z M217.7,140.6c-2.8,3.3-14.7,14.2-44.8,6\r c-0.1,0-14.6-4-29.8-14.6c-2.3-1.6-11.4-6.9-16.6-9.4c-13.1-6.3-39.9-14.4-71.5,1.8l-0.2,0.1c-0.6,0.3-12.2,7-21.4,12.7V34\r c6.7-6.4,28.1-24.4,53.2-23.5l0.2,0l0.2,0c0.2,0,24.7-1.1,42.8,12.1c0.5,0.4,13.5,9.5,31.5,15.3c21.1,6.8,40.5,6,56.5-2.2V140.6z' }),
+	            React.createElement('path', { d: 'M219.6,24c-36,25.2-84.2-8.4-84.6-8.7C115.1,0.8,89.4,1.4,86.7,1.5C63.6,0.8,44.1,13.3,33.4,22V0h-9v250h9V147.8c8.9-5.7,24.5-14.7,25.8-15.4c28-14.4,51.7-7.2,63.4-1.6c4.8,2.3,13.5,7.3,15.3,8.6c16.5,11.5,31.9,15.8,32.6,15.9c8.7,2.4,16.2,3.3,22.5,3.3c24.1,0,32.6-13.5,33-14.2l0.7-1.1V19L219.6,24z M217.7,140.6c-2.8,3.3-14.7,14.2-44.8,6c-0.1,0-14.6-4-29.8-14.6c-2.3-1.6-11.4-6.9-16.6-9.4c-13.1-6.3-39.9-14.4-71.5,1.8l-0.2,0.1c-0.6,0.3-12.2,7-21.4,12.7V34c6.7-6.4,28.1-24.4,53.2-23.5l0.2,0l0.2,0c0.2,0,24.7-1.1,42.8,12.1c0.5,0.4,13.5,9.5,31.5,15.3c21.1,6.8,40.5,6,56.5-2.2V140.6z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -35961,15 +35897,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/folder.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/folder.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/folder.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/folder.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -35977,7 +35913,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36001,7 +35937,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M229.2,63.9c-8.1-4-16-4-16.4-4h-77.4c-9.9,0-18.9-6.5-19.1-6.6L82.4,29.6c-1.4-1-8.1-5.8-10.7-7.1c-8.1-4-14.9-4-15.2-4 H38.2c-10.5,0-18.8,3.2-24.8,9.5c-10,10.4-9.8,25.4-9.7,27.1L3.4,200.5c0,23.4,19.9,31.6,30.5,32.6h182.7h0.2 c23.3-1.6,29.5-22.4,29.4-33.3v-107C246.2,75.8,237,67.7,229.2,63.9z' }),
+	            React.createElement('path', { d: 'M229.2,63.9c-8.1-4-16-4-16.4-4h-77.4c-9.9,0-18.9-6.5-19.1-6.6L82.4,29.6c-1.4-1-8.1-5.8-10.7-7.1c-8.1-4-14.9-4-15.2-4H38.2c-10.5,0-18.8,3.2-24.8,9.5c-10,10.4-9.8,25.4-9.7,27.1L3.4,200.5c0,23.4,19.9,31.6,30.5,32.6h182.7h0.2c23.3-1.6,29.5-22.4,29.4-33.3v-107C246.2,75.8,237,67.7,229.2,63.9z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -36043,15 +35979,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/gallery.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/gallery.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/gallery.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/gallery.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36059,7 +35995,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36083,12 +36019,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M83,41v20H48v28H0v146h201v-37h27v-33h22V41H83z M193,97v103.3L127.5,140l-47.8,45.8l-14.2-13.6L8,221.8V97H193z M15.6,227 l49.6-42.8L79.7,198l48-45.9l65.3,60.1V227H15.6z M221,191h-20V89H55V68h166V191z M244,159h-16V61H89V47h155V159z' }),
-	                React.createElement('path', { d: 'M43.3,157.5c13,0,23.6-10.3,23.6-23c0-12.7-10.6-23-23.6-23c-13,0-23.6,10.3-23.6,23C19.7,147.2,30.3,157.5,43.3,157.5z M43.3,120.3c8.1,0,14.7,6.3,14.7,14.1c0,7.8-6.6,14.1-14.7,14.1s-14.7-6.3-14.7-14.1C28.5,126.7,35.1,120.3,43.3,120.3z' })
-	            ),
+	            React.createElement('path', { d: 'M83,41v20H48v28H0v146h201v-37h27v-33h22V41H83z M193,97v103.3L127.5,140l-47.8,45.8l-14.2-13.6L8,221.8V97H193z M15.6,227 l49.6-42.8L79.7,198l48-45.9l65.3,60.1V227H15.6z M221,191h-20V89H55V68h166V191z M244,159h-16V61H89V47h155V159z' }),
+	            React.createElement('path', { d: 'M43.3,157.5c13,0,23.6-10.3,23.6-23c0-12.7-10.6-23-23.6-23c-13,0-23.6,10.3-23.6,23C19.7,147.2,30.3,157.5,43.3,157.5z M43.3,120.3c8.1,0,14.7,6.3,14.7,14.1c0,7.8-6.6,14.1-14.7,14.1s-14.7-6.3-14.7-14.1C28.5,126.7,35.1,120.3,43.3,120.3z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -36130,15 +36062,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/gear-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/gear-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/gear-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/gear-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36146,7 +36078,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36170,7 +36102,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M101.8,4.6c0,0,23.5,49.9,51.5,4.5l1.5-3.1c0,0,2.7-6.5,8.7-4.6L190,14.2c0,0,6.7,2.9,3.1,10.2c0,0-8.1,16.8-2,25.5\r c0,0,7.7,16.8,26,15.3l9.2-2.1c0,0,10.3-3.6,13.8,4.1l9.2,22.2c0,0,3.3,8.5-4.4,11.3l-11.4,5.3c0,0-15.8,10.2-11.2,27\r c0,0-0.9,6.9,17.9,19.9l5.6,4.1c0,0,6.1,4.1,1,12.2l-9.7,19.4c0,0-2.1,6.5-10.8,3.7l-15.7-4.1c0,0-4.1-0.3-6.5,0.4\r c-4.4,1.2-11.2,3.7-13.8,7.7c0,0-10.2,8.2-6.6,21.4l2.1,9.7c0,0,3,9.8-2,12.2l-23.9,8.7c0,0-6.1,2.6-10.7-4.1l-10.7-16.3\r c0,0-6.1-9.2-20.4-6.6c0,0-11.7,1.5-17.3,12.8l-7.3,10.1c0,0-2.8,5.5-9.9,2.9l-23.7-12.6c0,0-7.4-3.6-1.8-12.5\r c0,0,12.1-19.5-5.2-33.7c0,0-11.7-7.1-29.6-3c0,0-9.2,4.3-13.3-2.5l-9.7-24.5c0,0-1.7-6.5,3.9-9.5c0.5-0.3,1-0.5,1.7-0.7\r c7.6-2.6,22.4-7.7,22.4-26.5c0,0,1-13.3-15.3-22.9l-6.6-4.1c0,0-7.1-4.6-3.1-13.8l9.5-19.9c0,0,2.8-7,11.4-3.6l14.3,3.5\r c0,0,25.5,2.5,28-18.4l-0.4-11.3c0,0-0.8-5.4-1.4-8.4c-1-5-1-12.3,4-13.8L87,1.1C87,1.1,97.7-3,101.8,4.6z M123.8,65\r c-33.4,0.1-60.4,27.1-60.3,60.5c0.1,33.4,27.1,60.4,60.5,60.3s60.4-27.1,60.3-60.5S157.2,65,123.8,65z' }),
+	            React.createElement('path', { d: 'M101.8,4.6c0,0,23.5,49.9,51.5,4.5l1.5-3.1c0,0,2.7-6.5,8.7-4.6L190,14.2c0,0,6.7,2.9,3.1,10.2c0,0-8.1,16.8-2,25.5c0,0,7.7,16.8,26,15.3l9.2-2.1c0,0,10.3-3.6,13.8,4.1l9.2,22.2c0,0,3.3,8.5-4.4,11.3l-11.4,5.3c0,0-15.8,10.2-11.2,27c0,0-0.9,6.9,17.9,19.9l5.6,4.1c0,0,6.1,4.1,1,12.2l-9.7,19.4c0,0-2.1,6.5-10.8,3.7l-15.7-4.1c0,0-4.1-0.3-6.5,0.4c-4.4,1.2-11.2,3.7-13.8,7.7c0,0-10.2,8.2-6.6,21.4l2.1,9.7c0,0,3,9.8-2,12.2l-23.9,8.7c0,0-6.1,2.6-10.7-4.1l-10.7-16.3c0,0-6.1-9.2-20.4-6.6c0,0-11.7,1.5-17.3,12.8l-7.3,10.1c0,0-2.8,5.5-9.9,2.9l-23.7-12.6c0,0-7.4-3.6-1.8-12.5c0,0,12.1-19.5-5.2-33.7c0,0-11.7-7.1-29.6-3c0,0-9.2,4.3-13.3-2.5l-9.7-24.5c0,0-1.7-6.5,3.9-9.5c0.5-0.3,1-0.5,1.7-0.7c7.6-2.6,22.4-7.7,22.4-26.5c0,0,1-13.3-15.3-22.9l-6.6-4.1c0,0-7.1-4.6-3.1-13.8l9.5-19.9c0,0,2.8-7,11.4-3.6l14.3,3.5c0,0,25.5,2.5,28-18.4l-0.4-11.3c0,0-0.8-5.4-1.4-8.4c-1-5-1-12.3,4-13.8L87,1.1C87,1.1,97.7-3,101.8,4.6z M123.8,65c-33.4,0.1-60.4,27.1-60.3,60.5c0.1,33.4,27.1,60.4,60.5,60.3s60.4-27.1,60.3-60.5S157.2,65,123.8,65z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -36212,15 +36144,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/gear.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/gear.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/gear.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/gear.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36228,7 +36160,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36295,15 +36227,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/globe.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/globe.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/globe.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/globe.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36311,7 +36243,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36335,7 +36267,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M125,0C56.3,0,0.3,55.9,0.3,124.7c0,68.7,55.9,124.7,124.7,124.7s124.7-55.9,124.7-124.7C249.7,55.9,193.7,0,125,0z M8.3,124.7C8.3,60.3,60.7,8,125,8s116.7,52.3,116.7,116.7c0,23.1-6.7,44.6-18.4,62.8c-4-9-16.6-12.7-24.8-14.4 c-0.1-0.3-11.3-1.6-24-1.5c-9,0.1-9.6,0.9-19,1.5c-1.9,0.1-6.9-1.6-16.3-2c-2.5-0.1-6.6-4.2-6.6-4.2s-2.6-2.8-5.2-6.1 c-2.6-3.3-5.2-2.5-5.2-5.7s-3.5-7.4-7.8-9c-4.3-1.6-6.1,4.9-13,4.9c-6.9,0-5.1-10.2-1.7-19.6c2.6-7.4,14.7-2.5,14.7-2.5 c3.7,1.4,6.1,3.3,10.4,2.5c5.7-1.1,6.9,5.7,6.9,5.7c6.1,16.4,8.7-2.5,8.7-2.5l0.9-11.4c0,0,0.9-4.9,2.6-9s2.6-4.1,6.9-9 s2.6-5.7,6.1-10.6s14.7-4.9,14.7-4.9c13-1.6,2.6-13.1,2.6-13.1c-4.3-4.1-18.2-9.8-18.2-9.8C144.8,65,147.4,56,147.4,56 c0-5.7,12.1,0.8,12.1,0.8c18.2,0.8,7.8-10.6,7.8-10.6c-5.5-4.1-12-6.5-16.4-7.7c-3.1-0.9-9-2.8-10.6-3.2c-8.9-2.3-12,1.9-12,1.9 c-9.2,6.7-21.7,7.4-21.7,7.4c-5.2,0-20,1.6-20,1.6c-9.5,0-15.6,10.6-16.5,17.2s-6.9,27-6.9,27c-6.1,10.6-3.5,13.1-1.7,19.6 c1.7,6.5,2.6,9,3.5,17.2c0.4,4.1,3.5,7.8,6.4,10.4c2.9,2.7,5.8,8.6,6.3,10.5c2.3,7.3,9.5,11.2,9.5,11.2l6.6,2.8 c20.6,4.4,21.4,9.3,21.5,9.2c4.3,7.4,17.8,9.6,17.8,9.6c9.4,2.8,6.4,7.6,6.4,7.6c-6.6,11.6-8.5,16.7-4.6,28.1 c4.5,13,7.7,20,9.3,23.2c-6.3,1-12.7,1.6-19.3,1.6C60.7,241.3,8.3,189,8.3,124.7z M135.2,65c3.5,9.8,3.5,12.3,3.5,12.3 s-6.1-1.6-19.1-2.5c-13-0.8-9.5-7.4-9.5-7.4l5.2-4.1c0,0,7.8-4.9,16.5-8.2C140.4,51.9,131.8,55.2,135.2,65z' }),
+	            React.createElement('path', { d: 'M125,0C56.3,0,0.3,55.9,0.3,124.7c0,68.7,55.9,124.7,124.7,124.7s124.7-55.9,124.7-124.7C249.7,55.9,193.7,0,125,0zM8.3,124.7C8.3,60.3,60.7,8,125,8s116.7,52.3,116.7,116.7c0,23.1-6.7,44.6-18.4,62.8c-4-9-16.6-12.7-24.8-14.4c-0.1-0.3-11.3-1.6-24-1.5c-9,0.1-9.6,0.9-19,1.5c-1.9,0.1-6.9-1.6-16.3-2c-2.5-0.1-6.6-4.2-6.6-4.2s-2.6-2.8-5.2-6.1c-2.6-3.3-5.2-2.5-5.2-5.7s-3.5-7.4-7.8-9c-4.3-1.6-6.1,4.9-13,4.9c-6.9,0-5.1-10.2-1.7-19.6c2.6-7.4,14.7-2.5,14.7-2.5c3.7,1.4,6.1,3.3,10.4,2.5c5.7-1.1,6.9,5.7,6.9,5.7c6.1,16.4,8.7-2.5,8.7-2.5l0.9-11.4c0,0,0.9-4.9,2.6-9s2.6-4.1,6.9-9s2.6-5.7,6.1-10.6s14.7-4.9,14.7-4.9c13-1.6,2.6-13.1,2.6-13.1c-4.3-4.1-18.2-9.8-18.2-9.8C144.8,65,147.4,56,147.4,56c0-5.7,12.1,0.8,12.1,0.8c18.2,0.8,7.8-10.6,7.8-10.6c-5.5-4.1-12-6.5-16.4-7.7c-3.1-0.9-9-2.8-10.6-3.2c-8.9-2.3-12,1.9-12,1.9c-9.2,6.7-21.7,7.4-21.7,7.4c-5.2,0-20,1.6-20,1.6c-9.5,0-15.6,10.6-16.5,17.2s-6.9,27-6.9,27c-6.1,10.6-3.5,13.1-1.7,19.6c1.7,6.5,2.6,9,3.5,17.2c0.4,4.1,3.5,7.8,6.4,10.4c2.9,2.7,5.8,8.6,6.3,10.5c2.3,7.3,9.5,11.2,9.5,11.2l6.6,2.8c20.6,4.4,21.4,9.3,21.5,9.2c4.3,7.4,17.8,9.6,17.8,9.6c9.4,2.8,6.4,7.6,6.4,7.6c-6.6,11.6-8.5,16.7-4.6,28.1c4.5,13,7.7,20,9.3,23.2c-6.3,1-12.7,1.6-19.3,1.6C60.7,241.3,8.3,189,8.3,124.7z M135.2,65c3.5,9.8,3.5,12.3,3.5,12.3s-6.1-1.6-19.1-2.5c-13-0.8-9.5-7.4-9.5-7.4l5.2-4.1c0,0,7.8-4.9,16.5-8.2C140.4,51.9,131.8,55.2,135.2,65z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -36377,15 +36309,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/grid.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/grid.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/grid.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/grid.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36393,7 +36325,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36459,15 +36391,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/hamburger-menu.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/hamburger-menu.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/hamburger-menu.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/hamburger-menu.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36475,7 +36407,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36541,15 +36473,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/headshot.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/headshot.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/headshot.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/headshot.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36557,7 +36489,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36581,12 +36513,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { className: 'dibsvg-headshot-head', d: 'M91.8981087,88.4761032 C91.7348547,88.5307054 91.5832218,88.7399061 91.4917695,89.1069528 C91.4291426,89.3583081 91.5522744,89.6465876 91.8170124,89.8270719 L100,96.6265366 L100,97.1881765 L99.8803681,97.3339354 L98.0978954,99.5018399 C98.0736446,99.5260479 98.0736446,99.5260479 98.0093344,99.5785785 C97.9668032,99.6096353 97.9668032,99.6096353 97.8991254,99.6474221 C97.6281562,99.7833651 97.3090957,99.6942945 97.1609369,99.4474947 L88.9884041,92.7349226 C88.8594819,92.6055642 88.6291932,92.5131371 88.4850756,92.5131371 C88.0948801,92.5131371 87.8233444,92.7272085 87.741573,93.1301928 L86.5054446,97.5953115 C86.475733,97.8132322 86.3441787,97.9883029 86.1593977,98.081006 C86.0500581,98.1358608 85.9521452,98.1522348 85.8623704,98.1522348 C85.7725957,98.1522348 85.6746828,98.1358608 85.5653432,98.081006 C85.4024404,97.9992791 85.2809063,97.8535346 85.2340523,97.6708499 L76.3456975,80.7132752 L76.3456975,80.2399921 L76.8460792,79.7379174 L95.3312163,85.3276294 C95.5448449,85.3594623 95.7163151,85.4905287 95.8076176,85.6737515 C95.8622874,85.783461 95.8786062,85.8817052 95.8786062,85.9717837 C95.8786062,86.3332716 95.7012672,86.5585716 95.3827478,86.6114026 L91.8981087,88.4761032 Z M73.2327963,71.1998747 C73.357687,71.4505013 73.2327963,71.8264411 72.9830149,71.9517544 L72.7332334,71.9517544 C72.483452,71.9517544 72.2336705,71.8264411 72.1087798,71.5758145 L70.4852004,67.3151629 C70.3603097,67.0645363 70.4852004,66.6885965 70.8598726,66.5632832 C71.1096541,66.4379699 71.4843262,66.5632832 71.6092169,66.9392231 L73.2327963,71.1998747 Z M77.1824653,70.9022556 C76.8077932,70.7769424 76.6829025,70.5263158 76.6829025,70.1503759 L77.4322468,65.764411 C77.5571375,65.3884712 77.8069189,65.2631579 78.1815911,65.2631579 C78.5562633,65.3884712 78.681154,65.6390977 78.681154,66.0150376 L77.9318097,70.4010025 C77.8069189,70.6516291 77.5571375,70.9022556 77.1824653,70.9022556 Z M81.0653391,72.5426278 C80.9404484,72.5426278 80.6906669,72.5426278 80.6906669,72.4173145 C80.4408855,72.166688 80.3159947,71.7907481 80.5657762,71.5401215 L83.4382628,68.0313496 C83.6880442,67.7807231 84.0627164,67.6554098 84.3124978,67.9060363 C84.5622792,68.1566629 84.68717,68.5326027 84.4373885,68.7832293 L81.564902,72.2920012 C81.4400112,72.4173145 81.1902298,72.5426278 81.0653391,72.5426278 Z M82.972484,76.4630326 C82.8475933,76.0870927 82.972484,75.7111529 83.4720469,75.7111529 L87.7183314,74.0820802 C87.9681129,73.9567669 88.342785,74.0820802 88.4676758,74.4580201 C88.5925665,74.7086466 88.4676758,75.0845865 88.0930036,75.2098997 L83.8467191,76.8389724 L83.5969377,76.8389724 C83.3471562,76.8389724 83.0973748,76.7136591 82.972484,76.4630326 Z M74.4348695,86.566416 C74.8095417,86.6917293 75.0593231,86.9423559 74.9344324,87.3182957 L74.185088,91.8295739 C74.185088,92.0802005 73.8104159,92.3308271 73.5606344,92.3308271 L73.4357437,92.3308271 C73.0610716,92.2055138 72.9361808,91.9548872 72.9361808,91.5789474 L73.6855252,87.0676692 C73.8104159,86.6917293 74.0601973,86.566416 74.4348695,86.566416 Z M69.7002835,85.5209091 C69.9500649,85.2702825 70.3247371,85.2702825 70.5745185,85.3955958 C70.8243,85.6462223 70.9491907,86.0221622 70.6994093,86.2727888 L67.8269227,89.7815607 C67.702032,89.906874 67.4522505,90.0321872 67.3273598,90.0321872 C67.2024691,90.0321872 67.0775784,90.0321872 66.9526876,89.906874 C66.7029062,89.6562474 66.5780155,89.2803076 66.8277969,89.029681 L69.7002835,85.5209091 Z M68.2371675,81.976817 C68.3620582,82.3527569 68.2371675,82.7286967 67.987386,82.7286967 L63.8659923,84.3577694 L63.6162108,84.3577694 C63.3664294,84.3577694 63.1166479,84.2324561 62.9917572,83.9818296 C62.8668665,83.731203 62.9917572,83.3552632 63.3664294,83.2299499 L67.4878232,81.6008772 C67.7376046,81.4755639 68.1122768,81.6008772 68.2371675,81.976817 Z M69.1135637,74.2970138 L65.7415143,71.4148083 C65.4917328,71.289495 65.3668421,70.7882418 65.4917328,70.5376153 C65.7415143,70.2869887 66.1161864,70.1616754 66.3659679,70.412302 L69.8629081,73.2945075 C70.1126895,73.5451341 70.2375802,73.9210739 69.9877988,74.1717005 C69.8629081,74.2970138 69.6131266,74.4223271 69.4882359,74.4223271 C69.3633452,74.4223271 69.2384545,74.4223271 69.1135637,74.2970138 Z M68.0654427,78.5463659 C67.940552,78.5463659 67.940552,78.5463659 68.0654427,78.5463659 L63.4444861,77.7944862 C63.0698139,77.6691729 62.9449232,77.4185464 62.9449232,77.0426065 C63.0698139,76.6666667 63.3195954,76.5413534 63.6942675,76.5413534 L68.1903335,77.2932331 C68.5650056,77.4185464 68.6898963,77.6691729 68.6898963,78.0451128 C68.6898963,78.2957393 68.3152242,78.5463659 68.0654427,78.5463659 Z M85.7497315,96.3932763 L86.7218136,92.8861085 C86.8945402,92.0195534 87.6036564,91.4605055 88.4850756,91.4605055 C88.9029661,91.4605055 89.4012067,91.660476 89.6914698,91.9554152 L97.6041952,98.4513679 L98.7992308,96.9953435 L91.1914898,90.6703565 C90.6133307,90.283613 90.3000023,89.5500397 90.4740104,88.8516522 C90.644234,88.1684542 91.0102433,87.6634886 91.4845348,87.5128594 L94.1622197,86.0735319 L77.7372897,81.1068049 L85.7497315,96.3932763 Z' }),
-	                React.createElement('path', { className: 'dibsvg-headshot-click', d: 'M81.0848315,87.811575 L81.5850203,88.7626383 C72.9743614,95.7873328 61.9791413,100 50,100 C22.3857625,100 -3.55271368e-15,77.6142375 -3.55271368e-15,50 C-3.55271368e-15,22.3857625 22.3857625,3.55271368e-15 50,3.55271368e-15 C77.6142375,3.55271368e-15 100,22.3857625 100,50 C100,62.7627766 95.2181481,74.4086919 87.3483335,83.2438568 L86.2344111,82.9081541 C94.133264,74.2160677 98.9473684,62.670231 98.9473684,50 C98.9473684,22.9671149 77.0328851,1.05263158 50,1.05263158 C22.9671149,1.05263158 1.05263158,22.9671149 1.05263158,50 C1.05263158,77.0328851 22.9671149,98.9473684 50,98.9473684 C61.8034915,98.9473684 72.6311611,94.7693782 81.0848315,87.811575 Z M58.0365136,54.754905 C58.195174,55.0718955 58.4231018,55.3882287 58.7370335,55.6866021 C59.0829936,56.0154167 59.5132943,56.3017759 60.0460522,56.5353302 L64.7149573,58.6505293 L71.641841,61.4350255 C71.7153027,61.4651199 71.809626,61.5066119 71.9367196,61.5686526 C72.1384097,61.6671076 72.3567547,61.7864188 72.5886303,61.9290466 C73.2343567,62.3262361 73.8747023,62.8344756 74.4724289,63.4676798 C75.8027331,64.8769432 76.7387207,66.705484 77.1039696,68.9837502 L77.1312009,69.1495017 L77.6969929,76.89599 L75.8886923,76.89599 C75.8261339,76.8941498 75.4750378,76.8913333 75.3226297,76.891317 C74.9870355,76.891281 74.4961995,76.8924205 73.7566254,76.8948451 C73.5395491,76.8955567 69.4833776,76.9103438 67.8372736,76.9155802 C62.9477876,76.9311343 58.1644821,76.9398496 52.9137953,76.9398496 L52.9137953,75.887218 C58.1632825,75.887218 62.9455033,75.8785047 67.8339476,75.862954 C69.479743,75.8577185 73.5358463,75.8429317 73.7531977,75.8422191 C75.2699552,75.8372466 75.7206828,75.8359786 75.8892,75.8433584 L76.5684609,75.8433584 L76.0921735,69.2831671 C75.7374253,67.0876016 74.8997163,65.4510575 73.7107677,64.1915397 C73.1794272,63.6286618 72.6109138,63.1774353 72.0403369,62.8264706 C71.8382758,62.7021819 71.6496994,62.5991372 71.4777692,62.5152095 C71.3728267,62.4639819 71.2982469,62.4311748 71.2425197,62.408368 L64.3040811,59.6188051 L59.620268,57.4973443 C58.9818611,57.2175257 58.4495842,56.8633029 58.0155861,56.4508135 C57.6097435,56.0650841 57.3103829,55.6496117 57.099018,55.2273218 C56.9693882,54.968332 56.8464012,54.6178221 56.8971837,54.7169 L56.839826,54.5432532 C56.7023086,54.126126 56.7023086,53.7953239 56.7635764,53.4947789 L56.8265541,53.3313668 C56.8810828,53.2393014 56.9473452,53.1472648 57.027435,53.0486576 C57.0826988,52.9806164 57.1419765,52.9124256 57.2173699,52.8289251 C57.2084658,52.8387867 57.3874242,52.6424399 57.4180927,52.6078101 C57.6240567,52.3583918 57.6350637,52.3453858 57.7183204,52.2607273 C59.2497961,50.4015135 60.3563828,48.2654339 61.1025525,46.0227191 C61.5725933,44.6099473 61.832115,43.3585025 61.907312,42.6458588 C62.6898742,37.0735758 61.9569914,32.9443614 60.1609588,30.0270735 C59.5162796,28.9799239 58.769704,28.1532657 57.9733852,27.5196744 C57.4498296,27.1031073 56.9911169,26.8333405 56.6056703,26.6611734 C54.4829869,25.5956312 52.2493759,25.0526316 49.9676232,25.0526316 C46.9851297,25.0526316 44.2443283,25.9790813 43.1465561,26.7059823 C40.2714806,28.4508901 38.4710932,31.7357889 37.9419154,36.2581181 C37.7221387,38.0981284 37.7368136,39.909489 37.8937681,41.5407387 C37.9321245,41.9393823 37.9670203,42.2129535 38.0058795,42.4747692 C38.3413235,44.9704829 39.1839357,47.3192971 40.3543719,49.4522916 C41.073661,50.7631189 41.8037404,51.7881701 42.2117146,52.25457 C42.607559,52.703514 42.6785012,52.787987 42.7756104,52.933155 C42.8803638,53.1030301 42.9086404,53.1552916 43.0140392,53.3618808 C43.1025343,53.5851356 43.12117,54.0754561 43.0602622,54.4640391 C42.8421602,55.4138044 42.3578322,56.1675387 41.7076821,56.7385934 C41.3032407,57.0938316 40.8647793,57.3442426 40.6646233,57.4103505 L37.0291612,59.0143889 L28.4114223,62.5033116 C27.2653969,62.9129709 26.3382291,63.6324581 25.6049656,64.5592318 C25.1287651,65.161103 24.8300325,65.7084706 24.6126397,66.229047 C24.1879415,67.1798155 23.8272836,68.958106 23.5433925,71.2322371 C23.4387325,72.0706245 23.3503995,72.9297261 23.2777089,73.7715615 C23.2290436,74.3351579 23.1933363,74.8212176 23.1722674,75.1585945 L23.1257046,75.8208044 L23.8078606,75.8208073 C33.6164849,75.8648169 43.4120809,75.887218 52.9137953,75.887218 L52.9137953,76.9398496 C43.4105018,76.9398496 33.6133426,76.9174449 23.8055151,76.8734336 L22,76.8734336 L22.039612,76.3100772 L22.1255111,75.0886647 C22.1468087,74.747361 22.1831267,74.2529873 22.2325422,73.680702 C22.3063171,72.8263094 22.3959924,71.9541532 22.5024446,71.1014095 C22.7990527,68.725408 23.1742308,66.8755229 23.6501316,65.810525 C23.8963914,65.220346 24.2387778,64.5929913 24.7833219,63.9047406 C25.6314411,62.8328005 26.7142172,61.9925604 28.0390939,61.5194457 L36.6216909,58.0445367 L40.2847649,56.4302127 C40.3992043,56.391215 40.7172168,56.2095939 41.0166864,55.946557 C41.5091533,55.5140022 41.8723928,54.9487116 42.0306466,54.266006 C42.0584546,54.084244 42.0464806,53.7691956 42.0628992,53.8023597 C41.9906874,53.6652929 41.9667797,53.6211061 41.9389378,53.5743819 C41.844897,53.430618 41.7802684,53.3536627 41.4677556,52.9973097 C40.9671505,52.4275733 40.1929261,51.3405413 39.4353769,49.9599891 C38.2063191,47.7201632 37.3203968,45.2506202 36.9672403,42.6227401 C36.9269406,42.3515802 36.8898401,42.0607253 36.8495411,41.6418925 C36.6858539,39.9406683 36.6705849,38.0559703 36.9001389,36.1341156 C37.4643226,31.3126127 39.4256898,27.7339979 42.5860248,25.8164472 C42.8942683,25.6122015 43.7741587,25.1970968 44.7734668,24.8593092 C46.3658173,24.3210605 48.114801,24 49.9676232,24 C52.4144421,24 54.8084445,24.5819914 57.0530421,25.7093652 C57.4935387,25.9054134 58.0280625,26.2197644 58.6252105,26.6948854 C59.5143907,27.4023619 60.3430341,28.3198909 61.0534808,29.4738664 C62.9846322,32.6106272 63.7614364,36.9873044 62.9483718,42.7744776 C62.9232949,43.0131543 62.8565991,43.4359213 62.7529854,43.9355592 C62.5966544,44.6894062 62.3810227,45.5043237 62.0976496,46.3560403 C61.3104497,48.7220768 60.1398319,50.9789153 58.4750182,52.9900797 C58.4139615,53.0520301 58.4022867,53.0658174 58.2158301,53.2912515 C58.1672281,53.3466838 57.9793529,53.5528139 57.9948363,53.5356656 C57.930673,53.6067283 57.8824019,53.6622575 57.8406629,53.7136469 C57.7666823,53.9067577 57.7765687,54.0303002 57.8225341,54.1685262 L57.871666,54.3451162 C57.9110136,54.4624081 57.9808596,54.6437128 58.0365136,54.754905 Z' })
-	            ),
+	            React.createElement('path', { className: 'dibsvg-headshot-head', d: 'M91.8981087,88.4761032 C91.7348547,88.5307054 91.5832218,88.7399061 91.4917695,89.1069528 C91.4291426,89.3583081 91.5522744,89.6465876 91.8170124,89.8270719 L100,96.6265366 L100,97.1881765 L99.8803681,97.3339354 L98.0978954,99.5018399 C98.0736446,99.5260479 98.0736446,99.5260479 98.0093344,99.5785785 C97.9668032,99.6096353 97.9668032,99.6096353 97.8991254,99.6474221 C97.6281562,99.7833651 97.3090957,99.6942945 97.1609369,99.4474947 L88.9884041,92.7349226 C88.8594819,92.6055642 88.6291932,92.5131371 88.4850756,92.5131371 C88.0948801,92.5131371 87.8233444,92.7272085 87.741573,93.1301928 L86.5054446,97.5953115 C86.475733,97.8132322 86.3441787,97.9883029 86.1593977,98.081006 C86.0500581,98.1358608 85.9521452,98.1522348 85.8623704,98.1522348 C85.7725957,98.1522348 85.6746828,98.1358608 85.5653432,98.081006 C85.4024404,97.9992791 85.2809063,97.8535346 85.2340523,97.6708499 L76.3456975,80.7132752 L76.3456975,80.2399921 L76.8460792,79.7379174 L95.3312163,85.3276294 C95.5448449,85.3594623 95.7163151,85.4905287 95.8076176,85.6737515 C95.8622874,85.783461 95.8786062,85.8817052 95.8786062,85.9717837 C95.8786062,86.3332716 95.7012672,86.5585716 95.3827478,86.6114026 L91.8981087,88.4761032 Z M73.2327963,71.1998747 C73.357687,71.4505013 73.2327963,71.8264411 72.9830149,71.9517544 L72.7332334,71.9517544 C72.483452,71.9517544 72.2336705,71.8264411 72.1087798,71.5758145 L70.4852004,67.3151629 C70.3603097,67.0645363 70.4852004,66.6885965 70.8598726,66.5632832 C71.1096541,66.4379699 71.4843262,66.5632832 71.6092169,66.9392231 L73.2327963,71.1998747 Z M77.1824653,70.9022556 C76.8077932,70.7769424 76.6829025,70.5263158 76.6829025,70.1503759 L77.4322468,65.764411 C77.5571375,65.3884712 77.8069189,65.2631579 78.1815911,65.2631579 C78.5562633,65.3884712 78.681154,65.6390977 78.681154,66.0150376 L77.9318097,70.4010025 C77.8069189,70.6516291 77.5571375,70.9022556 77.1824653,70.9022556 Z M81.0653391,72.5426278 C80.9404484,72.5426278 80.6906669,72.5426278 80.6906669,72.4173145 C80.4408855,72.166688 80.3159947,71.7907481 80.5657762,71.5401215 L83.4382628,68.0313496 C83.6880442,67.7807231 84.0627164,67.6554098 84.3124978,67.9060363 C84.5622792,68.1566629 84.68717,68.5326027 84.4373885,68.7832293 L81.564902,72.2920012 C81.4400112,72.4173145 81.1902298,72.5426278 81.0653391,72.5426278 Z M82.972484,76.4630326 C82.8475933,76.0870927 82.972484,75.7111529 83.4720469,75.7111529 L87.7183314,74.0820802 C87.9681129,73.9567669 88.342785,74.0820802 88.4676758,74.4580201 C88.5925665,74.7086466 88.4676758,75.0845865 88.0930036,75.2098997 L83.8467191,76.8389724 L83.5969377,76.8389724 C83.3471562,76.8389724 83.0973748,76.7136591 82.972484,76.4630326 Z M74.4348695,86.566416 C74.8095417,86.6917293 75.0593231,86.9423559 74.9344324,87.3182957 L74.185088,91.8295739 C74.185088,92.0802005 73.8104159,92.3308271 73.5606344,92.3308271 L73.4357437,92.3308271 C73.0610716,92.2055138 72.9361808,91.9548872 72.9361808,91.5789474 L73.6855252,87.0676692 C73.8104159,86.6917293 74.0601973,86.566416 74.4348695,86.566416 Z M69.7002835,85.5209091 C69.9500649,85.2702825 70.3247371,85.2702825 70.5745185,85.3955958 C70.8243,85.6462223 70.9491907,86.0221622 70.6994093,86.2727888 L67.8269227,89.7815607 C67.702032,89.906874 67.4522505,90.0321872 67.3273598,90.0321872 C67.2024691,90.0321872 67.0775784,90.0321872 66.9526876,89.906874 C66.7029062,89.6562474 66.5780155,89.2803076 66.8277969,89.029681 L69.7002835,85.5209091 Z M68.2371675,81.976817 C68.3620582,82.3527569 68.2371675,82.7286967 67.987386,82.7286967 L63.8659923,84.3577694 L63.6162108,84.3577694 C63.3664294,84.3577694 63.1166479,84.2324561 62.9917572,83.9818296 C62.8668665,83.731203 62.9917572,83.3552632 63.3664294,83.2299499 L67.4878232,81.6008772 C67.7376046,81.4755639 68.1122768,81.6008772 68.2371675,81.976817 Z M69.1135637,74.2970138 L65.7415143,71.4148083 C65.4917328,71.289495 65.3668421,70.7882418 65.4917328,70.5376153 C65.7415143,70.2869887 66.1161864,70.1616754 66.3659679,70.412302 L69.8629081,73.2945075 C70.1126895,73.5451341 70.2375802,73.9210739 69.9877988,74.1717005 C69.8629081,74.2970138 69.6131266,74.4223271 69.4882359,74.4223271 C69.3633452,74.4223271 69.2384545,74.4223271 69.1135637,74.2970138 Z M68.0654427,78.5463659 C67.940552,78.5463659 67.940552,78.5463659 68.0654427,78.5463659 L63.4444861,77.7944862 C63.0698139,77.6691729 62.9449232,77.4185464 62.9449232,77.0426065 C63.0698139,76.6666667 63.3195954,76.5413534 63.6942675,76.5413534 L68.1903335,77.2932331 C68.5650056,77.4185464 68.6898963,77.6691729 68.6898963,78.0451128 C68.6898963,78.2957393 68.3152242,78.5463659 68.0654427,78.5463659 Z M85.7497315,96.3932763 L86.7218136,92.8861085 C86.8945402,92.0195534 87.6036564,91.4605055 88.4850756,91.4605055 C88.9029661,91.4605055 89.4012067,91.660476 89.6914698,91.9554152 L97.6041952,98.4513679 L98.7992308,96.9953435 L91.1914898,90.6703565 C90.6133307,90.283613 90.3000023,89.5500397 90.4740104,88.8516522 C90.644234,88.1684542 91.0102433,87.6634886 91.4845348,87.5128594 L94.1622197,86.0735319 L77.7372897,81.1068049 L85.7497315,96.3932763 Z' }),
+	            React.createElement('path', { className: 'dibsvg-headshot-click', d: 'M81.0848315,87.811575 L81.5850203,88.7626383 C72.9743614,95.7873328 61.9791413,100 50,100 C22.3857625,100 -3.55271368e-15,77.6142375 -3.55271368e-15,50 C-3.55271368e-15,22.3857625 22.3857625,3.55271368e-15 50,3.55271368e-15 C77.6142375,3.55271368e-15 100,22.3857625 100,50 C100,62.7627766 95.2181481,74.4086919 87.3483335,83.2438568 L86.2344111,82.9081541 C94.133264,74.2160677 98.9473684,62.670231 98.9473684,50 C98.9473684,22.9671149 77.0328851,1.05263158 50,1.05263158 C22.9671149,1.05263158 1.05263158,22.9671149 1.05263158,50 C1.05263158,77.0328851 22.9671149,98.9473684 50,98.9473684 C61.8034915,98.9473684 72.6311611,94.7693782 81.0848315,87.811575 Z M58.0365136,54.754905 C58.195174,55.0718955 58.4231018,55.3882287 58.7370335,55.6866021 C59.0829936,56.0154167 59.5132943,56.3017759 60.0460522,56.5353302 L64.7149573,58.6505293 L71.641841,61.4350255 C71.7153027,61.4651199 71.809626,61.5066119 71.9367196,61.5686526 C72.1384097,61.6671076 72.3567547,61.7864188 72.5886303,61.9290466 C73.2343567,62.3262361 73.8747023,62.8344756 74.4724289,63.4676798 C75.8027331,64.8769432 76.7387207,66.705484 77.1039696,68.9837502 L77.1312009,69.1495017 L77.6969929,76.89599 L75.8886923,76.89599 C75.8261339,76.8941498 75.4750378,76.8913333 75.3226297,76.891317 C74.9870355,76.891281 74.4961995,76.8924205 73.7566254,76.8948451 C73.5395491,76.8955567 69.4833776,76.9103438 67.8372736,76.9155802 C62.9477876,76.9311343 58.1644821,76.9398496 52.9137953,76.9398496 L52.9137953,75.887218 C58.1632825,75.887218 62.9455033,75.8785047 67.8339476,75.862954 C69.479743,75.8577185 73.5358463,75.8429317 73.7531977,75.8422191 C75.2699552,75.8372466 75.7206828,75.8359786 75.8892,75.8433584 L76.5684609,75.8433584 L76.0921735,69.2831671 C75.7374253,67.0876016 74.8997163,65.4510575 73.7107677,64.1915397 C73.1794272,63.6286618 72.6109138,63.1774353 72.0403369,62.8264706 C71.8382758,62.7021819 71.6496994,62.5991372 71.4777692,62.5152095 C71.3728267,62.4639819 71.2982469,62.4311748 71.2425197,62.408368 L64.3040811,59.6188051 L59.620268,57.4973443 C58.9818611,57.2175257 58.4495842,56.8633029 58.0155861,56.4508135 C57.6097435,56.0650841 57.3103829,55.6496117 57.099018,55.2273218 C56.9693882,54.968332 56.8464012,54.6178221 56.8971837,54.7169 L56.839826,54.5432532 C56.7023086,54.126126 56.7023086,53.7953239 56.7635764,53.4947789 L56.8265541,53.3313668 C56.8810828,53.2393014 56.9473452,53.1472648 57.027435,53.0486576 C57.0826988,52.9806164 57.1419765,52.9124256 57.2173699,52.8289251 C57.2084658,52.8387867 57.3874242,52.6424399 57.4180927,52.6078101 C57.6240567,52.3583918 57.6350637,52.3453858 57.7183204,52.2607273 C59.2497961,50.4015135 60.3563828,48.2654339 61.1025525,46.0227191 C61.5725933,44.6099473 61.832115,43.3585025 61.907312,42.6458588 C62.6898742,37.0735758 61.9569914,32.9443614 60.1609588,30.0270735 C59.5162796,28.9799239 58.769704,28.1532657 57.9733852,27.5196744 C57.4498296,27.1031073 56.9911169,26.8333405 56.6056703,26.6611734 C54.4829869,25.5956312 52.2493759,25.0526316 49.9676232,25.0526316 C46.9851297,25.0526316 44.2443283,25.9790813 43.1465561,26.7059823 C40.2714806,28.4508901 38.4710932,31.7357889 37.9419154,36.2581181 C37.7221387,38.0981284 37.7368136,39.909489 37.8937681,41.5407387 C37.9321245,41.9393823 37.9670203,42.2129535 38.0058795,42.4747692 C38.3413235,44.9704829 39.1839357,47.3192971 40.3543719,49.4522916 C41.073661,50.7631189 41.8037404,51.7881701 42.2117146,52.25457 C42.607559,52.703514 42.6785012,52.787987 42.7756104,52.933155 C42.8803638,53.1030301 42.9086404,53.1552916 43.0140392,53.3618808 C43.1025343,53.5851356 43.12117,54.0754561 43.0602622,54.4640391 C42.8421602,55.4138044 42.3578322,56.1675387 41.7076821,56.7385934 C41.3032407,57.0938316 40.8647793,57.3442426 40.6646233,57.4103505 L37.0291612,59.0143889 L28.4114223,62.5033116 C27.2653969,62.9129709 26.3382291,63.6324581 25.6049656,64.5592318 C25.1287651,65.161103 24.8300325,65.7084706 24.6126397,66.229047 C24.1879415,67.1798155 23.8272836,68.958106 23.5433925,71.2322371 C23.4387325,72.0706245 23.3503995,72.9297261 23.2777089,73.7715615 C23.2290436,74.3351579 23.1933363,74.8212176 23.1722674,75.1585945 L23.1257046,75.8208044 L23.8078606,75.8208073 C33.6164849,75.8648169 43.4120809,75.887218 52.9137953,75.887218 L52.9137953,76.9398496 C43.4105018,76.9398496 33.6133426,76.9174449 23.8055151,76.8734336 L22,76.8734336 L22.039612,76.3100772 L22.1255111,75.0886647 C22.1468087,74.747361 22.1831267,74.2529873 22.2325422,73.680702 C22.3063171,72.8263094 22.3959924,71.9541532 22.5024446,71.1014095 C22.7990527,68.725408 23.1742308,66.8755229 23.6501316,65.810525 C23.8963914,65.220346 24.2387778,64.5929913 24.7833219,63.9047406 C25.6314411,62.8328005 26.7142172,61.9925604 28.0390939,61.5194457 L36.6216909,58.0445367 L40.2847649,56.4302127 C40.3992043,56.391215 40.7172168,56.2095939 41.0166864,55.946557 C41.5091533,55.5140022 41.8723928,54.9487116 42.0306466,54.266006 C42.0584546,54.084244 42.0464806,53.7691956 42.0628992,53.8023597 C41.9906874,53.6652929 41.9667797,53.6211061 41.9389378,53.5743819 C41.844897,53.430618 41.7802684,53.3536627 41.4677556,52.9973097 C40.9671505,52.4275733 40.1929261,51.3405413 39.4353769,49.9599891 C38.2063191,47.7201632 37.3203968,45.2506202 36.9672403,42.6227401 C36.9269406,42.3515802 36.8898401,42.0607253 36.8495411,41.6418925 C36.6858539,39.9406683 36.6705849,38.0559703 36.9001389,36.1341156 C37.4643226,31.3126127 39.4256898,27.7339979 42.5860248,25.8164472 C42.8942683,25.6122015 43.7741587,25.1970968 44.7734668,24.8593092 C46.3658173,24.3210605 48.114801,24 49.9676232,24 C52.4144421,24 54.8084445,24.5819914 57.0530421,25.7093652 C57.4935387,25.9054134 58.0280625,26.2197644 58.6252105,26.6948854 C59.5143907,27.4023619 60.3430341,28.3198909 61.0534808,29.4738664 C62.9846322,32.6106272 63.7614364,36.9873044 62.9483718,42.7744776 C62.9232949,43.0131543 62.8565991,43.4359213 62.7529854,43.9355592 C62.5966544,44.6894062 62.3810227,45.5043237 62.0976496,46.3560403 C61.3104497,48.7220768 60.1398319,50.9789153 58.4750182,52.9900797 C58.4139615,53.0520301 58.4022867,53.0658174 58.2158301,53.2912515 C58.1672281,53.3466838 57.9793529,53.5528139 57.9948363,53.5356656 C57.930673,53.6067283 57.8824019,53.6622575 57.8406629,53.7136469 C57.7666823,53.9067577 57.7765687,54.0303002 57.8225341,54.1685262 L57.871666,54.3451162 C57.9110136,54.4624081 57.9808596,54.6437128 58.0365136,54.754905 Z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -36628,15 +36556,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/heart-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/heart-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/heart-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/heart-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36644,7 +36572,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36710,15 +36638,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/heart-outlined.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/heart-outlined.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/heart-outlined.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/heart-outlined.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36726,7 +36654,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36792,15 +36720,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/home.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/home.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/home.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/home.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36808,7 +36736,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36874,15 +36802,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/image-upload-drag.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/image-upload-drag.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/image-upload-drag.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/image-upload-drag.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36890,7 +36818,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -36914,14 +36842,10 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M99.3712183,84.8302806 L89.9014048,77.0018483 L89.9014048,76.8541421 L94.0444482,74.638548 C94.6363116,74.3431355 94.9322432,73.7523104 94.9322432,73.0137791 C94.9322432,72.2752477 94.4883457,71.8321289 93.7485166,71.5367164 L71.9975388,65.0376406 C71.2577096,64.8899343 70.5178804,65.1853468 70.2219488,65.7761719 C69.9260171,66.2192907 69.9260171,66.8101158 70.2219488,67.2532346 L80.7275231,87.1935809 C81.0234547,87.784406 81.6153181,88.0798185 82.2071814,88.0798185 C82.9470106,88.0798185 83.5388739,87.6366997 83.8348056,86.8981684 L85.4624298,81.5807427 L85.6103956,81.5807427 L85.7583615,81.5807427 L95.5241066,89.5568812 C95.8200383,89.8522937 96.1159699,90 96.5598674,90 C97.0037649,90 97.4476624,89.8522937 97.7435941,89.4091749 L99.8151158,86.8981684 C100.111047,86.3073433 100.111047,85.4211057 99.3712183,84.8302806 Z M98.4834233,86.159637 L96.4119016,88.6706436 C96.4119016,88.6706436 96.2639358,88.8183498 96.2639358,88.6706436 L86.4981906,80.6945051 C86.202259,80.3990925 85.7583615,80.2513863 85.4624298,80.2513863 C84.7226006,80.2513863 84.1307373,80.6945051 83.9827714,81.4330364 L82.5031131,86.7504621 C82.5031131,86.8981684 82.3551472,86.8981684 82.3551472,86.8981684 C82.3551472,86.8981684 82.2071814,86.8981684 82.2071814,86.7504621 L71.7016071,66.8101158 C71.7016071,66.8101158 71.7016071,66.8101158 71.7016071,66.6624095 L71.8495729,66.5147033 L93.4525849,73.0137791 C93.6005507,73.0137791 93.6005507,73.1614854 93.6005507,73.1614854 C93.6005507,73.3091916 93.6005507,73.3091916 93.4525849,73.3091916 L89.3095415,75.5247857 C88.865644,75.6724919 88.5697123,76.1156107 88.4217465,76.7064358 C88.2737807,77.2972609 88.5697123,77.888086 89.0136098,78.1834985 L98.4834233,86.0119307 C98.4834233,86.0119307 98.4834233,86.159637 98.4834233,86.159637 Z' }),
-	                React.createElement('path', { d: 'M64.7049676,59.8488977 L60.3829477,56.3735454 C60.0627981,56.2224431 59.9027233,55.618034 60.0627981,55.3158294 C60.3829477,55.0136249 60.8631722,54.8625226 61.1833218,55.1647272 L65.6654164,58.6400795 C65.9855661,58.9422841 66.1456409,59.3955909 65.8254913,59.6977954 C65.6654164,59.8488977 65.3452668,60 65.185192,60 C65.0251172,60 64.8650424,60 64.7049676,59.8488977 Z M62.2391304,65 C62.0869565,65 62.0869565,65 62.2391304,65 L56.6086957,64.25 C56.1521739,64.125 56,63.875 56,63.5 C56.1521739,63.125 56.4565217,63 56.9130435,63 L62.3913043,63.75 C62.8478261,63.875 63,64.125 63,64.5 C63,64.75 62.5434783,65 62.2391304,65 Z M61.9449619,69.603352 C62.085256,70.1396648 61.9449619,70.6759777 61.6643738,70.6759777 L57.0346689,73 L56.7540807,73 C56.4734925,73 56.1929044,72.8212291 56.0526103,72.4636872 C55.9123162,72.1061453 56.0526103,71.5698324 56.4734925,71.3910615 L61.1031974,69.0670391 C61.3837856,68.8882682 61.8046679,69.0670391 61.9449619,69.603352 Z M64.6301873,72.2639925 C64.9315706,71.9453254 65.3836456,71.9453254 65.6850289,72.1046589 C65.9864121,72.423326 66.1371038,72.9013266 65.8357205,73.2199937 L62.3698127,77.6813329 C62.219121,77.8406665 61.9177377,78 61.7670461,78 C61.6163544,78 61.4656628,78 61.3149711,77.8406665 C61.0135879,77.5219994 60.8628962,77.0439987 61.1642795,76.7253317 L64.6301873,72.2639925 Z M69.476003,75 C69.8450037,75.1521739 70.0910042,75.4565217 69.968004,75.9130435 L69.2300025,81.3913043 C69.2300025,81.6956522 68.8610017,82 68.6150012,82 L68.492001,82 C68.1230002,81.8478261 68,81.5434783 68,81.0869565 L68.7380015,75.6086957 C68.8610017,75.1521739 69.1070022,75 69.476003,75 Z M79.0483748,63.4636872 C78.9142536,62.9273743 79.0483748,62.3910615 79.5848593,62.3910615 L84.1449778,60.0670391 C84.41322,59.8882682 84.8155834,60.0670391 84.9497046,60.603352 C85.0838257,60.9608939 84.9497046,61.4972067 84.5473412,61.6759777 L79.9872227,64 L79.7189804,64 C79.4507382,64 79.1824959,63.8212291 79.0483748,63.4636872 Z M76.7670461,59 C76.6163544,59 76.3149711,59 76.3149711,58.842479 C76.0135879,58.5274371 75.8628962,58.0548743 76.1642795,57.7398323 L79.6301873,53.3292456 C79.9315706,53.0142037 80.3836456,52.8566827 80.6850289,53.1717246 C80.9864121,53.4867665 81.1371038,53.9593294 80.8357205,54.2743713 L77.3698127,58.6849581 C77.219121,58.842479 76.9177377,59 76.7670461,59 Z M72.5,57 C72.125,56.8666667 72,56.6 72,56.2 L72.75,51.5333333 C72.875,51.1333333 73.125,51 73.5,51 C73.875,51.1333333 74,51.4 74,51.8 L73.25,56.4666667 C73.125,56.7333333 72.875,57 72.5,57 Z M68.9310758,56.1700288 C69.1067663,56.4466859 68.9310758,56.8616715 68.5796947,57 L68.2283136,57 C67.8769325,57 67.5255515,56.8616715 67.3498609,56.5850144 L65.065884,51.8818444 C64.8901934,51.6051873 65.065884,51.1902017 65.5929556,51.0518732 C65.9443366,50.9135447 66.4714082,51.0518732 66.6470988,51.4668588 L68.9310758,56.1700288 Z' }),
-	                React.createElement('path', { d: 'M23.0023195,36 C27.4625644,36 31,32.3076923 31,28 C31,23.5384615 27.3087628,20 23.0023195,20 C18.5420746,20 15.004639,23.6923077 15.004639,28 C14.8508374,32.3076923 18.5420746,36 23.0023195,36 Z M23.0029189,21.5 C26.5608443,21.5 29.5,24.4404762 29.5,28 C29.5,31.5595238 26.5608443,34.5 23.0029189,34.5 C19.4449935,34.5 16.5058377,31.5595238 16.5058377,28 C16.3511453,24.4404762 19.2903011,21.5 23.0029189,21.5 Z' }),
-	                React.createElement('path', { d: 'M0,9 L0,65.9066667 L0,75 L75.4,75 L74.675,73.5333333 L1.45,73.5333333 L1.45,66.4933333 L20.445,47.4266667 L31.03,58.1333333 L32.045,59.16 L33.06,58.1333333 L62.205,28.6533333 L85.55,52.2666667 L85.55,70.0133333 L87,70.4533333 L87,51.5333333 L87,9 L0,9 Z M85.55,50.0666667 L62.205,26.6 L32.045,57.1066667 L20.445,45.3733333 L1.45,64.44 L1.45,10.4666667 L85.55,10.4666667 L85.55,50.0666667 Z' })
-	            ),
+	            React.createElement('path', { d: 'M99.3712183,84.8302806 L89.9014048,77.0018483 L89.9014048,76.8541421 L94.0444482,74.638548 C94.6363116,74.3431355 94.9322432,73.7523104 94.9322432,73.0137791 C94.9322432,72.2752477 94.4883457,71.8321289 93.7485166,71.5367164 L71.9975388,65.0376406 C71.2577096,64.8899343 70.5178804,65.1853468 70.2219488,65.7761719 C69.9260171,66.2192907 69.9260171,66.8101158 70.2219488,67.2532346 L80.7275231,87.1935809 C81.0234547,87.784406 81.6153181,88.0798185 82.2071814,88.0798185 C82.9470106,88.0798185 83.5388739,87.6366997 83.8348056,86.8981684 L85.4624298,81.5807427 L85.6103956,81.5807427 L85.7583615,81.5807427 L95.5241066,89.5568812 C95.8200383,89.8522937 96.1159699,90 96.5598674,90 C97.0037649,90 97.4476624,89.8522937 97.7435941,89.4091749 L99.8151158,86.8981684 C100.111047,86.3073433 100.111047,85.4211057 99.3712183,84.8302806 Z M98.4834233,86.159637 L96.4119016,88.6706436 C96.4119016,88.6706436 96.2639358,88.8183498 96.2639358,88.6706436 L86.4981906,80.6945051 C86.202259,80.3990925 85.7583615,80.2513863 85.4624298,80.2513863 C84.7226006,80.2513863 84.1307373,80.6945051 83.9827714,81.4330364 L82.5031131,86.7504621 C82.5031131,86.8981684 82.3551472,86.8981684 82.3551472,86.8981684 C82.3551472,86.8981684 82.2071814,86.8981684 82.2071814,86.7504621 L71.7016071,66.8101158 C71.7016071,66.8101158 71.7016071,66.8101158 71.7016071,66.6624095 L71.8495729,66.5147033 L93.4525849,73.0137791 C93.6005507,73.0137791 93.6005507,73.1614854 93.6005507,73.1614854 C93.6005507,73.3091916 93.6005507,73.3091916 93.4525849,73.3091916 L89.3095415,75.5247857 C88.865644,75.6724919 88.5697123,76.1156107 88.4217465,76.7064358 C88.2737807,77.2972609 88.5697123,77.888086 89.0136098,78.1834985 L98.4834233,86.0119307 C98.4834233,86.0119307 98.4834233,86.159637 98.4834233,86.159637 Z' }),
+	            React.createElement('path', { d: 'M64.7049676,59.8488977 L60.3829477,56.3735454 C60.0627981,56.2224431 59.9027233,55.618034 60.0627981,55.3158294 C60.3829477,55.0136249 60.8631722,54.8625226 61.1833218,55.1647272 L65.6654164,58.6400795 C65.9855661,58.9422841 66.1456409,59.3955909 65.8254913,59.6977954 C65.6654164,59.8488977 65.3452668,60 65.185192,60 C65.0251172,60 64.8650424,60 64.7049676,59.8488977 Z M62.2391304,65 C62.0869565,65 62.0869565,65 62.2391304,65 L56.6086957,64.25 C56.1521739,64.125 56,63.875 56,63.5 C56.1521739,63.125 56.4565217,63 56.9130435,63 L62.3913043,63.75 C62.8478261,63.875 63,64.125 63,64.5 C63,64.75 62.5434783,65 62.2391304,65 Z M61.9449619,69.603352 C62.085256,70.1396648 61.9449619,70.6759777 61.6643738,70.6759777 L57.0346689,73 L56.7540807,73 C56.4734925,73 56.1929044,72.8212291 56.0526103,72.4636872 C55.9123162,72.1061453 56.0526103,71.5698324 56.4734925,71.3910615 L61.1031974,69.0670391 C61.3837856,68.8882682 61.8046679,69.0670391 61.9449619,69.603352 Z M64.6301873,72.2639925 C64.9315706,71.9453254 65.3836456,71.9453254 65.6850289,72.1046589 C65.9864121,72.423326 66.1371038,72.9013266 65.8357205,73.2199937 L62.3698127,77.6813329 C62.219121,77.8406665 61.9177377,78 61.7670461,78 C61.6163544,78 61.4656628,78 61.3149711,77.8406665 C61.0135879,77.5219994 60.8628962,77.0439987 61.1642795,76.7253317 L64.6301873,72.2639925 Z M69.476003,75 C69.8450037,75.1521739 70.0910042,75.4565217 69.968004,75.9130435 L69.2300025,81.3913043 C69.2300025,81.6956522 68.8610017,82 68.6150012,82 L68.492001,82 C68.1230002,81.8478261 68,81.5434783 68,81.0869565 L68.7380015,75.6086957 C68.8610017,75.1521739 69.1070022,75 69.476003,75 Z M79.0483748,63.4636872 C78.9142536,62.9273743 79.0483748,62.3910615 79.5848593,62.3910615 L84.1449778,60.0670391 C84.41322,59.8882682 84.8155834,60.0670391 84.9497046,60.603352 C85.0838257,60.9608939 84.9497046,61.4972067 84.5473412,61.6759777 L79.9872227,64 L79.7189804,64 C79.4507382,64 79.1824959,63.8212291 79.0483748,63.4636872 Z M76.7670461,59 C76.6163544,59 76.3149711,59 76.3149711,58.842479 C76.0135879,58.5274371 75.8628962,58.0548743 76.1642795,57.7398323 L79.6301873,53.3292456 C79.9315706,53.0142037 80.3836456,52.8566827 80.6850289,53.1717246 C80.9864121,53.4867665 81.1371038,53.9593294 80.8357205,54.2743713 L77.3698127,58.6849581 C77.219121,58.842479 76.9177377,59 76.7670461,59 Z M72.5,57 C72.125,56.8666667 72,56.6 72,56.2 L72.75,51.5333333 C72.875,51.1333333 73.125,51 73.5,51 C73.875,51.1333333 74,51.4 74,51.8 L73.25,56.4666667 C73.125,56.7333333 72.875,57 72.5,57 Z M68.9310758,56.1700288 C69.1067663,56.4466859 68.9310758,56.8616715 68.5796947,57 L68.2283136,57 C67.8769325,57 67.5255515,56.8616715 67.3498609,56.5850144 L65.065884,51.8818444 C64.8901934,51.6051873 65.065884,51.1902017 65.5929556,51.0518732 C65.9443366,50.9135447 66.4714082,51.0518732 66.6470988,51.4668588 L68.9310758,56.1700288 Z' }),
+	            React.createElement('path', { d: 'M23.0023195,36 C27.4625644,36 31,32.3076923 31,28 C31,23.5384615 27.3087628,20 23.0023195,20 C18.5420746,20 15.004639,23.6923077 15.004639,28 C14.8508374,32.3076923 18.5420746,36 23.0023195,36 Z M23.0029189,21.5 C26.5608443,21.5 29.5,24.4404762 29.5,28 C29.5,31.5595238 26.5608443,34.5 23.0029189,34.5 C19.4449935,34.5 16.5058377,31.5595238 16.5058377,28 C16.3511453,24.4404762 19.2903011,21.5 23.0029189,21.5 Z' }),
+	            React.createElement('path', { d: 'M0,9 L0,65.9066667 L0,75 L75.4,75 L74.675,73.5333333 L1.45,73.5333333 L1.45,66.4933333 L20.445,47.4266667 L31.03,58.1333333 L32.045,59.16 L33.06,58.1333333 L62.205,28.6533333 L85.55,52.2666667 L85.55,70.0133333 L87,70.4533333 L87,51.5333333 L87,9 L0,9 Z M85.55,50.0666667 L62.205,26.6 L32.045,57.1066667 L20.445,45.3733333 L1.45,64.44 L1.45,10.4666667 L85.55,10.4666667 L85.55,50.0666667 Z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -36963,15 +36887,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/image-upload-multiple.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/image-upload-multiple.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/image-upload-multiple.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/image-upload-multiple.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -36979,7 +36903,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37003,13 +36927,9 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('polygon', { points: '131,17.2 131,137 140,137 140,16.6 186.6,58.8 192.6,52.1 135.4,0.3 82.2,52.2 88.5,58.7 \t' }),
-	                React.createElement('path', { d: 'M155,94v9h65v97.2l-63.9-49.7l-46.9,38.8L97,178.7L52,212V103h64v-9H43v34H22v122h166v-21h41V94H155z M179,241H31V137h12\r v92h136V241z M220,220H56.3l40.3-29.8l12.5,10.9l47.2-39l63.7,49.5V220z' }),
-	                React.createElement('path', { d: 'M65.8,138.7c0,11.5,9.3,20.8,20.8,20.8s20.8-9.3,20.8-20.8s-9.3-20.8-20.8-20.8S65.8,127.2,65.8,138.7z M98.4,138.7\r c0,6.5-5.3,11.8-11.8,11.8s-11.8-5.3-11.8-11.8s5.3-11.8,11.8-11.8C93.1,126.9,98.4,132.2,98.4,138.7z' })
-	            ),
+	            React.createElement('polygon', { points: '131,17.2 131,137 140,137 140,16.6 186.6,58.8 192.6,52.1 135.4,0.3 82.2,52.2 88.5,58.7 \t' }),
+	            React.createElement('path', { d: 'M155,94v9h65v97.2l-63.9-49.7l-46.9,38.8L97,178.7L52,212V103h64v-9H43v34H22v122h166v-21h41V94H155z M179,241H31V137h12v92h136V241z M220,220H56.3l40.3-29.8l12.5,10.9l47.2-39l63.7,49.5V220z' }),
+	            React.createElement('path', { d: 'M65.8,138.7c0,11.5,9.3,20.8,20.8,20.8s20.8-9.3,20.8-20.8s-9.3-20.8-20.8-20.8S65.8,127.2,65.8,138.7z M98.4,138.7c0,6.5-5.3,11.8-11.8,11.8s-11.8-5.3-11.8-11.8s5.3-11.8,11.8-11.8C93.1,126.9,98.4,132.2,98.4,138.7z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -37051,15 +36971,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/image-upload.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/image-upload.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/image-upload.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/image-upload.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37067,7 +36987,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37091,13 +37011,9 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('polygon', { points: '120,17.2 120,137 129,137 129,16.6 175.6,58.8 181.6,52.1 124.4,0.3 71.2,52.2 77.5,58.7 \t' }),
-	                React.createElement('path', { d: 'M148,94v9h76v115.7l-75.3-58.5L94,205.4l-14.3-12.5L27,232V103h75v-9H18v144.6l-0.1,0.1l0.1,0.2V250h215V94H148z M224,241\r H29.9l49.4-36.6l14.6,12.7l55-45.5l75.1,58.4V241z' }),
-	                React.createElement('path', { d: 'M44.2,144.3c0,13,10.5,23.5,23.5,23.5s23.5-10.5,23.5-23.5s-10.5-23.5-23.5-23.5S44.2,131.4,44.2,144.3z M82.2,144.3\r c0,8-6.5,14.5-14.5,14.5s-14.5-6.5-14.5-14.5s6.5-14.5,14.5-14.5S82.2,136.3,82.2,144.3z' })
-	            ),
+	            React.createElement('polygon', { points: '120,17.2 120,137 129,137 129,16.6 175.6,58.8 181.6,52.1 124.4,0.3 71.2,52.2 77.5,58.7 \t' }),
+	            React.createElement('path', { d: 'M148,94v9h76v115.7l-75.3-58.5L94,205.4l-14.3-12.5L27,232V103h75v-9H18v144.6l-0.1,0.1l0.1,0.2V250h215V94H148z M224,241H29.9l49.4-36.6l14.6,12.7l55-45.5l75.1,58.4V241z' }),
+	            React.createElement('path', { d: 'M44.2,144.3c0,13,10.5,23.5,23.5,23.5s23.5-10.5,23.5-23.5s-10.5-23.5-23.5-23.5S44.2,131.4,44.2,144.3z M82.2,144.3c0,8-6.5,14.5-14.5,14.5s-14.5-6.5-14.5-14.5s6.5-14.5,14.5-14.5S82.2,136.3,82.2,144.3z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -37139,15 +37055,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/image.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/image.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/image.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/image.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37155,7 +37071,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37179,7 +37095,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M239,34.6H10.5C4.8,34.6,0,39.3,0,45.1v160.4c0,5.8,4.7,10.5,10.5,10.5H239c5.8,0,10.5-4.7,10.5-10.5V45.1 C249.5,39.3,244.8,34.6,239,34.6z M10.5,43.6H239c0.8,0,1.5,0.7,1.5,1.5v137.7l-47-35.2c-5.5-4-11.1,0-11.1,0l-45.9,33 c-5.8,4-9-1-9-1L77,123.2c-6.6-5.7-12.4-0.1-12.4-0.1L9,182.4V45.1C9,44.3,9.7,43.6,10.5,43.6z' }),
+	            React.createElement('path', { d: 'M239,34.6H10.5C4.8,34.6,0,39.3,0,45.1v160.4c0,5.8,4.7,10.5,10.5,10.5H239c5.8,0,10.5-4.7,10.5-10.5V45.1C249.5,39.3,244.8,34.6,239,34.6z M10.5,43.6H239c0.8,0,1.5,0.7,1.5,1.5v137.7l-47-35.2c-5.5-4-11.1,0-11.1,0l-45.9,33c-5.8,4-9-1-9-1L77,123.2c-6.6-5.7-12.4-0.1-12.4-0.1L9,182.4V45.1C9,44.3,9.7,43.6,10.5,43.6z' }),
 	            React.createElement('circle', { cx: '158', cy: '93.5', r: '16.5' }),
 	            React.Children.map(children, function (c) {
 	                return c;
@@ -37222,15 +37138,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/info-circle-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/info-circle-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/info-circle-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/info-circle-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37238,7 +37154,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37304,15 +37220,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/info-circle.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/info-circle.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/info-circle.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/info-circle.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37320,7 +37236,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37388,15 +37304,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/inquiries.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/inquiries.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/inquiries.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/inquiries.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37404,7 +37320,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37470,15 +37386,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/instagram.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/instagram.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/instagram.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/instagram.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37486,7 +37402,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37510,7 +37426,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M32.2,0h186c17.6,0,32.1,14.5,32.1,32.2v186c0,17.7-14.5,32.1-32.1,32.1h-186 C14.5,250.2,0,235.7,0,218.1v-186C0,14.5,14.5,0,32.2,0 M182.3,27.9c-6.2,0-11.3,5.1-11.3,11.3v27c0,6.2,5.1,11.3,11.3,11.3h28.3 c6.2,0,11.3-5.1,11.3-11.3v-27c0-6.2-5.1-11.3-11.3-11.3H182.3z M221.9,105.8h-22c2.1,6.8,3.2,14,3.2,21.5 c0,41.7-34.8,75.3-77.8,75.3s-77.8-33.7-77.8-75.3c0-7.5,1.1-14.7,3.2-21.5H27.7v105.7c0,5.5,4.5,10,10,10h174.2 c5.5,0,10-4.5,10-10V105.8z M125.3,75.9c-27.8,0-50.2,21.8-50.2,48.6s22.4,48.7,50.2,48.7s50.2-21.8,50.2-48.7 S153.1,75.9,125.3,75.9' }),
+	            React.createElement('path', { d: 'M32.2,0h186c17.6,0,32.1,14.5,32.1,32.2v186c0,17.7-14.5,32.1-32.1,32.1h-186C14.5,250.2,0,235.7,0,218.1v-186C0,14.5,14.5,0,32.2,0 M182.3,27.9c-6.2,0-11.3,5.1-11.3,11.3v27c0,6.2,5.1,11.3,11.3,11.3h28.3c6.2,0,11.3-5.1,11.3-11.3v-27c0-6.2-5.1-11.3-11.3-11.3H182.3z M221.9,105.8h-22c2.1,6.8,3.2,14,3.2,21.5c0,41.7-34.8,75.3-77.8,75.3s-77.8-33.7-77.8-75.3c0-7.5,1.1-14.7,3.2-21.5H27.7v105.7c0,5.5,4.5,10,10,10h174.2c5.5,0,10-4.5,10-10V105.8z M125.3,75.9c-27.8,0-50.2,21.8-50.2,48.6s22.4,48.7,50.2,48.7s50.2-21.8,50.2-48.7S153.1,75.9,125.3,75.9' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -37552,15 +37468,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/iphone.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/iphone.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/iphone.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/iphone.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37568,7 +37484,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37592,7 +37508,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M176.7-0.5h-150C11.9-0.5,0,10.9,0,24.9v369.6c0,14,11.9,25.4,26.6,25.4h150c14.7,0,26.6-11.4,26.6-25.4V24.9\r C203.3,10.9,191.4-0.5,176.7-0.5z M101.5,17.8c3.3,0,5.9,2.6,5.9,5.9s-2.6,5.9-5.9,5.9c-3.3,0-5.9-2.6-5.9-5.9S98.3,17.8,101.5,17.8\r z M80.6,41.3h41.8c1.9,0,3.5,1.9,3.5,4.2c0,2.3-1.6,4.2-3.5,4.2H80.6c-1.9,0-3.5-1.9-3.5-4.2C77.1,43.2,78.7,41.3,80.6,41.3z\r M100.5,399.9c-11.3,0-20.5-9.2-20.5-20.5c0-11.3,9.2-20.5,20.5-20.5c11.3,0,20.5,9.2,20.5,20.5C121,390.7,111.9,399.9,100.5,399.9z\r M180.7,339.2H22.1v-271h158.6V339.2z' }),
+	            React.createElement('path', { d: 'M176.7-0.5h-150C11.9-0.5,0,10.9,0,24.9v369.6c0,14,11.9,25.4,26.6,25.4h150c14.7,0,26.6-11.4,26.6-25.4V24.9C203.3,10.9,191.4-0.5,176.7-0.5z M101.5,17.8c3.3,0,5.9,2.6,5.9,5.9s-2.6,5.9-5.9,5.9c-3.3,0-5.9-2.6-5.9-5.9S98.3,17.8,101.5,17.8z M80.6,41.3h41.8c1.9,0,3.5,1.9,3.5,4.2c0,2.3-1.6,4.2-3.5,4.2H80.6c-1.9,0-3.5-1.9-3.5-4.2C77.1,43.2,78.7,41.3,80.6,41.3zM100.5,399.9c-11.3,0-20.5-9.2-20.5-20.5c0-11.3,9.2-20.5,20.5-20.5c11.3,0,20.5,9.2,20.5,20.5C121,390.7,111.9,399.9,100.5,399.9zM180.7,339.2H22.1v-271h158.6V339.2z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -37629,29 +37545,29 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var _components = {
-	  Lightbulb: {
-	    displayName: 'Lightbulb'
-	  }
+	    Lightbulb: {
+	        displayName: 'Lightbulb'
+	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	  filename: '/Users/Teddy/projects/dibs-vg/src/lightbulb.svg',
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/lightbulb.svg',
+	    components: _components,
+	    locals: [module],
+	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	  filename: '/Users/Teddy/projects/dibs-vg/src/lightbulb.svg',
-	  components: _components,
-	  locals: [],
-	  imports: [_react3.default, _index2.default]
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/lightbulb.svg',
+	    components: _components,
+	    locals: [],
+	    imports: [_react3.default, _index2.default]
 	});
 	
 	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
-	  };
+	    return function (Component) {
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	    };
 	}
 	
 	var React = __webpack_require__(/*! react */ 2);
@@ -37659,38 +37575,34 @@
 	
 	module.exports = _wrapComponent('Lightbulb')(React.createClass({
 	
-	  displayName: "Lightbulb",
+	    displayName: "Lightbulb",
 	
-	  getDefaultProps: function getDefaultProps() {
-	    return { "version": "1.1", "className": "dibsvg-svg dibsvg-lightbulb", "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 250 250", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
-	  },
-	  componentDidMount: function componentDidMount() {
-	    helpers.applyXmlAttributes(this);
-	  },
-	  render: function render() {
-	    var props = this.props;
-	    var children = props.children;
+	    getDefaultProps: function getDefaultProps() {
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-lightbulb", "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 250 250", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
 	
-	    return React.createElement(
-	      'svg',
-	      this.props,
-	      React.createElement(
-	        'g',
-	        null,
-	        React.createElement('path', { d: 'M166.3,45.8c-14.1-9.9-27.9-12.1-29.2-12.3c-6.3-1.1-11.1-1.1-13.1-1.1v0c0,0-8.1,0-14.2,1.1c-1.3,0.2-15.1,2.5-28.9,12.4\r C67.7,55.2,52,73.5,51.7,107.2c-0.2,2.6-0.9,22.8,18.4,48c0.4,0.6,1.2,1.4,2.7,3c1.1,1.1,2.2,2.4,3.2,3.5\r c11.4,13.1,13.2,22.4,12.8,28l0,9c-0.1,1.3-0.1,7.1,3.8,11.3c0.5,0.6,1.2,1.1,2,1.7c-0.3,2-0.3,5.6,1.7,8.9c-0.6,3-1.5,9.5,1.8,14\r c1.1,1.4,3,3.1,6.1,3.8c0.3,2.4,1,5.3,3,7.5c1.8,2,4.4,3.1,7.3,3.1h18c0,0,0,0,0.1,0c0.8,0,4.1-0.2,6.7-3c1.7-1.9,2.6-4.4,2.8-7.5\r c1.7-0.4,4.1-1.3,6.1-3.6c2.7-3.1,3.6-7.6,2.8-13.4c1.3-1.8,2.6-4.7,1.9-9.2c0.8-0.5,1.7-1.1,2.4-1.8c4.3-4.3,4.6-11.1,4.6-11.8\r V190l-0.2-0.4c-0.9-10.9,7.3-22.2,12.3-28c1.9-2.2,4.6-5.5,5.4-6.5c19.3-25.2,18.6-45.4,18.4-48C195.7,73.5,179.7,55.2,166.3,45.8z\r M132.8,242.8l-18.2,0c-1.6,0-2.3-0.5-2.7-0.9c-0.7-0.8-1.1-1.9-1.3-2.9h25.6c-0.2,1-0.5,2.2-1.1,2.9\r C134,242.9,132.7,242.8,132.8,242.8z M140.3,233h-32.8c-3.1,0-4.1-1.5-4.4-1.9c-1.1-1.4-1.3-3.8-1.2-5.8c1.5,0.6,3.3,0.8,5.3,0.9\r l33.1-0.2c0,0,0,0,0.1,0c0.5,0,2.6,0.1,4.9-0.6c0,2.3-0.5,4.4-1.5,5.6C142.4,232.6,140.4,233,140.3,233z M146.1,217.9\r c-1.5,1.8-4.7,2.1-5.8,2.1h-32.7c-2.8,0-4.8-1-5.8-2.5c-0.8-1.2-1.1-2.6-1.1-3.7c0.7,0.1,1.5,0.2,2.3,0.2h20.8h1h21.9\r c0.1,0,0.2,0,0.4,0C147.2,215.6,146.9,216.9,146.1,217.9z M185.3,119.8c-1.7,6.8-5.7,17.6-15.1,29.8c-0.6,0.7-3.3,3.7-5.3,6.1\r c-7.2,8.4-15.9,21.1-14.9,34.6v8.6c0,0.9-0.2,4-1.5,5.4c-0.4,0.4-0.7,0.8-1.9,0.8h-21.9h-1H103c-2.4,0-3.2-0.9-3.5-1.2\r c-1.3-1.3-1.4-3.9-1.4-4.6l0-8.9c0.8-10.5-4.3-22.2-15-34.6c-1-1.2-2.3-2.6-3.4-3.7c-0.8-0.9-1.9-2-2.1-2.4\r c-9.4-12.2-13.4-22.9-15.1-29.8c-1.9-7.4-1.5-12-1.5-12l0-0.4c0.3-56.7,48-64.5,50-64.8l0.1,0c3.7-0.6,8.3-0.9,10.7-0.9\r c0.4,0,0.8,0,1.3,0c2,0,6.3,0,12.3,1l0.1,0c2.1,0.3,50.9,8,51.2,64.7l0,0.4C186.7,107.8,187.1,112.4,185.3,119.8z' }),
-	        React.createElement('path', { d: 'M122.7,25C122.7,25,122.7,25,122.7,25c1.4,0,2.6-0.9,2.6-2.4l-0.1-20.1c0-1.4-1.2-2.5-2.6-2.5c0,0,0,0,0,0\r c-1.4,0-2.6,1.1-2.6,2.5l0.1,19.9C120.2,23.8,121.3,25,122.7,25z' }),
-	        React.createElement('path', { d: 'M228.6,79.9c-0.5-1.3-2-1.9-3.3-1.4l-19.3,7.9c-1.3,0.5-1.9,2-1.4,3.3c0.4,1,1.4,1.6,2.4,1.6c0.3,0,0.7-0.1,1-0.2l19.3-7.9\r C228.5,82.7,229.1,81.2,228.6,79.9z' }),
-	        React.createElement('path', { d: 'M42.1,90.3c1,0,2-0.6,2.4-1.6c0.5-1.3-0.1-2.8-1.4-3.3l-19.5-7.7c-1.3-0.5-2.8,0.1-3.3,1.4c-0.5,1.3,0.1,2.8,1.4,3.3\r l19.5,7.7C41.4,90.3,41.8,90.3,42.1,90.3z' }),
-	        React.createElement('path', { d: 'M193.1,24.2l-14.8,15.6c-1,1-0.9,2.7,0.1,3.6c0.5,0.5,1.1,0.7,1.8,0.7c0.7,0,1.4-0.3,1.9-0.8l14.8-15.6\r c1-1,0.9-2.7-0.1-3.6C195.7,23.1,194.1,23.1,193.1,24.2z' }),
-	        React.createElement('path', { d: 'M220.2,146.2l-18.7-8.5c-1.3-0.6-2.8,0-3.4,1.3c-0.6,1.3,0,2.8,1.3,3.4l18.7,8.5c0.3,0.2,0.7,0.2,1.1,0.2\r c1,0,1.9-0.6,2.3-1.5C222,148.3,221.5,146.8,220.2,146.2z' }),
-	        React.createElement('path', { d: 'M46.4,138.6l-20.5,6.8c-1.3,0.4-2.1,1.9-1.6,3.2c0.4,1.1,1.4,1.8,2.4,1.8c0.3,0,0.5,0,0.8-0.1l20.5-6.8\r c1.3-0.4,2.1-1.9,1.6-3.2C49.2,138.9,47.7,138.2,46.4,138.6z' }),
-	        React.createElement('path', { d: 'M67.6,43.7c0.6,0,1.3-0.2,1.8-0.7c1-1,1.1-2.6,0.1-3.6L54.7,24.1c-1-1-2.6-1.1-3.6-0.1c-1,1-1.1,2.6-0.1,3.6l14.7,15.3\r C66.2,43.5,66.9,43.7,67.6,43.7z' })
-	      ),
-	      React.Children.map(children, function (c) {
-	        return c;
-	      })
-	    );
-	  }
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement('path', { d: 'M166.3,45.8c-14.1-9.9-27.9-12.1-29.2-12.3c-6.3-1.1-11.1-1.1-13.1-1.1v0c0,0-8.1,0-14.2,1.1c-1.3,0.2-15.1,2.5-28.9,12.4C67.7,55.2,52,73.5,51.7,107.2c-0.2,2.6-0.9,22.8,18.4,48c0.4,0.6,1.2,1.4,2.7,3c1.1,1.1,2.2,2.4,3.2,3.5c11.4,13.1,13.2,22.4,12.8,28l0,9c-0.1,1.3-0.1,7.1,3.8,11.3c0.5,0.6,1.2,1.1,2,1.7c-0.3,2-0.3,5.6,1.7,8.9c-0.6,3-1.5,9.5,1.8,14c1.1,1.4,3,3.1,6.1,3.8c0.3,2.4,1,5.3,3,7.5c1.8,2,4.4,3.1,7.3,3.1h18c0,0,0,0,0.1,0c0.8,0,4.1-0.2,6.7-3c1.7-1.9,2.6-4.4,2.8-7.5c1.7-0.4,4.1-1.3,6.1-3.6c2.7-3.1,3.6-7.6,2.8-13.4c1.3-1.8,2.6-4.7,1.9-9.2c0.8-0.5,1.7-1.1,2.4-1.8c4.3-4.3,4.6-11.1,4.6-11.8V190l-0.2-0.4c-0.9-10.9,7.3-22.2,12.3-28c1.9-2.2,4.6-5.5,5.4-6.5c19.3-25.2,18.6-45.4,18.4-48C195.7,73.5,179.7,55.2,166.3,45.8zM132.8,242.8l-18.2,0c-1.6,0-2.3-0.5-2.7-0.9c-0.7-0.8-1.1-1.9-1.3-2.9h25.6c-0.2,1-0.5,2.2-1.1,2.9C134,242.9,132.7,242.8,132.8,242.8z M140.3,233h-32.8c-3.1,0-4.1-1.5-4.4-1.9c-1.1-1.4-1.3-3.8-1.2-5.8c1.5,0.6,3.3,0.8,5.3,0.9l33.1-0.2c0,0,0,0,0.1,0c0.5,0,2.6,0.1,4.9-0.6c0,2.3-0.5,4.4-1.5,5.6C142.4,232.6,140.4,233,140.3,233z M146.1,217.9c-1.5,1.8-4.7,2.1-5.8,2.1h-32.7c-2.8,0-4.8-1-5.8-2.5c-0.8-1.2-1.1-2.6-1.1-3.7c0.7,0.1,1.5,0.2,2.3,0.2h20.8h1h21.9c0.1,0,0.2,0,0.4,0C147.2,215.6,146.9,216.9,146.1,217.9z M185.3,119.8c-1.7,6.8-5.7,17.6-15.1,29.8c-0.6,0.7-3.3,3.7-5.3,6.1c-7.2,8.4-15.9,21.1-14.9,34.6v8.6c0,0.9-0.2,4-1.5,5.4c-0.4,0.4-0.7,0.8-1.9,0.8h-21.9h-1H103c-2.4,0-3.2-0.9-3.5-1.2c-1.3-1.3-1.4-3.9-1.4-4.6l0-8.9c0.8-10.5-4.3-22.2-15-34.6c-1-1.2-2.3-2.6-3.4-3.7c-0.8-0.9-1.9-2-2.1-2.4c-9.4-12.2-13.4-22.9-15.1-29.8c-1.9-7.4-1.5-12-1.5-12l0-0.4c0.3-56.7,48-64.5,50-64.8l0.1,0c3.7-0.6,8.3-0.9,10.7-0.9c0.4,0,0.8,0,1.3,0c2,0,6.3,0,12.3,1l0.1,0c2.1,0.3,50.9,8,51.2,64.7l0,0.4C186.7,107.8,187.1,112.4,185.3,119.8z' }),
+	            React.createElement('path', { d: 'M122.7,25C122.7,25,122.7,25,122.7,25c1.4,0,2.6-0.9,2.6-2.4l-0.1-20.1c0-1.4-1.2-2.5-2.6-2.5c0,0,0,0,0,0c-1.4,0-2.6,1.1-2.6,2.5l0.1,19.9C120.2,23.8,121.3,25,122.7,25z' }),
+	            React.createElement('path', { d: 'M228.6,79.9c-0.5-1.3-2-1.9-3.3-1.4l-19.3,7.9c-1.3,0.5-1.9,2-1.4,3.3c0.4,1,1.4,1.6,2.4,1.6c0.3,0,0.7-0.1,1-0.2l19.3-7.9C228.5,82.7,229.1,81.2,228.6,79.9z' }),
+	            React.createElement('path', { d: 'M42.1,90.3c1,0,2-0.6,2.4-1.6c0.5-1.3-0.1-2.8-1.4-3.3l-19.5-7.7c-1.3-0.5-2.8,0.1-3.3,1.4c-0.5,1.3,0.1,2.8,1.4,3.3l19.5,7.7C41.4,90.3,41.8,90.3,42.1,90.3z' }),
+	            React.createElement('path', { d: 'M193.1,24.2l-14.8,15.6c-1,1-0.9,2.7,0.1,3.6c0.5,0.5,1.1,0.7,1.8,0.7c0.7,0,1.4-0.3,1.9-0.8l14.8-15.6c1-1,0.9-2.7-0.1-3.6C195.7,23.1,194.1,23.1,193.1,24.2z' }),
+	            React.createElement('path', { d: 'M220.2,146.2l-18.7-8.5c-1.3-0.6-2.8,0-3.4,1.3c-0.6,1.3,0,2.8,1.3,3.4l18.7,8.5c0.3,0.2,0.7,0.2,1.1,0.2c1,0,1.9-0.6,2.3-1.5C222,148.3,221.5,146.8,220.2,146.2z' }),
+	            React.createElement('path', { d: 'M46.4,138.6l-20.5,6.8c-1.3,0.4-2.1,1.9-1.6,3.2c0.4,1.1,1.4,1.8,2.4,1.8c0.3,0,0.5,0,0.8-0.1l20.5-6.8c1.3-0.4,2.1-1.9,1.6-3.2C49.2,138.9,47.7,138.2,46.4,138.6z' }),
+	            React.createElement('path', { d: 'M67.6,43.7c0.6,0,1.3-0.2,1.8-0.7c1-1,1.1-2.6,0.1-3.6L54.7,24.1c-1-1-2.6-1.1-3.6-0.1c-1,1-1.1,2.6-0.1,3.6l14.7,15.3C66.2,43.5,66.9,43.7,67.6,43.7z' }),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
 	}));
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
@@ -37727,15 +37639,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/linkedin.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/linkedin.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/linkedin.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/linkedin.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37743,7 +37655,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37809,15 +37721,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/list.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/list.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/list.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/list.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37825,7 +37737,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37849,16 +37761,12 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('ellipse', { cx: '36.1', cy: '42.2', rx: '35.6', ry: '36.2' }),
-	                React.createElement('ellipse', { cx: '36.1', cy: '210.3', rx: '35.6', ry: '36.2' }),
-	                React.createElement('ellipse', { cx: '36.1', cy: '377.3', rx: '35.6', ry: '36.2' }),
-	                React.createElement('rect', { x: '140.8', y: '0.4', width: '278.7', height: '85.4' }),
-	                React.createElement('rect', { x: '140.8', y: '167.2', width: '278.7', height: '85.4' }),
-	                React.createElement('rect', { x: '140.8', y: '334', width: '278.7', height: '85.4' })
-	            ),
+	            React.createElement('ellipse', { cx: '36.1', cy: '42.2', rx: '35.6', ry: '36.2' }),
+	            React.createElement('ellipse', { cx: '36.1', cy: '210.3', rx: '35.6', ry: '36.2' }),
+	            React.createElement('ellipse', { cx: '36.1', cy: '377.3', rx: '35.6', ry: '36.2' }),
+	            React.createElement('rect', { x: '140.8', y: '0.4', width: '278.7', height: '85.4' }),
+	            React.createElement('rect', { x: '140.8', y: '167.2', width: '278.7', height: '85.4' }),
+	            React.createElement('rect', { x: '140.8', y: '334', width: '278.7', height: '85.4' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -37900,15 +37808,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/listing-views.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/listing-views.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/listing-views.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/listing-views.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37916,7 +37824,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -37982,15 +37890,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/loader.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/loader.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/loader.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/loader.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -37998,7 +37906,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38064,15 +37972,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/location-pin.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/location-pin.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/location-pin.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/location-pin.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38080,7 +37988,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38104,14 +38012,10 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { fill: 'none', d: 'M124.1,10.8C103.5,10.8,82.7,21,67,38.6c-18.1,20.4-26.7,48-23.4,75.5c6.2,52.4,66,108.3,80.5,121.1 c15.4-13.4,77-69.9,80.5-120.9c2-29.6-7.8-58.2-26.8-78.5C162.6,19.7,143.6,10.8,124.1,10.8z M123.8,141.5 c-22.2,0-40.3-18.1-40.3-40.3s18.1-40.3,40.3-40.3s40.3,18.1,40.3,40.3S146.1,141.5,123.8,141.5z' }),
-	                React.createElement('path', { fill: 'none', d: 'M123.8,71.8c-16.2,0-29.3,13.2-29.3,29.3s13.2,29.3,29.3,29.3s29.3-13.2,29.3-29.3S140,71.8,123.8,71.8z' }),
-	                React.createElement('path', { d: 'M185.8,28.4C168.6,10,146.6-0.2,124.1-0.2c-23.8,0-47.6,11.5-65.3,31.5C38.5,54.1,29,84.7,32.7,115.4 c3.2,26.8,18.9,57.1,46.8,90c10.8,12.8,21.3,23.3,28.2,29.8C121.1,248,122,248,124.1,248c1.3,0,2.5-0.4,3.5-1.2 c3.4-2.8,83.8-68.8,88-131.6C217.7,82.6,206.9,50.9,185.8,28.4z M204.5,114.4c-3.4,51-65,107.5-80.5,120.9 c-14.5-12.9-74.3-68.7-80.5-121.1C40.3,86.6,48.8,59,67,38.6c15.7-17.6,36.5-27.8,57.1-27.8c19.5,0,38.5,8.9,53.7,25.1 C196.8,56.2,206.5,84.9,204.5,114.4z' }),
-	                React.createElement('path', { d: 'M123.8,60.8c-22.2,0-40.3,18.1-40.3,40.3s18.1,40.3,40.3,40.3s40.3-18.1,40.3-40.3S146.1,60.8,123.8,60.8z M123.8,130.5 c-16.2,0-29.3-13.2-29.3-29.3s13.2-29.3,29.3-29.3s29.3,13.2,29.3,29.3S140,130.5,123.8,130.5z' })
-	            ),
+	            React.createElement('path', { fill: 'none', d: 'M124.1,10.8C103.5,10.8,82.7,21,67,38.6c-18.1,20.4-26.7,48-23.4,75.5c6.2,52.4,66,108.3,80.5,121.1c15.4-13.4,77-69.9,80.5-120.9c2-29.6-7.8-58.2-26.8-78.5C162.6,19.7,143.6,10.8,124.1,10.8z M123.8,141.5c-22.2,0-40.3-18.1-40.3-40.3s18.1-40.3,40.3-40.3s40.3,18.1,40.3,40.3S146.1,141.5,123.8,141.5z' }),
+	            React.createElement('path', { fill: 'none', d: 'M123.8,71.8c-16.2,0-29.3,13.2-29.3,29.3s13.2,29.3,29.3,29.3s29.3-13.2,29.3-29.3S140,71.8,123.8,71.8z' }),
+	            React.createElement('path', { d: 'M185.8,28.4C168.6,10,146.6-0.2,124.1-0.2c-23.8,0-47.6,11.5-65.3,31.5C38.5,54.1,29,84.7,32.7,115.4c3.2,26.8,18.9,57.1,46.8,90c10.8,12.8,21.3,23.3,28.2,29.8C121.1,248,122,248,124.1,248c1.3,0,2.5-0.4,3.5-1.2c3.4-2.8,83.8-68.8,88-131.6C217.7,82.6,206.9,50.9,185.8,28.4z M204.5,114.4c-3.4,51-65,107.5-80.5,120.9c-14.5-12.9-74.3-68.7-80.5-121.1C40.3,86.6,48.8,59,67,38.6c15.7-17.6,36.5-27.8,57.1-27.8c19.5,0,38.5,8.9,53.7,25.1C196.8,56.2,206.5,84.9,204.5,114.4z' }),
+	            React.createElement('path', { d: 'M123.8,60.8c-22.2,0-40.3,18.1-40.3,40.3s18.1,40.3,40.3,40.3s40.3-18.1,40.3-40.3S146.1,60.8,123.8,60.8z M123.8,130.5c-16.2,0-29.3-13.2-29.3-29.3s13.2-29.3,29.3-29.3s29.3,13.2,29.3,29.3S140,130.5,123.8,130.5z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -38153,15 +38057,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/lock-with-checkmark.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/lock-with-checkmark.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/lock-with-checkmark.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/lock-with-checkmark.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38169,7 +38073,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38193,12 +38097,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M423.3,241v-70.8l0-0.4c-0.1-1.9-2.5-47.3-15.4-71.1c-7.9-14.6-20.8-36.1-41.3-54.7 C344.7,24.3,317.6,11,286,4.7c-5.3-1.1-17.8-2.2-30.6-2.2c-10.4,0-19.2,0.7-26.3,2.1c-30.7,6.2-87,26.1-119,90.5 c-16.6,33.5-16,81.1-16,81.6c0.3,14.7,0.1,21.4,0,31.6c-0.1,7.6-0.3,16.9-0.3,32.7H43.5v274.3l427.5,0.2V241H423.3z M108.2,176.5 c-0.2-12.3,2-49.9,14.5-75.1c29.3-59,81-77.3,109.2-83c6.1-1.2,14.2-1.9,23.5-1.9c12.5,0,24,1.1,27.8,1.9 c64.8,13,94.1,53.4,112.3,87c11,20.4,13.6,62,13.8,65v71.2h-60.9L348,171l0-0.6c-4.8-48.2-27.3-71.3-45.4-82.1 c-19.2-11.5-37.3-12-39.1-12c-48.9-1.3-72.4,25.5-83.5,47.9c-11.5,23.1-12.1,46-12.1,47l0,70.5h-60.1c0-16,0.2-25.3,0.3-33 C108.4,198.7,108.5,191.5,108.2,176.5z M181.9,241v-69.7c0-1.2,0.9-21.6,10.8-41.4c13.2-26.4,35.9-39.7,67.4-39.7c1,0,2,0,3,0 l0.2,0c0.2,0,15.5,0.1,32,10c22.3,13.3,35.3,37.3,38.7,71.2l0.4,69.6H181.9z M57.5,501.3V255.6h399.5l-0.3,245.6L57.5,501.3z' }),
-	                React.createElement('polygon', { points: '229.5,404.3 196.4,368.5 174.3,388.8 229,448 338.8,334.5 317.2,313.6    ' })
-	            ),
+	            React.createElement('path', { d: 'M423.3,241v-70.8l0-0.4c-0.1-1.9-2.5-47.3-15.4-71.1c-7.9-14.6-20.8-36.1-41.3-54.7C344.7,24.3,317.6,11,286,4.7c-5.3-1.1-17.8-2.2-30.6-2.2c-10.4,0-19.2,0.7-26.3,2.1c-30.7,6.2-87,26.1-119,90.5c-16.6,33.5-16,81.1-16,81.6c0.3,14.7,0.1,21.4,0,31.6c-0.1,7.6-0.3,16.9-0.3,32.7H43.5v274.3l427.5,0.2V241H423.3z M108.2,176.5c-0.2-12.3,2-49.9,14.5-75.1c29.3-59,81-77.3,109.2-83c6.1-1.2,14.2-1.9,23.5-1.9c12.5,0,24,1.1,27.8,1.9c64.8,13,94.1,53.4,112.3,87c11,20.4,13.6,62,13.8,65v71.2h-60.9L348,171l0-0.6c-4.8-48.2-27.3-71.3-45.4-82.1c-19.2-11.5-37.3-12-39.1-12c-48.9-1.3-72.4,25.5-83.5,47.9c-11.5,23.1-12.1,46-12.1,47l0,70.5h-60.1c0-16,0.2-25.3,0.3-33C108.4,198.7,108.5,191.5,108.2,176.5z M181.9,241v-69.7c0-1.2,0.9-21.6,10.8-41.4c13.2-26.4,35.9-39.7,67.4-39.7c1,0,2,0,3,0l0.2,0c0.2,0,15.5,0.1,32,10c22.3,13.3,35.3,37.3,38.7,71.2l0.4,69.6H181.9z M57.5,501.3V255.6h399.5l-0.3,245.6L57.5,501.3z' }),
+	            React.createElement('polygon', { points: '229.5,404.3 196.4,368.5 174.3,388.8 229,448 338.8,334.5 317.2,313.6' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -38240,15 +38140,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/lock.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/lock.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/lock.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/lock.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38256,7 +38156,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38280,11 +38180,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M423.3,241v-70.8l0-0.4c-0.1-1.9-2.5-47.3-15.4-71.1c-7.9-14.6-20.8-36.1-41.3-54.7 C344.7,24.3,317.6,11,286,4.7c-5.3-1.1-17.8-2.2-30.6-2.2c-10.4,0-19.2,0.7-26.3,2.1c-30.7,6.2-87,26.1-119,90.5 c-16.6,33.5-16,81.1-16,81.6c0.3,14.7,0.1,21.4,0,31.6c-0.1,7.6-0.3,16.9-0.3,32.7H43.5v274.3l427.5,0.2V241H423.3z M108.2,176.5 c-0.2-12.3,2-49.9,14.5-75.1c29.3-59,81-77.3,109.2-83c6.1-1.2,14.2-1.9,23.5-1.9c12.5,0,24,1.1,27.8,1.9 c64.8,13,94.1,53.4,112.3,87c11,20.4,13.6,62,13.8,65v71.2h-60.9L348,171l0-0.6c-4.8-48.2-27.3-71.3-45.4-82.1 c-19.2-11.5-37.3-12-39.1-12c-48.9-1.3-72.4,25.5-83.5,47.9c-11.5,23.1-12.1,46-12.1,47l0,70.5h-60.1c0-16,0.2-25.3,0.3-33 C108.4,198.7,108.5,191.5,108.2,176.5z M181.9,241v-69.7c0-1.2,0.9-21.6,10.8-41.4c13.2-26.4,35.9-39.7,67.4-39.7c1,0,2,0,3,0 l0.2,0c0.2,0,15.5,0.1,32,10c22.3,13.3,35.3,37.3,38.7,71.2l0.4,69.6H181.9z M57.5,501.3V255.6h399.5l-0.3,245.6L57.5,501.3z' })
-	            ),
+	            React.createElement('path', { d: 'M423.3,241v-70.8l0-0.4c-0.1-1.9-2.5-47.3-15.4-71.1c-7.9-14.6-20.8-36.1-41.3-54.7C344.7,24.3,317.6,11,286,4.7c-5.3-1.1-17.8-2.2-30.6-2.2c-10.4,0-19.2,0.7-26.3,2.1c-30.7,6.2-87,26.1-119,90.5c-16.6,33.5-16,81.1-16,81.6c0.3,14.7,0.1,21.4,0,31.6c-0.1,7.6-0.3,16.9-0.3,32.7H43.5v274.3l427.5,0.2V241H423.3z M108.2,176.5c-0.2-12.3,2-49.9,14.5-75.1c29.3-59,81-77.3,109.2-83c6.1-1.2,14.2-1.9,23.5-1.9c12.5,0,24,1.1,27.8,1.9c64.8,13,94.1,53.4,112.3,87c11,20.4,13.6,62,13.8,65v71.2h-60.9L348,171l0-0.6c-4.8-48.2-27.3-71.3-45.4-82.1c-19.2-11.5-37.3-12-39.1-12c-48.9-1.3-72.4,25.5-83.5,47.9c-11.5,23.1-12.1,46-12.1,47l0,70.5h-60.1c0-16,0.2-25.3,0.3-33C108.4,198.7,108.5,191.5,108.2,176.5z M181.9,241v-69.7c0-1.2,0.9-21.6,10.8-41.4c13.2-26.4,35.9-39.7,67.4-39.7c1,0,2,0,3,0l0.2,0c0.2,0,15.5,0.1,32,10c22.3,13.3,35.3,37.3,38.7,71.2l0.4,69.6H181.9z M57.5,501.3V255.6h399.5l-0.3,245.6L57.5,501.3z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -38326,15 +38222,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/logo-1st.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/logo-1st.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/logo-1st.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/logo-1st.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38342,7 +38238,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38366,13 +38262,9 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M120.4,297.7 C117.6,293.8 116.2,290 116.2,286.3 C116.2,282.6 118.2,274 122.2,260.3 L199.7,0 L190,0 L72.4,28.1 L74.4,36.7 C85.7,35.5 93.3,34.9 97.2,34.9 C105,34.9 111,36.9 115.2,40.9 C119.4,44.9 121.5,50.3 121.5,57.1 C121.5,60.6 121,64.3 120.1,68.3 C119.8,69.7 116,82.1 108.8,105.6 L63.2,260.3 C58.3,277 53.9,288 50,293.2 C46.1,298.4 41.1,302.2 35,304.5 C28.9,306.8 18.1,308.1 2.5,308.4 L0,316.6 L156.7,316.6 L159.2,308.4 C142.7,307.5 132.8,306.4 129.5,305.3 C126.3,304.1 123.2,301.6 120.4,297.7 L120.4,297.7 Z' }),
-	                React.createElement('path', { d: 'M340.2,112.2 C336.1,112.2 330.6,111.3 323.7,109.6 C309.9,106.1 298.3,104.4 288.8,104.4 C267.1,104.4 250.2,109.9 238.2,120.9 C226.2,131.9 220.2,145.7 220.2,162.3 C220.2,172.1 222.2,180.8 226.2,188.5 C231.9,199.1 243.6,214 261.5,233.4 C274.5,247.6 282.8,258 286.3,264.7 C289.9,271.4 291.7,278.3 291.7,285.5 C291.7,292.8 289,299.1 283.5,304.4 C278,309.7 271.1,312.3 262.7,312.3 C255.5,312.3 248,310 240.3,305.3 C232.5,300.6 226.3,294.3 221.6,286.4 C216.9,278.5 211.9,265.2 206.6,246.7 L199.2,246.7 L187.9,322.9 L196.5,322.9 C199.1,319.4 201.5,317.1 203.6,316 C205.7,314.9 208.7,314.4 212.5,314.4 C216.8,314.4 223.2,315.6 231.8,317.9 C244.8,321.3 255.7,323 264.6,323 C277.7,323 290.4,319.8 302.6,313.3 C314.8,306.8 323.9,298.3 330,287.6 C336.1,276.9 339.2,265.5 339.2,253.5 C339.2,242.4 336.6,232 331.4,222.3 C326.2,212.6 311.5,194.8 287.4,168.8 C280.5,161.5 276.1,155.7 274.1,151.4 C272.1,147.1 271.1,142.6 271.1,137.7 C271.1,131.9 273.4,127 278,122.8 C282.6,118.7 288.4,116.6 295.4,116.6 C306.8,116.6 317.5,121.8 327.5,132.3 C337.5,142.8 343.1,157.1 344.3,175.2 L352.9,175.2 L363.1,104.5 L354.9,104.5 C350.9,109.6 346.1,112.2 340.2,112.2 L340.2,112.2 Z' }),
-	                React.createElement('path', { d: 'M482.9,136.8 L508.9,136.8 L516.9,110.6 L491.3,110.6 L510.5,48.5 L498.1,48.5 C478.7,69.8 462.2,85.2 448.5,94.8 C434.8,104.4 418.6,112.8 400,119.9 L395.7,136.8 L425,136.8 L386,260.9 C381.7,274.8 379.6,286.2 379.6,295.1 C379.6,303.1 382.5,309.8 388.2,315 C393.9,320.2 402,322.9 412.4,322.9 C424.6,322.9 437.1,318.6 449.8,310.1 C462.5,301.5 474.1,288.1 484.6,269.7 L476.4,264.7 C467.1,278 459,287.3 451.9,292.7 C449.2,294.8 446.5,295.9 443.9,295.9 C442.2,295.9 440.7,295.4 439.3,294.3 C437.9,293.2 437.2,292 437.2,290.5 C437.2,286.2 438.5,279.8 441.2,271.5 L482.9,136.8 L482.9,136.8 Z' })
-	            ),
+	            React.createElement('path', { d: 'M120.4,297.7 C117.6,293.8 116.2,290 116.2,286.3 C116.2,282.6 118.2,274 122.2,260.3 L199.7,0 L190,0 L72.4,28.1 L74.4,36.7 C85.7,35.5 93.3,34.9 97.2,34.9 C105,34.9 111,36.9 115.2,40.9 C119.4,44.9 121.5,50.3 121.5,57.1 C121.5,60.6 121,64.3 120.1,68.3 C119.8,69.7 116,82.1 108.8,105.6 L63.2,260.3 C58.3,277 53.9,288 50,293.2 C46.1,298.4 41.1,302.2 35,304.5 C28.9,306.8 18.1,308.1 2.5,308.4 L0,316.6 L156.7,316.6 L159.2,308.4 C142.7,307.5 132.8,306.4 129.5,305.3 C126.3,304.1 123.2,301.6 120.4,297.7 L120.4,297.7 Z' }),
+	            React.createElement('path', { d: 'M340.2,112.2 C336.1,112.2 330.6,111.3 323.7,109.6 C309.9,106.1 298.3,104.4 288.8,104.4 C267.1,104.4 250.2,109.9 238.2,120.9 C226.2,131.9 220.2,145.7 220.2,162.3 C220.2,172.1 222.2,180.8 226.2,188.5 C231.9,199.1 243.6,214 261.5,233.4 C274.5,247.6 282.8,258 286.3,264.7 C289.9,271.4 291.7,278.3 291.7,285.5 C291.7,292.8 289,299.1 283.5,304.4 C278,309.7 271.1,312.3 262.7,312.3 C255.5,312.3 248,310 240.3,305.3 C232.5,300.6 226.3,294.3 221.6,286.4 C216.9,278.5 211.9,265.2 206.6,246.7 L199.2,246.7 L187.9,322.9 L196.5,322.9 C199.1,319.4 201.5,317.1 203.6,316 C205.7,314.9 208.7,314.4 212.5,314.4 C216.8,314.4 223.2,315.6 231.8,317.9 C244.8,321.3 255.7,323 264.6,323 C277.7,323 290.4,319.8 302.6,313.3 C314.8,306.8 323.9,298.3 330,287.6 C336.1,276.9 339.2,265.5 339.2,253.5 C339.2,242.4 336.6,232 331.4,222.3 C326.2,212.6 311.5,194.8 287.4,168.8 C280.5,161.5 276.1,155.7 274.1,151.4 C272.1,147.1 271.1,142.6 271.1,137.7 C271.1,131.9 273.4,127 278,122.8 C282.6,118.7 288.4,116.6 295.4,116.6 C306.8,116.6 317.5,121.8 327.5,132.3 C337.5,142.8 343.1,157.1 344.3,175.2 L352.9,175.2 L363.1,104.5 L354.9,104.5 C350.9,109.6 346.1,112.2 340.2,112.2 L340.2,112.2 Z' }),
+	            React.createElement('path', { d: 'M482.9,136.8 L508.9,136.8 L516.9,110.6 L491.3,110.6 L510.5,48.5 L498.1,48.5 C478.7,69.8 462.2,85.2 448.5,94.8 C434.8,104.4 418.6,112.8 400,119.9 L395.7,136.8 L425,136.8 L386,260.9 C381.7,274.8 379.6,286.2 379.6,295.1 C379.6,303.1 382.5,309.8 388.2,315 C393.9,320.2 402,322.9 412.4,322.9 C424.6,322.9 437.1,318.6 449.8,310.1 C462.5,301.5 474.1,288.1 484.6,269.7 L476.4,264.7 C467.1,278 459,287.3 451.9,292.7 C449.2,294.8 446.5,295.9 443.9,295.9 C442.2,295.9 440.7,295.4 439.3,294.3 C437.9,293.2 437.2,292 437.2,290.5 C437.2,286.2 438.5,279.8 441.2,271.5 L482.9,136.8 L482.9,136.8 Z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -38414,15 +38306,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/logo-introspective.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/logo-introspective.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/logo-introspective.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/logo-introspective.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38430,7 +38322,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38519,29 +38411,29 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var _components = {
-	            LogoNoReg: {
-	                        displayName: 'LogoNoReg'
-	            }
+	    LogoNoReg: {
+	        displayName: 'LogoNoReg'
+	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	            filename: '/Users/Teddy/projects/dibs-vg/src/logo-no-reg.svg',
-	            components: _components,
-	            locals: [module],
-	            imports: [_react3.default]
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/logo-no-reg.svg',
+	    components: _components,
+	    locals: [module],
+	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	            filename: '/Users/Teddy/projects/dibs-vg/src/logo-no-reg.svg',
-	            components: _components,
-	            locals: [],
-	            imports: [_react3.default, _index2.default]
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/logo-no-reg.svg',
+	    components: _components,
+	    locals: [],
+	    imports: [_react3.default, _index2.default]
 	});
 	
 	function _wrapComponent(id) {
-	            return function (Component) {
-	                        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
-	            };
+	    return function (Component) {
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	    };
 	}
 	
 	var React = __webpack_require__(/*! react */ 2);
@@ -38549,37 +38441,33 @@
 	
 	module.exports = _wrapComponent('LogoNoReg')(React.createClass({
 	
-	            displayName: "LogoNoReg",
+	    displayName: "LogoNoReg",
 	
-	            getDefaultProps: function getDefaultProps() {
-	                        return { "version": "1.1", "className": "dibsvg-svg dibsvg-logo-no-reg", "viewBox": "0 0 100 25", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
-	            },
-	            componentDidMount: function componentDidMount() {
-	                        helpers.applyXmlAttributes(this);
-	            },
-	            render: function render() {
-	                        var props = this.props;
-	                        var children = props.children;
+	    getDefaultProps: function getDefaultProps() {
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-logo-no-reg", "viewBox": "0 0 100 25", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
 	
-	                        return React.createElement(
-	                                    'svg',
-	                                    this.props,
-	                                    React.createElement(
-	                                                'g',
-	                                                null,
-	                                                React.createElement('path', { d: 'M15.7,0L9.6,20.2c-0.3,1.1-0.5,1.7-0.5,2c0,0.3,0.1,0.6,0.3,0.9c0.2,0.3,0.5,0.5,0.7,0.6 c0.3,0.1,1,0.2,2.3,0.2l-0.2,0.6H0l0.2-0.6c1.2,0,2.1-0.1,2.6-0.3c0.5-0.2,0.9-0.5,1.2-0.9c0.3-0.4,0.6-1.2,1-2.5L8.5,8.2 c0.6-1.8,0.9-2.8,0.9-2.9C9.5,5,9.5,4.7,9.5,4.5C9.5,4,9.4,3.5,9,3.2C8.7,2.9,8.2,2.8,7.6,2.8c-0.3,0-0.9,0-1.8,0.1L5.7,2.2 L14.9,0H15.7z' }),
-	                                                React.createElement('path', { d: 'M28.5,8.1l-0.8,5.5H27c-0.1-1.4-0.5-2.5-1.3-3.3c-0.8-0.8-1.6-1.2-2.5-1.2c-0.5,0-1,0.2-1.4,0.5 c-0.4,0.3-0.5,0.7-0.5,1.1c0,0.4,0.1,0.7,0.2,1.1c0.2,0.3,0.5,0.8,1,1.3c1.9,2,3,3.4,3.4,4.1c0.4,0.8,0.6,1.6,0.6,2.4 c0,0.9-0.2,1.8-0.7,2.6c-0.5,0.8-1.2,1.5-2.1,2c-1,0.5-1.9,0.7-3,0.7c-0.7,0-1.6-0.1-2.6-0.4c-0.7-0.2-1.2-0.3-1.5-0.3 c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.3-0.6,0.5h-0.7l0.9-5.9h0.6c0.4,1.4,0.8,2.5,1.2,3.1c0.4,0.6,0.9,1.1,1.5,1.5 c0.6,0.4,1.2,0.5,1.8,0.5c0.7,0,1.2-0.2,1.6-0.6c0.4-0.4,0.6-0.9,0.6-1.5c0-0.6-0.1-1.1-0.4-1.6c-0.3-0.5-0.9-1.3-1.9-2.4 c-1.4-1.5-2.3-2.7-2.8-3.5c-0.3-0.6-0.5-1.3-0.5-2c0-1.3,0.5-2.3,1.4-3.2c0.9-0.9,2.3-1.3,4-1.3c0.7,0,1.7,0.1,2.7,0.4 c0.5,0.1,1,0.2,1.3,0.2c0.5,0,0.8-0.2,1.1-0.6H28.5z' }),
-	                                                React.createElement('path', { d: 'M40,3.8l-1.5,4.8h2l-0.6,2h-2L34.6,21c-0.2,0.6-0.3,1.1-0.3,1.5c0,0.1,0.1,0.2,0.2,0.3 c0.1,0.1,0.2,0.1,0.4,0.1c0.2,0,0.4-0.1,0.6-0.2c0.5-0.4,1.2-1.1,1.9-2.2l0.6,0.4c-0.8,1.4-1.7,2.5-2.7,3.1c-1,0.7-2,1-2.9,1 c-0.8,0-1.4-0.2-1.9-0.6c-0.4-0.4-0.7-0.9-0.7-1.5c0-0.7,0.2-1.6,0.5-2.6l3.1-9.6H31l0.3-1.3c1.5-0.6,2.7-1.2,3.8-1.9 c1.1-0.7,2.4-1.9,3.9-3.6H40z' }),
-	                                                React.createElement('path', { d: 'M59.6,0l-6.1,19.8C53.2,21,53,21.7,53,22c0,0.1,0,0.2,0.1,0.3c0.1,0.1,0.2,0.1,0.3,0.1c0.2,0,0.4-0.1,0.7-0.3 c0.4-0.3,1-1,1.6-1.9l0.6,0.3c-1.7,2.9-3.5,4.4-5.6,4.4c-0.7,0-1.3-0.2-1.7-0.6c-0.4-0.4-0.6-0.8-0.6-1.4c0-0.6,0.2-1.3,0.5-2.4 l0.6-1.8c-1.5,2.6-2.8,4.3-3.9,5.2c-0.8,0.6-1.7,1-2.4,1c-0.9,0-1.7-0.4-2.3-1.1S40,22.2,40,20.8c0-1.8,0.4-3.5,1.2-5.2 c0.8-1.7,1.7-3.1,2.8-4.3c1-1.1,2-2,3-2.4c0.9-0.5,1.9-0.7,2.8-0.7c0.5,0,0.9,0.1,1.3,0.3c0.4,0.2,0.8,0.6,1.3,1.1l1.4-4.4 c0.4-1.1,0.5-1.9,0.5-2.4c0-0.3-0.1-0.5-0.4-0.7c-0.2-0.2-0.6-0.3-1-0.3c-0.2,0-0.4,0-0.7,0.1l0.2-0.7L58.5,0H59.6z M51.6,11.2 c0-0.7-0.1-1.2-0.4-1.6c-0.3-0.3-0.6-0.5-1-0.5c-0.4,0-0.8,0.2-1.3,0.6c-0.9,0.8-1.8,2.3-2.7,4.6c-0.9,2.3-1.4,4.2-1.4,5.8 c0,0.6,0.1,1,0.3,1.3c0.2,0.3,0.4,0.4,0.7,0.4c0.4,0,0.9-0.2,1.3-0.6c1-0.9,2.1-2.4,3.1-4.6C51.1,14.3,51.6,12.5,51.6,11.2z' }),
-	                                                React.createElement('path', { d: 'M66,0c0.7,0,1.4,0.3,1.9,0.8c0.5,0.5,0.8,1.1,0.8,1.8c0,0.7-0.3,1.3-0.8,1.8C67.4,5,66.8,5.2,66,5.2 c-0.7,0-1.3-0.3-1.9-0.8c-0.5-0.5-0.8-1.1-0.8-1.8c0-0.7,0.3-1.3,0.8-1.8C64.7,0.3,65.3,0,66,0z M67.5,8.1l-4,12.5 c-0.2,0.7-0.3,1.2-0.3,1.4c0,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.2,0.2,0.3,0.2c0.2,0,0.4-0.1,0.6-0.3c0.5-0.5,1.2-1.3,1.9-2.5l0.6,0.4 C65,23.4,63,25,61,25c-0.8,0-1.4-0.2-1.9-0.6c-0.5-0.4-0.7-1-0.7-1.6c0-0.4,0.1-1,0.3-1.7l2.8-8.5c0.3-0.8,0.4-1.4,0.4-1.8 c0-0.3-0.1-0.5-0.4-0.7c-0.2-0.2-0.6-0.3-1-0.3c-0.2,0-0.4,0-0.7,0l0.2-0.7l6.3-1H67.5z' }),
-	                                                React.createElement('path', { d: 'M80,0l-3.2,10.6c0.9-1,1.7-1.7,2.3-2c0.6-0.3,1.3-0.5,2-0.5c1.4,0,2.4,0.5,3.1,1.5c0.7,1,1,2.2,1,3.5 c0,3.2-1.1,6-3.4,8.5c-2,2.2-4.4,3.3-7,3.3c-1.9,0-4-0.6-6.1-1.7l5.6-18.6c0.3-0.9,0.4-1.5,0.4-1.9c0-0.3-0.1-0.5-0.4-0.7 c-0.4-0.3-0.9-0.4-1.6-0.3l0.2-0.7L78.9,0H80z M73,23.5c0.5,0.4,1,0.5,1.5,0.5c0.6,0,1.1-0.1,1.5-0.4c0.7-0.4,1.3-1.1,2.1-2.2 c0.7-1.1,1.3-2.3,1.8-3.8c0.5-1.5,0.7-3,0.7-4.4c0-0.8-0.2-1.5-0.5-1.9c-0.4-0.4-0.8-0.7-1.2-0.7c-0.8,0-1.5,0.4-2,1.2 c-0.4,0.5-0.8,1.7-1.3,3.4L73,23.5z' }),
-	                                                React.createElement('path', { d: 'M100,8.1l-0.8,5.5h-0.7c-0.1-1.4-0.5-2.5-1.3-3.3c-0.8-0.8-1.6-1.2-2.5-1.2c-0.5,0-1,0.2-1.4,0.5 c-0.4,0.3-0.5,0.7-0.5,1.1c0,0.4,0.1,0.7,0.2,1.1c0.2,0.3,0.5,0.8,1,1.3c1.9,2,3,3.4,3.4,4.1c0.4,0.8,0.6,1.6,0.6,2.4 c0,0.9-0.2,1.8-0.7,2.6c-0.5,0.8-1.2,1.5-2.1,2c-1,0.5-1.9,0.7-3,0.7c-0.7,0-1.6-0.1-2.6-0.4c-0.7-0.2-1.2-0.3-1.5-0.3 c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.3-0.6,0.5h-0.7l0.9-5.9h0.6c0.4,1.4,0.8,2.5,1.2,3.1c0.4,0.6,0.9,1.1,1.5,1.5 c0.6,0.4,1.2,0.5,1.8,0.5c0.7,0,1.2-0.2,1.6-0.6c0.4-0.4,0.6-0.9,0.6-1.5c0-0.6-0.1-1.1-0.4-1.6c-0.3-0.5-0.9-1.3-1.9-2.4 c-1.4-1.5-2.3-2.7-2.8-3.5c-0.3-0.6-0.5-1.3-0.5-2c0-1.3,0.5-2.3,1.4-3.2c0.9-0.9,2.3-1.3,4-1.3c0.7,0,1.7,0.1,2.7,0.4 c0.5,0.1,1,0.2,1.3,0.2c0.5,0,0.8-0.2,1.1-0.6H100z' })
-	                                    ),
-	                                    React.Children.map(children, function (c) {
-	                                                return c;
-	                                    })
-	                        );
-	            }
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement('path', { d: 'M15.7,0L9.6,20.2c-0.3,1.1-0.5,1.7-0.5,2c0,0.3,0.1,0.6,0.3,0.9c0.2,0.3,0.5,0.5,0.7,0.6c0.3,0.1,1,0.2,2.3,0.2l-0.2,0.6H0l0.2-0.6c1.2,0,2.1-0.1,2.6-0.3c0.5-0.2,0.9-0.5,1.2-0.9c0.3-0.4,0.6-1.2,1-2.5L8.5,8.2c0.6-1.8,0.9-2.8,0.9-2.9C9.5,5,9.5,4.7,9.5,4.5C9.5,4,9.4,3.5,9,3.2C8.7,2.9,8.2,2.8,7.6,2.8c-0.3,0-0.9,0-1.8,0.1L5.7,2.2L14.9,0H15.7z' }),
+	            React.createElement('path', { d: 'M28.5,8.1l-0.8,5.5H27c-0.1-1.4-0.5-2.5-1.3-3.3c-0.8-0.8-1.6-1.2-2.5-1.2c-0.5,0-1,0.2-1.4,0.5c-0.4,0.3-0.5,0.7-0.5,1.1c0,0.4,0.1,0.7,0.2,1.1c0.2,0.3,0.5,0.8,1,1.3c1.9,2,3,3.4,3.4,4.1c0.4,0.8,0.6,1.6,0.6,2.4c0,0.9-0.2,1.8-0.7,2.6c-0.5,0.8-1.2,1.5-2.1,2c-1,0.5-1.9,0.7-3,0.7c-0.7,0-1.6-0.1-2.6-0.4c-0.7-0.2-1.2-0.3-1.5-0.3c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.3-0.6,0.5h-0.7l0.9-5.9h0.6c0.4,1.4,0.8,2.5,1.2,3.1c0.4,0.6,0.9,1.1,1.5,1.5c0.6,0.4,1.2,0.5,1.8,0.5c0.7,0,1.2-0.2,1.6-0.6c0.4-0.4,0.6-0.9,0.6-1.5c0-0.6-0.1-1.1-0.4-1.6c-0.3-0.5-0.9-1.3-1.9-2.4c-1.4-1.5-2.3-2.7-2.8-3.5c-0.3-0.6-0.5-1.3-0.5-2c0-1.3,0.5-2.3,1.4-3.2c0.9-0.9,2.3-1.3,4-1.3c0.7,0,1.7,0.1,2.7,0.4c0.5,0.1,1,0.2,1.3,0.2c0.5,0,0.8-0.2,1.1-0.6H28.5z' }),
+	            React.createElement('path', { d: 'M40,3.8l-1.5,4.8h2l-0.6,2h-2L34.6,21c-0.2,0.6-0.3,1.1-0.3,1.5c0,0.1,0.1,0.2,0.2,0.3c0.1,0.1,0.2,0.1,0.4,0.1c0.2,0,0.4-0.1,0.6-0.2c0.5-0.4,1.2-1.1,1.9-2.2l0.6,0.4c-0.8,1.4-1.7,2.5-2.7,3.1c-1,0.7-2,1-2.9,1c-0.8,0-1.4-0.2-1.9-0.6c-0.4-0.4-0.7-0.9-0.7-1.5c0-0.7,0.2-1.6,0.5-2.6l3.1-9.6H31l0.3-1.3c1.5-0.6,2.7-1.2,3.8-1.9c1.1-0.7,2.4-1.9,3.9-3.6H40z' }),
+	            React.createElement('path', { d: 'M59.6,0l-6.1,19.8C53.2,21,53,21.7,53,22c0,0.1,0,0.2,0.1,0.3c0.1,0.1,0.2,0.1,0.3,0.1c0.2,0,0.4-0.1,0.7-0.3c0.4-0.3,1-1,1.6-1.9l0.6,0.3c-1.7,2.9-3.5,4.4-5.6,4.4c-0.7,0-1.3-0.2-1.7-0.6c-0.4-0.4-0.6-0.8-0.6-1.4c0-0.6,0.2-1.3,0.5-2.4l0.6-1.8c-1.5,2.6-2.8,4.3-3.9,5.2c-0.8,0.6-1.7,1-2.4,1c-0.9,0-1.7-0.4-2.3-1.1S40,22.2,40,20.8c0-1.8,0.4-3.5,1.2-5.2c0.8-1.7,1.7-3.1,2.8-4.3c1-1.1,2-2,3-2.4c0.9-0.5,1.9-0.7,2.8-0.7c0.5,0,0.9,0.1,1.3,0.3c0.4,0.2,0.8,0.6,1.3,1.1l1.4-4.4c0.4-1.1,0.5-1.9,0.5-2.4c0-0.3-0.1-0.5-0.4-0.7c-0.2-0.2-0.6-0.3-1-0.3c-0.2,0-0.4,0-0.7,0.1l0.2-0.7L58.5,0H59.6z M51.6,11.2c0-0.7-0.1-1.2-0.4-1.6c-0.3-0.3-0.6-0.5-1-0.5c-0.4,0-0.8,0.2-1.3,0.6c-0.9,0.8-1.8,2.3-2.7,4.6c-0.9,2.3-1.4,4.2-1.4,5.8c0,0.6,0.1,1,0.3,1.3c0.2,0.3,0.4,0.4,0.7,0.4c0.4,0,0.9-0.2,1.3-0.6c1-0.9,2.1-2.4,3.1-4.6C51.1,14.3,51.6,12.5,51.6,11.2z' }),
+	            React.createElement('path', { d: 'M66,0c0.7,0,1.4,0.3,1.9,0.8c0.5,0.5,0.8,1.1,0.8,1.8c0,0.7-0.3,1.3-0.8,1.8C67.4,5,66.8,5.2,66,5.2c-0.7,0-1.3-0.3-1.9-0.8c-0.5-0.5-0.8-1.1-0.8-1.8c0-0.7,0.3-1.3,0.8-1.8C64.7,0.3,65.3,0,66,0z M67.5,8.1l-4,12.5c-0.2,0.7-0.3,1.2-0.3,1.4c0,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.2,0.2,0.3,0.2c0.2,0,0.4-0.1,0.6-0.3c0.5-0.5,1.2-1.3,1.9-2.5l0.6,0.4C65,23.4,63,25,61,25c-0.8,0-1.4-0.2-1.9-0.6c-0.5-0.4-0.7-1-0.7-1.6c0-0.4,0.1-1,0.3-1.7l2.8-8.5c0.3-0.8,0.4-1.4,0.4-1.8c0-0.3-0.1-0.5-0.4-0.7c-0.2-0.2-0.6-0.3-1-0.3c-0.2,0-0.4,0-0.7,0l0.2-0.7l6.3-1H67.5z' }),
+	            React.createElement('path', { d: 'M80,0l-3.2,10.6c0.9-1,1.7-1.7,2.3-2c0.6-0.3,1.3-0.5,2-0.5c1.4,0,2.4,0.5,3.1,1.5c0.7,1,1,2.2,1,3.5c0,3.2-1.1,6-3.4,8.5c-2,2.2-4.4,3.3-7,3.3c-1.9,0-4-0.6-6.1-1.7l5.6-18.6c0.3-0.9,0.4-1.5,0.4-1.9c0-0.3-0.1-0.5-0.4-0.7c-0.4-0.3-0.9-0.4-1.6-0.3l0.2-0.7L78.9,0H80z M73,23.5c0.5,0.4,1,0.5,1.5,0.5c0.6,0,1.1-0.1,1.5-0.4c0.7-0.4,1.3-1.1,2.1-2.2c0.7-1.1,1.3-2.3,1.8-3.8c0.5-1.5,0.7-3,0.7-4.4c0-0.8-0.2-1.5-0.5-1.9c-0.4-0.4-0.8-0.7-1.2-0.7c-0.8,0-1.5,0.4-2,1.2c-0.4,0.5-0.8,1.7-1.3,3.4L73,23.5z' }),
+	            React.createElement('path', { d: 'M100,8.1l-0.8,5.5h-0.7c-0.1-1.4-0.5-2.5-1.3-3.3c-0.8-0.8-1.6-1.2-2.5-1.2c-0.5,0-1,0.2-1.4,0.5c-0.4,0.3-0.5,0.7-0.5,1.1c0,0.4,0.1,0.7,0.2,1.1c0.2,0.3,0.5,0.8,1,1.3c1.9,2,3,3.4,3.4,4.1c0.4,0.8,0.6,1.6,0.6,2.4c0,0.9-0.2,1.8-0.7,2.6c-0.5,0.8-1.2,1.5-2.1,2c-1,0.5-1.9,0.7-3,0.7c-0.7,0-1.6-0.1-2.6-0.4c-0.7-0.2-1.2-0.3-1.5-0.3c-0.3,0-0.5,0-0.7,0.1c-0.2,0.1-0.4,0.3-0.6,0.5h-0.7l0.9-5.9h0.6c0.4,1.4,0.8,2.5,1.2,3.1c0.4,0.6,0.9,1.1,1.5,1.5c0.6,0.4,1.2,0.5,1.8,0.5c0.7,0,1.2-0.2,1.6-0.6c0.4-0.4,0.6-0.9,0.6-1.5c0-0.6-0.1-1.1-0.4-1.6c-0.3-0.5-0.9-1.3-1.9-2.4c-1.4-1.5-2.3-2.7-2.8-3.5c-0.3-0.6-0.5-1.3-0.5-2c0-1.3,0.5-2.3,1.4-3.2c0.9-0.9,2.3-1.3,4-1.3c0.7,0,1.7,0.1,2.7,0.4c0.5,0.1,1,0.2,1.3,0.2c0.5,0,0.8-0.2,1.1-0.6H100z' }),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
 	}));
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 181)(module)))
 
@@ -38616,15 +38504,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/logo-trade-mobile.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/logo-trade-mobile.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/logo-trade-mobile.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/logo-trade-mobile.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38632,7 +38520,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38656,23 +38544,19 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('polygon', { points: '112.109 19.4225 112.109 14.7505 115.31 14.7505 115.31 15.4725 112.928 15.4725 112.928 16.6845 115.261 16.6845 115.261 17.4055 112.928 17.4055 112.928 18.7005 115.31 18.7005 115.31 19.4225' }),
-	                React.createElement('polygon', { points: '81.792 14.7509 81.792 15.4729 83.207 15.4729 83.207 19.4229 84.026 19.4229 84.026 15.4729 85.441 15.4729 85.441 14.7509' }),
-	                React.createElement('path', { d: 'M107.5045,17.0904 C107.5045,16.1874 106.9435,15.4724 105.9005,15.4724 L104.9835,15.4724 L104.9835,18.7004 L105.9005,18.7004 C106.9165,18.7004 107.5045,17.9724 107.5045,17.0904 L107.5045,17.0904 Z M104.1635,19.4224 L104.1635,14.7504 L105.9005,14.7504 C107.3585,14.7504 108.3455,15.7174 108.3455,17.0904 C108.3455,18.4624 107.3585,19.4224 105.9005,19.4224 L104.1635,19.4224 Z' }),
-	                React.createElement('path', { d: 'M98.3346,15.5777 L97.4936,17.8047 L99.1746,17.8047 L98.3346,15.5777 Z M99.7486,19.4227 L99.4056,18.5257 L97.2626,18.5257 L96.9196,19.4227 L95.9876,19.4227 L97.8226,14.7507 L98.8456,14.7507 L100.6806,19.4227 L99.7486,19.4227 Z' }),
-	                React.createElement('path', { d: 'M91.8458,16.2145 C91.8458,15.7665 91.5098,15.4725 91.0478,15.4725 L89.9268,15.4725 L89.9268,16.9565 L91.0478,16.9565 C91.5098,16.9565 91.8458,16.6625 91.8458,16.2145 L91.8458,16.2145 Z M91.7758,19.4225 L90.7388,17.6785 L89.9268,17.6785 L89.9268,19.4225 L89.1068,19.4225 L89.1068,14.7505 L91.1588,14.7505 C92.0838,14.7505 92.6858,15.3535 92.6858,16.2145 C92.6858,17.0485 92.1398,17.4965 91.5798,17.5875 L92.7208,19.4225 L91.7758,19.4225 Z' }),
-	                React.createElement('path', { d: 'M78.2646,17.9033 C78.4236,17.9033 78.5206,17.8373 78.5206,17.7143 L78.5206,17.7043 C78.5206,17.5813 78.4176,17.5193 78.2696,17.5193 L77.9826,17.5193 L77.9826,17.9033 L78.2646,17.9033 Z M77.3226,16.9673 L78.2846,16.9673 C78.6326,16.9673 78.8586,17.0543 78.9966,17.1923 C79.1136,17.3093 79.1756,17.4583 79.1756,17.6633 L79.1756,17.6733 C79.1756,17.9543 79.0276,18.1543 78.7866,18.2673 L79.2476,18.9373 L78.4996,18.9373 L78.1216,18.3743 L78.1106,18.3743 L77.9826,18.3743 L77.9826,18.9373 L77.3226,18.9373 L77.3226,16.9673 Z M79.8256,18.0053 L79.8256,17.9953 C79.8256,17.0893 79.1246,16.3423 78.1926,16.3423 C77.2566,16.3423 76.5496,17.1003 76.5496,18.0053 L76.5496,18.0163 C76.5496,18.9223 77.2516,19.6693 78.1826,19.6693 C79.1196,19.6693 79.8256,18.9113 79.8256,18.0053 L79.8256,18.0053 Z M76.3346,18.0163 L76.3346,18.0053 C76.3346,16.9973 77.1536,16.1373 78.1926,16.1373 C79.2316,16.1373 80.0406,16.9873 80.0406,17.9953 L80.0406,18.0053 C80.0406,19.0143 79.2216,19.8733 78.1826,19.8733 C77.1436,19.8733 76.3346,19.0243 76.3346,18.0163 L76.3346,18.0163 Z' }),
-	                React.createElement('path', { d: 'M75.8333,6.2532 L75.2293,10.4612 L74.7173,10.4612 C74.6453,9.3802 74.3123,8.5282 73.7193,7.9062 C73.1253,7.2852 72.4893,6.9742 71.8103,6.9742 C71.3933,6.9742 71.0493,7.0962 70.7783,7.3412 C70.5063,7.5862 70.3703,7.8812 70.3703,8.2252 C70.3703,8.5162 70.4293,8.7882 70.5473,9.0412 C70.6653,9.2962 70.9283,9.6402 71.3363,10.0762 C72.7703,11.6182 73.6413,12.6782 73.9513,13.2562 C74.2603,13.8352 74.4153,14.4542 74.4153,15.1132 C74.4153,15.8272 74.2333,16.5032 73.8693,17.1402 C73.5053,17.7772 72.9623,18.2882 72.2393,18.6722 C71.5163,19.0562 70.7633,19.2482 69.9813,19.2482 C69.4543,19.2482 68.8043,19.1472 68.0313,18.9472 C67.5223,18.8072 67.1403,18.7382 66.8853,18.7382 C66.6583,18.7382 66.4803,18.7702 66.3533,18.8362 C66.2253,18.9012 66.0843,19.0382 65.9303,19.2482 L65.4193,19.2482 L66.0933,14.7152 L66.5343,14.7152 C66.8523,15.8202 67.1503,16.6082 67.4273,17.0792 C67.7043,17.5492 68.0743,17.9242 68.5373,18.2022 C69.0003,18.4812 69.4453,18.6202 69.8723,18.6202 C70.3723,18.6202 70.7853,18.4642 71.1123,18.1512 C71.4393,17.8382 71.6023,17.4642 71.6023,17.0282 C71.6023,16.6022 71.4953,16.1892 71.2823,15.7902 C71.0683,15.3912 70.5763,14.7702 69.8043,13.9262 C68.7413,12.7742 68.0413,11.8842 67.7043,11.2552 C67.4663,10.8002 67.3483,10.2802 67.3483,9.6972 C67.3483,8.7132 67.7053,7.8932 68.4193,7.2372 C69.1333,6.5812 70.1363,6.2532 71.4283,6.2532 C71.9923,6.2532 72.6843,6.3572 73.5033,6.5642 C73.9123,6.6682 74.2403,6.7192 74.4853,6.7192 C74.8403,6.7192 75.1263,6.5642 75.3453,6.2532 L75.8333,6.2532 Z' }),
-	                React.createElement('path', { d: 'M30.3652,2.929 L29.2242,6.625 L30.7492,6.625 L30.2722,8.183 L28.7252,8.183 L26.2532,16.186 C26.0952,16.683 26.0162,17.06 26.0162,17.318 C26.0162,17.405 26.0562,17.48 26.1382,17.544 C26.2202,17.607 26.3102,17.639 26.4102,17.639 C26.5642,17.639 26.7232,17.575 26.8862,17.448 C27.3032,17.13 27.7882,16.575 28.3402,15.784 L28.8292,16.084 C28.2012,17.175 27.5102,17.975 26.7562,18.484 C26.0012,18.993 25.2602,19.248 24.5332,19.248 C23.9142,19.248 23.4352,19.092 23.0942,18.781 C22.7532,18.469 22.5832,18.074 22.5832,17.596 C22.5832,17.068 22.7102,16.391 22.9642,15.563 L25.2812,8.183 L23.5332,8.183 L23.7912,7.178 C24.8962,6.753 25.8572,6.255 26.6742,5.685 C27.4912,5.115 28.4752,4.196 29.6272,2.929 L30.3652,2.929 Z' }),
-	                React.createElement('path', { d: 'M55.3446,18.0715 C55.7526,18.3445 56.1216,18.4805 56.4506,18.4805 C56.9106,18.4805 57.2966,18.3855 57.6096,18.1945 C58.1036,17.8855 58.6226,17.3265 59.1646,16.5165 C59.7076,15.7075 60.1606,14.7295 60.5256,13.5845 C60.8896,12.4385 61.0716,11.2975 61.0716,10.1605 C61.0716,9.5155 60.9356,9.0235 60.6656,8.6875 C60.3946,8.3515 60.0806,8.1825 59.7246,8.1825 C59.1316,8.1825 58.6146,8.5005 58.1746,9.1345 C57.8776,9.5455 57.5556,10.4185 57.2086,11.7525 L55.3446,18.0715 Z M60.6746,0.0005 L58.2616,8.1795 C58.9466,7.4075 59.5186,6.8935 59.9786,6.6375 C60.4376,6.3815 60.9366,6.2535 61.4736,6.2535 C62.5146,6.2535 63.2926,6.6455 63.8086,7.4305 C64.3246,8.2155 64.5826,9.1195 64.5826,10.1445 C64.5826,12.5945 63.7116,14.7805 61.9706,16.7035 C60.4246,18.3995 58.6656,19.2475 56.6936,19.2475 C55.2276,19.2475 53.6776,18.8105 52.0436,17.9365 L56.2616,3.5825 C56.4576,2.8995 56.5686,2.4225 56.5956,2.1505 C56.5956,1.9175 56.4976,1.7325 56.3016,1.5965 C56.0266,1.4035 55.6106,1.3215 55.0516,1.3485 L55.1676,0.8135 L59.8366,0.0005 L60.6746,0.0005 Z' }),
-	                React.createElement('path', { d: 'M51.1788,6.2532 L48.1458,15.8512 C47.9788,16.4002 47.8948,16.7602 47.8948,16.9312 C47.8948,17.0352 47.9348,17.1312 48.0158,17.2212 C48.0968,17.3102 48.1828,17.3552 48.2728,17.3552 C48.4258,17.3552 48.5788,17.2842 48.7318,17.1432 C49.1368,16.7942 49.6228,16.1632 50.1898,15.2492 L50.6548,15.5322 C49.2738,18.0092 47.8058,19.2482 46.2508,19.2482 C45.6558,19.2482 45.1828,19.0832 44.8308,18.7532 C44.4778,18.4242 44.3018,18.0062 44.3018,17.5002 C44.3018,17.1642 44.3868,16.7362 44.5578,16.2182 L46.6458,9.7002 C46.8458,9.0732 46.9458,8.6002 46.9458,8.2822 C46.9458,8.0822 46.8538,7.9052 46.6708,7.7502 C46.4868,7.5952 46.2358,7.5182 45.9168,7.5182 C45.7718,7.5182 45.5978,7.5222 45.3948,7.5322 L45.5808,6.9972 L50.3368,6.2532 L51.1788,6.2532 Z M50.0718,0.0002 C50.6398,0.0002 51.1178,0.1962 51.5068,0.5882 C51.8948,0.9802 52.0898,1.4542 52.0898,2.0112 C52.0898,2.5672 51.8928,3.0412 51.4998,3.4332 C51.1058,3.8262 50.6298,4.0212 50.0718,4.0212 C49.5228,4.0212 49.0518,3.8262 48.6588,3.4332 C48.2648,3.0412 48.0678,2.5672 48.0678,2.0112 C48.0678,1.4542 48.2628,0.9802 48.6518,0.5882 C49.0398,0.1962 49.5138,0.0002 50.0718,0.0002 L50.0718,0.0002 Z' }),
-	                React.createElement('path', { d: 'M39.111,8.6138 C39.111,8.0598 39,7.6558 38.778,7.4018 C38.556,7.1478 38.297,7.0208 38.002,7.0208 C37.706,7.0208 37.387,7.1708 37.045,7.4698 C36.388,8.0508 35.702,9.2198 34.985,10.9768 C34.269,12.7338 33.911,14.2118 33.911,15.4108 C33.911,15.8468 33.989,16.1688 34.147,16.3778 C34.304,16.5868 34.479,16.6908 34.674,16.6908 C34.997,16.6908 35.321,16.5458 35.644,16.2548 C36.43,15.5648 37.204,14.3778 37.967,12.6928 C38.73,11.0088 39.111,9.6488 39.111,8.6138 L39.111,8.6138 Z M45.227,-0.0002 L40.611,15.2088 C40.317,16.1608 40.171,16.7358 40.171,16.9348 C40.171,17.0358 40.206,17.1228 40.279,17.1958 C40.351,17.2688 40.428,17.3048 40.509,17.3048 C40.663,17.3048 40.839,17.2268 41.038,17.0718 C41.372,16.8168 41.778,16.3338 42.257,15.6218 L42.745,15.8818 C41.465,18.1258 40.059,19.2478 38.525,19.2478 C37.981,19.2478 37.561,19.1048 37.266,18.8198 C36.971,18.5348 36.824,18.1708 36.824,17.7268 C36.824,17.3008 36.942,16.6948 37.178,15.9068 L37.608,14.5168 C36.469,16.5208 35.481,17.8538 34.643,18.5148 C34.006,19.0038 33.386,19.2478 32.786,19.2478 C32.102,19.2478 31.526,18.9708 31.057,18.4178 C30.589,17.8648 30.354,17.0578 30.354,15.9958 C30.354,14.6448 30.657,13.3108 31.262,11.9958 C31.868,10.6798 32.567,9.5828 33.361,8.7028 C34.154,7.8228 34.911,7.1948 35.632,6.8178 C36.351,6.4418 37.06,6.2528 37.758,6.2528 C38.115,6.2528 38.434,6.3278 38.714,6.4758 C38.994,6.6248 39.312,6.9028 39.67,7.3108 L40.736,3.9368 C41.008,3.0878 41.144,2.4788 41.144,2.1098 C41.144,1.8878 41.051,1.6988 40.866,1.5428 C40.68,1.3858 40.433,1.3078 40.124,1.3078 C39.979,1.3078 39.799,1.3218 39.583,1.3478 L39.699,0.8138 L44.374,-0.0002 L45.227,-0.0002 Z' }),
-	                React.createElement('path', { d: 'M21.5813,6.2532 L20.9773,10.4612 L20.4653,10.4612 C20.3933,9.3802 20.0603,8.5282 19.4673,7.9062 C18.8733,7.2852 18.2373,6.9742 17.5583,6.9742 C17.1413,6.9742 16.7973,7.0962 16.5263,7.3412 C16.2543,7.5862 16.1183,7.8812 16.1183,8.2252 C16.1183,8.5162 16.1773,8.7882 16.2953,9.0412 C16.4133,9.2962 16.6763,9.6402 17.0843,10.0762 C18.5183,11.6182 19.3893,12.6782 19.6993,13.2562 C20.0083,13.8352 20.1633,14.4542 20.1633,15.1132 C20.1633,15.8272 19.9813,16.5032 19.6173,17.1402 C19.2533,17.7772 18.7103,18.2882 17.9873,18.6722 C17.2643,19.0562 16.5113,19.2482 15.7293,19.2482 C15.2023,19.2482 14.5523,19.1472 13.7793,18.9472 C13.2703,18.8072 12.8883,18.7382 12.6333,18.7382 C12.4063,18.7382 12.2283,18.7702 12.1013,18.8362 C11.9733,18.9012 11.8323,19.0382 11.6783,19.2482 L11.1673,19.2482 L11.8413,14.7152 L12.2823,14.7152 C12.6003,15.8202 12.8983,16.6082 13.1753,17.0792 C13.4523,17.5492 13.8223,17.9242 14.2853,18.2022 C14.7483,18.4812 15.1933,18.6202 15.6203,18.6202 C16.1203,18.6202 16.5333,18.4642 16.8603,18.1512 C17.1873,17.8382 17.3503,17.4642 17.3503,17.0282 C17.3503,16.6022 17.2433,16.1892 17.0303,15.7902 C16.8163,15.3912 16.3243,14.7702 15.5523,13.9262 C14.4893,12.7742 13.7893,11.8842 13.4523,11.2552 C13.2143,10.8002 13.0963,10.2802 13.0963,9.6972 C13.0963,8.7132 13.4533,7.8932 14.1673,7.2372 C14.8813,6.5812 15.8843,6.2532 17.1763,6.2532 C17.7403,6.2532 18.4323,6.3572 19.2513,6.5642 C19.6603,6.6682 19.9883,6.7192 20.2333,6.7192 C20.5883,6.7192 20.8743,6.5642 21.0933,6.2532 L21.5813,6.2532 Z' }),
-	                React.createElement('path', { d: 'M11.88,0.0465 L7.265,15.5295 C7.029,16.3405 6.911,16.8565 6.911,17.0745 C6.911,17.2935 6.995,17.5195 7.163,17.7515 C7.331,17.9845 7.512,18.1355 7.708,18.2035 C7.903,18.2715 8.491,18.3335 9.471,18.3875 L9.322,18.8765 L0,18.8765 L0.15,18.3875 C1.076,18.3695 1.721,18.2925 2.084,18.1555 C2.447,18.0185 2.745,17.7955 2.976,17.4855 C3.208,17.1755 3.469,16.5235 3.759,15.5295 L6.473,6.3335 C6.901,4.9365 7.124,4.1965 7.143,4.1145 C7.2,3.8785 7.229,3.6565 7.229,3.4475 C7.229,3.0425 7.103,2.7205 6.853,2.4815 C6.602,2.2425 6.244,2.1225 5.779,2.1225 C5.551,2.1225 5.1,2.1595 4.426,2.2315 L4.309,1.7205 L11.303,0.0465 L11.88,0.0465 Z' })
-	            ),
+	            React.createElement('polygon', { points: '112.109 19.4225 112.109 14.7505 115.31 14.7505 115.31 15.4725 112.928 15.4725 112.928 16.6845 115.261 16.6845 115.261 17.4055 112.928 17.4055 112.928 18.7005 115.31 18.7005 115.31 19.4225' }),
+	            React.createElement('polygon', { points: '81.792 14.7509 81.792 15.4729 83.207 15.4729 83.207 19.4229 84.026 19.4229 84.026 15.4729 85.441 15.4729 85.441 14.7509' }),
+	            React.createElement('path', { d: 'M107.5045,17.0904 C107.5045,16.1874 106.9435,15.4724 105.9005,15.4724 L104.9835,15.4724 L104.9835,18.7004 L105.9005,18.7004 C106.9165,18.7004 107.5045,17.9724 107.5045,17.0904 L107.5045,17.0904 Z M104.1635,19.4224 L104.1635,14.7504 L105.9005,14.7504 C107.3585,14.7504 108.3455,15.7174 108.3455,17.0904 C108.3455,18.4624 107.3585,19.4224 105.9005,19.4224 L104.1635,19.4224 Z' }),
+	            React.createElement('path', { d: 'M98.3346,15.5777 L97.4936,17.8047 L99.1746,17.8047 L98.3346,15.5777 Z M99.7486,19.4227 L99.4056,18.5257 L97.2626,18.5257 L96.9196,19.4227 L95.9876,19.4227 L97.8226,14.7507 L98.8456,14.7507 L100.6806,19.4227 L99.7486,19.4227 Z' }),
+	            React.createElement('path', { d: 'M91.8458,16.2145 C91.8458,15.7665 91.5098,15.4725 91.0478,15.4725 L89.9268,15.4725 L89.9268,16.9565 L91.0478,16.9565 C91.5098,16.9565 91.8458,16.6625 91.8458,16.2145 L91.8458,16.2145 Z M91.7758,19.4225 L90.7388,17.6785 L89.9268,17.6785 L89.9268,19.4225 L89.1068,19.4225 L89.1068,14.7505 L91.1588,14.7505 C92.0838,14.7505 92.6858,15.3535 92.6858,16.2145 C92.6858,17.0485 92.1398,17.4965 91.5798,17.5875 L92.7208,19.4225 L91.7758,19.4225 Z' }),
+	            React.createElement('path', { d: 'M78.2646,17.9033 C78.4236,17.9033 78.5206,17.8373 78.5206,17.7143 L78.5206,17.7043 C78.5206,17.5813 78.4176,17.5193 78.2696,17.5193 L77.9826,17.5193 L77.9826,17.9033 L78.2646,17.9033 Z M77.3226,16.9673 L78.2846,16.9673 C78.6326,16.9673 78.8586,17.0543 78.9966,17.1923 C79.1136,17.3093 79.1756,17.4583 79.1756,17.6633 L79.1756,17.6733 C79.1756,17.9543 79.0276,18.1543 78.7866,18.2673 L79.2476,18.9373 L78.4996,18.9373 L78.1216,18.3743 L78.1106,18.3743 L77.9826,18.3743 L77.9826,18.9373 L77.3226,18.9373 L77.3226,16.9673 Z M79.8256,18.0053 L79.8256,17.9953 C79.8256,17.0893 79.1246,16.3423 78.1926,16.3423 C77.2566,16.3423 76.5496,17.1003 76.5496,18.0053 L76.5496,18.0163 C76.5496,18.9223 77.2516,19.6693 78.1826,19.6693 C79.1196,19.6693 79.8256,18.9113 79.8256,18.0053 L79.8256,18.0053 Z M76.3346,18.0163 L76.3346,18.0053 C76.3346,16.9973 77.1536,16.1373 78.1926,16.1373 C79.2316,16.1373 80.0406,16.9873 80.0406,17.9953 L80.0406,18.0053 C80.0406,19.0143 79.2216,19.8733 78.1826,19.8733 C77.1436,19.8733 76.3346,19.0243 76.3346,18.0163 L76.3346,18.0163 Z' }),
+	            React.createElement('path', { d: 'M75.8333,6.2532 L75.2293,10.4612 L74.7173,10.4612 C74.6453,9.3802 74.3123,8.5282 73.7193,7.9062 C73.1253,7.2852 72.4893,6.9742 71.8103,6.9742 C71.3933,6.9742 71.0493,7.0962 70.7783,7.3412 C70.5063,7.5862 70.3703,7.8812 70.3703,8.2252 C70.3703,8.5162 70.4293,8.7882 70.5473,9.0412 C70.6653,9.2962 70.9283,9.6402 71.3363,10.0762 C72.7703,11.6182 73.6413,12.6782 73.9513,13.2562 C74.2603,13.8352 74.4153,14.4542 74.4153,15.1132 C74.4153,15.8272 74.2333,16.5032 73.8693,17.1402 C73.5053,17.7772 72.9623,18.2882 72.2393,18.6722 C71.5163,19.0562 70.7633,19.2482 69.9813,19.2482 C69.4543,19.2482 68.8043,19.1472 68.0313,18.9472 C67.5223,18.8072 67.1403,18.7382 66.8853,18.7382 C66.6583,18.7382 66.4803,18.7702 66.3533,18.8362 C66.2253,18.9012 66.0843,19.0382 65.9303,19.2482 L65.4193,19.2482 L66.0933,14.7152 L66.5343,14.7152 C66.8523,15.8202 67.1503,16.6082 67.4273,17.0792 C67.7043,17.5492 68.0743,17.9242 68.5373,18.2022 C69.0003,18.4812 69.4453,18.6202 69.8723,18.6202 C70.3723,18.6202 70.7853,18.4642 71.1123,18.1512 C71.4393,17.8382 71.6023,17.4642 71.6023,17.0282 C71.6023,16.6022 71.4953,16.1892 71.2823,15.7902 C71.0683,15.3912 70.5763,14.7702 69.8043,13.9262 C68.7413,12.7742 68.0413,11.8842 67.7043,11.2552 C67.4663,10.8002 67.3483,10.2802 67.3483,9.6972 C67.3483,8.7132 67.7053,7.8932 68.4193,7.2372 C69.1333,6.5812 70.1363,6.2532 71.4283,6.2532 C71.9923,6.2532 72.6843,6.3572 73.5033,6.5642 C73.9123,6.6682 74.2403,6.7192 74.4853,6.7192 C74.8403,6.7192 75.1263,6.5642 75.3453,6.2532 L75.8333,6.2532 Z' }),
+	            React.createElement('path', { d: 'M30.3652,2.929 L29.2242,6.625 L30.7492,6.625 L30.2722,8.183 L28.7252,8.183 L26.2532,16.186 C26.0952,16.683 26.0162,17.06 26.0162,17.318 C26.0162,17.405 26.0562,17.48 26.1382,17.544 C26.2202,17.607 26.3102,17.639 26.4102,17.639 C26.5642,17.639 26.7232,17.575 26.8862,17.448 C27.3032,17.13 27.7882,16.575 28.3402,15.784 L28.8292,16.084 C28.2012,17.175 27.5102,17.975 26.7562,18.484 C26.0012,18.993 25.2602,19.248 24.5332,19.248 C23.9142,19.248 23.4352,19.092 23.0942,18.781 C22.7532,18.469 22.5832,18.074 22.5832,17.596 C22.5832,17.068 22.7102,16.391 22.9642,15.563 L25.2812,8.183 L23.5332,8.183 L23.7912,7.178 C24.8962,6.753 25.8572,6.255 26.6742,5.685 C27.4912,5.115 28.4752,4.196 29.6272,2.929 L30.3652,2.929 Z' }),
+	            React.createElement('path', { d: 'M55.3446,18.0715 C55.7526,18.3445 56.1216,18.4805 56.4506,18.4805 C56.9106,18.4805 57.2966,18.3855 57.6096,18.1945 C58.1036,17.8855 58.6226,17.3265 59.1646,16.5165 C59.7076,15.7075 60.1606,14.7295 60.5256,13.5845 C60.8896,12.4385 61.0716,11.2975 61.0716,10.1605 C61.0716,9.5155 60.9356,9.0235 60.6656,8.6875 C60.3946,8.3515 60.0806,8.1825 59.7246,8.1825 C59.1316,8.1825 58.6146,8.5005 58.1746,9.1345 C57.8776,9.5455 57.5556,10.4185 57.2086,11.7525 L55.3446,18.0715 Z M60.6746,0.0005 L58.2616,8.1795 C58.9466,7.4075 59.5186,6.8935 59.9786,6.6375 C60.4376,6.3815 60.9366,6.2535 61.4736,6.2535 C62.5146,6.2535 63.2926,6.6455 63.8086,7.4305 C64.3246,8.2155 64.5826,9.1195 64.5826,10.1445 C64.5826,12.5945 63.7116,14.7805 61.9706,16.7035 C60.4246,18.3995 58.6656,19.2475 56.6936,19.2475 C55.2276,19.2475 53.6776,18.8105 52.0436,17.9365 L56.2616,3.5825 C56.4576,2.8995 56.5686,2.4225 56.5956,2.1505 C56.5956,1.9175 56.4976,1.7325 56.3016,1.5965 C56.0266,1.4035 55.6106,1.3215 55.0516,1.3485 L55.1676,0.8135 L59.8366,0.0005 L60.6746,0.0005 Z' }),
+	            React.createElement('path', { d: 'M51.1788,6.2532 L48.1458,15.8512 C47.9788,16.4002 47.8948,16.7602 47.8948,16.9312 C47.8948,17.0352 47.9348,17.1312 48.0158,17.2212 C48.0968,17.3102 48.1828,17.3552 48.2728,17.3552 C48.4258,17.3552 48.5788,17.2842 48.7318,17.1432 C49.1368,16.7942 49.6228,16.1632 50.1898,15.2492 L50.6548,15.5322 C49.2738,18.0092 47.8058,19.2482 46.2508,19.2482 C45.6558,19.2482 45.1828,19.0832 44.8308,18.7532 C44.4778,18.4242 44.3018,18.0062 44.3018,17.5002 C44.3018,17.1642 44.3868,16.7362 44.5578,16.2182 L46.6458,9.7002 C46.8458,9.0732 46.9458,8.6002 46.9458,8.2822 C46.9458,8.0822 46.8538,7.9052 46.6708,7.7502 C46.4868,7.5952 46.2358,7.5182 45.9168,7.5182 C45.7718,7.5182 45.5978,7.5222 45.3948,7.5322 L45.5808,6.9972 L50.3368,6.2532 L51.1788,6.2532 Z M50.0718,0.0002 C50.6398,0.0002 51.1178,0.1962 51.5068,0.5882 C51.8948,0.9802 52.0898,1.4542 52.0898,2.0112 C52.0898,2.5672 51.8928,3.0412 51.4998,3.4332 C51.1058,3.8262 50.6298,4.0212 50.0718,4.0212 C49.5228,4.0212 49.0518,3.8262 48.6588,3.4332 C48.2648,3.0412 48.0678,2.5672 48.0678,2.0112 C48.0678,1.4542 48.2628,0.9802 48.6518,0.5882 C49.0398,0.1962 49.5138,0.0002 50.0718,0.0002 L50.0718,0.0002 Z' }),
+	            React.createElement('path', { d: 'M39.111,8.6138 C39.111,8.0598 39,7.6558 38.778,7.4018 C38.556,7.1478 38.297,7.0208 38.002,7.0208 C37.706,7.0208 37.387,7.1708 37.045,7.4698 C36.388,8.0508 35.702,9.2198 34.985,10.9768 C34.269,12.7338 33.911,14.2118 33.911,15.4108 C33.911,15.8468 33.989,16.1688 34.147,16.3778 C34.304,16.5868 34.479,16.6908 34.674,16.6908 C34.997,16.6908 35.321,16.5458 35.644,16.2548 C36.43,15.5648 37.204,14.3778 37.967,12.6928 C38.73,11.0088 39.111,9.6488 39.111,8.6138 L39.111,8.6138 Z M45.227,-0.0002 L40.611,15.2088 C40.317,16.1608 40.171,16.7358 40.171,16.9348 C40.171,17.0358 40.206,17.1228 40.279,17.1958 C40.351,17.2688 40.428,17.3048 40.509,17.3048 C40.663,17.3048 40.839,17.2268 41.038,17.0718 C41.372,16.8168 41.778,16.3338 42.257,15.6218 L42.745,15.8818 C41.465,18.1258 40.059,19.2478 38.525,19.2478 C37.981,19.2478 37.561,19.1048 37.266,18.8198 C36.971,18.5348 36.824,18.1708 36.824,17.7268 C36.824,17.3008 36.942,16.6948 37.178,15.9068 L37.608,14.5168 C36.469,16.5208 35.481,17.8538 34.643,18.5148 C34.006,19.0038 33.386,19.2478 32.786,19.2478 C32.102,19.2478 31.526,18.9708 31.057,18.4178 C30.589,17.8648 30.354,17.0578 30.354,15.9958 C30.354,14.6448 30.657,13.3108 31.262,11.9958 C31.868,10.6798 32.567,9.5828 33.361,8.7028 C34.154,7.8228 34.911,7.1948 35.632,6.8178 C36.351,6.4418 37.06,6.2528 37.758,6.2528 C38.115,6.2528 38.434,6.3278 38.714,6.4758 C38.994,6.6248 39.312,6.9028 39.67,7.3108 L40.736,3.9368 C41.008,3.0878 41.144,2.4788 41.144,2.1098 C41.144,1.8878 41.051,1.6988 40.866,1.5428 C40.68,1.3858 40.433,1.3078 40.124,1.3078 C39.979,1.3078 39.799,1.3218 39.583,1.3478 L39.699,0.8138 L44.374,-0.0002 L45.227,-0.0002 Z' }),
+	            React.createElement('path', { d: 'M21.5813,6.2532 L20.9773,10.4612 L20.4653,10.4612 C20.3933,9.3802 20.0603,8.5282 19.4673,7.9062 C18.8733,7.2852 18.2373,6.9742 17.5583,6.9742 C17.1413,6.9742 16.7973,7.0962 16.5263,7.3412 C16.2543,7.5862 16.1183,7.8812 16.1183,8.2252 C16.1183,8.5162 16.1773,8.7882 16.2953,9.0412 C16.4133,9.2962 16.6763,9.6402 17.0843,10.0762 C18.5183,11.6182 19.3893,12.6782 19.6993,13.2562 C20.0083,13.8352 20.1633,14.4542 20.1633,15.1132 C20.1633,15.8272 19.9813,16.5032 19.6173,17.1402 C19.2533,17.7772 18.7103,18.2882 17.9873,18.6722 C17.2643,19.0562 16.5113,19.2482 15.7293,19.2482 C15.2023,19.2482 14.5523,19.1472 13.7793,18.9472 C13.2703,18.8072 12.8883,18.7382 12.6333,18.7382 C12.4063,18.7382 12.2283,18.7702 12.1013,18.8362 C11.9733,18.9012 11.8323,19.0382 11.6783,19.2482 L11.1673,19.2482 L11.8413,14.7152 L12.2823,14.7152 C12.6003,15.8202 12.8983,16.6082 13.1753,17.0792 C13.4523,17.5492 13.8223,17.9242 14.2853,18.2022 C14.7483,18.4812 15.1933,18.6202 15.6203,18.6202 C16.1203,18.6202 16.5333,18.4642 16.8603,18.1512 C17.1873,17.8382 17.3503,17.4642 17.3503,17.0282 C17.3503,16.6022 17.2433,16.1892 17.0303,15.7902 C16.8163,15.3912 16.3243,14.7702 15.5523,13.9262 C14.4893,12.7742 13.7893,11.8842 13.4523,11.2552 C13.2143,10.8002 13.0963,10.2802 13.0963,9.6972 C13.0963,8.7132 13.4533,7.8932 14.1673,7.2372 C14.8813,6.5812 15.8843,6.2532 17.1763,6.2532 C17.7403,6.2532 18.4323,6.3572 19.2513,6.5642 C19.6603,6.6682 19.9883,6.7192 20.2333,6.7192 C20.5883,6.7192 20.8743,6.5642 21.0933,6.2532 L21.5813,6.2532 Z' }),
+	            React.createElement('path', { d: 'M11.88,0.0465 L7.265,15.5295 C7.029,16.3405 6.911,16.8565 6.911,17.0745 C6.911,17.2935 6.995,17.5195 7.163,17.7515 C7.331,17.9845 7.512,18.1355 7.708,18.2035 C7.903,18.2715 8.491,18.3335 9.471,18.3875 L9.322,18.8765 L0,18.8765 L0.15,18.3875 C1.076,18.3695 1.721,18.2925 2.084,18.1555 C2.447,18.0185 2.745,17.7955 2.976,17.4855 C3.208,17.1755 3.469,16.5235 3.759,15.5295 L6.473,6.3335 C6.901,4.9365 7.124,4.1965 7.143,4.1145 C7.2,3.8785 7.229,3.6565 7.229,3.4475 C7.229,3.0425 7.103,2.7205 6.853,2.4815 C6.602,2.2425 6.244,2.1225 5.779,2.1225 C5.551,2.1225 5.1,2.1595 4.426,2.2315 L4.309,1.7205 L11.303,0.0465 L11.88,0.0465 Z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -38714,15 +38598,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/logo-trade.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/logo-trade.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/logo-trade.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/logo-trade.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38730,7 +38614,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38754,25 +38638,21 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('polygon', { className: 'dibsvg-logo-trade-fill', points: '79.4003136 43.0832419 79.4003136 35.8335867 84.3411082 35.8335867 84.3411082 36.9539315 80.6644532 36.9539315 80.6644532 38.8346212 84.2654759 38.8346212 84.2654759 39.9534143 80.6644532 39.9534143 80.6644532 41.962897 84.3411082 41.962897 84.3411082 43.0832419' }),
-	                React.createElement('polygon', { className: 'dibsvg-logo-trade-fill', points: '32.605077 35.8337414 32.605077 36.9540862 34.789152 36.9540862 34.789152 43.0833966 36.0548351 43.0833966 36.0548351 36.9540862 38.2389102 36.9540862 38.2389102 35.8337414' }),
-	                React.createElement('polygon', { className: 'dibsvg-logo-trade-bar-fill', points: '90.7078029 40.6222074 116.947574 40.6222074 116.947574 38.2946212 90.7078029 38.2946212' }),
-	                React.createElement('polygon', { className: 'dibsvg-logo-trade-bar-fill', points: '0 40.6222074 26.2397715 40.6222074 26.2397715 38.2946212 0 38.2946212' }),
-	                React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M72.2931943,39.4646212 C72.2931943,38.0634143 71.4272819,36.9539315 69.8173947,36.9539315 L68.4019906,36.9539315 L68.4019906,41.962897 L69.8173947,41.962897 C71.3856069,41.962897 72.2931943,40.8332419 72.2931943,39.4646212 L72.2931943,39.4646212 Z M67.1363075,43.0832419 L67.1363075,35.8335867 L69.8173947,35.8335867 C72.067841,35.8335867 73.5912913,37.3341039 73.5912913,39.4646212 C73.5912913,41.5935867 72.067841,43.0832419 69.8173947,43.0832419 L67.1363075,43.0832419 Z' }),
-	                React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M58.1393074,37.1173279 L56.8412105,40.5730175 L59.4358608,40.5730175 L58.1393074,37.1173279 Z M60.321839,43.0837072 L59.792413,41.6918107 L56.4846583,41.6918107 L55.9552323,43.0837072 L54.5166754,43.0837072 L57.3490272,35.834052 L58.928044,35.834052 L61.7603958,43.0837072 L60.321839,43.0837072 Z' }),
-	                React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M48.1237408,38.1053108 C48.1237408,37.4101384 47.6051195,36.9539315 46.8920151,36.9539315 L45.1617337,36.9539315 L45.1617337,39.2566901 L46.8920151,39.2566901 C47.6051195,39.2566901 48.1237408,38.8004832 48.1237408,38.1053108 Z M48.0156947,43.0832419 L46.4150687,40.377035 L45.1617337,40.377035 L45.1617337,43.0832419 L43.8960506,43.0832419 L43.8960506,35.8335867 L47.0633454,35.8335867 C48.4910976,35.8335867 49.4202943,36.7692763 49.4202943,38.1053108 C49.4202943,39.3994488 48.5775345,40.0946212 47.7131656,40.2358281 L49.4743173,43.0832419 L48.0156947,43.0832419 Z' }),
-	                React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M119.348668,26.8801384 L120.83353,26.8801384 C121.370674,26.8801384 121.719508,27.0151384 121.932513,27.2292763 C122.113105,27.4108281 122.208803,27.642035 122.208803,27.9601384 L122.208803,27.9756557 C122.208803,28.4116901 121.980362,28.722035 121.608375,28.8973798 L122.319936,29.937035 L121.165386,29.937035 L120.581937,29.0634143 L120.564958,29.0634143 L120.367388,29.0634143 L120.367388,29.937035 L119.348668,29.937035 L119.348668,26.8801384 Z M120.80266,28.3325522 C121.048079,28.3325522 121.1978,28.2285867 121.1978,28.0392763 L121.1978,28.0237591 C121.1978,27.832897 121.038818,27.7366901 120.810377,27.7366901 L120.367388,27.7366901 L120.367388,28.3325522 L120.80266,28.3325522 Z M117.823674,28.507897 L117.823674,28.4908281 C117.823674,26.9266901 119.087814,25.5922074 120.691527,25.5922074 C122.29524,25.5922074 123.543944,26.9111729 123.543944,28.4753108 L123.543944,28.4908281 C123.543944,30.0565177 122.279805,31.3894488 120.676092,31.3894488 C119.072378,31.3894488 117.823674,30.072035 117.823674,28.507897 Z M123.212088,28.4908281 L123.212088,28.4753108 C123.212088,27.0694488 122.130084,25.9103108 120.691527,25.9103108 C119.246796,25.9103108 118.15553,27.0865177 118.15553,28.4908281 L118.15553,28.507897 C118.15553,29.9137591 119.239078,31.072897 120.676092,31.072897 C122.122366,31.072897 123.212088,29.8966901 123.212088,28.4908281 Z' }),
-	                React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M117.049909,10.254966 L116.117626,16.7846212 L115.327346,16.7846212 C115.216212,15.1072074 114.702222,13.7851384 113.786917,12.819966 C112.870068,11.8563453 111.888392,11.3737591 110.840345,11.3737591 C110.196699,11.3737591 109.665729,11.5630694 109.247436,11.9432419 C108.8276,12.3234143 108.617682,12.7811729 108.617682,13.314966 C108.617682,13.7665177 108.708749,14.1885867 108.890884,14.5811729 C109.073019,14.9768626 109.478964,15.5106557 110.108718,16.1872074 C112.32212,18.579966 113.666522,20.2247936 114.145012,21.1216901 C114.621959,22.0201384 114.861204,22.9806557 114.861204,24.0032419 C114.861204,25.1111729 114.580284,26.1601384 114.018444,27.1485867 C113.456604,28.137035 112.618475,28.929966 111.502513,29.5258281 C110.386551,30.1216901 109.224283,30.4196212 108.017254,30.4196212 C107.203821,30.4196212 106.200536,30.262897 105.007398,29.9525522 C104.221748,29.7353108 103.632125,29.6282419 103.238529,29.6282419 C102.88815,29.6282419 102.613405,29.677897 102.417378,29.7803108 C102.219808,29.8811729 102.002172,30.0937591 101.764471,30.4196212 L100.975734,30.4196212 L102.016064,23.3856557 L102.696754,23.3856557 C103.187593,25.1003108 103.64756,26.3230694 104.075114,27.0539315 C104.502668,27.7832419 105.073769,28.3651384 105.788417,28.7965177 C106.503065,29.2294488 107.189929,29.4451384 107.849011,29.4451384 C108.620769,29.4451384 109.258241,29.2030694 109.762971,28.7173798 C110.2677,28.2316901 110.519293,27.6513453 110.519293,26.9747936 C110.519293,26.3137591 110.354137,25.672897 110.025368,25.0537591 C109.695056,24.4346212 108.935646,23.4710005 107.744052,22.1613453 C106.103294,20.3737591 105.022833,18.9927246 104.502668,18.0166901 C104.135311,17.3106557 103.953176,16.5037591 103.953176,15.5991039 C103.953176,14.0722074 104.504212,12.7997936 105.606282,11.7818626 C106.708352,10.7639315 108.256499,10.254966 110.250722,10.254966 C111.121265,10.254966 112.189378,10.4163453 113.453517,10.7375522 C114.084815,10.8989315 114.591089,10.9780694 114.96925,10.9780694 C115.517198,10.9780694 115.958644,10.7375522 116.296674,10.254966 L117.049909,10.254966 Z' }),
-	                React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M93.6522139,0.55234531 L89.9277099,13.243897 C90.9850183,12.045966 91.8679095,11.2483798 92.5779268,10.8511384 C93.2864007,10.453897 94.0566151,10.2552763 94.8854832,10.2552763 C96.4922833,10.2552763 97.6931387,10.8635522 98.489593,12.0816557 C99.2860472,13.2997591 99.6842743,14.7025177 99.6842743,16.293035 C99.6842743,20.0947591 98.3398719,23.4868281 95.6526106,26.4707936 C93.2663349,29.1025177 90.5512904,30.4183798 87.5074769,30.4183798 C85.2446825,30.4183798 82.8522327,29.7402763 80.3301276,28.3840694 L86.840678,6.11062117 C87.1432071,5.05079359 87.3145374,4.31062117 87.3562123,3.88855221 C87.3562123,3.52700048 87.2049477,3.23993152 86.9024186,3.02889703 C86.4779517,2.72941428 85.8358491,2.6021729 84.9730237,2.64406945 L85.1520715,1.81389703 L92.3587476,0.55234531 L93.6522139,0.55234531 Z M85.4252738,28.5935522 C86.0550283,29.0171729 86.6245857,29.2282074 87.1324025,29.2282074 C87.8424198,29.2282074 88.438217,29.0807936 88.9213375,28.7844143 C89.6838344,28.3049315 90.4849192,27.4375177 91.3215048,26.1806212 C92.159634,24.9252763 92.8588467,23.4076901 93.4222301,21.630966 C93.9840699,19.8526901 94.2649898,18.0821729 94.2649898,16.3178626 C94.2649898,15.3170005 94.0550716,14.5535522 93.6383223,14.0321729 C93.2200295,13.5107936 92.7353655,13.2485522 92.1858738,13.2485522 C91.2705688,13.2485522 90.472571,13.7420005 89.793424,14.7257936 C89.3349998,15.3635522 88.8379876,16.7182074 88.3023876,18.7882074 L85.4252738,28.5935522 Z' }),
-	                React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M78.995295,10.254966 L74.3138111,25.1484143 C74.0560439,26.0003108 73.9263886,26.5589315 73.9263886,26.8242763 C73.9263886,26.9856557 73.9881292,27.1346212 74.113154,27.2742763 C74.2381788,27.4123798 74.3709212,27.4822074 74.5098376,27.4822074 C74.7459956,27.4822074 74.9821535,27.372035 75.2183114,27.1532419 C75.8434354,26.6116901 76.5935842,25.6325522 77.4687577,24.2142763 L78.1864926,24.6534143 C76.0548971,28.497035 73.7890157,30.4196212 71.3888483,30.4196212 C70.4704563,30.4196212 69.7403733,30.1635867 69.1970556,29.6515177 C68.6521945,29.1410005 68.3805357,28.4923798 68.3805357,27.7072074 C68.3805357,27.1858281 68.5117346,26.5216901 68.7756758,25.717897 L71.9985371,15.6037591 C72.3072403,14.6308281 72.4615919,13.8968626 72.4615919,13.4034143 C72.4615919,13.0930694 72.3195885,12.8184143 72.037125,12.577897 C71.7531181,12.3373798 71.3656956,12.217897 70.873314,12.217897 C70.6495042,12.217897 70.3809324,12.2241039 70.0675987,12.2396212 L70.3546926,11.4094488 L77.6956546,10.254966 L78.995295,10.254966 Z M77.2866228,0.552034966 C78.1633399,0.552034966 78.9011405,0.8561729 79.5015682,1.46444876 C80.1004524,2.07272462 80.4014381,2.80824186 80.4014381,3.67255221 C80.4014381,4.53531083 80.0973654,5.27082807 79.4907636,5.87910393 C78.8826183,6.48893152 78.1479047,6.79151772 77.2866228,6.79151772 C76.4392326,6.79151772 75.7122365,6.48893152 75.1056348,5.87910393 C74.4974895,5.27082807 74.1934168,4.53531083 74.1934168,3.67255221 C74.1934168,2.80824186 74.4944024,2.07272462 75.0948302,1.46444876 C75.6937144,0.8561729 76.4253409,0.552034966 77.2866228,0.552034966 Z' }),
-	                React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M69.8085967,0.551414276 L62.683727,24.1515867 C62.2299333,25.6288281 62.0045799,26.5210694 62.0045799,26.8298626 C62.0045799,26.9865867 62.058603,27.1215867 62.1712797,27.2348626 C62.2824128,27.3481384 62.4012635,27.4040005 62.5262883,27.4040005 C62.7639898,27.4040005 63.0356486,27.282966 63.3428083,27.0424488 C63.8583426,26.6467591 64.4850101,25.8972763 65.2243542,24.7924488 L65.97759,25.195897 C64.0018896,28.677966 61.8317062,30.4190005 59.4639527,30.4190005 C58.62428,30.4190005 57.9760033,30.1971039 57.5206661,29.7548626 C57.0653288,29.3126212 56.838432,28.7477936 56.838432,28.0588281 C56.838432,27.3977936 57.0205669,26.4574488 57.3848366,25.2346901 L58.0485485,23.0777936 C56.2904838,26.1874488 54.7654901,28.255897 53.4720237,29.2815867 C52.488804,30.0403798 51.5318241,30.4190005 50.6057145,30.4190005 C49.5499496,30.4190005 48.6608844,29.9891729 47.9369754,29.1310694 C47.2146099,28.272966 46.8518837,27.0207246 46.8518837,25.3727936 C46.8518837,23.2764143 47.319569,21.2064143 48.2533962,19.165897 C49.1887669,17.1238281 50.2676845,15.4215867 51.4932362,14.0560694 C52.7172444,12.6905522 53.885686,11.7160694 54.998561,11.1310694 C56.1083489,10.5476212 57.2027018,10.2543453 58.2800759,10.2543453 C58.8311111,10.2543453 59.3234927,10.3707246 59.7556772,10.6003798 C60.1878616,10.8315867 60.6786997,11.262966 61.2312784,11.8960694 L62.8766665,6.66055221 C63.2965028,5.34313841 63.506421,4.39813841 63.506421,3.82555221 C63.506421,3.48106945 63.362874,3.18779359 63.0773235,2.94572462 C62.7902296,2.70210393 62.4089811,2.58106945 61.9320347,2.58106945 C61.7082249,2.58106945 61.430392,2.60279359 61.0969926,2.64313841 L61.2760404,1.81451772 L68.4919776,0.551414276 L69.8085967,0.551414276 Z M60.368453,13.917966 C60.368453,13.0583108 60.1971227,12.4314143 59.8544622,12.0372763 C59.5118017,11.6431384 59.112031,11.4460694 58.6566938,11.4460694 C58.1998131,11.4460694 57.7074315,11.6788281 57.179549,12.1427936 C56.165459,13.0443453 55.1066071,14.8583108 53.9999061,17.5846901 C52.8947487,20.3110694 52.34217,22.6045177 52.34217,24.465035 C52.34217,25.1415867 52.4625642,25.6412419 52.7064398,25.9655522 C52.9487718,26.2898626 53.2188871,26.4512419 53.5198727,26.4512419 C54.0184283,26.4512419 54.5185275,26.2262419 55.0170832,25.7746901 C56.2302867,24.7040005 57.4249681,22.8621039 58.6026707,20.2474488 C59.7803734,17.6343453 60.368453,15.5240005 60.368453,13.917966 Z' }),
-	                React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M46.8691711,5.09672462 L45.1080193,10.831897 L47.4618812,10.831897 L46.7256241,13.2494832 L44.3378049,13.2494832 L40.5222334,25.6679315 C40.2783579,26.4391384 40.1564201,27.0241384 40.1564201,27.4244832 C40.1564201,27.5594832 40.2181608,27.6758626 40.3447291,27.7751729 C40.4712974,27.8729315 40.6102138,27.9225867 40.7645654,27.9225867 C41.0022669,27.9225867 41.2476859,27.8232763 41.499279,27.6262074 C42.1429252,27.1327591 42.8915304,26.2715522 43.7435512,25.0441384 L44.4983305,25.5096557 C43.5290025,27.2025867 42.462433,28.443966 41.2986219,29.2337936 C40.1332674,30.0236212 38.989522,30.4193108 37.8673859,30.4193108 C36.9119496,30.4193108 36.1726054,30.1772419 35.6462665,29.6946557 C35.1199275,29.2105177 34.8575298,28.5975867 34.8575298,27.8558626 C34.8575298,27.0365522 35.0535563,25.986035 35.4456094,24.7012074 L39.0219359,13.2494832 L36.32387,13.2494832 L36.7220971,11.6900005 C38.4276822,11.0305177 39.9110011,10.2577591 41.1720536,9.37327634 C42.4331062,8.48879359 43.9519259,7.0627591 45.7300563,5.09672462 L46.8691711,5.09672462 Z' }),
-	                React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M33.3110812,10.254966 L32.3787975,16.7846212 L31.5885173,16.7846212 C31.4773842,15.1072074 30.9633934,13.7851384 30.0480884,12.819966 C29.1312399,11.8563453 28.1495638,11.3737591 27.1015164,11.3737591 C26.4578703,11.3737591 25.9269008,11.5630694 25.5086079,11.9432419 C25.0887716,12.3234143 24.8788534,12.7811729 24.8788534,13.314966 C24.8788534,13.7665177 24.9699209,14.1885867 25.1520557,14.5811729 C25.3341906,14.9768626 25.7401353,15.5106557 26.3698898,16.1872074 C28.5832917,18.579966 29.9276942,20.2247936 30.4061841,21.1216901 C30.8831305,22.0201384 31.1223755,22.9806557 31.1223755,24.0032419 C31.1223755,25.1111729 30.8414556,26.1601384 30.2796158,27.1485867 C29.717776,28.137035 28.8796468,28.929966 27.7636848,29.5258281 C26.6477227,30.1216901 25.4854552,30.4196212 24.2784257,30.4196212 C23.4649928,30.4196212 22.4617074,30.262897 21.2685696,29.9525522 C20.4829199,29.7353108 19.8932968,29.6282419 19.4997003,29.6282419 C19.1493222,29.6282419 18.8745763,29.677897 18.6785498,29.7803108 C18.4809797,29.8811729 18.263344,30.0937591 18.0256425,30.4196212 L17.2369059,30.4196212 L18.2772356,23.3856557 L18.9579262,23.3856557 C19.4487642,25.1003108 19.908732,26.3230694 20.3362859,27.0539315 C20.7638399,27.7832419 21.3349408,28.3651384 22.0495887,28.7965177 C22.7642365,29.2294488 23.4511012,29.4451384 24.1101825,29.4451384 C24.8819405,29.4451384 25.5194125,29.2030694 26.0241423,28.7173798 C26.528872,28.2316901 26.7804651,27.6513453 26.7804651,26.9747936 C26.7804651,26.3137591 26.6153089,25.672897 26.28654,25.0537591 C25.9562276,24.4346212 25.1968177,23.4710005 24.0052234,22.1613453 C22.3644659,20.3737591 21.2840047,18.9927246 20.7638399,18.0166901 C20.3964831,17.3106557 20.2143482,16.5037591 20.2143482,15.5991039 C20.2143482,14.0722074 20.7653834,12.7997936 21.8674538,11.7818626 C22.9695242,10.7639315 24.5176707,10.254966 26.5118933,10.254966 C27.3824363,10.254966 28.4505494,10.4163453 29.714689,10.7375522 C30.345987,10.8989315 30.8522602,10.9780694 31.2304216,10.9780694 C31.7783698,10.9780694 32.2198154,10.7375522 32.5578454,10.254966 L33.3110812,10.254966 Z' }),
-	                React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M18.3369697,0.623879793 L11.2136435,24.6492246 C10.8493737,25.9076729 10.6672389,26.7083626 10.6672389,27.0466384 C10.6672389,27.386466 10.7968942,27.7371557 11.0562049,28.0971557 C11.3155156,28.4587074 11.5948919,28.6930177 11.8974211,28.798535 C12.1984067,28.9040522 13.1059941,29.0002591 14.6186397,29.0840522 L14.3886559,29.8428453 L0,29.8428453 L0.231527395,29.0840522 C1.66082318,29.0561212 2.65639098,28.9366384 3.21668728,28.7240522 C3.77698357,28.511466 4.23695133,28.1654315 4.59350352,27.684397 C4.95159922,27.2033626 5.35445689,26.1916384 5.80207652,24.6492246 L9.99117886,10.3795694 C10.6518037,8.21181083 10.9960078,7.06353497 11.0253346,6.93629359 C11.113315,6.57008669 11.1580769,6.22560393 11.1580769,5.90129359 C11.1580769,5.27284531 10.9635939,4.77319014 10.5777149,4.40232807 C10.1902924,4.031466 9.6377137,3.8452591 8.91997878,3.8452591 C8.56805714,3.8452591 7.87193144,3.9026729 6.83160167,4.01439703 L6.65101031,3.221466 L17.446361,0.623879793 L18.3369697,0.623879793 Z' })
-	            ),
+	            React.createElement('polygon', { className: 'dibsvg-logo-trade-fill', points: '79.4003136 43.0832419 79.4003136 35.8335867 84.3411082 35.8335867 84.3411082 36.9539315 80.6644532 36.9539315 80.6644532 38.8346212 84.2654759 38.8346212 84.2654759 39.9534143 80.6644532 39.9534143 80.6644532 41.962897 84.3411082 41.962897 84.3411082 43.0832419' }),
+	            React.createElement('polygon', { className: 'dibsvg-logo-trade-fill', points: '32.605077 35.8337414 32.605077 36.9540862 34.789152 36.9540862 34.789152 43.0833966 36.0548351 43.0833966 36.0548351 36.9540862 38.2389102 36.9540862 38.2389102 35.8337414' }),
+	            React.createElement('polygon', { className: 'dibsvg-logo-trade-bar-fill', points: '90.7078029 40.6222074 116.947574 40.6222074 116.947574 38.2946212 90.7078029 38.2946212' }),
+	            React.createElement('polygon', { className: 'dibsvg-logo-trade-bar-fill', points: '0 40.6222074 26.2397715 40.6222074 26.2397715 38.2946212 0 38.2946212' }),
+	            React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M72.2931943,39.4646212 C72.2931943,38.0634143 71.4272819,36.9539315 69.8173947,36.9539315 L68.4019906,36.9539315 L68.4019906,41.962897 L69.8173947,41.962897 C71.3856069,41.962897 72.2931943,40.8332419 72.2931943,39.4646212 L72.2931943,39.4646212 Z M67.1363075,43.0832419 L67.1363075,35.8335867 L69.8173947,35.8335867 C72.067841,35.8335867 73.5912913,37.3341039 73.5912913,39.4646212 C73.5912913,41.5935867 72.067841,43.0832419 69.8173947,43.0832419 L67.1363075,43.0832419 Z' }),
+	            React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M58.1393074,37.1173279 L56.8412105,40.5730175 L59.4358608,40.5730175 L58.1393074,37.1173279 Z M60.321839,43.0837072 L59.792413,41.6918107 L56.4846583,41.6918107 L55.9552323,43.0837072 L54.5166754,43.0837072 L57.3490272,35.834052 L58.928044,35.834052 L61.7603958,43.0837072 L60.321839,43.0837072 Z' }),
+	            React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M48.1237408,38.1053108 C48.1237408,37.4101384 47.6051195,36.9539315 46.8920151,36.9539315 L45.1617337,36.9539315 L45.1617337,39.2566901 L46.8920151,39.2566901 C47.6051195,39.2566901 48.1237408,38.8004832 48.1237408,38.1053108 Z M48.0156947,43.0832419 L46.4150687,40.377035 L45.1617337,40.377035 L45.1617337,43.0832419 L43.8960506,43.0832419 L43.8960506,35.8335867 L47.0633454,35.8335867 C48.4910976,35.8335867 49.4202943,36.7692763 49.4202943,38.1053108 C49.4202943,39.3994488 48.5775345,40.0946212 47.7131656,40.2358281 L49.4743173,43.0832419 L48.0156947,43.0832419 Z' }),
+	            React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M119.348668,26.8801384 L120.83353,26.8801384 C121.370674,26.8801384 121.719508,27.0151384 121.932513,27.2292763 C122.113105,27.4108281 122.208803,27.642035 122.208803,27.9601384 L122.208803,27.9756557 C122.208803,28.4116901 121.980362,28.722035 121.608375,28.8973798 L122.319936,29.937035 L121.165386,29.937035 L120.581937,29.0634143 L120.564958,29.0634143 L120.367388,29.0634143 L120.367388,29.937035 L119.348668,29.937035 L119.348668,26.8801384 Z M120.80266,28.3325522 C121.048079,28.3325522 121.1978,28.2285867 121.1978,28.0392763 L121.1978,28.0237591 C121.1978,27.832897 121.038818,27.7366901 120.810377,27.7366901 L120.367388,27.7366901 L120.367388,28.3325522 L120.80266,28.3325522 Z M117.823674,28.507897 L117.823674,28.4908281 C117.823674,26.9266901 119.087814,25.5922074 120.691527,25.5922074 C122.29524,25.5922074 123.543944,26.9111729 123.543944,28.4753108 L123.543944,28.4908281 C123.543944,30.0565177 122.279805,31.3894488 120.676092,31.3894488 C119.072378,31.3894488 117.823674,30.072035 117.823674,28.507897 Z M123.212088,28.4908281 L123.212088,28.4753108 C123.212088,27.0694488 122.130084,25.9103108 120.691527,25.9103108 C119.246796,25.9103108 118.15553,27.0865177 118.15553,28.4908281 L118.15553,28.507897 C118.15553,29.9137591 119.239078,31.072897 120.676092,31.072897 C122.122366,31.072897 123.212088,29.8966901 123.212088,28.4908281 Z' }),
+	            React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M117.049909,10.254966 L116.117626,16.7846212 L115.327346,16.7846212 C115.216212,15.1072074 114.702222,13.7851384 113.786917,12.819966 C112.870068,11.8563453 111.888392,11.3737591 110.840345,11.3737591 C110.196699,11.3737591 109.665729,11.5630694 109.247436,11.9432419 C108.8276,12.3234143 108.617682,12.7811729 108.617682,13.314966 C108.617682,13.7665177 108.708749,14.1885867 108.890884,14.5811729 C109.073019,14.9768626 109.478964,15.5106557 110.108718,16.1872074 C112.32212,18.579966 113.666522,20.2247936 114.145012,21.1216901 C114.621959,22.0201384 114.861204,22.9806557 114.861204,24.0032419 C114.861204,25.1111729 114.580284,26.1601384 114.018444,27.1485867 C113.456604,28.137035 112.618475,28.929966 111.502513,29.5258281 C110.386551,30.1216901 109.224283,30.4196212 108.017254,30.4196212 C107.203821,30.4196212 106.200536,30.262897 105.007398,29.9525522 C104.221748,29.7353108 103.632125,29.6282419 103.238529,29.6282419 C102.88815,29.6282419 102.613405,29.677897 102.417378,29.7803108 C102.219808,29.8811729 102.002172,30.0937591 101.764471,30.4196212 L100.975734,30.4196212 L102.016064,23.3856557 L102.696754,23.3856557 C103.187593,25.1003108 103.64756,26.3230694 104.075114,27.0539315 C104.502668,27.7832419 105.073769,28.3651384 105.788417,28.7965177 C106.503065,29.2294488 107.189929,29.4451384 107.849011,29.4451384 C108.620769,29.4451384 109.258241,29.2030694 109.762971,28.7173798 C110.2677,28.2316901 110.519293,27.6513453 110.519293,26.9747936 C110.519293,26.3137591 110.354137,25.672897 110.025368,25.0537591 C109.695056,24.4346212 108.935646,23.4710005 107.744052,22.1613453 C106.103294,20.3737591 105.022833,18.9927246 104.502668,18.0166901 C104.135311,17.3106557 103.953176,16.5037591 103.953176,15.5991039 C103.953176,14.0722074 104.504212,12.7997936 105.606282,11.7818626 C106.708352,10.7639315 108.256499,10.254966 110.250722,10.254966 C111.121265,10.254966 112.189378,10.4163453 113.453517,10.7375522 C114.084815,10.8989315 114.591089,10.9780694 114.96925,10.9780694 C115.517198,10.9780694 115.958644,10.7375522 116.296674,10.254966 L117.049909,10.254966 Z' }),
+	            React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M93.6522139,0.55234531 L89.9277099,13.243897 C90.9850183,12.045966 91.8679095,11.2483798 92.5779268,10.8511384 C93.2864007,10.453897 94.0566151,10.2552763 94.8854832,10.2552763 C96.4922833,10.2552763 97.6931387,10.8635522 98.489593,12.0816557 C99.2860472,13.2997591 99.6842743,14.7025177 99.6842743,16.293035 C99.6842743,20.0947591 98.3398719,23.4868281 95.6526106,26.4707936 C93.2663349,29.1025177 90.5512904,30.4183798 87.5074769,30.4183798 C85.2446825,30.4183798 82.8522327,29.7402763 80.3301276,28.3840694 L86.840678,6.11062117 C87.1432071,5.05079359 87.3145374,4.31062117 87.3562123,3.88855221 C87.3562123,3.52700048 87.2049477,3.23993152 86.9024186,3.02889703 C86.4779517,2.72941428 85.8358491,2.6021729 84.9730237,2.64406945 L85.1520715,1.81389703 L92.3587476,0.55234531 L93.6522139,0.55234531 Z M85.4252738,28.5935522 C86.0550283,29.0171729 86.6245857,29.2282074 87.1324025,29.2282074 C87.8424198,29.2282074 88.438217,29.0807936 88.9213375,28.7844143 C89.6838344,28.3049315 90.4849192,27.4375177 91.3215048,26.1806212 C92.159634,24.9252763 92.8588467,23.4076901 93.4222301,21.630966 C93.9840699,19.8526901 94.2649898,18.0821729 94.2649898,16.3178626 C94.2649898,15.3170005 94.0550716,14.5535522 93.6383223,14.0321729 C93.2200295,13.5107936 92.7353655,13.2485522 92.1858738,13.2485522 C91.2705688,13.2485522 90.472571,13.7420005 89.793424,14.7257936 C89.3349998,15.3635522 88.8379876,16.7182074 88.3023876,18.7882074 L85.4252738,28.5935522 Z' }),
+	            React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M78.995295,10.254966 L74.3138111,25.1484143 C74.0560439,26.0003108 73.9263886,26.5589315 73.9263886,26.8242763 C73.9263886,26.9856557 73.9881292,27.1346212 74.113154,27.2742763 C74.2381788,27.4123798 74.3709212,27.4822074 74.5098376,27.4822074 C74.7459956,27.4822074 74.9821535,27.372035 75.2183114,27.1532419 C75.8434354,26.6116901 76.5935842,25.6325522 77.4687577,24.2142763 L78.1864926,24.6534143 C76.0548971,28.497035 73.7890157,30.4196212 71.3888483,30.4196212 C70.4704563,30.4196212 69.7403733,30.1635867 69.1970556,29.6515177 C68.6521945,29.1410005 68.3805357,28.4923798 68.3805357,27.7072074 C68.3805357,27.1858281 68.5117346,26.5216901 68.7756758,25.717897 L71.9985371,15.6037591 C72.3072403,14.6308281 72.4615919,13.8968626 72.4615919,13.4034143 C72.4615919,13.0930694 72.3195885,12.8184143 72.037125,12.577897 C71.7531181,12.3373798 71.3656956,12.217897 70.873314,12.217897 C70.6495042,12.217897 70.3809324,12.2241039 70.0675987,12.2396212 L70.3546926,11.4094488 L77.6956546,10.254966 L78.995295,10.254966 Z M77.2866228,0.552034966 C78.1633399,0.552034966 78.9011405,0.8561729 79.5015682,1.46444876 C80.1004524,2.07272462 80.4014381,2.80824186 80.4014381,3.67255221 C80.4014381,4.53531083 80.0973654,5.27082807 79.4907636,5.87910393 C78.8826183,6.48893152 78.1479047,6.79151772 77.2866228,6.79151772 C76.4392326,6.79151772 75.7122365,6.48893152 75.1056348,5.87910393 C74.4974895,5.27082807 74.1934168,4.53531083 74.1934168,3.67255221 C74.1934168,2.80824186 74.4944024,2.07272462 75.0948302,1.46444876 C75.6937144,0.8561729 76.4253409,0.552034966 77.2866228,0.552034966 Z' }),
+	            React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M69.8085967,0.551414276 L62.683727,24.1515867 C62.2299333,25.6288281 62.0045799,26.5210694 62.0045799,26.8298626 C62.0045799,26.9865867 62.058603,27.1215867 62.1712797,27.2348626 C62.2824128,27.3481384 62.4012635,27.4040005 62.5262883,27.4040005 C62.7639898,27.4040005 63.0356486,27.282966 63.3428083,27.0424488 C63.8583426,26.6467591 64.4850101,25.8972763 65.2243542,24.7924488 L65.97759,25.195897 C64.0018896,28.677966 61.8317062,30.4190005 59.4639527,30.4190005 C58.62428,30.4190005 57.9760033,30.1971039 57.5206661,29.7548626 C57.0653288,29.3126212 56.838432,28.7477936 56.838432,28.0588281 C56.838432,27.3977936 57.0205669,26.4574488 57.3848366,25.2346901 L58.0485485,23.0777936 C56.2904838,26.1874488 54.7654901,28.255897 53.4720237,29.2815867 C52.488804,30.0403798 51.5318241,30.4190005 50.6057145,30.4190005 C49.5499496,30.4190005 48.6608844,29.9891729 47.9369754,29.1310694 C47.2146099,28.272966 46.8518837,27.0207246 46.8518837,25.3727936 C46.8518837,23.2764143 47.319569,21.2064143 48.2533962,19.165897 C49.1887669,17.1238281 50.2676845,15.4215867 51.4932362,14.0560694 C52.7172444,12.6905522 53.885686,11.7160694 54.998561,11.1310694 C56.1083489,10.5476212 57.2027018,10.2543453 58.2800759,10.2543453 C58.8311111,10.2543453 59.3234927,10.3707246 59.7556772,10.6003798 C60.1878616,10.8315867 60.6786997,11.262966 61.2312784,11.8960694 L62.8766665,6.66055221 C63.2965028,5.34313841 63.506421,4.39813841 63.506421,3.82555221 C63.506421,3.48106945 63.362874,3.18779359 63.0773235,2.94572462 C62.7902296,2.70210393 62.4089811,2.58106945 61.9320347,2.58106945 C61.7082249,2.58106945 61.430392,2.60279359 61.0969926,2.64313841 L61.2760404,1.81451772 L68.4919776,0.551414276 L69.8085967,0.551414276 Z M60.368453,13.917966 C60.368453,13.0583108 60.1971227,12.4314143 59.8544622,12.0372763 C59.5118017,11.6431384 59.112031,11.4460694 58.6566938,11.4460694 C58.1998131,11.4460694 57.7074315,11.6788281 57.179549,12.1427936 C56.165459,13.0443453 55.1066071,14.8583108 53.9999061,17.5846901 C52.8947487,20.3110694 52.34217,22.6045177 52.34217,24.465035 C52.34217,25.1415867 52.4625642,25.6412419 52.7064398,25.9655522 C52.9487718,26.2898626 53.2188871,26.4512419 53.5198727,26.4512419 C54.0184283,26.4512419 54.5185275,26.2262419 55.0170832,25.7746901 C56.2302867,24.7040005 57.4249681,22.8621039 58.6026707,20.2474488 C59.7803734,17.6343453 60.368453,15.5240005 60.368453,13.917966 Z' }),
+	            React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M46.8691711,5.09672462 L45.1080193,10.831897 L47.4618812,10.831897 L46.7256241,13.2494832 L44.3378049,13.2494832 L40.5222334,25.6679315 C40.2783579,26.4391384 40.1564201,27.0241384 40.1564201,27.4244832 C40.1564201,27.5594832 40.2181608,27.6758626 40.3447291,27.7751729 C40.4712974,27.8729315 40.6102138,27.9225867 40.7645654,27.9225867 C41.0022669,27.9225867 41.2476859,27.8232763 41.499279,27.6262074 C42.1429252,27.1327591 42.8915304,26.2715522 43.7435512,25.0441384 L44.4983305,25.5096557 C43.5290025,27.2025867 42.462433,28.443966 41.2986219,29.2337936 C40.1332674,30.0236212 38.989522,30.4193108 37.8673859,30.4193108 C36.9119496,30.4193108 36.1726054,30.1772419 35.6462665,29.6946557 C35.1199275,29.2105177 34.8575298,28.5975867 34.8575298,27.8558626 C34.8575298,27.0365522 35.0535563,25.986035 35.4456094,24.7012074 L39.0219359,13.2494832 L36.32387,13.2494832 L36.7220971,11.6900005 C38.4276822,11.0305177 39.9110011,10.2577591 41.1720536,9.37327634 C42.4331062,8.48879359 43.9519259,7.0627591 45.7300563,5.09672462 L46.8691711,5.09672462 Z' }),
+	            React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M33.3110812,10.254966 L32.3787975,16.7846212 L31.5885173,16.7846212 C31.4773842,15.1072074 30.9633934,13.7851384 30.0480884,12.819966 C29.1312399,11.8563453 28.1495638,11.3737591 27.1015164,11.3737591 C26.4578703,11.3737591 25.9269008,11.5630694 25.5086079,11.9432419 C25.0887716,12.3234143 24.8788534,12.7811729 24.8788534,13.314966 C24.8788534,13.7665177 24.9699209,14.1885867 25.1520557,14.5811729 C25.3341906,14.9768626 25.7401353,15.5106557 26.3698898,16.1872074 C28.5832917,18.579966 29.9276942,20.2247936 30.4061841,21.1216901 C30.8831305,22.0201384 31.1223755,22.9806557 31.1223755,24.0032419 C31.1223755,25.1111729 30.8414556,26.1601384 30.2796158,27.1485867 C29.717776,28.137035 28.8796468,28.929966 27.7636848,29.5258281 C26.6477227,30.1216901 25.4854552,30.4196212 24.2784257,30.4196212 C23.4649928,30.4196212 22.4617074,30.262897 21.2685696,29.9525522 C20.4829199,29.7353108 19.8932968,29.6282419 19.4997003,29.6282419 C19.1493222,29.6282419 18.8745763,29.677897 18.6785498,29.7803108 C18.4809797,29.8811729 18.263344,30.0937591 18.0256425,30.4196212 L17.2369059,30.4196212 L18.2772356,23.3856557 L18.9579262,23.3856557 C19.4487642,25.1003108 19.908732,26.3230694 20.3362859,27.0539315 C20.7638399,27.7832419 21.3349408,28.3651384 22.0495887,28.7965177 C22.7642365,29.2294488 23.4511012,29.4451384 24.1101825,29.4451384 C24.8819405,29.4451384 25.5194125,29.2030694 26.0241423,28.7173798 C26.528872,28.2316901 26.7804651,27.6513453 26.7804651,26.9747936 C26.7804651,26.3137591 26.6153089,25.672897 26.28654,25.0537591 C25.9562276,24.4346212 25.1968177,23.4710005 24.0052234,22.1613453 C22.3644659,20.3737591 21.2840047,18.9927246 20.7638399,18.0166901 C20.3964831,17.3106557 20.2143482,16.5037591 20.2143482,15.5991039 C20.2143482,14.0722074 20.7653834,12.7997936 21.8674538,11.7818626 C22.9695242,10.7639315 24.5176707,10.254966 26.5118933,10.254966 C27.3824363,10.254966 28.4505494,10.4163453 29.714689,10.7375522 C30.345987,10.8989315 30.8522602,10.9780694 31.2304216,10.9780694 C31.7783698,10.9780694 32.2198154,10.7375522 32.5578454,10.254966 L33.3110812,10.254966 Z' }),
+	            React.createElement('path', { className: 'dibsvg-logo-trade-fill', d: 'M18.3369697,0.623879793 L11.2136435,24.6492246 C10.8493737,25.9076729 10.6672389,26.7083626 10.6672389,27.0466384 C10.6672389,27.386466 10.7968942,27.7371557 11.0562049,28.0971557 C11.3155156,28.4587074 11.5948919,28.6930177 11.8974211,28.798535 C12.1984067,28.9040522 13.1059941,29.0002591 14.6186397,29.0840522 L14.3886559,29.8428453 L0,29.8428453 L0.231527395,29.0840522 C1.66082318,29.0561212 2.65639098,28.9366384 3.21668728,28.7240522 C3.77698357,28.511466 4.23695133,28.1654315 4.59350352,27.684397 C4.95159922,27.2033626 5.35445689,26.1916384 5.80207652,24.6492246 L9.99117886,10.3795694 C10.6518037,8.21181083 10.9960078,7.06353497 11.0253346,6.93629359 C11.113315,6.57008669 11.1580769,6.22560393 11.1580769,5.90129359 C11.1580769,5.27284531 10.9635939,4.77319014 10.5777149,4.40232807 C10.1902924,4.031466 9.6377137,3.8452591 8.91997878,3.8452591 C8.56805714,3.8452591 7.87193144,3.9026729 6.83160167,4.01439703 L6.65101031,3.221466 L17.446361,0.623879793 L18.3369697,0.623879793 Z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -38814,15 +38694,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/logo.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/logo.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/logo.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/logo.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38830,7 +38710,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38854,22 +38734,14 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M843.7,139.2L726.9,531c-6,20.5-9,33.6-9,39.1c0,5.5,2.1,11.3,6.4,17.1c4.2,5.9,8.8,9.7,13.8,11.4 c4.9,1.7,19.8,3.3,44.6,4.7l-3.8,12.4H543l3.8-12.4c23.4-0.5,39.8-2.4,48.9-5.9c9.2-3.5,16.7-9.1,22.6-17 c5.9-7.9,12.5-24.4,19.8-49.5l68.7-232.7c10.8-35.4,16.5-54.1,17-56.2c1.4-6,2.2-11.6,2.2-16.9c0-10.3-3.2-18.4-9.5-24.5 c-6.3-6-15.4-9.1-27.2-9.1c-5.8,0-17.2,0.9-34.3,2.8l-2.9-12.9l177-42.4H843.7z' }),
-	                React.createElement('path', { d: 'M1089.2,296.3l-15.3,106.5h-12.9c-1.8-27.4-10.3-48.9-25.3-64.6c-15-15.7-31.1-23.6-48.3-23.6 c-10.5,0-19.2,3.1-26.1,9.3c-6.9,6.2-10.3,13.7-10.3,22.4c0,7.3,1.5,14.2,4.5,20.7c3,6.4,9.6,15.2,20,26.2 c36.3,39,58.3,65.9,66.2,80.5c7.8,14.6,11.7,30.3,11.7,47c0,18.1-4.6,35.2-13.8,51.3c-9.2,16.1-23,29-41.3,38.8 c-18.3,9.7-37.3,14.6-57.1,14.6c-13.3,0-29.8-2.5-49.4-7.6c-12.9-3.5-22.6-5.3-29-5.3c-5.8,0-10.2,0.8-13.5,2.5 c-3.2,1.7-6.8,5.1-10.7,10.4h-12.9l17.1-114.7h11.2c8,28,15.6,47.9,22.6,59.8c7,11.9,16.4,21.4,28.1,28.4 c11.7,7.1,23,10.6,33.8,10.6c12.6,0,23.1-4,31.4-11.9c8.3-7.9,12.4-17.4,12.4-28.4c0-10.8-2.7-21.2-8.1-31.3 c-5.4-10.1-17.9-25.8-37.4-47.2c-26.9-29.1-44.6-51.7-53.1-67.6c-6-11.5-9-24.7-9-39.4c0-24.9,9-45.7,27.1-62.3 c18.1-16.6,43.5-24.9,76.1-24.9c14.3,0,31.8,2.6,52.5,7.9c10.4,2.6,18.7,3.9,24.9,3.9c9,0,16.2-3.9,21.8-11.8H1089.2z' }),
-	                React.createElement('path', { d: 'M1311.5,212.1l-28.9,93.5h38.6l-12.1,39.4H1270l-62.6,202.6c-4,12.6-6,22.1-6,28.6c0,2.2,1,4.1,3.1,5.7 c2.1,1.6,4.4,2.4,6.9,2.4c3.9,0,7.9-1.6,12-4.8c10.6-8.1,22.8-22.1,36.8-42.1l12.4,7.6c-15.9,27.6-33.4,47.9-52.5,60.7 c-19.1,12.9-37.9,19.3-56.3,19.3c-15.6,0-27.8-3.9-36.4-11.8c-8.6-7.9-12.9-17.9-12.9-30c0-13.3,3.2-30.5,9.7-51.4l58.6-186.8 h-44.2l6.5-25.4c28-10.8,52.3-23.4,73-37.8c20.7-14.4,45.6-37.7,74.7-69.7H1311.5z' }),
-	                React.createElement('path', { d: 'M1687.6,138l-116.8,384.9c-7.4,24.1-11.1,38.6-11.1,43.7c0,2.5,0.9,4.7,2.7,6.6c1.8,1.8,3.8,2.8,5.8,2.8 c3.9,0,8.3-2,13.4-5.9c8.5-6.5,18.7-18.7,30.9-36.7l12.4,6.6c-32.4,56.8-68,85.2-106.8,85.2c-13.8,0-24.4-3.6-31.9-10.8 c-7.5-7.2-11.2-16.4-11.2-27.7c0-10.8,3-26.1,9-46.1l10.9-35.2c-28.8,50.7-53.8,84.4-75,101.2c-16.1,12.4-31.8,18.6-47,18.6 c-17.3,0-31.9-7-43.7-21c-11.9-14-17.8-34.4-17.8-61.3c0-34.2,7.7-67.9,23-101.2c15.3-33.3,33-61.1,53.1-83.3 c20.1-22.3,39.2-38.2,57.5-47.7c18.2-9.5,36.2-14.3,53.8-14.3c9.1,0,17.1,1.9,24.2,5.6c7.1,3.8,15.1,10.8,24.2,21.1l27-85.4 c6.9-21.5,10.3-36.9,10.3-46.2c0-5.6-2.4-10.4-7-14.3c-4.7-4-11-5.9-18.8-5.9c-3.7,0-8.2,0.3-13.7,1l2.9-13.5L1666,138H1687.6z M1532.8,356c0-14-2.8-24.2-8.4-30.7c-5.6-6.4-12.2-9.7-19.7-9.7c-7.5,0-15.6,3.8-24.2,11.4c-16.6,14.7-34,44.3-52.1,88.8 c-18.1,44.5-27.2,81.9-27.2,112.2c0,11,2,19.2,6,24.5c4,5.3,8.4,7.9,13.3,7.9c8.2,0,16.4-3.7,24.6-11 c19.9-17.5,39.5-47.5,58.8-90.1C1523.1,416.6,1532.8,382.2,1532.8,356z' }),
-	                React.createElement('path', { d: 'M1810.2,138c14.4,0,26.5,5,36.3,14.9c9.8,9.9,14.8,21.9,14.8,36c0,14.1-5,26.1-14.9,36 c-10,9.9-22,14.9-36.1,14.9c-13.9,0-25.8-5-35.8-14.9c-10-9.9-14.9-21.9-14.9-36c0-14.1,4.9-26.1,14.8-36 C1784.1,143,1796.1,138,1810.2,138z M1838.2,296.3l-76.7,242.9c-4.2,13.9-6.4,23-6.4,27.3c0,2.6,1,5.1,3.1,7.3 c2.1,2.3,4.2,3.4,6.5,3.4c3.9,0,7.7-1.8,11.6-5.4c10.2-8.8,22.5-24.8,36.9-47.9l11.8,7.2c-35,62.7-72.1,94-111.5,94 c-15,0-27-4.2-35.9-12.5c-8.9-8.3-13.4-18.9-13.4-31.7c0-8.5,2.2-19.3,6.5-32.4l52.8-165c5.1-15.9,7.6-27.8,7.6-35.9 c0-5.1-2.3-9.5-7-13.5c-4.7-3.9-11-5.9-19.1-5.9c-3.7,0-8.1,0.1-13.2,0.3l4.7-13.5l120.4-18.8H1838.2z' }),
-	                React.createElement('path', { d: 'M2078.5,138l-61.1,207c17.3-19.5,31.8-32.5,43.4-39c11.6-6.5,24.2-9.7,37.9-9.7c26.3,0,46,9.9,59.1,29.8 c13.1,19.9,19.6,42.8,19.6,68.7c0,62-22,117.3-66.1,166c-39.1,42.9-83.6,64.4-133.5,64.4c-37.1,0-76.3-11.1-117.7-33.2l106.8-363.3 c5-17.3,7.8-29.3,8.5-36.2c0-5.9-2.5-10.6-7.4-14c-6.9-4.9-17.5-7-31.6-6.3l2.9-13.5l118.2-20.6H2078.5z M1943.6,595.3 c10.3,6.9,19.7,10.4,28,10.4c11.6,0,21.4-2.4,29.3-7.3c12.5-7.8,25.6-22,39.4-42.5c13.7-20.5,25.2-45.2,34.4-74.2 c9.2-29,13.8-57.9,13.8-86.6c0-16.3-3.4-28.8-10.3-37.3c-6.9-8.5-14.8-12.8-23.8-12.8c-15,0-28.1,8-39.2,24.1 c-7.5,10.4-15.7,32.5-24.4,66.3L1943.6,595.3z' }),
-	                React.createElement('path', { d: 'M2462.1,296.3l-15.3,106.5h-12.9c-1.8-27.4-10.3-48.9-25.3-64.6c-15-15.7-31.1-23.6-48.3-23.6 c-10.5,0-19.2,3.1-26.1,9.3c-6.9,6.2-10.3,13.7-10.3,22.4c0,7.3,1.5,14.2,4.5,20.7c3,6.4,9.6,15.2,20,26.2 c36.3,39,58.3,65.9,66.2,80.5c7.8,14.6,11.7,30.3,11.7,47c0,18.1-4.6,35.2-13.8,51.3c-9.2,16.1-23,29-41.3,38.8 c-18.3,9.7-37.3,14.6-57.1,14.6c-13.3,0-29.8-2.5-49.4-7.6c-12.9-3.5-22.6-5.3-29-5.3c-5.8,0-10.2,0.8-13.5,2.5 c-3.2,1.7-6.8,5.1-10.7,10.4h-12.9l17.1-114.7h11.2c8,28,15.6,47.9,22.6,59.8c7,11.9,16.4,21.4,28.1,28.4 c11.7,7.1,23,10.6,33.8,10.6c12.6,0,23.1-4,31.4-11.9c8.3-7.9,12.4-17.4,12.4-28.4c0-10.8-2.7-21.2-8.1-31.3 c-5.4-10.1-17.9-25.8-37.4-47.2c-26.9-29.1-44.6-51.7-53.1-67.6c-6-11.5-9-24.7-9-39.4c0-24.9,9-45.7,27.1-62.3 c18.1-16.6,43.5-24.9,76.1-24.9c14.3,0,31.8,2.6,52.5,7.9c10.4,2.6,18.7,3.9,24.9,3.9c9,0,16.2-3.9,21.8-11.8H2462.1z' })
-	            ),
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M2471.2,591.3V591c0-25.4,20.6-47,46.7-47c26.1,0,46.5,21.4,46.5,46.7v0.3c0,25.4-20.6,47-46.7,47 C2491.5,638,2471.2,616.6,2471.2,591.3z M2559,591v-0.3c0-22.8-17.6-41.6-41.1-41.6c-23.6,0-41.3,19.1-41.3,41.8v0.3 c0,22.8,17.6,41.6,41.1,41.6C2541.2,632.9,2559,613.8,2559,591z M2496,564.9h24.2c8.8,0,14.4,2.2,17.9,5.7c3,3,4.5,6.7,4.5,11.8 v0.3c0,7.1-3.7,12.1-9.8,14.9l11.6,16.9h-18.8l-9.5-14.2h-0.3h-3.2v14.2H2496V564.9z M2519.7,588.4c4,0,6.4-1.7,6.4-4.8v-0.3 c0-3.1-2.6-4.6-6.3-4.6h-7.2v9.7H2519.7z' })
-	            ),
+	            React.createElement('path', { d: 'M843.7,139.2L726.9,531c-6,20.5-9,33.6-9,39.1c0,5.5,2.1,11.3,6.4,17.1c4.2,5.9,8.8,9.7,13.8,11.4 c4.9,1.7,19.8,3.3,44.6,4.7l-3.8,12.4H543l3.8-12.4c23.4-0.5,39.8-2.4,48.9-5.9c9.2-3.5,16.7-9.1,22.6-17 c5.9-7.9,12.5-24.4,19.8-49.5l68.7-232.7c10.8-35.4,16.5-54.1,17-56.2c1.4-6,2.2-11.6,2.2-16.9c0-10.3-3.2-18.4-9.5-24.5 c-6.3-6-15.4-9.1-27.2-9.1c-5.8,0-17.2,0.9-34.3,2.8l-2.9-12.9l177-42.4H843.7z' }),
+	            React.createElement('path', { d: 'M1089.2,296.3l-15.3,106.5h-12.9c-1.8-27.4-10.3-48.9-25.3-64.6c-15-15.7-31.1-23.6-48.3-23.6 c-10.5,0-19.2,3.1-26.1,9.3c-6.9,6.2-10.3,13.7-10.3,22.4c0,7.3,1.5,14.2,4.5,20.7c3,6.4,9.6,15.2,20,26.2 c36.3,39,58.3,65.9,66.2,80.5c7.8,14.6,11.7,30.3,11.7,47c0,18.1-4.6,35.2-13.8,51.3c-9.2,16.1-23,29-41.3,38.8 c-18.3,9.7-37.3,14.6-57.1,14.6c-13.3,0-29.8-2.5-49.4-7.6c-12.9-3.5-22.6-5.3-29-5.3c-5.8,0-10.2,0.8-13.5,2.5 c-3.2,1.7-6.8,5.1-10.7,10.4h-12.9l17.1-114.7h11.2c8,28,15.6,47.9,22.6,59.8c7,11.9,16.4,21.4,28.1,28.4 c11.7,7.1,23,10.6,33.8,10.6c12.6,0,23.1-4,31.4-11.9c8.3-7.9,12.4-17.4,12.4-28.4c0-10.8-2.7-21.2-8.1-31.3 c-5.4-10.1-17.9-25.8-37.4-47.2c-26.9-29.1-44.6-51.7-53.1-67.6c-6-11.5-9-24.7-9-39.4c0-24.9,9-45.7,27.1-62.3 c18.1-16.6,43.5-24.9,76.1-24.9c14.3,0,31.8,2.6,52.5,7.9c10.4,2.6,18.7,3.9,24.9,3.9c9,0,16.2-3.9,21.8-11.8H1089.2z' }),
+	            React.createElement('path', { d: 'M1311.5,212.1l-28.9,93.5h38.6l-12.1,39.4H1270l-62.6,202.6c-4,12.6-6,22.1-6,28.6c0,2.2,1,4.1,3.1,5.7 c2.1,1.6,4.4,2.4,6.9,2.4c3.9,0,7.9-1.6,12-4.8c10.6-8.1,22.8-22.1,36.8-42.1l12.4,7.6c-15.9,27.6-33.4,47.9-52.5,60.7 c-19.1,12.9-37.9,19.3-56.3,19.3c-15.6,0-27.8-3.9-36.4-11.8c-8.6-7.9-12.9-17.9-12.9-30c0-13.3,3.2-30.5,9.7-51.4l58.6-186.8 h-44.2l6.5-25.4c28-10.8,52.3-23.4,73-37.8c20.7-14.4,45.6-37.7,74.7-69.7H1311.5z' }),
+	            React.createElement('path', { d: 'M1687.6,138l-116.8,384.9c-7.4,24.1-11.1,38.6-11.1,43.7c0,2.5,0.9,4.7,2.7,6.6c1.8,1.8,3.8,2.8,5.8,2.8 c3.9,0,8.3-2,13.4-5.9c8.5-6.5,18.7-18.7,30.9-36.7l12.4,6.6c-32.4,56.8-68,85.2-106.8,85.2c-13.8,0-24.4-3.6-31.9-10.8 c-7.5-7.2-11.2-16.4-11.2-27.7c0-10.8,3-26.1,9-46.1l10.9-35.2c-28.8,50.7-53.8,84.4-75,101.2c-16.1,12.4-31.8,18.6-47,18.6 c-17.3,0-31.9-7-43.7-21c-11.9-14-17.8-34.4-17.8-61.3c0-34.2,7.7-67.9,23-101.2c15.3-33.3,33-61.1,53.1-83.3 c20.1-22.3,39.2-38.2,57.5-47.7c18.2-9.5,36.2-14.3,53.8-14.3c9.1,0,17.1,1.9,24.2,5.6c7.1,3.8,15.1,10.8,24.2,21.1l27-85.4 c6.9-21.5,10.3-36.9,10.3-46.2c0-5.6-2.4-10.4-7-14.3c-4.7-4-11-5.9-18.8-5.9c-3.7,0-8.2,0.3-13.7,1l2.9-13.5L1666,138H1687.6z M1532.8,356c0-14-2.8-24.2-8.4-30.7c-5.6-6.4-12.2-9.7-19.7-9.7c-7.5,0-15.6,3.8-24.2,11.4c-16.6,14.7-34,44.3-52.1,88.8 c-18.1,44.5-27.2,81.9-27.2,112.2c0,11,2,19.2,6,24.5c4,5.3,8.4,7.9,13.3,7.9c8.2,0,16.4-3.7,24.6-11 c19.9-17.5,39.5-47.5,58.8-90.1C1523.1,416.6,1532.8,382.2,1532.8,356z' }),
+	            React.createElement('path', { d: 'M1810.2,138c14.4,0,26.5,5,36.3,14.9c9.8,9.9,14.8,21.9,14.8,36c0,14.1-5,26.1-14.9,36 c-10,9.9-22,14.9-36.1,14.9c-13.9,0-25.8-5-35.8-14.9c-10-9.9-14.9-21.9-14.9-36c0-14.1,4.9-26.1,14.8-36 C1784.1,143,1796.1,138,1810.2,138z M1838.2,296.3l-76.7,242.9c-4.2,13.9-6.4,23-6.4,27.3c0,2.6,1,5.1,3.1,7.3 c2.1,2.3,4.2,3.4,6.5,3.4c3.9,0,7.7-1.8,11.6-5.4c10.2-8.8,22.5-24.8,36.9-47.9l11.8,7.2c-35,62.7-72.1,94-111.5,94 c-15,0-27-4.2-35.9-12.5c-8.9-8.3-13.4-18.9-13.4-31.7c0-8.5,2.2-19.3,6.5-32.4l52.8-165c5.1-15.9,7.6-27.8,7.6-35.9 c0-5.1-2.3-9.5-7-13.5c-4.7-3.9-11-5.9-19.1-5.9c-3.7,0-8.1,0.1-13.2,0.3l4.7-13.5l120.4-18.8H1838.2z' }),
+	            React.createElement('path', { d: 'M2078.5,138l-61.1,207c17.3-19.5,31.8-32.5,43.4-39c11.6-6.5,24.2-9.7,37.9-9.7c26.3,0,46,9.9,59.1,29.8 c13.1,19.9,19.6,42.8,19.6,68.7c0,62-22,117.3-66.1,166c-39.1,42.9-83.6,64.4-133.5,64.4c-37.1,0-76.3-11.1-117.7-33.2l106.8-363.3 c5-17.3,7.8-29.3,8.5-36.2c0-5.9-2.5-10.6-7.4-14c-6.9-4.9-17.5-7-31.6-6.3l2.9-13.5l118.2-20.6H2078.5z M1943.6,595.3 c10.3,6.9,19.7,10.4,28,10.4c11.6,0,21.4-2.4,29.3-7.3c12.5-7.8,25.6-22,39.4-42.5c13.7-20.5,25.2-45.2,34.4-74.2 c9.2-29,13.8-57.9,13.8-86.6c0-16.3-3.4-28.8-10.3-37.3c-6.9-8.5-14.8-12.8-23.8-12.8c-15,0-28.1,8-39.2,24.1 c-7.5,10.4-15.7,32.5-24.4,66.3L1943.6,595.3z' }),
+	            React.createElement('path', { d: 'M2462.1,296.3l-15.3,106.5h-12.9c-1.8-27.4-10.3-48.9-25.3-64.6c-15-15.7-31.1-23.6-48.3-23.6 c-10.5,0-19.2,3.1-26.1,9.3c-6.9,6.2-10.3,13.7-10.3,22.4c0,7.3,1.5,14.2,4.5,20.7c3,6.4,9.6,15.2,20,26.2 c36.3,39,58.3,65.9,66.2,80.5c7.8,14.6,11.7,30.3,11.7,47c0,18.1-4.6,35.2-13.8,51.3c-9.2,16.1-23,29-41.3,38.8 c-18.3,9.7-37.3,14.6-57.1,14.6c-13.3,0-29.8-2.5-49.4-7.6c-12.9-3.5-22.6-5.3-29-5.3c-5.8,0-10.2,0.8-13.5,2.5 c-3.2,1.7-6.8,5.1-10.7,10.4h-12.9l17.1-114.7h11.2c8,28,15.6,47.9,22.6,59.8c7,11.9,16.4,21.4,28.1,28.4 c11.7,7.1,23,10.6,33.8,10.6c12.6,0,23.1-4,31.4-11.9c8.3-7.9,12.4-17.4,12.4-28.4c0-10.8-2.7-21.2-8.1-31.3 c-5.4-10.1-17.9-25.8-37.4-47.2c-26.9-29.1-44.6-51.7-53.1-67.6c-6-11.5-9-24.7-9-39.4c0-24.9,9-45.7,27.1-62.3 c18.1-16.6,43.5-24.9,76.1-24.9c14.3,0,31.8,2.6,52.5,7.9c10.4,2.6,18.7,3.9,24.9,3.9c9,0,16.2-3.9,21.8-11.8H2462.1z' }),
+	            React.createElement('path', { d: 'M2471.2,591.3V591c0-25.4,20.6-47,46.7-47c26.1,0,46.5,21.4,46.5,46.7v0.3c0,25.4-20.6,47-46.7,47 C2491.5,638,2471.2,616.6,2471.2,591.3z M2559,591v-0.3c0-22.8-17.6-41.6-41.1-41.6c-23.6,0-41.3,19.1-41.3,41.8v0.3 c0,22.8,17.6,41.6,41.1,41.6C2541.2,632.9,2559,613.8,2559,591z M2496,564.9h24.2c8.8,0,14.4,2.2,17.9,5.7c3,3,4.5,6.7,4.5,11.8 v0.3c0,7.1-3.7,12.1-9.8,14.9l11.6,16.9h-18.8l-9.5-14.2h-0.3h-3.2v14.2H2496V564.9z M2519.7,588.4c4,0,6.4-1.7,6.4-4.8v-0.3 c0-3.1-2.6-4.6-6.3-4.6h-7.2v9.7H2519.7z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -38911,15 +38783,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/luggage.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/luggage.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/luggage.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/luggage.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -38927,7 +38799,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -38951,7 +38823,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M553.2,222.2H376.4v-29.4c0-16.5-12.9-29.4-29.4-29.4h-82c-16.5,0-29.4,12.9-29.4,29.4v29.4H58.8c-33,0-58.8,25.7-58.8,58.8\r v282.7c0,33,25.7,58.8,58.8,58.8h494.5c33,0,58.8-25.7,58.8-58.8V280.9C612,247.9,586.3,222.2,553.2,222.2z M258.9,192.8\r c0-3.7,2.4-6.1,6.1-6.1h82.6c3.7,0,6.1,2.4,6.1,6.1v29.4h-94.9V192.8z M58.8,599.2c-20.2,0-35.5-15.3-35.5-35.5V280.9\r c0-20.2,15.3-35.5,35.5-35.5h70.4v129.7h-23.3v82.6h23.3v141.4L58.8,599.2L58.8,599.2z M129.7,433.9v-35.5H153v35.5H129.7z\r M153,599.2V457.8h23.3v-82.6H153V246.1h82.6h23.3h94.2h23.3H459v129.7h-23.3v82.6H459v141.4H153V599.2z M459,433.9v-35.5h23.3v35.5\r H459z M588.7,563.7c0,20.2-15.3,35.5-35.5,35.5h-71V457.8h23.3v-82.6h-23.3V246.1h70.4c20.2,0,35.5,15.3,35.5,35.5v282.1H588.7z' }),
+	            React.createElement('path', { d: 'M553.2,222.2H376.4v-29.4c0-16.5-12.9-29.4-29.4-29.4h-82c-16.5,0-29.4,12.9-29.4,29.4v29.4H58.8c-33,0-58.8,25.7-58.8,58.8v282.7c0,33,25.7,58.8,58.8,58.8h494.5c33,0,58.8-25.7,58.8-58.8V280.9C612,247.9,586.3,222.2,553.2,222.2z M258.9,192.8c0-3.7,2.4-6.1,6.1-6.1h82.6c3.7,0,6.1,2.4,6.1,6.1v29.4h-94.9V192.8z M58.8,599.2c-20.2,0-35.5-15.3-35.5-35.5V280.9c0-20.2,15.3-35.5,35.5-35.5h70.4v129.7h-23.3v82.6h23.3v141.4L58.8,599.2L58.8,599.2z M129.7,433.9v-35.5H153v35.5H129.7zM153,599.2V457.8h23.3v-82.6H153V246.1h82.6h23.3h94.2h23.3H459v129.7h-23.3v82.6H459v141.4H153V599.2z M459,433.9v-35.5h23.3v35.5H459z M588.7,563.7c0,20.2-15.3,35.5-35.5,35.5h-71V457.8h23.3v-82.6h-23.3V246.1h70.4c20.2,0,35.5,15.3,35.5,35.5v282.1H588.7z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -38993,15 +38865,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/magnifying-glass.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/magnifying-glass.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/magnifying-glass.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/magnifying-glass.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39009,7 +38881,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39033,7 +38905,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M494.2,470.1l-158-160.6c25.1-32.4,40.1-73.2,40.1-117.7C376.4,86.4,292.3,1,188.7,1 C85,1,0.9,86.4,0.9,191.8s84,190.8,187.7,190.8c47.9,0,91.5-18.4,124.7-48.4L470.6,494c6.5,6.6,17.1,6.6,23.6,0 C500.7,487.4,500.7,476.7,494.2,470.1z M188.8,348.8c-88.7,0-156.4-68.4-156.4-158c0-89.6,67.7-158,156.4-158s156.4,68.5,156.4,158 S277.5,348.8,188.8,348.8z' }),
+	            React.createElement('path', { d: 'M494.2,470.1l-158-160.6c25.1-32.4,40.1-73.2,40.1-117.7C376.4,86.4,292.3,1,188.7,1C85,1,0.9,86.4,0.9,191.8s84,190.8,187.7,190.8c47.9,0,91.5-18.4,124.7-48.4L470.6,494c6.5,6.6,17.1,6.6,23.6,0C500.7,487.4,500.7,476.7,494.2,470.1z M188.8,348.8c-88.7,0-156.4-68.4-156.4-158c0-89.6,67.7-158,156.4-158s156.4,68.5,156.4,158S277.5,348.8,188.8,348.8z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -39075,15 +38947,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/mask.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/mask.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/mask.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/mask.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39091,7 +38963,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39157,15 +39029,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/message.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/message.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/message.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/message.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39173,7 +39045,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39197,11 +39069,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M189,249.6L119.6,183H0V11h250v172h-61V249.6z M8,175h114.8l58.2,55.8V175h61V19H8V175z' })
-	            ),
+	            React.createElement('path', { d: 'M189,249.6L119.6,183H0V11h250v172h-61V249.6z M8,175h114.8l58.2,55.8V175h61V19H8V175z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -39243,15 +39111,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/minus-circle-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/minus-circle-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/minus-circle-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/minus-circle-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39259,7 +39127,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39283,7 +39151,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0\r c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267\r c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407\r s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062\r C438.533,179.485,428.732,142.795,409.133,109.203z M347.179,237.539c0,4.948-1.811,9.236-5.428,12.847\r c-3.614,3.614-7.898,5.428-12.847,5.428h-219.27c-4.948,0-9.229-1.813-12.847-5.428c-3.616-3.61-5.424-7.898-5.424-12.847v-36.547\r c0-4.948,1.809-9.231,5.424-12.847c3.617-3.617,7.898-5.426,12.847-5.426h219.27c4.948,0,9.232,1.809,12.847,5.426\r c3.617,3.615,5.428,7.898,5.428,12.847V237.539z' }),
+	            React.createElement('path', { d: 'M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062C438.533,179.485,428.732,142.795,409.133,109.203z M347.179,237.539c0,4.948-1.811,9.236-5.428,12.847c-3.614,3.614-7.898,5.428-12.847,5.428h-219.27c-4.948,0-9.229-1.813-12.847-5.428c-3.616-3.61-5.424-7.898-5.424-12.847v-36.547c0-4.948,1.809-9.231,5.424-12.847c3.617-3.617,7.898-5.426,12.847-5.426h219.27c4.948,0,9.232,1.809,12.847,5.426c3.617,3.615,5.428,7.898,5.428,12.847V237.539z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -39325,15 +39193,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/minus.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/minus.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/minus.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/minus.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39341,7 +39209,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39407,15 +39275,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/mobile-logo.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/mobile-logo.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/mobile-logo.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/mobile-logo.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39423,7 +39291,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39448,7 +39316,7 @@
 	            'svg',
 	            this.props,
 	            React.createElement('rect', { x: '14', y: '41', className: 'dibsvg-mobile-logo-1st', fill: '#ffffff', width: '219', height: '159' }),
-	            React.createElement('path', { className: 'dibsvg-mobile-logo-bg', d: 'M206.5,1c23.7,0,43,19.1,43,42.6v162.2c0,23.5-19.3,42.6-43,42.6H42.8c-23.7,0-43-19.1-43-42.6V43.6 C-0.1,20.1,19.1,1,42.8,1 M67.1,171c-1.1-1.5-1.7-3-1.7-4.5c0-1.5,0.8-4.9,2.4-10.3l30.7-103h-3.8L48.2,64.4l0.8,3.4 c4.5-0.5,7.5-0.7,9-0.7c3.1,0,5.5,0.8,7.1,2.4c1.7,1.6,2.5,3.7,2.5,6.4c0,1.4-0.2,2.9-0.6,4.4c-0.1,0.5-1.6,5.5-4.5,14.8l-18,61.1 c-1.9,6.6-3.7,10.9-5.2,13c-1.5,2.1-3.5,3.5-5.9,4.5c-2.4,0.9-6.7,1.5-12.9,1.7l-1,3.4h62l1-3.4c-6.5-0.4-10.4-0.8-11.7-1.3 C69.5,173.6,68.3,172.6,67.1,171z M154,97.6c-1.6,0-3.8-0.3-6.5-1c-5.4-1.4-10-2.1-13.8-2.1c-8.6,0-15.3,2.2-20,6.6 c-4.7,4.4-7.1,9.8-7.1,16.4c0,3.9,0.8,7.3,2.4,10.4c2.2,4.2,6.9,10.1,14,17.8c5.1,5.6,8.4,9.7,9.8,12.4c1.4,2.7,2.1,5.4,2.1,8.2 c0,2.9-1.1,5.4-3.3,7.5c-2.2,2.1-4.9,3.1-8.2,3.1c-2.8,0-5.8-0.9-8.9-2.8c-3.1-1.9-5.5-4.4-7.4-7.6c-1.8-3.1-3.8-8-5.9-15.8h-2.9 l-4.5,30.5h3.4c1-1.8,2-2.4,2.8-2.8c0.8-0.4,2-0.7,3.5-0.7c1.7,0,4.2,0.4,7.6,1.4c5.1,1.3,9.5,2,13,2c5.2,0,10.2-1.3,15-3.8 c4.8-2.6,8.4-5.9,10.8-10.2c2.4-4.2,3.6-8.7,3.6-13.5c0-4.4-1-8.5-3.1-12.3c-2.1-3.8-7.9-10.9-17.4-21.1c-2.7-2.9-4.5-5.2-5.2-6.9 c-0.8-1.7-1.2-3.5-1.2-5.4c0-2.3,0.9-4.2,2.7-5.9c1.8-1.6,4.1-2.4,6.9-2.4c4.5,0,8.7,2.1,12.7,6.2c3.9,4.1,6.2,9.8,6.6,17h3.4 l4-28.1h-3.2C158.3,96.8,156.4,97.6,154,97.6z M210.5,107.6h10.3l3.2-10.8h-10.1l7.6-24.5h-4.9c-7.7,8.4-14.2,14.6-19.6,18.4 c-5.4,3.8-11.8,7.2-19.2,10.1l-1.7,6.8h11.6l-15.4,49c-1.7,5.5-2.5,10-2.5,13.5c0,3.2,1.1,5.8,3.4,7.9c2.3,2.1,5.5,3.1,9.6,3.1 c4.8,0,9.8-1.7,14.8-5.1c5-3.4,9.6-8.7,13.8-16l-3.2-2c-3.7,5.3-6.9,8.9-9.7,11.1c-1.1,0.8-2.1,1.3-3.2,1.3c-0.7,0-1.3-0.2-1.8-0.6 c-0.5-0.4-0.8-0.9-0.8-1.5c0-1.7,0.5-4.1,1.6-7.4L210.5,107.6z' }),
+	            React.createElement('path', { className: 'dibsvg-mobile-logo-bg', d: 'M206.5,1c23.7,0,43,19.1,43,42.6v162.2c0,23.5-19.3,42.6-43,42.6H42.8c-23.7,0-43-19.1-43-42.6V43.6C-0.1,20.1,19.1,1,42.8,1 M67.1,171c-1.1-1.5-1.7-3-1.7-4.5c0-1.5,0.8-4.9,2.4-10.3l30.7-103h-3.8L48.2,64.4l0.8,3.4c4.5-0.5,7.5-0.7,9-0.7c3.1,0,5.5,0.8,7.1,2.4c1.7,1.6,2.5,3.7,2.5,6.4c0,1.4-0.2,2.9-0.6,4.4c-0.1,0.5-1.6,5.5-4.5,14.8l-18,61.1c-1.9,6.6-3.7,10.9-5.2,13c-1.5,2.1-3.5,3.5-5.9,4.5c-2.4,0.9-6.7,1.5-12.9,1.7l-1,3.4h62l1-3.4c-6.5-0.4-10.4-0.8-11.7-1.3C69.5,173.6,68.3,172.6,67.1,171z M154,97.6c-1.6,0-3.8-0.3-6.5-1c-5.4-1.4-10-2.1-13.8-2.1c-8.6,0-15.3,2.2-20,6.6c-4.7,4.4-7.1,9.8-7.1,16.4c0,3.9,0.8,7.3,2.4,10.4c2.2,4.2,6.9,10.1,14,17.8c5.1,5.6,8.4,9.7,9.8,12.4c1.4,2.7,2.1,5.4,2.1,8.2c0,2.9-1.1,5.4-3.3,7.5c-2.2,2.1-4.9,3.1-8.2,3.1c-2.8,0-5.8-0.9-8.9-2.8c-3.1-1.9-5.5-4.4-7.4-7.6c-1.8-3.1-3.8-8-5.9-15.8h-2.9l-4.5,30.5h3.4c1-1.8,2-2.4,2.8-2.8c0.8-0.4,2-0.7,3.5-0.7c1.7,0,4.2,0.4,7.6,1.4c5.1,1.3,9.5,2,13,2c5.2,0,10.2-1.3,15-3.8c4.8-2.6,8.4-5.9,10.8-10.2c2.4-4.2,3.6-8.7,3.6-13.5c0-4.4-1-8.5-3.1-12.3c-2.1-3.8-7.9-10.9-17.4-21.1c-2.7-2.9-4.5-5.2-5.2-6.9c-0.8-1.7-1.2-3.5-1.2-5.4c0-2.3,0.9-4.2,2.7-5.9c1.8-1.6,4.1-2.4,6.9-2.4c4.5,0,8.7,2.1,12.7,6.2c3.9,4.1,6.2,9.8,6.6,17h3.4l4-28.1h-3.2C158.3,96.8,156.4,97.6,154,97.6z M210.5,107.6h10.3l3.2-10.8h-10.1l7.6-24.5h-4.9c-7.7,8.4-14.2,14.6-19.6,18.4c-5.4,3.8-11.8,7.2-19.2,10.1l-1.7,6.8h11.6l-15.4,49c-1.7,5.5-2.5,10-2.5,13.5c0,3.2,1.1,5.8,3.4,7.9c2.3,2.1,5.5,3.1,9.6,3.1c4.8,0,9.8-1.7,14.8-5.1c5-3.4,9.6-8.7,13.8-16l-3.2-2c-3.7,5.3-6.9,8.9-9.7,11.1c-1.1,0.8-2.1,1.3-3.2,1.3c-0.7,0-1.3-0.2-1.8-0.6c-0.5-0.4-0.8-0.9-0.8-1.5c0-1.7,0.5-4.1,1.6-7.4L210.5,107.6z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -39490,15 +39358,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/net-price.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/net-price.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/net-price.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/net-price.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39506,7 +39374,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39530,14 +39398,10 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M0,0v250h250V0H0z M241,241H9V9h232V241z' }),
-	                React.createElement('polygon', { points: '53,111 53,111 70.4,161 87,161 87,90 74,90 74,138 73.4,138 56.1,90 40,90 40,161 53,161  ' }),
-	                React.createElement('polygon', { points: '147,149 121,149 121,130 145,130 145,118 121,118 121,102 146,102 146,90 107,90 107,161 147,161  ' }),
-	                React.createElement('polygon', { points: '180,161 195,161 195,102 210,102 210,90 165,90 165,102 180,102  ' })
-	            ),
+	            React.createElement('path', { d: 'M0,0v250h250V0H0z M241,241H9V9h232V241z' }),
+	            React.createElement('polygon', { points: '53,111 53,111 70.4,161 87,161 87,90 74,90 74,138 73.4,138 56.1,90 40,90 40,161 53,161  ' }),
+	            React.createElement('polygon', { points: '147,149 121,149 121,130 145,130 145,118 121,118 121,102 146,102 146,90 107,90 107,161 147,161  ' }),
+	            React.createElement('polygon', { points: '180,161 195,161 195,102 210,102 210,90 165,90 165,102 180,102  ' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -39579,15 +39443,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/note-blank.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/note-blank.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/note-blank.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/note-blank.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39595,7 +39459,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39619,7 +39483,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M154.2,1.5H-0.2v246.3h249.7V96L154.2,1.5z M156.2,83.2l0-0.2V16.2l77.8,77.2h-68.2C156.3,92.3,156.1,85.3,156.2,83.2z M8.8,238.8V10.5h138.4v72.1c-0.1,1.1-0.1,4.9,1.6,8.9c1.9,4.4,6.3,9.8,16.3,10.8l0.2,0h75.1v136.4H8.8z' }),
+	            React.createElement('path', { d: 'M154.2,1.5H-0.2v246.3h249.7V96L154.2,1.5z M156.2,83.2l0-0.2V16.2l77.8,77.2h-68.2C156.3,92.3,156.1,85.3,156.2,83.2zM8.8,238.8V10.5h138.4v72.1c-0.1,1.1-0.1,4.9,1.6,8.9c1.9,4.4,6.3,9.8,16.3,10.8l0.2,0h75.1v136.4H8.8z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -39661,15 +39525,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/note-edit.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/note-edit.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/note-edit.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/note-edit.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39677,7 +39541,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39701,7 +39565,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M248.5,31.2L212.1,1.4l-26.9,32.8H0.3v215.3h218.2V67.9L248.5,31.2z M209.4,240.5H9.3V43.2h168.6L88.7,152.1l-0.8,36.8 l37.1-7l84.4-103V240.5z' }),
+	            React.createElement('path', { d: 'M248.5,31.2L212.1,1.4l-26.9,32.8H0.3v215.3h218.2V67.9L248.5,31.2z M209.4,240.5H9.3V43.2h168.6L88.7,152.1l-0.8,36.8l37.1-7l84.4-103V240.5z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -39743,15 +39607,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/note.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/note.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/note.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/note.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39759,7 +39623,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39783,11 +39647,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M86.4260448,77.9792746 C86.8453559,77.9865545 87.2207922,78.3020392 87.3804606,78.7812844 C87.540129,79.2605295 87.4532894,79.811269 87.1597013,80.1813472 L73.9748461,96.4896373 C73.6750002,96.8632901 73.2220445,96.9755983 72.8287892,96.7737966 C72.4355339,96.5719949 72.1801518,96.0961983 72.1826281,95.5699482 L72.1826281,81.865285 C72.1826281,79.7191007 73.5903532,77.9792746 75.3268702,77.9792746 L86.4260448,77.9792746 Z M85.8076772,0 C88.1230331,0 90,2.31976814 90,5.18134715 L90,67.6165803 C90,69.0473698 89.0615166,70.2072539 87.9038386,70.2072539 L75.3268702,70.2072539 C70.1173193,70.2072539 65.8941438,75.4267322 65.8941438,81.865285 L65.8941438,97.4093264 C65.8941438,98.8401159 64.9556604,100 63.7979824,100 L14.1923228,100 C11.8769669,100 10,97.6802319 10,94.8186528 L10,5.18134715 C10,2.31976814 11.8769669,0 14.1923228,0 L85.8076772,0 Z M18.1750295,8.41968912 L18.1750295,91.5803109 L57.7191144,91.5803109 L57.7191144,81.865285 C57.7191144,71.081612 65.2390981,61.7875648 75.3268702,61.7875648 L81.8249705,61.7875648 L81.8249705,8.41968912 L18.1750295,8.41968912 Z M73.53373,26.5673575 L25.2216032,26.5673575 C23.5989364,26.5673575 22.2835051,24.8275314 22.2835051,22.6813472 C22.2835051,20.5351629 23.5989364,18.7953368 25.2216032,18.7953368 L73.53373,18.7953368 C75.1563968,18.7953368 76.4718281,20.5351629 76.4718281,22.6813472 C76.4718281,24.8275314 75.1563968,26.5673575 73.53373,26.5673575 Z M73.53373,45.1554369 L25.2216032,45.1554369 C23.5989364,45.1554369 22.2835051,43.4156108 22.2835051,41.2694265 C22.2835051,39.1232423 23.5989364,37.3834162 25.2216032,37.3834162 L73.53373,37.3834162 C75.1563968,37.3834162 76.4718281,39.1232423 76.4718281,41.2694265 C76.4718281,43.4156108 75.1563968,45.1554369 73.53373,45.1554369 Z M53.9464092,62.5 L25.2216032,62.5 C23.5989364,62.5 22.2835051,60.7601739 22.2835051,58.6139896 C22.2835051,56.4678054 23.5989364,54.7279793 25.2216032,54.7279793 L53.9464092,54.7279793 C55.5690759,54.7279793 56.8845073,56.4678054 56.8845073,58.6139896 C56.8845073,60.7601739 55.5690759,62.5 53.9464092,62.5 Z' })
-	            ),
+	            React.createElement('path', { d: 'M86.4260448,77.9792746 C86.8453559,77.9865545 87.2207922,78.3020392 87.3804606,78.7812844 C87.540129,79.2605295 87.4532894,79.811269 87.1597013,80.1813472 L73.9748461,96.4896373 C73.6750002,96.8632901 73.2220445,96.9755983 72.8287892,96.7737966 C72.4355339,96.5719949 72.1801518,96.0961983 72.1826281,95.5699482 L72.1826281,81.865285 C72.1826281,79.7191007 73.5903532,77.9792746 75.3268702,77.9792746 L86.4260448,77.9792746 Z M85.8076772,0 C88.1230331,0 90,2.31976814 90,5.18134715 L90,67.6165803 C90,69.0473698 89.0615166,70.2072539 87.9038386,70.2072539 L75.3268702,70.2072539 C70.1173193,70.2072539 65.8941438,75.4267322 65.8941438,81.865285 L65.8941438,97.4093264 C65.8941438,98.8401159 64.9556604,100 63.7979824,100 L14.1923228,100 C11.8769669,100 10,97.6802319 10,94.8186528 L10,5.18134715 C10,2.31976814 11.8769669,0 14.1923228,0 L85.8076772,0 Z M18.1750295,8.41968912 L18.1750295,91.5803109 L57.7191144,91.5803109 L57.7191144,81.865285 C57.7191144,71.081612 65.2390981,61.7875648 75.3268702,61.7875648 L81.8249705,61.7875648 L81.8249705,8.41968912 L18.1750295,8.41968912 Z M73.53373,26.5673575 L25.2216032,26.5673575 C23.5989364,26.5673575 22.2835051,24.8275314 22.2835051,22.6813472 C22.2835051,20.5351629 23.5989364,18.7953368 25.2216032,18.7953368 L73.53373,18.7953368 C75.1563968,18.7953368 76.4718281,20.5351629 76.4718281,22.6813472 C76.4718281,24.8275314 75.1563968,26.5673575 73.53373,26.5673575 Z M73.53373,45.1554369 L25.2216032,45.1554369 C23.5989364,45.1554369 22.2835051,43.4156108 22.2835051,41.2694265 C22.2835051,39.1232423 23.5989364,37.3834162 25.2216032,37.3834162 L73.53373,37.3834162 C75.1563968,37.3834162 76.4718281,39.1232423 76.4718281,41.2694265 C76.4718281,43.4156108 75.1563968,45.1554369 73.53373,45.1554369 Z M53.9464092,62.5 L25.2216032,62.5 C23.5989364,62.5 22.2835051,60.7601739 22.2835051,58.6139896 C22.2835051,56.4678054 23.5989364,54.7279793 25.2216032,54.7279793 L53.9464092,54.7279793 C55.5690759,54.7279793 56.8845073,56.4678054 56.8845073,58.6139896 C56.8845073,60.7601739 55.5690759,62.5 53.9464092,62.5 Z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -39829,15 +39689,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/orange.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/orange.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/orange.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/orange.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39845,7 +39705,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39869,7 +39729,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M99.9,7.3L99.9,7.3c-0.1-0.2-0.1-0.4-0.2-0.5c-0.2-0.3-0.4-0.5-0.7-0.6c0,0-0.1,0-0.1-0.1\r c-1.1-0.5-28.2-11.2-42.1-3c-4,2.4-6.6,6.1-7.6,11.1c-4.2,2.1-7.1,4.2-9,5.7c-1.7-8.6-8.5-11.1-8.6-11.1c-0.9-0.3-1.9,0.2-2.2,1.1\r c-0.1,0.5-0.1,0.9,0.1,1.4c0.2,0.4,0.6,0.7,1,0.9c0.1,0,8.8,3.3,6,17.1C16,30,0,45.5,0,64.6C0,84.1,17,100,37.9,100\r s37.9-15.9,37.9-35.4c0-18.8-15.7-34.2-35.8-35.3c0.3-1.8,0.5-3.5,0.5-5.1c1.2-1.1,4.3-3.8,9.9-6.6c4.7,3.7,21.1,13.4,48.8-8.4\r c0.2-0.2,0.4-0.3,0.5-0.6c0.1-0.1,0.1-0.3,0.2-0.4C100,7.9,100,7.6,99.9,7.3z M53.4,12.3c1-2.6,2.7-4.6,5.2-6.1\r c2.9-1.7,6.9-2.6,11.8-2.6c4.5,0,9.8,0.8,15.6,2.2C73.7,6.1,62.8,8.3,53.4,12.3z M93.2,9.3c-20.8,14.6-33.8,9.8-39,6.6\r C65.2,11.1,78.3,8.9,93.2,9.3z M72.4,64.6c0,17.5-15.5,31.8-34.5,31.8c-19,0-34.5-14.3-34.5-31.8c0-17.5,15.5-31.8,34.5-31.8\r C56.9,32.8,72.4,47.1,72.4,64.6z' }),
+	            React.createElement('path', { d: 'M99.9,7.3L99.9,7.3c-0.1-0.2-0.1-0.4-0.2-0.5c-0.2-0.3-0.4-0.5-0.7-0.6c0,0-0.1,0-0.1-0.1c-1.1-0.5-28.2-11.2-42.1-3c-4,2.4-6.6,6.1-7.6,11.1c-4.2,2.1-7.1,4.2-9,5.7c-1.7-8.6-8.5-11.1-8.6-11.1c-0.9-0.3-1.9,0.2-2.2,1.1c-0.1,0.5-0.1,0.9,0.1,1.4c0.2,0.4,0.6,0.7,1,0.9c0.1,0,8.8,3.3,6,17.1C16,30,0,45.5,0,64.6C0,84.1,17,100,37.9,100s37.9-15.9,37.9-35.4c0-18.8-15.7-34.2-35.8-35.3c0.3-1.8,0.5-3.5,0.5-5.1c1.2-1.1,4.3-3.8,9.9-6.6c4.7,3.7,21.1,13.4,48.8-8.4c0.2-0.2,0.4-0.3,0.5-0.6c0.1-0.1,0.1-0.3,0.2-0.4C100,7.9,100,7.6,99.9,7.3z M53.4,12.3c1-2.6,2.7-4.6,5.2-6.1c2.9-1.7,6.9-2.6,11.8-2.6c4.5,0,9.8,0.8,15.6,2.2C73.7,6.1,62.8,8.3,53.4,12.3z M93.2,9.3c-20.8,14.6-33.8,9.8-39,6.6C65.2,11.1,78.3,8.9,93.2,9.3z M72.4,64.6c0,17.5-15.5,31.8-34.5,31.8c-19,0-34.5-14.3-34.5-31.8c0-17.5,15.5-31.8,34.5-31.8C56.9,32.8,72.4,47.1,72.4,64.6z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -39911,15 +39771,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/order-count.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/order-count.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/order-count.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/order-count.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -39927,7 +39787,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -39993,15 +39853,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-american-express.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/payment-american-express.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-american-express.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/payment-american-express.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40009,7 +39869,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40086,15 +39946,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-check.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/payment-check.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-check.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/payment-check.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40102,7 +39962,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40169,15 +40029,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-discover.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/payment-discover.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-discover.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/payment-discover.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40185,7 +40045,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40263,15 +40123,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-mastercard.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/payment-mastercard.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-mastercard.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/payment-mastercard.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40279,7 +40139,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40349,15 +40209,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-paypal.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/payment-paypal.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-paypal.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/payment-paypal.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40365,7 +40225,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40449,15 +40309,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-visa.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/payment-visa.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-visa.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/payment-visa.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40465,7 +40325,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40540,15 +40400,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-wire-transfer.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/payment-wire-transfer.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/payment-wire-transfer.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/payment-wire-transfer.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40556,7 +40416,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40637,15 +40497,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/pdf.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/pdf.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/pdf.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/pdf.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40653,7 +40513,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40723,15 +40583,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/pen.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/pen.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/pen.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/pen.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40739,7 +40599,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40763,12 +40623,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('polygon', { points: '45.5,354.7 0,518 165.4,455.2 408,156.5 285.3,61.6' }),
-	                React.createElement('path', { d: 'M443.8,55.3c-9.4-8.9-54.8-44.4-61.3-48.2c-31-17.8-49.6,3.1-49.6,3.1l-23.8,27.2l117.8,91.1l25.2-30C452.1,98.6,465.2,75.6,443.8,55.3z' })
-	            ),
+	            React.createElement('polygon', { points: '45.5,354.7 0,518 165.4,455.2 408,156.5 285.3,61.6' }),
+	            React.createElement('path', { d: 'M443.8,55.3c-9.4-8.9-54.8-44.4-61.3-48.2c-31-17.8-49.6,3.1-49.6,3.1l-23.8,27.2l117.8,91.1l25.2-30C452.1,98.6,465.2,75.6,443.8,55.3z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -40810,15 +40666,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/person-inside-badge.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/person-inside-badge.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/person-inside-badge.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/person-inside-badge.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40826,7 +40682,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40898,15 +40754,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/person-profile.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/person-profile.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/person-profile.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/person-profile.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40914,7 +40770,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -40980,15 +40836,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/phone.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/phone.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/phone.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/phone.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -40996,7 +40852,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41020,7 +40876,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M199.1,248.7l-0.2,0c-24.3-0.7-51.7-13.1-81.5-36.6c-20.9-16.5-35.2-32.6-37.1-34.7 C35.6,137,9.4,87.5,8.3,85.4l-0.1-0.3C-5.9,53.3,11.2,32.7,12,31.9l0.2-0.2l19.6-19.8c4.2-3.6,9.6-8,11.8-8.9C46.7,1.6,49.9,1,53,1 c9.8,0,16.5,6.2,16.7,6.4l0.1,0.1l29.9,29.9c6.9,6.4,10.3,13.2,10.2,20.3c-0.2,10-7.6,16.4-8,16.7l-13.7,12 c-7.9,5.6-2.6,16.9-1.8,18.5c23.3,35.2,60.1,58.1,60.5,58.4c4,2.5,7.8,3.8,11.5,3.8c3.8,0,6.2-1.4,6.7-1.8l16.6-15.6 c4.5-3.4,9.2-5.1,14.2-5.1c10.1,0,17.4,7.3,18.6,8.6l26.9,25.2c10.6,7.9,12.9,20.4,6.2,34.3c-1.1,2.4-4.3,6.3-5.3,7.5l-0.1,0.1 l-13.6,15.3C216.3,248.3,200.8,248.7,199.1,248.7z M16.3,81.4c1.5,2.8,27.6,51.1,70.2,89.4l0.4,0.4c0.1,0.2,14.9,17.1,36.2,33.9 c19.4,15.3,48.3,33.8,76,34.6l0,0c0.5,0,13.2-0.1,23.1-10.3l13.3-15c1.6-2,3.6-4.7,4.1-5.6c3.3-7,5.4-16.7-3.6-23.3l-0.4-0.4 l-27.5-25.8c0,0-5.3-5.8-12-5.8c-2.9,0-5.8,1.1-8.6,3.2l-16.7,15.6c-0.5,0.4-5,3.7-12.3,3.7c-5.4,0-10.8-1.7-16.2-5.2 c-1.5-0.9-39-24.3-63.3-61.2l-0.2-0.4c-3.6-6.8-7.3-21.7,4.3-30.1l13.3-11.6c0.1-0.1,4.7-4.2,4.8-10.1c0.1-4.4-2.4-8.9-7.3-13.5 l-0.1-0.1L63.6,13.9C63.2,13.6,59,10,53,10c-2,0-4,0.4-5.9,1.2c-1.2,0.6-5.7,4.3-9.3,7.3L18.7,37.8C17.5,39.4,5.1,55.8,16.3,81.4z' }),
+	            React.createElement('path', { d: 'M199.1,248.7l-0.2,0c-24.3-0.7-51.7-13.1-81.5-36.6c-20.9-16.5-35.2-32.6-37.1-34.7C35.6,137,9.4,87.5,8.3,85.4l-0.1-0.3C-5.9,53.3,11.2,32.7,12,31.9l0.2-0.2l19.6-19.8c4.2-3.6,9.6-8,11.8-8.9C46.7,1.6,49.9,1,53,1c9.8,0,16.5,6.2,16.7,6.4l0.1,0.1l29.9,29.9c6.9,6.4,10.3,13.2,10.2,20.3c-0.2,10-7.6,16.4-8,16.7l-13.7,12c-7.9,5.6-2.6,16.9-1.8,18.5c23.3,35.2,60.1,58.1,60.5,58.4c4,2.5,7.8,3.8,11.5,3.8c3.8,0,6.2-1.4,6.7-1.8l16.6-15.6c4.5-3.4,9.2-5.1,14.2-5.1c10.1,0,17.4,7.3,18.6,8.6l26.9,25.2c10.6,7.9,12.9,20.4,6.2,34.3c-1.1,2.4-4.3,6.3-5.3,7.5l-0.1,0.1l-13.6,15.3C216.3,248.3,200.8,248.7,199.1,248.7z M16.3,81.4c1.5,2.8,27.6,51.1,70.2,89.4l0.4,0.4c0.1,0.2,14.9,17.1,36.2,33.9c19.4,15.3,48.3,33.8,76,34.6l0,0c0.5,0,13.2-0.1,23.1-10.3l13.3-15c1.6-2,3.6-4.7,4.1-5.6c3.3-7,5.4-16.7-3.6-23.3l-0.4-0.4l-27.5-25.8c0,0-5.3-5.8-12-5.8c-2.9,0-5.8,1.1-8.6,3.2l-16.7,15.6c-0.5,0.4-5,3.7-12.3,3.7c-5.4,0-10.8-1.7-16.2-5.2c-1.5-0.9-39-24.3-63.3-61.2l-0.2-0.4c-3.6-6.8-7.3-21.7,4.3-30.1l13.3-11.6c0.1-0.1,4.7-4.2,4.8-10.1c0.1-4.4-2.4-8.9-7.3-13.5l-0.1-0.1L63.6,13.9C63.2,13.6,59,10,53,10c-2,0-4,0.4-5.9,1.2c-1.2,0.6-5.7,4.3-9.3,7.3L18.7,37.8C17.5,39.4,5.1,55.8,16.3,81.4z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -41062,15 +40918,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/pineapple.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/pineapple.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/pineapple.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/pineapple.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41078,7 +40934,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41102,7 +40958,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M188.5,105.1c-5-12.8-15.7-29.2-38-37.2l30.6-35.6l-26.8,8.3L170.3,11l-25.9,16l9-26L125,29.8L95.2-0.4l8.9,25.6L79.3,8.1\r l17,33.5l-27.6-8.4l29.1,34.6c-4.2,1.6-12.4,5.3-20.7,12.4c-10.7,9.3-23.6,26.3-24.1,55.1V182l0,0.1c0,1.4,0.4,13.4,2,18.7\r c4.2,14.4,19.1,47.9,67.2,48c0.5,0,2,0.1,4.2,0.1c0,0,0,0,0,0c7.2,0,21.4-1,35-7.6c17.3-8.4,28-22.7,31.7-42.6\r c0.4-2.2,0.8-11.2,1-13.9l0-51.8C194,131.9,194.1,119.3,188.5,105.1z M179.8,191.8l5.1-5.1c-0.2,3.9-0.4,7.9-0.6,9.7L179.8,191.8z\r M123.5,239.4l-21.1-21.1l21.2-21.2l21,21.2L123.5,239.4z M115.2,239.5c-10.8-0.9-19.4-3.7-26.3-7.7l9.3-9.3L115.2,239.5z M63,195.4\r c-0.4-2.6-0.7-5.9-0.9-9l4.9,4.9L63,195.4z M62,134.9l4.5,4.5l-4.5,4.5v-8.5C62,135.3,62,135.1,62,134.9z M171.9,140.5l-21.6,21.6\r l-22.9-23l21.7-21.9L171.9,140.5z M153.3,113l18.8-19c9.4,12.1,12,26.2,12.7,33.7l-8.6,8.6L153.3,113z M146,166.4l-22.3,22.2\r l-22.8-22.9l22.1-22.3L146,166.4z M123.1,134.8l-21.6-21.7l22.1-21.9l21.3,21.7L123.1,134.8z M118.8,139.1l-22.1,22.3L75,139.5\r l22.3-22.1L118.8,139.1z M70.8,135.2l-8.2-8.2c1.7-13.9,6.7-24.2,12.6-31.8L93,113.1L70.8,135.2z M62,177.8v-25.4l8.7-8.7l21.8,21.9\r L71.3,187L62,177.8z M96.7,169.9l22.7,22.9L98.2,214l-22.7-22.8L96.7,169.9z M127.9,192.8l22.3-22.2l21.1,21.2L149,214L127.9,192.8z\r M154.5,166.4l21.6-21.6l8.9,9.1v24.2l-9.5,9.4L154.5,166.4z M185,145.3l-4.7-4.8l4.7-4.7V145.3z M168.1,89.4l-19.1,19.2L127.8,87\r l12.9-12.8c1.3,0.4,2.1,0.6,2.1,0.6l0.3,0.1C154.1,78.1,162.2,83.3,168.1,89.4z M123.6,82.7l-9.7-9.9c3.2-0.5,6.5-0.8,9.8-0.8\r c3.7,0,7.1,0.3,9.9,0.7L123.6,82.7z M104.8,15L125,35.5l18.9-19.2l-4.8,13.9l-14.7,9l-14.8-10.2L104.8,15z M95.4,26.5l28.9,19.9\r l30.1-18.6L146,43.2L124,50l-19.7-6L95.4,26.5z M124,57.3l25-7.8l0.3,0.2l0.2-0.3l10.4-3.2l-16.7,19.4c-3.6-1-10.7-2.6-19.5-2.6\r c-6.4,0-12.7,0.8-18.7,2.5L89.3,46.8L124,57.3z M103.1,75.5l0.3-0.1c1.2-0.4,2.4-0.8,3.6-1.1L119.4,87l-22.1,21.9L79.1,90.7\r C90,79.3,102.2,75.8,103.1,75.5z M64.8,202.1l6.5-6.5L94,218.3l-10.2,10.2C73.4,220.8,67.8,210.5,64.8,202.1z M131.6,239.8\r l17.3-17.3l10,10c-0.5,0.3-1,0.5-1.5,0.8C148.1,237.8,138.5,239.3,131.6,239.8z M164.2,229.4l-11-11.1l22.3-22.3l7.2,7.3\r C179.5,214.5,173.3,223.2,164.2,229.4z' }),
+	            React.createElement('path', { d: 'M188.5,105.1c-5-12.8-15.7-29.2-38-37.2l30.6-35.6l-26.8,8.3L170.3,11l-25.9,16l9-26L125,29.8L95.2-0.4l8.9,25.6L79.3,8.1l17,33.5l-27.6-8.4l29.1,34.6c-4.2,1.6-12.4,5.3-20.7,12.4c-10.7,9.3-23.6,26.3-24.1,55.1V182l0,0.1c0,1.4,0.4,13.4,2,18.7c4.2,14.4,19.1,47.9,67.2,48c0.5,0,2,0.1,4.2,0.1c0,0,0,0,0,0c7.2,0,21.4-1,35-7.6c17.3-8.4,28-22.7,31.7-42.6c0.4-2.2,0.8-11.2,1-13.9l0-51.8C194,131.9,194.1,119.3,188.5,105.1z M179.8,191.8l5.1-5.1c-0.2,3.9-0.4,7.9-0.6,9.7L179.8,191.8zM123.5,239.4l-21.1-21.1l21.2-21.2l21,21.2L123.5,239.4z M115.2,239.5c-10.8-0.9-19.4-3.7-26.3-7.7l9.3-9.3L115.2,239.5z M63,195.4c-0.4-2.6-0.7-5.9-0.9-9l4.9,4.9L63,195.4z M62,134.9l4.5,4.5l-4.5,4.5v-8.5C62,135.3,62,135.1,62,134.9z M171.9,140.5l-21.6,21.6l-22.9-23l21.7-21.9L171.9,140.5z M153.3,113l18.8-19c9.4,12.1,12,26.2,12.7,33.7l-8.6,8.6L153.3,113z M146,166.4l-22.3,22.2l-22.8-22.9l22.1-22.3L146,166.4z M123.1,134.8l-21.6-21.7l22.1-21.9l21.3,21.7L123.1,134.8z M118.8,139.1l-22.1,22.3L75,139.5l22.3-22.1L118.8,139.1z M70.8,135.2l-8.2-8.2c1.7-13.9,6.7-24.2,12.6-31.8L93,113.1L70.8,135.2z M62,177.8v-25.4l8.7-8.7l21.8,21.9L71.3,187L62,177.8z M96.7,169.9l22.7,22.9L98.2,214l-22.7-22.8L96.7,169.9z M127.9,192.8l22.3-22.2l21.1,21.2L149,214L127.9,192.8zM154.5,166.4l21.6-21.6l8.9,9.1v24.2l-9.5,9.4L154.5,166.4z M185,145.3l-4.7-4.8l4.7-4.7V145.3z M168.1,89.4l-19.1,19.2L127.8,87l12.9-12.8c1.3,0.4,2.1,0.6,2.1,0.6l0.3,0.1C154.1,78.1,162.2,83.3,168.1,89.4z M123.6,82.7l-9.7-9.9c3.2-0.5,6.5-0.8,9.8-0.8c3.7,0,7.1,0.3,9.9,0.7L123.6,82.7z M104.8,15L125,35.5l18.9-19.2l-4.8,13.9l-14.7,9l-14.8-10.2L104.8,15z M95.4,26.5l28.9,19.9l30.1-18.6L146,43.2L124,50l-19.7-6L95.4,26.5z M124,57.3l25-7.8l0.3,0.2l0.2-0.3l10.4-3.2l-16.7,19.4c-3.6-1-10.7-2.6-19.5-2.6c-6.4,0-12.7,0.8-18.7,2.5L89.3,46.8L124,57.3z M103.1,75.5l0.3-0.1c1.2-0.4,2.4-0.8,3.6-1.1L119.4,87l-22.1,21.9L79.1,90.7C90,79.3,102.2,75.8,103.1,75.5z M64.8,202.1l6.5-6.5L94,218.3l-10.2,10.2C73.4,220.8,67.8,210.5,64.8,202.1z M131.6,239.8l17.3-17.3l10,10c-0.5,0.3-1,0.5-1.5,0.8C148.1,237.8,138.5,239.3,131.6,239.8z M164.2,229.4l-11-11.1l22.3-22.3l7.2,7.3C179.5,214.5,173.3,223.2,164.2,229.4z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -41144,15 +41000,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/pinterest.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/pinterest.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/pinterest.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/pinterest.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41160,7 +41016,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41184,7 +41040,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M130.7,2C63.6,2,29.9,50,29.9,90c0,24.3,9.2,45.8,28.9,53.7c3.3,1.3,6.2,0,7.1-3.5c0.8-2.5,2.1-8.9,2.9-11.4 c1-3.5,0.8-4.8-2.1-7.7c-5.6-6.7-9.4-15.4-9.4-27.7c0-35.6,26.6-67.6,69.5-67.6c37.9,0,58.7,23.1,58.7,53.9 c0,40.8-17.9,74.9-44.9,74.9c-14.6,0-25.8-12.1-22.1-27c4.2-17.9,12.5-37,12.5-50.1c0-11.7-6.2-21.2-19.1-21.2 c-15,0-27.2,15.8-27.2,36.6c0,13.3,4.6,22.3,4.6,22.3s-15.6,65.5-18.1,76.8c-5.2,22.7-0.8,50.7-0.6,53.5c0.2,1.7,2.3,2.1,3.3,0.8 c1.3-1.9,19.5-24.1,25.6-46.2c1.7-6.2,9.8-38.9,9.8-38.9c4.8,9.4,19.3,17.5,34.5,17.5c45.3,0,76.1-41.2,76.1-96.7 C220,40.7,184.6,2,130.7,2z' }),
+	            React.createElement('path', { d: 'M130.7,2C63.6,2,29.9,50,29.9,90c0,24.3,9.2,45.8,28.9,53.7c3.3,1.3,6.2,0,7.1-3.5c0.8-2.5,2.1-8.9,2.9-11.4c1-3.5,0.8-4.8-2.1-7.7c-5.6-6.7-9.4-15.4-9.4-27.7c0-35.6,26.6-67.6,69.5-67.6c37.9,0,58.7,23.1,58.7,53.9c0,40.8-17.9,74.9-44.9,74.9c-14.6,0-25.8-12.1-22.1-27c4.2-17.9,12.5-37,12.5-50.1c0-11.7-6.2-21.2-19.1-21.2c-15,0-27.2,15.8-27.2,36.6c0,13.3,4.6,22.3,4.6,22.3s-15.6,65.5-18.1,76.8c-5.2,22.7-0.8,50.7-0.6,53.5c0.2,1.7,2.3,2.1,3.3,0.8c1.3-1.9,19.5-24.1,25.6-46.2c1.7-6.2,9.8-38.9,9.8-38.9c4.8,9.4,19.3,17.5,34.5,17.5c45.3,0,76.1-41.2,76.1-96.7C220,40.7,184.6,2,130.7,2z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -41226,15 +41082,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/play-button.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/play-button.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/play-button.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/play-button.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41242,7 +41098,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41308,15 +41164,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/plus.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/plus.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/plus.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/plus.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41324,7 +41180,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41390,15 +41246,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/print.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/print.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/print.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/print.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41406,7 +41262,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41430,7 +41286,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M63,250v-40H35.1c-3,0-12.9-0.7-20.5-7.8C9.2,197,6,189.6,7,180.5v-107c0-1.3,0-13.4,8.6-21.3c4.8-4.6,11.1-6.9,19.1-6.9 c0.6,0,1.4,0,2.1,0l12.2,0V32.6l-0.2-0.1c0.5-7.1,6.3-9.7,9.4-10.1l0,0l4.8-0.1V0h124v22.1l5.3,0.1l0.1,0c3.1,0.4,9,3,9.6,10.1 l0,0.1V46h10.8c0.6,0,1.3-0.5,1.9-0.5c7.9,0,14.5,2.1,19.3,6.7c8.8,8.3,9,20.6,9,21.1v107.1c0,9.3-2.6,16.5-8.4,21.9 c-7.3,7-17.8,7.8-20.8,7.8H187v40H63z M177,239v-57H74v57H177z M34.4,55.2c-5,0-9,1.3-11.8,4c-5.5,5.1-5.6,14-5.6,14.1v80.5 c8-8.6,21.5-9.8,27.2-9.8c1.2,0,2-0.1,2.3-0.1h159.1c14.2,0,22.4,4.7,27.4,9.5V73.3c0-0.4-0.3-8.9-5.9-14.1c-2.8-2.7-6.9-4-11.9-4 c-0.6,0-1.2,0-1.8,0.1l-177.1,0C35.6,55.3,35,55.2,34.4,55.2z M177,44V10H74v34H177z' }),
+	            React.createElement('path', { d: 'M63,250v-40H35.1c-3,0-12.9-0.7-20.5-7.8C9.2,197,6,189.6,7,180.5v-107c0-1.3,0-13.4,8.6-21.3c4.8-4.6,11.1-6.9,19.1-6.9c0.6,0,1.4,0,2.1,0l12.2,0V32.6l-0.2-0.1c0.5-7.1,6.3-9.7,9.4-10.1l0,0l4.8-0.1V0h124v22.1l5.3,0.1l0.1,0c3.1,0.4,9,3,9.6,10.1l0,0.1V46h10.8c0.6,0,1.3-0.5,1.9-0.5c7.9,0,14.5,2.1,19.3,6.7c8.8,8.3,9,20.6,9,21.1v107.1c0,9.3-2.6,16.5-8.4,21.9c-7.3,7-17.8,7.8-20.8,7.8H187v40H63z M177,239v-57H74v57H177z M34.4,55.2c-5,0-9,1.3-11.8,4c-5.5,5.1-5.6,14-5.6,14.1v80.5c8-8.6,21.5-9.8,27.2-9.8c1.2,0,2-0.1,2.3-0.1h159.1c14.2,0,22.4,4.7,27.4,9.5V73.3c0-0.4-0.3-8.9-5.9-14.1c-2.8-2.7-6.9-4-11.9-4c-0.6,0-1.2,0-1.8,0.1l-177.1,0C35.6,55.3,35,55.2,34.4,55.2z M177,44V10H74v34H177z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -41472,15 +41328,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/quote.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/quote.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/quote.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/quote.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41488,7 +41344,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41512,12 +41368,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M193.2,142h-25.1c3.3-47,40.9-82.6,81.9-106.9l-7.5-12.5c-65.2,32.6-100.3,88.6-100.3,131.2c0,46.8,14.2,75.2,59.3,75.2 c20,0,40.1-21,40.1-42.7C241.6,163.8,227.4,142,193.2,142z' }),
-	                React.createElement('path', { d: 'M108,35.1l-7.5-12.5C35.3,55.2,0.2,111.2,0.2,153.8c0,46.8,14.2,75.2,59.3,75.2c20.1,0,40.1-21,40.1-42.7 c0-22.6-14.2-44.4-48.5-44.4H26.1C29.4,95,67,59.4,108,35.1z' })
-	            ),
+	            React.createElement('path', { d: 'M193.2,142h-25.1c3.3-47,40.9-82.6,81.9-106.9l-7.5-12.5c-65.2,32.6-100.3,88.6-100.3,131.2c0,46.8,14.2,75.2,59.3,75.2 c20,0,40.1-21,40.1-42.7C241.6,163.8,227.4,142,193.2,142z' }),
+	            React.createElement('path', { d: 'M108,35.1l-7.5-12.5C35.3,55.2,0.2,111.2,0.2,153.8c0,46.8,14.2,75.2,59.3,75.2c20.1,0,40.1-21,40.1-42.7 c0-22.6-14.2-44.4-48.5-44.4H26.1C29.4,95,67,59.4,108,35.1z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -41559,15 +41411,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/ramen.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/ramen.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/ramen.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/ramen.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41575,7 +41427,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41599,7 +41451,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M98.2,17l-44,2.4c-0.2-1.4-0.5-2.6-0.9-3.6l42.2-7.3c1-0.2,1.6-1.1,1.4-2c-0.2-1-1.1-1.6-2-1.4l-43.4,7.5\r c-0.5-0.3-1.1-0.3-1.7,0c-0.2,0.1-0.3,0.2-0.4,0.4l-3.6,0.6c-0.1-0.2-0.2-0.3-0.2-0.3c-0.5-0.8-1.5-1.1-2.4-0.7\r c-0.6,0.3-0.9,1-0.9,1.6l-2.7,0.5c-0.3-0.8-0.6-1.3-0.7-1.4c-0.5-0.8-1.5-1.1-2.4-0.7c-0.8,0.5-1.1,1.5-0.7,2.4c0,0,0.1,0.1,0.2,0.3\r l-9.2,1.6c-0.9,0.2-1.6,1.1-1.4,2c0.1,0.9,0.9,1.5,1.7,1.5c0.1,0,0.2,0,0.3,0l9.7-1.7c0.1,0.5,0.2,1.1,0.3,1.7l-3.6,0.2\r c-1,0.1-1.7,0.9-1.7,1.8c0.1,0.9,0.8,1.7,1.7,1.7c0,0,0.1,0,0.1,0l3.5-0.2c-0.1,1.5-0.5,3.1-1.1,4.8C23.9,29.1,0,30.8,0,37.7\r c0,0.2,0,0.4,0.1,0.6C0,41.1-0.8,63.7,12.6,77.9c2,2.1,4.2,3.8,6.3,5.3V93c0,1,1.2,2,2.2,2h45.5c1,0,0.9-1,0.9-2V82.6\r c3-1.9,6.4-4.3,8.9-7.1c12-13.5,11.6-32.7,11.2-37.7c0-0.1-0.1-0.8-0.2-1c0,0-0.2-0.8-0.5-1.3c-4.3-4.7-22.1-6.3-33.4-6.8\r c0.7-2.1,1-4,1-5.8l44-2.4c1-0.1,1.7-0.9,1.7-1.8C99.9,17.7,99.1,16.9,98.2,17z M49.8,16.4c0.3,0.8,0.6,1.9,0.8,3.2l-3.1,0.2\r c-0.1-1.1-0.3-2-0.6-2.9L49.8,16.4z M40.7,18l2.9-0.5c0.2,0.7,0.4,1.5,0.5,2.5L41,20.1C40.9,19.4,40.8,18.6,40.7,18z M41.1,23.6\r l3.1-0.2c-0.1,1.6-0.4,3.3-1.1,5.1c-0.6,0-1.6,0-2.9,0C40.7,26.8,41,25.2,41.1,23.6z M84.2,37.7c-1.3,1.8-12.1,4.7-30.8,5.5\r c-1-1.1-4-5.1-1.4-11C71.5,32.8,82.8,35.8,84.2,37.7C84.2,37.7,84.2,37.7,84.2,37.7z M49.2,43.3c-0.7,0-1.5,0-2.3,0\r c-0.7-0.8-4.3-4.9-1.5-11.3c1,0,1.9,0,2.8,0C46.7,36.7,47.7,40.7,49.2,43.3z M40.3,43.4c-0.8-0.8-4.3-4.9-1.5-11.3\r c0.9,0,1.9,0,2.9,0c-1.6,4.7-0.6,8.7,0.9,11.3C41.8,43.4,41.1,43.4,40.3,43.4z M35,32.2c-1.5,4.6-0.5,8.4,0.9,11.1\r c-19.7-0.7-31.1-3.7-32.4-5.6C4.8,35.9,15.8,32.9,35,32.2z M64.4,91H21.9v-5.8c6.1,2.6,11.9,4,18.9,4c9,0,18.5-1.6,23.5-4.7V91z\r M74.1,73.2c-7.3,8.2-18.3,12.4-32.6,12.4c-11,0-19.7-3.4-26.1-10.2C5.4,64.9,3.8,48.9,3.6,41.8c10.2,5.1,38.8,5.1,40.3,5.1\r c1.5,0,30.4-0.1,40.5-5.2C84.4,48.8,83.1,63,74.1,73.2z M49.7,28.6c-1.1,0-2.1-0.1-2.9-0.1c0.6-1.9,0.9-3.6,0.9-5.3l3.1-0.2\r C50.8,24.8,50.5,26.6,49.7,28.6z' }),
+	            React.createElement('path', { d: 'M98.2,17l-44,2.4c-0.2-1.4-0.5-2.6-0.9-3.6l42.2-7.3c1-0.2,1.6-1.1,1.4-2c-0.2-1-1.1-1.6-2-1.4l-43.4,7.5c-0.5-0.3-1.1-0.3-1.7,0c-0.2,0.1-0.3,0.2-0.4,0.4l-3.6,0.6c-0.1-0.2-0.2-0.3-0.2-0.3c-0.5-0.8-1.5-1.1-2.4-0.7c-0.6,0.3-0.9,1-0.9,1.6l-2.7,0.5c-0.3-0.8-0.6-1.3-0.7-1.4c-0.5-0.8-1.5-1.1-2.4-0.7c-0.8,0.5-1.1,1.5-0.7,2.4c0,0,0.1,0.1,0.2,0.3l-9.2,1.6c-0.9,0.2-1.6,1.1-1.4,2c0.1,0.9,0.9,1.5,1.7,1.5c0.1,0,0.2,0,0.3,0l9.7-1.7c0.1,0.5,0.2,1.1,0.3,1.7l-3.6,0.2c-1,0.1-1.7,0.9-1.7,1.8c0.1,0.9,0.8,1.7,1.7,1.7c0,0,0.1,0,0.1,0l3.5-0.2c-0.1,1.5-0.5,3.1-1.1,4.8C23.9,29.1,0,30.8,0,37.7c0,0.2,0,0.4,0.1,0.6C0,41.1-0.8,63.7,12.6,77.9c2,2.1,4.2,3.8,6.3,5.3V93c0,1,1.2,2,2.2,2h45.5c1,0,0.9-1,0.9-2V82.6c3-1.9,6.4-4.3,8.9-7.1c12-13.5,11.6-32.7,11.2-37.7c0-0.1-0.1-0.8-0.2-1c0,0-0.2-0.8-0.5-1.3c-4.3-4.7-22.1-6.3-33.4-6.8c0.7-2.1,1-4,1-5.8l44-2.4c1-0.1,1.7-0.9,1.7-1.8C99.9,17.7,99.1,16.9,98.2,17z M49.8,16.4c0.3,0.8,0.6,1.9,0.8,3.2l-3.1,0.2c-0.1-1.1-0.3-2-0.6-2.9L49.8,16.4z M40.7,18l2.9-0.5c0.2,0.7,0.4,1.5,0.5,2.5L41,20.1C40.9,19.4,40.8,18.6,40.7,18z M41.1,23.6l3.1-0.2c-0.1,1.6-0.4,3.3-1.1,5.1c-0.6,0-1.6,0-2.9,0C40.7,26.8,41,25.2,41.1,23.6z M84.2,37.7c-1.3,1.8-12.1,4.7-30.8,5.5c-1-1.1-4-5.1-1.4-11C71.5,32.8,82.8,35.8,84.2,37.7C84.2,37.7,84.2,37.7,84.2,37.7z M49.2,43.3c-0.7,0-1.5,0-2.3,0c-0.7-0.8-4.3-4.9-1.5-11.3c1,0,1.9,0,2.8,0C46.7,36.7,47.7,40.7,49.2,43.3z M40.3,43.4c-0.8-0.8-4.3-4.9-1.5-11.3c0.9,0,1.9,0,2.9,0c-1.6,4.7-0.6,8.7,0.9,11.3C41.8,43.4,41.1,43.4,40.3,43.4z M35,32.2c-1.5,4.6-0.5,8.4,0.9,11.1c-19.7-0.7-31.1-3.7-32.4-5.6C4.8,35.9,15.8,32.9,35,32.2z M64.4,91H21.9v-5.8c6.1,2.6,11.9,4,18.9,4c9,0,18.5-1.6,23.5-4.7V91zM74.1,73.2c-7.3,8.2-18.3,12.4-32.6,12.4c-11,0-19.7-3.4-26.1-10.2C5.4,64.9,3.8,48.9,3.6,41.8c10.2,5.1,38.8,5.1,40.3,5.1c1.5,0,30.4-0.1,40.5-5.2C84.4,48.8,83.1,63,74.1,73.2z M49.7,28.6c-1.1,0-2.1-0.1-2.9-0.1c0.6-1.9,0.9-3.6,0.9-5.3l3.1-0.2C50.8,24.8,50.5,26.6,49.7,28.6z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -41641,15 +41493,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/reject.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/reject.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/reject.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/reject.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41657,7 +41509,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41681,11 +41533,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { className: 'st0', d: 'M155.3,196.1V250h-55v-53.9H155.3z M139.9,175.1H115L101.7,67.2V0h51.8v67.2L139.9,175.1z' })
-	            ),
+	            React.createElement('path', { className: 'st0', d: 'M155.3,196.1V250h-55v-53.9H155.3z M139.9,175.1H115L101.7,67.2V0h51.8v67.2L139.9,175.1z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -41727,15 +41575,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/repost.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/repost.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/repost.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/repost.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41743,7 +41591,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41767,8 +41615,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { className: 'st0', d: 'M130.9,232c-30.6-0.4-61-15.9-90.5-46.3l20.8-20.6c26.6,27.4,52.9,39.9,78.2,37.1c41.3-4.6,68.8-48.5,69.1-49 l24.8,15.4c-1.4,2.3-34.9,56.5-90.5,62.8C138.9,231.8,134.9,232,130.9,232z' }),
-	            React.createElement('path', { className: 'st0', d: 'M44.1,79.9L19.1,64.7c1.4-2.4,35.3-57.9,91.1-64.2c34.5-3.9,68.6,11.6,101.5,46.1l-21,20.4 c-26.3-27.6-52.3-40.1-77.3-37.3c-21.4,2.4-39.1,15.8-50.1,26.6C51.2,68.3,44.1,79.8,44.1,79.9z' }),
+	            React.createElement('path', { className: 'st0', d: 'M130.9,232c-30.6-0.4-61-15.9-90.5-46.3l20.8-20.6c26.6,27.4,52.9,39.9,78.2,37.1c41.3-4.6,68.8-48.5,69.1-49l24.8,15.4c-1.4,2.3-34.9,56.5-90.5,62.8C138.9,231.8,134.9,232,130.9,232z' }),
+	            React.createElement('path', { className: 'st0', d: 'M44.1,79.9L19.1,64.7c1.4-2.4,35.3-57.9,91.1-64.2c34.5-3.9,68.6,11.6,101.5,46.1l-21,20.4c-26.3-27.6-52.3-40.1-77.3-37.3c-21.4,2.4-39.1,15.8-50.1,26.6C51.2,68.3,44.1,79.8,44.1,79.9z' }),
 	            React.createElement('polygon', { className: 'st0', points: '104,142.2 1.6,79.8 5,210.2 ' }),
 	            React.createElement('polygon', { className: 'st0', points: '148.1,90.8 250,153.8 247.1,21.3 ' }),
 	            React.Children.map(children, function (c) {
@@ -41812,15 +41660,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/return-arrow.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/return-arrow.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/return-arrow.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/return-arrow.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41828,7 +41676,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41852,7 +41700,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M230.7,21C218.3,7.3,194.3,7.3,188.8,7H69v10h120l0.4,0c0.2,0,21.6-0.3,33.5,10.5c6.8,6.2,10.2,15.4,10.2,27V158l0,0.1 c0,0.1,0.1,7.6-5.1,15.3c-7.2,10.7-21.2,16.8-40.5,17.5H20.1l32.9-41.4l-7.8-6.2L4.1,195l40.6,51.8l7.9-6.2l-31-39.6h166l0.1,0 c15.8-0.6,37.1-4.9,48.5-22c6.7-10,6.8-19.9,6.8-21.1V54.5C242.3,37.7,238,29.2,230.7,21z' }),
+	            React.createElement('path', { d: 'M230.7,21C218.3,7.3,194.3,7.3,188.8,7H69v10h120l0.4,0c0.2,0,21.6-0.3,33.5,10.5c6.8,6.2,10.2,15.4,10.2,27V158l0,0.1c0,0.1,0.1,7.6-5.1,15.3c-7.2,10.7-21.2,16.8-40.5,17.5H20.1l32.9-41.4l-7.8-6.2L4.1,195l40.6,51.8l7.9-6.2l-31-39.6h166l0.1,0c15.8-0.6,37.1-4.9,48.5-22c6.7-10,6.8-19.9,6.8-21.1V54.5C242.3,37.7,238,29.2,230.7,21z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -41894,15 +41742,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/ruler.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/ruler.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/ruler.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/ruler.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41910,7 +41758,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -41976,15 +41824,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/sales.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/sales.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/sales.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/sales.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -41992,7 +41840,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42058,15 +41906,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/service-person.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/service-person.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/service-person.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/service-person.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42074,7 +41922,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42099,7 +41947,7 @@
 	            'svg',
 	            this.props,
 	            React.createElement('path', { d: 'M-30.3,45' }),
-	            React.createElement('path', { d: 'M454,498.6c-2.5-41.3-12.8-77.3-30.5-107.2c-14.3-24-33.3-44.1-56.6-59.6c-1.1-0.7-2.2-1.5-3.4-2.2 c32.3-22.8,45-45.5,46.9-49.1c42.3-64.5,23.5-134.5,22.7-137.4c-19.7-70.4-63.9-103.9-97.5-119.5c-35.3-16.5-66-17.2-69-17.2 c-76.6-4-126.4,44.9-130.4,48.9C93.8,93.4,84,144.1,82.3,154.9c-1,2.8-1.7,6.1-2,10.1L79,216.3c0,0-0.7,13.3,14.3,14.7h46.4 c0,0-0.3-1-0.8-2.8c12.5,34.8,39.7,62.7,74.2,76.2c-27.2,5-51.3,15.7-72,32.1c-21.4,16.9-39.1,39.7-52.5,67.8 c-22.8,47.4-25.6,93.1-25.8,95l-0.4,7.4l392.2-0.7L454,498.6z M99.9,140.9c5.5-19.2,18.2-50.6,45.8-75.4l0.4-0.3 c0.5-0.5,48-48.7,119.9-44.9l0.3,0c0.3,0,29.7,0.3,63.3,15.9c19.7,9.2,36.9,21.8,51,37.5c17.8,19.6,30.9,44.3,38.9,73.2 c0.2,0.7,17.9,67.1-21.1,126.3l-0.4,0.7c-0.2,0.3-12.7,24.6-48.1,47.9c-17.5-9.2-33.6-14.4-45.1-17.2 c48.1-18.4,82.4-65.1,82.4-119.6c0-70.6-57.4-128-128-128c-55.1,0-102.2,35-120.2,84h-37.6C101.5,141,100.9,140.9,99.9,140.9z M145.3,185c0-62.9,51.1-114,114-114s114,51.1,114,114s-51.1,114-114,114S145.3,247.9,145.3,185z M77.4,492.7 c1.7-14.5,7.3-48.3,23.7-82.4c12.6-26.2,28.9-47.3,48.6-62.9c24.5-19.4,54.5-30.2,89.1-32.1l0.8-0.1c0.1,0,10-1.7,23.6-1.7 c8,0,15.7,0.6,22.8,1.7l0.4,0.1c0.3,0,22.3,2.4,49.5,15.1c-7.4,4.1-15.7,8.1-24.8,11.8V337c0-2.2-1.8-4-4-4h-60.7c-2.2,0-4,1.8-4,4 v34c0,2.2,1.8,4,4,4H307c2.2,0,4-1.8,4-4v-13.8c15.2-5.8,28.3-12.3,39.5-19.1c3,1.8,6.1,3.7,9.1,5.7c21.4,14.3,39,32.9,52,55 c15.4,26.1,24.7,57.4,27.8,93.1L77.4,492.7z' }),
+	            React.createElement('path', { d: 'M454,498.6c-2.5-41.3-12.8-77.3-30.5-107.2c-14.3-24-33.3-44.1-56.6-59.6c-1.1-0.7-2.2-1.5-3.4-2.2c32.3-22.8,45-45.5,46.9-49.1c42.3-64.5,23.5-134.5,22.7-137.4c-19.7-70.4-63.9-103.9-97.5-119.5c-35.3-16.5-66-17.2-69-17.2c-76.6-4-126.4,44.9-130.4,48.9C93.8,93.4,84,144.1,82.3,154.9c-1,2.8-1.7,6.1-2,10.1L79,216.3c0,0-0.7,13.3,14.3,14.7h46.4c0,0-0.3-1-0.8-2.8c12.5,34.8,39.7,62.7,74.2,76.2c-27.2,5-51.3,15.7-72,32.1c-21.4,16.9-39.1,39.7-52.5,67.8c-22.8,47.4-25.6,93.1-25.8,95l-0.4,7.4l392.2-0.7L454,498.6z M99.9,140.9c5.5-19.2,18.2-50.6,45.8-75.4l0.4-0.3c0.5-0.5,48-48.7,119.9-44.9l0.3,0c0.3,0,29.7,0.3,63.3,15.9c19.7,9.2,36.9,21.8,51,37.5c17.8,19.6,30.9,44.3,38.9,73.2c0.2,0.7,17.9,67.1-21.1,126.3l-0.4,0.7c-0.2,0.3-12.7,24.6-48.1,47.9c-17.5-9.2-33.6-14.4-45.1-17.2c48.1-18.4,82.4-65.1,82.4-119.6c0-70.6-57.4-128-128-128c-55.1,0-102.2,35-120.2,84h-37.6C101.5,141,100.9,140.9,99.9,140.9zM145.3,185c0-62.9,51.1-114,114-114s114,51.1,114,114s-51.1,114-114,114S145.3,247.9,145.3,185z M77.4,492.7c1.7-14.5,7.3-48.3,23.7-82.4c12.6-26.2,28.9-47.3,48.6-62.9c24.5-19.4,54.5-30.2,89.1-32.1l0.8-0.1c0.1,0,10-1.7,23.6-1.7c8,0,15.7,0.6,22.8,1.7l0.4,0.1c0.3,0,22.3,2.4,49.5,15.1c-7.4,4.1-15.7,8.1-24.8,11.8V337c0-2.2-1.8-4-4-4h-60.7c-2.2,0-4,1.8-4,4v34c0,2.2,1.8,4,4,4H307c2.2,0,4-1.8,4-4v-13.8c15.2-5.8,28.3-12.3,39.5-19.1c3,1.8,6.1,3.7,9.1,5.7c21.4,14.3,39,32.9,52,55c15.4,26.1,24.7,57.4,27.8,93.1L77.4,492.7z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -42141,15 +41989,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/share.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/share.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/share.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/share.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42157,7 +42005,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42181,12 +42029,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('polygon', { points: '153,81 153,92 199,92 199,239 49,239 49,92 99,92 99,81 38,81 38,250 210,250 210,81  ' }),
-	                React.createElement('polygon', { points: '120,21 120,180 131,180 131,21.7 161.9,55 169.8,47.6 125.8,0 81,45.9 88.6,53.5  ' })
-	            ),
+	            React.createElement('polygon', { points: '153,81 153,92 199,92 199,239 49,239 49,92 99,92 99,81 38,81 38,250 210,250 210,81  ' }),
+	            React.createElement('polygon', { points: '120,21 120,180 131,180 131,21.7 161.9,55 169.8,47.6 125.8,0 81,45.9 88.6,53.5  ' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -42228,15 +42072,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/shipping-package.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/shipping-package.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/shipping-package.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/shipping-package.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42244,7 +42088,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42268,11 +42112,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M125.5,1.1L2.1,41l10.4,145.6L125,248.1l113.1-60.6l10-145.1L125.5,1.1z M121,236.7L20.2,181.6l-9.3-131L59,74.2V108 l26,13.5l-0.1-34.6l36.1,17.7V236.7z M124.7,97.4L87.2,79l85.9-37.4l-27.3-8.9L60.5,65.9L17.1,44.7L125.5,9.5l107.9,36.4L124.7,97.4 z M230.5,182.4L129,236.8V104.3L239.4,52L230.5,182.4z' })
-	            ),
+	            React.createElement('path', { d: 'M125.5,1.1L2.1,41l10.4,145.6L125,248.1l113.1-60.6l10-145.1L125.5,1.1z M121,236.7L20.2,181.6l-9.3-131L59,74.2V108l26,13.5l-0.1-34.6l36.1,17.7V236.7z M124.7,97.4L87.2,79l85.9-37.4l-27.3-8.9L60.5,65.9L17.1,44.7L125.5,9.5l107.9,36.4L124.7,97.4z M230.5,182.4L129,236.8V104.3L239.4,52L230.5,182.4z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -42314,15 +42154,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/shipping-world.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/shipping-world.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/shipping-world.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/shipping-world.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42330,7 +42170,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42396,15 +42236,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/shipping.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/shipping.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/shipping.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/shipping.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42412,7 +42252,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42436,7 +42276,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M125.5,1.1L2.1,41l10.4,145.6L125,248.1l113.1-60.6l10-145.1L125.5,1.1z M121,236.7L20.2,181.6l-9.3-131L59,74.2V108\r l26,13.5l-0.1-34.6l36.1,17.7V236.7z M124.7,97.4L87.2,79l85.9-37.4l-27.3-8.9L60.5,65.9L17.1,44.7L125.5,9.5l107.9,36.4L124.7,97.4\r z M230.5,182.4L129,236.8V104.3L239.4,52L230.5,182.4z' }),
+	            React.createElement('path', { d: 'M125.5,1.1L2.1,41l10.4,145.6L125,248.1l113.1-60.6l10-145.1L125.5,1.1z M121,236.7L20.2,181.6l-9.3-131L59,74.2V108l26,13.5l-0.1-34.6l36.1,17.7V236.7z M124.7,97.4L87.2,79l85.9-37.4l-27.3-8.9L60.5,65.9L17.1,44.7L125.5,9.5l107.9,36.4L124.7,97.4z M230.5,182.4L129,236.8V104.3L239.4,52L230.5,182.4z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -42478,15 +42318,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/shopping-cart.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/shopping-cart.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/shopping-cart.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/shopping-cart.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42494,7 +42334,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42562,15 +42402,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/star-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/star-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/star-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/star-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42578,7 +42418,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42644,15 +42484,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/star-outlined.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/star-outlined.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/star-outlined.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/star-outlined.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42660,7 +42500,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42684,7 +42524,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M259.5,388.2L100,503l59.9-187.2L1.3,199.5l196.6-0.9l61.6-186.7l61.6,186.7l196.6,0.9L359.2,315.8L419.1,503 L259.5,388.2z M386.6,458.3l-47.7-149.1l126.2-92.6l-156.6-0.7L259.5,67.2l-49.1,148.7l-156.6,0.7l126.2,92.6l-47.7,149.1 l127.1-91.4L386.6,458.3z' }),
+	            React.createElement('path', { d: 'M259.5,388.2L100,503l59.9-187.2L1.3,199.5l196.6-0.9l61.6-186.7l61.6,186.7l196.6,0.9L359.2,315.8L419.1,503L259.5,388.2z M386.6,458.3l-47.7-149.1l126.2-92.6l-156.6-0.7L259.5,67.2l-49.1,148.7l-156.6,0.7l126.2,92.6l-47.7,149.1l127.1-91.4L386.6,458.3z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -42726,15 +42566,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/storefront-views.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/storefront-views.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/storefront-views.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/storefront-views.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42742,7 +42582,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42808,15 +42648,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/storefront.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/storefront.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/storefront.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/storefront.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42824,7 +42664,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42848,16 +42688,12 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('rect', { x: '45', y: '23', width: '160', height: '8' }),
-	                React.createElement('rect', { x: '133.8', y: '135.3', transform: 'matrix(0.7012 -0.713 0.713 0.7012 -55.6632 145.7103)', width: '24.3', height: '8' }),
-	                React.createElement('rect', { x: '136.4', y: '147.9', transform: 'matrix(0.7058 -0.7084 0.7084 0.7058 -59.9895 159.4118)', width: '51', height: '8' }),
-	                React.createElement('rect', { x: '172.5', y: '153.8', transform: 'matrix(-0.7033 -0.7109 0.7109 -0.7033 182.7199 407.7907)', width: '8', height: '24' }),
-	                React.createElement('path', { d: 'M65,175h20v-39H65V175z M73,144h4v23h-4V144z' }),
-	                React.createElement('path', { d: 'M224,117.5c7.1-1.5,18.7-6.7,20.6-24.5h5.9L215.4,7H35.6L0,93h5.5C7.5,111.6,20,116.5,27,117.7V210H5v32h242v-32h-23V117.5 M105,210v-99.8c4.4,4.6,10.5,8,18.6,8c1.9,0,17.6-0.4,23.8-15.8c4.2,7.8,11.9,15.6,24.2,15.6c0,0,0.1,0,0.1,0 c2.2,0,16.8-0.5,23.2-14.6c4,6.9,10.7,13.6,21.1,14.6v92H105z M59.3,93h36.1c-2.2,17.2-16.1,17.2-17.7,17.2l-0.2,0 c-11.3,0-16.6-9.3-18.8-15C59,94.4,59.2,93.7,59.3,93z M104.1,93h37.4c-2.2,17.2-16.1,17.2-17.7,17.2l-0.2,0 C110.7,110.2,105.7,98,104.1,93z M152.1,93h37.4c-2.2,17.2-16.1,17.2-17.7,17.2l-0.2,0C158.7,110.1,153.7,98.1,152.1,93z M218.8,110.2l-0.2,0c-12.9,0-18-12.1-19.5-17.2h37.4C234.3,110.2,220.4,110.2,218.8,110.2z M41,15h169l28.6,70H12L41,15z M13.6,93 h36.1c0.1,0.7,0.3,1.4,0.6,2.2c-2.2,5.7-7.5,15-18.7,15l-0.2,0C30.7,110.2,15.9,110.6,13.6,93z M35,117.9c9.3-1.2,15.6-7,19.5-13.3 c4.4,7.1,11.8,13.6,23,13.6c1.5,0,12.2-0.2,19.5-8.7V210H35V117.9z M239,234H13v-16h226V234z' })
-	            ),
+	            React.createElement('rect', { x: '45', y: '23', width: '160', height: '8' }),
+	            React.createElement('rect', { x: '133.8', y: '135.3', transform: 'matrix(0.7012 -0.713 0.713 0.7012 -55.6632 145.7103)', width: '24.3', height: '8' }),
+	            React.createElement('rect', { x: '136.4', y: '147.9', transform: 'matrix(0.7058 -0.7084 0.7084 0.7058 -59.9895 159.4118)', width: '51', height: '8' }),
+	            React.createElement('rect', { x: '172.5', y: '153.8', transform: 'matrix(-0.7033 -0.7109 0.7109 -0.7033 182.7199 407.7907)', width: '8', height: '24' }),
+	            React.createElement('path', { d: 'M65,175h20v-39H65V175z M73,144h4v23h-4V144z' }),
+	            React.createElement('path', { d: 'M224,117.5c7.1-1.5,18.7-6.7,20.6-24.5h5.9L215.4,7H35.6L0,93h5.5C7.5,111.6,20,116.5,27,117.7V210H5v32h242v-32h-23V117.5 M105,210v-99.8c4.4,4.6,10.5,8,18.6,8c1.9,0,17.6-0.4,23.8-15.8c4.2,7.8,11.9,15.6,24.2,15.6c0,0,0.1,0,0.1,0 c2.2,0,16.8-0.5,23.2-14.6c4,6.9,10.7,13.6,21.1,14.6v92H105z M59.3,93h36.1c-2.2,17.2-16.1,17.2-17.7,17.2l-0.2,0 c-11.3,0-16.6-9.3-18.8-15C59,94.4,59.2,93.7,59.3,93z M104.1,93h37.4c-2.2,17.2-16.1,17.2-17.7,17.2l-0.2,0 C110.7,110.2,105.7,98,104.1,93z M152.1,93h37.4c-2.2,17.2-16.1,17.2-17.7,17.2l-0.2,0C158.7,110.1,153.7,98.1,152.1,93z M218.8,110.2l-0.2,0c-12.9,0-18-12.1-19.5-17.2h37.4C234.3,110.2,220.4,110.2,218.8,110.2z M41,15h169l28.6,70H12L41,15z M13.6,93 h36.1c0.1,0.7,0.3,1.4,0.6,2.2c-2.2,5.7-7.5,15-18.7,15l-0.2,0C30.7,110.2,15.9,110.6,13.6,93z M35,117.9c9.3-1.2,15.6-7,19.5-13.3 c4.4,7.1,11.8,13.6,23,13.6c1.5,0,12.2-0.2,19.5-8.7V210H35V117.9z M239,234H13v-16h226V234z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -42899,15 +42735,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/tag.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/tag.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/tag.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/tag.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -42915,7 +42751,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -42985,15 +42821,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/tax-free.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/tax-free.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/tax-free.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/tax-free.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43001,7 +42837,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43025,12 +42861,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M125.1,0.2C56.3,0.2,0.4,56.2,0.4,124.9s55.9,124.7,124.7,124.7c68.7,0,124.7-55.9,124.7-124.7S193.8,0.2,125.1,0.2z M125.1,10.2c32.2,0,61.3,13.3,82.1,34.7l-78.9,66.2L122.1,95h-9.7L96,138.3L32.1,192c-13.7-18.9-21.7-42-21.7-67.1 C10.4,61.7,61.8,10.2,125.1,10.2z M127.3,133h-9.4l7.2-6L127.3,133z M109.6,126.9l7.8-20.7l4,10.8L109.6,126.9z M125.1,239.6 c-34.6,0-65.7-15.4-86.7-39.8L92.9,154h7l3.1-8.5l5.4-4.5H130l4.8,13h9.8l-12.5-32.9l29.3-24.6l19.4,27.3L159.1,154h10.6l16.7-23.5 L203,154h10.5l-21.6-30.3L212.3,95h-10.6l-15.4,22l-15.5-22h-7.8l50.7-42.6c16.2,19.8,25.9,45,25.9,72.5 C239.7,188.1,188.3,239.6,125.1,239.6z' }),
-	                React.createElement('polygon', { points: '53,104 53,154 61,154 61,104 78,104 78,95 35,95 35,104 \t' })
-	            ),
+	            React.createElement('path', { d: 'M125.1,0.2C56.3,0.2,0.4,56.2,0.4,124.9s55.9,124.7,124.7,124.7c68.7,0,124.7-55.9,124.7-124.7S193.8,0.2,125.1,0.2zM125.1,10.2c32.2,0,61.3,13.3,82.1,34.7l-78.9,66.2L122.1,95h-9.7L96,138.3L32.1,192c-13.7-18.9-21.7-42-21.7-67.1C10.4,61.7,61.8,10.2,125.1,10.2z M127.3,133h-9.4l7.2-6L127.3,133z M109.6,126.9l7.8-20.7l4,10.8L109.6,126.9z M125.1,239.6c-34.6,0-65.7-15.4-86.7-39.8L92.9,154h7l3.1-8.5l5.4-4.5H130l4.8,13h9.8l-12.5-32.9l29.3-24.6l19.4,27.3L159.1,154h10.6l16.7-23.5L203,154h10.5l-21.6-30.3L212.3,95h-10.6l-15.4,22l-15.5-22h-7.8l50.7-42.6c16.2,19.8,25.9,45,25.9,72.5C239.7,188.1,188.3,239.6,125.1,239.6z' }),
+	            React.createElement('polygon', { points: '53,104 53,154 61,154 61,104 78,104 78,95 35,95 35,104 \t' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -43072,15 +42904,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/toolbox.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/toolbox.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/toolbox.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/toolbox.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43088,7 +42920,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43112,8 +42944,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M257.8,206.3c-17.4,0-31.5,14.1-31.5,31.5c0,17.4,14.1,31.5,31.5,31.5c17.4,0,31.5-14.1,31.5-31.5 C289.3,220.5,275.2,206.3,257.8,206.3z M257.8,255.3c-9.6,0-17.5-7.9-17.5-17.5s7.9-17.5,17.5-17.5s17.5,7.9,17.5,17.5 S267.5,255.3,257.8,255.3z' }),
-	            React.createElement('path', { d: 'M378,136.7V84.4l-26.7-33.8h-183l-29,34.2v51.8H1V199v1.7V407h517V200.7V199v-62.3H378z M165.3,94.4l15-17.8 h158.3L352,93.5v43.2H165.3V94.4z M504,391.7H15V213h133v62.5l31.2,29.5h156.9l33.4-28.8l0.5-63.2H504V391.7z M356.1,199l-0.5,70.8 L330.9,291H184.8L162,269.5V199H15v-48.3h489V199H356.1z' }),
+	            React.createElement('path', { d: 'M257.8,206.3c-17.4,0-31.5,14.1-31.5,31.5c0,17.4,14.1,31.5,31.5,31.5c17.4,0,31.5-14.1,31.5-31.5C289.3,220.5,275.2,206.3,257.8,206.3z M257.8,255.3c-9.6,0-17.5-7.9-17.5-17.5s7.9-17.5,17.5-17.5s17.5,7.9,17.5,17.5S267.5,255.3,257.8,255.3z' }),
+	            React.createElement('path', { d: 'M378,136.7V84.4l-26.7-33.8h-183l-29,34.2v51.8H1V199v1.7V407h517V200.7V199v-62.3H378z M165.3,94.4l15-17.8h158.3L352,93.5v43.2H165.3V94.4z M504,391.7H15V213h133v62.5l31.2,29.5h156.9l33.4-28.8l0.5-63.2H504V391.7z M356.1,199l-0.5,70.8L330.9,291H184.8L162,269.5V199H15v-48.3h489V199H356.1z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -43155,15 +42987,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/top-views.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/top-views.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/top-views.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/top-views.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43171,7 +43003,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43237,15 +43069,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/trade-arrow.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/trade-arrow.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/trade-arrow.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/trade-arrow.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43253,7 +43085,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43319,15 +43151,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/trade-logo.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/trade-logo.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/trade-logo.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/trade-logo.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43335,7 +43167,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43359,12 +43191,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M125.1,250l-2.5-1.5c-1-0.6-24.9-14.8-50.8-47.9c-23.7-30.4-53.6-83.3-60.8-162.4l-0.2-2.5l2.1-1.5 C14.8,32.8,60,0.3,125.4,0.3c38.4,0,75.8,11.3,111,33.7l2.1,1.4l0,2.5c0,1.4-0.7,34-14.7,76.4c-12.9,39.2-40.1,94.3-96.3,134.1 L125.1,250z M20.3,40c7.4,75.5,35.9,125.9,58.6,155.1c20.1,25.8,39.2,39.7,45.8,44.1c52.6-38.3,78.3-90.5,90.5-127.8 c11.4-34.6,13.7-62.9,14.1-71.2c-33.1-20.5-68.1-31-104-31C70.5,9.3,29.7,33.8,20.3,40z' }),
-	                React.createElement('path', { d: 'M124.9,209l-1.8-1.1c-0.7-0.4-18.4-10.9-37.4-35.3C68.2,150.3,46.3,111.4,41,53.2l-0.2-1.9l1.5-1.1 c1.4-1,34.6-24.9,82.8-24.9c28.3,0,55.8,8.3,81.7,24.8l1.6,1l0,1.9c0,1-0.5,25-10.8,56.2c-9.5,28.8-29.5,69.4-70.9,98.7L124.9,209z M47.8,54.5c5.4,55.5,26.4,92.6,43.1,114.1c14.8,19,28.9,29.2,33.7,32.5c38.7-28.2,57.6-66.6,66.6-94c8.4-25.4,10.1-46.2,10.4-52.4 c-24.4-15.1-50.1-22.8-76.5-22.8C84.7,31.9,54.7,50,47.8,54.5z' })
-	            ),
+	            React.createElement('path', { d: 'M125.1,250l-2.5-1.5c-1-0.6-24.9-14.8-50.8-47.9c-23.7-30.4-53.6-83.3-60.8-162.4l-0.2-2.5l2.1-1.5C14.8,32.8,60,0.3,125.4,0.3c38.4,0,75.8,11.3,111,33.7l2.1,1.4l0,2.5c0,1.4-0.7,34-14.7,76.4c-12.9,39.2-40.1,94.3-96.3,134.1L125.1,250z M20.3,40c7.4,75.5,35.9,125.9,58.6,155.1c20.1,25.8,39.2,39.7,45.8,44.1c52.6-38.3,78.3-90.5,90.5-127.8c11.4-34.6,13.7-62.9,14.1-71.2c-33.1-20.5-68.1-31-104-31C70.5,9.3,29.7,33.8,20.3,40z' }),
+	            React.createElement('path', { d: 'M124.9,209l-1.8-1.1c-0.7-0.4-18.4-10.9-37.4-35.3C68.2,150.3,46.3,111.4,41,53.2l-0.2-1.9l1.5-1.1c1.4-1,34.6-24.9,82.8-24.9c28.3,0,55.8,8.3,81.7,24.8l1.6,1l0,1.9c0,1-0.5,25-10.8,56.2c-9.5,28.8-29.5,69.4-70.9,98.7L124.9,209zM47.8,54.5c5.4,55.5,26.4,92.6,43.1,114.1c14.8,19,28.9,29.2,33.7,32.5c38.7-28.2,57.6-66.6,66.6-94c8.4-25.4,10.1-46.2,10.4-52.4c-24.4-15.1-50.1-22.8-76.5-22.8C84.7,31.9,54.7,50,47.8,54.5z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -43406,15 +43234,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/trash-can.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/trash-can.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/trash-can.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/trash-can.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43422,7 +43250,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43446,11 +43274,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M85.2711396,13.0885776 L68.0392956,13.0885776 L68.0392956,3.06284968 C68.0392956,1.37011475 66.8167661,0 65.3104352,0 L35.6877456,0 C34.1795954,0 32.9588852,1.37011475 32.9588852,3.06284968 L32.9588852,13.0885776 L15.7288604,13.0885776 C14.2207102,13.0885776 13,14.4586924 13,16.1514273 L13,29.2400049 C13,30.9327398 14.2207102,32.3028546 15.7288604,32.3028546 L18.14845,32.3028546 L18.14845,96.9371503 C18.14845,98.6278433 19.3691602,100 20.8773104,100 L80.1226896,100 C81.6290205,100 82.85155,98.6278433 82.85155,96.9371503 L82.85155,32.3028546 L85.2711396,32.3028546 C86.7774705,32.3028546 88,30.9327398 88,29.2400049 L88,16.1514273 C88,14.4607343 86.7774705,13.0885776 85.2711396,13.0885776 Z M38.416606,6.12569935 L62.5815747,6.12569935 L62.5815747,13.0885776 L38.416606,13.0885776 L38.416606,6.12569935 Z M18.4577209,19.214277 L82.5422791,19.214277 L82.5422791,26.1771552 L18.4577209,26.1771552 L18.4577209,19.214277 Z M77.3938291,93.8743006 L23.6061709,93.8743006 L23.6061709,32.3028546 L32.9588852,32.3028546 L32.9588852,73.4675542 C32.9588852,75.1582472 34.1795954,76.5304039 35.6877456,76.5304039 C37.1958958,76.5304039 38.416606,75.1582472 38.416606,73.4675542 L38.416606,32.3028546 L47.7711396,32.3028546 L47.7711396,73.4675542 C47.7711396,75.1582472 48.9918498,76.5304039 50.5,76.5304039 C52.006331,76.5304039 53.2288604,75.1582472 53.2288604,73.4675542 L53.2288604,32.3028546 L62.583394,32.3028546 L62.583394,73.4675542 C62.583394,75.1582472 63.8059234,76.5304039 65.3122544,76.5304039 C66.8185854,76.5304039 68.0411148,75.1582472 68.0411148,73.4675542 L68.0411148,32.3028546 L77.3956484,32.3028546 L77.3956484,93.8743006 L77.3938291,93.8743006 Z' })
-	            ),
+	            React.createElement('path', { d: 'M85.2711396,13.0885776 L68.0392956,13.0885776 L68.0392956,3.06284968 C68.0392956,1.37011475 66.8167661,0 65.3104352,0 L35.6877456,0 C34.1795954,0 32.9588852,1.37011475 32.9588852,3.06284968 L32.9588852,13.0885776 L15.7288604,13.0885776 C14.2207102,13.0885776 13,14.4586924 13,16.1514273 L13,29.2400049 C13,30.9327398 14.2207102,32.3028546 15.7288604,32.3028546 L18.14845,32.3028546 L18.14845,96.9371503 C18.14845,98.6278433 19.3691602,100 20.8773104,100 L80.1226896,100 C81.6290205,100 82.85155,98.6278433 82.85155,96.9371503 L82.85155,32.3028546 L85.2711396,32.3028546 C86.7774705,32.3028546 88,30.9327398 88,29.2400049 L88,16.1514273 C88,14.4607343 86.7774705,13.0885776 85.2711396,13.0885776 Z M38.416606,6.12569935 L62.5815747,6.12569935 L62.5815747,13.0885776 L38.416606,13.0885776 L38.416606,6.12569935 Z M18.4577209,19.214277 L82.5422791,19.214277 L82.5422791,26.1771552 L18.4577209,26.1771552 L18.4577209,19.214277 Z M77.3938291,93.8743006 L23.6061709,93.8743006 L23.6061709,32.3028546 L32.9588852,32.3028546 L32.9588852,73.4675542 C32.9588852,75.1582472 34.1795954,76.5304039 35.6877456,76.5304039 C37.1958958,76.5304039 38.416606,75.1582472 38.416606,73.4675542 L38.416606,32.3028546 L47.7711396,32.3028546 L47.7711396,73.4675542 C47.7711396,75.1582472 48.9918498,76.5304039 50.5,76.5304039 C52.006331,76.5304039 53.2288604,75.1582472 53.2288604,73.4675542 L53.2288604,32.3028546 L62.583394,32.3028546 L62.583394,73.4675542 C62.583394,75.1582472 63.8059234,76.5304039 65.3122544,76.5304039 C66.8185854,76.5304039 68.0411148,75.1582472 68.0411148,73.4675542 L68.0411148,32.3028546 L77.3956484,32.3028546 L77.3956484,93.8743006 L77.3938291,93.8743006 Z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -43492,15 +43316,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/trash-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/trash-filled.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/trash-filled.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/trash-filled.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43508,7 +43332,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43532,12 +43356,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M15,15.25 L77,15.25 L77,0 L139.5,0 L139.5,15.25 L202,15.25 L202,32 L15,32 L15,15.25 Z' }),
-	                React.createElement('path', { d: 'M0,47 L218,47 L218,62 L206,62 L167,250 L50,250 L13.5,62 L0,62 L0,47 Z' })
-	            ),
+	            React.createElement('path', { d: 'M15,15.25 L77,15.25 L77,0 L139.5,0 L139.5,15.25 L202,15.25 L202,32 L15,32 L15,15.25 Z' }),
+	            React.createElement('path', { d: 'M0,47 L218,47 L218,62 L206,62 L167,250 L50,250 L13.5,62 L0,62 L0,47 Z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -43579,15 +43399,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/trash-outlined.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/trash-outlined.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/trash-outlined.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/trash-outlined.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43595,7 +43415,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43619,7 +43439,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M240,31h-60.3l-3.9-16.2l0-0.2c-0.1-0.4-1.2-3.9-4.2-7.4c-2.9-3.3-8.1-7.2-16.7-7.2H92.1 c-0.4,0-3.6,0.1-7.4,1.9c-3.5,1.7-8.1,5.3-10.3,12.6L71.7,31H10v9h18.8l15.7,185.5c0,1.8,0.3,9.8,6.4,16.3 c5.2,5.4,12.8,8.2,22.8,8.2h111.5l0.2,0c7.9-0.9,23-7.3,23.6-25.5L223.3,40H240V31z M83.1,16.9C85.4,9.6,91.4,9,92.2,9h62.5 c9.4,0,12,7,12.3,8l3.4,14H80.8L83.1,16.9z M200,223.8l0,0.2c-0.4,14.2-13.1,16.6-15.4,16.9h-111c-7.3,0-12.8-1.8-16.2-5.3 c-4.2-4.3-4-10.1-4-10.1l0-0.3L37.8,40h176.4L200,223.8z' }),
+	            React.createElement('path', { d: 'M240,31h-60.3l-3.9-16.2l0-0.2c-0.1-0.4-1.2-3.9-4.2-7.4c-2.9-3.3-8.1-7.2-16.7-7.2H92.1c-0.4,0-3.6,0.1-7.4,1.9c-3.5,1.7-8.1,5.3-10.3,12.6L71.7,31H10v9h18.8l15.7,185.5c0,1.8,0.3,9.8,6.4,16.3c5.2,5.4,12.8,8.2,22.8,8.2h111.5l0.2,0c7.9-0.9,23-7.3,23.6-25.5L223.3,40H240V31z M83.1,16.9C85.4,9.6,91.4,9,92.2,9h62.5c9.4,0,12,7,12.3,8l3.4,14H80.8L83.1,16.9z M200,223.8l0,0.2c-0.4,14.2-13.1,16.6-15.4,16.9h-111c-7.3,0-12.8-1.8-16.2-5.3c-4.2-4.3-4-10.1-4-10.1l0-0.3L37.8,40h176.4L200,223.8z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -43661,15 +43481,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/triangle-down.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/triangle-down.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/triangle-down.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/triangle-down.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43677,7 +43497,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43743,15 +43563,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/truck-moving.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/truck-moving.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/truck-moving.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/truck-moving.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43759,7 +43579,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43783,14 +43603,10 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M467.6,235.5c0.2-1.2,3.5-28.7-23.1-59.3l-2-2.3H390v68h76.8L467.6,235.5z M403.7,227v-38.4h32.8 c13.3,16.2,16.7,30.6,17.5,38.4H403.7z' }),
-	                React.createElement('path', { d: 'M412.8,355.1c-22.6,0-41.1,18.9-41.1,42.2c0,23.3,18.4,42.2,41.1,42.2c22.6,0,41.1-18.9,41.1-42.2 C453.8,374,435.4,355.1,412.8,355.1z M412.8,409.3c-6.5,0-11.7-5.4-11.7-12.1c0-6.7,5.3-12.1,11.7-12.1s11.7,5.4,11.7,12.1 C424.5,403.9,419.2,409.3,412.8,409.3z' }),
-	                React.createElement('path', { d: 'M120.8,355.1c-22.6,0-41.1,18.9-41.1,42.2c0,23.3,18.4,42.2,41.1,42.2c22.6,0,41.1-18.9,41.1-42.2 C161.8,374,143.4,355.1,120.8,355.1z M120.8,409.3c-6.5,0-11.7-5.4-11.7-12.1c0-6.7,5.3-12.1,11.7-12.1c6.5,0,11.7,5.4,11.7,12.1 C132.5,403.9,127.3,409.3,120.8,409.3z' }),
-	                React.createElement('path', { d: 'M501.9,313.3v-99.8l-15.4-42c-8.6-24.4-31.9-30.2-43.2-29.9h-80.6v14.1h80.7l0.2,0c0.9,0,22.4-0.3,29.7,20.5 l14.6,39.8v102.8l2,2c0.1,0.1,9.7,10.4,9.7,23.9v34.2c0,0.1-0.1,6.6-4.5,8.4h-10.4c-1.1-6.4-3.7-16.5-9.6-26.6 c-8.8-15.3-26.8-33.6-62.2-33.7c-2.6-0.2-16.2-0.8-31.4,6.1c-24.9,11.4-36.3,34.7-41.5,54.2H193.8c-2.1-6.3-6.5-17.1-14.2-28 c-11.8-16.5-27.1-27-44.9-30.8h228V76.6H3.5v251.9h22.3v72.8h36.5l0.9-5.9c8.5-53.4,51.2-54.4,53-54.4l0.2,0 c21.1-0.7,38.4,8,51.5,26.1c10.1,14,13.8,28.7,13.8,28.8l1.3,5.4h168.3l1.2-5.5c12.8-58.5,57.5-55,59.4-54.8l0.7,0 c55,0,58.8,51.5,58.9,53.7l0.4,6.6h25.1l0.9-0.2c12.4-3.2,15.7-15.9,15.7-22.2v-34.2C513.7,329.7,505.8,318,501.9,313.3z M17.1,90.7H349v223.8H17.1V90.7z M50.4,387.2H39.8v-58.7h64.6c-5.1,1.2-11.4,3.2-18,6.8C73.4,342.5,56.9,357.3,50.4,387.2z' })
-	            ),
+	            React.createElement('path', { d: 'M467.6,235.5c0.2-1.2,3.5-28.7-23.1-59.3l-2-2.3H390v68h76.8L467.6,235.5z M403.7,227v-38.4h32.8c13.3,16.2,16.7,30.6,17.5,38.4H403.7z' }),
+	            React.createElement('path', { d: 'M412.8,355.1c-22.6,0-41.1,18.9-41.1,42.2c0,23.3,18.4,42.2,41.1,42.2c22.6,0,41.1-18.9,41.1-42.2C453.8,374,435.4,355.1,412.8,355.1z M412.8,409.3c-6.5,0-11.7-5.4-11.7-12.1c0-6.7,5.3-12.1,11.7-12.1s11.7,5.4,11.7,12.1C424.5,403.9,419.2,409.3,412.8,409.3z' }),
+	            React.createElement('path', { d: 'M120.8,355.1c-22.6,0-41.1,18.9-41.1,42.2c0,23.3,18.4,42.2,41.1,42.2c22.6,0,41.1-18.9,41.1-42.2C161.8,374,143.4,355.1,120.8,355.1z M120.8,409.3c-6.5,0-11.7-5.4-11.7-12.1c0-6.7,5.3-12.1,11.7-12.1c6.5,0,11.7,5.4,11.7,12.1C132.5,403.9,127.3,409.3,120.8,409.3z' }),
+	            React.createElement('path', { d: 'M501.9,313.3v-99.8l-15.4-42c-8.6-24.4-31.9-30.2-43.2-29.9h-80.6v14.1h80.7l0.2,0c0.9,0,22.4-0.3,29.7,20.5l14.6,39.8v102.8l2,2c0.1,0.1,9.7,10.4,9.7,23.9v34.2c0,0.1-0.1,6.6-4.5,8.4h-10.4c-1.1-6.4-3.7-16.5-9.6-26.6c-8.8-15.3-26.8-33.6-62.2-33.7c-2.6-0.2-16.2-0.8-31.4,6.1c-24.9,11.4-36.3,34.7-41.5,54.2H193.8c-2.1-6.3-6.5-17.1-14.2-28c-11.8-16.5-27.1-27-44.9-30.8h228V76.6H3.5v251.9h22.3v72.8h36.5l0.9-5.9c8.5-53.4,51.2-54.4,53-54.4l0.2,0c21.1-0.7,38.4,8,51.5,26.1c10.1,14,13.8,28.7,13.8,28.8l1.3,5.4h168.3l1.2-5.5c12.8-58.5,57.5-55,59.4-54.8l0.7,0c55,0,58.8,51.5,58.9,53.7l0.4,6.6h25.1l0.9-0.2c12.4-3.2,15.7-15.9,15.7-22.2v-34.2C513.7,329.7,505.8,318,501.9,313.3zM17.1,90.7H349v223.8H17.1V90.7z M50.4,387.2H39.8v-58.7h64.6c-5.1,1.2-11.4,3.2-18,6.8C73.4,342.5,56.9,357.3,50.4,387.2z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -43832,15 +43648,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/twitter.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/twitter.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/twitter.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/twitter.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43848,7 +43664,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43914,15 +43730,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/upload-failed.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/upload-failed.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/upload-failed.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/upload-failed.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -43930,7 +43746,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -43954,16 +43770,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M124.5,249.3c-68.8,0-124.8-56-124.8-124.8S55.7-0.3,124.5-0.3s124.8,56,124.8,124.8S193.3,249.3,124.5,249.3z M124.5,9.7\r C61.2,9.7,9.7,61.2,9.7,124.5c0,63.3,51.5,114.8,114.8,114.8c63.3,0,114.8-51.5,114.8-114.8C239.3,61.2,187.8,9.7,124.5,9.7z' }),
-	                React.createElement(
-	                    'g',
-	                    null,
-	                    React.createElement('path', { d: 'M125.1,197.2c-6.2,0-11.1-4.9-11.1-11.1c0-6.2,4.9-11.3,11.1-11.3s11.3,5.1,11.3,11.3\r C136.5,192.3,131.4,197.2,125.1,197.2z M126.7,155.5h-3.1c-1.4-34-8.4-77.7-8.4-84.7c0-6.2,4.1-11.9,10.1-11.9\r c6.1,0,10.1,5.7,10.1,11.9C135.5,77.6,128.8,121.1,126.7,155.5z' })
-	                )
-	            ),
+	            React.createElement('path', { d: 'M124.5,249.3c-68.8,0-124.8-56-124.8-124.8S55.7-0.3,124.5-0.3s124.8,56,124.8,124.8S193.3,249.3,124.5,249.3z M124.5,9.7C61.2,9.7,9.7,61.2,9.7,124.5c0,63.3,51.5,114.8,114.8,114.8c63.3,0,114.8-51.5,114.8-114.8C239.3,61.2,187.8,9.7,124.5,9.7z' }),
+	            React.createElement('path', { d: 'M125.1,197.2c-6.2,0-11.1-4.9-11.1-11.1c0-6.2,4.9-11.3,11.1-11.3s11.3,5.1,11.3,11.3C136.5,192.3,131.4,197.2,125.1,197.2z M126.7,155.5h-3.1c-1.4-34-8.4-77.7-8.4-84.7c0-6.2,4.1-11.9,10.1-11.9c6.1,0,10.1,5.7,10.1,11.9C135.5,77.6,128.8,121.1,126.7,155.5z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -44005,15 +43813,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/video.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/video.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/video.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/video.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -44021,7 +43829,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -44045,11 +43853,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement(
-	                'g',
-	                null,
-	                React.createElement('path', { d: 'M0,0 L45.003131,0 L45.003131,33.75 L0,33.75 L0,0 Z M0.75,33 L44.253131,33 L44.253131,0.75 L0.75,0.75 L0.75,33 Z M32.375,10.9790132 L32.375,24.0212845 L27.0365789,20.855179 L27.0365789,22.1032548 C27.0365789,23.3557236 26.0438367,24.375 24.8142105,24.375 L15.8473684,24.375 C14.6177422,24.375 13.625,23.3557236 13.625,22.1032548 L13.625,12.8967452 C13.625,11.6442764 14.6177422,10.625 15.8473684,10.625 L24.8151978,10.6250013 C26.0425799,10.6282326 27.0318461,11.6465512 27.0318421,12.8967452 L27.0318421,14.1451187 L32.375,10.9790132 Z M26.2818421,15.461316 L26.2818421,12.896744 C26.2818448,12.0556451 25.6226873,11.3771297 24.8142105,11.375 L15.8473684,11.375 C15.0364478,11.375 14.375,12.0541271 14.375,12.8967452 L14.375,22.1032548 C14.375,22.9458729 15.0364478,23.625 15.8473684,23.625 L24.8142105,23.625 C25.6251311,23.625 26.2865789,22.9458729 26.2865789,22.1032548 L26.2865789,19.5383862 L31.625,22.7044917 L31.625,12.2952105 L26.2818421,15.461316 Z' })
-	            ),
+	            React.createElement('path', { d: 'M0,0 L45.003131,0 L45.003131,33.75 L0,33.75 L0,0 Z M0.75,33 L44.253131,33 L44.253131,0.75 L0.75,0.75 L0.75,33 Z M32.375,10.9790132 L32.375,24.0212845 L27.0365789,20.855179 L27.0365789,22.1032548 C27.0365789,23.3557236 26.0438367,24.375 24.8142105,24.375 L15.8473684,24.375 C14.6177422,24.375 13.625,23.3557236 13.625,22.1032548 L13.625,12.8967452 C13.625,11.6442764 14.6177422,10.625 15.8473684,10.625 L24.8151978,10.6250013 C26.0425799,10.6282326 27.0318461,11.6465512 27.0318421,12.8967452 L27.0318421,14.1451187 L32.375,10.9790132 Z M26.2818421,15.461316 L26.2818421,12.896744 C26.2818448,12.0556451 25.6226873,11.3771297 24.8142105,11.375 L15.8473684,11.375 C15.0364478,11.375 14.375,12.0541271 14.375,12.8967452 L14.375,22.1032548 C14.375,22.9458729 15.0364478,23.625 15.8473684,23.625 L24.8142105,23.625 C25.6251311,23.625 26.2865789,22.9458729 26.2865789,22.1032548 L26.2865789,19.5383862 L31.625,22.7044917 L31.625,12.2952105 L26.2818421,15.461316 Z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -44091,15 +43895,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/x-mark.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/x-mark.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/x-mark.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/x-mark.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -44107,7 +43911,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -44173,15 +43977,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/yoga.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/yoga.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/yoga.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/yoga.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -44189,7 +43993,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -44213,7 +44017,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M418.7,181.7l-2.1,0.8l0,0L418.7,181.7c-0.4-0.8-0.4-1.3-0.8-1.7c-0.8-2.1-2.1-3.8-4.2-4.6 c-5-2.5-13,0-22.3,3.4l-2.1,0.8c-7.1,2.5-15.1,5.5-20.6,3.4c-1.3-0.4-2.1-0.8-3.4-1.3c-7.6-2.9-17.2-7.1-25.2-2.5 c-6.7,3.8-8.4,13-8.8,19.3c-8,1.3-26,4.6-35.7,6.3c-4.2,0.8-7.1,1.3-10.1,2.1c-5.5,1.3-9.7,2.5-19.7,2.9 c8.4-7.1,19.7-16.8,26.5-23.9c12.6-12.6,21.8-27.7,26.9-43.7c4.6-15.1,4.6-26.9,0.4-37.4c-3.4-8.4-13.4-19.3-23.5-23.5 c-11.3-4.6-39.1-3.4-48.3,2.1c-3.8,2.1-22.7,13.4-33.2,26.5c-5,6.3-19.7,17.6-33.6,28.6c-9.7,7.6-19.7,15.5-27.3,21.8 c-4.2,3.8-8.4,7.6-12.6,11.3l-0.4,0.4c-12.6,10.9-23.1,20.2-30.2,29c-3.4,6.3-7.1,11.3-8.4,13c-4.2-1.3-16.4-6.3-20.2-10.1 c-2.9-2.9-8.8-6.3-15.1-8.8c-0.4-10.5-9.2-18.5-20.2-18.5s-20.2,8.8-20.2,19.7c0,0.4,0,1.3,0,1.7c-4.6,2.1-8.8,5-12.2,8.8 C5,216.6-2.5,233.4,0.4,242.6c0.4,2.1,0.8,3.8,1.3,5.5c0.8,4.6,2.1,10.1,8.4,12.6c1.3,0.4,2.1,2.1,2.9,4.2c1.7,2.5,3.4,6.3,8,7.6 c2.1,0.4,3.8,0.4,4.6,0.4c0.8,0,1.3,0,1.3,0s0,0.4,0.4,0.8c0.4,1.7,0.8,3.4,0.8,5.5c0.8,5,1.7,11.8,8,12.6c3.8,0.4,6.3-1.3,8-2.5 c3.8,2.5,7.6,4.2,13.4,5.9c7.6,1.7,10.1,2.1,13.9-2.1c2.1-2.1,3.4-5,4.6-8c0.4-1.3,1.3-2.9,2.1-4.6c1.3-2.1,2.1-3.8,14.7-5.5 c11.8-1.7,27.7-7.1,30.2-8.4c6.7,6.7,13.9,12.6,13.9,12.6c3.8,2.9,13,7.6,22.3,11.8c5.5,2.5,10.5,5,12.6,6.3 c5,3.4,15.5,11.8,20.2,16c1.3,1.3,2.5,2.5,4.6,4.2l0.4,0.4c5,4.6,13.4,12.2,15.1,16c2.1,4.6,2.9,21.4,3.4,31.5c0,2.5,0,4.6,0.4,6.3 c0.8,15.1,0.8,30.7,0.4,34.9c-1.3,0-3.4,0-4.6,0c-1.7,0-3.4,0-5.5,0h-0.8c-8.4,0-13.4,0-21.8,5.9c-4.6,3.4-13,5-18.9,6.3 c-2.5,0.4-4.6,0.8-6.3,1.7l-0.8,0.4c-4.2,1.3-8.8,2.5-9.7,6.7c-0.8,4.2,2.9,7.6,4.6,8.8c2.9,2.5,9.7,3.4,23.1,3.4 c10.1,0,23.1-0.4,43.3-1.7c3.8-0.4,6.7-0.4,7.6-0.4c5.9,0,8-4.2,9.7-7.6c0.8-2.1,2.5-5,5-8.8c8.4-12.2,12.6-107.9,12.6-108.8 c-0.4-4.2-6.3-9.7-26.5-25.6l-3.4-2.5c-1.7-1.3-5.5-3.8-11.3-7.6c5.9-1.7,12.2-3.8,17.6-5c11.3-2.9,48.3-14.7,61.3-19.3 c13.9-5,48.3-16.4,60.1-19.7c13.4-3.8,23.5-12.2,30.2-17.6c3.8-2.9,8.4-5.5,14.3-8.4c4.6-2.5,9.2-5,14.3-8 C418.7,192.6,422.1,188.9,418.7,181.7z M159.2,429.5l1.3-0.4c1.3-0.4,3.4-0.8,5-1.3h0.4c6.7-1.3,16-3.4,22.3-8 c5.9-4.2,8.4-4.2,16.8-4.2h0.8c1.7,0,3.4,0,5.5,0c5.9,0,11.3,0.4,13.4-5.5c1.7-5.5,0.4-38.6,0.4-39.1l-0.4-6.3 c-0.8-16.4-1.3-29.4-4.2-34.9c-2.5-5.5-10.9-13-17.2-18.9l-0.4-0.4c-1.7-1.7-3.4-2.9-4.2-3.8c-5-5-15.5-13.9-21.4-17.2 c-2.5-1.7-8-4.2-14.3-7.1c-7.1-3.4-17.2-8.4-20.2-10.5c-9.7-7.6-21-19.3-21.4-22.3c-0.4-1.3-0.8-2.1-2.1-2.9 c-0.8-0.8-2.1-0.8-3.4-0.8c-2.5,0.4-4.2,2.9-3.8,5.5c0.4,2.1,1.7,4.6,4.2,7.6c-5.5,1.7-16.4,5.5-24.8,6.7 c-12.2,1.7-18.1,3.8-21.4,10.5c-0.8,2.1-1.7,3.8-2.5,5.5c-0.8,2.1-1.7,3.8-2.1,4.6l-0.4,0.4c-0.4,0-2.5-0.4-5-0.8 c-5.5-1.3-8.4-2.9-12.6-5.9c-3.8-2.5-7.1,0-8.4,1.3c-0.4,0-0.4,0.4-0.8,0.8c-0.4-1.3-0.8-3.4-0.8-4.6c-0.4-2.1-0.8-4.2-1.3-6.7 c-2.1-7.1-7.1-7.6-10.5-7.6c-0.8,0-2.1,0-2.5-0.4c-0.4-0.4-1.3-1.7-1.7-2.5c-0.8-1.3-1.7-3.4-3.4-5.5c2.9-2.1,7.1-4.6,11.3-4.2 c8.4,1.7,17.2,0.8,17.6,0.8H50l-0.8-2.9c-1.3-3.8-2.1-9.2-0.8-10.1l0.8-0.4c2.9-2.5,4.2-3.8,9.2-0.4c8,5.5,18.9,3.4,23.9,0 c3.4-2.1,10.5-10.1,15.1-15.5c2.1,0.8,3.8,0.8,4.6,0.8c2.5,0,6.3-1.3,15.1-17.2c3.4-3.8,8-8.8,15.1-15.1c5,2.9,16,10.5,22.3,21 c5,8.8,6.7,23.1,7.6,31.9c-3.8-5-5.5-12.2-5.5-12.2c-0.4-2.5-2.9-4.2-5.5-3.8c-1.3,0.4-2.1,0.8-2.9,2.1c-0.8,0.8-0.8,2.1-0.8,3.4 c0.4,1.3,2.5,13,10.5,20.2c4.2,3.8,18.9,12.6,32.8,21.4l0.8,0.4c10.9,6.7,21.4,13.4,25.2,16l3.4,2.5l1.3-1.7l0,0l-1.3,1.7 c17.2,13.4,22.3,18.1,23.1,19.7c0.4,8-5,94.1-10.9,102.1c-2.9,4.2-4.6,8-5.9,10.1c-0.4,0.4-0.8,1.7-1.3,2.1c-1.3,0-4.2,0-8.4,0.4 C175.1,431.2,162.5,430.4,159.2,429.5C158.8,429.5,159.2,429.5,159.2,429.5z M410.3,185.9C410.3,185.9,410.3,186.3,410.3,185.9 c0,0.8-1.3,1.7-5,4.2l0,0c-4.6,2.9-9.2,5-13.4,7.6c-5.9,2.9-11.8,5.9-16,9.7c-5.9,5-15.1,12.6-26.9,16 c-12.2,3.4-46.6,15.1-60.9,19.7c-13.9,5-50,16.4-60.9,18.9c-9.2,2.5-21.8,6.3-25.6,7.6l-5.5-3.4c-8.8-5.5-18.5-11.3-24.8-15.5 l20.6-38.2c6.7-12.6,18.1-30.2,26-41.6c5.9-8,20.2-23.5,29.8-33.6l4.2-4.6c4.2,0.8,12.2,3.8,20.6,15.1c9.7,12.6,14.7,23.5,16.8,28.6 c-0.8,1.3-2.1,2.1-2.9,2.9c-10.5,10.5-30.7,27.3-36.1,31.5c-6.7,1.3-10.9,3.8-15.1,5.9c-1.7,0.8-2.9,1.7-5,2.5 c-10.9,4.6-19.3,21-19.7,21.8c-0.4,1.3-0.8,2.5-0.4,3.4c0.4,1.3,1.3,2.1,2.1,2.5c2.1,1.3,5,0.4,6.3-2.1c2.5-5,9.2-15.1,15.1-17.6 c2.1-0.8,3.8-1.7,5.9-2.9c5.9-2.9,10.1-5,23.5-5.5c13.4-0.4,18.9-1.7,25.6-3.4c2.5-0.8,5.5-1.3,9.2-2.1c12.6-2.1,39.1-6.7,39.5-7.1 c2.1-0.4,3.8-2.5,3.8-4.6c0-5,0.8-13,4.2-15.1c3.8-2.5,10.9,0.4,16.8,2.9c1.3,0.4,2.5,0.8,3.4,1.3c8.4,3.4,18.5-0.4,26.9-3.4 l2.5,0.4c9.7-3.4,13-3.8,14.7-3.8C409.5,184.7,409.9,185.5,410.3,185.9z M210.8,165.3c-4.6,6.7-10.5,15.1-16,23.9 c-2.9-5.5-7.6-12.2-11.3-16c-4.2-4.2-10.9-9.7-15.1-13c5.5-4.6,12.2-9.7,18.1-14.3l0,0c15.1-11.8,29-22.7,34.9-29.8c0,0,0,0,0-0.4 c2.9,3.8,7.1,9.7,9.2,13.9c1.7,3.4,2.9,6.3,3.8,8.4C225.5,147.7,215.5,158.6,210.8,165.3z' }),
+	            React.createElement('path', { d: 'M418.7,181.7l-2.1,0.8l0,0L418.7,181.7c-0.4-0.8-0.4-1.3-0.8-1.7c-0.8-2.1-2.1-3.8-4.2-4.6c-5-2.5-13,0-22.3,3.4l-2.1,0.8c-7.1,2.5-15.1,5.5-20.6,3.4c-1.3-0.4-2.1-0.8-3.4-1.3c-7.6-2.9-17.2-7.1-25.2-2.5c-6.7,3.8-8.4,13-8.8,19.3c-8,1.3-26,4.6-35.7,6.3c-4.2,0.8-7.1,1.3-10.1,2.1c-5.5,1.3-9.7,2.5-19.7,2.9c8.4-7.1,19.7-16.8,26.5-23.9c12.6-12.6,21.8-27.7,26.9-43.7c4.6-15.1,4.6-26.9,0.4-37.4c-3.4-8.4-13.4-19.3-23.5-23.5c-11.3-4.6-39.1-3.4-48.3,2.1c-3.8,2.1-22.7,13.4-33.2,26.5c-5,6.3-19.7,17.6-33.6,28.6c-9.7,7.6-19.7,15.5-27.3,21.8c-4.2,3.8-8.4,7.6-12.6,11.3l-0.4,0.4c-12.6,10.9-23.1,20.2-30.2,29c-3.4,6.3-7.1,11.3-8.4,13c-4.2-1.3-16.4-6.3-20.2-10.1c-2.9-2.9-8.8-6.3-15.1-8.8c-0.4-10.5-9.2-18.5-20.2-18.5s-20.2,8.8-20.2,19.7c0,0.4,0,1.3,0,1.7c-4.6,2.1-8.8,5-12.2,8.8C5,216.6-2.5,233.4,0.4,242.6c0.4,2.1,0.8,3.8,1.3,5.5c0.8,4.6,2.1,10.1,8.4,12.6c1.3,0.4,2.1,2.1,2.9,4.2c1.7,2.5,3.4,6.3,8,7.6c2.1,0.4,3.8,0.4,4.6,0.4c0.8,0,1.3,0,1.3,0s0,0.4,0.4,0.8c0.4,1.7,0.8,3.4,0.8,5.5c0.8,5,1.7,11.8,8,12.6c3.8,0.4,6.3-1.3,8-2.5c3.8,2.5,7.6,4.2,13.4,5.9c7.6,1.7,10.1,2.1,13.9-2.1c2.1-2.1,3.4-5,4.6-8c0.4-1.3,1.3-2.9,2.1-4.6c1.3-2.1,2.1-3.8,14.7-5.5c11.8-1.7,27.7-7.1,30.2-8.4c6.7,6.7,13.9,12.6,13.9,12.6c3.8,2.9,13,7.6,22.3,11.8c5.5,2.5,10.5,5,12.6,6.3c5,3.4,15.5,11.8,20.2,16c1.3,1.3,2.5,2.5,4.6,4.2l0.4,0.4c5,4.6,13.4,12.2,15.1,16c2.1,4.6,2.9,21.4,3.4,31.5c0,2.5,0,4.6,0.4,6.3c0.8,15.1,0.8,30.7,0.4,34.9c-1.3,0-3.4,0-4.6,0c-1.7,0-3.4,0-5.5,0h-0.8c-8.4,0-13.4,0-21.8,5.9c-4.6,3.4-13,5-18.9,6.3c-2.5,0.4-4.6,0.8-6.3,1.7l-0.8,0.4c-4.2,1.3-8.8,2.5-9.7,6.7c-0.8,4.2,2.9,7.6,4.6,8.8c2.9,2.5,9.7,3.4,23.1,3.4c10.1,0,23.1-0.4,43.3-1.7c3.8-0.4,6.7-0.4,7.6-0.4c5.9,0,8-4.2,9.7-7.6c0.8-2.1,2.5-5,5-8.8c8.4-12.2,12.6-107.9,12.6-108.8c-0.4-4.2-6.3-9.7-26.5-25.6l-3.4-2.5c-1.7-1.3-5.5-3.8-11.3-7.6c5.9-1.7,12.2-3.8,17.6-5c11.3-2.9,48.3-14.7,61.3-19.3c13.9-5,48.3-16.4,60.1-19.7c13.4-3.8,23.5-12.2,30.2-17.6c3.8-2.9,8.4-5.5,14.3-8.4c4.6-2.5,9.2-5,14.3-8C418.7,192.6,422.1,188.9,418.7,181.7z M159.2,429.5l1.3-0.4c1.3-0.4,3.4-0.8,5-1.3h0.4c6.7-1.3,16-3.4,22.3-8c5.9-4.2,8.4-4.2,16.8-4.2h0.8c1.7,0,3.4,0,5.5,0c5.9,0,11.3,0.4,13.4-5.5c1.7-5.5,0.4-38.6,0.4-39.1l-0.4-6.3c-0.8-16.4-1.3-29.4-4.2-34.9c-2.5-5.5-10.9-13-17.2-18.9l-0.4-0.4c-1.7-1.7-3.4-2.9-4.2-3.8c-5-5-15.5-13.9-21.4-17.2c-2.5-1.7-8-4.2-14.3-7.1c-7.1-3.4-17.2-8.4-20.2-10.5c-9.7-7.6-21-19.3-21.4-22.3c-0.4-1.3-0.8-2.1-2.1-2.9c-0.8-0.8-2.1-0.8-3.4-0.8c-2.5,0.4-4.2,2.9-3.8,5.5c0.4,2.1,1.7,4.6,4.2,7.6c-5.5,1.7-16.4,5.5-24.8,6.7c-12.2,1.7-18.1,3.8-21.4,10.5c-0.8,2.1-1.7,3.8-2.5,5.5c-0.8,2.1-1.7,3.8-2.1,4.6l-0.4,0.4c-0.4,0-2.5-0.4-5-0.8c-5.5-1.3-8.4-2.9-12.6-5.9c-3.8-2.5-7.1,0-8.4,1.3c-0.4,0-0.4,0.4-0.8,0.8c-0.4-1.3-0.8-3.4-0.8-4.6c-0.4-2.1-0.8-4.2-1.3-6.7c-2.1-7.1-7.1-7.6-10.5-7.6c-0.8,0-2.1,0-2.5-0.4c-0.4-0.4-1.3-1.7-1.7-2.5c-0.8-1.3-1.7-3.4-3.4-5.5c2.9-2.1,7.1-4.6,11.3-4.2c8.4,1.7,17.2,0.8,17.6,0.8H50l-0.8-2.9c-1.3-3.8-2.1-9.2-0.8-10.1l0.8-0.4c2.9-2.5,4.2-3.8,9.2-0.4c8,5.5,18.9,3.4,23.9,0c3.4-2.1,10.5-10.1,15.1-15.5c2.1,0.8,3.8,0.8,4.6,0.8c2.5,0,6.3-1.3,15.1-17.2c3.4-3.8,8-8.8,15.1-15.1c5,2.9,16,10.5,22.3,21c5,8.8,6.7,23.1,7.6,31.9c-3.8-5-5.5-12.2-5.5-12.2c-0.4-2.5-2.9-4.2-5.5-3.8c-1.3,0.4-2.1,0.8-2.9,2.1c-0.8,0.8-0.8,2.1-0.8,3.4c0.4,1.3,2.5,13,10.5,20.2c4.2,3.8,18.9,12.6,32.8,21.4l0.8,0.4c10.9,6.7,21.4,13.4,25.2,16l3.4,2.5l1.3-1.7l0,0l-1.3,1.7c17.2,13.4,22.3,18.1,23.1,19.7c0.4,8-5,94.1-10.9,102.1c-2.9,4.2-4.6,8-5.9,10.1c-0.4,0.4-0.8,1.7-1.3,2.1c-1.3,0-4.2,0-8.4,0.4C175.1,431.2,162.5,430.4,159.2,429.5C158.8,429.5,159.2,429.5,159.2,429.5z M410.3,185.9C410.3,185.9,410.3,186.3,410.3,185.9c0,0.8-1.3,1.7-5,4.2l0,0c-4.6,2.9-9.2,5-13.4,7.6c-5.9,2.9-11.8,5.9-16,9.7c-5.9,5-15.1,12.6-26.9,16c-12.2,3.4-46.6,15.1-60.9,19.7c-13.9,5-50,16.4-60.9,18.9c-9.2,2.5-21.8,6.3-25.6,7.6l-5.5-3.4c-8.8-5.5-18.5-11.3-24.8-15.5l20.6-38.2c6.7-12.6,18.1-30.2,26-41.6c5.9-8,20.2-23.5,29.8-33.6l4.2-4.6c4.2,0.8,12.2,3.8,20.6,15.1c9.7,12.6,14.7,23.5,16.8,28.6c-0.8,1.3-2.1,2.1-2.9,2.9c-10.5,10.5-30.7,27.3-36.1,31.5c-6.7,1.3-10.9,3.8-15.1,5.9c-1.7,0.8-2.9,1.7-5,2.5c-10.9,4.6-19.3,21-19.7,21.8c-0.4,1.3-0.8,2.5-0.4,3.4c0.4,1.3,1.3,2.1,2.1,2.5c2.1,1.3,5,0.4,6.3-2.1c2.5-5,9.2-15.1,15.1-17.6c2.1-0.8,3.8-1.7,5.9-2.9c5.9-2.9,10.1-5,23.5-5.5c13.4-0.4,18.9-1.7,25.6-3.4c2.5-0.8,5.5-1.3,9.2-2.1c12.6-2.1,39.1-6.7,39.5-7.1c2.1-0.4,3.8-2.5,3.8-4.6c0-5,0.8-13,4.2-15.1c3.8-2.5,10.9,0.4,16.8,2.9c1.3,0.4,2.5,0.8,3.4,1.3c8.4,3.4,18.5-0.4,26.9-3.4l2.5,0.4c9.7-3.4,13-3.8,14.7-3.8C409.5,184.7,409.9,185.5,410.3,185.9z M210.8,165.3c-4.6,6.7-10.5,15.1-16,23.9c-2.9-5.5-7.6-12.2-11.3-16c-4.2-4.2-10.9-9.7-15.1-13c5.5-4.6,12.2-9.7,18.1-14.3l0,0c15.1-11.8,29-22.7,34.9-29.8c0,0,0,0,0-0.4c2.9,3.8,7.1,9.7,9.2,13.9c1.7,3.4,2.9,6.3,3.8,8.4C225.5,147.7,215.5,158.6,210.8,165.3z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -44255,15 +44059,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/zoom-in.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/zoom-in.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/zoom-in.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/zoom-in.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -44271,7 +44075,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -44295,8 +44099,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M464.524,412.846l-97.929-97.925c23.6-34.068,35.406-72.04,35.406-113.917c0-27.218-5.284-53.249-15.852-78.087\r c-10.561-24.842-24.838-46.254-42.825-64.241c-17.987-17.987-39.396-32.264-64.233-42.826\r C254.246,5.285,228.217,0.003,200.999,0.003c-27.216,0-53.247,5.282-78.085,15.847C98.072,26.412,76.66,40.689,58.673,58.676\r c-17.989,17.987-32.264,39.403-42.827,64.241C5.282,147.758,0,173.786,0,201.004c0,27.216,5.282,53.238,15.846,78.083\r c10.562,24.838,24.838,46.247,42.827,64.241c17.987,17.986,39.403,32.257,64.241,42.825\r c24.841,10.563,50.869,15.844,78.085,15.844c41.879,0,79.852-11.807,113.922-35.405l97.929,97.641\r c6.852,7.231,15.406,10.849,25.693,10.849c10.089,0,18.699-3.566,25.838-10.705c7.139-7.138,10.704-15.748,10.704-25.837\r S471.567,419.889,464.524,412.846z M291.363,291.358c-25.029,25.033-55.148,37.549-90.364,37.549\r c-35.21,0-65.329-12.519-90.36-37.549c-25.031-25.029-37.546-55.144-37.546-90.36c0-35.21,12.518-65.334,37.546-90.36\r c25.026-25.032,55.15-37.546,90.36-37.546c35.212,0,65.331,12.519,90.364,37.546c25.033,25.026,37.548,55.15,37.548,90.36\r C328.911,236.214,316.392,266.329,291.363,291.358z' }),
-	            React.createElement('path', { d: 'M283.232,182.728h-63.954v-63.953c0-2.475-0.905-4.615-2.712-6.424c-1.809-1.809-3.951-2.712-6.423-2.712H191.87\r c-2.474,0-4.615,0.903-6.423,2.712c-1.807,1.809-2.712,3.949-2.712,6.424v63.953h-63.954c-2.474,0-4.615,0.905-6.423,2.712\r c-1.809,1.809-2.712,3.949-2.712,6.424v18.271c0,2.475,0.903,4.617,2.712,6.424c1.809,1.809,3.946,2.713,6.423,2.713h63.954\r v63.954c0,2.478,0.905,4.616,2.712,6.427c1.809,1.804,3.949,2.707,6.423,2.707h18.272c2.473,0,4.615-0.903,6.423-2.707\r c1.807-1.811,2.712-3.949,2.712-6.427v-63.954h63.954c2.478,0,4.612-0.905,6.427-2.713c1.804-1.807,2.703-3.949,2.703-6.424\r v-18.271c0-2.475-0.899-4.615-2.703-6.424C287.851,183.633,285.709,182.728,283.232,182.728z' }),
+	            React.createElement('path', { d: 'M464.524,412.846l-97.929-97.925c23.6-34.068,35.406-72.04,35.406-113.917c0-27.218-5.284-53.249-15.852-78.087c-10.561-24.842-24.838-46.254-42.825-64.241c-17.987-17.987-39.396-32.264-64.233-42.826C254.246,5.285,228.217,0.003,200.999,0.003c-27.216,0-53.247,5.282-78.085,15.847C98.072,26.412,76.66,40.689,58.673,58.676c-17.989,17.987-32.264,39.403-42.827,64.241C5.282,147.758,0,173.786,0,201.004c0,27.216,5.282,53.238,15.846,78.083c10.562,24.838,24.838,46.247,42.827,64.241c17.987,17.986,39.403,32.257,64.241,42.825c24.841,10.563,50.869,15.844,78.085,15.844c41.879,0,79.852-11.807,113.922-35.405l97.929,97.641c6.852,7.231,15.406,10.849,25.693,10.849c10.089,0,18.699-3.566,25.838-10.705c7.139-7.138,10.704-15.748,10.704-25.837S471.567,419.889,464.524,412.846z M291.363,291.358c-25.029,25.033-55.148,37.549-90.364,37.549c-35.21,0-65.329-12.519-90.36-37.549c-25.031-25.029-37.546-55.144-37.546-90.36c0-35.21,12.518-65.334,37.546-90.36c25.026-25.032,55.15-37.546,90.36-37.546c35.212,0,65.331,12.519,90.364,37.546c25.033,25.026,37.548,55.15,37.548,90.36C328.911,236.214,316.392,266.329,291.363,291.358z' }),
+	            React.createElement('path', { d: 'M283.232,182.728h-63.954v-63.953c0-2.475-0.905-4.615-2.712-6.424c-1.809-1.809-3.951-2.712-6.423-2.712H191.87c-2.474,0-4.615,0.903-6.423,2.712c-1.807,1.809-2.712,3.949-2.712,6.424v63.953h-63.954c-2.474,0-4.615,0.905-6.423,2.712c-1.809,1.809-2.712,3.949-2.712,6.424v18.271c0,2.475,0.903,4.617,2.712,6.424c1.809,1.809,3.946,2.713,6.423,2.713h63.954v63.954c0,2.478,0.905,4.616,2.712,6.427c1.809,1.804,3.949,2.707,6.423,2.707h18.272c2.473,0,4.615-0.903,6.423-2.707c1.807-1.811,2.712-3.949,2.712-6.427v-63.954h63.954c2.478,0,4.612-0.905,6.427-2.713c1.804-1.807,2.703-3.949,2.703-6.424v-18.271c0-2.475-0.899-4.615-2.703-6.424C287.851,183.633,285.709,182.728,283.232,182.728z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
@@ -44338,15 +44142,15 @@
 	    }
 	};
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/zoom-out.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/zoom-out.svg',
 	    components: _components,
 	    locals: [module],
 	    imports: [_react3.default]
 	});
 	
-	var _UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/Teddy/projects/dibs-vg/src/zoom-out.svg',
+	var _UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/shanie/projects/dibs-vg/src/zoom-out.svg',
 	    components: _components,
 	    locals: [],
 	    imports: [_react3.default, _index2.default]
@@ -44354,7 +44158,7 @@
 	
 	function _wrapComponent(id) {
 	    return function (Component) {
-	        return _UsersTeddyProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersTeddyProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	        return _UsersShanieProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersShanieProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
 	    };
 	}
 	
@@ -44378,8 +44182,8 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M464.524,412.846l-97.929-97.925c23.6-34.068,35.406-72.04,35.406-113.917c0-27.218-5.284-53.249-15.852-78.087\r c-10.561-24.842-24.838-46.254-42.825-64.241c-17.987-17.987-39.396-32.264-64.233-42.826\r C254.246,5.285,228.217,0.003,200.999,0.003c-27.216,0-53.247,5.282-78.085,15.847C98.072,26.412,76.66,40.689,58.673,58.676\r c-17.989,17.987-32.264,39.403-42.827,64.241C5.282,147.758,0,173.786,0,201.004c0,27.216,5.282,53.238,15.846,78.083\r c10.562,24.838,24.838,46.247,42.827,64.241c17.987,17.986,39.403,32.257,64.241,42.825\r c24.841,10.563,50.869,15.844,78.085,15.844c41.879,0,79.852-11.807,113.922-35.405l97.929,97.641\r c6.852,7.231,15.406,10.849,25.693,10.849c10.089,0,18.699-3.566,25.838-10.705c7.139-7.138,10.704-15.748,10.704-25.837\r S471.567,419.889,464.524,412.846z M291.363,291.358c-25.029,25.033-55.148,37.549-90.364,37.549\r c-35.21,0-65.329-12.519-90.36-37.549c-25.031-25.029-37.546-55.144-37.546-90.36c0-35.21,12.518-65.334,37.546-90.36\r c25.026-25.032,55.15-37.546,90.36-37.546c35.212,0,65.331,12.519,90.364,37.546c25.033,25.026,37.548,55.15,37.548,90.36\r C328.911,236.214,316.392,266.329,291.363,291.358z' }),
-	            React.createElement('path', { d: 'M283.228,182.728h-164.45c-2.474,0-4.615,0.905-6.423,2.712c-1.809,1.809-2.712,3.949-2.712,6.424v18.271\r c0,2.475,0.903,4.617,2.712,6.424c1.809,1.809,3.946,2.713,6.423,2.713h164.454c2.478,0,4.612-0.905,6.427-2.713\r c1.804-1.807,2.703-3.949,2.703-6.424v-18.271c0-2.475-0.903-4.615-2.707-6.424C287.851,183.633,285.706,182.728,283.228,182.728z\r ' }),
+	            React.createElement('path', { d: 'M464.524,412.846l-97.929-97.925c23.6-34.068,35.406-72.04,35.406-113.917c0-27.218-5.284-53.249-15.852-78.087c-10.561-24.842-24.838-46.254-42.825-64.241c-17.987-17.987-39.396-32.264-64.233-42.826C254.246,5.285,228.217,0.003,200.999,0.003c-27.216,0-53.247,5.282-78.085,15.847C98.072,26.412,76.66,40.689,58.673,58.676c-17.989,17.987-32.264,39.403-42.827,64.241C5.282,147.758,0,173.786,0,201.004c0,27.216,5.282,53.238,15.846,78.083c10.562,24.838,24.838,46.247,42.827,64.241c17.987,17.986,39.403,32.257,64.241,42.825c24.841,10.563,50.869,15.844,78.085,15.844c41.879,0,79.852-11.807,113.922-35.405l97.929,97.641c6.852,7.231,15.406,10.849,25.693,10.849c10.089,0,18.699-3.566,25.838-10.705c7.139-7.138,10.704-15.748,10.704-25.837S471.567,419.889,464.524,412.846z M291.363,291.358c-25.029,25.033-55.148,37.549-90.364,37.549c-35.21,0-65.329-12.519-90.36-37.549c-25.031-25.029-37.546-55.144-37.546-90.36c0-35.21,12.518-65.334,37.546-90.36c25.026-25.032,55.15-37.546,90.36-37.546c35.212,0,65.331,12.519,90.364,37.546c25.033,25.026,37.548,55.15,37.548,90.36C328.911,236.214,316.392,266.329,291.363,291.358z' }),
+	            React.createElement('path', { d: 'M283.228,182.728h-164.45c-2.474,0-4.615,0.905-6.423,2.712c-1.809,1.809-2.712,3.949-2.712,6.424v18.271c0,2.475,0.903,4.617,2.712,6.424c1.809,1.809,3.946,2.713,6.423,2.713h164.454c2.478,0,4.612-0.905,6.427-2.713c1.804-1.807,2.703-3.949,2.703-6.424v-18.271c0-2.475-0.903-4.615-2.707-6.424C287.851,183.633,285.706,182.728,283.228,182.728z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
