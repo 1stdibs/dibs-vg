@@ -1,0 +1,4 @@
+module.exports = `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="dibsvg-svg dibsvg-trade-arrow" viewBox="0 0 250 250">
+    <polygon points="154,41.4 147.6,49.1 229.2,117 0,117 0,127 228.4,127 147.5,199.8 154.1,207.2 249.9,121.2 "/>
+</svg>
+`;

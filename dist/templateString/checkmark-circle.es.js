@@ -1,0 +1,5 @@
+module.exports = `<svg version="1.1" class="dibsvg-svg dibsvg-checkmark-circle" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <circle class="dibsvg-checkmark-circle-background" fill="#ffffff" cx="125" cy="125" r="97.5"/>
+    <path class="dibsvg-checkmark-circle-foreground" d="M250,125c0,69-56,125-125,125S0,194,0,125S56,0,125,0S250,56,250,125z M170.7,62l-63.1,82.4L82.9,109l-20.5,14.3l44.3,63.5l83.9-109.6L170.7,62z"/>
+</svg>
+`;
