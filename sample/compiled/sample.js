@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f58de2274cba99412a8b"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ef1e0d542074715d1776"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/
@@ -42765,7 +42765,7 @@
 	    displayName: "StarFilled",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-star-filled", "viewBox": "0 -8 471 471", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
+	        return { "viewBox": "0 0 250 250", "version": "1.1", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -42777,7 +42777,7 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('path', { d: 'M381.12 448l-145.6-104.747-145.493 104.747 54.613-170.773-144.64-106.133 179.307-0.853 56.213-170.24 56.214 170.347 179.307 0.853-144.64 106.027 54.72 170.773z' }),
+	            React.createElement('polygon', { id: 'star-svg', points: '125 207.3 47.7 250 62.5 159.5 0 95.5 86.4 82.3 125 0 163.6 82.3 250 95.5 187.5 159.5 202.3 250' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
