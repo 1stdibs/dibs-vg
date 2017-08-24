@@ -1,7 +1,8 @@
 'use strict';
 
+const PropTypes = require('prop-types');
+
 const React = require('react');
-const { PropTypes } = React;
 
 /**
  * SvgComponent provides an example of how you would use an icon with react. SVG files get required outside of this
