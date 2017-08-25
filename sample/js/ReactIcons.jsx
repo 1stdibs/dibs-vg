@@ -3,6 +3,7 @@
 const SvgComponent = require('../../js/SvgComponent.jsx'); // eslint-disable-line react/require-extension
 const iconList = require('../../list.json');
 const React = require('react');
+const PropTypes = require('prop-types');
 const styles = require('../scss/sample.scss');
 
 /**
@@ -63,7 +64,7 @@ IconContainer.defaultProps = {
 };
 
 IconContainer.propTypes = {
-    icons: React.PropTypes.array
+    icons: PropTypes.array
 };
 
 module.exports = IconContainer;
