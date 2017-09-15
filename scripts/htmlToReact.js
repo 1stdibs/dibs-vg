@@ -25,7 +25,10 @@ module.exports = Component;
 
 const deprecationWarning = (fileName) => {
     if (deprecatedFileMap[fileName]) {
-        return `console.warn("dibs-vg | '${fileName}' svg is deprecated. Use '${deprecatedFileMap[fileName]}' <3 Majd");\n`;
+        return `if (process.env.NODE_ENV !== 'production') {
+            console.warn("dibs-vg | '${fileName}' svg is deprecated. Use '${deprecatedFileMap[fileName]}'. ❤️ Majd");
+        }
+        `;
     }
 
     return "";
