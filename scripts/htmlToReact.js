@@ -9,17 +9,29 @@ const Xml = require('xml2js');
 const attrKey = 'attributes';
 const parser = new Xml.Parser({attrkey: attrKey});
 const builder = new Xml.Builder({attrkey: attrKey, headless: true});
-const template = xml => {
+const deprecatedFileMap = require('./deprecatedFileMap');
+const template = (xml, warning = "") => {
     return `const React = require('react');
 class Component extends React.Component {
     render() {
-        return (
+        ${warning}return (
             ${xml}
         );
     }
 }
 module.exports = Component;
 `;
+};
+
+const deprecationWarning = (fileName) => {
+    if (deprecatedFileMap[fileName]) {
+        return `if (process.env.NODE_ENV !== 'production') {
+            console.warn("dibs-vg | '${fileName}' svg is deprecated. Use '${deprecatedFileMap[fileName]}'. ❤️ Majd");
+        }
+        `;
+    }
+
+    return "";
 };
 
 const convertToJsx = (fileName, html) => {
@@ -36,9 +48,11 @@ const convertToJsx = (fileName, html) => {
             ['version', 'class', 'xmlns', 'xmlns:xlink'].forEach(str => {
                 delete attr[str];
             });
-
             const xml = builder.buildObject(obj);
-            fulfill(template(xml.replace('<svg ', openingTagWithClass)));
+            const xmlString = xml.replace('<svg ', openingTagWithClass);
+            const warningString = deprecationWarning(fileName);
+            const templateString = template(xmlString, warningString);
+            fulfill(templateString);
             return true;
         });
     });
