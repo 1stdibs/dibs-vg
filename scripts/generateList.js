@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const deprecatedFileMap = require('./deprecatedFileMap');
 const checkError = err => {
     if (err) {
         throw err;
@@ -16,7 +17,8 @@ const buildList = () => {
     const rootPath = path.resolve(__dirname, '../');
     fs.readdir(`${rootPath}/src`, (error, ls) => {
         checkError(error);
-        const svgs = ls.filter(fileName => fileName.match(/\.svg$/));
+        const deprecatedFileNames = Object.keys(deprecatedFileMap).map(fileName => `${fileName}.svg`);
+        const svgs = ls.filter(fileName => fileName.match(/\.svg$/)).filter(fileName => !deprecatedFileNames.includes(fileName));
         fs.writeFile(
             `${rootPath}/list.json`,
             JSON.stringify(svgs, null, 2),
