@@ -109,3 +109,10 @@ html, body {
         color: #0066B2;
     }
 }
+
+:local(.button) {
+    color: #aaa;
+    border: 0px;
+    background-color: transparent;
+    font-size: 12px;
+}

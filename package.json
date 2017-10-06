@@ -1,12 +1,13 @@
 {
   "name": "dibs-vg",
-  "version": "1.42.2",
+  "version": "1.52.0",
   "description": "1stdibs's in-house vector graphics.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --port 9090 --content-base=./ --inline --watch --hot",
     "compile:webpack": "webpack -d --progress",
     "compile": "node ./scripts/generateList && node ./scripts/generateDist",
+    "compile-contributing": "node ./scripts/compileContributing",
     "build": "yarn compile && yarn compile:webpack",
     "gitlint": "node_modules/.bin/dibslint --git --warnings --es6",
     "lint": "dibslint --root=. --es6",
@@ -56,6 +57,7 @@
     "postcss-loader": "^0.9.1",
     "pre-commit": "^1.1.3",
     "precss": "^1.4.0",
+    "prop-types": "^15.5.10",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
     "sass-loader": "^3.2.0",
