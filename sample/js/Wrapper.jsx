@@ -26,7 +26,7 @@ class Wrapper extends React.Component {
         this.contributing.style.display = 'block';
     }
 
-    render () {
+    render() {
         return (
             <div>
                 <div className={styles.nav}>
