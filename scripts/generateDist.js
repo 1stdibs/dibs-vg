@@ -63,5 +63,6 @@ Promise.all(promises)
     })
     .catch(([err, file]) => {
         console.log(`Failed to compile SVG file ${file}`);
-        setTimeout(() => { throw err; });
+        console.error(err);
+        process.exit(1);
     });
