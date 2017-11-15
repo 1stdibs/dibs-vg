@@ -14,16 +14,7 @@ const svgs = fs.readdirSync(`${rootPath}/src`).filter(fileName => fileName.match
 const dist = `${rootPath}/dist/`;
 const stringDest = `${dist}/templateString`;
 const reactDest = `${dist}/react`;
-// a function to end process to prevent prepublish from completing if an error is encountered :
-const checkError = err => {
-    if (err) {
-        throw err;
-    }
-};
-
 let remaining = svgs.length;
-
-const promises = [];
 
 // make the dist directory and child directories if none exist :
 if (!fs.existsSync(dist)) {
@@ -35,7 +26,7 @@ if (!fs.existsSync(dist)) {
     }
 });
 
-svgs.forEach(file => {
+const promises = svgs.map(file => {
     const leFile = `${rootPath}/src/${file}`;
     const name = file.split('.')[0];
 
@@ -48,30 +39,30 @@ svgs.forEach(file => {
     fs.writeFileSync(`${stringDest}/${name}.js`, babel.transform(stringContents, { presets: ["es2015", "stage-2", "react"] }).code, { encoding: 'UTF-8' });
 
     // generate react module :
-    promises.push(new Promise((resolve, reject) => {
-        htmlToReact(name, contents).then(result => {
-            console.log(`compiling react component for ${name}. ${remaining} files left`);
-            remaining--;
+    return new Promise((resolve, reject) => {
+        htmlToReact(name, contents)
+            .then(result => {
+                console.log(`compiling react component for ${name}. ${remaining} files left`);
+                remaining--;
 
-            const babelResult = babel.transform(result, {
-                presets: ["es2015", "stage-2", "react"],
-                plugins: [htmlToReactAttributes]
-            });
-            fs.writeFileSync(`${reactDest}/${name}.js`, babelResult.code, { encoding: 'UTF-8' });
-            fs.writeFileSync(`${reactDest}/${name}.jsx`, result, { encoding: 'UTF-8' });
-            resolve();
-        }).catch((err) => {
-            reject(err);
-        });
-    }));
+                const babelResult = babel.transform(result, {
+                    presets: ["es2015", "stage-2", "react"],
+                    plugins: [htmlToReactAttributes]
+                });
+                fs.writeFileSync(`${reactDest}/${name}.js`, babelResult.code, { encoding: 'UTF-8' });
+                fs.writeFileSync(`${reactDest}/${name}.jsx`, result, { encoding: 'UTF-8' });
+                resolve();
+            })
+            .catch((err) => reject([err, file]));
+    });
 });
 
 Promise.all(promises)
-    .then(
-        () => {
-            process.exit(0);
-        },
-        function (reason) {
-            checkError(reason);
-        }
-    );
+    .then(() => {
+        console.log("Successfully compiled all SVG files.");
+    })
+    .catch(([err, file]) => {
+        console.log(`Failed to compile SVG file ${file}`);
+        console.error(err);
+        process.exit(1);
+    });
