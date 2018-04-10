@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "35cba48b3dcbcfaf4ed4"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "95840935d403885638b1"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/
@@ -41512,7 +41512,7 @@
 	    displayName: "MoreOptions",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "className": "dibsvg-svg dibsvg-more-options", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"],[null,\"style\",\"enable-background:new 0 0 250 250;\"]]", "x": "0px", "y": "0px", "width": "250px", "height": "250px", "viewBox": "0 0 250 250" };
+	        return { "className": "dibsvg-svg dibsvg-more-options", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]", "viewBox": "0 0 250 250", "version": "1.1" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -41524,9 +41524,9 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('circle', { className: 'dibsvg-svg dibsvg-more-options circle-0', cx: '125', cy: '62.5', r: '41.5' }),
-	            React.createElement('circle', { className: 'dibsvg-svg dibsvg-more-options circle-1', cx: '41.5', cy: '187.5', r: '41.5' }),
-	            React.createElement('circle', { className: 'dibsvg-svg dibsvg-more-options circle-2', cx: '208.5', cy: '187.5', r: '41.5' }),
+	            React.createElement('circle', { className: 'circle-0', cx: '125', cy: '62.5', r: '41.5' }),
+	            React.createElement('circle', { className: 'circle-1', cx: '41.5', cy: '187.5', r: '41.5' }),
+	            React.createElement('circle', { className: 'circle-2', cx: '208.5', cy: '187.5', r: '41.5' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
