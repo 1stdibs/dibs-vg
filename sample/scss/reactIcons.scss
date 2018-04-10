@@ -1,0 +1,96 @@
+@import '~dibs-scss-vars/colors';
+@import '~dibs-scss-mixins/scss/mixins/_fonts';
+@import '~dibs-styles/lib/vars/breakpoints';
+@import '~dibs-styles/lib/mixins/breakpoints';
+@import "../../scss/icons.scss";
+
+:local {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 27px 0 0;
+
+        @include media-breakpoint-down($breakpoint-medium) {
+            flex-direction: column;
+            align-items: left;
+        }
+    }
+
+    .header {
+        @include font-family-body-header;
+        margin: 0 0 18px 0;
+        font-size: 18px;
+        font-weight: normal;
+        color: $color-dark-primary;
+
+        &:after {
+            content: '';
+            display: block;
+            height: 4px;
+            width: 60px;;
+            margin-top: 9px;
+            background: $color-dark-primary;
+        }
+    }
+
+    .search {
+        @include font-family-body;
+        width: 335px;
+        padding: 9px;
+        margin: 0 0 18px 0;
+        border: 1px solid $color-light-tertiary;
+        font-size: 14px;
+        line-height: 18px;
+        color: $color-dark-primary;
+        letter-spacing: 1px;
+        -webkit-appearance: none;
+        border-radius: 0;
+        outline: none;
+
+        &:focus {
+            border-color: $satans-grey;
+        }
+    }
+
+    .svg {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        min-height: 100px;
+        padding: 9px;
+        margin: auto;
+        color: $color-dark-primary;
+
+        @include media-breakpoint-up($breakpoint-xlarge) {
+            padding: 18px;
+        }
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 18px;
+        grid-row-gap: 18px;
+
+        @include media-breakpoint-up($breakpoint-large) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include media-breakpoint-up($breakpoint-xlarge) {
+            grid-template-columns: repeat(9, 1fr);
+        }
+    }
+
+    .iconWrap {
+        border: 1px solid $color-light-tertiary;
+    }
+
+    .name {
+        display: block;
+        padding: 9px;
+        text-align: center;
+        border-top: 1px solid $color-light-tertiary;
+        letter-spacing: 0.5px;
+    }
+}

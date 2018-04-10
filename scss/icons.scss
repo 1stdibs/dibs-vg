@@ -1,15 +1,15 @@
 // Styling for icons including basic colors and common sizing.
 
-$icon-color-dark : #21242b;
+:global {
+    .dibsvg-icon {
+        height: 30px; /* default height, gets over-ridden by style rule in component */
+    }
 
-.dibsvg-icon {
-    fill: $icon-color-dark;
-    height: 30px; /* default height, gets over-ridden by style rule in component */
-}
-
-.dibsvg-svg {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
+    .dibsvg-svg {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        fill: currentColor;
+    }
 }

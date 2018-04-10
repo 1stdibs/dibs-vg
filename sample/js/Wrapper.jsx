@@ -28,19 +28,21 @@ class Wrapper extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className={styles.nav}>
-                    <a
-                        className={styles.button}
-                        onClick={this.showContributing}
-                        href="#Contributing"
-                    >
-                        View Guide To Contributing
-                    </a>
-                </div>
-                <div className={styles.logoWrapper}>
-                    <Logo className={styles.logo} />
-                    <span className={styles.logoCopy}>Icons</span>
+            <div className={styles.container}>
+                <div className={styles.head}>
+                    <div className={styles.logoWrapper}>
+                        <Logo className={styles.logo} />
+                        <span className={styles.logoCopy}>&#183; Icons</span>
+                    </div>
+                    <div className={styles.nav}>
+                        <a
+                            className={styles.link}
+                            onClick={this.showContributing}
+                            href="#Contributing"
+                        >
+                            View Guide To Contributing
+                        </a>
+                    </div>
                 </div>
                 <ReactIcons />
                 <div
