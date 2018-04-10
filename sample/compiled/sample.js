@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "e2d9d4ed99970d864ad0"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "35cba48b3dcbcfaf4ed4"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/
@@ -41524,9 +41524,9 @@
 	        return React.createElement(
 	            'svg',
 	            this.props,
-	            React.createElement('circle', { className: 'dibsvg-svg dibsvg-more-options circle-0', 'data-svgreactloader': '[[null,"style","fill:#6A92BB;"]]', cx: '125', cy: '62.5', r: '41.5' }),
-	            React.createElement('circle', { className: 'dibsvg-svg dibsvg-more-options circle-1', 'data-svgreactloader': '[[null,"style","fill:#CC0000;"]]', cx: '41.5', cy: '187.5', r: '41.5' }),
-	            React.createElement('circle', { className: 'dibsvg-svg dibsvg-more-options circle-2', 'data-svgreactloader': '[[null,"style","fill:#A38E44;"]]', cx: '208.5', cy: '187.5', r: '41.5' }),
+	            React.createElement('circle', { className: 'dibsvg-svg dibsvg-more-options circle-0', cx: '125', cy: '62.5', r: '41.5' }),
+	            React.createElement('circle', { className: 'dibsvg-svg dibsvg-more-options circle-1', cx: '41.5', cy: '187.5', r: '41.5' }),
+	            React.createElement('circle', { className: 'dibsvg-svg dibsvg-more-options circle-2', cx: '208.5', cy: '187.5', r: '41.5' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
