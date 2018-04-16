@@ -36,7 +36,12 @@ module.exports = {
             { test: /\.svg$/, loader: 'svg-react' },
             { test: /\.json/, loader: 'json' },
             // importLoaders=1 uses global as default, not local
-            { test: /\.scss/, loaders: ['style', 'css?importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', 'postcss'] }
+            { test: /\.scss/, loaders: [
+                'style',
+                'css-loader?modules&importLoaders=1&camelCase&localIdentName=[name]__[local]___[hash:base64:5]',
+                'postcss',
+                'sass-loader?outputStyle=expanded&includePaths[]=node_modules'
+            ] }
         ],
         resolve: {
             alias: {

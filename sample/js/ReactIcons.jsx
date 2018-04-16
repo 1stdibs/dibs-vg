@@ -4,7 +4,7 @@ const SvgComponent = require('../../js/SvgComponent.jsx'); // eslint-disable-lin
 const iconList = require('../../list.json');
 const React = require('react');
 const PropTypes = require('prop-types');
-const styles = require('../scss/sample.scss');
+const styles = require('../scss/reactIcons.scss');
 
 /**
  * IconsContainer renders each of the icons using the SvgComponent for the react demo sample page.
@@ -35,7 +35,7 @@ class IconContainer extends React.Component {
                     return null;
                 }
                 return (
-                    <div key={icon} className={styles.container}>
+                    <div key={icon} className={styles.iconWrap}>
                         <SvgComponent className={styles.svg} display={''}>
                             <Icon />
                         </SvgComponent>
@@ -48,12 +48,14 @@ class IconContainer extends React.Component {
     }
     render() {
         return (
-            <div className={styles.root}>
-                <div className={styles.headerWrapper}>
-                    <h1 className={styles.header}>These icons are built with React:</h1>
+            <div>
+                <div className={styles.wrapper}>
+                    <h1 className={styles.header}>Icons built with React</h1>
                     <input type="text" className={styles.search} placeholder="Find icon" onChange={this._matchIcons} />
                 </div>
-                {this._renderIcons()}
+                <div className={styles.icons}>
+                    {this._renderIcons()}
+                </div>
             </div>
         );
     }
