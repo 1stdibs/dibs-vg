@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "6a1cf1fb16e06ce1d2d5"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "fc1bfa752108714ac614"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/
@@ -37735,7 +37735,7 @@
 	    displayName: "FlagGb",
 	
 	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"],[null,\"style\",\"enable-background:new 0 0 999 600;\"]]", "viewBox": "0 0 999 600" };
+	        return { "version": "1.1", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]", "viewBox": "0 0 999 600" };
 	    },
 	    componentDidMount: function componentDidMount() {
 	        helpers.applyXmlAttributes(this);
@@ -37823,7 +37823,7 @@
 					displayName: "FlagUs",
 	
 					getDefaultProps: function getDefaultProps() {
-									return { "version": "1.1", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"],[null,\"style\",\"enable-background:new 0 0 1001 650;\"]]", "viewBox": "0 0 1001 650" };
+									return { "version": "1.1", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]", "viewBox": "0 0 1001 650" };
 					},
 					componentDidMount: function componentDidMount() {
 									helpers.applyXmlAttributes(this);
