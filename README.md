@@ -136,5 +136,4 @@ Inline SVGs are great, not only because they're more performant, but they're als
 ## Gotchas :
 
 - A SVG will not be compiled into the `dist` folder properly if the opening `<svg>` tag contains the `xml:space="preserve"` attribute.
-- The SVGs automatically have styling that adds height of `100%` and width of `100%`. In non-IE11 browsers, setting just one of those to an explicit value (e.g. `height: 25px`) correctly sizes the svg container element to the correct size but in IE11 it adds whitespace in the dimension that wasn't explicitly set. Make sure to add sizes to both dimension (e.g. `height: 25px; width: 25px;`)
-- The SVGs automatically have the css rule `fill: currentColor;` (which I couldn't find any reference to on MDN!) which is supposed to set the fill of an SVG with an inherited `color` rule. This doesn't work in IE11. Use `fill: <color>`.
+- The SVGs automatically have styling that adds height: 100% and width: 100%. In non-IE11 browsers, setting just one of those to an explicit value (e.g. height: 25px) on the containing element correctly sizes the svg container. However, IE11 adds whitespace in the dimension that was not explicitly set. To fix this, make sure to add sizes to both dimension (e.g. height: 25px; width: 25px;).
