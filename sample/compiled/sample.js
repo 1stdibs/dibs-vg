@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "8a666181bdc380cd8135"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "74bfd61c6bd7afa1008c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/
@@ -31054,11 +31054,11 @@
 		"logo-trade-mobile.svg",
 		"logo-trade.svg",
 		"logo.svg",
-		"loud-speaker.svg",
 		"luggage.svg",
 		"magnifying-glass.svg",
 		"make-offer.svg",
 		"mask.svg",
+		"megaphone.svg",
 		"message-archive.svg",
 		"message-bubble-dots.svg",
 		"message-read.svg",
@@ -31887,11 +31887,11 @@
 		"./logo-trade-mobile.svg": 462,
 		"./logo-trade.svg": 463,
 		"./logo.svg": 464,
-		"./loud-speaker.svg": 465,
-		"./luggage.svg": 466,
-		"./magnifying-glass.svg": 467,
-		"./make-offer.svg": 468,
-		"./mask.svg": 469,
+		"./luggage.svg": 465,
+		"./magnifying-glass.svg": 466,
+		"./make-offer.svg": 467,
+		"./mask.svg": 468,
+		"./megaphone.svg": 469,
 		"./message-archive.svg": 470,
 		"./message-bubble-dots.svg": 471,
 		"./message-read.svg": 472,
@@ -41248,88 +41248,6 @@
 
 /***/ },
 /* 465 */
-/*!******************************!*\
-  !*** ./src/loud-speaker.svg ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
-	
-	var _index = __webpack_require__(/*! ./~/redbox-react/lib/index.js */ 181);
-	
-	var _index2 = _interopRequireDefault(_index);
-	
-	var _index3 = __webpack_require__(/*! ./~/react-transform-catch-errors/lib/index.js */ 186);
-	
-	var _index4 = _interopRequireDefault(_index3);
-	
-	var _react2 = __webpack_require__(/*! react */ 2);
-	
-	var _react3 = _interopRequireDefault(_react2);
-	
-	var _index5 = __webpack_require__(/*! ./~/react-transform-hmr/lib/index.js */ 187);
-	
-	var _index6 = _interopRequireDefault(_index5);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var _components = {
-	    LoudSpeaker: {
-	        displayName: 'LoudSpeaker'
-	    }
-	};
-	
-	var _UsersJaredkassProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/jaredkass/projects/dibs-vg/src/loud-speaker.svg',
-	    components: _components,
-	    locals: [module],
-	    imports: [_react3.default]
-	});
-	
-	var _UsersJaredkassProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/jaredkass/projects/dibs-vg/src/loud-speaker.svg',
-	    components: _components,
-	    locals: [],
-	    imports: [_react3.default, _index2.default]
-	});
-	
-	function _wrapComponent(id) {
-	    return function (Component) {
-	        return _UsersJaredkassProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersJaredkassProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
-	    };
-	}
-	
-	var React = __webpack_require__(/*! react */ 2);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 351)(__webpack_require__(/*! react-dom */ 33));
-	
-	module.exports = _wrapComponent('LoudSpeaker')(React.createClass({
-	
-	    displayName: "LoudSpeaker",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-loud-speaker", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]", "viewBox": "0 0 250 250" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement('path', { d: 'M250.1,120.6c0-21.1-16-38.5-36.5-40.8V23.3c0-1.7-0.9-3.2-2.5-4c-1.5-0.8-3.3-0.6-4.7,0.4c-11.3,8.2-21,15.8-29.5,22.4 c-35.3,27.6-53,41.4-109,41.4H40.5c-10.7,0-20.8,4.2-28.5,11.8C4.4,103,0.2,113.1,0.2,123.9c0,16.4,9.9,31,24.8,37.1l8.3,55.2 c0,0.1,0,0.1,0,0.2c1.7,8.7,9.4,14.8,17.9,14.8c1.2,0,2.3-0.1,3.5-0.3c0,0,0,0,0,0c9.8-2,16.3-11.5,14.4-21.3l-6.5-45.3h5.1 c6.2,0,11.8,0.2,17.2,0.5c22.9,1.4,39.8,6,56.3,15.5c11.4,6.5,22,14.9,35.5,25.4c8.5,6.7,18.1,14.2,29.5,22.5 c0.8,0.6,1.7,0.9,2.6,0.9c0.7,0,1.4-0.2,2-0.5c1.5-0.8,2.5-2.3,2.5-4v-63C234,159.1,250.1,141.7,250.1,120.6z M60.3,210.8 c0,0.1,0,0.1,0,0.2c1,5-2.3,9.9-7.3,10.9c-5,1-9.9-2.3-10.9-7.2l-7.6-51.1c0.2,0,0.4,0.1,0.6,0.1c0.2,0,0.4,0.1,0.7,0.1 c0.3,0,0.6,0.1,0.9,0.1c0.2,0,0.4,0,0.6,0.1c0.3,0,0.7,0,1.1,0.1c0.2,0,0.4,0,0.5,0c0.5,0,1.1,0,1.6,0h13.1L60.3,210.8z M57.5,155.1 h-17c-3.5,0-6.8-0.6-10.1-1.7c-12.7-4.3-21.3-16.1-21.3-29.6c0-8.3,3.3-16.2,9.2-22.1c5.9-5.9,13.8-9.2,22.1-9.2h27.3 c4.5,0,8.8-0.1,13-0.3v63.1c-4.1-0.2-8.4-0.3-13-0.3H57.5z M182.4,198.5c-13.2-10.4-24.7-19.3-36.6-26.1 c-16.8-9.6-33.7-14.5-56-16.3V91.7c42.8-3.6,61.7-18.3,92.6-42.5c6.6-5.2,13.9-10.8,22.1-17v51.6c0,0.1,0,0.1,0,0.2s0,0.1,0,0.2 v72.7c0,0.1,0,0.1,0,0.2s0,0.1,0,0.2v58.1C196.3,209.3,189,203.6,182.4,198.5z M213.5,152.3V88.8c15.5,2.2,27.5,15.6,27.5,31.7 C241.1,136.7,229.1,150.1,213.5,152.3z' }),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	}));
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
-
-/***/ },
-/* 466 */
 /*!*************************!*\
   !*** ./src/luggage.svg ***!
   \*************************/
@@ -41411,7 +41329,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 467 */
+/* 466 */
 /*!**********************************!*\
   !*** ./src/magnifying-glass.svg ***!
   \**********************************/
@@ -41493,7 +41411,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 468 */
+/* 467 */
 /*!****************************!*\
   !*** ./src/make-offer.svg ***!
   \****************************/
@@ -41577,7 +41495,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 469 */
+/* 468 */
 /*!**********************!*\
   !*** ./src/mask.svg ***!
   \**********************/
@@ -41650,6 +41568,88 @@
 	            'svg',
 	            this.props,
 	            React.createElement('path', { d: 'M1044.6,5c-47,44.5-253.2,94.9-330,115.2C637.2,140.8,572,176.4,530,216.9c-42-40.5-107.2-76.1-184.6-96.6 C268.5,99.9,62.3,49.6,15.3,5c-40-37.8,9.4,148.4,21.3,186.3C98.8,388.4,142.1,389.4,268.5,411c70.6,12.1,146.6,12.3,206-1.6 c26.6-15.4,23.3-89.8,55.5-89.8c32.3,0,28.9,74.4,55.5,89.8c59.4,13.9,135.4,13.7,206,1.6c126.3-21.7,169.7-22.6,231.8-219.7 C1035.3,153.5,1084.6-32.8,1044.6,5z M441.6,306.6c-11.7,44.2-89,62.1-172.8,39.7c-83.5-22.1-142-75.9-130.3-120.2 c11.7-44.1,89.2-61.9,172.8-39.7C395.1,208.6,453.3,262.4,441.6,306.6z M793,346.3c-83.7,22.5-161,4.5-172.7-39.7 c-11.7-44.2,46.6-98,130.3-120.2c83.6-22.2,161-4.4,172.7,39.7C935,270.3,876.5,324.2,793,346.3z' }),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	}));
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
+
+/***/ },
+/* 469 */
+/*!***************************!*\
+  !*** ./src/megaphone.svg ***!
+  \***************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
+	
+	var _index = __webpack_require__(/*! ./~/redbox-react/lib/index.js */ 181);
+	
+	var _index2 = _interopRequireDefault(_index);
+	
+	var _index3 = __webpack_require__(/*! ./~/react-transform-catch-errors/lib/index.js */ 186);
+	
+	var _index4 = _interopRequireDefault(_index3);
+	
+	var _react2 = __webpack_require__(/*! react */ 2);
+	
+	var _react3 = _interopRequireDefault(_react2);
+	
+	var _index5 = __webpack_require__(/*! ./~/react-transform-hmr/lib/index.js */ 187);
+	
+	var _index6 = _interopRequireDefault(_index5);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var _components = {
+	    Megaphone: {
+	        displayName: 'Megaphone'
+	    }
+	};
+	
+	var _UsersJaredkassProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/jaredkass/projects/dibs-vg/src/megaphone.svg',
+	    components: _components,
+	    locals: [module],
+	    imports: [_react3.default]
+	});
+	
+	var _UsersJaredkassProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/jaredkass/projects/dibs-vg/src/megaphone.svg',
+	    components: _components,
+	    locals: [],
+	    imports: [_react3.default, _index2.default]
+	});
+	
+	function _wrapComponent(id) {
+	    return function (Component) {
+	        return _UsersJaredkassProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersJaredkassProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	    };
+	}
+	
+	var React = __webpack_require__(/*! react */ 2);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 351)(__webpack_require__(/*! react-dom */ 33));
+	
+	module.exports = _wrapComponent('Megaphone')(React.createClass({
+	
+	    displayName: "Megaphone",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "version": "1.1", "className": "dibsvg-svg dibsvg-megaphone", "xmlns": "http://www.w3.org/2000/svg", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]", "viewBox": "0 0 250 250" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement('path', { d: 'M250.1,120.6c0-21.1-16-38.5-36.5-40.8V23.3c0-1.7-0.9-3.2-2.5-4c-1.5-0.8-3.3-0.6-4.7,0.4c-11.3,8.2-21,15.8-29.5,22.4 c-35.3,27.6-53,41.4-109,41.4H40.5c-10.7,0-20.8,4.2-28.5,11.8C4.4,103,0.2,113.1,0.2,123.9c0,16.4,9.9,31,24.8,37.1l8.3,55.2 c0,0.1,0,0.1,0,0.2c1.7,8.7,9.4,14.8,17.9,14.8c1.2,0,2.3-0.1,3.5-0.3c0,0,0,0,0,0c9.8-2,16.3-11.5,14.4-21.3l-6.5-45.3h5.1 c6.2,0,11.8,0.2,17.2,0.5c22.9,1.4,39.8,6,56.3,15.5c11.4,6.5,22,14.9,35.5,25.4c8.5,6.7,18.1,14.2,29.5,22.5 c0.8,0.6,1.7,0.9,2.6,0.9c0.7,0,1.4-0.2,2-0.5c1.5-0.8,2.5-2.3,2.5-4v-63C234,159.1,250.1,141.7,250.1,120.6z M60.3,210.8 c0,0.1,0,0.1,0,0.2c1,5-2.3,9.9-7.3,10.9c-5,1-9.9-2.3-10.9-7.2l-7.6-51.1c0.2,0,0.4,0.1,0.6,0.1c0.2,0,0.4,0.1,0.7,0.1 c0.3,0,0.6,0.1,0.9,0.1c0.2,0,0.4,0,0.6,0.1c0.3,0,0.7,0,1.1,0.1c0.2,0,0.4,0,0.5,0c0.5,0,1.1,0,1.6,0h13.1L60.3,210.8z M57.5,155.1 h-17c-3.5,0-6.8-0.6-10.1-1.7c-12.7-4.3-21.3-16.1-21.3-29.6c0-8.3,3.3-16.2,9.2-22.1c5.9-5.9,13.8-9.2,22.1-9.2h27.3 c4.5,0,8.8-0.1,13-0.3v63.1c-4.1-0.2-8.4-0.3-13-0.3H57.5z M182.4,198.5c-13.2-10.4-24.7-19.3-36.6-26.1 c-16.8-9.6-33.7-14.5-56-16.3V91.7c42.8-3.6,61.7-18.3,92.6-42.5c6.6-5.2,13.9-10.8,22.1-17v51.6c0,0.1,0,0.1,0,0.2s0,0.1,0,0.2 v72.7c0,0.1,0,0.1,0,0.2s0,0.1,0,0.2v58.1C196.3,209.3,189,203.6,182.4,198.5z M213.5,152.3V88.8c15.5,2.2,27.5,15.6,27.5,31.7 C241.1,136.7,229.1,150.1,213.5,152.3z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
