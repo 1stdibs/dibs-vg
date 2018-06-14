@@ -1,5 +1,5 @@
-<svg version="1.1" class="dibsvg-svg dibsvg-wire-transfer" viewBox="0 0 500 312" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <rect class="dibsvg-color-holder" width="500" height="312" fill="#F8F8F8"/>
+<svg xmlns="http://www.w3.org/2000/svg" class="dibsvg-svg dibsvg-wire-transfer" viewBox="0 0 500 312">
+    <rect width="500" height="312" fill="#F8F8F8" class="dibsvg-color-holder"/>
     <g class="dibsvg-color-letters" transform="translate(31 68)">
         <polygon points="146.083 .75 131.5 63.25 114.833 .75 104.417 .75 87.75 63.25 73.167 .75 57.542 .75 79.417 82 94 82 109.625 22.625 125.25 82 139.833 82 161.708 .75"/>
         <polygon points="182.542 82 197.125 82 197.125 .75 182.542 .75"/>
