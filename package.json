@@ -9,15 +9,19 @@
     "compile": "node ./scripts/generateList && node ./scripts/generateDist",
     "compile-contributing": "node ./scripts/compileContributing",
     "build": "yarn compile && yarn compile:webpack",
-    "gitlint": "node_modules/.bin/dibslint --git --warnings --es6",
+    "format:svg": "svgo --input src --config .svgo-config.yml",
     "lint": "dibslint --root=. --es6",
+    "precommit": "lint-staged",
     "prepublish": "yarn compile",
     "preversion": "BRANCH=$(git rev-parse --abbrev-ref HEAD); if [ \"$BRANCH\" != \"master\" ] ; then echo \"you must be on master to version\";  exit 1 ; else echo \"on branch master\" ; fi",
     "postversion": "git push upstream master && git push --tags"
   },
-  "pre-commit": {
-    "run": [
-      "gitlint"
+  "lint-staged": {
+    "*.svg": [
+      "yarn format:svg"
+    ],
+    "*.js": [
+      "node_modules/.bin/dibslint --git --warnings --es6"
     ]
   },
   "repository": {
@@ -51,14 +55,15 @@
     "dibs-scss-vars": "^3.6.4",
     "dibs-styles": "^2.4.0",
     "dibslint": "^2.0.3",
+    "husky": "^0.14.3",
     "jquery": "^2.2.3",
     "json-loader": "^0.5.4",
     "jsx-loader": "^0.13.2",
+    "lint-staged": "^7.2.0",
     "marked": "^0.3.6",
     "node-sass": "^4.5.3",
     "postcss-import": "^8.1.2",
     "postcss-loader": "^2.0.10",
-    "pre-commit": "^1.1.3",
     "precss": "^1.4.0",
     "prop-types": "^15.5.10",
     "react": "^15.0.2",
@@ -66,6 +71,7 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
     "svg-react-loader": "^0.3.3",
+    "svgo": "^1.0.5",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1",
     "xml2js": "^0.4.16"
