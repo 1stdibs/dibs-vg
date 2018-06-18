@@ -50,8 +50,7 @@ class Wrapper extends React.Component {
                     style={{display: "none"}}
                     ref={ele => { this.contributing = ele; }}
                     dangerouslySetInnerHTML={contributingMarkup()}
-                >
-                </div>
+                 />
             </div>
         );
     }
