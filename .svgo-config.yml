@@ -37,7 +37,7 @@ plugins:
   - mergePaths: false
   - removeUnusedNS: true
   - sortAttrs: true
-  - removeTitle: true
+  - removeTitle: false
   - removeDesc: true
   - removeDimensions: true
   - removeAttrs:
