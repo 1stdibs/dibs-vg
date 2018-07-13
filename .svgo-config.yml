@@ -43,6 +43,7 @@ plugins:
   - removeAttrs:
       attrs:
         - "xml:space"
+        - "baseProfile"
   - removeElementsByAttr: false
   - addClassesToSVGElement: false
   - removeStyleElement: true
