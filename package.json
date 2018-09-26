@@ -13,8 +13,8 @@
     "lint": "eslint --ext .js,.jsx ./js ./scripts ./sample/js",
     "precommit": "lint-staged",
     "prepublish": "yarn compile",
-    "preversion": "BRANCH=$(git rev-parse --abbrev-ref HEAD); if [ \"$BRANCH\" != \"master\" ] ; then echo \"you must be on master to version\";  exit 1 ; else echo \"on branch master\" ; fi",
-    "postversion": "git push upstream master && git push --tags"
+    "postpublish": "node ./scripts/pushTags.js",
+    "preversion": "BRANCH=$(git rev-parse --abbrev-ref HEAD); if [ \"$BRANCH\" != \"master\" ] ; then echo \"you must be on master to version\";  exit 1 ; else echo \"on branch master\" ; fi"
   },
   "lint-staged": {
     "*.svg": [
