@@ -30,7 +30,7 @@ plugins:
   - moveElemsAttrsToGroup: false
   - moveGroupAttrsToElems: false
   - collapseGroups: true
-  - convertPathData: false
+  - convertPathData: true
   - convertTransform: false
   - removeEmptyAttrs: true
   - removeEmptyContainers: true
