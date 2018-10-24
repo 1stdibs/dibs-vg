@@ -2,7 +2,9 @@
 
 const ATTRIBUTES = {
     'class': 'className',
-    'fill-rule': 'fillRule'
+    'fill-rule': 'fillRule',
+    'fill-opacity': 'fillOpacity',
+    'stop-color': 'stopColor'
 };
 
 const transformHtmlToJsxAttributes = () => {

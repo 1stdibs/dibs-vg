@@ -1,6 +1,6 @@
 {
   "name": "dibs-vg",
-  "version": "1.76.0",
+  "version": "1.81.0",
   "description": "1stdibs's in-house vector graphics.",
   "main": "index.js",
   "scripts": {
@@ -51,6 +51,7 @@
     "babel-preset-stage-2": "^6.5.0",
     "babel-register": "^6.8.0",
     "backbone": "^1.3.3",
+    "camelcase": "^5.0.0",
     "css-loader": "^0.28.8",
     "dibs-scss-mixins": "^2.4.3",
     "dibs-scss-vars": "^3.6.4",
