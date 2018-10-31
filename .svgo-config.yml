@@ -11,10 +11,10 @@ plugins:
   - inlineStyles: false
   - minifyStyles: false
   - convertStyleToAttrs: false
-  - cleanupIDs: true
+  - cleanupIDs: false
   - prefixIds: false
   - removeRasterImages: true
-  - removeUselessDefs: true
+  - removeUselessDefs: false
   - cleanupNumericValues: false
   - cleanupListOfValues: false
   # will remove fill="#000000"
@@ -36,7 +36,7 @@ plugins:
   - removeEmptyContainers: true
   - mergePaths: false
   - removeUnusedNS: true
-  - sortAttrs: true
+  - sortAttrs: false
   - removeTitle: false
   - removeDesc: true
   - removeDimensions: true
@@ -46,7 +46,7 @@ plugins:
         - "baseProfile"
   - removeElementsByAttr: false
   - addClassesToSVGElement: false
-  - removeStyleElement: true
+  - removeStyleElement: false
   - removeScriptElement: true
   - addAttributesToSVGElement:
       attributes:
