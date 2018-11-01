@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="dibsvg-svg dibsvg-multicolor" viewBox="0 0 250 250">
+    <path fill="#F4D951" d="M0 125c0 34.5 14 65.8 36.6 88.4L125 125H0z"/>
+    <path fill="#0FBC00" d="M36.6 213.4C59.2 236 90.5 250 125 250V125l-88.4 88.4z"/>
+    <path fill="#E41F0D" d="M125 0C90.5 0 59.2 14 36.6 36.6L125 125V0z"/>
+    <path fill="#FF7A1D" d="M36.6 36.6C14 59.2 0 90.5 0 125h125L36.6 36.6z"/>
+    <path fill="#4E149F" d="M250 125c0-34.5-14-65.8-36.6-88.4L125 125h125z"/>
+    <path fill="#AD0979" d="M213.4 36.6C190.8 14 159.5 0 125 0v125l88.4-88.4z"/>
+    <path fill="#2442D2" d="M125 125l88.4 88.4C236 190.8 250 159.5 250 125H125z"/>
+    <path fill="#2ABDFF" d="M125 250c34.5 0 65.8-14 88.4-36.6L125 125v125z"/>
+</svg>
