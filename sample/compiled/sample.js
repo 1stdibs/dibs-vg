@@ -63,7 +63,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "e0a395f49331ef5834ab"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "912d0221cf38541d19fb"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/
@@ -22641,7 +22641,7 @@
 	
 	var React = __webpack_require__(/*! react */ 2);
 	var ReactIcons = __webpack_require__(/*! ./ReactIcons.jsx */ 336); // eslint-disable-line react/require-extension
-	var Logo = __webpack_require__(/*! ../../src/logo-no-reg.svg */ 466);
+	var Logo = __webpack_require__(/*! ../../src/logo-no-reg.svg */ 467);
 	var styles = __webpack_require__(/*! ../scss/sample.scss */ 579);
 	var contributing = __webpack_require__(/*! ./contributing */ 581);
 	function contributingMarkup() {
@@ -30993,6 +30993,7 @@
 		"circle-question-mark-filled.svg",
 		"clock.svg",
 		"close.svg",
+		"color-wheel.svg",
 		"commuter-train.svg",
 		"congratulations.svg",
 		"connection-error.svg",
@@ -31075,7 +31076,6 @@
 		"mobile-logo.svg",
 		"more-dots.svg",
 		"more-options.svg",
-		"multicolor.svg",
 		"net-price.svg",
 		"new-tab.svg",
 		"note-blank.svg",
@@ -31836,89 +31836,89 @@
 		"./circle-question-mark-filled.svg": 401,
 		"./clock.svg": 402,
 		"./close.svg": 403,
-		"./commuter-train.svg": 404,
-		"./congratulations.svg": 405,
-		"./connection-error.svg": 406,
-		"./copy.svg": 407,
-		"./credit-card.svg": 408,
-		"./customer-support.svg": 409,
-		"./diamond.svg": 410,
-		"./do-not-edit.svg": 411,
-		"./dollars.svg": 412,
-		"./dots-spinner.svg": 413,
-		"./download.svg": 414,
-		"./early-access.svg": 415,
-		"./email.svg": 416,
-		"./empty-project.svg": 417,
-		"./envelope.svg": 418,
-		"./exclamation-circle.svg": 419,
-		"./exclamation-triangle.svg": 420,
-		"./eye.svg": 421,
-		"./facebook.svg": 422,
-		"./file-doc.svg": 423,
-		"./file-excel.svg": 424,
-		"./file-pdf.svg": 425,
-		"./flag-de.svg": 426,
-		"./flag-fr.svg": 427,
-		"./flag-gb.svg": 428,
-		"./flag-us.svg": 429,
-		"./flag.svg": 430,
-		"./folder.svg": 431,
-		"./gallery.svg": 432,
-		"./gear-filled.svg": 433,
-		"./gear.svg": 434,
-		"./globe.svg": 435,
-		"./grid-empty.svg": 436,
-		"./grid.svg": 437,
-		"./hamburger-menu.svg": 438,
-		"./headshot.svg": 439,
-		"./heart-filled.svg": 440,
-		"./heart-outlined.svg": 441,
-		"./home.svg": 442,
-		"./hyperwallet.svg": 443,
-		"./icon-help-button-close.svg": 444,
-		"./icon-help-button-question-mark.svg": 445,
-		"./image-upload-drag.svg": 446,
-		"./image-upload-multiple.svg": 447,
-		"./image-upload.svg": 448,
-		"./image.svg": 449,
-		"./info-circle-filled.svg": 450,
-		"./info-circle.svg": 451,
-		"./inquiries.svg": 452,
-		"./instagram.svg": 453,
-		"./invoice.svg": 454,
-		"./iphone.svg": 455,
-		"./lightbulb.svg": 456,
-		"./linkedin.svg": 457,
-		"./list.svg": 458,
-		"./listing-views.svg": 459,
-		"./loader.svg": 460,
-		"./location-pin.svg": 461,
-		"./lock-with-checkmark.svg": 462,
-		"./lock.svg": 463,
-		"./logo-1st.svg": 464,
-		"./logo-introspective.svg": 465,
-		"./logo-no-reg.svg": 466,
-		"./logo-trade-mobile.svg": 467,
-		"./logo-trade.svg": 468,
-		"./logo.svg": 469,
-		"./luggage.svg": 470,
-		"./magnifying-glass.svg": 471,
-		"./make-offer.svg": 472,
-		"./mask.svg": 473,
-		"./megaphone.svg": 474,
-		"./message-archive.svg": 475,
-		"./message-bubble-dots.svg": 476,
-		"./message-read.svg": 477,
-		"./message-unread-circle.svg": 478,
-		"./message-unread.svg": 479,
-		"./message.svg": 480,
-		"./minus-circle-filled.svg": 481,
-		"./minus.svg": 482,
-		"./mobile-logo.svg": 483,
-		"./more-dots.svg": 484,
-		"./more-options.svg": 485,
-		"./multicolor.svg": 486,
+		"./color-wheel.svg": 404,
+		"./commuter-train.svg": 405,
+		"./congratulations.svg": 406,
+		"./connection-error.svg": 407,
+		"./copy.svg": 408,
+		"./credit-card.svg": 409,
+		"./customer-support.svg": 410,
+		"./diamond.svg": 411,
+		"./do-not-edit.svg": 412,
+		"./dollars.svg": 413,
+		"./dots-spinner.svg": 414,
+		"./download.svg": 415,
+		"./early-access.svg": 416,
+		"./email.svg": 417,
+		"./empty-project.svg": 418,
+		"./envelope.svg": 419,
+		"./exclamation-circle.svg": 420,
+		"./exclamation-triangle.svg": 421,
+		"./eye.svg": 422,
+		"./facebook.svg": 423,
+		"./file-doc.svg": 424,
+		"./file-excel.svg": 425,
+		"./file-pdf.svg": 426,
+		"./flag-de.svg": 427,
+		"./flag-fr.svg": 428,
+		"./flag-gb.svg": 429,
+		"./flag-us.svg": 430,
+		"./flag.svg": 431,
+		"./folder.svg": 432,
+		"./gallery.svg": 433,
+		"./gear-filled.svg": 434,
+		"./gear.svg": 435,
+		"./globe.svg": 436,
+		"./grid-empty.svg": 437,
+		"./grid.svg": 438,
+		"./hamburger-menu.svg": 439,
+		"./headshot.svg": 440,
+		"./heart-filled.svg": 441,
+		"./heart-outlined.svg": 442,
+		"./home.svg": 443,
+		"./hyperwallet.svg": 444,
+		"./icon-help-button-close.svg": 445,
+		"./icon-help-button-question-mark.svg": 446,
+		"./image-upload-drag.svg": 447,
+		"./image-upload-multiple.svg": 448,
+		"./image-upload.svg": 449,
+		"./image.svg": 450,
+		"./info-circle-filled.svg": 451,
+		"./info-circle.svg": 452,
+		"./inquiries.svg": 453,
+		"./instagram.svg": 454,
+		"./invoice.svg": 455,
+		"./iphone.svg": 456,
+		"./lightbulb.svg": 457,
+		"./linkedin.svg": 458,
+		"./list.svg": 459,
+		"./listing-views.svg": 460,
+		"./loader.svg": 461,
+		"./location-pin.svg": 462,
+		"./lock-with-checkmark.svg": 463,
+		"./lock.svg": 464,
+		"./logo-1st.svg": 465,
+		"./logo-introspective.svg": 466,
+		"./logo-no-reg.svg": 467,
+		"./logo-trade-mobile.svg": 468,
+		"./logo-trade.svg": 469,
+		"./logo.svg": 470,
+		"./luggage.svg": 471,
+		"./magnifying-glass.svg": 472,
+		"./make-offer.svg": 473,
+		"./mask.svg": 474,
+		"./megaphone.svg": 475,
+		"./message-archive.svg": 476,
+		"./message-bubble-dots.svg": 477,
+		"./message-read.svg": 478,
+		"./message-unread-circle.svg": 479,
+		"./message-unread.svg": 480,
+		"./message.svg": 481,
+		"./minus-circle-filled.svg": 482,
+		"./minus.svg": 483,
+		"./mobile-logo.svg": 484,
+		"./more-dots.svg": 485,
+		"./more-options.svg": 486,
 		"./net-price.svg": 487,
 		"./new-tab.svg": 488,
 		"./note-blank.svg": 489,
@@ -36125,6 +36125,95 @@
 
 /***/ },
 /* 404 */
+/*!*****************************!*\
+  !*** ./src/color-wheel.svg ***!
+  \*****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
+	
+	var _index = __webpack_require__(/*! ./~/redbox-react/lib/index.js */ 181);
+	
+	var _index2 = _interopRequireDefault(_index);
+	
+	var _index3 = __webpack_require__(/*! ./~/react-transform-catch-errors/lib/index.js */ 186);
+	
+	var _index4 = _interopRequireDefault(_index3);
+	
+	var _react2 = __webpack_require__(/*! react */ 2);
+	
+	var _react3 = _interopRequireDefault(_react2);
+	
+	var _index5 = __webpack_require__(/*! ./~/react-transform-hmr/lib/index.js */ 187);
+	
+	var _index6 = _interopRequireDefault(_index5);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var _components = {
+	    ColorWheel: {
+	        displayName: 'ColorWheel'
+	    }
+	};
+	
+	var _UsersAbrahampeterkinProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
+	    filename: '/Users/abrahampeterkin/projects/dibs-vg/src/color-wheel.svg',
+	    components: _components,
+	    locals: [module],
+	    imports: [_react3.default]
+	});
+	
+	var _UsersAbrahampeterkinProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
+	    filename: '/Users/abrahampeterkin/projects/dibs-vg/src/color-wheel.svg',
+	    components: _components,
+	    locals: [],
+	    imports: [_react3.default, _index2.default]
+	});
+	
+	function _wrapComponent(id) {
+	    return function (Component) {
+	        return _UsersAbrahampeterkinProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAbrahampeterkinProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
+	    };
+	}
+	
+	var React = __webpack_require__(/*! react */ 2);
+	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 351)(__webpack_require__(/*! react-dom */ 33));
+	
+	module.exports = _wrapComponent('ColorWheel')(React.createClass({
+	
+	    displayName: "ColorWheel",
+	
+	    getDefaultProps: function getDefaultProps() {
+	        return { "xmlns": "http://www.w3.org/2000/svg", "className": "dibsvg-svg dibsvg-color-wheel", "viewBox": "0 0 250 250" };
+	    },
+	    componentDidMount: function componentDidMount() {
+	        helpers.applyXmlAttributes(this);
+	    },
+	    render: function render() {
+	        var props = this.props;
+	        var children = props.children;
+	
+	        return React.createElement(
+	            'svg',
+	            this.props,
+	            React.createElement('path', { fill: '#F4D951', d: 'M0 125c0 34.5 14 65.8 36.6 88.4L125 125H0z' }),
+	            React.createElement('path', { fill: '#0FBC00', d: 'M36.6 213.4C59.2 236 90.5 250 125 250V125l-88.4 88.4z' }),
+	            React.createElement('path', { fill: '#E41F0D', d: 'M125 0C90.5 0 59.2 14 36.6 36.6L125 125V0z' }),
+	            React.createElement('path', { fill: '#FF7A1D', d: 'M36.6 36.6C14 59.2 0 90.5 0 125h125L36.6 36.6z' }),
+	            React.createElement('path', { fill: '#4E149F', d: 'M250 125c0-34.5-14-65.8-36.6-88.4L125 125h125z' }),
+	            React.createElement('path', { fill: '#AD0979', d: 'M213.4 36.6C190.8 14 159.5 0 125 0v125l88.4-88.4z' }),
+	            React.createElement('path', { fill: '#2442D2', d: 'M125 125l88.4 88.4C236 190.8 250 159.5 250 125H125z' }),
+	            React.createElement('path', { fill: '#2ABDFF', d: 'M125 250c34.5 0 65.8-14 88.4-36.6L125 125v125z' }),
+	            React.Children.map(children, function (c) {
+	                return c;
+	            })
+	        );
+	    }
+	}));
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
+
+/***/ },
+/* 405 */
 /*!********************************!*\
   !*** ./src/commuter-train.svg ***!
   \********************************/
@@ -36209,7 +36298,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 405 */
+/* 406 */
 /*!*********************************!*\
   !*** ./src/congratulations.svg ***!
   \*********************************/
@@ -36297,7 +36386,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 406 */
+/* 407 */
 /*!**********************************!*\
   !*** ./src/connection-error.svg ***!
   \**********************************/
@@ -36380,7 +36469,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 407 */
+/* 408 */
 /*!**********************!*\
   !*** ./src/copy.svg ***!
   \**********************/
@@ -36465,7 +36554,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 408 */
+/* 409 */
 /*!*****************************!*\
   !*** ./src/credit-card.svg ***!
   \*****************************/
@@ -36549,7 +36638,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 409 */
+/* 410 */
 /*!**********************************!*\
   !*** ./src/customer-support.svg ***!
   \**********************************/
@@ -36631,7 +36720,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 410 */
+/* 411 */
 /*!*************************!*\
   !*** ./src/diamond.svg ***!
   \*************************/
@@ -36713,7 +36802,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 411 */
+/* 412 */
 /*!*****************************!*\
   !*** ./src/do-not-edit.svg ***!
   \*****************************/
@@ -36797,7 +36886,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 412 */
+/* 413 */
 /*!*************************!*\
   !*** ./src/dollars.svg ***!
   \*************************/
@@ -36880,7 +36969,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 413 */
+/* 414 */
 /*!******************************!*\
   !*** ./src/dots-spinner.svg ***!
   \******************************/
@@ -36969,7 +37058,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 414 */
+/* 415 */
 /*!**************************!*\
   !*** ./src/download.svg ***!
   \**************************/
@@ -37052,7 +37141,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 415 */
+/* 416 */
 /*!******************************!*\
   !*** ./src/early-access.svg ***!
   \******************************/
@@ -37134,7 +37223,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 416 */
+/* 417 */
 /*!***********************!*\
   !*** ./src/email.svg ***!
   \***********************/
@@ -37216,7 +37305,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 417 */
+/* 418 */
 /*!*******************************!*\
   !*** ./src/empty-project.svg ***!
   \*******************************/
@@ -37299,7 +37388,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 418 */
+/* 419 */
 /*!**************************!*\
   !*** ./src/envelope.svg ***!
   \**************************/
@@ -37381,7 +37470,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 419 */
+/* 420 */
 /*!************************************!*\
   !*** ./src/exclamation-circle.svg ***!
   \************************************/
@@ -37465,7 +37554,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 420 */
+/* 421 */
 /*!**************************************!*\
   !*** ./src/exclamation-triangle.svg ***!
   \**************************************/
@@ -37547,7 +37636,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 421 */
+/* 422 */
 /*!*********************!*\
   !*** ./src/eye.svg ***!
   \*********************/
@@ -37630,7 +37719,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 422 */
+/* 423 */
 /*!**************************!*\
   !*** ./src/facebook.svg ***!
   \**************************/
@@ -37712,7 +37801,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 423 */
+/* 424 */
 /*!**************************!*\
   !*** ./src/file-doc.svg ***!
   \**************************/
@@ -37795,7 +37884,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 424 */
+/* 425 */
 /*!****************************!*\
   !*** ./src/file-excel.svg ***!
   \****************************/
@@ -37878,7 +37967,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 425 */
+/* 426 */
 /*!**************************!*\
   !*** ./src/file-pdf.svg ***!
   \**************************/
@@ -37961,7 +38050,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 426 */
+/* 427 */
 /*!*************************!*\
   !*** ./src/flag-de.svg ***!
   \*************************/
@@ -38045,7 +38134,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 427 */
+/* 428 */
 /*!*************************!*\
   !*** ./src/flag-fr.svg ***!
   \*************************/
@@ -38129,7 +38218,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 428 */
+/* 429 */
 /*!*************************!*\
   !*** ./src/flag-gb.svg ***!
   \*************************/
@@ -38217,7 +38306,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 429 */
+/* 430 */
 /*!*************************!*\
   !*** ./src/flag-us.svg ***!
   \*************************/
@@ -38309,7 +38398,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 430 */
+/* 431 */
 /*!**********************!*\
   !*** ./src/flag.svg ***!
   \**********************/
@@ -38391,7 +38480,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 431 */
+/* 432 */
 /*!************************!*\
   !*** ./src/folder.svg ***!
   \************************/
@@ -38473,7 +38562,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 432 */
+/* 433 */
 /*!*************************!*\
   !*** ./src/gallery.svg ***!
   \*************************/
@@ -38556,7 +38645,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 433 */
+/* 434 */
 /*!*****************************!*\
   !*** ./src/gear-filled.svg ***!
   \*****************************/
@@ -38638,7 +38727,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 434 */
+/* 435 */
 /*!**********************!*\
   !*** ./src/gear.svg ***!
   \**********************/
@@ -38721,7 +38810,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 435 */
+/* 436 */
 /*!***********************!*\
   !*** ./src/globe.svg ***!
   \***********************/
@@ -38803,7 +38892,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 436 */
+/* 437 */
 /*!****************************!*\
   !*** ./src/grid-empty.svg ***!
   \****************************/
@@ -38888,7 +38977,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 437 */
+/* 438 */
 /*!**********************!*\
   !*** ./src/grid.svg ***!
   \**********************/
@@ -38970,7 +39059,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 438 */
+/* 439 */
 /*!********************************!*\
   !*** ./src/hamburger-menu.svg ***!
   \********************************/
@@ -39052,7 +39141,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 439 */
+/* 440 */
 /*!**************************!*\
   !*** ./src/headshot.svg ***!
   \**************************/
@@ -39135,7 +39224,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 440 */
+/* 441 */
 /*!******************************!*\
   !*** ./src/heart-filled.svg ***!
   \******************************/
@@ -39217,7 +39306,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 441 */
+/* 442 */
 /*!********************************!*\
   !*** ./src/heart-outlined.svg ***!
   \********************************/
@@ -39299,7 +39388,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 442 */
+/* 443 */
 /*!**********************!*\
   !*** ./src/home.svg ***!
   \**********************/
@@ -39381,7 +39470,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 443 */
+/* 444 */
 /*!*****************************!*\
   !*** ./src/hyperwallet.svg ***!
   \*****************************/
@@ -39463,7 +39552,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 444 */
+/* 445 */
 /*!****************************************!*\
   !*** ./src/icon-help-button-close.svg ***!
   \****************************************/
@@ -39545,7 +39634,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 445 */
+/* 446 */
 /*!************************************************!*\
   !*** ./src/icon-help-button-question-mark.svg ***!
   \************************************************/
@@ -39627,7 +39716,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 446 */
+/* 447 */
 /*!***********************************!*\
   !*** ./src/image-upload-drag.svg ***!
   \***********************************/
@@ -39712,7 +39801,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 447 */
+/* 448 */
 /*!***************************************!*\
   !*** ./src/image-upload-multiple.svg ***!
   \***************************************/
@@ -39796,7 +39885,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 448 */
+/* 449 */
 /*!******************************!*\
   !*** ./src/image-upload.svg ***!
   \******************************/
@@ -39880,7 +39969,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 449 */
+/* 450 */
 /*!***********************!*\
   !*** ./src/image.svg ***!
   \***********************/
@@ -39963,7 +40052,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 450 */
+/* 451 */
 /*!************************************!*\
   !*** ./src/info-circle-filled.svg ***!
   \************************************/
@@ -40045,7 +40134,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 451 */
+/* 452 */
 /*!*****************************!*\
   !*** ./src/info-circle.svg ***!
   \*****************************/
@@ -40129,7 +40218,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 452 */
+/* 453 */
 /*!***************************!*\
   !*** ./src/inquiries.svg ***!
   \***************************/
@@ -40211,7 +40300,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 453 */
+/* 454 */
 /*!***************************!*\
   !*** ./src/instagram.svg ***!
   \***************************/
@@ -40293,7 +40382,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 454 */
+/* 455 */
 /*!*************************!*\
   !*** ./src/invoice.svg ***!
   \*************************/
@@ -40378,7 +40467,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 455 */
+/* 456 */
 /*!************************!*\
   !*** ./src/iphone.svg ***!
   \************************/
@@ -40460,7 +40549,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 456 */
+/* 457 */
 /*!***************************!*\
   !*** ./src/lightbulb.svg ***!
   \***************************/
@@ -40549,7 +40638,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 457 */
+/* 458 */
 /*!**************************!*\
   !*** ./src/linkedin.svg ***!
   \**************************/
@@ -40631,7 +40720,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 458 */
+/* 459 */
 /*!**********************!*\
   !*** ./src/list.svg ***!
   \**********************/
@@ -40718,7 +40807,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 459 */
+/* 460 */
 /*!*******************************!*\
   !*** ./src/listing-views.svg ***!
   \*******************************/
@@ -40800,7 +40889,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 460 */
+/* 461 */
 /*!************************!*\
   !*** ./src/loader.svg ***!
   \************************/
@@ -40882,7 +40971,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 461 */
+/* 462 */
 /*!******************************!*\
   !*** ./src/location-pin.svg ***!
   \******************************/
@@ -40967,7 +41056,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 462 */
+/* 463 */
 /*!*************************************!*\
   !*** ./src/lock-with-checkmark.svg ***!
   \*************************************/
@@ -41050,7 +41139,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 463 */
+/* 464 */
 /*!**********************!*\
   !*** ./src/lock.svg ***!
   \**********************/
@@ -41132,7 +41221,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 464 */
+/* 465 */
 /*!**************************!*\
   !*** ./src/logo-1st.svg ***!
   \**************************/
@@ -41221,7 +41310,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 465 */
+/* 466 */
 /*!************************************!*\
   !*** ./src/logo-introspective.svg ***!
   \************************************/
@@ -41327,7 +41416,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 466 */
+/* 467 */
 /*!*****************************!*\
   !*** ./src/logo-no-reg.svg ***!
   \*****************************/
@@ -41415,7 +41504,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 467 */
+/* 468 */
 /*!***********************************!*\
   !*** ./src/logo-trade-mobile.svg ***!
   \***********************************/
@@ -41509,7 +41598,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 468 */
+/* 469 */
 /*!****************************!*\
   !*** ./src/logo-trade.svg ***!
   \****************************/
@@ -41605,7 +41694,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 469 */
+/* 470 */
 /*!**********************!*\
   !*** ./src/logo.svg ***!
   \**********************/
@@ -41694,7 +41783,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 470 */
+/* 471 */
 /*!*************************!*\
   !*** ./src/luggage.svg ***!
   \*************************/
@@ -41776,7 +41865,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 471 */
+/* 472 */
 /*!**********************************!*\
   !*** ./src/magnifying-glass.svg ***!
   \**********************************/
@@ -41858,7 +41947,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 472 */
+/* 473 */
 /*!****************************!*\
   !*** ./src/make-offer.svg ***!
   \****************************/
@@ -41942,7 +42031,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 473 */
+/* 474 */
 /*!**********************!*\
   !*** ./src/mask.svg ***!
   \**********************/
@@ -42024,7 +42113,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 474 */
+/* 475 */
 /*!***************************!*\
   !*** ./src/megaphone.svg ***!
   \***************************/
@@ -42106,7 +42195,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 475 */
+/* 476 */
 /*!*********************************!*\
   !*** ./src/message-archive.svg ***!
   \*********************************/
@@ -42189,7 +42278,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 476 */
+/* 477 */
 /*!*************************************!*\
   !*** ./src/message-bubble-dots.svg ***!
   \*************************************/
@@ -42274,7 +42363,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 477 */
+/* 478 */
 /*!******************************!*\
   !*** ./src/message-read.svg ***!
   \******************************/
@@ -42356,7 +42445,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 478 */
+/* 479 */
 /*!***************************************!*\
   !*** ./src/message-unread-circle.svg ***!
   \***************************************/
@@ -42439,7 +42528,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 479 */
+/* 480 */
 /*!********************************!*\
   !*** ./src/message-unread.svg ***!
   \********************************/
@@ -42521,7 +42610,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 480 */
+/* 481 */
 /*!*************************!*\
   !*** ./src/message.svg ***!
   \*************************/
@@ -42603,7 +42692,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 481 */
+/* 482 */
 /*!*************************************!*\
   !*** ./src/minus-circle-filled.svg ***!
   \*************************************/
@@ -42685,7 +42774,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 482 */
+/* 483 */
 /*!***********************!*\
   !*** ./src/minus.svg ***!
   \***********************/
@@ -42767,7 +42856,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 483 */
+/* 484 */
 /*!*****************************!*\
   !*** ./src/mobile-logo.svg ***!
   \*****************************/
@@ -42850,7 +42939,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 484 */
+/* 485 */
 /*!***************************!*\
   !*** ./src/more-dots.svg ***!
   \***************************/
@@ -42934,7 +43023,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
 
 /***/ },
-/* 485 */
+/* 486 */
 /*!******************************!*\
   !*** ./src/more-options.svg ***!
   \******************************/
@@ -43009,95 +43098,6 @@
 	            React.createElement('circle', { cx: '125', cy: '62.5', r: '41.5', className: 'circle-0' }),
 	            React.createElement('circle', { cx: '41.5', cy: '187.5', r: '41.5', className: 'circle-1' }),
 	            React.createElement('circle', { cx: '208.5', cy: '187.5', r: '41.5', className: 'circle-2' }),
-	            React.Children.map(children, function (c) {
-	                return c;
-	            })
-	        );
-	    }
-	}));
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../~/webpack/buildin/module.js */ 180)(module)))
-
-/***/ },
-/* 486 */
-/*!****************************!*\
-  !*** ./src/multicolor.svg ***!
-  \****************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
-	
-	var _index = __webpack_require__(/*! ./~/redbox-react/lib/index.js */ 181);
-	
-	var _index2 = _interopRequireDefault(_index);
-	
-	var _index3 = __webpack_require__(/*! ./~/react-transform-catch-errors/lib/index.js */ 186);
-	
-	var _index4 = _interopRequireDefault(_index3);
-	
-	var _react2 = __webpack_require__(/*! react */ 2);
-	
-	var _react3 = _interopRequireDefault(_react2);
-	
-	var _index5 = __webpack_require__(/*! ./~/react-transform-hmr/lib/index.js */ 187);
-	
-	var _index6 = _interopRequireDefault(_index5);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var _components = {
-	    Multicolor: {
-	        displayName: 'Multicolor'
-	    }
-	};
-	
-	var _UsersAbrahampeterkinProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-	    filename: '/Users/abrahampeterkin/projects/dibs-vg/src/multicolor.svg',
-	    components: _components,
-	    locals: [module],
-	    imports: [_react3.default]
-	});
-	
-	var _UsersAbrahampeterkinProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-	    filename: '/Users/abrahampeterkin/projects/dibs-vg/src/multicolor.svg',
-	    components: _components,
-	    locals: [],
-	    imports: [_react3.default, _index2.default]
-	});
-	
-	function _wrapComponent(id) {
-	    return function (Component) {
-	        return _UsersAbrahampeterkinProjectsDibsVgNode_modulesReactTransformHmrLibIndexJs2(_UsersAbrahampeterkinProjectsDibsVgNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
-	    };
-	}
-	
-	var React = __webpack_require__(/*! react */ 2);
-	var helpers = __webpack_require__(/*! svg-react-loader/helpers */ 351)(__webpack_require__(/*! react-dom */ 33));
-	
-	module.exports = _wrapComponent('Multicolor')(React.createClass({
-	
-	    displayName: "Multicolor",
-	
-	    getDefaultProps: function getDefaultProps() {
-	        return { "xmlns": "http://www.w3.org/2000/svg", "className": "dibsvg-svg dibsvg-multicolor", "data-svgreactloader": "[[\"http://www.w3.org/2000/svg\",\"xlink\",\"http://www.w3.org/1999/xlink\"]]", "viewBox": "0 0 250 250" };
-	    },
-	    componentDidMount: function componentDidMount() {
-	        helpers.applyXmlAttributes(this);
-	    },
-	    render: function render() {
-	        var props = this.props;
-	        var children = props.children;
-	
-	        return React.createElement(
-	            'svg',
-	            this.props,
-	            React.createElement('path', { fill: '#F4D951', d: 'M0,125c0,34.5,14,65.8,36.6,88.4L125,125H0z' }),
-	            React.createElement('path', { fill: '#0FBC00', d: 'M36.6,213.4C59.2,236,90.5,250,125,250V125L36.6,213.4z' }),
-	            React.createElement('path', { fill: '#E41F0D', d: 'M125,0C90.5,0,59.2,14,36.6,36.6L125,125V0z' }),
-	            React.createElement('path', { fill: '#FF7A1D', d: 'M36.6,36.6C14,59.2,0,90.5,0,125h125L36.6,36.6z' }),
-	            React.createElement('path', { fill: '#4E149F', d: 'M250,125c0-34.5-14-65.8-36.6-88.4L125,125H250z' }),
-	            React.createElement('path', { fill: '#AD0979', d: 'M213.4,36.6C190.8,14,159.5,0,125,0v125L213.4,36.6z' }),
-	            React.createElement('path', { fill: '#2442D2', d: 'M125,125l88.4,88.4C236,190.8,250,159.5,250,125H125z' }),
-	            React.createElement('path', { fill: '#2ABDFF', d: 'M125,250c34.5,0,65.8-14,88.4-36.6L125,125V250z' }),
 	            React.Children.map(children, function (c) {
 	                return c;
 	            })
