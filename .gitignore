@@ -1,9 +1,0 @@
-.project
-npm-debug.log
-.settings
-.idea
-/nbproject/private
-.DS_Store
-node_modules/
-.sass-cache
-dist
